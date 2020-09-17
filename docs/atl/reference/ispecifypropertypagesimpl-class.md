@@ -45,7 +45,7 @@ class ATL_NO_VTABLE ISpecifyPropertyPagesImpl
 |----------|-----------------|
 |[ISpecifyPropertyPagesImpl::GetPages](#getpages)|Заполняет подсчитанный массив значений UUID. Каждый UUID соответствует CLSID для одной из страниц свойств, которые могут быть отображены в листе свойства объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [ISpecifyPropertyPages](/windows/win32/api/ocidl/nn-ocidl-ispecifypropertypages) позволяет клиенту получить список CLSID для страниц свойств, поддерживаемых объектом. Класс `ISpecifyPropertyPagesImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE ISpecifyPropertyPagesImpl
 STDMETHOD(GetPages)(CAUUID* pPages);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для получения каждого CLSID.
 

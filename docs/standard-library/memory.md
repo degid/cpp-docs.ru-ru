@@ -60,7 +60,7 @@ ms.locfileid: "88836469"
 |[pointer_safety](../standard-library/memory-enums.md#pointer_safety)|Перечисление всех возможных возвращаемых значений для `get_pointer_safety`.|
 |[return_temporary_buffer](../standard-library/memory-functions.md#return_temporary_buffer)|Отменяет выделение временной памяти, выделенной с помощью функции шаблона `get_temporary_buffer`.|
 |[static_pointer_cast](../standard-library/memory-functions.md#static_pointer_cast)|Статическое приведение к `shared_ptr`.|
-|[позиции](../standard-library/memory-functions.md#swap)|Обмен двух объектов `shared_ptr` или `weak_ptr`.|
+|[swap](../standard-library/memory-functions.md#swap)|Обмен двух объектов `shared_ptr` или `weak_ptr`.|
 |[undeclare_no_pointers](../standard-library/memory-functions.md#undeclare_no_pointers)|Сообщает сборщику мусора, что символы в блоке памяти, определенном указателем на базовый адрес и размером блока, теперь могут содержать трассируемые указатели.|
 |[undeclare_reachable](../standard-library/memory-functions.md#undeclare_reachable)|Уведомляет `garbage_collector`, что указанная область памяти является недоступной.|
 |[uninitialized_copy](../standard-library/memory-functions.md#uninitialized_copy)|Копирует объекты из указанного входного диапазона в неинициализированный конечный диапазон.|
@@ -79,17 +79,17 @@ ms.locfileid: "88836469"
 
 |Имя|Описание|
 |-|-|
-|[operator! =](../standard-library/memory-operators.md#op_neq)|Проверяет на неравенство между объектами распределителя указанного класса.|
-|[Оператор = =](../standard-library/memory-operators.md#op_eq_eq)|Проверяет на равенство объекты распределителя указанного класса.|
-|[Оператор>=](../standard-library/memory-operators.md#op_gt_eq)|Проверяет, является ли один объект распределителя больше или равным второму объекту распределителя указанного класса.|
-|[Оператор<](../standard-library/memory-operators.md#op_lt)|Проверяет, является ли один объект распределителя меньше или равным второму объекту распределителя указанного класса.|
-|[станции\<=](../standard-library/memory-operators.md#op_gt_eq)|Проверяет, является ли один объект меньше или равным второму объекту указанного класса.|
-|[Оператор>](../standard-library/memory-operators.md#op_gt)|Проверяет, является ли один объект больше второго объекта указанного класса.|
-|[Оператор<<](../standard-library/memory-operators.md#op_lt_lt)|Вставляет `shared_ptr`.|
+|[operator!=](../standard-library/memory-operators.md#op_neq)|Проверяет на неравенство между объектами распределителя указанного класса.|
+|[operator==](../standard-library/memory-operators.md#op_eq_eq)|Проверяет на равенство объекты распределителя указанного класса.|
+|[operator>=](../standard-library/memory-operators.md#op_gt_eq)|Проверяет, является ли один объект распределителя больше или равным второму объекту распределителя указанного класса.|
+|[operator<](../standard-library/memory-operators.md#op_lt)|Проверяет, является ли один объект распределителя меньше или равным второму объекту распределителя указанного класса.|
+|[operator\<=](../standard-library/memory-operators.md#op_gt_eq)|Проверяет, является ли один объект меньше или равным второму объекту указанного класса.|
+|[operator>](../standard-library/memory-operators.md#op_gt)|Проверяет, является ли один объект больше второго объекта указанного класса.|
+|[operator<<](../standard-library/memory-operators.md#op_lt_lt)|Вставляет `shared_ptr`.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[allocator](../standard-library/allocator-class.md)|Шаблон класса описывает объект, который управляет выделением и освобождением памяти для массивов объектов типа **Type**.|
 |[allocator_traits](../standard-library/allocator-traits-class.md)|Описывает объект, определяющий все сведения, необходимые контейнеру с распределителем.|

@@ -18,7 +18,7 @@ ms.locfileid: "77142136"
 
 ## <a name="example"></a>Пример
 
-В следующем примере отмена используется для поиска элемента в массиве. Функция `parallel_find_any` использует алгоритм [параллелизма::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) и функцию [concurrency:: run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) для поиска расположения, которое содержит заданное значение. Когда параллельный цикл находит значение, он вызывает метод [Concurrency:: cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) для отмены будущей работы.
+В следующем примере отмена используется для поиска элемента в массиве. Функция `parallel_find_any` использует алгоритм [параллелизма::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) и функцию [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) для поиска расположения, которое содержит заданное значение. Когда параллельный цикл находит значение, он вызывает метод [concurrency::cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) для отмены будущей работы.
 
 [!code-cpp[concrt-parallel-array-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-cancellation-to-break-from-a-parallel-loop_1.cpp)]
 

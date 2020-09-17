@@ -102,7 +102,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 |[m_bCancelWhenExecuting](#bcancelwhenexecuting)|Указывает, должна ли команда быть отменена при выполнении.|
 |[m_bIsExecuting](#bisexecuting)|Указывает, выполняется ли в данный момент команда.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обязательный интерфейс для объекта Command.
 
@@ -116,7 +116,7 @@ class ATL_NO_VTABLE ICommandImpl : public CommandBase
 STDMETHOD(Cancel)();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [ICommand:: Cancel](/previous-versions/windows/desktop/ms714402(v=vs.85)) в *справочнике по OLE DB программиста*.
 
@@ -173,7 +173,7 @@ HRESULT CreateRowset(IUnknown* pUnkOuter,
 
 Стандартное значение HRESULT. `ICommand::Execute`Список типичных значений см. в разделе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы создать более одного набора строк или предоставить собственные условия для создания различных наборов строк, разместите разные вызовы `CreateRowset` из в `Execute` .
 
@@ -197,7 +197,7 @@ HRESULT Execute(IUnknown* pUnkOuter,
 
 См. раздел [ICommand:: Execute](/previous-versions/windows/desktop/ms718095(v=vs.85)) в *справочнике по OLE DB программиста*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запрошенный исходящий интерфейс будет интерфейсом, полученным из объекта набора строк, создаваемого этой функцией.
 
@@ -218,7 +218,7 @@ STDMETHOD (GetDBSession) (REFIID riid,
 
 См. раздел [ICommand:: жетдбсессион](/previous-versions/windows/desktop/ms719622(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полезно для получения свойств из сеанса.
 
@@ -242,7 +242,7 @@ ICommandImpl();
 unsigned m_bCancel:1;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту переменную можно получить в `Execute` методе класса Command и при необходимости отменить.
 
@@ -256,7 +256,7 @@ unsigned m_bCancel:1;
 unsigned m_bCancelWhenExecuting:1;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение по умолчанию — **`true`** (может быть отменено).
 
@@ -270,7 +270,7 @@ unsigned m_bCancelWhenExecuting:1;
 unsigned m_bIsExecuting:1;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Execute`Метод класса Command может присвоить этой переменной значение **`true`** .
 

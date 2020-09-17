@@ -33,7 +33,7 @@ ms.locfileid: "88834548"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлплус. h
+**Заголовок:** атлплус.h
 
 ## <a name="begin_rdx_map"></a><a name="begin_rdx_map"></a> BEGIN_RDX_MAP
 
@@ -43,7 +43,7 @@ ms.locfileid: "88834548"
 BEGIN_RDX_MAP
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Следующие макросы используются в схеме обмена данными реестра для чтения и записи записей в системном реестре:
 
@@ -94,7 +94,7 @@ RDX_BINARY(
 *member_size*<br/>
 Размер переменной члена в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в сочетании с макросами BEGIN_RDX_MAP и END_RDX_MAP, чтобы связать переменную-член с заданной записью реестра. Глобальная функция [регистридатаексчанже](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)или функция члена с тем же именем, созданная с помощью макросов BEGIN_RDX_MAP и END_RDX_MAP, должны использоваться для обмена данными между системным реестром и переменными членов в сопоставлении RDX.
 
@@ -128,7 +128,7 @@ RDX_CSTRING_TEXT(
 *member_size*<br/>
 Размер переменной члена в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в сочетании с макросами BEGIN_RDX_MAP и END_RDX_MAP, чтобы связать переменную-член с заданной записью реестра. Глобальная функция [регистридатаексчанже](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)или функция члена с тем же именем, созданная с помощью макросов BEGIN_RDX_MAP и END_RDX_MAP, должны использоваться для обмена данными между системным реестром и переменными членов в сопоставлении RDX.
 
@@ -162,7 +162,7 @@ RDX_DWORD(
 *member_size*<br/>
 Размер переменной члена в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в сочетании с макросами BEGIN_RDX_MAP и END_RDX_MAP, чтобы связать переменную-член с заданной записью реестра. Глобальная функция [регистридатаексчанже](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)или функция члена с тем же именем, созданная с помощью макросов BEGIN_RDX_MAP и END_RDX_MAP, должны использоваться для обмена данными между системным реестром и переменными членов в сопоставлении RDX.
 
@@ -196,7 +196,7 @@ RDX_TEXT(
 *member_size*<br/>
 Размер переменной члена в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в сочетании с макросами BEGIN_RDX_MAP и END_RDX_MAP, чтобы связать переменную-член с заданной записью реестра. Глобальная функция [регистридатаексчанже](../../atl/reference/registry-and-typelib-global-functions.md#registrydataexchange)или функция члена с тем же именем, созданная с помощью макросов BEGIN_RDX_MAP и END_RDX_MAP, должны использоваться для обмена данными между системным реестром и переменными членов в сопоставлении RDX.
 

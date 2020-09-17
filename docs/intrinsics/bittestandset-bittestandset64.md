@@ -56,7 +56,7 @@ unsigned char _bittestandset64(
 |`_bittestandset`|x86, ARM, x64, ARM64|
 |`_bittestandset64`|x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

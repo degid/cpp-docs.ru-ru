@@ -42,7 +42,7 @@ class CComHeap : public IAtlMemMgr
 |[CComHeap::GetSize](#getsize)|Вызовите этот метод, чтобы получить выделенный размер блока памяти, выделенный этим менеджером памяти.|
 |[CComHeap::Перераспределить](#reallocate)|Вызовите этот метод для перераспределения памяти, выделенной данным диспетчером памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComHeap`реализует функции распределения памяти с использованием функций распределения COM, включая [CoTaskMemAlloc,](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc) [CoTaskMemFree,](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree) [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize)и [CoTaskMemRealloc.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc) Максимальное количество памяти, которое может быть выделено, равно INT_MAX (2147483647) байтов.
 
@@ -77,7 +77,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CComHeap::Free](#free) или [CComHeap::Перераспределите,](#reallocate) чтобы освободить память, выделенную этим методом.
 
@@ -96,7 +96,7 @@ virtual void Free(void* p) throw();
 *P*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти. NULL является действительным значением и ничего не делает.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с помощью [CoTaskMemFree](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree).
 
@@ -117,7 +117,7 @@ virtual size_t GetSize(void* p) throw();
 
 Возвращает размер выделенного блока памяти в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с помощью [IMalloc::GetSize](/windows/win32/api/objidlbase/nf-objidlbase-imalloc-getsize).
 
@@ -141,7 +141,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CComHeap:: Бесплатно,](#free) чтобы освободить память, выделенную этим методом.
 

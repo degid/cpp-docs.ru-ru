@@ -39,7 +39,7 @@ ms.locfileid: "87212986"
 class HStringReference;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Время существования резервного буфера в новом HSTRING не управляется среда выполнения Windows. Вызывающий объект выделяет исходную строку в кадре стека, чтобы избежать выделения кучи и избежать риска утечки памяти. Кроме того, вызывающий объект должен гарантировать, что исходная строка остается неизменной в течение времени существования присоединенного HSTRING. Дополнительные сведения см. в разделе [функция виндовскреатестрингреференце](/windows/win32/api/winstring/nf-winstring-windowscreatestringreference).
 
@@ -63,10 +63,10 @@ name                                                    | Описание:
 
 Имя                                                  | Описание:
 ----------------------------------------------------- | ----------------------------------------------------------------------------------------------
-[HStringReference:: operator =](#operator-assign)       | Перемещает значение другого `HStringReference` объекта в текущий `HStringReference` объект.
-[HStringReference:: operator = =](#operator-equality)    | Указывает, равны ли два параметра.
-[HStringReference:: operator! =](#operator-inequality)  | Указывает, являются ли два параметра неравными.
-[HStringReference:: operator&lt;](#operator-less-than) | Указывает, меньше ли первый параметр второго параметра.
+[HStringReference::operator=](#operator-assign)       | Перемещает значение другого `HStringReference` объекта в текущий `HStringReference` объект.
+[HStringReference::operator==](#operator-equality)    | Указывает, равны ли два параметра.
+[HStringReference::operator!=](#operator-inequality)  | Указывает, являются ли два параметра неравными.
+[HStringReference::operator&lt;](#operator-less-than) | Указывает, меньше ли первый параметр второго параметра.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -74,7 +74,7 @@ name                                                    | Описание:
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
@@ -93,7 +93,7 @@ HRESULT CopyTo(
 *str*<br/>
 HSTRING, который получает копию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает функцию [виндовсдупликатестринг](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) .
 
@@ -154,7 +154,7 @@ HStringReference(HStringReference&& other) throw();
 *иной*<br/>
 Другой `HStringReference` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует новый объект того `HStringReference` же размера, что и *str*параметра.
 
@@ -162,7 +162,7 @@ HStringReference(HStringReference&& other) throw();
 
 Третий конструктор инициализирует новый `HStringReference` объект значением *другого* параметра, а затем уничтожает *другой* параметр.
 
-## <a name="hstringreferenceoperator"></a><a name="operator-assign"></a>HStringReference:: operator =
+## <a name="hstringreferenceoperator"></a><a name="operator-assign"></a>HStringReference::operator=
 
 Перемещает значение другого `HStringReference` объекта в текущий `HStringReference` объект.
 
@@ -175,11 +175,11 @@ HStringReference& operator=(HStringReference&& other) throw()
 *иной*<br/>
 Существующий объект `HStringReference`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение *существующего объекта* копируется в текущий `HStringReference` объект, а затем удаляется *другой* объект.
 
-## <a name="hstringreferenceoperator"></a><a name="operator-equality"></a>HStringReference:: operator = =
+## <a name="hstringreferenceoperator"></a><a name="operator-equality"></a>HStringReference::operator==
 
 Указывает, равны ли два параметра.
 
@@ -209,7 +209,7 @@ inline bool operator==(
 
 **`true`** значение, если параметры *LHS* и *RHS* равны; в противном случае — **`false`** .
 
-## <a name="hstringreferenceoperator"></a><a name="operator-inequality"></a>HStringReference:: operator! =
+## <a name="hstringreferenceoperator"></a><a name="operator-inequality"></a>HStringReference::operator!=
 
 Указывает, являются ли два параметра неравными.
 
@@ -239,7 +239,7 @@ inline bool operator!=(
 
 **`true`** значение, если параметры *LHS* и *RHS* не равны; в противном случае — **`false`** .
 
-## <a name="hstringreferenceoperatorlt"></a><a name="operator-less-than"></a>HStringReference:: operator&lt;
+## <a name="hstringreferenceoperatorlt"></a><a name="operator-less-than"></a>HStringReference::operator&lt;
 
 Указывает, меньше ли первый параметр второго параметра.
 

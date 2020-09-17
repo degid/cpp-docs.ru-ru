@@ -45,7 +45,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 |----------|-----------------|
 |[ISupportErrorInfoImpl::InterfaceSupportsОшибкаОшибкаИнфо](#interfacesupportserrorinfo)|Указывает, поддерживает ли `riid` интерфейс, идентифицированный по поддерживает интерфейс [IErrorInfo.](/windows/win32/api/oaidl/nn-oaidl-ierrorinfo)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [Интерфейс ISupportErrorInfo](/windows/win32/api/oaidl/nn-oaidl-isupporterrorinfo) гарантирует, что информация об ошибках может быть возвращена клиенту. Объекты, `IErrorInfo` которые `ISupportErrorInfo`используют должны реализовать.
 
@@ -71,7 +71,7 @@ class ATL_NO_VTABLE ISupportErrorInfoImpl
 STDMETHOD(InterfaceSupportsErrorInfo)(REFIID riid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [ISupportErrorInfo::InterfaceSupportsErrorInfo](/windows/win32/api/oaidl/nf-oaidl-isupporterrorinfo-interfacesupportserrorinfo) в Windows SDK.
 

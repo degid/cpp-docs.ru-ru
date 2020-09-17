@@ -53,7 +53,7 @@ class CNonStatelessWorker
 |[CNonStatelessWorker::](#initialize)|Реализация [WorkerArchetype::Первоначальная](worker-archetype.md#initialize).|
 |[CNonStatelessWorker::: Прекращение](#terminate)|Реализация [WorkerArchetype::Terminate](worker-archetype.md#terminate).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс является простой рабочей нитью для использования с [CThreadPool.](../../atl/reference/cthreadpool-class.md) Этот класс не предоставляет каких-либо собственных возможностей обработки запросов. Вместо этого он мгновенно устанавливает один экземпляр *Рабочего* на запрос и делегирует реализацию своих методов в этот экземпляр.
 
@@ -74,7 +74,7 @@ void Execute(
     OVERLAPPED* pOverlapped);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает экземпляр класса *«Рабочий»* в стеке и вызывает [инициализацию](worker-archetype.md#initialize) на этом объекте. Если инициализация успешна, этот метод также вызывает [выполнение](worker-archetype.md#execute) и [прекращение](worker-archetype.md#terminate) на одном объекте.
 
@@ -90,7 +90,7 @@ BOOL Initialize(void* /* pvParam */) throw();
 
 Всегда возвращается TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс не делает никакой инициализации в `Initialize`.
 
@@ -102,7 +102,7 @@ BOOL Initialize(void* /* pvParam */) throw();
 typedef Worker::RequestType RequestType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс обрабатывает тот же тип рабочего элемента, что и класс, используемый для параметра *шаблона «Рабочий».* Подробнее о ней читайте [в обзоре CNonStatelessWorker.](../../atl/reference/cnonstatelessworker-class.md)
 
@@ -114,7 +114,7 @@ typedef Worker::RequestType RequestType;
 void Terminate(void* /* pvParam */) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс не делает никакой очистки в `Terminate`.
 

@@ -23,7 +23,7 @@ ms.locfileid: "87227352"
 mutable member-variable-declaration;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Например, следующий код будет компилироваться без ошибок, поскольку `m_accessCount` объявлен как **`mutable`** , и поэтому может быть изменен, `GetFlag` даже если `GetFlag` является константной функцией-членом.
 

@@ -61,7 +61,7 @@ class IObjectSafetyImpl
 |----------|-----------------|
 |[IObjectSafetyImpl::m_dwCurrentSafety](#m_dwcurrentsafety)|Хранит текущий уровень безопасности объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `IObjectSafetyImpl` обеспечивает реализацию `IObjectSafety`по умолчанию . Интерфейс `IObjectSafety` позволяет клиенту получить и установить уровень безопасности объекта. Например, веб-браузер `IObjectSafety::SetInterfaceSafetyOptions` может вызвать, чтобы сделать контроль безопасным для инициализации или безопасным для скриптов.
 
@@ -90,7 +90,7 @@ HRESULT GetInterfaceSafetyOptions(
     DWORD* pdwEnabledOptions);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация возвращает соответствующие значения для любого интерфейса, `IUnknown::QueryInterface`поддерживаемого реализацией объекта.
 
@@ -118,7 +118,7 @@ HRESULT SetInterfaceSafetyOptions(
     DWORD dwEnabledOptions);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация возвращает E_NOINTERFACE для любого интерфейса, не `IUnknown::QueryInterface`поддерживаемого реализацией объекта.
 

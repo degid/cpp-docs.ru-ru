@@ -48,7 +48,7 @@ void __indwordstring(
 |---------------|------------------|
 |`__indwordstring`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

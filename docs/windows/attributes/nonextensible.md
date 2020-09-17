@@ -23,7 +23,7 @@ ms.locfileid: "88833040"
 [nonextensible]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Нерасширяемый** атрибут C++ имеет те же функциональные возможности, что и [нерасширяемый](/windows/win32/Midl/nonextensible) атрибут MIDL.
 

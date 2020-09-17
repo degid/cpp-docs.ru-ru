@@ -36,7 +36,7 @@ struct EnableIf<true, T>;
 *&*<br/>
 Логическое выражение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Определяет элемент данных типа, указанного вторым параметром шаблона, если первый параметр шаблона имеет значение **`true`** .
 
@@ -54,7 +54,7 @@ struct EnableIf<true, T>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

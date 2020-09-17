@@ -31,7 +31,7 @@ ms.locfileid: "88833547"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="begin_sink_map"></a><a name="begin_sink_map"></a> BEGIN_SINK_MAP
 
@@ -50,7 +50,7 @@ BEGIN_SINK_MAP(_class)
 
 [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация приемников событий ActiveX в CE ATL поддерживает только возвращаемые значения типа HRESULT или void из методов обработчика событий. любое другое возвращаемое значение не поддерживается, и его поведение не определено.
 
@@ -66,7 +66,7 @@ END_SINK_MAP()
 
 [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация приемников событий ActiveX в CE ATL поддерживает только возвращаемые значения типа HRESULT или void из методов обработчика событий. любое другое возвращаемое значение не поддерживается, и его поведение не определено.
 
@@ -93,7 +93,7 @@ SINK_ENTRY( id, dispid, fn )
 
 [!code-cpp[NVC_ATL_Windowing#104](../../atl/codesnippet/cpp/composite-control-macros_1.h)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация приемников событий ActiveX в CE ATL поддерживает только возвращаемые значения типа HRESULT или void из методов обработчика событий. любое другое возвращаемое значение не поддерживается, и его поведение не определено.
 
@@ -127,7 +127,7 @@ SINK_ENTRY_EX_P( id, piid, dispid, fn ) // (Visual Studio 2017)
 
 [!code-cpp[NVC_ATL_Windowing#136](../../atl/codesnippet/cpp/composite-control-macros_2.h)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация приемников событий ActiveX в CE ATL поддерживает только возвращаемые значения типа HRESULT или void из методов обработчика событий. любое другое возвращаемое значение не поддерживается, и его поведение не определено.
 
@@ -160,7 +160,7 @@ SINK_ENTRY_INFO_P( id, piid, dispid, fn, info ) // (Visual Studio 2017)
 *контактные*<br/>
 окне Сведения о типе для функции обработчика событий. Эти сведения о типе предоставляются в виде указателя на `_ATL_FUNC_INFO` структуру. CC_CDECL является единственным вариантом, поддерживаемым в Windows CE для поля КАЛЛКОНВ `_ATL_FUNC_INFO` структуры. Любое другое значение не поддерживается, поэтому его поведение не определено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первые четыре параметра макроса те же, что и для макроса [SINK_ENTRY_EX](#sink_entry_ex) . Последний параметр предоставляет сведения о типе для события. Реализация приемников событий ActiveX в CE ATL поддерживает только возвращаемые значения типа HRESULT или void из методов обработчика событий. любое другое возвращаемое значение не поддерживается, и его поведение не определено.
 

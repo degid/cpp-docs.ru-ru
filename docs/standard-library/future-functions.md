@@ -27,7 +27,7 @@ ms.locfileid: "88837974"
 [future_category](#future_category)\
 [make_error_code](#make_error_code)\
 [make_error_condition](#make_error_condition)\
-[позиции](#swap)|
+[swap](#swap)|
 
 ## <a name="async"></a><a name="async"></a> Async
 
@@ -45,10 +45,10 @@ future<typename result_of<Fn(ArgTypes...)>::type>
 
 ### <a name="parameters"></a>Параметры
 
-*политик*\
+*policy*\
 Значение [launch](../standard-library/future-enums.md#launch).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определения сокращений:
 
@@ -117,7 +117,7 @@ inline error_condition make_error_condition(future_errc Errno) noexcept;
 
 `error_condition(static_cast<int>(Errno), future_category());`
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Обменивается *связанным асинхронным состоянием* одного `promise` объекта с другим.
 
@@ -134,7 +134,7 @@ void swap(packaged_task<Ty(ArgTypes...)>& Left, packaged_task<Ty(ArgTypes...)>& 
 *Слева*\
 Левый объект `promise`.
 
-*Правильно*\
+*right*\
 Правой объект `promise`.
 
 ## <a name="see-also"></a>См. также раздел

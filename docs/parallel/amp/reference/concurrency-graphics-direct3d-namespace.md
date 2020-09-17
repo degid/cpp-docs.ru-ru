@@ -36,9 +36,9 @@ namespace direct3d;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="see-also"></a>См. также раздел
 

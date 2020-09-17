@@ -55,7 +55,7 @@ unsigned __int64 __emulu(
 |`__emul`|x86, x64|
 |`__emulu`|x86, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

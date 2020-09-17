@@ -29,7 +29,7 @@ class unsupported_feature : public runtime_exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор unsupported_feature](#unsupported_feature)|Конструирует новый экземпляр исключения `unsupported_feature`.|
 
@@ -65,7 +65,7 @@ unsupported_feature() throw();
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
 **Пространство имен** : Concurrency
 

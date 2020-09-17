@@ -57,7 +57,7 @@ class CComUnkArray
 |[CComUnkArray::Газета.Ru](#getunknown)|Вызовите этот `IUnknown` метод, чтобы получить указатель, связанный с данным файлом cookie.|
 |[CComUnkArray::Удалить](#remove)|Вызов иметод, `IUnknown` чтобы удалить указатель из массива.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComUnkArray`содержит фиксированное `IUnknown` количество указателей, каждый интерфейс на точке соединения. `CComUnkArray`может быть использован в качестве параметра для класса шаблонов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md) `CComUnkArray<1>`является шаблоном, `CComUnkArray` специализацией которого была оптимизирована для одной точки соединения.
 
@@ -102,7 +102,7 @@ IUnknown**
 
 Указатель на `IUnknown` указатель интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Коллекция содержит указатели на интерфейсы, `IUnknown`хранящиеся локально как. Вы отбрасываете каждый `IUnknown` интерфейс в реальный тип интерфейса, а затем вызвать через него. Сначала не нужно запросить интерфейс.
 
@@ -116,7 +116,7 @@ IUnknown**
 CComUnkArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает коллекцию `nMaxSize` `IUnknown` для удержания указателей и инициализирует указатели на NULL.
 
@@ -133,7 +133,7 @@ IUnknown**
 
 Указатель на `IUnknown` указатель интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Методы `CComUnkArray` `begin` и `end` могут быть использованы для цикла через все точки соединения, например, при выстреле события.
 
@@ -156,7 +156,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 Возвращает файлcookieо-файлы, связанные с указателем, `IUnknown` или 0, если не найдено подходящего `IUnknown` указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если существует несколько экземпляров `IUnknown` одного и того же указателя, эта функция возвращает файл cookie для первого.
 

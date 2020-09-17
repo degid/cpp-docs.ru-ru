@@ -34,7 +34,7 @@ ms.locfileid: "88830830"
 #include <sys/locking.h>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Аргумент *mode* в вызове функции `_locking` определяет, какое действие блокировки будет выполняться.
 

@@ -69,7 +69,7 @@ public:
 *РГСЧ*\
 Единый механизм генератора случайных чисел. Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс описывает распределение, которое создает значения типа **`bool`** , распределенные в соответствии с дискретной функцией вероятности распределения Бернулли. В следующей таблице представлены ссылки на статьи об отдельных членах.
 
@@ -173,7 +173,7 @@ explicit bernoulli_distribution(const param_type& parm);
 *ParM*\
 Структура `param_type`, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Предварительное условие:**`0.0 ≤ p ≤ 1.0`
 
@@ -194,7 +194,7 @@ struct param_type {typedef bernoulli_distribution distribution_type; param_type 
 *ш*\
 Хранимый параметр распределения `p`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Предварительное условие:**`0.0 ≤ p ≤ 1.0`
 

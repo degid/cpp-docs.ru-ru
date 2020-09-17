@@ -62,7 +62,7 @@ class CStreamRowset
 |[CStreamRowset](#cstreamrowset)|Конструктор. Создает и инициализирует `CStreamRowset` объект.|
 |[Закрыть](#close)|Освобождает указатель интерфейса [ISequentialStream](/previous-versions/windows/desktop/ms718035(v=vs.85)) в классе.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте `CStreamRowset` в `CCommand` `CTable` объявлении или, например:
 

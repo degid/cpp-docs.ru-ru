@@ -17,7 +17,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 02/11/2020
 ms.locfileid: "77127037"
 ---
-# <a name="concurrencydirect3d-namespace"></a>Пространство имен Concurrency::direct3d
+# <a name="concurrencydirect3d-namespace"></a>Пространство имен concurrency::direct3d
 
 Пространство имен `direct3d` предоставляет функции, поддерживающие возможность взаимодействия с D3D. Она позволяет использовать ресурсы D3D для вычислений в коде AMP. Он также позволяет использовать ресурсы, созданные в AMP в коде D3D, без создания избыточных промежуточных копий. Вы можете постепенно ускорить вычислительные области приложений DirectX с помощью C++ amp и использовать API D3D на основе данных, полученных из вычислений amp.
 
@@ -31,19 +31,19 @@ namespace direct3d;
 
 ### <a name="classes"></a>Классы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс scoped_d3d_access_lock](scoped-d3d-access-lock-class.md)|Оболочка RAII для блокировки доступа D3D на объекте `accelerator_view`.|
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Структура adopt_d3d_access_lock_t](adopt-d3d-access-lock-t-structure.md)|Тип тега, указывающий, что блокировка доступа D3D должна быть принята, а не получена.|
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[abs](concurrency-direct3d-namespace-functions-amp.md#abs)|Возвращает абсолютное значение аргумента|
 |[фиксаци](concurrency-direct3d-namespace-functions-amp.md#clamp)|Перегружен. Фиксации _X к указанному _Minу и диапазону _Max|

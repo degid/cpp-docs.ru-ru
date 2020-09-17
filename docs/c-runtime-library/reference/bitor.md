@@ -41,7 +41,7 @@ ms.locfileid: "80171233"
 #define bitor |
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор &#124;.
 
@@ -73,4 +73,4 @@ int main( )
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

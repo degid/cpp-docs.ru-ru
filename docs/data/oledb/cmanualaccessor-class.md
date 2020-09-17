@@ -62,7 +62,7 @@ class CManualAccessor : public CAccessorBase
 |[CreateAccessor](#createaccessor)|Выделяет память для структур привязки столбца и инициализирует элементы данных столбца.|
 |[креатепараметеракцессор](#createparameteraccessor)|Выделяет память для параметров структуры привязки и инициализирует элементы данных параметров.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 С помощью `CManualAccessor` можно указать параметры и привязку выходного столбца с помощью вызовов функций времени выполнения.
 
@@ -102,7 +102,7 @@ void AddBindEntry(DBORDINAL nOrdinal,
 *пстатус*<br/>
 окне Указатель на переменную, которая должна быть привязана к состоянию столбца, если это необходимо.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы использовать эту функцию, необходимо сначала вызвать [CreateAccessor](../../data/oledb/cmanualaccessor-createaccessor.md). Нельзя добавить больше записей, чем количество столбцов, указанное в `CreateAccessor` .
 
@@ -146,7 +146,7 @@ void AddParameterEntry(DBORDINAL nOrdinal,
 *епарамио*<br/>
 окне Указывает, является ли параметр, с которым связана привязка, входным, входным или выходным параметром.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы использовать эту функцию, необходимо сначала вызвать [креатепараметеракцессор](../../data/oledb/cmanualaccessor-createparameteraccessor.md).
 
@@ -177,7 +177,7 @@ HRESULT CreateAccessor(int nBindEntries,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию перед вызовом `CManualAccessor::AddBindEntry` функции.
 
@@ -208,7 +208,7 @@ HRESULT CreateParameterAccessor(int nBindEntries,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту функцию необходимо вызвать перед вызовом [аддпараметерентри](../../data/oledb/cmanualaccessor-addparameterentry.md).
 

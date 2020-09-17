@@ -45,7 +45,7 @@ class boyer_moore_searcher
 | **Конструктор** | |
 | [boyer_moore_searcher](#boyer-moore-searcher-constructor) | Конструирует экземпляр службы поиска. |
 | **Операторы** | |
-| [оператор ()](#operator-call) | Вызывает операцию в последовательности. |
+| [operator()](#operator-call) | Вызывает операцию в последовательности. |
 
 ## <a name="boyer_moore_searcher-constructor"></a><a name="boyer-moore-searcher-constructor"></a> Конструктор boyer_moore_searcher
 
@@ -70,7 +70,7 @@ boyer_moore_searcher(
 *HF*\
 Вызываемый объект, используемый для хэширования элементов последовательности.
 
-*Возможен*\
+*pred*\
 Необязательный предикат сравнения равенства для элементов последовательности. Если тип сравнения на равенство не указан, по умолчанию используется значение `std::equal_to` .
 
 ### <a name="remarks"></a>Комментарии
@@ -79,7 +79,7 @@ boyer_moore_searcher(
 
 Этот класс впервые появились в C++ 17.
 
-## <a name="operator"></a><a name="operator-call"></a> оператор ()
+## <a name="operator"></a><a name="operator-call"></a> operator()
 
 Оператор Call объекта Function. Ищет в последовательности аргументов `[first, last)` последовательность, указанную в конструкторе.
 
@@ -92,10 +92,10 @@ pair<RandomAccessIterator2, RandomAccessIterator2> operator()(
 
 ### <a name="parameters"></a>Параметры
 
-*началь*\
+*first*\
 Начальный элемент последовательности, в которой необходимо выполнить поиск.
 
-*Последняя*\
+*last*\
 Конец последовательности, в которой необходимо выполнить поиск.
 
 ### <a name="remarks"></a>Комментарии

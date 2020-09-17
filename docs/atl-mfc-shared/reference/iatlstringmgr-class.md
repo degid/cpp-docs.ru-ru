@@ -43,7 +43,7 @@ __interface IAtlStringMgr
 |[жетнилстринг](#getnilstring)|Возвращает указатель на `CStringData` объект, используемый пустыми строковыми объектами.|
 |[Перераспределения](#reallocate)|Вызовите этот метод, чтобы перераспределить структуру строковых данных.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот интерфейс управляет памятью, используемой независимыми от MFC строковыми классами; например [ксимплестрингт](../../atl-mfc-shared/reference/csimplestringt-class.md), [CStringT](../../atl-mfc-shared/reference/cstringt-class.md)и [CFixedStringT](../../atl-mfc-shared/reference/cfixedstringt-class.md).
 
@@ -51,7 +51,7 @@ __interface IAtlStringMgr
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлсимпстр. h
+**Заголовок:** атлсимпстр.h
 
 ## <a name="iatlstringmgrallocate"></a><a name="allocate"></a> Иатлстрингмгр:: allocate
 
@@ -76,7 +76,7 @@ CStringData* Allocate(int nAllocLength,int nCharSize) throw();
 > [!NOTE]
 > Не сообщайте о сбое выделения, вызывая исключение. Вместо этого необходимо получить сигнал о неудачном выделении, возвращая значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите метод [иатлстрингмгр:: Free](#free) или [иатлстрингмгр:: reallocate](#reallocate) , чтобы освободить память, выделенную этим методом.
 
@@ -95,7 +95,7 @@ IAtlStringMgr* Clone() throw();
 
 Возвращает копию объекта `IAtlStringMgr`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно вызывается платформой, когда для новой строки требуется диспетчер строк. В большинстве случаев **`this`** возвращается указатель.
 
@@ -117,7 +117,7 @@ void Free(CStringData* pData) throw();
 *pData*<br/>
 Указатель на блок памяти, который должен быть освобожден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает указанный блок памяти, выделенный ранее путем [выделения](#allocate) или [перераспределения](../../atl/reference/iatlmemmgr-class.md#reallocate).
 
@@ -136,7 +136,7 @@ CStringData* GetNilString() throw();
 
 Указатель на объект, `CStringData` используемый для представления пустой строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы вернуть представление пустой строки.
 
@@ -172,7 +172,7 @@ CStringData* Reallocate(
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы изменить размер существующего блока памяти, заданного в *pData*.
 

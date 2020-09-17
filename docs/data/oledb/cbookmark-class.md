@@ -111,9 +111,9 @@ class CBookmark< 0 > : public CBookmarkBase
 
 | Имя | Описание |
 |-|-|
-|[Оператор =](#operator)|Назначает один `CBookmark` класс другому.|
+|[operator=](#operator)|Назначает один `CBookmark` класс другому.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CBookmark<0>` является специализацией шаблона `CBookmark` ; ее буфер динамически создается во время выполнения.
 
@@ -133,7 +133,7 @@ CBookmark(DBLENGTH nSize);
 *нсизе*<br/>
 окне Размер буфера закладки в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция устанавливает буфер в значение NULL, а размер буфера — в 0. Вторая функция задает размер буфера равным *нсизе*, а буфер — массиву байтов *нсизе* байт.
 
@@ -190,11 +190,11 @@ HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция доступна только в `CBookmark<0>` .
 
-## <a name="cbookmarkoperator-"></a><a name="operator"></a> CBookmark:: operator =
+## <a name="cbookmarkoperator-"></a><a name="operator"></a> CBookmark::operator=
 
 Присваивает `CBookmark` объект другому объекту.
 
@@ -204,7 +204,7 @@ HRESULT SetBookmark(DBLENGTH nSize, BYTE* pBuffer) throw();
 CBookmark& operator =(const CBookmark& bookmark) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор необходим только в `CBookmark<0>` .
 

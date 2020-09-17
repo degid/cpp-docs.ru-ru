@@ -27,7 +27,7 @@ ms.locfileid: "88841744"
 typedef integral_constant<bool, false> false_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для специализации шаблона `integral_constant`.
 
@@ -60,7 +60,7 @@ true_type == true
 typedef integral_constant<bool, true> true_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для специализации шаблона `integral_constant`.
 

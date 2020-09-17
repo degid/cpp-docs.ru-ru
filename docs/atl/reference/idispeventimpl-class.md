@@ -86,7 +86,7 @@ class ATL_NO_VTABLE IDispEventImpl : public IDispEventSimpleImpl<nID, T, pdiid>
 |[IDispEventImpl::GetTypeInfoCount](#gettypeinfocount)|Извлекает количество типовых информационных интерфейсов.|
 |[IDispEventImpl::GetUserDefinedType](#getuserdefinedtype)|Извлекает базовый тип пользовательского типа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IDispEventImpl`предоставляет способ реализации дисинтерфейса событий, не требуя от вас предоставления кода реализации для каждого метода/события на этом интерфейсе. `IDispEventImpl`обеспечивает реализацию методов. `IDispatch` Вам нужно только предоставить реализации для событий, которые вы заинтересованы в обработке.
 
@@ -162,7 +162,7 @@ STDMETHOD(GetIDsOfNames)(
     DISPID* rgdispid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) в Windows SDK.
 
@@ -177,7 +177,7 @@ STDMETHOD(GetTypeInfo)(
     ITypeInfo** pptinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="idispeventimplgettypeinfocount"></a><a name="gettypeinfocount"></a>IDispEventImpl::GetTypeInfoCount
 
@@ -187,7 +187,7 @@ STDMETHOD(GetTypeInfo)(
 STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) в Windows SDK.
 
@@ -213,7 +213,7 @@ VARTYPE GetUserDefinedType(
 
 Тип варианта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [ITypeInfo::GetRefTypeInfo](/windows/win32/api/oaidl/nf-oaidl-itypeinfo-getreftypeinfo).
 
@@ -233,7 +233,7 @@ IDispEventImpl();
 typedef tihclass _tihclass;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию класс `CComTypeInfoHolder`. `CComTypeInfoHolder`управляет информацией типа для класса.
 

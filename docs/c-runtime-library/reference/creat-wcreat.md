@@ -84,7 +84,7 @@ int _wcreat(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_creat** создает новый файл или открывает его и усекает существующий. **_wcreat** — это версия **_creat**для расширенных символов; Аргумент *filename* для **_wcreat** является строкой расширенных символов. в противном случае **_wcreat** и **_creat** ведут себя одинаково.
 

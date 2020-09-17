@@ -50,7 +50,7 @@ class CGopherLocator : public CObject
 |----------|-----------------|
 |[CGopherLocator:оператор LPCTSTR](#operator_lpctstr)|Непосредственно получает доступ к `CGopherLocator` символам, хранящимся в объекте в виде строки C-стиля.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Приложение должно получить локатор сервера суслика, прежде чем он сможет получить информацию с этого сервера. После того, как он имеет локатор, он должен относиться к локатору как к непрозрачному токену.
 
@@ -83,7 +83,7 @@ CGopherLocator(const CGopherLocator& ref);
 *ref*<br/>
 Ссылка на `CGopherLocator` постоянный объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда `CGopherLocator` не создаете объект напрямую. Вместо этого позвоните [в CGopherConnection::CreateLocator](../../mfc/reference/cgopherconnection-class.md#createlocator) для `CGopherLocator` создания и возврата указателя на объект.
 
@@ -104,7 +104,7 @@ BOOL GetLocatorType(DWORD& dwRef) const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, функция Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) может быть вызвана для определения причины ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возможные типы следующие:
 
@@ -147,7 +147,7 @@ operator LPCTSTR () const;
 
 Указатель символов к данным строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Символы не копируются; возвращается только указатель.
 

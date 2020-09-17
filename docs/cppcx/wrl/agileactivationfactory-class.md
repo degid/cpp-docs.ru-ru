@@ -36,7 +36,7 @@ class AgileActivationFactory :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 

@@ -24,7 +24,7 @@ template <>
 class regex_traits<wchar_t>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс является явной специализацией шаблона класса [regex_traits](../standard-library/regex-traits-class.md) для элементов типа **`wchar_t`** (чтобы можно было использовать функции библиотеки, которые управляют объектами этого типа).
 

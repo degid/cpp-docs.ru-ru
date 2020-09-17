@@ -62,7 +62,7 @@ template <class TBase = CWindow>
 |----------|-----------------|
 |[CAxWindow2T:оператор](#operator_eq)|Присваивает HWND `CAxWindow2T` существующему объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAxWindow2T`предоставляет методы для манипулирования окном, в котором размещается элемент управления ActiveX. `CAxWindow2T`также имеет поддержку для хостинга лицензированных элементов управления ActiveX. Хостинг предоставляется " **AtlAxWinLic80**", который `CAxWindow2T`обернут .
 
@@ -115,7 +115,7 @@ HWND Create(
     LPVOID lpCreateParam = NULL);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CAxWindow2T::Create`звонки [CWindow::Создание](../../atl/reference/cwindow-class.md#create) с LPCTSTR *lpstrWndClass* параметр, установленный`AtlAxWinLic80`в окне класса, который обеспечивает контроль хостинга ( ).
 
@@ -150,7 +150,7 @@ HRESULT CreateControlLic(
 *bstrLicKey*<br/>
 Ключ лицензии для управления; NULL при создании нелицензированного элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [CAxWindow::CreateControl](../../atl/reference/caxwindow-class.md#createcontrol) для описания оставшихся параметров и значения возврата.
 
@@ -187,7 +187,7 @@ HRESULT CreateControlLicEx(
 *bstrLicKey*<br/>
 Ключ лицензии для управления; NULL при создании нелицензированного элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [CAxWindow::CreateControlEx](../../atl/reference/caxwindow-class.md#createcontrolex) для описания оставшихся параметров и значения возврата.
 

@@ -14,7 +14,7 @@ ms.locfileid: "87226728"
 ---
 # <a name="how-to-select-among-completed-tasks"></a>Практическое руководство. Выбор среди завершенных задач
 
-В этом примере показано, как использовать классы [Concurrency:: Choice](../../parallel/concrt/reference/choice-class.md) и [Concurrency:: Join](../../parallel/concrt/reference/join-class.md) , чтобы выбрать первую задачу для завершения алгоритма поиска.
+В этом примере показано, как использовать классы [concurrency::Choice](../../parallel/concrt/reference/choice-class.md) и [concurrency::Join](../../parallel/concrt/reference/join-class.md) , чтобы выбрать первую задачу для завершения алгоритма поиска.
 
 ## <a name="example"></a>Пример
 
@@ -28,9 +28,9 @@ ms.locfileid: "87226728"
 
 1. Не существует сотрудника с указанным идентификатором или зарплатой.
 
-В первых двух случаях в примере используется объект [Concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) для хранения идентификатора и другой `single_assignment` объект для хранения зарплаты. В примере используется `join` объект для третьего случая. `join`Объект состоит из двух дополнительных `single_assignment` объектов: один для случая, когда не существует сотрудника с указанным идентификатором, и один для случая, когда сотрудник с указанной зарплатой не существует. `join`Объект отправляет сообщение, когда каждый из его членов получает сообщение. В этом примере `join` объект отправляет сообщение, когда не существует сотрудника с указанным идентификатором или зарплатой.
+В первых двух случаях в примере используется объект [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) для хранения идентификатора и другой `single_assignment` объект для хранения зарплаты. В примере используется `join` объект для третьего случая. `join`Объект состоит из двух дополнительных `single_assignment` объектов: один для случая, когда не существует сотрудника с указанным идентификатором, и один для случая, когда сотрудник с указанной зарплатой не существует. `join`Объект отправляет сообщение, когда каждый из его членов получает сообщение. В этом примере `join` объект отправляет сообщение, когда не существует сотрудника с указанным идентификатором или зарплатой.
 
-В примере используется объект [Concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) для параллельного выполнения обоих алгоритмов поиска. Каждая задача поиска записывает в один из `single_assignment` объектов, чтобы указать, существует ли данный сотрудник. В примере используется функция [Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) , чтобы получить индекс первого буфера, содержащего сообщение, и **`switch`** блок для вывода результата.
+В примере используется объект [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) для параллельного выполнения обоих алгоритмов поиска. Каждая задача поиска записывает в один из `single_assignment` объектов, чтобы указать, существует ли данный сотрудник. В примере используется функция [concurrency::Receive](reference/concurrency-namespace-functions.md#receive) , чтобы получить индекс первого буфера, содержащего сообщение, и **`switch`** блок для вывода результата.
 
 [!code-cpp[concrt-find-employee#1](../../parallel/concrt/codesnippet/cpp/how-to-select-among-completed-tasks_1.cpp)]
 
@@ -43,7 +43,7 @@ Employee with id 61935 has salary 29905.00.
 No employee has id 899 or salary 31223.00.
 ```
 
-В этом примере используется вспомогательная функция [Concurrency:: make_choice](reference/concurrency-namespace-functions.md#make_choice) для создания `choice` объектов и вспомогательная функция [Concurrency:: make_join](reference/concurrency-namespace-functions.md#make_join) для создания `join` объектов.
+В этом примере используется вспомогательная функция [concurrency::make_choice](reference/concurrency-namespace-functions.md#make_choice) для создания `choice` объектов и вспомогательная функция [concurrency::make_join](reference/concurrency-namespace-functions.md#make_join) для создания `join` объектов.
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 

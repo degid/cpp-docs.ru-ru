@@ -101,7 +101,7 @@ class errc {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="io_errc"></a>io_errc
 
@@ -113,7 +113,7 @@ class io_errc {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объекты [std::make_error_code()](../standard-library/system-error-functions.md#make_error_code) и [std::make_error_condition()](../standard-library/system-error-functions.md#make_error_condition) являются перегруженными для этого перечисления.
 

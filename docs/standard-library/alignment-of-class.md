@@ -30,7 +30,7 @@ struct alignment_of;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Запрос типа содержит значение выравнивания типа *Ty*.
 

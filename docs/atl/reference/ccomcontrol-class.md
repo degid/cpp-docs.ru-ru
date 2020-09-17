@@ -67,7 +67,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 |[CComControl::FireOnRequestEdit](#fireonrequestedit)|Уведомляет раковину контейнера о том, что элемент управления вот-вот изменится и что объект запрашивает раковину, как действовать.|
 |[CComControl::MessageBox](#messagebox)|Вызовите этот метод для создания, отображения и эксплуатации ящика сообщений.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComControl`представляет собой набор полезных функций помощника управления и основных элементов данных для управления ATL. При создании стандартного элемента управления или управления DHTML с помощью atL `CComControl`Control Wizard мастер автоматически выводит ваш класс из. `CComControl`получает большую часть своих методов от [CComControlBase](../../atl/reference/ccomcontrolbase-class.md).
 
@@ -95,7 +95,7 @@ class ATL_NO_VTABLE CComControl : public CComControlBase,
 CComControl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает конструктор [cComControlBase,](ccomcontrolbase-class.md#ccomcontrolbase) передавая `m_hWnd` члену данных унаследованный через [CWindowImpl](../../atl/reference/cwindowimpl-class.md).
 
@@ -115,7 +115,7 @@ virtual HRESULT ControlQueryInterface(const IID& iid, void** ppv);
 *Ppv*<br/>
 (ваут) Указатель на указатель интерфейса, идентифицированный *iid,* или NULL, если интерфейс не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только обрабатывает интерфейсы в таблице карты COM.
 
@@ -139,7 +139,7 @@ virtual HWND CreateControlWindow(HWND hWndParent, RECT& rcPos);
 *rcPos*<br/>
 (в) Первоначальный размер и положение создаваемого окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, если вы хотите сделать что-то другое, кроме создания одного окна, например, для создания двух окон, одно из которых становится панелью инструментов для управления.
 
@@ -164,7 +164,7 @@ HRESULT FireOnChanged(DISPID dispID);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ваш класс управления происходит от [iPropertyNotifySink,](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink)этот метод вызывает [CFirePropNotifyEvent::FireOnChanged,](cfirepropnotifyevent-class.md#fireonchanged) чтобы уведомить все подключенные `IPropertyNotifySink` интерфейсы о том, что указанное свойство управления изменилось. Если ваш класс управления `IPropertyNotifySink`не вытекает из, этот метод возвращается S_OK.
 
@@ -191,7 +191,7 @@ HRESULT FireOnRequestEdit(DISPID dispID);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ваш класс управления происходит от [iPropertyNotifySink,](/windows/win32/api/ocidl/nn-ocidl-ipropertynotifysink)этот метод вызывает [CFirePropNotifyEvent::FireOnRequestEdit,](cfirepropnotifyevent-class.md#fireonrequestedit) чтобы уведомить все подключенные `IPropertyNotifySink` интерфейсы о том, что указанное свойство управления вот-вот изменится. Если ваш класс управления `IPropertyNotifySink`не вытекает из, этот метод возвращается S_OK.
 
@@ -227,7 +227,7 @@ int MessageBox(
 
 Возвращает значение, указанное в одном из значений пункта меню, перечисленных в [документации SDK](/windows/win32/api/winuser/nf-winuser-messagebox) Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `MessageBox`полезна как во время разработки, так и как простой способ отображения ошибки или предупреждения пользователя.
 

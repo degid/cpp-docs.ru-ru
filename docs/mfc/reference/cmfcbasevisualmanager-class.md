@@ -53,14 +53,14 @@ class CMFCBaseVisualManager: public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкбасевисуалманажер:: Кмфкбасевисуалманажер](#cmfcbasevisualmanager)|Создает и инициализирует объект `CMFCBaseVisualManager`.|
 |`CMFCBaseVisualManager::~CMFCBaseVisualManager`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкбасевисуалманажер::D Равчеккбокс](#drawcheckbox)|Рисует элемент управления "флажок" с помощью текущей темы Windows.|
 |[Кмфкбасевисуалманажер::D Равкомбобордер](#drawcomboborder)|Рисует границу поля со списком с помощью текущей темы Windows.|
@@ -78,7 +78,7 @@ class CMFCBaseVisualManager: public CObject
 |[Кмфкбасевисуалманажер:: Клеанупсемес](#cleanupthemes)|Вызовы `CloseThemeData` для всех дескрипторов, полученных в `UpdateSystemColors` .|
 |[Кмфкбасевисуалманажер:: Упдатесистемколорс](#updatesystemcolors)|Вызовы `OpenThemeData` для получения дескрипторов для рисования различных элементов управления: окон, панелей инструментов, кнопок и т. д.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Нет необходимости напрямую создавать экземпляры объектов этого класса.
 
@@ -92,7 +92,7 @@ class CMFCBaseVisualManager: public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксвисуалманажер. h
+**Заголовок:** афксвисуалманажер.h
 
 ## <a name="cmfcbasevisualmanagercleanupthemes"></a><a name="cleanupthemes"></a> Кмфкбасевисуалманажер:: Клеанупсемес
 
@@ -102,7 +102,7 @@ class CMFCBaseVisualManager: public CObject
 void CleanUpThemes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только для внутреннего использования.
 
@@ -156,7 +156,7 @@ virtual BOOL DrawCheckBox(
 
 Значение TRUE, если API темы включен; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значения *nсведения* соответствуют следующим стилям флажков.
 
@@ -408,7 +408,7 @@ virtual WinXpTheme GetStandardWindowsTheme();
 void UpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только для внутреннего использования.
 

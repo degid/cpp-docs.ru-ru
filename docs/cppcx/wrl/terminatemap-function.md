@@ -42,13 +42,13 @@ inline bool TerminateMap(
 
 **`true`** значение, если все фабрики класса были завершены; в противном случае — **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Завершает работу фабрик классов в указанном модуле.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

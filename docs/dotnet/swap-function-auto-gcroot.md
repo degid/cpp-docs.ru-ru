@@ -66,7 +66,7 @@ s1 = 'string two', s2 = 'string one'
 
 ## <a name="requirements"></a>Требования
 
-**Файл заголовка** \<мсклр \ auto_gcroot. h >
+**Файл заголовка** \<мсклр \ auto_gcroot.h >
 
 Мсклр **пространства имен**
 

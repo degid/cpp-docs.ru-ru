@@ -93,19 +93,19 @@ class uint_3;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор uint_3](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |uint_3::get_x||
 |uint_3::get_xy||
@@ -146,32 +146,32 @@ class uint_3;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|uint_3:: operator--||
-|uint_3:: operator% =||
-|uint_3:: operator & =||
-|uint_3:: operator * =||
-|uint_3:: operator/=||
-|uint_3:: operator ^ =||
-|uint_3:: operator&#124;=||
-|uint_3:: operator ~||
-|uint_3:: operator + +||
-|uint_3:: operator + =||
-|uint_3:: operator <\<=||
-|uint_3:: operator =||
-|uint_3:: operator-=||
-|uint_3:: operator > > =||
+|uint_3::operator--||
+|uint_3::operator%=||
+|uint_3::operator&=||
+|uint_3::operator*=||
+|uint_3::operator/=||
+|uint_3::operator^=||
+|uint_3::operator&#124;=||
+|uint_3::operator~||
+|uint_3::operator++||
+|uint_3::operator+=||
+|uint_3::operator<\<=||
+|uint_3::operator=||
+|uint_3::operator-=||
+|uint_3::operator>>=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#uint_3__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |uint_3::b||
 |uint_3::bg||
@@ -210,9 +210,9 @@ class uint_3;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="ctor"></a>uint_3
 

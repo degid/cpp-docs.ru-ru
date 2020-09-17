@@ -59,10 +59,10 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Число выделяемых элементов в массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает `cache.allocate(count)`, где `cache` — объект кэша.
 
@@ -76,13 +76,13 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на первый объект, который должен быть освобожден из хранилища.
 
-*расчета*\
+*count*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член вызывает `cache.deallocate(ptr, count)`, где `cache` представляет объект кэша.
 
@@ -99,14 +99,14 @@ bool equals(const sync<Cache>& Other) const;
 *Мбайта*\
 Объект кэша фильтра синхронизации.
 
-*Иной*\
+*Other*\
 Объект кэша для сравнения на равенство.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Функция – член всегда возвращает значение **`true`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также
 

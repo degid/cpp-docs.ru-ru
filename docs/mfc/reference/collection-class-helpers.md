@@ -19,7 +19,7 @@ ms.locfileid: "88841432"
 
 Классы коллекций `CMap` , `CList` и `CArray` используют общие вспомогательные функции для таких целей, как сравнение, копирование и сериализация элементов. В рамках реализации классов, основанных на `CMap` , `CList` и `CArray` , необходимо переопределить эти функции при необходимости с помощью версий, адаптированных к типу данных, хранящихся в карте, списке или массиве. Дополнительные сведения о переопределении вспомогательных функций, таких как `SerializeElements` , см. в статье [коллекции статей: как создать строго типизированную коллекцию](../../mfc/how-to-make-a-type-safe-collection.md). Обратите внимание, что `ConstructElements` и `DestructElements` являются устаревшими.
 
-Библиотека Microsoft Foundation Class предоставляет следующие глобальные функции в афкстемпл. h, помогающие настроить классы коллекций.
+Библиотека Microsoft Foundation Class предоставляет следующие глобальные функции в афкстемпл.h, помогающие настроить классы коллекций.
 
 ### <a name="collection-class-helpers"></a>Вспомогательные функции классов коллекции
 
@@ -61,7 +61,7 @@ CompareElements(
 
 Ненулевое значение, если объект, на который указывает *pElement1* , равен объекту, на который указывает *pElement2*; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CMap`Вызовы используют `CMap` *ключ* параметров шаблона и *ARG_KEY*.
 
@@ -99,7 +99,7 @@ void AFXAPI CopyElements(
 *нкаунт*<br/>
 Число копируемых элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию использует оператор простого присваивания ( **=** ) для выполнения операции копирования. Если копируемый тип не имеет перегруженного оператора =, то реализация по умолчанию выполняет побитовое копирование.
 
@@ -107,7 +107,7 @@ void AFXAPI CopyElements(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афкстемпл. h
+  **Заголовок** афкстемпл.h
 
 ## <a name="dumpelements"></a><a name="dumpelements"></a> думпелементс
 
@@ -135,7 +135,7 @@ void  AFXAPI DumpElements(
 *нкаунт*<br/>
 Количество элементов для дампа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CArray::Dump`Функции, `CList::Dump` и `CMap::Dump` вызывают этот метод, если глубина дампа больше 0.
 
@@ -143,7 +143,7 @@ void  AFXAPI DumpElements(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афкстемпл. h
+  **Заголовок** афкстемпл.h
 
 ## <a name="hashkey"></a><a name="hashkey"></a> хашкэй
 
@@ -166,9 +166,9 @@ AFX_INLINE UINT AFXAPI HashKey(ARG_KEY  key);
 
 Хэш-значение ключа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
-Эта функция вызывается напрямую [кмап:: ремовекэй](cmap-class.md#removekey) и косвенно с помощью [Кмап:: Lookup](cmap-class.md#lookup) и [кмап:: operator &#91;&#93;](cmap-class.md#operator_at).
+Эта функция вызывается напрямую [кмап:: ремовекэй](cmap-class.md#removekey) и косвенно с помощью [Кмап:: Lookup](cmap-class.md#lookup) и [кмап::operator &#91;&#93;](cmap-class.md#operator_at).
 
 Реализация по умолчанию создает хэш-значение путем сдвига *ключа* вправо на четыре позиции. Переопределите эту функцию, чтобы она возвращала хэш-значения, соответствующие вашему приложению.
 
@@ -185,7 +185,7 @@ template <> UINT AFXAPI HashKey(unsigned __int64 key)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афкстемпл. h
+  **Заголовок** афкстемпл.h
 
 ## <a name="serializeelements"></a><a name="serializeelements"></a> сериализилементс
 
@@ -210,7 +210,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 *нкаунт*<br/>
 Число архивируемых элементов
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию выполняет побитовую операцию чтения или записи.
 
@@ -222,7 +222,7 @@ void AFXAPI SerializeElements(CArchive& ar, TYPE* pElements, INT_PTR nCount);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афкстемпл. h
+  **Заголовок** афкстемпл.h
 
 ## <a name="see-also"></a>См. также раздел
 

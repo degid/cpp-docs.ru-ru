@@ -69,7 +69,7 @@ class CComGITPtr
 |----------|-----------------|
 |[CComGITPtr::m_dwCookie](#m_dwcookie)|Файл Cookie.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты, которые агрегируют свободный поток маршала и должны использовать указатели интерфейса, полученные от других объектов, должны предпринять дополнительные шаги для обеспечения правильного маршала интерфейсов. Обычно это включает в себя хранение указателей интерфейса в GIT и получение указателя от GIT каждый раз, когда он используется. Класс `CComGITPtr` предоставляется, чтобы помочь вам использовать указатели интерфейса, хранящиеся в GIT.
 
@@ -102,7 +102,7 @@ HRESULT Attach(DWORD dwCookie) throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладке сборки возникает ошибка утверждения, если GIT недействителен, или если файл cookie равен NULL.
 
@@ -132,7 +132,7 @@ CComGITPtr(CComGITPtr&& rv);
 *Rv*<br/>
 (в) Объект `CComGITPtr` источника для перемещения данных с.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает новый `CComGITPtr` объект, дополнительно `CComGITPtr` используя существующий объект.
 
@@ -146,7 +146,7 @@ CComGITPtr(CComGITPtr&& rv);
 ~CComGITPtr() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет интерфейс из глобальной таблицы интерфейса (GIT), используя [CComGITPtr::Revoke](#revoke).
 
@@ -167,7 +167,7 @@ HRESULT CopyTo(T** pp) const throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Интерфейс из GIT скопирован в пройденый указатель. Указатель должен быть выпущен абонентом, когда он больше не требуется.
 
@@ -183,7 +183,7 @@ DWORD Detach() throw();
 
 Возвращает файл cookie `CComGITPtr` с объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это до вызывающего абонента, чтобы удалить интерфейс из GIT, используя [CComGITPtr::Отмена](#revoke).
 
@@ -199,7 +199,7 @@ DWORD GetCookie() const;
 
 Возвращает печенье.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файлы cookie — это переменная, используемая для определения интерфейса и его местоположения.
 
@@ -211,7 +211,7 @@ DWORD GetCookie() const;
 DWORD m_dwCookie;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файлы cookie — это переменная, используемая для определения интерфейса и его местоположения.
 
@@ -244,7 +244,7 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 
 Возвращает обновленный `CComGITPtr` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Присваивает объекту `CComGITPtr` новое значение либо из существующего объекта, либо из ссылки на глобальную таблицу интерфейсов.
 
@@ -256,7 +256,7 @@ CComGITPtr& operator= (CComGITPtr&& rv);
 operator DWORD() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файлы cookie — это переменная, используемая для определения интерфейса и его местоположения.
 
@@ -272,7 +272,7 @@ HRESULT Revoke() throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет интерфейс из GIT.
 

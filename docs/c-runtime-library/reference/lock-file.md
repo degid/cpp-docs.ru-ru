@@ -51,7 +51,7 @@ void _lock_file( FILE* file );
 *File*<br/>
 Дескриптор файла.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_lock_file** блокирует объект **File** , указанный в *файле*. Базовый файл не заблокирован **_lock_file**. Используйте [_unlock_file](unlock-file.md) для снятия блокировки с файла. Вызовы **_lock_file** и **_unlock_file** должны быть сопоставлены в потоке.
 

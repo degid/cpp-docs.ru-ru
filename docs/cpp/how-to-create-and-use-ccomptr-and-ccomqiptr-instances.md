@@ -23,7 +23,7 @@ ms.locfileid: "74246539"
 
 [!code-cpp[COM_smart_pointers#01](../cpp/codesnippet/CPP/how-to-create-and-use-ccomptr-and-ccomqiptr-instances_1.cpp)]
 
-`CComPtr` и его родственники являются частью библиотеки ATL и определяются в \<atlcomcli. h >. `_com_ptr_t` объявляется в \<comip. h >. Компилятор создает специализации `_com_ptr_t` при создании классов-оболочек для библиотек типов.
+`CComPtr` и его родственники являются частью библиотеки ATL и определяются в \<atlcomcli.h >. `_com_ptr_t` объявляется в \<comip.h >. Компилятор создает специализации `_com_ptr_t` при создании классов-оболочек для библиотек типов.
 
 ## <a name="example"></a>Пример
 

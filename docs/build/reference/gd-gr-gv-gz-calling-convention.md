@@ -38,7 +38,7 @@ ms.locfileid: "87234371"
 > **`/Gv`**\
 > **`/Gz`**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`/Gd`** параметр по умолчанию задает соглашение о вызове [__cdecl](../../cpp/cdecl.md) для всех функций, кроме функций и функций элементов C++, которые помечены как [__stdcall](../../cpp/stdcall.md), [__fastcall](../../cpp/fastcall.md)или [__vectorcall](../../cpp/vectorcall.md).
 

@@ -25,7 +25,7 @@ namespace fast_math;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[COS](concurrency-fast-math-namespace-functions.md#cos)|Вычисляет арккосинус аргумента|
 |[cosf](concurrency-fast-math-namespace-functions.md#cosf)|Вычисляет арккосинус аргумента|
@@ -95,7 +95,7 @@ namespace fast_math;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_math. h
+**Заголовок:** amp_math.h
 
 **Пространство имен:** Concurrency:: fast_math
 

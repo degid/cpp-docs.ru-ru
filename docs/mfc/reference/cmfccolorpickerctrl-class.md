@@ -91,7 +91,7 @@ class CMFCColorPickerCtrl : public CButton
 |----------|-----------------|
 |[CMFCColorPickerCtrl::DrawCursor](#drawcursor)|Вызывается фреймворком перед отображением курсора, указываючего на выбранный цвет.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Стандартные цвета выбираются из шестиугольной цветовой палитры, а пользовательские цвета выбираются из панели яркости, где цвета определяются с использованием либо красной/зеленой/синей обозначения, либо оттенка/санурации/светимости.
 
@@ -142,7 +142,7 @@ CMFCColorPickerCtrl();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrldrawcursor"></a><a name="drawcursor"></a>CMFCColorPickerCtrl::DrawCursor
 
@@ -162,7 +162,7 @@ virtual void DrawCursor(
 *rect*<br/>
 (в) Определяет прямоугольную область вокруг выбранного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, когда вам нужно изменить форму курсора, который указывает на выбранный цвет.
 
@@ -178,7 +178,7 @@ COLORREF GetColor() const;
 
 Значение RGB выбранного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlgethls"></a><a name="gethls"></a>CMFCColorPickerCtrl:GetHLS
 
@@ -202,7 +202,7 @@ void GetHLS(
 *Насыщенность*<br/>
 (ваут) Указатель на переменную типа double, которая получает информацию о насыщении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlgethue"></a><a name="gethue"></a>CMFCColorPickerCtrl:GetHue
 
@@ -216,7 +216,7 @@ double GetHue() const;
 
 Компонент оттенка выбранного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlgetluminance"></a><a name="getluminance"></a>CMFCColorPickerCtrl:GetLuminance
 
@@ -230,7 +230,7 @@ double GetLuminance() const;
 
 Светящийся компонент выбранного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlgetsaturation"></a><a name="getsaturation"></a>CMFCColorPickerCtrl::GetSaturation
 
@@ -244,7 +244,7 @@ double GetSaturation() const;
 
 Компонент насыщения выбранного цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlselectcellhexagon"></a><a name="selectcellhexagon"></a>CMFCColorPickerCtrl::SelectCellHexagon
 
@@ -282,7 +282,7 @@ BOOL SelectCellHexagon(
 
 Вторая перегрузка этого метода всегда возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая перегрузка этого метода устанавливает текущий цвет к цвету, который соответствует указанным красным, зеленым и синим компонентам цвета.
 
@@ -301,7 +301,7 @@ void SetColor(COLORREF Color);
 *Цвет*<br/>
 (в) Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlsethls"></a><a name="sethls"></a>CMFCColorPickerCtrl:SetHLS
 
@@ -329,7 +329,7 @@ void SetHLS(
 *bНедействительно*<br/>
 (в) TRUE, чтобы заставить окно немедленно обновить новый цвет; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlsethue"></a><a name="sethue"></a>CMFCColorPickerCtrl:SetHue
 
@@ -344,7 +344,7 @@ void SetHue(double Hue);
 *Hue*<br/>
 (в) Значение оттенка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlsetluminance"></a><a name="setluminance"></a>CMFCColorPickerCtrl::SetLuminance
 
@@ -359,7 +359,7 @@ void SetLuminance(double Luminance);
 *Освещенность*<br/>
 (в) Значение яркости.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlsetluminancebarwidth"></a><a name="setluminancebarwidth"></a>CMFCColorPickerCtrl::SetLuminanceBarWidth
 
@@ -374,7 +374,7 @@ void SetLuminanceBarWidth(int w);
 *w*<br/>
 (в) Ширина панели яркости измеряется в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы изменить размер панели яркости, которая находится на **пользовательской** вкладке управления сборщиком цветов. Параметр *w* определяет новую ширину панели яркости. Значение ширины игнорируется, если оно превышает три четверти ширины области клиента.
 
@@ -391,7 +391,7 @@ void SetOriginalColor(COLORREF ref);
 *ref*<br/>
 (в) Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, когда управление сборщиком цветов инициализировано.
 
@@ -408,7 +408,7 @@ void SetPalette(CPalette* pPalette);
 *pPalette*<br/>
 (в) Указатель на цветовую палитру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Цветовая палитра определяет массив цветов, представленных в управлении сборщиком цветов.
 
@@ -425,7 +425,7 @@ void SetSaturation(double Saturation);
 *Насыщенность*<br/>
 (в) Значение насыщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolorpickerctrlsettype"></a><a name="settype"></a>CMFCColorPickerCtrl:SetType
 
@@ -442,7 +442,7 @@ void SetType(COLORTYPE colorType);
 
 Типы определяются `CMFCColorPickerCtrl::COLORTYPE` перечислением. Возможные типы: LUMINANCE, PICKER, HEX и HEX_GREYSCALE. Тип по умолчанию PICKER.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы указать тип управления сборщиком цветов, позвоните по этому методу до создания элемента управления Windows.
 

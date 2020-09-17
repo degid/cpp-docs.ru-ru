@@ -30,7 +30,7 @@ public ref class MTAThreadAttribute sealed : Attribute
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |Конструктор [MTAThreadAttribute 1](#ctor)|Инициализирует новый экземпляр класса.|
 

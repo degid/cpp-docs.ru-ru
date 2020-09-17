@@ -54,7 +54,7 @@ class CMFCDesktopAlertWndInfo
 |[CMFCDesktopAlertWndInfo::m_strText](#m_strtext)|Текст, отображаемый на окне оповещения рабочего стола.|
 |[CMFCDesktopAlertWnDInfo::m_strURL](#m_strurl)|Ссылка, отображаемый на окне оповещения рабочего стола.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCDesktopAlertWndInfo` передается [на CMFCDesktopAlertWnd::Создание метода](../../mfc/reference/cmfcdesktopalertwnd-class.md#create) для определения элементов, отображаемых в диалоге по умолчанию окна оповещения рабочего стола. Диалог по умолчанию может содержать три элемента:
 
@@ -94,7 +94,7 @@ CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndinfom_hicon"></a><a name="m_hicon"></a>CMFCDesktopAlertWndInfo::m_hIcon
 
@@ -104,7 +104,7 @@ CMFCDesktopAlertWndInfo& operator=(CMFCDesktopAlertWndInfo& src);
 HICON m_hIcon;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndinfom_nurlcmdid"></a><a name="m_nurlcmdid"></a>CMFCDesktopAlertWndInfo::m_nURLCmdID
 
@@ -114,7 +114,7 @@ HICON m_hIcon;
 UINT m_nURLCmdID;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Идентификатор команды отправляется владельцу всплывающее окно, когда пользователь нажимает на ссылку, указанную [CMFCDesktopAlertWnWnDInfo::m_strURL](#m_strurl).
 
@@ -126,7 +126,7 @@ UINT m_nURLCmdID;
 CString m_strText;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndinfom_strurl"></a><a name="m_strurl"></a>CMFCDesktopAlertWnDInfo::m_strURL
 
@@ -136,7 +136,7 @@ CString m_strText;
 CString m_strURL;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда пользователь нажимает на ссылку, команда, которая имеет [CMFCDesktopAlertWnWnDInfo::m_nURLCmdID](#m_nurlcmdid) идентификатор команды будет отправлен владельцу всплывающее окно.
 

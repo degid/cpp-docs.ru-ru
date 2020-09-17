@@ -33,7 +33,7 @@ using add_cv_t = typename add_cv<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляр измененного типа `add_cv<T>` имеет `type` эквивалент элемента T, **`typedef`** измененного *T* как [add_volatile](add-volatile-class.md) , так и [add_const](add-const-class.md), если только у *T* нет квалификаторов КП, является ссылкой или является функцией.
 

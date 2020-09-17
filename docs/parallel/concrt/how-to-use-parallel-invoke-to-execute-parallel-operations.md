@@ -14,7 +14,7 @@ ms.locfileid: "77142270"
 ---
 # <a name="how-to-use-parallel_invoke-to-execute-parallel-operations"></a>Практическое руководство. Использование функции parallel_invoke для выполнения параллельных операций
 
-В этом примере показано, как использовать алгоритм [параллелизма::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) для повышения производительности программы, выполняющей несколько операций с общим источником данных. Так как никакие операции не изменяют источник, они могут быть выполнены параллельно, простым образом.
+В этом примере показано, как использовать алгоритм [параллелизма::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) для повышения производительности программы, выполняющей несколько операций с общим источником данных. Так как никакие операции не изменяют источник, они могут быть выполнены параллельно, простым образом.
 
 ## <a name="example"></a>Пример
 
@@ -68,7 +68,7 @@ The following palindromes appear in the text:
 
 Поскольку в этом примере выполняются три задачи параллельно, не следует рассчитывать на то, что производительность будет масштабироваться на компьютерах с более чем тремя процессорами. Чтобы повысить производительность, можно разбить наиболее длительные задачи на небольшие задачи и параллельно выполнять эти задачи.
 
-Можно использовать алгоритм `parallel_invoke` вместо классов [Concurrency:: task_group](reference/task-group-class.md) и [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) , если не требуется поддержка отмены. Пример, сравнивающий использование алгоритма `parallel_invoke` и групп задач, см. в разделе [как использовать parallel_invoke для написания параллельной подпрограммы сортировки](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).
+Можно использовать алгоритм `parallel_invoke` вместо классов [concurrency::task_group](reference/task-group-class.md) и [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) , если не требуется поддержка отмены. Пример, сравнивающий использование алгоритма `parallel_invoke` и групп задач, см. в разделе [как использовать parallel_invoke для написания параллельной подпрограммы сортировки](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md).
 
 ## <a name="compiling-the-code"></a>Компиляция кода
 

@@ -49,7 +49,7 @@ class CA2WEX
 
 |Имя|Описание|
 |----------|-----------------|
-|[CA2WEX:: operator LPWSTR](#operator_lpwstr)|Оператор преобразования.|
+|[CA2WEX::operator LPWSTR](#operator_lpwstr)|Оператор преобразования.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -58,7 +58,7 @@ class CA2WEX
 |[CA2WEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 |[CA2WEX:: m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительных функций, используйте в коде CA2TEX, CA2CTEX, CT2WEX, CT2CWEX или CA2W.
 
@@ -90,7 +90,7 @@ class CA2WEX
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлконв. h
+**Заголовок:** атлконв.h
 
 ## <a name="ca2wexca2wex"></a><a name="ca2wex"></a>CA2WEX::CA2WEX
 
@@ -109,7 +109,7 @@ CA2WEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Кодовая страница, используемая для выполнения преобразования. Дополнительные сведения см. в обсуждении параметров кодовой страницы для функции Windows SDK [MultiByteToWideChar](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет буфер, используемый в процессе перевода.
 
@@ -121,7 +121,7 @@ CA2WEX(LPCSTR psz) throw(...);
 ~CA2WEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 
@@ -141,7 +141,7 @@ LPWSTR m_psz;
 wchar_t m_szBuffer[t_nBufferLength];
 ```
 
-## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a>CA2WEX:: operator LPWSTR
+## <a name="ca2wexoperator-lpwstr"></a><a name="operator_lpwstr"></a>CA2WEX::operator LPWSTR
 
 Оператор преобразования.
 

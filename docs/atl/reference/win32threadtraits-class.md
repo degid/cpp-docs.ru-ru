@@ -38,7 +38,7 @@ class Win32ThreadTraits
 |----------|-----------------|
 |[Win32ThreadTraits::CreateThread](#createthread)|(Статик) Вызовите эту функцию, чтобы создать поток, который не должен использовать функции CRT.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Черты потока — это классы, которые обеспечивают функцию создания определенного типа потока. Функция создания имеет ту же подпись и семантику, что и функция [Windows CreateThread.](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
 
@@ -92,7 +92,7 @@ static HANDLE CreateThread(
 
 Возвращает ручку в недавно созданный поток или NULL при сбое. Позвоните [GetLastError,](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) чтобы получить расширенную информацию об ошибках.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительную информацию о параметрах этой функции можно просмотреть [CreateThread.](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createthread)
 

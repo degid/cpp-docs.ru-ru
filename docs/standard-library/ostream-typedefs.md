@@ -25,7 +25,7 @@ ms.locfileid: "88846411"
 typedef basic_ostream<char, char_traits<char>> ostream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ostream](../standard-library/basic-ostream-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -37,7 +37,7 @@ typedef basic_ostream<char, char_traits<char>> ostream;
 typedef basic_ostream<wchar_t, char_traits<wchar_t>> wostream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ostream](../standard-library/basic-ostream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 

@@ -24,7 +24,7 @@ ms.locfileid: "87213259"
 
 > **`__declspec(restrict)`***pointer_return_type* *функция*pointer_return_type ();
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Компилятор распространяет **`__declspec(restrict)`** . Например, `malloc` функция CRT имеет **`__declspec(restrict)`** декорирование, поэтому компилятор предполагает, что указатели, инициализированные в области памяти, `malloc` также не имеют псевдонимов ранее существующих указателей.
 

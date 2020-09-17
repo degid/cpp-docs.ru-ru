@@ -29,7 +29,7 @@ namespace Windows::Foundation;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция ActivateInstance](activateinstance-function.md)|Регистрирует и извлекает экземпляр указанного типа, определенного в указанном ИДЕНТИФИКАТОРе класса.|
 |[Функция GetActivationFactory](getactivationfactory-function.md)|Извлекает фабрику активации для типа, указанного в параметре шаблона.|

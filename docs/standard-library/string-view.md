@@ -22,7 +22,7 @@ ms.locfileid: "90039915"
 #include <string_view>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `string_view`Семейство специализаций шаблонов предоставляет эффективный способ передачи неответственного, доступного только для чтения, безотносительного и невладеющего обработчика к символьным данным любых строковых объектов, имеющих первый элемент последовательности в позиции 0. Параметр функции типа `string_view` (typedef для `basic_string_view<char>` ) может принимать аргументы, такие как `std::string` , `char*` или любые другие строковые классы с узкими символами, для которых определено неявное преобразование `string_view` . Аналогичным образом, параметр `wstring_view` `u16string_view` или `u32string_view` может принимать любой строковый тип, для которого определено неявное преобразование. Дополнительные сведения см. в разделе [класс basic_string_view](../standard-library/basic-string-view-class.md).
 
@@ -41,13 +41,13 @@ ms.locfileid: "90039915"
 
 |Оператор|Описание|
 |-|-|
-|[operator! =](../standard-library/string-view-operators.md#op_neq)|Проверяет неравенство объекта слева от оператора объекту справа от оператора.|
-|[Оператор = =](../standard-library/string-view-operators.md#op_eq_eq)|Проверяет равенство объекта слева от оператора объекту справа от оператора.|
-|[Оператор<](../standard-library/string-view-operators.md#op_lt)|Проверяет, меньше ли объект в левой части оператора, чем объект с правой стороны.|
-|[Оператор<=](../standard-library/string-view-operators.md#op_lt_eq)|Проверяет, что объект слева от оператора меньше или равен объекту справа от оператора.|
-|[Оператор<\<](../standard-library/string-view-operators.md#op_lt_lt)|Функция шаблона, которая вставляет в `string_view` выходной поток.|
-|[Оператор>](../standard-library/string-view-operators.md#op_gt)|Проверяет, больше ли объект в левой части оператора, чем объект с правой стороны.|
-|[Оператор>=](../standard-library/string-view-operators.md#op_gt_eq)|Проверяет, что объект слева от оператора больше или равен объекту справа от оператора.|
+|[operator!=](../standard-library/string-view-operators.md#op_neq)|Проверяет неравенство объекта слева от оператора объекту справа от оператора.|
+|[operator==](../standard-library/string-view-operators.md#op_eq_eq)|Проверяет равенство объекта слева от оператора объекту справа от оператора.|
+|[operator<](../standard-library/string-view-operators.md#op_lt)|Проверяет, меньше ли объект в левой части оператора, чем объект с правой стороны.|
+|[operator<=](../standard-library/string-view-operators.md#op_lt_eq)|Проверяет, что объект слева от оператора меньше или равен объекту справа от оператора.|
+|[operator<\<](../standard-library/string-view-operators.md#op_lt_lt)|Функция шаблона, которая вставляет в `string_view` выходной поток.|
+|[operator>](../standard-library/string-view-operators.md#op_gt)|Проверяет, больше ли объект в левой части оператора, чем объект с правой стороны.|
+|[operator>=](../standard-library/string-view-operators.md#op_gt_eq)|Проверяет, что объект слева от оператора больше или равен объекту справа от оператора.|
 
 ### <a name="literals"></a>Литералы
 

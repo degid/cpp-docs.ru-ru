@@ -31,7 +31,7 @@ void __debugbreak();
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`__debugbreak`|x86, x64, ARM, ARM64|\<> Intrin. h|
+|`__debugbreak`|x86, x64, ARM, ARM64|\<> Intrin.h|
 
 ## <a name="remarks"></a>Примечания
 

@@ -53,7 +53,7 @@ class CTable :
 |-|-|
 |[Открыть](#open)|Открывает таблицу.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Сведения о том, как выполнить команду для доступа к набору строк, см. в разделе [CCommand](../../data/oledb/ccommand-class.md) .
 
@@ -104,7 +104,7 @@ HRESULT Open(const CSession& session,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) в *справочнике программиста OLE DB*.
 

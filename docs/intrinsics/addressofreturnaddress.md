@@ -33,7 +33,7 @@ void * _AddressOfReturnAddress();
 |---------------|------------------|
 |`_AddressOfReturnAddress`|x86, x64, ARM, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

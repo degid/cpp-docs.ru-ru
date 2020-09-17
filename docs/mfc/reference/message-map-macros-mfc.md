@@ -90,7 +90,7 @@ BEGIN_MESSAGE_MAP( theClass, baseClass )
 *baseClass*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В файле реализации (. cpp), который определяет функции-члены для класса, запустите схему сообщений с помощью макроса BEGIN_MESSAGE_MAP, добавьте записи макросов для каждой функции обработчика сообщений и завершите схему сообщений с помощью макроса END_MESSAGE_MAP.
 
@@ -129,7 +129,7 @@ BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 *baseClass*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос аналогичен макросу [BEGIN_MESSAGE_MAP](message-map-macros-mfc.md#begin_message_map) . Однако этот макрос предназначен для классов, содержащих один аргумент шаблона.
 
@@ -151,7 +151,7 @@ BEGIN_TEMPLATE_MESSAGE_MAP( theClass, type_name, baseClass )
 DECLARE_MESSAGE_MAP( )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте макрос DECLARE_MESSAGE_MAP в конце объявления класса. Затем в cpp-файле, который определяет функции-члены для класса, используйте макрос BEGIN_MESSAGE_MAP, записи макросов для каждой функции обработчика сообщений и макрос END_MESSAGE_MAP.
 
@@ -184,7 +184,7 @@ class CMainFrame : public CMDIFrameWnd
 END_MESSAGE_MAP( )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о картах сообщений и макросах END_MESSAGE_MAP см. в [разделах обработка сообщений и сопоставление](../../mfc/message-handling-and-mapping.md).
 
@@ -210,7 +210,7 @@ ON_COMMAND( commandId, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставляется команда.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает, какая функция будет обработано сообщение команды от объекта пользовательского интерфейса команды, такого как элемент меню или кнопка панели инструментов.
 
@@ -228,7 +228,7 @@ END_MESSAGE_MAP()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_command_ex"></a><a name="on_command_ex"></a> ON_COMMAND_EX
 
@@ -248,7 +248,7 @@ ON_COMMAND_EX(commandId, memberFxn);
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставляется команда.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Расширенная форма обработчиков командных сообщений доступна для расширенных применений. Макрос ON_COMMAND_EX используется для таких обработчиков сообщений и предоставляет надмножество функциональных возможностей [ON_COMMAND](message-map-macros-mfc.md#on_command) . Расширенные функции-члены обработчика команд принимают один параметр, UINT, содержащий идентификатор команды, и возвращают логическое значение. Чтобы указать, что команда была обработана, возвращаемое значение должно быть равно TRUE. в противном случае маршрутизация продолжит другие целевые объекты команды.
 
@@ -256,7 +256,7 @@ ON_COMMAND_EX(commandId, memberFxn);
 
 ### <a name="requirements"></a>Требования
 
-Заголовочный файл: afxmsg_. h
+Заголовочный файл: afxmsg_.h
 
 ## <a name="on_control"></a><a name="on_control"></a> ON_CONTROL
 
@@ -279,7 +279,7 @@ ON_CONTROL( wNotifyCode, commandId, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставляется команда.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сообщения управления уведомлениями отправляются из элемента управления в его родительское окно.
 
@@ -289,7 +289,7 @@ ON_CONTROL( wNotifyCode, commandId, memberFxn )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_message"></a><a name="on_message"></a> ON_MESSAGE
 
@@ -311,7 +311,7 @@ ON_MESSAGE( message, memberFxn )
 
 Тип функции должен быть `afx_msg LRESULT (CWnd::*)(WPARAM, LPARAM)` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определяемые пользователем сообщения — это любые сообщения, не являющиеся стандартными сообщениями Windows WM_MESSAGE. При выборе идентификатора сообщения необходимо использовать значения в диапазоне от WM_USER (0x0400) до 0x7FFF или WM_APP (0x8000) в 0xBFFF. Дополнительные сведения об идентификаторах сообщений см. в разделе [WM_APP](/windows/win32/winmsg/wm-app).
 
@@ -347,7 +347,7 @@ LRESULT CMyWnd2::OnMyMessage(WPARAM wParam, LPARAM lParam)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_olecmd"></a><a name="on_olecmd"></a> ON_OLECMD
 
@@ -370,7 +370,7 @@ ON_OLECMD( pguid, olecmdid, commandId )
 *commandId*<br/>
 ИДЕНТИФИКАТОР меню, идентификатор панели инструментов, идентификатор кнопки или другой идентификатор ресурса или объекта, выдавшего команду.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IOleCommandTarget` позволяет контейнеру получать команды, которые происходят в пользовательском интерфейсе DocObject, и позволяет контейнеру отправлять одни и те же команды (такие как New, Open, SaveAs и Print в меню файл, а также копировать, вставлять, отменять и т. д. в меню Правка) в DocObject.
 
@@ -476,7 +476,7 @@ ON_OLECMD( pguid, olecmdid, commandId )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксдокоб. h
+**Заголовок:** афксдокоб.h
 
 ## <a name="on_registered_message"></a><a name="on_registered_message"></a> ON_REGISTERED_MESSAGE
 
@@ -496,7 +496,7 @@ ON_REGISTERED_MESSAGE( nMessageVariable, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставлено сообщение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос указывает, какая функция будет выполнять обработку зарегистрированного сообщения.
 
@@ -514,7 +514,7 @@ END_MESSAGE_MAP()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_registered_thread_message"></a><a name="on_registered_thread_message"></a> ON_REGISTERED_THREAD_MESSAGE
 
@@ -534,13 +534,13 @@ ON_REGISTERED_THREAD_MESSAGE(nMessageVariable, memberFxn )
 *мемберфксн*<br/>
 Имя функции, с которой сопоставлено сообщение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Регистервиндовмессаже используется для определения нового сообщения окна, которое гарантированно уникально в пределах всей системы. ON_REGISTERED_THREAD_MESSAGE необходимо использовать вместо ON_REGISTERED_MESSAGE при наличии класса CWinThread.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_thread_message"></a><a name="on_thread_message"></a> ON_THREAD_MESSAGE
 
@@ -560,13 +560,13 @@ ON_THREAD_MESSAGE( message, memberFxn )
 *мемберфксн*<br/>
 Имя `CWinThread` функции обработчика сообщений, с которой сопоставляется сообщение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ON_THREAD_MESSAGE необходимо использовать вместо ON_MESSAGE при наличии `CWinThread` класса. Определяемые пользователем сообщения — это любые сообщения, не являющиеся стандартными сообщениями Windows WM_MESSAGE. В схеме сообщений для каждого определяемого пользователем сообщения, которое должно быть сопоставлено функции обработчика сообщений, должен быть ровно один ON_THREAD_MESSAGE макрос.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксоле. h
+**Заголовок:** афксоле.h
 
 ## <a name="on_update_command_ui"></a><a name="on_update_command_ui"></a> ON_UPDATE_COMMAND_UI
 
@@ -586,7 +586,7 @@ ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставлено сообщение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В схеме сообщений для каждой команды обновления пользовательского интерфейса, которая должна быть сопоставлена с функцией обработчика сообщений, должен быть ровно один ON_UPDATE_COMMAND_UI макрос.
 
@@ -594,7 +594,7 @@ ON_UPDATE_COMMAND_UI( messageId, memberFxn )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксоле. h
+**Заголовок:** афксоле.h
 
 ## <a name="on_command_range"></a><a name="on_command_range"></a> ON_COMMAND_RANGE
 
@@ -617,7 +617,7 @@ ON_COMMAND_RANGE( id1, id2, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставлены команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диапазон идентификаторов начинается с *id1* и заканчивается на *id2*.
 
@@ -649,7 +649,7 @@ void CChildFrame::OnRangeCmds(UINT nID)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_update_command_ui_range"></a><a name="on_update_command_ui_range"></a> ON_UPDATE_COMMAND_UI_RANGE
 
@@ -672,7 +672,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений обновления, с которой сопоставлены команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обработчики сообщений обновления обновляют состояние пунктов меню и кнопок панели инструментов, связанных с командой. Диапазон идентификаторов начинается с *id1* и заканчивается на *id2*.
 
@@ -680,7 +680,7 @@ ON_UPDATE_COMMAND_UI_RANGE( id1, id2, memberFxn )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="on_control_range"></a><a name="on_control_range"></a> ON_CONTROL_RANGE
 
@@ -706,7 +706,7 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 *мемберфксн*<br/>
 Имя функции обработчика сообщений, с которой сопоставляются элементы управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диапазон идентификаторов начинается с *id1* и заканчивается на *id2*. Обработчик вызывается для указанного уведомления, поступающего из любого сопоставленного элемента управления.
 
@@ -716,7 +716,7 @@ ON_CONTROL_RANGE( wNotifyCode, id1, id2, memberFxn )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxmsg_. h
+**Заголовок:** afxmsg_.h
 
 ## <a name="see-also"></a>См. также раздел
 

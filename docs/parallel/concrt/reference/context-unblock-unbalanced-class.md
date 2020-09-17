@@ -29,11 +29,11 @@ class context_unblock_unbalanced : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[context_unblock_unbalanced](#ctor)|Перегружен. Формирует объект `context_unblock_unbalanced`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызовы методов `Block` и `Unblock` объекта `Context` должны всегда быть парными. Среда выполнения с параллелизмом позволяет операциям выполняться в любом порядке. Например, за вызовом `Block` может следовать вызов `Unblock`, или наоборот. Это исключение возникает, если, например, два вызова метода `Unblock` были внесены в строку на `Context` объекте, который не был заблокирован.
 
@@ -45,7 +45,7 @@ class context_unblock_unbalanced : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

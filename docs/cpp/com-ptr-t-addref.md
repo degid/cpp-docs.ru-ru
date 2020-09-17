@@ -25,7 +25,7 @@ ms.locfileid: "81745102"
 void AddRef( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызовы `IUnknown::AddRef` на инкапсулированный указатель `E_POINTER` интерфейса, поднимая ошибку, если указатель NULL.
 

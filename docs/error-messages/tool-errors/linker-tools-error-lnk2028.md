@@ -17,7 +17,7 @@ ms.locfileid: "80194620"
 
 "*exported_function*" (*decorated_name*), на который указывает ссылка в функции "*function_containing_function_call*" (*decorated_name*)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При попытке импортировать собственную функцию в чистый образ Помните, что неявные соглашения о вызовах отличаются от собственных и чистых компиляций.
 

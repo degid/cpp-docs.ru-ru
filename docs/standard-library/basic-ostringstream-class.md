@@ -41,7 +41,7 @@ class basic_ostringstream : public basic_ostream<Elem, Tr>
 *Tr*\
 Признаки символа, соответствующие основному элементу строки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс описывает объект, который управляет вставкой элементов и закодированных объектов в буфер потока, с элементами типа, `Elem`чьи черты характера определяются классом, `Tr`и элементы которого выделяются распределителем класса. `Alloc` Этот объект сохраняет объект класса basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
@@ -93,10 +93,10 @@ explicit basic_ostringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base:
 *_mode*\
 Одно из перечислений в [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*Ул*\
+*str*\
 Объект типа `basic_string`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовый класс, позвонив [basic_ostream](../standard-library/basic-ostream-class.md) **(sb),** `sb` где `Alloc` находится хранимый объект класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem,** **Tr,**>. Он также инициализирует **sb** путем вызова basic_stringbuf< **Elem**, **Tr**, `Alloc`>( `_Mode` &#124; `ios_base::out`).
 
@@ -114,7 +114,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 Адрес буфера хранимых `pointer` потоков, типа basic_stringbuf `Alloc`< **Elem,** **Tr,**>.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция участника возвращает адрес сохраненного буфера `pointer` потока типа basic_stringbuf< `Alloc` **Elem,** **Tr,**>.
 
@@ -142,7 +142,7 @@ void str(
 
 Возвращает объект класса [basic_string](../standard-library/basic-string-class.md)< **Elem** `Alloc` , **Tr**,>, чья контролируемая последовательность является копией последовательности, контролируемой ** \*этим.**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция первого члена возвращает [rdbuf](#rdbuf) -> [str.](../standard-library/basic-stringbuf-class.md#str) Функция второго `rdbuf`  -> члена `_Newstr`вызывает **str**().
 

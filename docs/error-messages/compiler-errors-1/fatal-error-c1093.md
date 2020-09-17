@@ -19,4 +19,4 @@ ms.locfileid: "69501066"
 
 Сбой вызова функции .NET. *Текст из строки времени выполнения* может быть или не предоставлен средой выполнения COM.
 
-Дополнительные сведения о системных сообщениях об ошибках см. в системном файле Winerror. h и [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage).
+Дополнительные сведения о системных сообщениях об ошибках см. в системном файле Winerror.h и [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage).

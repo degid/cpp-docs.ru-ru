@@ -61,7 +61,7 @@ class IOleInPlaceObjectWindowlessImpl
 |[IoleInPlacePlaceWindowlessImpl::SetObjectRects](#setobjectrects)|Указывает, какая часть элемента управления на месте видна.|
 |[IoleInPlaceObjectWindowlessImpl::UIDeactivate](#uideactivate)|Деактивирует и удаляет пользовательский интерфейс, поддерживающий активацию на месте.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IOleInPlaceObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceobject) управляет реактивацией и деактивацией элементов управления на месте и определяет, сколько элементов управления должно быть видно. Интерфейс [IOleInPlaceObjectWindowless](/windows/win32/api/ocidl/nn-ocidl-ioleinplaceobjectwindowless) позволяет беспривывным элементам управления окнам получать сообщения окон и участвовать в операциях перетаскивания. Класс `IOleInPlaceObjectWindowlessImpl` обеспечивает реализацию `IOleInPlaceObject` и `IOleInPlaceObjectWindowless` реализацию `IUnknown` по умолчанию и реализации путем отправки информации на устройство сброса в отладочных сборках.
 
@@ -85,7 +85,7 @@ class IOleInPlaceObjectWindowlessImpl
 HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleWindow:: ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) в Windows SDK.
 
@@ -97,7 +97,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceObjectWindowless::GetDropTarget](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-getdroptarget) в Windows SDK.
 
@@ -109,7 +109,7 @@ HRESULT GetDropTarget(IDropTarget** ppDropTarget);
 HRESULT GetWindow(HWND* phwnd);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Некоторые контейнеры не будут работать с элементом управления, который был без окон, даже если он в настоящее время окон. В реализации ATL, если член `m_bWasOnceWindowless` данных класса управления является истинным, функция возвращается E_FAIL. В противном случае, если *phwnd* `GetWindow` не является NULL, \* устанавливает `m_hWnd` *phwnd* к члену данных класса управления и возвращает S_OK.
 
@@ -123,7 +123,7 @@ HRESULT GetWindow(HWND* phwnd);
 HRESULT InPlaceDeactivate(HWND* phwnd);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод выполняет полную или частичную деактивацию в зависимости от состояния элемента управления. При необходимости пользовательский интерфейс элемента управления деактивирован, а окно элемента управления, если такового имеется, будет уничтожено. Контейнер уведомляется о том, что элемент управления больше не активен на месте. Интерфейс, `IOleInPlaceUIWindow` используемый контейнером для согласования меню и пограничного пространства, освобождается.
 
@@ -141,7 +141,7 @@ HRESULT OnWindowMessage(
     LRESULT plResultParam);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceObjectWindowless::OnWindowMessage](/windows/win32/api/ocidl/nf-ocidl-ioleinplaceobjectwindowless-onwindowmessage) в Windows SDK.
 
@@ -153,7 +153,7 @@ HRESULT OnWindowMessage(
 HRESULT ReactivateAndUndo();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceObject::ReactivateAndUndo](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceobject-reactivateandundo) в Windows SDK.
 
@@ -165,7 +165,7 @@ HRESULT ReactivateAndUndo();
 HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обновляет элемент данных элемента `m_rcPos` управления и дисплей управления. Отображается только та часть элемента управления, которая пересекает область клипа. Если дисплей элемента управления был ранее обрезан, но отсечение было удалено, эту функцию можно вызвать, чтобы перерисовать полное представление элемента управления.
 
@@ -179,7 +179,7 @@ HRESULT SetObjectRects(LPCRECT prcPos, LPCRECT prcClip);
 HRESULT UIDeactivate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает элемент `m_bUIActive` данных класса управления в FALSE. Реализация этой функции ATL всегда возвращает S_OK.
 

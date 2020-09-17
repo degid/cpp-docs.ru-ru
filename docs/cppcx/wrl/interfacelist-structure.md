@@ -33,7 +33,7 @@ struct InterfaceList;
 *U*<br/>
 Имя интерфейса; остальные интерфейсы в рекурсивном списке.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется для создания рекурсивного списка интерфейсов.
 
@@ -41,7 +41,7 @@ struct InterfaceList;
 
 ### <a name="public-typedefs"></a>Открытые определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`FirstT`|Синоним для параметра шаблона *T*.|
 |`RestT`|Синоним для параметра шаблона *U*.|
@@ -52,7 +52,7 @@ struct InterfaceList;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

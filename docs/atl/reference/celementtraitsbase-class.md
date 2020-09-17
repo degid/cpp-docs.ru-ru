@@ -50,7 +50,7 @@ class CElementTraitsBase
 |[CElementTraitsBase::CopyElements](#copyelements)|Вызовите этот метод для копирования элементов, хранящихся в объекте класса коллекции.|
 |[CElementTraitsBase::ПереместитьЭлементы](#relocateelements)|Вызовите этот метод для перемещения элементов, хранящихся в объекте класса сбора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот базовый класс определяет методы копирования и перемещения элементов в классе коллекции. Он используется в классах [CDefaultElementTraits](../../atl/reference/cdefaultelementtraits-class.md), [CStringRefElementTraits](../../atl/reference/cstringrefelementtraits-class.md)и [CStringElementTraitsI](../../atl/reference/cstringelementtraitsi-class.md).
 
@@ -82,7 +82,7 @@ static void CopyElements(
 *nЭлементы*<br/>
 Число элементов для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элементы источника и назначения не должны пересекаться.
 
@@ -124,7 +124,7 @@ static void RelocateElements(
 *nЭлементы*<br/>
 Количество элементов для перемещения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод называет [memmove](../../c-runtime-library/reference/memmove-wmemmove.md), который достаточен для большинства типов данных. Если движимые объекты содержат указатели для своих членов, этот метод необходимо будет переопределить.
 

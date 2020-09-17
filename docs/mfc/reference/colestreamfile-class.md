@@ -56,7 +56,7 @@ class COleStreamFile : public CFile
 |[ColeStreamFile::GetStream](#getstream)|Возвращает текущий поток.|
 |[ColeStreamFile::OpenStream](#openstream)|Безопасно открывает поток и связывает его с объектом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект `IStorage` должен существовать до того, как поток может быть открыт или создан, если он не является потоком памяти.
 
@@ -91,7 +91,7 @@ void Attach(LPSTREAM lpStream);
 *lpStream*<br/>
 Очки к потоку`IStream`OLE (), чтобы быть связанным с объектом. Не может быть NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект уже не должен быть связан с потоком OLE.
 
@@ -110,7 +110,7 @@ COleStreamFile(LPSTREAM lpStream = NULL);
 *lpStream*<br/>
 Указатель на поток OLE, связанный с объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *lpStream* является NULL, объект не связан с потоком OLE, в противном случае, объект связан с поставляемым потоком OLE.
 
@@ -133,7 +133,7 @@ BOOL CreateMemoryStream(CFileException* pError = NULL);
 
 Nonzero, если поток создан успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Память выделяется подсистемой OLE.
 
@@ -169,7 +169,7 @@ BOOL CreateStream(
 
 Nonzero, если поток создан успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Исключение файла будет брошено, если открытый сбой и *pError* не является NULL.
 
@@ -187,7 +187,7 @@ LPSTREAM Detach();
 
 Указатель на поток`IStream`(), который был связан с объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поток должен быть закрыт другим способом до завершения программы.
 
@@ -235,7 +235,7 @@ BOOL OpenStream(
 
 Nonzero, если поток открыт успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Исключение файла будет брошено, если открытый сбой и *pError* не является NULL.
 

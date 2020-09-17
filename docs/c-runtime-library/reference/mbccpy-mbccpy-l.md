@@ -79,7 +79,7 @@ void _mbccpy_l(
 *locale*<br/>
 Используемый языковой стандарт.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_mbccpy** копирует один многобайтовый символ из *src* в *dest*.
 

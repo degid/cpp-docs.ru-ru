@@ -48,7 +48,7 @@ class CA2CAEX
 
 |Имя|Описание|
 |----------|-----------------|
-|[CA2CAEX:: operator LPCSTR](#operator_lpcstr)|Оператор преобразования.|
+|[CA2CAEX::operator LPCSTR](#operator_lpcstr)|Оператор преобразования.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -56,7 +56,7 @@ class CA2CAEX
 |----------|-----------------|
 |[CA2CAEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительных функций, используйте CA2CTEX, CT2CAEX или CA2CA в своем коде.
 
@@ -80,7 +80,7 @@ class CA2CAEX
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлконв. h
+**Заголовок:** атлконв.h
 
 ## <a name="ca2caexca2caex"></a><a name="ca2caex"></a>CA2CAEX::CA2CAEX
 
@@ -99,7 +99,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает буфер, необходимый для перевода.
 
@@ -111,7 +111,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 ~CA2CAEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 
@@ -123,7 +123,7 @@ CA2CAEX(LPCSTR psz) throw(...);
 LPCSTR m_psz;
 ```
 
-## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX:: operator LPCSTR
+## <a name="ca2caexoperator-lpcstr"></a><a name="operator_lpcstr"></a>CA2CAEX::operator LPCSTR
 
 Оператор преобразования.
 

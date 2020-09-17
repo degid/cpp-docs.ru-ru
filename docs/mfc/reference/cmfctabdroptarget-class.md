@@ -37,13 +37,13 @@ class CMFCTabDropTarget : public COleDropTarget
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCTabDropTarget::CMFCTabDropTarget`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфктабдроптаржет:: OnDragEnter](#ondragenter)|Вызывается структурой, когда пользователь перетаскивает объект в окно вкладки. (Переопределяет [коледроптаржет:: OnDragEnter](../../mfc/reference/coledroptarget-class.md#ondragenter).)|
 |[Кмфктабдроптаржет:: OnDragLeave](#ondragleave)|Вызывается структурой, когда пользователь перетаскивает объект за пределы окна вкладки, на котором находится фокус. (Переопределяет [коледроптаржет:: OnDragLeave](../../mfc/reference/coledroptarget-class.md#ondragleave).)|
@@ -51,7 +51,7 @@ class CMFCTabDropTarget : public COleDropTarget
 |[Кмфктабдроптаржет:: Ондропекс](#ondropex)|Вызывается платформой, когда пользователь отпускает кнопку мыши в конце операции перетаскивания. (Переопределяет [коледроптаржет:: ондропекс](../../mfc/reference/coledroptarget-class.md#ondropex).)|
 |[Кмфктабдроптаржет:: Register](#register)|Регистрирует элемент управления как объект, который может быть целевым объектом операции перетаскивания OLE.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс обеспечивает поддержку перетаскивания для `CMFCBaseTabCtrl` класса. Если приложение инициализирует библиотеки OLE с помощью функции [афксолеинит](ole-initialization.md#afxoleinit) , `CMFCBaseTabCtrl` объекты регистрируются для операций перетаскивания.
 
@@ -117,7 +117,7 @@ virtual DROPEFFECT OnDragEnter(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает DROPEFFECT_NONE, если платформа панели инструментов не находится в режиме настройки или если формат данных буфера обмена недоступен. В противном случае возвращается результат вызова `CMFCBaseTabCtrl::OnDragEnter` с предоставленными параметрами.
 
@@ -136,7 +136,7 @@ virtual void OnDragLeave(CWnd* pWnd);
 *Приводится*\
 [in] Не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает `CMFCBaseTabCtrl::OnDragLeave` метод для выполнения операции перетаскивания.
 
@@ -180,7 +180,7 @@ virtual DROPEFFECT OnDragOver(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод делает вкладку, расположенную под курсором, когда операция перетаскивания выполняется активно. Он возвращает DROPEFFECT_NONE, если платформа панели инструментов не находится в режиме настройки или если формат данных буфера обмена недоступен. В противном случае возвращается результат вызова `CMFCBaseTabCtrl::OnDragOver` с предоставленными параметрами.
 
@@ -230,7 +230,7 @@ virtual DROPEFFECT OnDropEx(
 
 - DROPEFFECT_SCROLL
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает, `CMFCBaseTabCtrl::OnDrop` Если платформа панели инструментов находится в режиме настройки и доступен формат данных буфера обмена. Если вызов `CMFCBaseTabCtrl::OnDrop` возвращает ненулевое значение, этот метод возвращает результат перетаскивания по умолчанию, заданный параметром *дропеффект*. В противном случае этот метод возвращает DROPEFFECT_NONE. Дополнительные сведения об эффектах перетаскивания см. в разделе [коледроптаржет:: ондропекс](../../mfc/reference/coledroptarget-class.md#ondropex).
 
@@ -253,7 +253,7 @@ BOOL Register(CMFCBaseTabCtrl *pOwner);
 
 Ненулевое значение, если регистрация прошла успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает [коледроптаржет:: Register](../../mfc/reference/coledroptarget-class.md#register) для регистрации элемента управления для операций перетаскивания.
 

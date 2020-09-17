@@ -36,17 +36,17 @@ class progress_reporter;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[progress_reporter](#ctor)||
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[передачи](#report)|Отправляет отчет о ходе выполнения в асинхронное действие или операцию, к которому привязано это средство формирования отчетов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот тип доступен только для среда выполнения Windows приложений.
 
@@ -56,7 +56,7 @@ class progress_reporter;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** из ppltasks. h
+**Заголовок:** из ppltasks.h
 
 **Пространство имен:** concurrency
 

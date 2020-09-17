@@ -51,7 +51,7 @@ class CComClassFactorySingleton : public CComClassFactory
 |----------|-----------------|
 |[CComClassFactoryСинглтон::m_spObj](#m_spobj)|[Объект CComObjectGlobal,](../../atl/reference/ccomobjectglobal-class.md) построенный `CComClassFactorySingleton`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты ATL обычно приобретают фабрику класса, произвнося из [CComCoClass.](../../atl/reference/ccomcoclass-class.md) Этот класс включает в себя `CComClassFactory` [макро-DECLARE_CLASSFACTORY,](aggregation-and-class-factory-macros.md#declare_classfactory)который объявляется фабрикой класса по умолчанию. Для `CComClassFactorySingleton`использования укажите [DECLARE_CLASSFACTORY_SINGLETON](aggregation-and-class-factory-macros.md#declare_classfactory_singleton) макрос в определении класса объекта. Пример:
 
@@ -104,7 +104,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 CComPtr<IUnknown> m_spObj;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый вызов методу [CreateInstance](#createinstance) просто запрашивает этот объект для указателя интерфейса.
 

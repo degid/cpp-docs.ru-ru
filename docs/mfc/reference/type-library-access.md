@@ -37,7 +37,7 @@ DECLARE_OLETYPELIB(class_name)
 *class_name*<br/>
 Имя класса элемента управления, связанного с библиотекой типов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос в файле заголовка класса элемента управления.
 
@@ -67,7 +67,7 @@ IMPLEMENT_OLETYPELIB(class_name, tlid, wVerMajor,  wVerMinor)
 *вверминор*<br/>
 Дополнительный номер версии библиотеки типов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос должен присутствовать в файле реализации для любого класса элементов управления, использующего макрос DECLARE_OLETYPELIB.
 

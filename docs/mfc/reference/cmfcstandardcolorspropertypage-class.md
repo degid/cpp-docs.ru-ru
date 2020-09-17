@@ -25,18 +25,18 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCStandardColorsPropertyPage::CMFCStandardColorsPropertyPage`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCStandardColorsPropertyPage::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
 |`CMFCStandardColorsPropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CMFCColorDialog`Класс использует этот класс для вывода страницы свойств стандартного цвета. Дополнительные сведения о см `CMFCColorDialog` . в разделе [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md).
 
@@ -56,7 +56,7 @@ class CMFCStandardColorsPropertyPage : public CPropertyPage
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксстандардколорспропертипаже. h
+**Заголовок:** афксстандардколорспропертипаже.h
 
 ## <a name="see-also"></a>См. также раздел
 

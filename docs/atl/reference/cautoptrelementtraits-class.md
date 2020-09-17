@@ -45,7 +45,7 @@ class CAutoPtrElementTraits
 |[CAutoPtrElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
 |[CAutoPtrElementTraits::OUTARGTYPE](#outargtype)|Тип данных для извлечения элементов из объекта класса сбора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет методы, статические функции и типы для сособничания созданию объектов класса коллекции, содержащих интеллектуальные указатели. Классы [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) и [CAutoPtrList](../../atl/reference/cautoptrlist-class.md) вытекают из `CAutoPtrElementTraits`. Если создание коллекции интеллектуальных указателей, требующих новых векторных и удаленных операторов, используйте [CAutoVectorPtrElementTraits](../../atl/reference/cautovectorptrelementtraits-class.md) вместо этого.
 

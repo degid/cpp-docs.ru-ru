@@ -33,7 +33,7 @@ using make_unsigned_t = typename make_unsigned<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляр модификатора типа содержит модифицированный тип, который равен *T* , если имеет `is_unsigned<T>` значение true. В противном случае это наименьший тип со знаком `ST`, для которого `sizeof (T) <= sizeof (ST)`.
 

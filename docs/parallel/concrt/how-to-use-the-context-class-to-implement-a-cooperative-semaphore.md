@@ -16,7 +16,7 @@ ms.locfileid: "87230393"
 
 В этом разделе показано, как использовать класс Concurrency:: Context для реализации класса семафора с совместным использованием.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `Context`Класс позволяет блокировать или выдавать текущий контекст выполнения. Блокировка или выработка текущего контекста полезна, если текущий контекст не может быть продолжен, так как ресурс недоступен. *Семафор* — это пример одной ситуации, в которой текущий контекст выполнения должен ждать, пока ресурс станет доступным. Семафор, как и объект критической секции, является объектом синхронизации, который позволяет коду в одном контексте иметь монопольный доступ к ресурсу. Однако, в отличие от объекта критической секции, семафор позволяет параллельно обращаться к ресурсу более чем в одном контексте. Если максимальное число контекстов содержит блокировку семафора, каждый дополнительный контекст должен ожидать освобождения блокировки другим контекстом.
 
@@ -26,7 +26,7 @@ ms.locfileid: "87230393"
 
 [!code-cpp[concrt-cooperative-semaphore#1](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_1.cpp)]
 
-1. В **`private`** разделе `semaphore` класса объявите переменную [std:: Atomic](../../standard-library/atomic-structure.md) , которая содержит количество семафоров и объект [Concurrency:: concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) , содержащий контексты, которые должны ожидать получения семафора.
+1. В **`private`** разделе `semaphore` класса объявите переменную [std:: Atomic](../../standard-library/atomic-structure.md) , которая содержит количество семафоров и объект [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) , содержащий контексты, которые должны ожидать получения семафора.
 
 [!code-cpp[concrt-cooperative-semaphore#2](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_2.cpp)]
 
@@ -34,7 +34,7 @@ ms.locfileid: "87230393"
 
 [!code-cpp[concrt-cooperative-semaphore#3](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_3.cpp)]
 
-1. В **`public`** разделе `semaphore` класса реализуйте `acquire` метод. Этот метод уменьшает число семафоров как атомарную операцию. Если число семафоров станет отрицательным, добавьте текущий контекст в конец очереди ожидания и вызовите метод [Concurrency:: Context:: Block](reference/context-class.md#block) , чтобы заблокировать текущий контекст.
+1. В **`public`** разделе `semaphore` класса реализуйте `acquire` метод. Этот метод уменьшает число семафоров как атомарную операцию. Если число семафоров станет отрицательным, добавьте текущий контекст в конец очереди ожидания и вызовите метод [concurrency::Context:: Block](reference/context-class.md#block) , чтобы заблокировать текущий контекст.
 
 [!code-cpp[concrt-cooperative-semaphore#4](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_4.cpp)]
 
@@ -46,7 +46,7 @@ ms.locfileid: "87230393"
 
 `semaphore`Класс в этом примере выполняется совместно, так как `Context::Block` `Context::Yield` методы и возвращают выполнение, чтобы среда выполнения могла выполнять другие задачи.
 
-`acquire`Метод уменьшает счетчик, но может не завершить добавление контекста в очередь ожидания, прежде чем другой контекст вызовет `release` метод. Для этого `release` метод использует цикл Spin, который вызывает метод [Concurrency:: Context:: Yield](reference/context-class.md#yield) , чтобы дождаться `acquire` завершения добавления контекста в метод.
+`acquire`Метод уменьшает счетчик, но может не завершить добавление контекста в очередь ожидания, прежде чем другой контекст вызовет `release` метод. Для этого `release` метод использует цикл Spin, который вызывает метод [concurrency::Context:: Yield](reference/context-class.md#yield) , чтобы дождаться `acquire` завершения добавления контекста в метод.
 
 `release`Метод может вызвать `Context::Unblock` метод до того, как `acquire` метод вызовет `Context::Block` метод. Не требуется защищаться от этого состояния гонки, так как среда выполнения позволяет вызывать эти методы в любом порядке. Если `release` метод вызывает `Context::Unblock` до `acquire` вызова метода для того `Context::Block` же контекста, этот контекст остается незаблокированным. Среда выполнения требует, чтобы каждый вызов `Context::Block` сопоставляется с соответствующим вызовом `Context::Unblock` .
 
@@ -81,7 +81,7 @@ In loop iteration 4...
 
 Можно использовать шаблон « *получение ресурсов — инициализация* » (RAII), чтобы ограничить доступ к `semaphore` объекту в заданной области. В шаблоне RAII структура данных выделяется в стеке. Эта структура данных Инициализирует или получает ресурс при его создании, а также уничтожает или освобождает этот ресурс при уничтожении структуры данных. Шаблон RAII гарантирует, что деструктор вызывается до выхода из охватывающей области. Таким образом, ресурс правильно управляется при возникновении исключения или если функция содержит несколько **`return`** инструкций.
 
-В следующем примере определяется класс с именем `scoped_lock` , который определен в **`public`** разделе `semaphore` класса. `scoped_lock`Класс похож на классы [Concurrency:: critical_section:: scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) и [Concurrency:: reader_writer_lock:: scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) . Конструктор `semaphore::scoped_lock` класса получает доступ к данному `semaphore` объекту, а деструктор освобождает доступ к этому объекту.
+В следующем примере определяется класс с именем `scoped_lock` , который определен в **`public`** разделе `semaphore` класса. `scoped_lock`Класс похож на классы [concurrency::critical_section:: scoped_lock](reference/critical-section-class.md#critical_section__scoped_lock_class) и [concurrency::reader_writer_lock:: scoped_lock](reference/reader-writer-lock-class.md#scoped_lock_class) . Конструктор `semaphore::scoped_lock` класса получает доступ к данному `semaphore` объекту, а деструктор освобождает доступ к этому объекту.
 
 [!code-cpp[concrt-cooperative-semaphore#7](../../parallel/concrt/codesnippet/cpp/how-to-use-the-context-class-to-implement-a-cooperative-semaphore_7.cpp)]
 В следующем примере изменяется текст рабочей функции, которая передается в `parallel_for` алгоритм, чтобы она использовала RAII, чтобы убедиться, что семафор освобожден перед возвратом функции. Этот метод гарантирует, что Рабочая функция будет защищена от исключений.

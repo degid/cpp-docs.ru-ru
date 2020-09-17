@@ -29,7 +29,7 @@ class unsupported_os : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[unsupported_os](#ctor)|Перегружен. Создает объект `unsupported_os`.|
 
@@ -41,7 +41,7 @@ class unsupported_os : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

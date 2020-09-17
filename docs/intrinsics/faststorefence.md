@@ -33,7 +33,7 @@ void __faststorefence();
 |---------------|------------------|
 |`__faststorefence`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

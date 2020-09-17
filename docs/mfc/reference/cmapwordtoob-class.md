@@ -63,13 +63,13 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кмапвордтуб:: Кмапвордтуб](../../mfc/reference/cmapstringtoob-class.md#cmapstringtoob)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кмапвордтуб:: NOCOUNT](../../mfc/reference/cmapstringtoob-class.md#getcount)|Возвращает число элементов в этой карте.|
 |[Кмапвордтуб:: Жесаштаблесизе](../../mfc/reference/cmapstringtoob-class.md#gethashtablesize)|Определяет текущее количество элементов в хэш-таблице.|
@@ -87,11 +87,11 @@ class CMapWordToOb : public CObject
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
-|[Кмапвордтуб:: operator \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Вставляет элемент в Map — подстановку оператора для `SetAt` .|
+|[Кмапвордтуб::operator \[\]](../../mfc/reference/cmapstringtoob-class.md#operator_at)|Вставляет элемент в Map — подстановку оператора для `SetAt` .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CMapWordToOb`включает макрос IMPLEMENT_SERIAL для поддержки сериализации и дампа его элементов. Каждый элемент сериализуется в свою очередь, если схема хранится в архиве с перегруженным **<<** оператором вставки () или с `Serialize` функцией-членом.
 
@@ -109,7 +109,7 @@ class CMapWordToOb : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксколл. h
+**Заголовок:** афксколл.h
 
 ## <a name="see-also"></a>См. также статью
 

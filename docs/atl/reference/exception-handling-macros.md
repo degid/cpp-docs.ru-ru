@@ -28,7 +28,7 @@ ms.locfileid: "88833443"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлдеф. h
+**Заголовок:** атлдеф.h
 
 ## <a name="_atlcatch"></a><a name="_atlcatch"></a> _ATLCATCH
 
@@ -43,7 +43,7 @@ _ATLCATCH(e)
 *e*<br/>
 Исключение для перехвата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется в сочетании со свойством `_ATLTRY`. Разрешается в C++ [catch (катлексцептион e)](../../cpp/try-throw-and-catch-statements-cpp.md) для обработки определенного типа исключений c++.
 
@@ -55,7 +55,7 @@ _ATLCATCH(e)
 _ATLCATCHALL
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется в сочетании со свойством `_ATLTRY`. Разрешается в C++ [catch (...)](../../cpp/try-throw-and-catch-statements-cpp.md) для обработки всех типов исключений c++.
 
@@ -67,7 +67,7 @@ _ATLCATCHALL
 _ATLTRY
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется в сочетании с [_ATLCATCH](#_atlcatch) или [_ATLCATCHALL](#_atlcatchall). Разрешается в символ C++ [try](../../cpp/try-throw-and-catch-statements-cpp.md).
 

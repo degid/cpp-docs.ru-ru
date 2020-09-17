@@ -102,7 +102,7 @@ class CUrl
 |----------|-----------------|
 |[CUrl::оператор](#operator_eq)|Присваивает `CUrl` указанный `CUrl` объект текущему объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CUrl`позволяет манипулировать полями URL, такими как путь или номер порта. `CUrl`понимает URL-адреса следующей формы:
 
@@ -163,7 +163,7 @@ inline BOOL Canonicalize(DWORD dwFlags = 0) throw();
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Преобразование в каноническую форму включает в себя преобразование небезопасных символов и пробелов, чтобы избежать последовательностей.
 
@@ -221,7 +221,7 @@ inline BOOL CreateUrl(
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод придатков к отдельным полям для построения полной строки URL с использованием следующего формата:
 
@@ -539,7 +539,7 @@ inline BOOL SetScheme(ATL_URL_SCHEME nScheme) throw();
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы также можете установить схему по имени (см. [CUrl::SetSchemeName).](#setschemename)
 
@@ -560,7 +560,7 @@ inline BOOL SetSchemeName(LPCTSTR lpszSchm) throw();
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы также можете установить схему, используя [ATL_URL_SCHEME](atl-url-scheme-enum.md) константу (см. [CUrl:: SetScheme).](#setscheme)
 

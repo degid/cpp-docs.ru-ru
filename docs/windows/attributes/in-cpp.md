@@ -23,7 +23,7 @@ ms.locfileid: "88842238"
 [in]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **в** C++ имеет те же функциональные возможности, что и [в](/windows/win32/Midl/in) атрибуте MIDL.
 

@@ -60,7 +60,7 @@ class CTypedPtrMap : public BASE_CLASS
 |----------|-----------------|
 |[CTypedPtrMap::оператор \[\]](#operator_at)|Вставляет элемент в карту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При использовании, `CTypedPtrMap`средство проверки типа СЗ помогает устранить ошибки, вызванные несовместимыми типами указателей.
 
@@ -106,7 +106,7 @@ void GetNextAssoc(
 *Rvalue*<br/>
 Определяет возвращенное значение извлеченного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция наиболее полезна для итерации всех элементов на карте. Обратите внимание, что последовательность положения не обязательно совпадает с последовательностью значения ключа.
 
@@ -140,7 +140,7 @@ BOOL Lookup(BASE_CLASS ::BASE_ARG_KEY key, VALUE& rValue) const;
 
 Nonzero, если элемент был найден; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта влиневая функция вызывает `BASE_CLASS` **::Lookup**.
 
@@ -163,7 +163,7 @@ VALUE& operator[ ](base_class ::base_arg_key key);
 *key*<br/>
 Ключ элемента, который будет рассмотрен или создан на карте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если нет элемента карты с указанным ключом, создается новый элемент. Нет "правой стороны" (r-value) эквивалентного этому оператору, поскольку существует вероятность того, что ключ может не быть найден на карте. Используйте `Lookup` функцию члена для поиска элементов.
 
@@ -187,7 +187,7 @@ BOOL RemoveKey(KEY key);
 
 Nonzero, если запись была найдена и успешно удалена; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для более подробных замечаний, см [Cmapstringtoob::RemoveKey](../../mfc/reference/cmapstringtoob-class.md#removekey).
 
@@ -210,7 +210,7 @@ void SetAt(KEY key, VALUE newValue);
 *newValue*<br/>
 Определяет указатель объекта, который является значением нового элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для более подробных замечаний, см [Cmapstringtoob::Setat](../../mfc/reference/cmapstringtoob-class.md#setat).
 

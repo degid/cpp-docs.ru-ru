@@ -42,7 +42,7 @@ ms.locfileid: "81363876"
 set OMP_DYNAMIC[=TRUE | =FALSE]
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переменная `OMP_DYNAMIC` среды может быть перекрыта [функцией omp_set_dynamic.](openmp-functions.md#omp-set-dynamic)
 
@@ -72,7 +72,7 @@ set OMP_DYNAMIC
 set OMP_NESTED[=TRUE | =FALSE]
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переменная `OMP_NESTED` среды может быть перекрыта [функцией omp_set_nested.](openmp-functions.md#omp-set-nested)
 
@@ -107,7 +107,7 @@ set OMP_NUM_THREADS[=num]
 *num*<br/>
 Максимальное количество потоков, которые вы хотите в параллельной области, до 64 в реализации Visual C.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переменная `OMP_NUM_THREADS` среды может быть перекрыта функцией [omp_set_num_threads](openmp-functions.md#omp-set-num-threads) или [num_threads.](openmp-clauses.md#num-threads)
 
@@ -145,7 +145,7 @@ set OMP_SCHEDULE[=type[,size]]
 *тип*<br/>
 Вид планирования, либо `dynamic` `guided`, `runtime`, `static`или .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение по умолчанию в реализации стандарта Visual `OMP_SCHEDULE=static,0`C '.
 

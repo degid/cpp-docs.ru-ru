@@ -61,7 +61,7 @@ __m128i _mm_extracti_si64(
 |`_mm_extract_si64`|SSE4a|
 |`_mm_extracti_si64`|SSE4a|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

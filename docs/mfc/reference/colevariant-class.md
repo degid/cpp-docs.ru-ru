@@ -47,7 +47,7 @@ class COleVariant : public tagVARIANT
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleVariant:: Attach](#attach)|Присоединяет вариант к `COleVariant` .|
 |[COleVariant:: ChangeType](#changetype)|Изменяет тип Variant этого `COleVariant` объекта.|
@@ -60,11 +60,11 @@ class COleVariant : public tagVARIANT
 
 |Имя|Описание|
 |----------|-----------------|
-|[COleVariant:: operator ЛПКВАРИАНТ](#operator_lpcvariant)|Преобразует `COleVariant` значение в `LPCVARIANT` .|
-|[COleVariant:: operator ЛПВАРИАНТ](#operator_lpvariant)|Преобразует `COleVariant` объект в `LPVARIANT` .|
-|[COleVariant:: operator =](#operator_eq)|Копирует `COleVariant` значение.|
-|[COleVariant:: operator = =](#operator_eq_eq)|Сравнивает два `COleVariant` значения.|
-|[COleVariant:: operator &lt; &lt; ,&gt;&gt;](#operator_lt_lt__gt_gt)|Выводит `COleVariant` значение в `CArchive` или `CDumpContext` и, а также вводит `COleVariant` объект из `CArchive` .|
+|[COleVariant::operator ЛПКВАРИАНТ](#operator_lpcvariant)|Преобразует `COleVariant` значение в `LPCVARIANT` .|
+|[COleVariant::operator ЛПВАРИАНТ](#operator_lpvariant)|Преобразует `COleVariant` объект в `LPVARIANT` .|
+|[COleVariant::operator=](#operator_eq)|Копирует `COleVariant` значение.|
+|[COleVariant::operator==](#operator_eq_eq)|Сравнивает два `COleVariant` значения.|
+|[COleVariant::operator &lt; &lt; ,&gt;&gt;](#operator_lt_lt__gt_gt)|Выводит `COleVariant` значение в `CArchive` или `CDumpContext` и, а также вводит `COleVariant` объект из `CArchive` .|
 
 ## <a name="remarks"></a>Комментарии
 
@@ -272,7 +272,7 @@ void GetByteArrayFromVariantArray(CByteArray& bytes);
 *байт*<br/>
 Ссылка на существующий объект [CByteArray](../../mfc/reference/cbytearray-class.md) .
 
-## <a name="colevariantoperator-lpcvariant"></a><a name="operator_lpcvariant"></a>COleVariant:: operator ЛПКВАРИАНТ
+## <a name="colevariantoperator-lpcvariant"></a><a name="operator_lpcvariant"></a>COleVariant::operator ЛПКВАРИАНТ
 
 Этот оператор приведения возвращает `VARIANT` структуру, значение которой копируется из этого `COleVariant` объекта.
 
@@ -282,7 +282,7 @@ operator LPCVARIANT() const;
 
 ### <a name="remarks"></a>Комментарии
 
-## <a name="colevariantoperator-lpvariant"></a><a name="operator_lpvariant"></a>COleVariant:: operator ЛПВАРИАНТ
+## <a name="colevariantoperator-lpvariant"></a><a name="operator_lpvariant"></a>COleVariant::operator ЛПВАРИАНТ
 
 Вызовите этот оператор приведения, чтобы получить доступ к базовой `VARIANT` структуре для этого `COleVariant` объекта.
 
@@ -295,7 +295,7 @@ operator LPVARIANT();
 > [!CAUTION]
 > Изменение значения в `VARIANT` структуре, к которой обращается указатель, возвращенное этой функцией, приведет к изменению значения этого `COleVariant` объекта.
 
-## <a name="colevariantoperator-"></a><a name="operator_eq"></a>COleVariant:: operator =
+## <a name="colevariantoperator-"></a><a name="operator_eq"></a>COleVariant::operator=
 
 Эти перегруженные операторы присваивания копируют исходное значение в этот `COleVariant` объект.
 
@@ -346,7 +346,7 @@ const COleVariant& operator=(const CLongBinary& lbSrc);
 
 Дополнительные сведения см. в записях [типа Variant](/windows/win32/api/oaidl/ns-oaidl-variant) и [VARENUM](/windows/win32/api/wtypes/ne-wtypes-varenum) в Windows SDK.
 
-## <a name="colevariantoperator-"></a><a name="operator_eq_eq"></a>COleVariant:: operator = =
+## <a name="colevariantoperator-"></a><a name="operator_eq_eq"></a>COleVariant::operator==
 
 Этот оператор сравнивает два значения типа Variant и возвращает ненулевое значение, если они равны. в противном случае — 0.
 
@@ -355,7 +355,7 @@ BOOL operator==(const VARIANT& varSrc) const;
 BOOL operator==(LPCVARIANT pSrc) const;
 ```
 
-## <a name="colevariantoperator-ltlt-gtgt"></a><a name="operator_lt_lt__gt_gt"></a>COleVariant:: operator &lt; &lt; ,&gt;&gt;
+## <a name="colevariantoperator-ltlt-gtgt"></a><a name="operator_lt_lt__gt_gt"></a>COleVariant::operator &lt; &lt; ,&gt;&gt;
 
 Выводит `COleVariant` значение в `CArchive` или `CdumpContext` и, а также вводит `COleVariant` объект из `CArchive` .
 

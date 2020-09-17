@@ -41,7 +41,7 @@ class COleResizeBar : public CControlBar
 |----------|-----------------|
 |[ColeReResizebar::Создание](#create)|Создает и инициализирует окно ребенка `COleResizeBar` Windows и связывает его с объектом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `COleResizeBar`объекты отображаются как [CRectTracker](../../mfc/reference/crecttracker-class.md) с вылупившихся границы и внешних рефигурных ручек.
 
@@ -73,7 +73,7 @@ class COleResizeBar : public CControlBar
 COleResizeBar();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов `Create` для создания объекта панели повторного размера.
 

@@ -50,7 +50,7 @@ class CGopherConnection : public CInternetConnection
 |[CGopherConnection::GetAttribute](#getattribute)|Извлекает информацию о объекте суслика.|
 |[CGopherConnection::OpenFile](#openfile)|Открывает файл суслика.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Служба сусликов является одним из трех интернет-сервисов, признанных классами MFC WinInet.
 
@@ -122,7 +122,7 @@ CGopherConnection(
 *nПорт*<br/>
 Номер, идентифицирующие порт TCP/IP для использования на сервере.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда `CGopherConnection` не создаете непосредственно. Скорее, позвоните [CInternetSession::GetGopherConnection](../../mfc/reference/cinternetsession-class.md#getgopherconnection), который создает `CGopherConnection` объект и возвращает указатель к нему.
 
@@ -170,7 +170,7 @@ static CGopherLocator CreateLocator(
 
 Объект [CGopherLocator.](../../mfc/reference/cgopherlocator-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Статическая версия функции участника требует указания сервера, в то время как нестатическая версия использует имя сервера из объекта соединения.
 
@@ -231,7 +231,7 @@ CGopherFile* OpenFile(
 
 Указатель на объект [CGopherFile,](../../mfc/reference/cgopherfile-class.md) который будет открыт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переизбь по умолчанию *dwContext,* чтобы установить идентификатор контекста на значение по вашему выбору. Идентификатор контекста связан с `CGopherConnection` этой конкретной операцией объекта, созданного его объектом [CInternetSession.](../../mfc/reference/cinternetsession-class.md) Значение возвращается [в CInternetSession::OnStatusCallback,](../../mfc/reference/cinternetsession-class.md#onstatuscallback) чтобы предоставить статус операции, с которой он идентифицирован. Для получения дополнительной информации об идентификаторе контекста смотрите статью [Internet First Steps: WinInet.](../../mfc/wininet-basics.md)
 

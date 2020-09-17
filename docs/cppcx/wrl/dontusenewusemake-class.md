@@ -26,7 +26,7 @@ ms.locfileid: "81371553"
 class DontUseNewUseMake;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Предотвращает использование `new` оператора `RuntimeClass`в . Следовательно, вместо этого необходимо использовать [функцию Make.](make-function.md)
 
@@ -71,6 +71,6 @@ void* operator new(
 
 Предоставляет способ передачи дополнительных аргументов при перегрузке оператора `new`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перегружает `new` оператора и предотвращает его `RuntimeClass`использования в.

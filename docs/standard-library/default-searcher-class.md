@@ -41,7 +41,7 @@ class default_searcher
 | **Конструктор** | |
 | [default_searcher](#default-searcher-constructor) | Конструирует экземпляр службы поиска. |
 | **Операторы** | |
-| [оператор ()](#operator-call) | Вызывает операцию в последовательности. |
+| [operator()](#operator-call) | Вызывает операцию в последовательности. |
 
 ## <a name="default_searcher-constructor"></a><a name="default-searcher-constructor"></a> Конструктор default_searcher
 
@@ -67,7 +67,7 @@ constexpr default_searcher(         // C++20
 *pat_last*\
 Конец последовательности для поиска.
 
-*Возможен*\
+*pred*\
 Необязательный предикат сравнения равенства для элементов последовательности. Если тип сравнения на равенство не указан, по умолчанию используется значение `std::equal_to` .
 
 ### <a name="remarks"></a>Комментарии
@@ -76,7 +76,7 @@ constexpr default_searcher(         // C++20
 
 Этот класс впервые появились в C++ 17. В c++ 20 создан конструктор **`constexpr`** .
 
-## <a name="operator"></a><a name="operator-call"></a> оператор ()
+## <a name="operator"></a><a name="operator-call"></a> operator()
 
 Оператор Call оператора Function. Ищет в последовательности аргументов `[first, last)` последовательность, указанную в конструкторе.
 
@@ -94,10 +94,10 @@ constexpr pair<ForwardIterator2, ForwardIterator2> operator()(
 
 ### <a name="parameters"></a>Параметры
 
-*началь*\
+*first*\
 Начальный элемент последовательности, в которой необходимо выполнить поиск.
 
-*Последняя*\
+*last*\
 Конец последовательности, в которой необходимо выполнить поиск.
 
 ### <a name="remarks"></a>Комментарии
@@ -106,7 +106,7 @@ constexpr pair<ForwardIterator2, ForwardIterator2> operator()(
 
 `std::search( first, last, pat_first, pat_last, pred )`.
 
-Второй итератор пары *Last* , если *i** является *последним*. В противном случае это эффективный результат:
+Второй итератор пары *last* , если *i** является *последним*. В противном случае это эффективный результат:
 
 `std::next( i, std::distance( pat_first, pat_last ))`.
 

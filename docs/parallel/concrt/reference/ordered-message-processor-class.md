@@ -41,20 +41,20 @@ class ordered_message_processor : public message_processor<T>;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`type`|Псевдоним типа для `T`.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[ordered_message_processor](#ctor)|Создает объект `ordered_message_processor`.|
 |[Деструктор ~ ordered_message_processor](#dtor)|Уничтожает объект `ordered_message_processor`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[async_send](#async_send)|Асинхронно ставит в очередь сообщения и запускает задачу обработки, если это еще не сделано. (Переопределяет [message_processor:: async_send](message-processor-class.md#async_send).)|
 |[устанавливает](#initialize)|Инициализирует объект `ordered_message_processor` с соответствующей функцией обратного вызова, планировщиком и группой расписаний.|
@@ -64,7 +64,7 @@ class ordered_message_processor : public message_processor<T>;
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[process_incoming_message](#process_incoming_message)|Функция обработки, которая вызывается асинхронно. Она вымещает сообщения из очереди и начинает их обработку. (Переопределяет [message_processor::p rocess_incoming_message](message-processor-class.md#process_incoming_message).)|
 
@@ -141,7 +141,7 @@ virtual void initialize_batched_processing(
 ordered_message_processor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это `ordered_message_processor` не планирует асинхронные или синхронные обработчики, пока не будет вызвана функция `initialize`.
 
@@ -153,7 +153,7 @@ ordered_message_processor();
 virtual ~ordered_message_processor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ожидает завершения всех невыполненных асинхронных операций перед уничтожением процессора.
 

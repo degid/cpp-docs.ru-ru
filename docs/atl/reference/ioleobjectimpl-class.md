@@ -122,7 +122,7 @@ class ATL_NO_VTABLE IOleObjectImpl : public IOleObject
 |[IOleObjectImpl::Unadvise](#unadvise)|Удаляет консультативное соединение с элементом управления.|
 |[IOleObjectImpl::Обновление](#update)|Обновляет элемент управления. Реализация ATL возвращает S_OK.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IOleObject](/windows/win32/api/oleidl/nn-oleidl-ioleobject) является основным интерфейсом, через который контейнер общается с элементом управления. Класс `IOleObjectImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -148,7 +148,7 @@ STDMETHOD(Advise)(
     DWORD* pdwConnection);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::Консультации](/windows/win32/api/oleidl/nf-oleidl-ioleobject-advise) в Windows SDK.
 
@@ -160,7 +160,7 @@ STDMETHOD(Advise)(
 STDMETHOD(Close)(DWORD dwSaveOption);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деактивирует элемент управления и разрушает окно управления, если оно существует. Если член данных класса управления [CComControlBase::m_bRequiresSave](../../atl/reference/ccomcontrolbase-class.md#m_brequiressave) является правдой, а параметр *dwSaveOption* либо OLECLOSE_SAVEIFDIRTY, либо OLECLOSE_PROMPTSAVE, свойства управления сохраняются перед закрытием.
 
@@ -182,7 +182,7 @@ STDMETHOD(DoVerb)(
     LPCRECT lprcPosRect);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от `iVerb`значения, одна `DoVerb` из функций помощника ATL называется следующим образом:
 
@@ -259,7 +259,7 @@ HRESULT DoVerbInPlaceActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Активирует элемент управления на месте, позвонив [в CComControlBase::InPlaceActivate](../../atl/reference/ccomcontrolbase-class.md#inplaceactivate). Если данные члена `m_bWindowOnly` класса управления `DoVerbInPlaceActivate` не соответствуют действительности, первые попытки активировать элемент управления в качестве управления без окон (возможно только в том случае, если контейнер поддерживает [IOleInPlaceSiteWindowless).](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesitewindowless) Если это не удается, функция пытается активировать элемент управления с расширенными функциями (возможно только в том случае, если контейнер поддерживает [IOleInPlaceSiteEx).](/windows/win32/api/ocidl/nn-ocidl-ioleinplacesiteex) Если это не удается, функция пытается активировать элемент управления без расширенных функций (возможно только в том случае, если контейнер поддерживает [IOleInPlaceSite).](/windows/win32/api/oleidl/nn-oleidl-ioleinplacesite) Если активация выполняется успешно, функция уведомляет контейнер, элемент управления активирован.
 
@@ -303,7 +303,7 @@ HRESULT DoVerbPrimary(LPCRECT prcPosRect, HWND hwndParent);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию устанавливается для отображения страниц свойств. Вы можете переопределить это в классе управления, чтобы вызвать другое поведение при двойном нажатии кнопки; например, воспроизвести видео или пойти на место активно.
 
@@ -355,7 +355,7 @@ HRESULT DoVerbUIActivate(LPCRECT prcPosRect, HWND /* hwndParent */);
 STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::Подспоминаните](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumadvise) в Windows SDK.
 
@@ -367,7 +367,7 @@ STDMETHOD(EnumAdvise)(IEnumSTATDATA** ppenumAdvise);
 STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете добавить глаголы в файл .rgs вашего проекта. Например, см. RGS в образце [CIRC.](../../overview/visual-cpp-samples.md)
 
@@ -381,7 +381,7 @@ STDMETHOD(EnumVerbs)(IEnumOLEVERB** ppEnumOleVerb);
 STDMETHOD(GetClientSite)(IOleClientSite** ppClientSite);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::GetClientSite](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclientsite) в Windows SDK.
 
@@ -399,7 +399,7 @@ STDMETHOD(GetClipboardData)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::GetClipboardData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getclipboarddata) в Windows SDK.
 
@@ -413,7 +413,7 @@ STDMETHOD(GetExtent)(
     SIZEL* psizel);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер хранится в элементе данных класса управления [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent).
 
@@ -429,7 +429,7 @@ STDMETHOD(GetMiscStatus)(
     DWORD* pdwStatus);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Информация о состоянии включает в себя поведение, поддерживаемое данными управления и презентации. Вы можете добавить информацию о состоянии в файл .rgs вашего проекта.
 
@@ -450,7 +450,7 @@ STDMETHOD(GetMoniker)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::GetMoniker](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmoniker) в Windows SDK.
 
@@ -462,7 +462,7 @@ STDMETHOD(GetMoniker)(
 STDMETHOD(GetUserClassID)(CLSID* pClsid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::GetUserClassID](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getuserclassid) в Windows SDK.
 
@@ -476,7 +476,7 @@ STDMETHOD(GetUserType)(
     LPOLESTR* pszUserType);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Имя типа пользователя используется для отображения в пользовательских интерфейсах элементов, таких как меню и диалоговые коробки. Вы можете изменить имя типа пользователя в файле .rgs вашего проекта.
 
@@ -497,7 +497,7 @@ STDMETHOD(InitFromData)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::InitFromData](/windows/win32/api/oleidl/nf-oleidl-ioleobject-initfromdata) в Windows SDK.
 
@@ -513,7 +513,7 @@ STDMETHOD(IsUpToDate)(void);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::IsUpToDate](/windows/win32/api/oleidl/nf-oleidl-ioleobject-isuptodate) в Windows SDK.
 
@@ -529,7 +529,7 @@ HRESULT OnPostVerbDiscardUndo();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода, выполненного после отбрасыва того состояния отсна, необходимого для отмены.
 
@@ -545,7 +545,7 @@ HRESULT OnPostVerbHide();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода, выполненного после скрытия элемента управления.
 
@@ -561,7 +561,7 @@ HRESULT OnPostVerbInPlaceActivate();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода после активации элемента управления.
 
@@ -577,7 +577,7 @@ HRESULT OnPostVerbOpen();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода, выполненного после того, как элемент управления был открыт для редактирования в отдельном окне.
 
@@ -593,7 +593,7 @@ HRESULT OnPostVerbShow();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода, выполненного после того, как элемент управления будет видимым.
 
@@ -609,7 +609,7 @@ HRESULT OnPostVerbUIActivate();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод с помощью нужного кода после активации пользовательского интерфейса элемента управления.
 
@@ -625,7 +625,7 @@ HRESULT OnPreVerbDiscardUndo();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы предотвратить отбрасывание состояния отсутсвия, переуторируйте этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -641,7 +641,7 @@ HRESULT OnPreVerbHide();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы не скрыть элемент управления, переуторируйте этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -657,7 +657,7 @@ HRESULT OnPreVerbInPlaceActivate();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы предотвратить активацию элемента управления на месте, переуместите этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -673,7 +673,7 @@ HRESULT OnPreVerbOpen();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы предотвратить открытие элемента управления для редактирования в отдельном окне, переуторите этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -689,7 +689,7 @@ HRESULT OnPreVerbShow();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы не допустить видимого элемента управления, переуторируйте этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -705,7 +705,7 @@ HRESULT OnPreVerbUIActivate();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы предотвратить активацию пользовательского интерфейса элемента управления, переуторируйте этот метод, чтобы вернуть ошибку HRESULT.
 
@@ -717,7 +717,7 @@ HRESULT OnPreVerbUIActivate();
 STDMETHOD(SetClientSite)(IOleClientSite* pClientSite);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Затем метод возвращается S_OK.
 
@@ -735,7 +735,7 @@ STDMETHOD(SetColorScheme)(LOGPALETTE* /* pLogPal */);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::SetColorScheme](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setcolorscheme) в Windows SDK.
 
@@ -749,7 +749,7 @@ STDMETHOD(SetExtent)(
     SIZEL* psizel);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В `SetExtent` противном случае, `psizel` хранит значение, на что указывает в элементе данных класса управления [CComControlBase::m_sizeExtent](../../atl/reference/ccomcontrolbase-class.md#m_sizeextent). Это значение находится в единицах HIMETRIC (0,01 миллиметра на единицу).
 
@@ -771,7 +771,7 @@ STDMETHOD(SetHostNames)(LPCOLESTR /* szContainerApp */, LPCOLESTR /* szContainer
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::SetHostNames](/windows/win32/api/oleidl/nf-oleidl-ioleobject-sethostnames) в Windows SDK.
 
@@ -789,7 +789,7 @@ STDMETHOD(SetMoniker)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::SetMoniker](/windows/win32/api/oleidl/nf-oleidl-ioleobject-setmoniker) в Windows SDK.
 
@@ -801,7 +801,7 @@ STDMETHOD(SetMoniker)(
 STDMETHOD(Unadvise)(DWORD dwConnection);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::Unadvise](/windows/win32/api/oleidl/nf-oleidl-ioleobject-unadvise) в Windows SDK.
 
@@ -817,7 +817,7 @@ STDMETHOD(Update)(void);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleObject::Обновление](/windows/win32/api/oleidl/nf-oleidl-ioleobject-update) в Windows SDK.
 

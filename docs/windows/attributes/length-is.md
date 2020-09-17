@@ -28,7 +28,7 @@ ms.locfileid: "88834158"
 *expression*<br/>
 Одно или несколько выражений языка C. Пустые слоты аргументов разрешены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **length_is** C++ имеет те же функциональные возможности, что и атрибут [length_is](/windows/win32/Midl/length-is) MIDL.
 

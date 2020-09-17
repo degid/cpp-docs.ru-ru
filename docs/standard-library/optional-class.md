@@ -52,17 +52,17 @@ template<class T> optional(T) -> optional<T>;
 |[используемых](#optional) | Создает объект типа `optional`. |
 |[~ Необязательный](#optional-destructor) | Уничтожает объект типа `optional` . |
 | **Назначение** | |
-| [Оператор =](#op_eq) | Заменяет экземпляр на `optional` копию другого объекта `optional` . |
+| [operator=](#op_eq) | Заменяет экземпляр на `optional` копию другого объекта `optional` . |
 | [emplace](#op_eq) | Инициализирует содержащееся значение с указанными аргументами. |
 | **Позиции** | |
-| [позиции](#swap) | Меняет местами вложенное значение или пустое состояние на другое `optional` . |
+| [swap](#swap) | Меняет местами вложенное значение или пустое состояние на другое `optional` . |
 | **Наблюдатели** | |
 | [has_value](#has_value) | Возвращает, `optional` содержит ли объект значение. |
 | [value](#value) | Возвращает содержащееся значение. |
 | [value_or](#value_or) | Возвращает содержащееся значение или альтернативу, если значение отсутствует. |
-| [Оператор->](#op_as) | Ссылается на значение, содержащееся в `optional` объекте. |
-| [станции](#op_mem) | Ссылается на значение, содержащееся в `optional` объекте. |
-| [bool, оператор](#op_bool) | Возвращает, `optional` содержит ли объект значение. |
+| [operator->](#op_as) | Ссылается на значение, содержащееся в `optional` объекте. |
+| [operator](#op_mem) | Ссылается на значение, содержащееся в `optional` объекте. |
+| [operator bool](#op_bool) | Возвращает, `optional` содержит ли объект значение. |
 | **Модификаторы** | |
 | [reset](#reset) | Сбрасывает объект `optional` , уничтожая любое из содержащихся в нем значений. |
 
@@ -109,7 +109,7 @@ explicit optional(optional<U>&& rhs);
 *args*\
 Список аргументов для создания содержащего значения из.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `constexpr optional() noexcept;`
 `constexpr optional(nullopt_t nullopt) noexcept;` Эти конструкторы создают объект `optional` , который не содержит значения.
@@ -136,11 +136,11 @@ explicit optional(optional<U>&& rhs);
 ~optional();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `T` является тривиальным можно уничтожить, то `optional<T>` он также тривиальным можно уничтожить.
 
-## <a name="operator"></a><a name="op_eq"></a> Оператор =
+## <a name="operator"></a><a name="op_eq"></a> operator=
 
 Заменяет вложенное значение объекта на `optional` копию или перемещение из другого `optional` содержащего значения.
 
@@ -165,7 +165,7 @@ template <class U, class... Args>
 T& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="operator-"></a><a name="op_as"></a> Оператор->
+## <a name="operator-"></a><a name="op_as"></a> operator->
 
 Разыменование вложенного значения `optional` объекта.
 
@@ -174,7 +174,7 @@ constexpr const T* operator->() const;
 constexpr T* operator->();
 ```
 
-## <a name="operator"></a><a name="op_mem"></a> станции
+## <a name="operator"></a><a name="op_mem"></a> operator
 
 Разыменование вложенного значения `optional` объекта.
 
@@ -185,7 +185,7 @@ constexpr T&& operator*() &&;
 constexpr const T&& operator*() const&&;
 ```
 
-## <a name="operator-bool"></a><a name="op_bool"></a> bool, оператор
+## <a name="operator-bool"></a><a name="op_bool"></a> operator bool
 
 Сообщает, `optional` содержит ли объект содержащееся значение.
 
@@ -193,7 +193,7 @@ constexpr const T&& operator*() const&&;
 constexpr explicit operator bool() const noexcept;
 ```
 
-## <a name="reset"></a><a name="reset"></a> перезапуск
+## <a name="reset"></a><a name="reset"></a> reset
 
 Фактически вызывает деструктор вложенного объекта, если он есть, и задает для него неинициализированное состояние.
 
@@ -201,7 +201,7 @@ constexpr explicit operator bool() const noexcept;
 void reset() noexcept;
 ```
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 ```cpp
 template<class T>

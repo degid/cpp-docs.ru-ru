@@ -43,7 +43,7 @@ class CSecurityAttributes : public SECURITY_ATTRIBUTES
 |----------|-----------------|
 |[CSecurityAttributes::Set](#set)|Вызовите этот метод, чтобы `CSecurityAttributes` установить атрибуты объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Структура `SECURITY_ATTRIBUTES` содержит [дескриптор безопасности,](/windows/win32/api/winnt/ns-winnt-security_descriptor) используемый для создания объекта, и определяет, является ли извлеченная ручка науказной, указав эту структуру, наследуемой.
 
@@ -92,7 +92,7 @@ void Set(const CSecurityDesc& rSecurityDescriptor, bool bInheritHandle = false) 
 *bНаследыХи*<br/>
 Определяет, наследуется ли возвращаемый дескриптор при создании процесса. Если этот элемент имеет значение true, новый процесс наследует дескриптор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод используется конструктором для инициализации `CSecurityAttributes` объекта.
 

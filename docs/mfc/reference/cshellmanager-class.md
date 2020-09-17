@@ -68,7 +68,7 @@ class CShellManager : public CObject
 |[CShellManager::GetParentItem](#getparentitem)|Извлекает элемент родительской завоевывает поставляемый товар.|
 |[CShellManager::ItemFromPath](#itemfrompath)|Извлекает PIDL для элемента, идентифицированного по поставляемому пути.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Методы `CShellManager` класса имеют дело с PIDL. PIDL является уникальным идентификатором для объекта оболочки.
 
@@ -122,7 +122,7 @@ BOOL BrowseForFolder(
 
 Nonzero, если пользователь выбирает папку из окна диалога; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При вызове этого метода приложение создает и показывает диалоговую коробку, позволяющую пользователю выбрать папку. Метод напишет путь папки в параметр *strOutFolder.*
 
@@ -154,7 +154,7 @@ LPITEMIDLIST ConcatenateItem(
 
 Указатель на новый список элементов, если функция удана, в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает новый [ITEMIDLIST достаточно большой,](/windows/win32/api/shtypes/ns-shtypes-itemidlist) чтобы содержать как *pidl1* и *pidl2*. Затем он копирует *pidl1* и *pidl2* в новый список.
 
@@ -175,7 +175,7 @@ LPITEMIDLIST CopyItem(LPCITEMIDLIST pidlSource);
 
 Указатель на вновь созданный список элементов в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вновь созданный список элементов имеет тот же размер, что и список исходных элементов.
 
@@ -204,7 +204,7 @@ LPITEMIDLIST CreateItem(UINT cbSize);
 CShellManager();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В большинстве случаев, вам `CShellManager` не придется создавать непосредственно. По умолчанию фреймворк создает один для вас. Чтобы получить указатель `CShellManager`на, позвоните [CWinAppEx::GetShellManager](../../mfc/reference/cwinappex-class.md#getshellmanager). Если вы создаете вручную, `CShellManager` вы должны инициализировать его с методом [CWinAppEx::InitShellManager](../../mfc/reference/cwinappex-class.md#initshellmanager).
 
@@ -272,7 +272,7 @@ LPITEMIDLIST GetNextItem(LPCITEMIDLIST pidl);
 
 Указатель на следующий элемент в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если в списке больше нет элементов, этот метод возвращает NULL.
 
@@ -298,7 +298,7 @@ int GetParentItem(
 
 Уровень родительского PIDL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Уровень PIDL по отношению к рабочему столу. Считается, что настольный компьютер PIDL имеет уровень 0.
 

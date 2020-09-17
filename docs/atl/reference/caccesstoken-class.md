@@ -130,7 +130,7 @@ class CAccessToken
 |[CAccessToken:: Сетовнер](#setowner)|Вызовите этот метод, чтобы задать владельца `CAccessToken` объекта.|
 |[CAccessToken:: Сетпримариграуп](#setprimarygroup)|Вызовите этот метод, чтобы задать основную группу `CAccessToken` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [Маркер доступа](/windows/win32/SecAuthZ/access-tokens) — это объект, который описывает контекст безопасности процесса или потока и выделяется каждому пользователю, вошедшему в систему Windows.
 
@@ -138,7 +138,7 @@ class CAccessToken
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлсекурити. h
+**Заголовок:** атлсекурити.h
 
 ## <a name="caccesstokenattach"></a><a name="attach"></a>CAccessToken:: Attach
 
@@ -153,7 +153,7 @@ void Attach(HANDLE hToken) throw();
 *хтокен*<br/>
 Маркер маркера доступа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если `CAccessToken` объект уже владеет маркером доступа.
 
@@ -165,7 +165,7 @@ void Attach(HANDLE hToken) throw();
 virtual ~CAccessToken() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -191,7 +191,7 @@ bool CheckTokenMembership(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CheckTokenMembership` Метод проверяет наличие идентификатора безопасности в идентификаторах безопасности пользователя и группы маркера доступа. Если идентификатор безопасности существует и имеет атрибут SE_GROUP_ENABLED, *пбисмембер* имеет значение true. в противном случае для него задается значение FALSE.
 
@@ -222,7 +222,7 @@ bool CreateImpersonationToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateImpersonationToken`вызывает [сбой duplicatetoken](/windows/win32/api/securitybaseapi/nf-securitybaseapi-duplicatetoken) для создания нового маркера олицетворения.
 
@@ -252,7 +252,7 @@ bool CreatePrimaryToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreatePrimaryToken`вызывает [дупликатетокенекс](/windows/win32/api/securitybaseapi/nf-securitybaseapi-duplicatetokenex) для создания нового первичного маркера.
 
@@ -310,7 +310,7 @@ bool CreateProcessAsUser(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateProcessAsUser`использует функцию `CreateProcessAsUser` Win32 для создания нового процесса, выполняемого в контексте безопасности пользователя, представленного `CAccessToken` объектом. Ознакомьтесь с описанием функции [параметр CreateProcessAsUser](/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessasuserw) , чтобы получить полное описание необходимых параметров.
 
@@ -346,7 +346,7 @@ bool CreateRestrictedToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateRestrictedToken`использует функцию Win32 [CreateRestrictedToken](/windows/win32/api/securitybaseapi/nf-securitybaseapi-createrestrictedtoken) для создания нового `CAccessToken` объекта с ограничениями.
 
@@ -365,7 +365,7 @@ HANDLE Detach() throw();
 
 Возвращает маркер, `CAccessToken` который был отсоединен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отменяет `CAccessToken`владение маркером доступа.
 
@@ -555,7 +555,7 @@ bool GetLogonSessionId(LUID* pluid) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если *плуид* имеет недопустимое значение.
 
@@ -576,7 +576,7 @@ bool GetLogonSid(CSid* pSid) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если *пустой pSid* имеет недопустимое значение.
 
@@ -597,7 +597,7 @@ bool GetOwner(CSid* pSid) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Владелец задается по умолчанию для всех объектов, созданных во время действия маркера доступа.
 
@@ -618,7 +618,7 @@ bool GetPrimaryGroup(CSid* pSid) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Группа по умолчанию задается для всех объектов, созданных в данный период действия маркера доступа.
 
@@ -659,7 +659,7 @@ bool GetProcessToken(DWORD dwDesiredAccess, HANDLE hProcess = NULL) throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает функцию Win32 [OpenProcessToken](/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocesstoken) .
 
@@ -788,7 +788,7 @@ bool GetType(TOKEN_TYPE* pType) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип перечисления TOKEN_TYPE содержит значения, которые различают между основным маркером и токеном олицетворения.
 
@@ -838,7 +838,7 @@ bool Impersonate(HANDLE hThread = NULL) const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если `CAccessToken` не имеет допустимого указателя на маркер.
 
@@ -856,7 +856,7 @@ bool ImpersonateLoggedOnUser() const throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!IMPORTANT]
 > Если вызов функции олицетворения по какой-либо причине завершается неудачей, то клиент не олицетворяется, а клиентский запрос выполняется в контексте безопасности процесса, из которого был сделан вызов. Если процесс выполняется от имени привилегированной учетной записи или является членом административной группы, он может выполнять действия, которые в противном случае будут запрещены. Таким образом, возвращаемое значение для этой функции всегда должно быть подтверждено.
@@ -885,7 +885,7 @@ bool LoadUserProfile() throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если `CAccessToken` не содержит допустимого маркера или если профиль пользователя уже существует.
 
@@ -923,7 +923,7 @@ bool LogonUser(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер доступа, полученный при входе в систему, будет связан `CAccessToken`с. Чтобы этот метод был выполнен, `CAccessToken` объект должен содержать SE_TCB_NAME привилегий, определяя владельца как часть базы доверенного компьютера. Дополнительные сведения о необходимых привилегиях см. в разделе [LogonUser](/windows/win32/api/winbase/nf-winbase-logonuserw) .
 
@@ -955,7 +955,7 @@ bool OpenCOMClientToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Класс кауторевертимперсонатион](../../atl/reference/cautorevertimpersonation-class.md) можно использовать для автоматического изменения олицетворенных маркеров доступа, созданных путем установки флага *бимперсонате* в значение true.
 
@@ -991,7 +991,7 @@ bool OpenNamedPipeClientToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Класс кауторевертимперсонатион](../../atl/reference/cautorevertimpersonation-class.md) можно использовать для автоматического изменения олицетворенных маркеров доступа, созданных путем установки флага *бимперсонате* в значение true.
 
@@ -1027,7 +1027,7 @@ bool OpenRPCClientToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Класс кауторевертимперсонатион](../../atl/reference/cautorevertimpersonation-class.md) можно использовать для автоматического изменения олицетворенных маркеров доступа, созданных путем установки флага *бимперсонате* в значение true.
 
@@ -1063,7 +1063,7 @@ bool OpenThreadToken(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OpenThreadToken`аналогичен [CAccessToken:: жетсреадтокен](#getthreadtoken), но задает уровень олицетворения перед инициализацией `CAccessToken` из маркера доступа потока.
 
@@ -1091,7 +1091,7 @@ bool PrivilegeCheck(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При `PrivilegeCheck` возврате `Attributes` элемент каждой структуры [LUID_AND_ATTRIBUTES](/windows/win32/api/winnt/ns-winnt-luid_and_attributes) имеет значение SE_PRIVILEGE_USED_FOR_ACCESS, если соответствующие привилегии включены. Этот метод вызывает функцию Win32 [привилежечекк](/windows/win32/api/securitybaseapi/nf-securitybaseapi-privilegecheck) .
 
@@ -1112,7 +1112,7 @@ bool Revert(HANDLE hThread = NULL) const throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переверсия токенов олицетворения может быть выполнена автоматически с помощью [класса кауторевертимперсонатион](../../atl/reference/cautorevertimpersonation-class.md).
 
@@ -1133,7 +1133,7 @@ bool SetDefaultDacl(const CDacl& rDacl) throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 DACL по умолчанию — список DACL, используемый по умолчанию при создании новых объектов с помощью этого маркера доступа.
 
@@ -1154,7 +1154,7 @@ bool SetOwner(const CSid& rSid) throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Владелец является владельцем по умолчанию, который используется для новых объектов, созданных, пока этот маркер доступа действует.
 
@@ -1175,7 +1175,7 @@ bool SetPrimaryGroup(const CSid& rSid) throw(...);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Основная группа является группой по умолчанию для новых объектов, созданных во время действия маркера доступа.
 

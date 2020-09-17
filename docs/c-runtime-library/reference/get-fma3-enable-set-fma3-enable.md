@@ -61,7 +61,7 @@ int _get_FMA3_enable();
 
 |Подпрограмма|Обязательный заголовок|
 |-------------|---------------------|
-|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h><br />C++: \<cmath > или \<Math. h >|
+|**_set_FMA3_enable**, **_get_FMA3_enable**| C: \<math.h><br />C++: \<cmath > или \<Math.h >|
 
 Функции **_set_FMA3_enable** и **_get_FMA3_enable** являются специфичными для Microsoft. Дополнительные сведения о совместимости см. в разделе [Совместимость](../../c-runtime-library/compatibility.md).
 

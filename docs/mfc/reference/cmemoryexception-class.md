@@ -29,11 +29,11 @@ class CMemoryException : public CSimpleException
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CMemoryException:: CMemoryException](#cmemoryexception)|Формирует объект `CMemoryException`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дальнейшая квалификация не требуется или невозможна. Исключения памяти автоматически создаются **`new`** . При написании собственных функций для работы с памятью с помощью, например, `malloc` вы несете ответственность за создание исключений памяти.
 
@@ -51,7 +51,7 @@ class CMemoryException : public CSimpleException
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="cmemoryexceptioncmemoryexception"></a><a name="cmemoryexception"></a>CMemoryException:: CMemoryException
 
@@ -61,7 +61,7 @@ class CMemoryException : public CSimpleException
 CMemoryException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не используйте этот конструктор напрямую, а вызовите глобальную функцию [афкссровмеморексцептион](exception-processing.md#afxthrowmemoryexception). Эта глобальная функция может быть выполнена в случае нехватки памяти, так как она конструирует объект исключения в ранее выделенной памяти. Дополнительные сведения об обработке исключений см. в статье [исключения](../exception-handling-in-mfc.md).
 

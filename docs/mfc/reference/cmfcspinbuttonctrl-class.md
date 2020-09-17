@@ -40,7 +40,7 @@ class CMFCSpinButtonCtrl : public CSpinButtonCtrl
 |----------|-----------------|
 |[CMFCSpinButtonCtrl::Ondraw](#ondraw)|Перерисовывает текущее управление кнопкой вращения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать визуальный менеджер, чтобы нарисовать управление кнопкой `CSpinButtonCtrl` вращения в `CMFCSpinButtonCtrl` приложении, замените все экземпляры класса классом.
 
@@ -79,7 +79,7 @@ virtual void OnDraw(CDC* pDC);
 *pDC*<br/>
 (в) Указатель на контекст устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает `CMFCSpinButtonCtrl::OnPaint` метод обработки [CWnd::OnPaint](../../mfc/reference/cwnd-class.md#onpaint) сообщение, и этот `CMFCSpinButtonCtrl::OnDraw` метод, в свою очередь, вызывает этот метод. Переопределить этот метод, чтобы настроить способ управления кнопкой вращения.
 

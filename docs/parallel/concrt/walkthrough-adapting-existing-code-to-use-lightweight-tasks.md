@@ -16,7 +16,7 @@ ms.locfileid: "87224920"
 
 В этом разделе показано, как адаптировать существующий код, использующий API Windows, для создания и выполнения потока для использования упрощенной задачи.
 
-*Упрощенная задача* — это задача, запланированная непосредственно из объекта [Concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) или [Concurrency:: ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) . Упрощенные задачи полезны при адаптации существующего кода к использованию функциональных возможностей планирования среды выполнения с параллелизмом.
+*Упрощенная задача* — это задача, запланированная непосредственно из объекта [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) или [concurrency::ScheduleGroup](../../parallel/concrt/reference/schedulegroup-class.md) . Упрощенные задачи полезны при адаптации существующего кода к использованию функциональных возможностей планирования среды выполнения с параллелизмом.
 
 ## <a name="prerequisites"></a>Предварительные требования
 
@@ -40,7 +40,7 @@ Parameters = 50, 100
 
 ### <a name="to-adapt-the-example-to-use-a-lightweight-task"></a>Адаптация примера для использования упрощенной задачи
 
-1. Добавьте `#include` директиву для файла заголовка ConcRT. h.
+1. Добавьте `#include` директиву для файла заголовка ConcRT.h.
 
 [!code-cpp[concrt-migration-lwt#2](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_2.cpp)]
 
@@ -52,15 +52,15 @@ Parameters = 50, 100
 
 [!code-cpp[concrt-migration-lwt#4](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_4.cpp)]
 
-1. Измените структуру, включив в нее `MyData` объект [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) , который сигнализирует главному приложению о завершении задачи.
+1. Измените структуру, включив в нее `MyData` объект [concurrency::Event](../../parallel/concrt/reference/event-class.md) , который сигнализирует главному приложению о завершении задачи.
 
 [!code-cpp[concrt-migration-lwt#5](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_5.cpp)]
 
-1. Замените вызов на `CreateThread` вызов метода [Concurrency:: CurrentScheduler:: ScheduleTask](reference/currentscheduler-class.md#scheduletask) .
+1. Замените вызов на `CreateThread` вызов метода [concurrency::CurrentScheduler:: ScheduleTask](reference/currentscheduler-class.md#scheduletask) .
 
 [!code-cpp[concrt-migration-lwt#6](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_6.cpp)]
 
-1. Замените вызов на `WaitForSingleObject` вызов метода [Concurrency:: Event:: wait](reference/event-class.md#wait) , чтобы дождаться завершения задачи.
+1. Замените вызов на `WaitForSingleObject` вызов метода [concurrency::Event:: wait](reference/event-class.md#wait) , чтобы дождаться завершения задачи.
 
 [!code-cpp[concrt-migration-lwt#7](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_7.cpp)]
 
@@ -70,7 +70,7 @@ Parameters = 50, 100
 
 [!code-cpp[concrt-migration-lwt#8](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_8.cpp)]
 
-1. В конце `MyThreadFunction` функции вызовите метод [Concurrency:: Event:: Set](reference/event-class.md#set) , чтобы сообщить главному приложению о завершении задачи.
+1. В конце `MyThreadFunction` функции вызовите метод [concurrency::Event:: Set](reference/event-class.md#set) , чтобы сообщить главному приложению о завершении задачи.
 
 [!code-cpp[concrt-migration-lwt#9](../../parallel/concrt/codesnippet/cpp/walkthrough-adapting-existing-code-to-use-lightweight-tasks_9.cpp)]
 

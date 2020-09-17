@@ -36,7 +36,7 @@ class CDocItem : public CCmdTarget
 |[CDocItem::GetDocument](#getdocument)|Возвращает документ, содержащий элемент.|
 |[CDocItem::IsBlank](#isblank)|Определяет, содержит ли элемент какую-либо информацию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDocItem`объекты используются для представления элементов OLE в клиентских и серверных документах.
 
@@ -66,7 +66,7 @@ CDocument* GetDocument() const;
 
 Указатель на документ, содержащий элемент; NULL, если элемент не является частью документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция переопределяется в производных классов [COleClientItem](../../mfc/reference/coleclientitem-class.md) и [COleServerItem](../../mfc/reference/coleserveritem-class.md), возвращая указатель либо [COleDocument](../../mfc/reference/coledocument-class.md), [COleLinkingDoc](../../mfc/reference/colelinkingdoc-class.md), или объект [COleServerDoc.](../../mfc/reference/coleserverdoc-class.md)
 
@@ -82,7 +82,7 @@ virtual BOOL IsBlank() const;
 
 Nonzero, если элемент не содержит никакой информации; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию `CDocItem` объекты не являются пустыми. [COleClientItem](../../mfc/reference/coleclientitem-class.md) объекты иногда пустые, `CDocItem`потому что они получают непосредственно от . Тем не менее, объекты [COleServerItem](../../mfc/reference/coleserveritem-class.md) всегда пусты. По умолчанию приложения `COleClientItem` OLE, содержащие объекты, не имеют степени x или y, сериализируются. Это делается путем возвращения TRUE `IsBlank` из переопределения, когда элемент не имеет х или у степени.
 

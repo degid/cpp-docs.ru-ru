@@ -35,7 +35,7 @@ class CComMultiThreadModelNoCS
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккоммултисреадмоделнокс:: Аутокритикалсектион](#autocriticalsection)|Ссылается на класс [ккомфакекритикалсектион](../../atl/reference/ccomfakecriticalsection-class.md).|
 |[Ккоммултисреадмоделнокс:: CriticalSection](#criticalsection)|Ссылка на класс `CComFakeCriticalSection` .|
@@ -43,12 +43,12 @@ class CComMultiThreadModelNoCS
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккоммултисреадмоделнокс::D екремент](#decrement)|Статически Уменьшает значение указанной переменной в безопасном для потоков режиме.|
 |[Ккоммултисреадмоделнокс:: Increment](#increment)|Статически Увеличивает значение указанной переменной в безопасном для потоков режиме.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComMultiThreadModelNoCS`аналогичен [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md) в том, что он предоставляет потокобезопасные методы для увеличения и уменьшения переменной. Однако при ссылке на класс критической секции с помощью `CComMultiThreadModelNoCS` методы, такие как `Lock` и, `Unlock` не будут выполнять никаких действий.
 
@@ -61,7 +61,7 @@ class CComMultiThreadModelNoCS
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccommultithreadmodelnocsautocriticalsection"></a><a name="autocriticalsection"></a>Ккоммултисреадмоделнокс:: Аутокритикалсектион
 
@@ -71,7 +71,7 @@ class CComMultiThreadModelNoCS
 typedef CComFakeCriticalSection AutoCriticalSection;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку не `CComFakeCriticalSection` предоставляет критическую секцию, его методы не выполняют никаких действий.
 
@@ -97,7 +97,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 typedef CComFakeCriticalSection CriticalSection;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку не `CComFakeCriticalSection` предоставляет критическую секцию, его методы не выполняют никаких действий.
 
@@ -132,7 +132,7 @@ static ULONG WINAPI Decrement(LPLONG p) throw();
 
 Если результат декремента равен 0, то `Decrement` возвращает 0. Если результат декремента равен нулю, то возвращаемое значение также является ненулевым, но может не совпадать с результатом декремента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Интерлоккеддекремент** предотвращает одновременное использование этой переменной более чем одним потоком.
 
@@ -153,7 +153,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 
 Если результат приращения равен 0, то функция **Increment** возвращает 0. Если результат инкремента равен нулю, то возвращаемое значение также будет ненулевым, но может не совпадать с результатом приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Интерлоккединкремент** предотвращает одновременное использование этой переменной более чем одним потоком.
 
@@ -165,7 +165,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 typedef CComMultiThreadModelNoCS ThreadModelNoCS;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md) и [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) также содержат определения для `ThreadModelNoCS` . В следующей таблице показана связь между классом потоковой модели и классом, на который ссылается `ThreadModelNoCS` :
 

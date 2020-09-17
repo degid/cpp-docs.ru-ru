@@ -30,7 +30,7 @@ ms.locfileid: "81371224"
 class RoInitializeWrapper;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `RoInitializeWrapper`это удобство, которое инициализирует Время выполнения Windows и возвращает HRESULT, который указывает, была ли операция успешной. Поскольку вызовы `::Windows::Foundation::Uninitialize`деструктора класса `RoInitializeWrapper` должны быть объявлены в глобальном или верхнем уровне.
 
@@ -80,7 +80,7 @@ RoInitializeWrapper(RO_INIT_TYPE flags)
 *Флаги*<br/>
 Один из RO_INIT_TYPE перечисления, который определяет поддержку, предоставляемую Windows Runtime.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс `RoInitializeWrapper` вызывает `Windows::Foundation::Initialize(flags)`.
 
@@ -92,6 +92,6 @@ RoInitializeWrapper(RO_INIT_TYPE flags)
 ~RoInitializeWrapper()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс `RoInitializeWrapper` вызывает `Windows::Foundation::Uninitialize()`.

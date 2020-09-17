@@ -148,7 +148,7 @@ class CPathT
 |----------|-----------------|
 |[CPathT::m_strPath](#m_strpath)|Путь.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CPath`, `CPathA`, `CPathW` и мгновений `CPathT` определяется следующим образом:
 
@@ -170,7 +170,7 @@ class CPathT
 void AddBackslash();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw)
 
@@ -191,7 +191,7 @@ BOOL AddExtension(PCXSTR pszExtension);
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw)
 
@@ -212,7 +212,7 @@ BOOL Append(PCXSTR pszMore);
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathAppend](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw)информации см.
 
@@ -229,7 +229,7 @@ void BuildRoot(int iDrive);
 *Idrive*<br/>
 Номер диска (0: A:, 1 - B:и так далее).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw)
 
@@ -241,7 +241,7 @@ void BuildRoot(int iDrive);
 void Canonicalize();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [PathCanonicalize](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew).
 
@@ -261,7 +261,7 @@ void Combine(PCXSTR pszDir, PCXSTR  pszFile);
 *pszFile*<br/>
 Путь к файлу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathcombinew)см.
 
@@ -282,7 +282,7 @@ CPathT<StringType> CommonPrefix(PCXSTR pszOther);
 
 Возвращает общую префикс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приставка является одним из этих типов: "C:\\\\",,", "..,". \\\\". Для получения дополнительной [PathCommonPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw)информации см.
 
@@ -306,7 +306,7 @@ BOOL CompactPath(HDC hDC, UINT nWidth);
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw)см.
 
@@ -330,7 +330,7 @@ BOOL CompactPathEx(UINT nMaxChars, DWORD dwFlags = 0);
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw)см.
 
@@ -364,7 +364,7 @@ BOOL FileExists() const;
 
 Возвращает TRUE, если файл существует, FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw)
 
@@ -380,7 +380,7 @@ int FindExtension() const;
 
 Возвращает позицию "., предшествующую расширению. Если расширение не найдено, возвращается -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw)
 
@@ -396,7 +396,7 @@ int FindFileName() const;
 
 Возвращает положение имени файла. Если имя файла не найдено, возвращается -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew)
 
@@ -412,7 +412,7 @@ int GetDriveNumber() const;
 
 Возвращает номер диска в виде целых с 0 по 25 (соответствующий букве "А" через "Я"), если на пути есть буква привода, или -1 в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathGetDriveNumber](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw)информации см.
 
@@ -440,7 +440,7 @@ BOOL IsDirectory() const;
 
 Возвращает ненулевое значение (16), если путь является каталогом, FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathisdirectoryw)см.
 
@@ -456,7 +456,7 @@ BOOL IsFileSpec() const;
 
 Возвращает TRUE, если в пути нет символов, разгранижая путь, или FALSE, если есть символы, разгранижая путь.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw)
 
@@ -477,7 +477,7 @@ BOOL IsPrefix(PCXSTR pszPrefix) const;
 
 Возвращает TRUE, если путь содержит префикс, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathIsPrefix](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw)информации см.
 
@@ -493,7 +493,7 @@ BOOL IsRelative() const;
 
 Возвращает TRUE, если путь является относительным, или FALSE, если он является абсолютным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathIsRelative](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew)информации см.
 
@@ -509,7 +509,7 @@ BOOL IsRoot() const;
 
 Возвращает TRUE, если путь корень, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw)
 
@@ -530,7 +530,7 @@ BOOL IsSameRoot(PCXSTR pszOther) const;
 
 Возвращает TRUE, если обе строки имеют один и тот же корневой компонент, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [PathIssameRoot](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw).
 
@@ -546,7 +546,7 @@ BOOL IsUNC() const;
 
 Возвращает TRUE, если путь является действительным пути КООН, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathIsUNC](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw)информации см.
 
@@ -562,7 +562,7 @@ BOOL IsUNCServer() const;
 
 Возвращает TRUE, если строка является действительным пути КООН только для сервера (без имени общего доля), или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathIsUNCServer](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw)информации см.
 
@@ -578,7 +578,7 @@ BOOL IsUNCServerShare() const;
 
 Возвращает TRUE, если путь \\ \ находится в форме*доли* *сервера,*\ или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathIsUNCServerShare](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew)информации см.
 
@@ -590,7 +590,7 @@ BOOL IsUNCServerShare() const;
 StringType m_strPath;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `StringType`является параметром `CPathT`шаблона для .
 
@@ -606,7 +606,7 @@ BOOL MakePretty();
 
 Возвращает TRUE, если путь был преобразован, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [PathMakePretty](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw).
 
@@ -627,7 +627,7 @@ BOOL MatchSpec(PCXSTR pszSpec) const;
 
 Возвращает TRUE, если строка совпадает, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw)
 
@@ -692,7 +692,7 @@ operator StringType&() throw();
 typedef StringType::PCXSTR PCXSTR;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `StringType`является параметром `CPathT`шаблона для .
 
@@ -704,7 +704,7 @@ typedef StringType::PCXSTR PCXSTR;
 typedef StringType::PXSTR PXSTR;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `StringType`является параметром `CPathT`шаблона для .
 
@@ -716,7 +716,7 @@ typedef StringType::PXSTR PXSTR;
 void QuoteSpaces();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw)
 
@@ -750,7 +750,7 @@ BOOL RelativePathTo(
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow)
 
@@ -762,7 +762,7 @@ BOOL RelativePathTo(
 void RemoveArgs();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw)
 
@@ -774,7 +774,7 @@ void RemoveArgs();
 void RemoveBackslash();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathRemoveBackslash](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw)информации см.
 
@@ -786,7 +786,7 @@ void RemoveBackslash();
 void RemoveBlanks();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [PathRemoveBlanks](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw)информации см.
 
@@ -798,7 +798,7 @@ void RemoveBlanks();
 void RemoveExtension();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw)см.
 
@@ -814,7 +814,7 @@ BOOL RemoveFileSpec();
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [PathRemoveFileSpec](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw).
 
@@ -835,7 +835,7 @@ BOOL RenameExtension(PCXSTR pszExtension);
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw)см.
 
@@ -851,7 +851,7 @@ int SkipRoot() const;
 
 Возвращает положение начала подпата, следующего за корнем (письмо диска или сервер/доля КООН).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [информации](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw)см.
 
@@ -863,7 +863,7 @@ int SkipRoot() const;
 void StripPath();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw)
 
@@ -879,7 +879,7 @@ BOOL StripToRoot();
 
 Возвращает TRUE, если действительное письмо диска было найдено в пути, или FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw)
 
@@ -891,7 +891,7 @@ BOOL StripToRoot();
 void UnquoteSpaces();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw)
 
@@ -903,7 +903,7 @@ void UnquoteSpaces();
 typedef StringType::XCHAR XCHAR;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `StringType`является параметром `CPathT`шаблона для .
 

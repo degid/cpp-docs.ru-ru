@@ -69,7 +69,7 @@ class CTokenPrivileges
 |[CTokenПривилегии::оператор const TOKEN_PRIVILEGES](#operator_const_token_privileges__star)|Отбрасывает значение указателю на `TOKEN_PRIVILEGES` структуру.|
 |[CTokenПривилегии::оператор](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [Токен доступа](/windows/win32/SecAuthZ/access-tokens) — это объект, описывающий контекст безопасности процесса или потока и выделенный каждому пользователю, зарегистрированного на систему Windows.
 
@@ -125,7 +125,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 *rПривилегии*<br/>
 Структура [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) для присвоения `CTokenPrivileges` новому объекту.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CTokenPrivileges` может быть создан по `TOKEN_PRIVILEGES` желанию с `CTokenPrivileges` помощью структуры или ранее определенного объекта.
 
@@ -137,7 +137,7 @@ CTokenPrivileges(const TOKEN_PRIVILEGES& rPrivileges) throw(...);
 virtual ~CTokenPrivileges() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор освобождает все выделенные ресурсы.
 
@@ -158,7 +158,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 
 Возвращает верно, если привилегия была успешно удалена, ложнов в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод полезен в качестве инструмента для создания ограниченных токенов.
 
@@ -170,7 +170,7 @@ bool Delete(LPCTSTR pszPrivilege) throw();
 void DeleteAll() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет все привилегии, `CTokenPrivileges` содержащиеся в объекте маркера доступа.
 
@@ -187,7 +187,7 @@ void GetDisplayNames(CNames* pDisplayNames) const throw(...);
 *pDisplayNames*<br/>
 Указатель на массив объектов `CString`. `CNames`определяется как typedef: `CTokenPrivileges::CAtlArray<CString>`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр `pDisplayNames` является указателем на `CString` массив объектов, которые будут получать имена отображения, соответствующие привилегиям, содержащимся в объекте. `CTokenPrivileges` Этот метод получает имена отображений только для привилегий, указанных в разделе Определенные привилегии WINNT. H.
 
@@ -235,7 +235,7 @@ void GetLuidsAndAttributes(
 *pAttributes*<br/>
 Указатель на массив объектов DWORD. Если этот параметр опущен или NULL, атрибуты не извлекаются. `CAttributes`является typedef определяется как `CAtlArray <DWORD> CAttributes`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод перечислит все привилегии, содержащиеся `CTokenPrivileges` в объекте маркера доступа, и разместит отдельные ФЛАГи LUID и (по желанию) флаги атрибутов в объекты массива.
 
@@ -257,7 +257,7 @@ void GetNamesAndAttributes(
 *pAttributes*<br/>
 Указатель на массив объектов DWORD. Если этот параметр опущен или NULL, атрибуты не извлекаются. `CAttributes`является typedef определяется как `CAtlArray <DWORD> CAttributes`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод перечислит все привилегии, содержащиеся `CTokenPrivileges` в объекте, размещая имя и (по желанию) флаги атрибутов в объекты массива.
 
@@ -326,7 +326,7 @@ CTokenPrivileges& operator= (const CTokenPrivileges& rhs) throw(...);
 operator const TOKEN_PRIVILEGES *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отбрасывает значение указателю на [TOKEN_PRIVILEGES](/windows/win32/api/winnt/ns-winnt-token_privileges) структуру.
 

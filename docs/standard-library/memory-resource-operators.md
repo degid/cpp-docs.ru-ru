@@ -16,7 +16,7 @@ ms.locfileid: "79425475"
 ---
 # <a name="ltmemory_resourcegt-operators"></a>операторы&gt; memory_resource &lt;
 
-## <a name="op_neq"></a>operator! =
+## <a name="op_neq"></a> operator!=
 
 Проверяет, не равен ли объект memory_resource в левой части оператора memory_resource объекту справа.
 
@@ -25,7 +25,7 @@ template <class T1, class T2>
     bool operator!=(const polymorphic_allocator<T1>& a, const polymorphic_allocator<T2>& b) noexcept;
 ```
 
-## <a name="op_eq_eq"></a>Оператор = =
+## <a name="op_eq_eq"></a> operator==
 
 Проверяет, равен ли объект memory_resource слева от оператора объекту memory_resource в правой части.
 

@@ -65,7 +65,7 @@ class CMFCShellTreeCtrl : public CTreeCtrl
 |[CMFCShellTreeCtrl::SetFlags](#setflags)|Наборы флагов для фильтрации контекста `IShellFolder::EnumObjects`дерева (по аналогии с флагами, используемыми).|
 |[CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist)|Устанавливает связь между `CMFCShellTreeCtrl` текущим `CMFCShellListCtrl` объектом и объектом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс расширяет `CTreeCtrl` класс, позволяя программе включать элементы Windows Shell в дерево. Этот класс может быть `CMFCShellListCtrl` связан с объектом для создания полного окна Explorer. Затем при выборе элемента в дереве будет отображаться список элементов Windows Shell в связанном списке.
 
@@ -117,7 +117,7 @@ DWORD GetFlags() const;
 
 Значение DWORD, которое определяет комбинацию флагов, установленных в настоящее время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Флаги, установленные в `CMFCShellTreeCtrl` них, отправляются в метод [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects) всякий раз, когда объект обновляется. Вы можете изменить флаги с помощью метода [CMFCShellTreeCtrl::SetFlags.](#setflags)
 
@@ -143,7 +143,7 @@ BOOL GetItemPath(
 
 Ненулевое значение в случае успешного выполнения. В противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если этот метод не удается, *strPath* содержит пустую строку.
 
@@ -161,7 +161,7 @@ CMFCShellListCtrl* GetRelatedList() const;
 
 Указатель на `CMFCShellListCtrl` объект, связанный с этим объектом управления деревом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используя `CMFCShellListCtrl` объект вместе с `CMFCShellTreeCtrl` объектом, можно создать окно, похожее на Explorer. Используйте метод [CMFCShellTreeCtrl::SetRelatedList](#setrelatedlist) для ассоциировать два класса. После их ассоциированного `CMFCShellListCtrl` фреймворка автоматически обновляет, если выбор в изменении. `CMFCShellTreeCtrl`
 
@@ -184,7 +184,7 @@ virtual BOOL OnChildNotify(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcshelltreectrlongetitemicon"></a><a name="ongetitemicon"></a>CMFCShellTreeCtrl::OnGetItemIcon
 
@@ -201,7 +201,7 @@ virtual int OnGetItemIcon(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcshelltreectrlongetitemtext"></a><a name="ongetitemtext"></a>CMFCShellTreeCtrl::OnGetItemtext
 
@@ -215,7 +215,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcshelltreectrlrefresh"></a><a name="refresh"></a>CMFCShellTreeCtrl::Обновление
 
@@ -225,7 +225,7 @@ virtual CString OnGetItemText(LPAFX_SHELLITEMINFO pItem);
 void Refresh();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы обновить иерархию `CMFCShellTreeCtrl`элементов, отображаемых в .
 
@@ -268,7 +268,7 @@ void SetFlags(
 *bRefresh*<br/>
 (в) Boolean, который определяет, `CMFCShellTreeCtrl` следует ли обновляться немедленно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Проходы `CMFCShellTreeCtrl` все набор флаги [IShellFolder::EnumObjects](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects). Для получения дополнительной информации о значениях различных флагов, [см.](/windows/win32/api/shobjidl_core/nf-shobjidl_core-ishellfolder-enumobjects)
 
@@ -285,7 +285,7 @@ void SetRelatedList(CMFCShellListCtrl* pShellList);
 *pShellList*<br/>
 (в) Указатель на `CMFCShellListCtrl` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод `CMFCShellListCtrl` ассоциируется с . `CMFCShellTreeCtrl` Эти объекты могут отображаться как окно, похожее на Explorer: `CMFCShellTreeCtrl`если пользователь выбирает `CMFCShellListCtrl` объект в, связанные элементы в будет автоматически обновляться.
 

@@ -41,14 +41,14 @@ class CComVariant : public tagVARIANT
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CComVariant:: CComVariant](#ccomvariant)|Конструктор.|
 |[CComVariant:: ~ CComVariant](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CComVariant:: Attach](#attach)|Присоединяет вариант к `CComVariant` объекту.|
 |[CComVariant:: ChangeType](#changetype)|Преобразует `CComVariant` объект в новый тип.|
@@ -65,13 +65,13 @@ class CComVariant : public tagVARIANT
 
 |Оператор|Описание|
 |-|-|
-|[CComVariant:: operator <](#operator_lt)|Указывает, `CComVariant` меньше ли объект, чем указанный вариант.|
-|[CComVariant:: operator >](#operator_gt)|Указывает, `CComVariant` больше ли объект, чем указанный вариант.|
-|[operator! =](#operator_neq)|Указывает, `CComVariant` не равен ли объект указанному варианту.|
-|[Оператор =](#operator_eq)|Присваивает значение `CComVariant` объекту.|
-|[Оператор = =](#operator_eq_eq)|Указывает, `CComVariant` равен ли объект заданному варианту.|
+|[CComVariant::operator<](#operator_lt)|Указывает, `CComVariant` меньше ли объект, чем указанный вариант.|
+|[CComVariant::operator>](#operator_gt)|Указывает, `CComVariant` больше ли объект, чем указанный вариант.|
+|[operator!=](#operator_neq)|Указывает, `CComVariant` не равен ли объект указанному варианту.|
+|[operator=](#operator_eq)|Присваивает значение `CComVariant` объекту.|
+|[operator==](#operator_eq_eq)|Указывает, `CComVariant` равен ли объект заданному варианту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComVariant` заключает в оболочку тип VARIANT и VARIANTARG, состоящий из объединения и члена, указывающего тип данных, хранящихся в объединении. Варианты обычно используются в автоматизации.
 
@@ -85,7 +85,7 @@ class CComVariant : public tagVARIANT
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcomcli. h
+**Заголовок:** atlcomcli.h
 
 ## <a name="ccomvariantattach"></a><a name="attach"></a> CComVariant:: Attach
 
@@ -104,7 +104,7 @@ HRESULT Attach(VARIANT* pSrc);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Владение данными, удерживаемыми *pSrc* , передается в `CComVariant` объект.
 
@@ -175,7 +175,7 @@ CComVariant(const CComBSTR& bstrSrc);
 *бстрсрк*<br/>
 окне Объект BSTR, используемый для инициализации `CComVariant` объекта. Тип `CComVariant` объекта будет VT_BSTR.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор управляет очисткой, вызывая [CComVariant:: Clear](#clear).
 
@@ -187,7 +187,7 @@ CComVariant(const CComBSTR& bstrSrc);
 ~CComVariant() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод управляет очисткой путем вызова [CComVariant:: Clear](#clear).
 
@@ -211,7 +211,7 @@ HRESULT ChangeType(VARTYPE vtNew, const VARIANT* pSrc = NULL);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если передать значение для *pSrc*, `ChangeType` будет использовать этот вариант в качестве источника для преобразования. В противном случае `CComVariant` объект будет источником.
 
@@ -227,7 +227,7 @@ HRESULT Clear();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор автоматически вызывает `Clear` .
 
@@ -265,7 +265,7 @@ HRESULT CopyTo(BSTR* pstrDest);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CComVariant`Объект должен иметь тип VT_BSTR.
 
@@ -286,7 +286,7 @@ HRESULT Detach(VARIANT* pDest);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что содержимое варианта, на которое ссылается *пдест* , будет автоматически очищаться перед присвоением значения и типа вызывающего `CComVariant` объекта.
 
@@ -302,7 +302,7 @@ ULONG GetSize() const;
 
 Размер в байтах текущего содержимого `CComVariant` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вариант содержит указатель интерфейса, `GetSize` запросы для `IPersistStream` или `IPersistStreamInit` . В случае успеха возвращаемое значение является младшим младшим значением 32, возвращаемым `GetSizeMax` плюс `sizeof(CLSID)` и `sizeof(VARTYPE)` . Если указатель интерфейса имеет значение NULL, `GetSize` возвращает `sizeof(CLSID)` плюс `sizeof(VARTYPE)` . Если общий размер больше, чем ULONG_MAX, `GetSize` возвращает значение, `sizeof(VARTYPE)` которое указывает на ошибку.
 
@@ -310,7 +310,7 @@ ULONG GetSize() const;
 
 Размер, возвращенный этим методом, соответствует числу байтов, используемых [CComVariant:: вритетостреам](#writetostream) в условиях успешного выполнения.
 
-## <a name="ccomvariantoperator-"></a><a name="operator_eq"></a> CComVariant:: operator =
+## <a name="ccomvariantoperator-"></a><a name="operator_eq"></a> CComVariant::operator=
 
 Присваивает объекту значение и соответствующий тип `CComVariant` .
 
@@ -373,7 +373,7 @@ CComVariant& operator=(char cSrc) throw();
 *ксрк*<br/>
 окне Символ, присваиваемый `CComVariant` объекту. Тип `CComVariant` объекта будет VT_I1.
 
-## <a name="ccomvariantoperator-"></a><a name="operator_eq_eq"></a> CComVariant:: operator = =
+## <a name="ccomvariantoperator-"></a><a name="operator_eq_eq"></a> CComVariant::operator==
 
 Указывает, `CComVariant` равен ли объект заданному варианту.
 
@@ -381,13 +381,13 @@ CComVariant& operator=(char cSrc) throw();
 bool operator==(const VARIANT& varSrc) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение TRUE, если значение и тип *варсрк* равны значению и типу, соответственно, `CComVariant` объекта. В противном случае — значение FALSE. Оператор использует локаль пользователя по умолчанию для выполнения сравнения.
 
 Оператор сравнивает только значения типов Variant. Он сравнивает строки, целые числа и плавающие точки, но не массивы или записи.
 
-## <a name="ccomvariantoperator-"></a><a name="operator_neq"></a> CComVariant:: operator! =
+## <a name="ccomvariantoperator-"></a><a name="operator_neq"></a> CComVariant::operator!=
 
 Указывает, `CComVariant` не равен ли объект указанному варианту.
 
@@ -395,13 +395,13 @@ bool operator==(const VARIANT& varSrc) const throw();
 bool operator!=(const VARIANT& varSrc) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение TRUE, если значение или тип *варсрк* не равны значению или типу объекта, соответственно `CComVariant` . В противном случае — значение FALSE. Оператор использует локаль пользователя по умолчанию для выполнения сравнения.
 
 Оператор сравнивает только значения типов Variant. Он сравнивает строки, целые числа и плавающие точки, но не массивы или записи.
 
-## <a name="ccomvariantoperator-lt"></a><a name="operator_lt"></a> CComVariant:: operator &lt;
+## <a name="ccomvariantoperator-lt"></a><a name="operator_lt"></a> CComVariant::operator &lt;
 
 Указывает, `CComVariant` меньше ли объект, чем указанный вариант.
 
@@ -409,11 +409,11 @@ bool operator!=(const VARIANT& varSrc) const throw();
 bool operator<(const VARIANT& varSrc) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение TRUE, если значение `CComVariant` объекта меньше значения параметра *варсрк*. В противном случае — значение FALSE. Оператор использует локаль пользователя по умолчанию для выполнения сравнения.
 
-## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a> CComVariant:: operator &gt;
+## <a name="ccomvariantoperator-gt"></a><a name="operator_gt"></a> CComVariant::operator &gt;
 
 Указывает, `CComVariant` больше ли объект, чем указанный вариант.
 
@@ -421,7 +421,7 @@ bool operator<(const VARIANT& varSrc) const throw();
 bool operator>(const VARIANT& varSrc) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение TRUE, если значение `CComVariant` объекта больше значения параметра *варсрк*. В противном случае — значение FALSE. Оператор использует локаль пользователя по умолчанию для выполнения сравнения.
 
@@ -442,7 +442,7 @@ HRESULT ReadFromStream(IStream* pStream);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ReadToStream` требуется предыдущий вызов [вритетостреам](#writetostream).
 
@@ -463,7 +463,7 @@ void SetByRef(T* pT) throw();
 *Лутор*<br/>
 Указатель, используемый для инициализации `CComVariant` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `SetByRef` — Это шаблон функции, который инициализирует `CComVariant` объект по указателю *PT* и задает `vt` для элемента значение VT_BYREF. Пример:
 

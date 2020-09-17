@@ -93,19 +93,19 @@ class unorm_3;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор unorm_3](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |unorm_3::get_x||
 |unorm_3::get_xy||
@@ -146,25 +146,25 @@ class unorm_3;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|unorm_3:: operator--||
-|unorm_3:: operator * =||
-|unorm_3:: operator/=||
-|unorm_3:: operator + +||
-|unorm_3:: operator + =||
-|unorm_3:: operator =||
-|unorm_3:: operator-=||
+|unorm_3::operator--||
+|unorm_3::operator*=||
+|unorm_3::operator/=||
+|unorm_3::operator++||
+|unorm_3::operator+=||
+|unorm_3::operator=||
+|unorm_3::operator-=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#unorm_3__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |unorm_3:: b||
 |unorm_3:: BG||
@@ -203,9 +203,9 @@ class unorm_3;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="ctor"></a>unorm_3
 

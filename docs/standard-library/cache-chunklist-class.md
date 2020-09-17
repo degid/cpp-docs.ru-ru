@@ -33,7 +33,7 @@ class cache_chunklist
 *SZ*\
 Число выделяемых элементов в массиве.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот шаблон класса использует **оператор New** для выделения блоков необработанной памяти, блоков подвыделения для выделения хранилища для блока памяти, когда это необходимо. Он хранит освобожденные блоки памяти в отдельном свободном списке для каждого фрагмента и использует **оператор DELETE** для освобождения блока, если ни один из его блоков памяти не используется.
 
@@ -68,14 +68,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Число выделяемых элементов в массиве.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_chunklistcache_chunklist"></a><a name="cache_chunklist"></a> cache_chunklist:: cache_chunklist
 
@@ -85,7 +85,7 @@ void *allocate(std::size_t count);
 cache_chunklist();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_chunklistdeallocate"></a><a name="deallocate"></a> cache_chunklist::d еаллокате
 
@@ -97,13 +97,13 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на первый объект, который должен быть освобожден из хранилища.
 
-*расчета*\
+*count*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -63,7 +63,7 @@ SDK Build Insights совместим с Visual Studio 2017 и выше. Что�
 | `EVENT_ID_TOP_DOWN` | 30 (0x0000001E) | [TOP_DOWN](../event-table.md#top-down) |
 | `EVENT_ID_WHOLE_PROGRAM_ANALYSIS` | 31 (0x0000001F) | [WHOLE_PROGRAM_ANALYSIS](../event-table.md#whole-program-analysis) |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти значения используются с функциями C SDK.
 

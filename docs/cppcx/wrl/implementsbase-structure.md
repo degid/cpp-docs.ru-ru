@@ -24,7 +24,7 @@ ms.locfileid: "80213893"
 struct ImplementsBase;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется для проверки типов параметров шаблона в [структуре Implements](implements-structure.md).
 
@@ -36,7 +36,7 @@ struct ImplementsBase;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

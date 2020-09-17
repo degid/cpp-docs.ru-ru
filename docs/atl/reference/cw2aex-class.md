@@ -58,7 +58,7 @@ class CW2AEX
 |[CW2AEX::m_psz](#m_psz)|Член данных, который хранит строку исходного кода.|
 |[CW2AEX:::m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительная функциональность, используйте CT2AEX, CW2TEX, CW2CTEX, CT2CAEX или CW2A в коде.
 
@@ -109,7 +109,7 @@ CW2AEX(LPCWSTR psz) throw(...);
 *nCodePage*<br/>
 Страница кода, используемая для выполнения преобразования. Более подробную информацию можно узнать о обсуждении параметров страницы кода для функции Windows SDK [MultiByteToWideChar.](/windows/win32/api/stringapiset/nf-stringapiset-multibytetowidechar)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет буфер, используемый в процессе перевода.
 
@@ -121,7 +121,7 @@ CW2AEX(LPCWSTR psz) throw(...);
 ~CW2AEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 

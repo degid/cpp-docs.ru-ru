@@ -44,7 +44,7 @@ LRESULT MessageHandler(
 
 Результат обработки сообщения. 0 в случае успеха.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Пример использования этого обработчика сообщений в схеме сообщений см. в разделе [MESSAGE_HANDLER](reference/message-map-macros-atl.md#message_handler).
 

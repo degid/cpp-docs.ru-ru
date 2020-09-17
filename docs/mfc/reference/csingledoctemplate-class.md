@@ -33,7 +33,7 @@ class CSingleDocTemplate : public CDocTemplate
 |----------|-----------------|
 |[CSingleDocTemplate::CSingleDocTemplate](#csingledoctemplate)|Формирует объект `CSingleDocTemplate`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Приложение SDI использует окно основной кадр для отображения документа; одновременно может быть открыт только один документ.
 
@@ -105,7 +105,7 @@ END
 *pViewClass*<br/>
 Указывает на `CRuntimeClass` объект класса представления. Этот класс `CView`является классом, который вы определяете для отображения документов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Динамически выделите `CSingleDocTemplate` объект `CWinApp::AddDocTemplate` и `InitInstance` передайте его от функции члена класса приложений.
 

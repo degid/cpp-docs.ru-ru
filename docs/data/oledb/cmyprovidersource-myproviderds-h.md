@@ -18,7 +18,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 03/21/2020
 ms.locfileid: "80079735"
 ---
-# <a name="ccustomsource-customdsh"></a>Ккустомсаурце (Кустомдс. h)
+# <a name="ccustomsource-customdsh"></a>Ккустомсаурце (Кустомдс.h)
 
 Классы поставщиков используют множественное наследование. В следующем коде показана цепочка наследования для объекта источника данных.
 

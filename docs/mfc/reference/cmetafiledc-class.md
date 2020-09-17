@@ -50,7 +50,7 @@ class CMetaFileDC : public CDC
 |[CMetaFileDC::Создание](#create)|Создает контекст метафайла Windows и прикрепляет его к объекту. `CMetaFileDC`|
 |[CMetaFileDC::СозданиеУвеличено](#createenhanced)|Создает контекст метафайлного устройства для метафайла с расширенным форматом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для реализации метафайла Windows `CMetaFileDC` сначала создайте объект. Вызовите `CMetaFileDC` конструктора, а затем позвоните в функцию [члена Create,](#create) которая создает `CMetaFileDC` контекст метафайла Windows и прикрепляет его к объекту.
 
@@ -92,7 +92,7 @@ HMETAFILE Close();
 
 Действительный HMETAFILE, если функция успешна; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ручка метафайла Windows также может использоваться для управления метафайлом с помощью функций Windows, таких как [CopyMetaFile.](/windows/win32/api/wingdi/nf-wingdi-copymetafilew)
 
@@ -110,7 +110,7 @@ HENHMETAFILE CloseEnhanced();
 
 Ручка расширенного метафайла, в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приложение может использовать улучшенную ручку метафайла, возвращенную этой функцией, для выполнения следующих задач:
 
@@ -140,7 +140,7 @@ HENHMETAFILE CloseEnhanced();
 CMetaFileDC();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Во-первых, вызов, `CMetaFileDC`затем вызов `Create`, который создает контекст метафайлустройства Windows и прикрепляет его к объекту. `CMetaFileDC`
 
@@ -161,7 +161,7 @@ BOOL Create(LPCTSTR lpszFilename = NULL);
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сначала позвоните в `CMetaFileDC`конструктор, `Create`затем вызов , который создает контекст метафайлустройства `CMetaFileDC` Windows и прикрепляет его к объекту.
 
@@ -195,7 +195,7 @@ BOOL CreateEnhanced(
 
 Ручка контекста устройства для расширенного метафайла, если она будет успешной; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот DC можно использовать для хранения независимой от устройства изображения.
 

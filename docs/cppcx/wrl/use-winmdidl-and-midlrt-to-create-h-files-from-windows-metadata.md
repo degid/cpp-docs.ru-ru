@@ -71,7 +71,7 @@ Winmdidl.exe [/nologo] [/suppressversioncheck] [/time] [/outdir:dir] [/banner:fi
 
 `C:\Program Files (x86)\Microsoft Visual Studio 12.0> midlrt "c:\users\username\documents\test_for_winmdidl.idl" /metadata_dir "C:\Windows\System32\WinMetadata"`
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Выходной файл операции winmdidl будет иметь то же имя, что и входной файл, но с расширением IDL.
 

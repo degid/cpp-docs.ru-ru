@@ -58,7 +58,7 @@ class CMonikerFile : public COleStreamFile
 |----------|-----------------|
 |[CMonikerFile::CreateBindContext](#createbindcontext)|Получает контекст связывания или создает инициализированный контекст связывания по умолчанию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Кличка содержит информацию, похожую на имя пути к файлу. Если у вас есть указатель на интерфейс `IMoniker` объекта моникера, вы можете получить доступ к идентифицированному файлу без какой-либо другой конкретной информации о том, где файл на самом деле находится.
 
@@ -90,7 +90,7 @@ class CMonikerFile : public COleStreamFile
 virtual void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Можно вызвать неоткрытые или уже закрытые потоки.
 
@@ -119,7 +119,7 @@ IBindCtx* CreateBindContext(CFileException* pError);
 
 Указатель на контекст связывать [IBindCtx,](/windows/win32/api/objidl/nn-objidl-ibindctx) чтобы связать с в случае успеха; в противном случае NULL. Если экземпляр был открыт `IBindHost` с интерфейсом, контекст связывания извлекается из `IBindHost`. Если интерфейс `IBindHost` отсутствует или интерфейс не возвращает контекст связывания, создается контекст связывания. Для описания интерфейса [IBindHost](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/ms775076\(v=vs.85\)) см.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Контекст связывания — это объект, который хранит информацию о конкретной операции связывания моникера. Эту функцию можно переопределить, чтобы обеспечить пользовательский контекст связывания.
 
@@ -152,7 +152,7 @@ IMoniker* GetMoniker() const;
 
 Указатель на текущий интерфейс моникера [(IMoniker](/windows/win32/api/objidl/nn-objidl-imoniker)).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку `CMonikerFile` это не интерфейс, возврат указателя не приращает количество ссылок (через [AddRef),](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref)и прозвище освобождается при освобождении `CMonikerFile` объекта. Если вы хотите, чтобы держаться за прозвище или `AddRef` освободить его самостоятельно, вы должны его.
 
@@ -185,7 +185,7 @@ URL или имя файла, которое будет открыто.
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *lpszURL* не может быть использован на Macintosh. Только *pMoniker* форма `Open` может быть использована на Macintosh.
 

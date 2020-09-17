@@ -74,15 +74,15 @@ class CAtlTemporaryFile
 
 |Имя|Описание|
 |----------|-----------------|
-|[ОБРАБОТЧИК Катлтемпорарифиле:: operator](#operator_handle)|Возвращает маркер для временного файла.|
+|[ОБРАБОТЧИК Катлтемпорарифиле::operator](#operator_handle)|Возвращает маркер для временного файла.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlTemporaryFile`упрощает создание и использование временного файла. Файл автоматически называется, открывается, закрывается и удаляется. Если содержимое файла требуется после закрытия файла, их можно сохранить в новый файл с указанным именем.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлфиле. h
+**Заголовок:** атлфиле.h
 
 ## <a name="example"></a>Пример
 
@@ -96,7 +96,7 @@ class CAtlTemporaryFile
 CAtlTemporaryFile() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файл на самом деле не открывается до тех пор, пока не будет выполнен вызов [катлтемпорарифиле:: Create](#create).
 
@@ -112,7 +112,7 @@ CAtlTemporaryFile() throw();
 ~CAtlTemporaryFile() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор вызывает [катлтемпорарифиле:: Close](#close).
 
@@ -173,7 +173,7 @@ HRESULT Flush() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично [катлтемпорарифиле:: хандсофф](#handsoff), за исключением того, что файл не закрыт.
 
@@ -198,7 +198,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы изменить положение указателя файла, используйте [катлтемпорарифиле:: Seek](#seek).
 
@@ -231,7 +231,7 @@ HRESULT HandsOff() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `HandsOff`и [катлтемпорарифиле:: Хандсон](#handson) используются для того, чтобы разорвать связь файла с объектом и при необходимости повторно присоединить его. `HandsOff`принудительно записывает все данные, оставшиеся в буфере файла, во временный файл, а затем закрывает файл. Если вы хотите закрыть и удалить файл без возможности восстановления или хотите закрыть и хранить содержимое файла с заданным именем, используйте [катлтемпорарифиле:: Close](#close).
 
@@ -247,7 +247,7 @@ HRESULT HandsOn() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Катлтемпорарифиле:: хандсофф](#handsoff) и `HandsOn` используются для того, чтобы разорвать связь файла с объектом и при необходимости повторно присоединить его.
 
@@ -271,11 +271,11 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Блокировка байтов в файле предотвращает доступ других процессов к этим байтам. Можно заблокировать несколько регионов файла, но перекрывающиеся области не допускаются. Чтобы успешно разблокировать регион, используйте [катлтемпорарифиле:: унлоккранже](#unlockrange), гарантируя, что диапазон байтов точно соответствует региону, который ранее был заблокирован. `LockRange`не выполняет слияние смежных областей; Если два заблокированных региона являются смежными, каждый из них необходимо разблокировать отдельно.
 
-## <a name="catltemporaryfileoperator-handle"></a><a name="operator_handle"></a>ОБРАБОТЧИК Катлтемпорарифиле:: operator
+## <a name="catltemporaryfileoperator-handle"></a><a name="operator_handle"></a>ОБРАБОТЧИК Катлтемпорарифиле::operator
 
 Возвращает маркер для временного файла.
 
@@ -309,7 +309,7 @@ HRESULT Read(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлфиле:: Read](../../atl/reference/catlfile-class.md#read). Чтобы изменить положение указателя файла, вызовите метод [катлтемпорарифиле:: Seek](#seek).
 
@@ -337,7 +337,7 @@ HRESULT Seek(LONGLONG nOffset, DWORD dwFrom = FILE_CURRENT) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлфиле:: Seek](../../atl/reference/catlfile-class.md#seek). Чтобы получить текущую позиции указателя файла, вызовите [катлтемпорарифиле:: Disposition](#getposition).
 
@@ -362,7 +362,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлфиле:: SetSize](../../atl/reference/catlfile-class.md#setsize). При возврате указатель файла размещается в конце файла.
 
@@ -378,7 +378,7 @@ LPCTSTR TempFileName() throw();
 
 Возвращает LPCTSTR, указывающий на имя файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Имя файла создается в [катлтемпорарифиле:: катлтемпорарифиле](#catltemporaryfile) с вызовом функции [жеттемпфиле](/windows/win32/api/fileapi/nf-fileapi-gettempfilenamew)Windows SDK. Для временного файла всегда будет использоваться расширение файла «ТФР».
 
@@ -402,7 +402,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлфиле:: унлоккранже](../../atl/reference/catlfile-class.md#unlockrange).
 
@@ -432,7 +432,7 @@ HRESULT Write(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлфиле:: Write](../../atl/reference/catlfile-class.md#write).
 

@@ -26,7 +26,7 @@ ms.locfileid: "79440371"
 /ALLOWISOLATION[:NO]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **/ALLOWISOLATION** заставляет операционную систему выполнять поиск и загрузку манифеста.
 

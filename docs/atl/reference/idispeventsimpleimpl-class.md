@@ -62,7 +62,7 @@ class ATL_NO_VTABLE IDispEventSimpleImpl : public _IDispEventLocator<nID, pdiid>
 |[IDispEventSimpleImpl::Invoke](#invoke)|Вызывает обработчиков событий, перечисленных на карте раковины события.|
 |[IDispEventSimpleImpl::Unadvise](#unadvise)|Перерывы соединения с источником события по умолчанию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IDispEventSimpleImpl`предоставляет способ реализации дисинтерфейса событий, не требуя от вас предоставления кода реализации для каждого метода/события на этом интерфейсе. `IDispEventSimpleImpl`обеспечивает реализацию методов. `IDispatch` Вам нужно только предоставить реализации для событий, которые вы заинтересованы в обработке.
 
@@ -116,7 +116,7 @@ HRESULT Advise(IUnknown* pUnk);
 
 S_OK или любой сбой HRESULT значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Как только соединение установлено, события, выпущенные из *pUnk,* будут направляться обработчикам в вашем классе по карте раковины событий.
 
@@ -145,7 +145,7 @@ HRESULT DispEventAdvise(IUnknown* pUnk  const IID* piid);
 
 S_OK или любой сбой HRESULT значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Впоследствии события, выпущенные из *pUnk,* будут направляться обработчикам в вашем классе по карте раковины событий.
 
@@ -174,7 +174,7 @@ HRESULT DispEventUnadvise(IUnknown* pUnk  const IID* piid);
 
 S_OK или любой сбой HRESULT значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После того, как соединение будет прервано, события больше не будут направляться к функциям обработчика, перечисленным на карте раковины событий.
 
@@ -196,7 +196,7 @@ STDMETHOD(GetIDsOfNames)(
     DISPID* /* rgdispid */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) в Windows SDK.
 
@@ -211,7 +211,7 @@ STDMETHOD(GetTypeInfo)(
     ITypeInfo** /* pptinfo */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) в Windows SDK.
 
@@ -223,7 +223,7 @@ STDMETHOD(GetTypeInfo)(
 STDMETHOD(GetTypeInfoCount)(UINT* /* pctinfo */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount) в Windows SDK.
 
@@ -243,7 +243,7 @@ STDMETHOD(Invoke)(
     UINT* /* puArgErr */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::Invoke](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke).
 
@@ -264,7 +264,7 @@ HRESULT Unadvise(IUnknown* pUnk);
 
 S_OK или любой сбой HRESULT значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После того, как соединение будет прервано, события больше не будут направляться к функциям обработчика, перечисленным на карте раковины событий.
 

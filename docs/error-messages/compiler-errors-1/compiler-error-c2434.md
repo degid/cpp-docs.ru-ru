@@ -17,7 +17,7 @@ ms.locfileid: "80205469"
 
 > "*символ*": символ, объявленный с __declspec (Process), не может быть динамически инициализирован в режиме/clr: pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 

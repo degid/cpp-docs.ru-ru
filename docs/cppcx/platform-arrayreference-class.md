@@ -41,7 +41,7 @@ class ArrayReference
 
 ## <a name="exceptions"></a>Исключения
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Использование `ArrayReference` для заполнения массива в стиле языка C позволяет избежать дополнительной операции копирования, которая потребовалось бы при копировании сначала в переменную `Platform::Array` , а затем в массив в стиле языка C. При использовании `ArrayReference`выполняется только одна операция копирования. Для примера кода см. [Array и WriteOnlyArray](../cppcx/array-and-writeonlyarray-c-cx.md).
 
@@ -77,7 +77,7 @@ ArrayReference(ArrayReference&& otherArg)
 *otherArg*<br/>
 Объект `ArrayReference`, данные которого будут перемещены для инициализации нового экземпляра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="arrayreferenceoperator-operator"></a><a name="operator-assign"></a>ArrayСправка::Оператор » Оператор
 
@@ -98,7 +98,7 @@ ArrayReference& operator=(ArrayReference&& otherArg);
 
 Ссылка на объект типа `ArrayReference`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Platform::ArrayReference` — это стандартный шаблон класса C++, а не ссылочный класс.
 
@@ -116,7 +116,7 @@ Array<TArg>^ operator ();
 
 Дескриптор для объекта типа `Array<TArg>^`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Платформа::ArrayReference](../cppcx/platform-arrayreference-class.md) является стандартным шаблоном класса СЗ, а [платформа::Array](../cppcx/platform-array-class.md) - это класс рефери.
 

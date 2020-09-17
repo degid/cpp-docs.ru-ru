@@ -289,19 +289,19 @@ class uint_4;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор uint_4](#uint_4__ctor) |Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |uint_4::get_w||
 |uint_4::get_wx||
@@ -442,26 +442,26 @@ class uint_4;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |uint_4::operator-||
 |uint_4::operator--||
-|uint_4:: operator * =||
-|uint_4:: operator/=||
-|uint_4:: operator + +||
-|uint_4:: operator + =||
-|uint_4:: operator =||
-|uint_4:: operator-=||
+|uint_4::operator*=||
+|uint_4::operator/=||
+|uint_4::operator++||
+|uint_4::operator+=||
+|uint_4::operator=||
+|uint_4::operator-=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |uint_4::a||
 |uint_4::ab||
@@ -598,9 +598,9 @@ class uint_4;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="uint_4__ctor"></a>uint_4
 

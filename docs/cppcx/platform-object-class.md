@@ -39,7 +39,7 @@ public ref class Object : Object
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Object::Equals](#equals)|Определяет, равен ли указанный объект текущему объекту.|
 |[Object::GetHashCode](#gethashcode)|Возвращает хэш-код данного экземпляра.|
@@ -94,7 +94,7 @@ public:int GetHashCode();
 
 Числовое значение, которое однозначно идентифицирует этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Можно использовать GetHashCode для создание ключей объектов в сопоставлениях. Сравнить хэш-коды можно с помощью [Object:: Equals](#equals). Если эта ветвь выполнения кода очень важна, а `GetHashCode` и `Equals` работают недостаточно быстро, можно перейти вниз на соответствующий уровень COM и выполнять сравнение указателей `IUnknown` в неуправляемом коде.
 
@@ -112,7 +112,7 @@ Object::GetType();
 
 Объект [Platform:: Type](../cppcx/platform-type-class.md) , описывающий тип объекта во время выполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Статический [Тип:: GetTypeCode](../cppcx/platform-type-class.md#gettypecode) можно использовать для получения значения [перечисления Platform:: TypeCode](../cppcx/platform-typecode-enumeration.md) , представляющего текущий тип. Это наиболее полезно для встроенных типов. Код типа для любого класса ссылки помимо [Platform:: String](../cppcx/platform-string-class.md) — Object (1).
 

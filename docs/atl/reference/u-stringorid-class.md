@@ -43,7 +43,7 @@ class _U_STRINGorID
 |----------|-----------------|
 |[_U_STRINGorID::m_lpstr](#_u_stringorid__m_lpstr)|Идентификатор ресурса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предназначен для реализации оберток для API управления ресурсами Windows, таких как [функции FindResource,](/windows/win32/api/winbase/nf-winbase-findresourcea) [LoadIcon](/windows/win32/api/winuser/nf-winuser-loadiconw)и [LoadMenu,](/windows/win32/api/winuser/nf-winuser-loadmenuw) которые принимают аргумент LPCTSTR, который может быть либо названием ресурса, либо его идентификатором.
 
@@ -78,7 +78,7 @@ _U_STRINGorID(LPCTSTR lpString);
 *lpString*<br/>
 Имя ресурса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент конструктору LPCTSTR хранится непосредственно без преобразования.
 

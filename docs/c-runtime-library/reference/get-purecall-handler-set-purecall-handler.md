@@ -67,7 +67,7 @@ _purecall_handler __cdecl _set_purecall_handler(
 
 Предыдущая **_purecall_handler**. Возвращает **`nullptr`** , если предыдущий обработчик отсутствует.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **_get_purecall_handler** и **_set_purecall_handler** являются специфичными для Microsoft и применяются только к коду C++.
 

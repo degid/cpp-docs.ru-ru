@@ -57,7 +57,7 @@ ms.locfileid: "87226780"
 
 [Сокеты Windows в MFC](../mfc/windows-sockets-in-mfc.md)<br/>
 [CArchive:: для сохранения](../mfc/reference/carchive-class.md#isstoring)<br/>
-[CArchive:: operator <<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
-[CArchive:: operator >>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
+[CArchive::operator<<](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
+[CArchive::operator>>](../mfc/reference/carchive-class.md#operator_lt_lt)<br/>
 [CArchive:: Flush](../mfc/reference/carchive-class.md#flush)<br/>
 [CObject:: Serialize](../mfc/reference/cobject-class.md#serialize)

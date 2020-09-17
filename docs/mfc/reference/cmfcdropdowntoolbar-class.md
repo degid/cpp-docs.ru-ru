@@ -53,7 +53,7 @@ class CMFCDropDownToolBar : public CMFCToolBar
 |[CMFCDropDownToolbar::OnsendCommand](#onsendcommand)|(Переопределяет `CMFCToolBar::OnSendCommand`.)|
 |[CMFCDropDownToolBar::OnUpdateCmdUI](#onupdatecmdui)|(Переопределяет [CMFCToolBar::OnUpdateCmdUI](cmfctoolbar-class.md).|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CMFCDropDownToolBar` сочетает в себе внешний вид панели инструментов с поведением всплывающего меню. Когда пользователь нажимает и удерживает кнопку панели инструментов (см. [CMFCDropDownToolbarButton Class),](../../mfc/reference/cmfcdropdowntoolbarbutton-class.md)появляется панель инструментов, и пользователь может выбрать кнопку из панели инструментов, выпадающих вниз, прокрутив ее и выпустив кнопку мыши. После того, как пользователь выбирает кнопку в панели инструментов, выпадающих вниз, эта кнопка отображается в качестве текущей кнопки на панели инструментов верхнего уровня.
 
@@ -112,7 +112,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdropdowntoolbarloadbitmap"></a><a name="loadbitmap"></a>CMFCDropDownToolBar::LoadBitmap
 
@@ -152,7 +152,7 @@ virtual BOOL LoadBitmap(
 
 Ненулевое значение, если метод выполнен успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод [CMFCToolBar::LoadToolBarEx](../../mfc/reference/cmfctoolbar-class.md#loadtoolbarex) вызывает этот метод, чтобы загрузить изображения, связанные с панелью инструментов. Переопределите этот метод для выполнения пользовательской загрузки графических ресурсов.
 
@@ -189,7 +189,7 @@ virtual BOOL LoadToolBar(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdropdowntoolbaronlbuttonup"></a><a name="onlbuttonup"></a>CMFCDropDowntoolbar::OnLButtonup
 
@@ -205,7 +205,7 @@ afx_msg void OnLButtonUp(
 
 (в) *точки*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdropdowntoolbaronmousemove"></a><a name="onmousemove"></a>CMFCDropDownToolbar::OnMouseMove
 
@@ -221,7 +221,7 @@ afx_msg void OnMouseMove(
 
 (в) *точки*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdropdowntoolbaronsendcommand"></a><a name="onsendcommand"></a>CMFCDropDownToolbar::OnsendCommand
 
@@ -235,7 +235,7 @@ virtual BOOL OnSendCommand(const CMFCToolBarButton* pButton);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdropdowntoolbaronupdatecmdui"></a><a name="onupdatecmdui"></a>CMFCDropDownToolBar::OnUpdateCmdUI
 
@@ -251,7 +251,7 @@ virtual void OnUpdateCmdUI(
 
 (в) *bDisableIfNoHndler*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

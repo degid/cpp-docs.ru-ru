@@ -42,7 +42,7 @@ class basic_ofstream : public basic_ostream<Elem, Tr>
 *ТС*\
 Признаки базового элемента буфера файла (обычно `char_traits`< `Elem`>).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При записи **`wchar_t`** специализации `basic_ofstream` в файл, если файл открыт в текстовом режиме, будет записана последовательность MBCS. Внутреннее представление будет использовать буфер **`wchar_t`** символов.
 
@@ -84,13 +84,13 @@ int main(int argc, char **argv)
 |[is_open](#is_open)|Определяет, открыт ли файл.|
 |[open](#open)|Открывает файл.|
 |[rdbuf](#rdbuf)|Возвращает адрес сохраненного буфера потока.|
-|[позиции](#swap)|Меняет местами содержимое этого объекта `basic_ofstream` с содержимым указанного объекта `basic_ofstream`.|
+|[swap](#swap)|Меняет местами содержимое этого объекта `basic_ofstream` с содержимым указанного объекта `basic_ofstream`.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Назначает содержимое этого объекта потока. Это назначение перемещения, включающее `rvalue reference`, которое не оставляет копию.|
+|[operator=](#op_eq)|Назначает содержимое этого объекта потока. Это назначение перемещения, включающее `rvalue reference`, которое не оставляет копию.|
 
 ## <a name="requirements"></a>Требования
 
@@ -130,10 +130,10 @@ basic_ofstream(
 *_Prot*\
 Защита открытия файла по умолчанию, эквивалент параметра `shflag` в [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-*Правильно*\
+*right*\
 Ссылка rvalue на объект `basic_ofstream`, используемый для инициализации этого объекта `basic_ofstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_ostream](../standard-library/basic-ostream-class.md)( `sb` ), где `sb` — это сохраненный объект класса [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` , `Tr`>. Он также инициализирует `sb` путем вызова `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -171,7 +171,7 @@ int main(int argc, char **argv)
 void close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена вызывает [rdbuf](../standard-library/basic-ifstream-class.md#rdbuf) **->** [Close](../standard-library/basic-filebuf-class.md#close).
 
@@ -191,7 +191,7 @@ bool is_open() const;
 
 **`true`** значение, если файл открыт; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена возвращает [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).
 
@@ -252,7 +252,7 @@ void open(
 *_Prot*\
 Защита открытия файла по умолчанию, эквивалент параметра `shflag` в [_fsopen, _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член вызывает [rdbuf](#rdbuf) **->** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` &#124; `ios_base::out` ). Если эта функция возвращает пустой указатель, функция вызывает [SetState](../standard-library/basic-ios-class.md#setstate)( `failbit` ).
 
@@ -260,7 +260,7 @@ void open(
 
 Пример, в котором используется, см. в разделе [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a>basic_ofstream:: operator =
+## <a name="basic_ofstreamoperator"></a><a name="op_eq"></a>basic_ofstream::operator=
 
 Назначает содержимое этого объекта потока. Это назначение перемещения, включающее `rvalue reference`, которое не оставляет копию.
 
@@ -270,14 +270,14 @@ basic_ofstream& operator=(basic_ofstream&& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка rvalue на объект `basic_ofstream`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает **`*this`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор Member заменяет содержимое объекта с помощью содержимого *right*, которое рассматривается как ссылка rvalue.
 
@@ -307,10 +307,10 @@ void swap(basic_ofstream& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка `lvalue` на другой объект `basic_ofstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция элемента меняет местами содержимое этого объекта на содержимое, находящееся *справа*.
 

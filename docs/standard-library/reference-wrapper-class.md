@@ -47,7 +47,7 @@ class reference_wrapper
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `reference_wrapper<Ty>` — это конструируемый и назначаемый копированием класс-оболочка вокруг ссылки на объект или функцию типа `Ty`. Он содержит указатель на объект этого типа. `reference_wrapper` может использоваться для хранения ссылок в стандартных контейнерах и для передачи объектов по ссылке на `std::bind`.
 
@@ -81,9 +81,9 @@ class reference_wrapper
 |Имя|Описание|
 |-|-|
 |[Оператор Ty&amp;](#op_ty_amp)|Получает указатель на ссылку в оболочке.|
-|[оператор ()](#op_call)|Вызывает ссылку в оболочке.|
+|[operator()](#op_call)|Вызывает ссылку в оболочке.|
 
-## <a name="get"></a><a name="get"></a> Получить
+## <a name="get"></a><a name="get"></a> get
 
 Получает ссылку в оболочке.
 
@@ -91,7 +91,7 @@ class reference_wrapper
 Ty& get() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает ссылку в оболочке.
 
@@ -130,7 +130,7 @@ i = -1
 operator Ty&() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор-член возвращает `*ptr`.
 
@@ -158,7 +158,7 @@ i = 1
 (int)rwi = 1
 ```
 
-## <a name="operator"></a><a name="op_call"></a> оператор ()
+## <a name="operator"></a><a name="op_call"></a> operator()
 
 Вызывает ссылку в оболочке.
 
@@ -175,7 +175,7 @@ auto operator()(Types&&... args);
 *args*\
 Список аргументов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент шаблона `operator()` возвращает `std::invoke(get(), std::forward<Types>(args)...)`.
 
@@ -217,10 +217,10 @@ reference_wrapper(Ty& val) noexcept;
 *Ty*\
 Тип для упаковки.
 
-*Val*\
+*val*\
 Значение для упаковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор устанавливает сохраненное значение `ptr` в `&val`.
 
@@ -263,7 +263,7 @@ i = -1
 typedef R result_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определение типа `result_type` является синонимом слабого типа результата функции в оболочке. Это определение типа имеет смысл только для типов функций.
 
@@ -302,7 +302,7 @@ val = -3
 typedef Ty type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определение типа является синонимом параметра шаблона `Ty`.
 

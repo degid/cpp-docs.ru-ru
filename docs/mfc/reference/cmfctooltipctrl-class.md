@@ -77,7 +77,7 @@ class CMFCToolTipCtrl : public CToolTipCtrl
 |[CMFCToolTipCtrl::SetLocation](#setlocation)||
 |[CMFCToolTipCtrl::SetParams](#setparams)|Задает внешний вид всплывающей подсказки с помощью объекта `CMFCToolTipInfo`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте `CMFCToolTipCtrl`объекты [класса CTooltipManager](../../mfc/reference/ctooltipmanager-class.md) вместе для реализации индивидуальных наборов инструментов в приложении. `CMFCToolTipInfo`
 
@@ -158,7 +158,7 @@ CMFCToolTipCtrl(CMFCToolTipInfo* pParams = NULL);
 
 (в) *pParams*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctooltipctrlgeticonsize"></a><a name="geticonsize"></a>CMFCToolTipCtrl::GetIconSize
 
@@ -206,7 +206,7 @@ virtual void OnDrawBorder(
 *clrLine*<br/>
 (в) Пограничный цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить внешний вид границы tooltip.
 
@@ -227,7 +227,7 @@ virtual CSize OnDrawDescription(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctooltipctrlondrawicon"></a><a name="ondrawicon"></a>CMFCToolTipCtrl::OndrawIcon
 
@@ -251,7 +251,7 @@ virtual BOOL OnDrawIcon(
 
 ПРАВДА, если значок был нарисован. В противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе для отображения пользовательского значка. Вы также должны переопределить [CMFCToolTipCtrl::GetIconSize,](#geticonsize) чтобы инструмент правильно рассчитать макет текста и описания.
 
@@ -281,7 +281,7 @@ virtual CSize OnDrawLabel(
 
 Размер метки, в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, если вы хотите настроить внешний вид метки tooltip.
 
@@ -311,7 +311,7 @@ virtual void OnDrawSeparator(
 *Y*<br/>
 (в) Вертикальные координаты сепаратора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию рисует линию от точки (x1, y) до точки (x2, y).
 
@@ -343,7 +343,7 @@ virtual void OnFillBackground(
 *clrLine*<br/>
 (в) Цвет границ и линия делимитера между этикеткой и описанием.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию заполняет прямоугольник, указанный *рект* с цветом или шаблоном, указанным последним вызовом [CMFCToolTipCtrl::SetParams](#setparams).
 
@@ -362,7 +362,7 @@ virtual void SetDescription(const CString strDesrciption);
 *strDesrciption*<br/>
 (в) Текст описания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Текст описания отображается на инструменте под сепаратором.
 
@@ -379,7 +379,7 @@ void SetFixedWidth(
 (в) *nWidthRegular*<br/>
 (в) *nWidthLargeImage*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctooltipctrlsethotribbonbutton"></a><a name="sethotribbonbutton"></a>CMFCToolTipCtrl::SetHotRibbonButton
 
@@ -391,7 +391,7 @@ void SetHotRibbonButton(CMFCRibbonButton* pRibbonButton);
 
 (в) *pRibbonButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctooltipctrlsetlocation"></a><a name="setlocation"></a>CMFCToolTipCtrl:SetLocation
 
@@ -403,7 +403,7 @@ void SetLocation(CPoint pt);
 
 (в) *pt pt*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctooltipctrlsetparams"></a><a name="setparams"></a>CMFCToolTipCtrl::SetParams
 
@@ -418,7 +418,7 @@ void SetParams(CMFCToolTipInfo* pParams);
 *pParams*<br/>
 (в) Указатель на объект [класса CMFCToolTipInfo,](../../mfc/reference/cmfctooltipinfo-class.md) содержащий параметры дисплея.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Всякий раз, когда инструмент отображается, он обращается с помощью цветов и визуальных стилей, которые *pParams* указывает. Значение *pParams* хранится в защищенном `m_Params`члене , к которому можно получить доступ к производному классу, который переопределяет [CMFCToolTipCtrl::OnDrawBorder](#ondrawborder), [CMFCToolTipCtrl::OndrawIcon](#ondrawicon), [CMFCToolTipCtrl::OnDrawLabel](#ondrawlabel), [CMFCToolToolTipCtrl::OnDrawSeparator](#ondrawseparator), или [CMFCTool.](#onfillbackground)
 

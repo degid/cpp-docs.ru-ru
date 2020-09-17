@@ -33,7 +33,7 @@ class CSemaphore : public CSyncObject
 |----------|-----------------|
 |[CSemaphore::CSemaphore](#csemaphore)|Формирует объект `CSemaphore`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Semaphores полезны для управления доступом к общему ресурсу, который может поддерживать только ограниченное число пользователей. Текущий подсчет `CSemaphore` объекта — это количество разрешенных дополнительных пользователей. Когда счет достигает нуля, все попытки использовать `CSemaphore` ресурс, контролируемый объектом, будут вставлены в системную очередь и ждать, пока они либо тайм-аут или количество поднимутся выше 0. При строительстве объекта указывается максимальное количество пользователей, которые `CSemaphore` могут одновременно получить доступ к контролируемому ресурсу.
 
@@ -85,7 +85,7 @@ CSemaphore(
 *lpsa Attributes*<br/>
 Атрибуты безопасности для объекта семафора. Полное описание этой структуры [можно](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) SECURITY_ATTRIBUTES в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить доступ `CSemaphore` к объекту или освободить объект, создайте объект [CMultiLock](../../mfc/reference/cmultilock-class.md) или [CSingleLock](../../mfc/reference/csinglelock-class.md) и позвоните [в](../../mfc/reference/csinglelock-class.md#lock) его функции lock and [Unlock.](../../mfc/reference/csinglelock-class.md#unlock)
 

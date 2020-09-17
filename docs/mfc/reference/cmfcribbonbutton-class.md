@@ -210,7 +210,7 @@ class CMFCRibbonButton : public CMFCRibbonBaseElement
 
 [!code-cpp[NVC_MFC_RibbonApp#7](../../mfc/reference/codesnippet/cpp/cmfcribbonbutton-class_1.cpp)]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать ленту кнопку в приложении, построить объект кнопки и добавить его в соответствующую [ленту панели](../../mfc/reference/cmfcribbonpanel-class.md).
 
@@ -272,7 +272,7 @@ virtual BOOL CanBeStretched();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttoncleanupsizes"></a><a name="cleanupsizes"></a>CMFCRibbonButton::CleanUpSizes
 
@@ -280,7 +280,7 @@ virtual BOOL CanBeStretched();
 virtual void CleanUpSizes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonclosepopupmenu"></a><a name="closepopupmenu"></a>CMFCRibbonButton::ClosePopupMenu
 
@@ -288,7 +288,7 @@ virtual void CleanUpSizes();
 virtual void ClosePopupMenu();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttoncmfcribbonbutton"></a><a name="cmfcribbonbutton"></a>CMFCRibbonButton::CMFCRibbonButton
 
@@ -350,7 +350,7 @@ CSize DrawBottomText(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttondrawimage"></a><a name="drawimage"></a>CMFCRibbonButton::DrawImage
 
@@ -367,7 +367,7 @@ virtual void DrawImage(
 (в) *тип*<br/>
 (в) *rectImage*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttondrawribbontext"></a><a name="drawribbontext"></a>CMFCRibbonButton::DrawRibbonText
 
@@ -390,7 +390,7 @@ virtual int DrawRibbonText(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonfindsubitemindexbyid"></a><a name="findsubitemindexbyid"></a>CMFCRibbonButton::FindSubItemIndexbyID
 
@@ -417,7 +417,7 @@ CRect GetCommandRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetcompactsize"></a><a name="getcompactsize"></a>CMFCRibbonButton::GetCompactSize
 
@@ -431,7 +431,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongeticon"></a><a name="geticon"></a>CMFCRibbonButton::GetIcon
 
@@ -445,7 +445,7 @@ HICON GetIcon(BOOL bLargeIcon = TRUE) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetimageindex"></a><a name="getimageindex"></a>CMFCRibbonButton::GetImageIndex
 
@@ -476,7 +476,7 @@ virtual CSize GetImageSize(RibbonImageType type) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetintermediatesize"></a><a name="getintermediatesize"></a>CMFCRibbonButton::GetIntermediateSize
 
@@ -490,7 +490,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetmenu"></a><a name="getmenu"></a>CMFCRibbonButton::GetMenu
 
@@ -512,7 +512,7 @@ CRect GetMenuRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetregularsize"></a><a name="getregularsize"></a>CMFCRibbonButton::GetRegularSize
 
@@ -526,7 +526,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongetsubitems"></a><a name="getsubitems"></a>CMFCRibbonButton::GetSubitems
 
@@ -536,7 +536,7 @@ const CArray<CMFCRibbonBaseElement*, CMFCRibbonBaseElement*>& GetSubItems() cons
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongettextrowheight"></a><a name="gettextrowheight"></a>CMFCRibbonButton::GetTextRowHeight
 
@@ -546,7 +546,7 @@ int GetTextRowHeight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttongettooltiptext"></a><a name="gettooltiptext"></a>CMFCRibbonButton::GetToolTipText
 
@@ -556,7 +556,7 @@ virtual CString GetToolTipText() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonhascompactmode"></a><a name="hascompactmode"></a>CMFCRibbonButton::HasCompactMode
 
@@ -566,7 +566,7 @@ virtual BOOL HasCompactMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonhasintermediatemode"></a><a name="hasintermediatemode"></a>CMFCRibbonButton::HasIntermediateMode
 
@@ -576,7 +576,7 @@ virtual BOOL HasIntermediateMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonhaslargemode"></a><a name="haslargemode"></a>CMFCRibbonButton::HasLargeMode
 
@@ -586,7 +586,7 @@ virtual BOOL HasLargeMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonhasmenu"></a><a name="hasmenu"></a>CMFCRibbonButton::HasMenu
 
@@ -596,7 +596,7 @@ virtual BOOL HasMenu() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisalwaysdrawborder"></a><a name="isalwaysdrawborder"></a>CMFCRibbonButton::IsAlwaysdrawBorder
 
@@ -606,7 +606,7 @@ virtual BOOL IsAlwaysDrawBorder() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisalwayslargeimage"></a><a name="isalwayslargeimage"></a>CMFCRibbonButton::IsAlwaysLargeImage
 
@@ -616,7 +616,7 @@ virtual BOOL IsAlwaysLargeImage() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisapplicationbutton"></a><a name="isapplicationbutton"></a>CMFCRibbonButton::IsApplicationButton
 
@@ -626,7 +626,7 @@ virtual BOOL IsApplicationButton() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttoniscommandareahighlighted"></a><a name="iscommandareahighlighted"></a>CMFCRibbonButton::IsCommandArea
 
@@ -636,7 +636,7 @@ virtual BOOL IsCommandAreaHighlighted() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisdefaultcommand"></a><a name="isdefaultcommand"></a>CMFCRibbonButton::IsDefaultCommand
 
@@ -658,7 +658,7 @@ virtual BOOL IsDefaultPanelButton() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisdrawtooltipimage"></a><a name="isdrawtooltipimage"></a>CMFCRibbonButton::IsdrawtooltipImage
 
@@ -668,7 +668,7 @@ virtual BOOL IsDrawTooltipImage() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonislargeimage"></a><a name="islargeimage"></a>CMFCRibbonButton::IsLargeImage
 
@@ -678,7 +678,7 @@ BOOL IsLargeImage() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonismenuareahighlighted"></a><a name="ismenuareahighlighted"></a>CMFCRibbonButton::IsMenuAreaHighlighted
 
@@ -688,7 +688,7 @@ virtual BOOL IsMenuAreaHighlighted() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonismenuonbottom"></a><a name="ismenuonbottom"></a>CMFCRibbonButton::Ismenuonbottom
 
@@ -698,7 +698,7 @@ BOOL IsMenuOnBottom() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonispopupdefaultmenulook"></a><a name="ispopupdefaultmenulook"></a>CMFCRibbonButton::IsPopupDefaultMenuLook
 
@@ -708,7 +708,7 @@ virtual BOOL IsPopupDefaultMenuLook() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonisrightalignmenu"></a><a name="isrightalignmenu"></a>CMFCRibbonButton::IsRightAlignMenu
 
@@ -730,7 +730,7 @@ BOOL IsSingleLineText() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttononcalctextsize"></a><a name="oncalctextsize"></a>CMFCRibbonButton::OnCalcTextSize
 
@@ -742,7 +742,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttononclick"></a><a name="onclick"></a>CMFCRibbonButton::OnClick
 
@@ -757,7 +757,7 @@ virtual void OnClick(CPoint point);
 *Точки*<br/>
 (в) Определяет положение щелчка мыши.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, если вы хотите справиться с этим событием.
 
@@ -771,7 +771,7 @@ virtual void OnDraw(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonondrawborder"></a><a name="ondrawborder"></a>CMFCRibbonButton::OndrawBorder
 
@@ -783,7 +783,7 @@ virtual void OnDrawBorder(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttononfillbackground"></a><a name="onfillbackground"></a>CMFCRibbonButton::OnFillbackground
 
@@ -797,7 +797,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonremoveallsubitems"></a><a name="removeallsubitems"></a>CMFCRibbonButton::RemoveAllSubitems
 
@@ -846,7 +846,7 @@ virtual BOOL SetACCData(
 
 Возвращает TRUE в случае успеха; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsetalwayslargeimage"></a><a name="setalwayslargeimage"></a>CMFCRibbonButton::SetAlwaysLargeИзображение
 
@@ -874,7 +874,7 @@ void SetDefaultCommand(BOOL bSet=TRUE);
 *bSet*<br/>
 (в) Если true, кнопка может выполнить свою команду по умолчанию. Если FALSE, кнопка не может выполнить свою команду по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *bSet* актуален только тогда, когда кнопка имеет меню. Если *bSet* является правдой, кнопка может выполнить свою команду по умолчанию, а назначенное всплывающее меню появляется только тогда, когда пользователь нажимает на стрелку на правом краю кнопки. В противном случае кнопка не может выполнить свою команду по умолчанию, и всплывающее меню появляется независимо от того, какую область кнопки пользователь нажимает.
 
@@ -888,7 +888,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 
 (в) *lpszТекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsetimageindex"></a><a name="setimageindex"></a>CMFCRibbonButton::SetImageIndex
 
@@ -938,7 +938,7 @@ void SetMenu(
 *uiMenuResID*<br/>
 Идентификатор ресурса меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда приложение назначает меню кнопке, кнопка отображает стрелку с правой стороны. Если *bIsDefaultCommand* является правдой, меню появляется только тогда, когда пользователь нажимает на стрелку. Если пользователь нажимает на кнопку, выполняется его команда по умолчанию. Если *bIsDefaultCommand* является FALSE, меню появляется, нажав в любом месте на кнопку.
 
@@ -952,7 +952,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 
 (в) *pРодитель*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsetrightalignmenu"></a><a name="setrightalignmenu"></a>CMFCRibbonButton::SetRightAlignMenu
 
@@ -977,7 +977,7 @@ virtual void SetText(LPCTSTR lpszText);
 
 (в) *lpszТекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

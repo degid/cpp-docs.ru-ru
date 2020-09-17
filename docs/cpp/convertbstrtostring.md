@@ -30,7 +30,7 @@ char* __stdcall ConvertBSTRToString(BSTR pSrc);
 *pSrc*<br/>
 Переменная BSTR.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Конвертбстртостринг** выделяет строку, которую необходимо удалить.
 
@@ -64,7 +64,7 @@ char * text: Test
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<комутил. h >
+**Заголовок:** \<комутил.h >
 
 **Lib:** комсуппв. lib или комсуппвд. lib (Дополнительные сведения см. в разделе [/Zc: wchar_t (wchar_t является собственным типом)](../build/reference/zc-wchar-t-wchar-t-is-native-type.md)
 

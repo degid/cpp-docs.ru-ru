@@ -48,7 +48,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[join](#ctor)|Перегружен. Создает блок обмена сообщениями `join` .|
 |[Деструктор ~ Join](#dtor)|Уничтожает `join` блок.|
@@ -66,7 +66,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 |[reserve_message](#reserve_message)|Резервирует сообщение, которое было ранее предложено этим `join` блоком обмена сообщениями. (Переопределяет [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|Возобновляет распространение после освобождения резервирования. (Переопределяет [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -86,7 +86,7 @@ class join : public propagator_block<single_link_registry<ITarget<std::vector<T>
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -122,7 +122,7 @@ virtual message<_OutputType>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -171,7 +171,7 @@ join(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `join` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
@@ -253,7 +253,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 

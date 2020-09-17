@@ -41,7 +41,7 @@ class CPrimitiveElementTraits : public CDefaultElementTraits<T>
 |[CPrimitiveElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
 |[CPrimitiveElementTraits:::OUTARGTYPE](#outargtype)|Тип данных для извлечения элементов из объекта класса сбора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет статичные функции и методы по умолчанию для перемещения, копирования, сравнения и хэширования примитивных элементов типа данных, хранящихся в объекте класса сбора.
 

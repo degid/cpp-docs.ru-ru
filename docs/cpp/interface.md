@@ -37,7 +37,7 @@ ms.locfileid: "87233721"
 modifier __interface interface-name {interface-definition};
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [Класс](../cpp/class-cpp.md) или [структуру](../cpp/struct-cpp.md) C++ можно реализовать с помощью этих правил, но **`__interface`** применять их.
 

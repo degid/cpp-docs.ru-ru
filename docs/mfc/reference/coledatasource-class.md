@@ -63,7 +63,7 @@ class COleDataSource : public CCmdTarget
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDataSource:: Качедата](#cachedata)|Предоставляет данные в указанном формате с помощью `STGMEDIUM` структуры.|
 |[COleDataSource:: Качеглобалдата](#cacheglobaldata)|Предоставляет данные в указанном формате с помощью ХГЛОБАЛ.|
@@ -98,7 +98,7 @@ class COleDataSource : public CCmdTarget
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксоле. h
+**Заголовок:** афксоле.h
 
 ## <a name="coledatasourcecachedata"></a><a name="cachedata"></a>COleDataSource:: Качедата
 

@@ -21,7 +21,7 @@ ms.locfileid: "88835237"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="declare_olemisc_status"></a><a name="declare_olemisc_status"></a> DECLARE_OLEMISC_STATUS
 
@@ -36,7 +36,7 @@ DECLARE_OLEMISC_STATUS( miscstatus )
 *мискстатус*<br/>
 Все применимые флаги ОЛЕМИСК.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется для установки флагов ОЛЕМИСК для элемента управления ActiveX. Дополнительные сведения см. в разделе [иолеобжект:: жетмискстатус](/windows/win32/api/oleidl/nf-oleidl-ioleobject-getmiscstatus) .
 

@@ -53,7 +53,7 @@ struct __declspec(novtable) InterfaceTraits<Nil>;
 *клоакедтипе*<br/>
 Для `RuntimeClass` `Implements` и `ChainInterfaces` интерфейс, который не будет входить в список поддерживаемых идентификаторов интерфейса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Реализует общие характеристики интерфейса.
 
@@ -89,7 +89,7 @@ name                                                   | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
@@ -121,7 +121,7 @@ static __forceinline bool CanCastTo(
 
 **`true`** значение, если эта операция выполнена успешно, и тип *ptr* преобразуется в указатель на `Base` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает, может ли указанный указатель быть приведен к указателю на `Base` .
 
@@ -150,7 +150,7 @@ static __forceinline Base* CastToBase(
 
 Указатель на объект `Base`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приводит определенный указатель к указателю на `Base`.
 
@@ -179,7 +179,7 @@ static __forceinline IUnknown* CastToUnknown(
 
 Указатель на IUnknown, `Base` производный от которого является.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приводит определенный указатель к указателю на `IUnknown`.
 
@@ -204,7 +204,7 @@ __forceinline static void FillArrayWithIid(
 *идентификаторов IID*<br/>
 Массив идентификаторов интерфейсов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Присваивает идентификатор интерфейса `Base` элементу массива, указанному в аргументе index.
 
@@ -220,7 +220,7 @@ __forceinline static void FillArrayWithIid(
 static const unsigned long IidCount = 1;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит число идентификаторов интерфейса, связанных с текущим `InterfaceTraits` объектом.
 
@@ -232,7 +232,7 @@ static const unsigned long IidCount = 1;
 __forceinline static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Проверяет правильность `Base` наследования.
 

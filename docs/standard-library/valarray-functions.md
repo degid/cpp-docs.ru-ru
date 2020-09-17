@@ -122,7 +122,7 @@ valarray<Type> acos(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен арккосинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращенные элементы указываются в радианах.
 
@@ -195,7 +195,7 @@ valarray<Type> asin(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен арксинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращенные элементы указываются в радианах.
 
@@ -268,7 +268,7 @@ valarray<Type> atan(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен арктангенсу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращенные элементы указываются в радианах.
 
@@ -346,7 +346,7 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 *left*\
 Значения для координаты y для аргумента арктангенса предоставляются числовыми константами или входным объектом valarray.
 
-*справа*\
+*right*\
 Значения для координаты x для аргумента арктангенса предоставляются числовыми константами или входным объектом valarray.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -359,7 +359,7 @@ valarray<Type> atan2(const Type& left, const valarray<Type>& right);
 
 - `left` / `right` [ *I* ] для третьей функции шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращенные элементы указываются в радианах.
 
@@ -420,7 +420,7 @@ The atan2 ( y / x ) of the initial valarrays is:
  -0.785398  radians, which is          -45degrees
 ```
 
-## <a name="begin"></a>начале
+## <a name="begin"></a> begin
 
 ```cpp
 template <class T> unspecified 1 begin(valarray<T>& v);
@@ -522,7 +522,7 @@ valarray<Type> cosh(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен гиперболическому косинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Гиперболический косинус с точки зрения экспоненциальной функции определяется следующим образом:
 
@@ -587,7 +587,7 @@ The hyperbolic cosine of the initial valarray is:
 11.592
 ```
 
-## <a name="end"></a>конце
+## <a name="end"></a> end
 
 ```cpp
 template <class T> unspecified 1 end(valarray<T>& v);
@@ -814,7 +814,7 @@ pow(
 *left*\
 Входной объект valarray, элементы которого используются в качестве оснований для каждого элемента, который будет возведен в степень.
 
-*справа*\
+*right*\
 Входной объект valarray, элементы которого используются в качестве степени для каждого элемента, который будет возведен в степень.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -827,7 +827,7 @@ pow(
 
 - `left`, возведенному в степень `right` [ *I* ], для третьей функции шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *Left* и *right* имеют разное число элементов, результат будет неопределенным.
 
@@ -977,7 +977,7 @@ valarray<Type> sinh(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен гиперболическому синусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Гиперболический синус с точки зрения экспоненциальной функции определяется следующим образом:
 
@@ -1112,10 +1112,10 @@ void swap(
 *left*\
 Объект типа `valarray`.
 
-*справа*\
+*right*\
 Объект типа `valarray`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона выполняет метод `left.swap(right)`.
 
@@ -1214,7 +1214,7 @@ valarray<Type> tanh(const valarray<Type>& left);
 
 Массив valarray, каждый элемент которого равен гиперболическому косинусу соответствующего элемента входного объекта valarray.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Гиперболический тангенс с точки зрения экспоненциальной функции определяется следующим образом:
 

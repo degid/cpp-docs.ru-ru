@@ -23,7 +23,7 @@ ms.locfileid: "88842407"
 [defaultbind]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **дефаултбинд** C++ имеет те же функциональные возможности, что и атрибут [дефаултбинд](/windows/win32/Midl/defaultbind) MIDL.
 

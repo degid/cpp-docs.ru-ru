@@ -23,7 +23,7 @@ ms.locfileid: "87232330"
 expression ? expression : expression
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Условный оператор (**?:**) является оператором ternary (он принимает три операнда). Условный оператор работает следующим образом.
 

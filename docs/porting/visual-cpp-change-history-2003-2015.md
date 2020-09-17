@@ -3068,7 +3068,7 @@ ms.locfileid: "87219473"
 
 ### <a name="mfc-and-atl"></a>MFC и ATL
 
-- Удалена поддержка Fusion (afxcomctl32. h); Таким образом, все методы, определенные в, \<afxcomctl32.h> были удалены. Файлы заголовков \<afxcomctl32.h> и \<afxcomctl32.inl> были удалены.
+- Удалена поддержка Fusion (afxcomctl32.h); Таким образом, все методы, определенные в, \<afxcomctl32.h> были удалены. Файлы заголовков \<afxcomctl32.h> и \<afxcomctl32.inl> были удалены.
 
 - Изменено имя `CDockablePane::RemoveFromDefaultPaneDividier` на `CDockablePane::RemoveFromDefaultPaneDivider`.
 

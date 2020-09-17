@@ -70,13 +70,13 @@ void swap (
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Ссылка на объект `sstream`.
 
-*Правильно*\
+*right*\
 Ссылка на объект `sstream`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты типа `char *` могут использовать функции [\<strstream>](../standard-library/strstream.md) для потоковой передачи. Однако вместо \<strstream> рекомендуется использовать \<sstream>.
 
@@ -97,7 +97,7 @@ void swap (
 
 |Имя|Описание|
 |-|-|
-|[позиции](../standard-library/sstream-functions.md#sstream_swap)|Меняет местами значения двух объектов `sstream`.|
+|[swap](../standard-library/sstream-functions.md#sstream_swap)|Меняет местами значения двух объектов `sstream`.|
 
 ### <a name="classes"></a>Классы
 

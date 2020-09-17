@@ -55,7 +55,7 @@ ms.locfileid: "87216587"
 class HString;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Среда выполнения Windows предоставляет доступ к строкам через дескрипторы [HString](/windows/win32/WinRT/hstring) . `HString`Класс предоставляет удобные функции и операторы для упрощения использования дескрипторов HString. Этот класс может управлять временем существования HSTRING, которому он владеет, с помощью шаблона RAII.
 
@@ -87,10 +87,10 @@ name                                     | Описание
 
 Имя                                         | Описание
 -------------------------------------------- | ----------------------------------------------------------------------------
-[HString:: operator =](#operator-assign)       | Перемещает значение другого `HString` объекта в текущий `HString` объект.
-[HString:: operator = =](#operator-equality)    | Указывает, равны ли два параметра.
-[HString:: operator! =](#operator-inequality)  | Указывает, являются ли два параметра неравными.
-[HString:: operator&lt;](#operator-less-than) | Указывает, меньше ли первый параметр второго параметра.
+[HString::operator=](#operator-assign)       | Перемещает значение другого `HString` объекта в текущий `HString` объект.
+[HString::operator==](#operator-equality)    | Указывает, равны ли два параметра.
+[HString::operator!=](#operator-inequality)  | Указывает, являются ли два параметра неравными.
+[HString::operator&lt;](#operator-less-than) | Указывает, меньше ли первый параметр второго параметра.
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -98,7 +98,7 @@ name                                     | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
@@ -140,7 +140,7 @@ HRESULT CopyTo(
 *str*<br/>
 HSTRING, который получает копию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает функцию [виндовсдупликатестринг](/windows/win32/api/winstring/nf-winstring-windowsduplicatestring) .
 
@@ -180,7 +180,7 @@ HSTRING* GetAddressOf() throw()
 
 Указатель на базовый дескриптор HSTRING.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После этой операции строковое значение базового дескриптора HSTRING будет уничтожено.
 
@@ -217,7 +217,7 @@ HString(HString&& other) throw();
 *иной*<br/>
 Существующий объект `HString`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует новый `HString` пустой объект.
 
@@ -265,7 +265,7 @@ template<unsigned int sizeDest>
 
 Объект, значение которого совпадает с `HStringReference` заданным параметром *str* .
 
-## <a name="hstringoperator-operator"></a><a name="operator-assign"></a>Оператор HString:: operator =
+## <a name="hstringoperator-operator"></a><a name="operator-assign"></a>Оператор HString::operator=
 
 Перемещает значение другого `HString` объекта в текущий `HString` объект.
 
@@ -278,11 +278,11 @@ HString& operator=(HString&& other) throw()
 *иной*<br/>
 Существующий объект `HString`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение *существующего объекта* копируется в текущий `HString` объект, а затем удаляется *другой* объект.
 
-## <a name="hstringoperator-operator"></a><a name="operator-equality"></a>Оператор HString:: operator = =
+## <a name="hstringoperator-operator"></a><a name="operator-equality"></a>Оператор HString::operator==
 
 Указывает, равны ли два параметра.
 
@@ -320,7 +320,7 @@ inline bool operator==(
 
 **`true`** значение, если параметры *LHS* и *RHS* равны; в противном случае — **`false`** .
 
-## <a name="hstringoperator-operator"></a><a name="operator-inequality"></a>Оператор HString:: operator! =
+## <a name="hstringoperator-operator"></a><a name="operator-inequality"></a>Оператор HString::operator!=
 
 Указывает, являются ли два параметра неравными.
 
@@ -353,7 +353,7 @@ inline bool operator!=( const HString& lhs,
 
 **`true`** значение, если параметры *LHS* и *RHS* не равны; в противном случае — **`false`** .
 
-## <a name="hstringoperatorlt-operator"></a><a name="operator-less-than"></a>Оператор HString:: operator &lt;
+## <a name="hstringoperatorlt-operator"></a><a name="operator-less-than"></a>Оператор HString::operator &lt;
 
 Указывает, меньше ли первый параметр второго параметра.
 

@@ -71,13 +71,13 @@ class CPtrArray : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кптраррай:: Кптраррай](../../mfc/reference/cobarray-class.md#cobarray)|Создает пустой массив.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кптраррай:: Add](../../mfc/reference/cobarray-class.md#add)|Добавляет элемент в конец массива. При необходимости размер массива увеличивается.|
 |[Кптраррай:: Append](../../mfc/reference/cobarray-class.md#append)|Добавляет другой массив к массиву. При необходимости размер массива увеличивается.|
@@ -99,11 +99,11 @@ class CPtrArray : public CObject
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
-|[Кптраррай:: operator \[\]](../../mfc/reference/cobarray-class.md#operator_at)|Получает или задает элемент с указанным индексом.|
+|[Кптраррай::operator \[\]](../../mfc/reference/cobarray-class.md#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CPtrArray`включает в себя макрос IMPLEMENT_DYNAMIC для поддержки доступа к типу во время выполнения и дампа в `CDumpContext` объекте. Если требуется дамп отдельных элементов массива указателей, необходимо установить глубину контекста дампа в 1 или более.
 
@@ -124,7 +124,7 @@ class CPtrArray : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксколл. h
+**Заголовок:** афксколл.h
 
 ## <a name="see-also"></a>См. также статью
 

@@ -48,7 +48,7 @@ class CComQIPtr: public CComPtr<T>
 |----------|-----------------|
 |[CCom-IPtr::оператор](#operator_eq)|Назначает указатель указателю на указатель участника.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ATL `CComQIPtr` использует и [CComPtr](../../atl/reference/ccomptr-class.md) для управления com указатели интерфейса, оба из которых вытекают из [CComPtrBase](../../atl/reference/ccomptrbase-class.md). Оба класса выполняют автоматический `AddRef` подсчет `Release`ссылок через звонки и . Перегруженные операторы обрабатывают операции указателей.
 

@@ -183,7 +183,7 @@ class CWindow
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CWindow:: Арранжеикониквиндовс](#arrangeiconicwindows)|Упорядочивает все уменьшенные дочерние окна.|
 |[CWindow:: Attach](#attach)|Присоединяет окно к `CWindow` объекту.|
@@ -333,8 +333,8 @@ class CWindow
 
 |Имя|Описание|
 |----------|-----------------|
-|[CWindow:: operator HWND](#operator_hwnd)|Преобразует `CWindow` объект в HWND.|
-|[CWindow:: operator =](#operator_eq)|Присваивает HWND `CWindow` объекту.|
+|[CWindow::operator HWND](#operator_hwnd)|Преобразует `CWindow` объект в HWND.|
+|[CWindow::operator=](#operator_eq)|Присваивает HWND `CWindow` объекту.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -343,7 +343,7 @@ class CWindow
 |[CWindow:: m_hWnd](#m_hwnd)|Маркер окна, связанного с `CWindow` объектом.|
 |[CWindow:: Ркдефаулт](#rcdefault)|Содержит размеры окна по умолчанию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CWindow`предоставляет базовую функциональность для управления окном в ATL. Многие из `CWindow` методов просто заключают одну из функций API Win32. Например, Сравните прототипы для `CWindow::ShowWindow` и `ShowWindow` :
 
@@ -376,7 +376,7 @@ class CWindow
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="cwindowarrangeiconicwindows"></a><a name="arrangeiconicwindows"></a>CWindow:: Арранжеикониквиндовс
 
@@ -386,7 +386,7 @@ class CWindow
 UINT ArrangeIconicWindows() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [арранжеикониквиндовс](/windows/win32/api/winuser/nf-winuser-arrangeiconicwindows) в Windows SDK.
 
@@ -415,7 +415,7 @@ void Attach(HWND hWndNew) throw();
 HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [бегинпаинт](/windows/win32/api/winuser/nf-winuser-beginpaint) в Windows SDK.
 
@@ -431,7 +431,7 @@ HDC BeginPaint(LPPAINTSTRUCT lpPaint) throw();
 BOOL BringWindowToTop() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [брингвиндовтотоп](/windows/win32/api/winuser/nf-winuser-bringwindowtotop) в Windows SDK.
 
@@ -468,7 +468,7 @@ BOOL CenterWindow(HWND hWndCenter = NULL) throw();
 BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [чанжеклипбоардчаин](/windows/win32/api/winuser/nf-winuser-changeclipboardchain) в Windows SDK.
 
@@ -480,7 +480,7 @@ BOOL ChangeClipboardChain(HWND hWndNewNext) throw();
 BOOL CheckDlgButton(int nIDButton, UINT nCheck) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [чеккдлгбуттон](/windows/win32/api/winuser/nf-winuser-checkdlgbutton) в Windows SDK.
 
@@ -495,7 +495,7 @@ BOOL CheckRadioButton(
     int nIDCheckButton) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [чеккрадиобуттон](/windows/win32/api/winuser/nf-winuser-checkradiobutton) в Windows SDK.
 
@@ -507,7 +507,7 @@ BOOL CheckRadioButton(
 HWND ChildWindowFromPoint(POINT point) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [чилдвиндовфромпоинт](/windows/win32/api/winuser/nf-winuser-childwindowfrompoint) в Windows SDK.
 
@@ -519,7 +519,7 @@ HWND ChildWindowFromPoint(POINT point) const throw();
 HWND ChildWindowFromPoint(POINT point, UINT uFlags) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [чилдвиндовфромпоинтекс](/windows/win32/api/winuser/nf-winuser-childwindowfrompointex) в Windows SDK.
 
@@ -532,7 +532,7 @@ BOOL ClientToScreen(LPPOINT lpPoint) const throw();
 BOOL ClientToScreen(LPRECT lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [клиенттоскрин](/windows/win32/api/winuser/nf-winuser-clienttoscreen) в Windows SDK.
 
@@ -584,7 +584,7 @@ HWND Create(
 
 В случае успешного выполнения маркер для только что созданного окна задается [m_hWnd](#m_hwnd). В противном случае — значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CWindow::rcDefault` определяется как `__declspec(selectany) RECT CWindow::rcDefault = {CW_USEDEFAULT, CW_USEDEFAULT, 0, 0};`.
 
@@ -600,7 +600,7 @@ HWND Create(
 BOOL CreateCaret(HBITMAP pBitmap) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [креатекарет](/windows/win32/api/winuser/nf-winuser-createcaret) в Windows SDK.
 
@@ -612,7 +612,7 @@ BOOL CreateCaret(HBITMAP pBitmap) throw();
 BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [креатекарет](/windows/win32/api/winuser/nf-winuser-createcaret) в Windows SDK.
 
@@ -626,7 +626,7 @@ BOOL CreateGrayCaret(int nWidth, int nHeight) throw();
 BOOL CreateSolidCaret(int nWidth, int nHeight) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [креатекарет](/windows/win32/api/winuser/nf-winuser-createcaret) в Windows SDK.
 
@@ -645,7 +645,7 @@ CWindow(HWND hWnd = NULL) throw();
 *hWnd*<br/>
 окне Маркер окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует элемент [m_hWnd](#m_hwnd) в *HWND*, который по умолчанию имеет значение null.
 
@@ -667,7 +667,7 @@ HDWP DeferWindowPos(
     UINT uFlags) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [дефервиндовпос](/windows/win32/api/winuser/nf-winuser-deferwindowpos) в Windows SDK.
 
@@ -679,7 +679,7 @@ HDWP DeferWindowPos(
 BOOL DestroyWindow() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [дестройвиндов](/windows/win32/api/winuser/nf-winuser-destroywindow) в Windows SDK.
 
@@ -717,7 +717,7 @@ int DlgDirList(
     UINT nFileType) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [длгдирлист](/windows/win32/api/winuser/nf-winuser-dlgdirlistw) в Windows SDK.
 
@@ -733,7 +733,7 @@ int DlgDirListComboBox(
     UINT nFileType) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [длгдирлисткомбобокс](/windows/win32/api/winuser/nf-winuser-dlgdirlistcomboboxw) в Windows SDK.
 
@@ -748,7 +748,7 @@ BOOL DlgDirSelect(
     int nIDListBox) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [длгдирселектекс](/windows/win32/api/winuser/nf-winuser-dlgdirselectexw) в Windows SDK.
 
@@ -763,7 +763,7 @@ BOOL DlgDirSelectComboBox(
     int nIDComboBox) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [длгдирселекткомбобоксекс](/windows/win32/api/winuser/nf-winuser-dlgdirselectcomboboxexw) в Windows SDK.
 
@@ -775,7 +775,7 @@ BOOL DlgDirSelectComboBox(
 void DragAcceptFiles(BOOL bAccept = TRUE);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [DragAcceptFiles](/windows/win32/api/shellapi/nf-shellapi-dragacceptfiles) в Windows SDK.
 
@@ -787,7 +787,7 @@ void DragAcceptFiles(BOOL bAccept = TRUE);
 BOOL DrawMenuBar() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [дравменубар](/windows/win32/api/winuser/nf-winuser-drawmenubar) в Windows SDK.
 
@@ -799,7 +799,7 @@ BOOL DrawMenuBar() throw();
 BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [енаблескроллбар](/windows/win32/api/winuser/nf-winuser-enablescrollbar) в Windows SDK.
 
@@ -811,7 +811,7 @@ BOOL EnableScrollBar(UINT uSBFlags, UINT uArrowFlags = ESB_ENABLE_BOTH) throw();
 BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [енаблевиндов](/windows/win32/api/winuser/nf-winuser-enablewindow) в Windows SDK.
 
@@ -827,7 +827,7 @@ BOOL EnableWindow(BOOL bEnable = TRUE) throw();
 void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [ендпаинт](/windows/win32/api/winuser/nf-winuser-endpaint) в Windows SDK.
 
@@ -843,7 +843,7 @@ void EndPaint(LPPAINTSTRUCT lpPaint) throw();
 BOOL FlashWindow(BOOL bInvert) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [FlashWindow интерфейса](/windows/win32/api/winuser/nf-winuser-flashwindow) в Windows SDK.
 
@@ -855,7 +855,7 @@ BOOL FlashWindow(BOOL bInvert) throw();
 BOOL GetClientRect(LPRECT lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетклиентрект](/windows/win32/api/winuser/nf-winuser-getclientrect) в Windows SDK.
 
@@ -871,7 +871,7 @@ BOOL GetClientRect(LPRECT lpRect) const throw();
 HDC GetDC() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) в Windows SDK.
 
@@ -887,7 +887,7 @@ HDC GetDC() throw();
 HDC GetDCEx(HRGN hRgnClip, DWORD flags) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетдцекс](/windows/win32/api/winuser/nf-winuser-getdcex) в Windows SDK.
 
@@ -908,7 +908,7 @@ HWND GetDescendantWindow(int nID) const throw();
 
 Маркер для дочернего окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetDescendantWindow`выполняет поиск по всему дереву дочерних окон, а не только к окнам, которые являются непосредственными дочерними элементами.
 
@@ -938,7 +938,7 @@ HRESULT GetDlgControl(
 
 Возвращает S_OK при успешном выполнении или любой допустимой ошибке HRESULT. Например, функция возвращает E_FAIL, если не удается найти элемент управления, заданный параметром *NID* , и возвращает E_NOINTERFACE, если элемент управления найден, но не поддерживает интерфейс, указанный в *IID*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 С помощью этого указателя можно вызывать методы интерфейса.
 
@@ -950,7 +950,7 @@ HRESULT GetDlgControl(
 int GetDlgCtrlID() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетдлгктрлид](/windows/win32/api/winuser/nf-winuser-getdlgctrlid) в Windows SDK.
 
@@ -980,7 +980,7 @@ HRESULT GetDlgHost(
 
 Возвращает S_OK, если окно, указанное с помощью *IID* , является контейнером элемента управления, а запрошенный интерфейс может быть получен. Возвращает E_FAIL, если окно не является контейнером элемента управления, или если не удалось получить запрошенный интерфейс. Если окно с указанным ИДЕНТИФИКАТОРом не найдено, возвращаемое значение равно HRESULT_FROM_WIN32 (ERROR_CONTROL_ID_NOT_FOUND).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 С помощью этого указателя можно вызывать методы интерфейса.
 
@@ -992,7 +992,7 @@ HRESULT GetDlgHost(
 HWND GetDlgItem(int nID) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетдлгитем](/windows/win32/api/winuser/nf-winuser-getdlgitem) в Windows SDK.
 
@@ -1007,7 +1007,7 @@ UINT GetDlgItemInt(
     BOOL bSigned = TRUE) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетдлгитеминт](/windows/win32/api/winuser/nf-winuser-getdlgitemint) в Windows SDK.
 
@@ -1026,11 +1026,11 @@ BOOL GetDlgItemText(
     BSTR& bstrText) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетдлгитемтекст](/windows/win32/api/winuser/nf-winuser-getdlgitemtextw) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вторая версия этого метода позволяет скопировать текст элемента управления в BSTR. Эта версия возвращает значение TRUE, если текст успешно скопирован. в противном случае — значение FALSE.
 
@@ -1046,7 +1046,7 @@ DWORD GetExStyle() const throw();
 
 Расширенные стили окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить обычные стили окна, вызовите метод " [BackStyle](#getstyle)".
 
@@ -1076,7 +1076,7 @@ DWORD GetHotKey() const throw();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Виртуальный код клавиши и модификаторы для сочетания клавиш, связанного с окном. Список возможных модификаторов см. в разделе [WM_GETHOTKEY](/windows/win32/inputdev/wm-gethotkey) в Windows SDK. Список стандартных виртуальных клавиш см. в разделе Winuser. h.
+Виртуальный код клавиши и модификаторы для сочетания клавиш, связанного с окном. Список возможных модификаторов см. в разделе [WM_GETHOTKEY](/windows/win32/inputdev/wm-gethotkey) в Windows SDK. Список стандартных виртуальных клавиш см. в разделе Winuser.h.
 
 ## <a name="cwindowgeticon"></a><a name="geticon"></a>CWindow:: "Icon"
 
@@ -1095,7 +1095,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 
 Маркер значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetIcon`отправляет сообщение [WM_GETICON](/windows/win32/winmsg/wm-geticon) в окно.
 
@@ -1107,7 +1107,7 @@ HICON GetIcon(BOOL bBigIcon = TRUE) const;
 HWND GetLastActivePopup() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетластактивепопуп](/windows/win32/api/winuser/nf-winuser-getlastactivepopup) в Windows SDK.
 
@@ -1119,7 +1119,7 @@ HWND GetLastActivePopup() const throw();
 HMENU GetMenu() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [меню](/windows/win32/api/winuser/nf-winuser-getmenu) Windows SDK.
 
@@ -1131,7 +1131,7 @@ HMENU GetMenu() const throw();
 HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетнекстдлгграупитем](/windows/win32/api/winuser/nf-winuser-getnextdlggroupitem) в Windows SDK.
 
@@ -1143,7 +1143,7 @@ HWND GetNextDlgGroupItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетнекстдлгтабитем](/windows/win32/api/winuser/nf-winuser-getnextdlgtabitem) в Windows SDK.
 
@@ -1155,7 +1155,7 @@ HWND GetNextDlgTabItem(HWND hWndCtl, BOOL bPrevious = FALSE) const throw();
 HWND GetParent() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел " [родители](/windows/win32/api/winuser/nf-winuser-getparent) " в Windows SDK.
 
@@ -1171,7 +1171,7 @@ HWND GetParent() const throw();
 BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетскроллинфо](/windows/win32/api/winuser/nf-winuser-getscrollinfo) в Windows SDK.
 
@@ -1183,7 +1183,7 @@ BOOL GetScrollInfo(int nBar, LPSCROLLINFO lpScrollInfo) throw();
 int GetScrollPos(int nBar) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетскроллпос](/windows/win32/api/winuser/nf-winuser-getscrollpos) в Windows SDK.
 
@@ -1198,7 +1198,7 @@ BOOL GetScrollRange(
     LPINT lpMaxPos) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетскроллранже](/windows/win32/api/winuser/nf-winuser-getscrollrange) в Windows SDK.
 
@@ -1214,7 +1214,7 @@ DWORD GetStyle() const throw();
 
 Стили окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить расширенные стили окна, вызовите [жетексстиле](#getexstyle).
 
@@ -1230,7 +1230,7 @@ DWORD GetStyle() const throw();
 HMENU GetSystemMenu(BOOL bRevert) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетсистеммену](/windows/win32/api/winuser/nf-winuser-getsystemmenu) в Windows SDK.
 
@@ -1266,7 +1266,7 @@ HWND GetTopLevelWindow() const throw();
 HWND GetTopWindow() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жеттопвиндов](/windows/win32/api/winuser/nf-winuser-gettopwindow) в Windows SDK.
 
@@ -1282,7 +1282,7 @@ HWND GetTopWindow() const throw();
 BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетупдатерект](/windows/win32/api/winuser/nf-winuser-getupdaterect) в Windows SDK.
 
@@ -1294,7 +1294,7 @@ BOOL GetUpdateRect(LPRECT lpRect, BOOL bErase = FALSE) throw();
 int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетупдатергн](/windows/win32/api/winuser/nf-winuser-getupdatergn) в Windows SDK.
 
@@ -1306,7 +1306,7 @@ int GetUpdateRgn(HRGN hRgn, BOOL bErase = FALSE) throw();
 HWND GetWindow(UINT nCmd) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См `GetWindow` . раздел Windows SDK.
 
@@ -1318,7 +1318,7 @@ HWND GetWindow(UINT nCmd) const throw();
 DWORD GetWindowContextHelpId() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовконтексселпид](/windows/win32/api/winuser/nf-winuser-getwindowcontexthelpid) в Windows SDK.
 
@@ -1330,7 +1330,7 @@ DWORD GetWindowContextHelpId() const throw();
 HDC GetWindowDC() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовдк](/windows/win32/api/winuser/nf-winuser-getwindowdc) в Windows SDK.
 
@@ -1346,7 +1346,7 @@ HDC GetWindowDC() throw();
 LONG GetWindowLong(int nIndex) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовлонг](/windows/win32/api/winuser/nf-winuser-getwindowlongw) в Windows SDK.
 
@@ -1361,11 +1361,11 @@ LONG GetWindowLong(int nIndex) const throw();
 LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовлонгптр](/windows/win32/api/winuser/nf-winuser-getwindowlongptrw) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При извлечении указателя или маркера эта функция заменяет `CWindow::GetWindowLong` метод.
 
@@ -1382,7 +1382,7 @@ LONG_PTR GetWindowLongPtr(int nIndex) const throw();
 BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовплацемент](/windows/win32/api/winuser/nf-winuser-getwindowplacement) в Windows SDK.
 
@@ -1394,7 +1394,7 @@ BOOL GetWindowPlacement(WINDOWPLACEMENT FAR* lpwndpl) const throw();
 DWORD GetWindowProcessID() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовсреадпроцессид](/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid) в Windows SDK.
 
@@ -1410,7 +1410,7 @@ DWORD GetWindowProcessID() throw();
 BOOL GetWindowRect(LPRECT lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндоврект](/windows/win32/api/winuser/nf-winuser-getwindowrect) в Windows SDK.
 
@@ -1422,7 +1422,7 @@ BOOL GetWindowRect(LPRECT lpRect) const throw();
 int GetWindowRgn(HRGN hRgn) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовргн](/windows/win32/api/winuser/nf-winuser-getwindowrgn) в Windows SDK.
 
@@ -1454,7 +1454,7 @@ int GetWindowText(CSimpleString& strText) const;
 
 Если текст копируется успешно, возвращается значение TRUE, а если нет, то значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовтекст](/windows/win32/api/winuser/nf-winuser-getwindowtextw) в Windows SDK.
 
@@ -1468,7 +1468,7 @@ int GetWindowText(CSimpleString& strText) const;
 int GetWindowTextLength() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовтекстленгс](/windows/win32/api/winuser/nf-winuser-getwindowtextlengthw) в Windows SDK.
 
@@ -1480,7 +1480,7 @@ int GetWindowTextLength() const throw();
 DWORD GetWindowThreadID() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовсреадпроцессид](/windows/win32/api/winuser/nf-winuser-getwindowthreadprocessid) в Windows SDK.
 
@@ -1496,7 +1496,7 @@ DWORD GetWindowThreadID() throw();
 WORD GetWindowWord(int nIndex) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [жетвиндовлонг](/windows/win32/api/winuser/nf-winuser-getwindowlongw) в Windows SDK.
 
@@ -1508,7 +1508,7 @@ WORD GetWindowWord(int nIndex) const throw();
 void GotoDlgCtrl(HWND hWndCtrl) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) в Windows SDK.
 
@@ -1520,7 +1520,7 @@ void GotoDlgCtrl(HWND hWndCtrl) const throw();
 BOOL HideCaret() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [хидекарет](/windows/win32/api/winuser/nf-winuser-hidecaret) в Windows SDK.
 
@@ -1539,7 +1539,7 @@ BOOL HiliteMenuItem(
     UINT uHilite) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [хилитеменуитем](/windows/win32/api/winuser/nf-winuser-hilitemenuitem) в Windows SDK.
 
@@ -1551,7 +1551,7 @@ BOOL HiliteMenuItem(
 BOOL Invalidate(BOOL bErase = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [инвалидатерект](/windows/win32/api/winuser/nf-winuser-invalidaterect) в Windows SDK.
 
@@ -1569,7 +1569,7 @@ BOOL Invalidate(BOOL bErase = TRUE) throw();
 BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [инвалидатерект](/windows/win32/api/winuser/nf-winuser-invalidaterect) в Windows SDK.
 
@@ -1581,11 +1581,11 @@ BOOL InvalidateRect(LPCRECT lpRect, BOOL bErase = TRUE) throw();
 void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [инвалидатергн](/windows/win32/api/winuser/nf-winuser-invalidatergn) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает **`void`** тип возвращаемого значения, в то время как `InvalidateRgn` функция Win32 всегда возвращает значение true.
 
@@ -1597,7 +1597,7 @@ void InvalidateRgn(HRGN hRgn, BOOL bErase = TRUE) throw();
 BOOL IsChild(const HWND hWnd) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. сведения о [дочернем](/windows/win32/api/winuser/nf-winuser-ischild) элементе в Windows SDK.
 
@@ -1609,7 +1609,7 @@ BOOL IsChild(const HWND hWnd) const throw();
 BOOL IsDialogMessage(LPMSG lpMsg) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [исдиалогмессаже](/windows/win32/api/winuser/nf-winuser-isdialogmessagew) в Windows SDK.
 
@@ -1621,7 +1621,7 @@ BOOL IsDialogMessage(LPMSG lpMsg) throw();
 UINT IsDlgButtonChecked(int nIDButton) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [исдлгбуттончеккед](/windows/win32/api/winuser/nf-winuser-isdlgbuttonchecked) в Windows SDK.
 
@@ -1633,7 +1633,7 @@ UINT IsDlgButtonChecked(int nIDButton) const throw();
 BOOL IsIconic() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [Icon](/windows/win32/api/winuser/nf-winuser-isiconic) в Windows SDK.
 
@@ -1661,7 +1661,7 @@ BOOL IsParentDialog() throw();
 BOOL IsWindow() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [окно](/windows/win32/api/winuser/nf-winuser-iswindow) «Windows SDK».
 
@@ -1677,7 +1677,7 @@ BOOL IsWindow() throw();
 BOOL IsWindowEnabled() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [исвиндовенаблед](/windows/win32/api/winuser/nf-winuser-iswindowenabled) в Windows SDK.
 
@@ -1693,7 +1693,7 @@ BOOL IsWindowEnabled() const throw();
 BOOL IsWindowVisible() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [исвиндоввисибле](/windows/win32/api/winuser/nf-winuser-iswindowvisible) в Windows SDK.
 
@@ -1709,7 +1709,7 @@ BOOL IsWindowVisible() const throw();
 BOOL IsWindowUnicode() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [исвиндовуникоде](/windows/win32/api/winuser/nf-winuser-iswindowunicode) в Windows SDK.
 
@@ -1725,7 +1725,7 @@ BOOL IsWindowUnicode() throw();
 BOOL IsZoomed() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел « [Zoom](/windows/win32/api/winuser/nf-winuser-iszoomed) » в Windows SDK.
 
@@ -1737,7 +1737,7 @@ BOOL IsZoomed() const throw();
 BOOL KillTimer(UINT nIDEvent) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [киллтимер](/windows/win32/api/winuser/nf-winuser-killtimer) в Windows SDK.
 
@@ -1758,7 +1758,7 @@ BOOL LockWindowUpdate(BOOL bLock = TRUE) throw();
 
 Значение TRUE, если окно успешно заблокировано; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение *bLock* равно true, этот метод передает [m_hWnd](#m_hwnd) функции Win32. в противном случае он передает значение NULL.
 
@@ -1785,7 +1785,7 @@ int MapWindowPoints(
     LPRECT lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [мапвиндовпоинтс](/windows/win32/api/winuser/nf-winuser-mapwindowpoints) в Windows SDK.
 
@@ -1802,7 +1802,7 @@ int MessageBox(
     UINT nType = MB_OK) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [MessageBox](/windows/win32/api/winuser/nf-winuser-messagebox) в Windows SDK.
 
@@ -1836,7 +1836,7 @@ BOOL ModifyStyle(
 
 Значение TRUE, если стили окна изменены; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавляемые или удаляемые стили можно объединять с помощью побитового оператора OR (&#124;). Сведения о доступных стилях окна см. в описании функции [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) в разделе Windows сдкфор.
 
@@ -1882,7 +1882,7 @@ BOOL ModifyStyleEx(
 
 Значение TRUE, если стили расширенного окна изменены. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавляемые или удаляемые стили можно объединять с помощью побитового оператора OR (&#124;). Сведения о доступных расширенных стилях см. в описании функции [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw) в разделе Windows сдкфор.
 
@@ -1919,7 +1919,7 @@ BOOL MoveWindow(
     BOOL bRepaint = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для объекта окна верхнего уровня параметры x и y задаются относительно левого верхнего угла экрана. Для объекта дочернего окна они расположены относительно левого верхнего угла клиентской области родительского окна.
 
@@ -1933,7 +1933,7 @@ BOOL MoveWindow(
 void NextDlgCtrl() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) в Windows SDK.
 
@@ -1945,11 +1945,11 @@ void NextDlgCtrl() const throw();
 BOOL OpenClipboard() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [опенклипбоард](/windows/win32/api/winuser/nf-winuser-openclipboard) в Windows SDK.
 
-## <a name="cwindowoperator-hwnd"></a><a name="operator_hwnd"></a>CWindow:: operator HWND
+## <a name="cwindowoperator-hwnd"></a><a name="operator_hwnd"></a>CWindow::operator HWND
 
 Преобразует `CWindow` объект в HWND.
 
@@ -1957,7 +1957,7 @@ BOOL OpenClipboard() throw();
 operator HWND() const throw();
 ```
 
-## <a name="cwindowoperator-"></a><a name="operator_eq"></a>CWindow:: operator =
+## <a name="cwindowoperator-"></a><a name="operator_eq"></a>CWindow::operator=
 
 Присваивает HWND `CWindow` объекту, устанавливая для элемента [m_hWnd](#m_hwnd) значение `hWnd` .
 
@@ -1976,7 +1976,7 @@ BOOL PostMessage(
     LPARAM lParam = 0) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [сообщение](/windows/win32/api/winuser/nf-winuser-postmessagew) в Windows SDK.
 
@@ -1994,7 +1994,7 @@ BOOL PostMessage(
 void PrevDlgCtrl() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. [WM_NEXTDLGCTL](/windows/win32/dlgbox/wm-nextdlgctl) в Windows SDK.
 
@@ -2075,7 +2075,7 @@ BOOL RedrawWindow(
 throw()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [редраввиндов](/windows/win32/api/winuser/nf-winuser-redrawwindow) в Windows SDK.
 
@@ -2091,7 +2091,7 @@ throw()
 int ReleaseDC(HDC hDC);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [релеаседк](/windows/win32/api/winuser/nf-winuser-releasedc) в Windows SDK.
 
@@ -2130,7 +2130,7 @@ BOOL ScreenToClient(LPPOINT lpPoint) const throw();
 BOOL ScreenToClient(LPRECT lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [скринтоклиент](/windows/win32/api/winuser/nf-winuser-screentoclient) в Windows SDK.
 
@@ -2148,7 +2148,7 @@ BOOL ScrollWindow(
     LPCRECT lpClipRect = NULL) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [скроллвиндов](/windows/win32/api/winuser/nf-winuser-scrollwindow) в Windows SDK.
 
@@ -2167,7 +2167,7 @@ int ScrollWindowEx(
     UINT flags) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [скроллвиндовекс](/windows/win32/api/winuser/nf-winuser-scrollwindowex) в Windows SDK.
 
@@ -2183,7 +2183,7 @@ LRESULT SendDlgItemMessage(
     LPARAM lParam = 0) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сенддлгитеммессаже](/windows/win32/api/winuser/nf-winuser-senddlgitemmessagew) в Windows SDK.
 
@@ -2204,7 +2204,7 @@ static LRESULT SendMessage(
     LPARAM lParam) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SendMessage](/windows/win32/api/winuser/nf-winuser-sendmessage) в Windows SDK.
 
@@ -2238,7 +2238,7 @@ void SendMessageToDescendants(
 *бдип*<br/>
 окне Если TRUE (значение по умолчанию), сообщение будет отправлено всем окнам-потомкам; в противном случае он будет отправлен только в непосредственные дочерние окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *БДИП* имеет значение true, сообщение также отправляется во все остальные окна-потомки.
 
@@ -2253,7 +2253,7 @@ BOOL SendNotifyMessage(
     LPARAM lParam = 0) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сенднотифимессаже](/windows/win32/api/winuser/nf-winuser-sendnotifymessagew) в Windows SDK.
 
@@ -2267,7 +2267,7 @@ BOOL SendNotifyMessage(
 HWND SetActiveWindow() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетактивевиндов](/windows/win32/api/winuser/nf-winuser-setactivewindow) в Windows SDK.
 
@@ -2283,7 +2283,7 @@ HWND SetActiveWindow() throw();
 HWND SetCapture() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сеткаптуре](/windows/win32/api/winuser/nf-winuser-setcapture) в Windows SDK.
 
@@ -2295,7 +2295,7 @@ HWND SetCapture() throw();
 HWND SetClipboardViewer() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетклипбоардвиевер](/windows/win32/api/winuser/nf-winuser-setclipboardviewer) в Windows SDK.
 
@@ -2327,7 +2327,7 @@ BOOL SetDlgItemInt(
     BOOL bSigned = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетдлгитеминт](/windows/win32/api/winuser/nf-winuser-setdlgitemint) в Windows SDK.
 
@@ -2339,7 +2339,7 @@ BOOL SetDlgItemInt(
 BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетдлгитемтекст](/windows/win32/api/winuser/nf-winuser-setdlgitemtextw) в Windows SDK.
 
@@ -2351,7 +2351,7 @@ BOOL SetDlgItemText(int nID, LPCTSTR lpszString) throw();
 HWND SetFocus() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SetFocus](/windows/win32/api/winuser/nf-winuser-setfocus) в Windows SDK.
 
@@ -2386,7 +2386,7 @@ int SetHotKey(WORD wVirtualKeyCode, WORD wModifiers) throw();
 ### <a name="parameters"></a>Параметры
 
 *ввиртуалкэйкоде*<br/>
-окне Код виртуального ключа для сочетания клавиш. Список стандартных виртуальных клавиш см. в разделе Winuser. h.
+окне Код виртуального ключа для сочетания клавиш. Список стандартных виртуальных клавиш см. в разделе Winuser.h.
 
 *вмодифиерс*<br/>
 окне Модификаторы сочетания клавиш. Список возможных значений см. в разделе WM_SETHOTKEY в Windows SDK.
@@ -2415,7 +2415,7 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 
 Маркер для предыдущего значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `SetIcon`отправляет сообщение [WM_SETICON](/windows/win32/winmsg/wm-seticon) в окно.
 
@@ -2427,7 +2427,7 @@ HICON SetIcon(HICON hIcon, BOOL bBigIcon = TRUE) throw();
 BOOL SetMenu(HMENU hMenu) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетмену](/windows/win32/api/winuser/nf-winuser-setmenu) в Windows SDK.
 
@@ -2439,7 +2439,7 @@ BOOL SetMenu(HMENU hMenu) throw();
 HWND SetParent(HWND hWndNewParent) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетпарент](/windows/win32/api/winuser/nf-winuser-setparent) в Windows SDK.
 
@@ -2460,7 +2460,7 @@ void SetRedraw(BOOL bRedraw = TRUE) throw();
 *bRedraw*<br/>
 окне Задает состояние флага перерисовки. Если TRUE (значение по умолчанию), устанавливается флаг перерисовки; Если значение равно FALSE, флажок снимается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите `SetRedraw` , чтобы разрешить перерисовку изменений или предотвратить перерисовку изменений.
 
@@ -2479,7 +2479,7 @@ int SetScrollInfo(
     BOOL bRedraw = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетскроллинфо](/windows/win32/api/winuser/nf-winuser-setscrollinfo) в Windows SDK.
 
@@ -2494,7 +2494,7 @@ int SetScrollPos(
     BOOL bRedraw = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетскроллпос](/windows/win32/api/winuser/nf-winuser-setscrollpos) в Windows SDK.
 
@@ -2510,7 +2510,7 @@ BOOL SetScrollRange(
     BOOL bRedraw = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетскроллранже](/windows/win32/api/winuser/nf-winuser-setscrollrange) в Windows SDK.
 
@@ -2525,7 +2525,7 @@ UINT SetTimer(
     void (CALLBACK* lpfnTimer)(HWND, UINT, UINT, DWORD) = NULL) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сеттимер](/windows/win32/api/winuser/nf-winuser-settimer) в Windows SDK.
 
@@ -2537,7 +2537,7 @@ UINT SetTimer(
 BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетвиндовконтексселпид](/windows/win32/api/winuser/nf-winuser-setwindowcontexthelpid) в Windows SDK.
 
@@ -2549,7 +2549,7 @@ BOOL SetWindowContextHelpId(DWORD dwContextHelpId) throw();
 LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) в Windows SDK.
 
@@ -2564,7 +2564,7 @@ LONG SetWindowLong(int nIndex, LONG dwNewLong) throw();
 LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетвиндовлонгптр](/windows/win32/api/winuser/nf-winuser-setwindowlongptrw) в Windows SDK.
 
@@ -2578,7 +2578,7 @@ LONG_PTR SetWindowLongPtr(int nIndex, LONG_PTR dwNewLong) throw();
 BOOL SetWindowPlacement(const WINDOWPLACEMENT FAR* lpwndpl);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетвиндовплацемент](/windows/win32/api/winuser/nf-winuser-setwindowplacement) в Windows SDK.
 
@@ -2601,7 +2601,7 @@ BOOL SetWindowPos(
     UINT nFlags) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SetWindowPos](/windows/win32/api/winuser/nf-winuser-setwindowpos) в Windows SDK.
 
@@ -2615,7 +2615,7 @@ BOOL SetWindowPos(
 int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [сетвиндовргн](/windows/win32/api/winuser/nf-winuser-setwindowrgn) в Windows SDK.
 
@@ -2627,7 +2627,7 @@ int SetWindowRgn(HRGN hRgn, BOOL bRedraw = FALSE) throw();
 BOOL SetWindowText(LPCTSTR lpszString) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SetWindowText](/windows/win32/api/winuser/nf-winuser-setwindowtextw) в Windows SDK.
 
@@ -2643,7 +2643,7 @@ BOOL SetWindowText(LPCTSTR lpszString) throw();
 WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [SetWindowLong](/windows/win32/api/winuser/nf-winuser-setwindowlongw) в Windows SDK.
 
@@ -2655,7 +2655,7 @@ WORD SetWindowWord(int nIndex, WORD wNewWord) throw();
 BOOL ShowCaret() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [шовкарет](/windows/win32/api/winuser/nf-winuser-showcaret) в Windows SDK.
 
@@ -2671,7 +2671,7 @@ BOOL ShowCaret() throw();
 BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [шововнедпопупс](/windows/win32/api/winuser/nf-winuser-showownedpopups) в Windows SDK.
 
@@ -2683,7 +2683,7 @@ BOOL ShowOwnedPopups(BOOL bShow = TRUE) throw();
 BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [шовскроллбар](/windows/win32/api/winuser/nf-winuser-showscrollbar) в Windows SDK.
 
@@ -2695,7 +2695,7 @@ BOOL ShowScrollBar(UINT nBar, BOOL bShow = TRUE) throw();
 BOOL ShowWindow(int nCmdShow) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [ShowWindow](/windows/win32/api/winuser/nf-winuser-showwindow) в Windows SDK.
 
@@ -2711,7 +2711,7 @@ BOOL ShowWindow(int nCmdShow) throw();
 BOOL ShowWindowAsync(int nCmdShow) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [showWindowAsync](/windows/win32/api/winuser/nf-winuser-showwindowasync) в Windows SDK.
 
@@ -2723,7 +2723,7 @@ BOOL ShowWindowAsync(int nCmdShow) throw();
 BOOL UpdateWindow() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [упдатевиндов](/windows/win32/api/winuser/nf-winuser-updatewindow) в Windows SDK.
 
@@ -2739,7 +2739,7 @@ BOOL UpdateWindow() throw();
 BOOL ValidateRect(LPCRECT lpRect) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [валидатерект](/windows/win32/api/winuser/nf-winuser-validaterect) в Windows SDK.
 
@@ -2751,7 +2751,7 @@ BOOL ValidateRect(LPCRECT lpRect) throw();
 BOOL ValidateRgn(HRGN hRgn) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [валидатергн](/windows/win32/api/winuser/nf-winuser-validatergn) в Windows SDK.
 
@@ -2766,7 +2766,7 @@ BOOL WinHelp(
     DWORD dwData = 0) throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [WinHelp](/windows/win32/api/winuser/nf-winuser-winhelpw) в Windows SDK.
 

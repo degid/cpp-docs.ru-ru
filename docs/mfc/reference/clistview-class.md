@@ -49,7 +49,7 @@ class CListView : public CCtrlView
 |----------|-----------------|
 |[CListView::RemoveImageList](#removeimagelist)|Удаляет указанный список изображений из представления списка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации об этой [CView](../../mfc/reference/cview-class.md) архитектуре см.
 

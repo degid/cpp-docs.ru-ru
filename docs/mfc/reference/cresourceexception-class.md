@@ -33,7 +33,7 @@ class CResourceException : public CSimpleException
 |----------|-----------------|
 |[CResourceException::CResourceException](#cresourceexception)|Формирует объект `CResourceException`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Никакая дальнейшая квалификация не требуется или невозможна.
 
@@ -61,7 +61,7 @@ class CResourceException : public CSimpleException
 CResourceException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не используйте этот конструктор напрямую, а скорее позвоните в глобальную функцию [AfxThrowResourceException](exception-processing.md#afxthrowresourceexception). для получения дополнительной информации об [Exception Handling in MFC](../exception-handling-in-mfc.md)исключениях см.
 

@@ -76,7 +76,7 @@ class CUserTool : public CObject
 |[CUserTool::m_strInitialDirectory](#m_strinitialdirectory)|Первоначальный каталог для пользовательского инструмента.|
 |[CUserTool::m_strLabel](#m_strlabel)|Имя инструмента, отображаемое в пункте меню для инструмента.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о том, как включить пользовательские инструменты в приложении, [см.](../../mfc/reference/cusertoolsmanager-class.md)
 
@@ -106,7 +106,7 @@ BOOL CopyIconToClipboard();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cusertooldrawtoolicon"></a><a name="drawtoolicon"></a>CUserTool::DrawToolIcon
 
@@ -162,7 +162,7 @@ virtual BOOL Invoke();
 
 Nonzero, если команда была выполнена успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) для выполнения команды, связанной с инструментом пользователя. Функция выходит из строя, если команда пуста или если [ShellExecute](/windows/win32/api/shellapi/nf-shellapi-shellexecutew) не работает.
 
@@ -178,7 +178,7 @@ virtual HICON LoadDefaultIcon();
 
 Ручка к загруженной иконке (HICON) или NULL, если значок по умолчанию не может быть загружен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, когда он не может загрузить значок для пользовательского инструмента из исполняемого файла инструмента.
 
@@ -192,7 +192,7 @@ virtual HICON LoadDefaultIcon();
 CString m_strArguments;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта строка передается инструменту при вызове [CUserTool::Invoke](#invoke) или когда пользователь нажимает на команду, связанную с этим инструментом.
 
@@ -204,7 +204,7 @@ CString m_strArguments;
 CString m_strInitialDirectory;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта переменная определяет исходный каталог, в который выполняется инструмент при вызове [CUserTool::Invoke](#invoke) или когда пользователь нажимает на команду, связанную с этим инструментом.
 
@@ -228,7 +228,7 @@ virtual void Serialize(CArchive& ar);
 
 [in] *ar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cusertoolsetcommand"></a><a name="setcommand"></a>CUserTool::SetCommand
 
@@ -243,7 +243,7 @@ void SetCommand(LPCTSTR lpszCmd);
 *lpszCmd*<br/>
 (в) Упоняет новое приложение, связанное с пользовательским инструментом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы установить новое приложение, которое запускает пользовательский инструмент. Метод разрушает старую иконку и загружает новую иконку из данного приложения. Если он не может загрузить значок из приложения, он загружает значок по умолчанию для пользовательского инструмента, позвонив [в CUserTool::LoadDefaultIcon.](#loaddefaulticon)
 
@@ -259,7 +259,7 @@ virtual HICON SetToolIcon();
 
 Ручка к загруженной иконке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для загрузки значка для отображения в пункте меню. Этот метод ищет значок в исполняемом файле, который использует инструмент. Если у него нет значка по умолчанию, вместо него используется значок [CUserTool::LoadDefaultIcon.](#loaddefaulticon)
 

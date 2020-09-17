@@ -39,7 +39,7 @@ class CCRTHeap : public IAtlMemMgr
 |[CCRTHeap::GetSize](#getsize)|Вызовите этот метод, чтобы получить выделенный размер блока памяти, выделенный этим менеджером памяти.|
 |[CCRTHeap::Перераспределить](#reallocate)|Вызовите этот метод для перераспределения памяти, выделенной данным диспетчером памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CCRTHeap`реализует функции распределения памяти с использованием функций CRT кучи, в том числе [malloc](../../c-runtime-library/reference/malloc.md), [бесплатно,](../../c-runtime-library/reference/free.md) [realloc,](../../c-runtime-library/reference/realloc.md)и [_msize.](../../c-runtime-library/reference/msize.md)
 
@@ -74,7 +74,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CCRTHeap::Free](#free) или [CCRTHeap::Перераспределите,](#reallocate) чтобы освободить память, выделенную этим методом.
 
@@ -93,7 +93,7 @@ virtual void Free(void* p) throw();
 *P*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти. NULL является действительным значением и ничего не делает.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с помощью [бесплатного](../../c-runtime-library/reference/free.md).
 
@@ -114,7 +114,7 @@ virtual size_t GetSize(void* p) throw();
 
 Возвращает размер выделенного блока памяти в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с использованием [_msize](../../c-runtime-library/reference/msize.md).
 
@@ -138,7 +138,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CCRTHeap:: Бесплатно](#free) освободить память, выделенную этим методом. Реализовано с помощью [realloc](../../c-runtime-library/reference/realloc.md).
 

@@ -50,7 +50,7 @@ class CMFCRibbonUndoButton : public CMFCRibbonGallery
 |[CMFCRibbonUnДоКнопка:GetActionNumber](#getactionnumber)|Определяет количество элементов, выбранных пользователем из списка выпадающих.|
 |[CMFCRibbonUnButton::HasMenu](#hasmenu)|Указывает, содержит ли объект меню.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCRibbonUndoButton` использует стек для представления списка выпадающих.
 
@@ -155,7 +155,7 @@ virtual BOOL HasMenu() const;
 
 Всегда возвращается TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

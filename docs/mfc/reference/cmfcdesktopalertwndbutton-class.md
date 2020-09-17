@@ -31,14 +31,14 @@ class CMFCDesktopAlertWndButton : public CMFCButton
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCDesktopAlertWndButton::CMFCDesktopAlertWndButton`|Конструктор по умолчанию.|
 |`CMFCDesktopAlertWndButton::~CMFCDesktopAlertWndButton`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкдесктопалертвндбуттон:: Искаптионбуттон](#iscaptionbutton)|Определяет, отображается ли кнопка в области субтитров диалогового окна предупреждение.|
 |[Кмфкдесктопалертвндбуттон:: Исклосебуттон](#isclosebutton)|Определяет, закрывает ли кнопка диалоговое окно "предупреждение".|
@@ -50,7 +50,7 @@ class CMFCDesktopAlertWndButton : public CMFCButton
 |`CMFCDesktopAlertWndButton::m_bIsCaptionButton`|Логическое значение, указывающее, отображается ли кнопка в области субтитров диалогового окна предупреждение.|
 |`CMFCDesktopAlertWndButton::m_bIsCloseButton`|Логическое значение, указывающее, закрывает ли кнопка диалоговое окно "предупреждение".|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию конструктор задает `m_bIsCaptionButton` `m_bIsCloseButton` для элементов данных и значение false. Родительский `CMFCDesktopAlertDialog` объект задает `m_bIsCaptionButton` значение true, если кнопка располагается в области заголовка диалогового окна предупреждение. `CMFCDesktopAlertDialog`Класс создает `CMFCDesktopAlertWndButton` объект, который выступает в качестве кнопки, закрываемой диалоговое окно предупреждения, и устанавливает `m_bIsCloseButton` значение true.
 
@@ -79,7 +79,7 @@ class CMFCDesktopAlertWndButton : public CMFCButton
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдесктопалертвнд. h
+**Заголовок:** афксдесктопалертвнд.h
 
 ## <a name="cmfcdesktopalertwndbuttoniscaptionbutton"></a><a name="iscaptionbutton"></a> Кмфкдесктопалертвндбуттон:: Искаптионбуттон
 

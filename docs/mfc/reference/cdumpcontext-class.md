@@ -45,7 +45,7 @@ class CDumpContext
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CDumpContext::D Умпашекс](#dumpashex)|Выводит указанный элемент в шестнадцатеричном формате.|
 |[CDumpContext:: Flush](#flush)|Очищает все данные в буфере контекста дампа.|
@@ -57,9 +57,9 @@ class CDumpContext
 
 |Имя|Описание|
 |----------|-----------------|
-|[CDumpContext:: operator&lt;&lt;](#operator_lt_lt)|Вставляет переменные и объекты в контекст дампа.|
+|[CDumpContext::operator&lt;&lt;](#operator_lt_lt)|Вставляет переменные и объекты в контекст дампа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDumpContext`не имеет базового класса.
 
@@ -89,7 +89,7 @@ class CDumpContext
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="cdumpcontextcdumpcontext"></a><a name="cdumpcontext"></a>CDumpContext:: CDumpContext
 
@@ -104,7 +104,7 @@ CDumpContext(CFile* pFile = NULL);
 *pFile*<br/>
 Указатель на `CFile` объект, который является назначением дампа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `afxDump`Объект создается автоматически.
 
@@ -133,7 +133,7 @@ CDumpContext& DumpAsHex(WORD w);
 
 Ссылка на объект `CDumpContext`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию-член для вывода элемента указанного типа в виде шестнадцатеричного числа. Чтобы создать дамп массива, вызовите метод [CDumpContext:: хексдумп](#hexdump).
 
@@ -195,7 +195,7 @@ void HexDump(
 *нвидс*<br/>
 Максимальное число байтов, записываемых в строку (не является шириной строки вывода).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы создать дамп одного определенного типа элемента в виде шестнадцатеричного числа, вызовите [CDumpContext::D умпашекс](#dumpashex).
 
@@ -203,7 +203,7 @@ void HexDump(
 
 [!code-cpp[NVC_MFC_Utilities#15](../../mfc/codesnippet/cpp/cdumpcontext-class_4.cpp)]
 
-## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a>CDumpContext:: operator&lt;&lt;
+## <a name="cdumpcontextoperator-ltlt"></a><a name="operator_lt_lt"></a>CDumpContext::operator&lt;&lt;
 
 Выводит указанные данные в контекст дампа.
 
@@ -235,7 +235,7 @@ CDumpContext& operator<<(HFONT h);
 
 Ссылка `CDumpContext`. С помощью возвращаемого значения можно записывать несколько вставок в одну строку исходного кода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор вставки перегружается для `CObject` указателей, а также для большинства типов-примитивов. Указатель на символ приводит к дампу содержимого строки. Указатель на **`void`** результат в шестнадцатеричном дампе адреса. ЛОНГЛОНГ приводит к дампу 64-разрядного целого числа со знаком; УЛОНГЛОНГ приводит к дампу 64-разрядного целого числа без знака.
 
@@ -258,7 +258,7 @@ void SetDepth(int nNewDepth);
 *нневдепс*<br/>
 Новое значение глубины.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы создаете дамп простого типа или простой `CObject` , который не содержит указателей на другие объекты, достаточно иметь значение 0. Значение больше 0 указывает глубокий дамп, в котором рекурсивно выводятся дампы всех объектов. Например, при глубоком дампе коллекции будут выгружаться все элементы коллекции. В производных классах можно использовать и другие конкретные значения глубины.
 

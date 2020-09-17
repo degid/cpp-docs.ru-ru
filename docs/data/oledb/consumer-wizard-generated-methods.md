@@ -76,7 +76,7 @@ int main(int argc, char* argv[])
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если определен метод `HasBookmark`, код `OpenAll` задает свойство `DBPROP_IRowsetLocate`. Перед его использованием необходимо убедиться, что провайдер поддерживает это свойство.
 
@@ -141,7 +141,7 @@ void GetRowsetProperties(CDBPropSet* pPropSet)
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не стоит определять глобальный метод `GetRowsetProperties`, потому что он может конфликтовать с методом, определенным мастером. Это — сгенерированный мастером метод, который вы получаете с проектами на основе шаблонов и атрибутов. Атрибуты не внедряют этот код.
 
@@ -153,7 +153,7 @@ HRESULT OpenDataSource();
 void CloseDataSource();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Мастер определяет методы `OpenDataSource` и `CloseDataSource`. `OpenDataSource` вызывает [CDataSource::OpenFromInitializationString](../../data/oledb/cdatasource-openfrominitializationstring.md).
 

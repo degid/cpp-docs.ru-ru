@@ -52,7 +52,7 @@ ms.locfileid: "88835973"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Класс bad_exception](../standard-library/bad-exception-class.md)|Этот класс описывает исключение, которое можно вызывать из `unexpected_handler`.|
 |[Класс Exception](../standard-library/exception-class.md)|Этот класс служит базовым классом для всех исключений, создаваемых определенными выражениями и стандартной библиотекой C++.|

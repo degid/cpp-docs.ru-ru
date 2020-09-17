@@ -34,7 +34,7 @@ constexpr ToDuration round(const duration<Rep, Period>& d);
 
 Объект `duration` типа `To`, представляющий интервал времени `Dur`, который усекается, если должен соответствовать целевому типу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `To` является экземпляром `duration`, эта функция не участвует в разрешении перегрузки.
 
@@ -61,6 +61,6 @@ round(const time_point<Clock, Duration>& tp);
 
 Объект `time_point`, который имеет длительность типа `To`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `To` не является экземпляром [duration](../standard-library/duration-class.md), эта функция не участвует в разрешении перегрузки.

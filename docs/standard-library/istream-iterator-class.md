@@ -36,13 +36,13 @@ class istream_iterator
 
 ### <a name="parameters"></a>Параметры
 
-*Тип*\
+*Type*\
 Тип объекта, который необходимо извлечь из потока ввода.
 
 *CharType*\
 Тип, представляющий шрифт символа для `istream_iterator`. Этот аргумент является необязательным, и значение по умолчанию — **`char`** .
 
-*Признаки*\
+*Traits*\
 Тип, представляющий шрифт символа для `istream_iterator`. Этот аргумент является необязательным, и в качестве значения по умолчанию используется `char_traits`< `CharType`>.
 
 *Друг*\
@@ -68,9 +68,9 @@ class istream_iterator
 
 |Оператор|Описание|
 |-|-|
-|[станции](#op_star)|Оператор удаления ссылки возвращает сохраненный объект типа `Type`, к которому обращается `istream_iterator`.|
-|[Оператор->](#op_arrow)|Возвращает значение члена при наличии.|
-|[operator + +](#op_add_add)|Либо извлекает увеличенный объект из входного потока, либо копирует объект перед его увеличением и возвращает копию.|
+|[operator*](#op_star)|Оператор удаления ссылки возвращает сохраненный объект типа `Type`, к которому обращается `istream_iterator`.|
+|[operator->](#op_arrow)|Возвращает значение члена при наличии.|
+|[operator++](#op_add_add)|Либо извлекает увеличенный объект из входного потока, либо копирует объект перед его увеличением и возвращает копию.|
 
 ## <a name="requirements"></a>Требования
 
@@ -86,7 +86,7 @@ class istream_iterator
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `Chartype`.
 
@@ -141,7 +141,7 @@ istream_iterator(istream_type& _Istr);
 *_Istr*\
 Входной поток для чтения, используется для инициализации `istream_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует указатель входного потока значением null и создает итератор конца потока. Второй конструктор инициализирует указатель входного потока с *&_Istr*, а затем пытается извлечь и сохранить объект типа `Type` .
 
@@ -189,7 +189,7 @@ int main( )
 typedef basic_istream<CharType, Traits> istream_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом `basic_istream` \< **CharType**, **Traits**> .
 
@@ -197,7 +197,7 @@ typedef basic_istream<CharType, Traits> istream_type;
 
 См. раздел [istream_iterator](#istream_iterator) с примером объявления и использования `istream_type`.
 
-## <a name="istream_iteratoroperator"></a><a name="op_star"></a>istream_iterator:: operator *
+## <a name="istream_iteratoroperator"></a><a name="op_star"></a>istream_iterator::operator*
 
 Оператор удаления ссылки возвращает сохраненный объект типа `Type`, к которому обращается `istream_iterator`.
 
@@ -241,7 +241,7 @@ int main( )
 }
 ```
 
-## <a name="istream_iteratoroperator-gt"></a><a name="op_arrow"></a>istream_iterator:: operator —&gt;
+## <a name="istream_iteratoroperator-gt"></a><a name="op_arrow"></a>istream_iterator::operator-&gt;
 
 Возвращает значение члена при наличии.
 
@@ -253,7 +253,7 @@ const Type* operator->() const;
 
 Возвращает значение члена при его наличии.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `i->m` — это эквивалент `(*i).m`
 
@@ -291,7 +291,7 @@ int main( )
 }
 ```
 
-## <a name="istream_iteratoroperator"></a><a name="op_add_add"></a>istream_iterator:: operator + +
+## <a name="istream_iteratoroperator"></a><a name="op_add_add"></a>istream_iterator::operator++
 
 Либо извлекает увеличенный объект из входного потока, либо копирует объект перед его увеличением и возвращает копию.
 
@@ -345,7 +345,7 @@ int main( )
 typedef Traits traits_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра-шаблона *Traits*.
 

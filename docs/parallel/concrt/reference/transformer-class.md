@@ -49,7 +49,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[образователь](#ctor)|Перегружен. Создает блок обмена сообщениями `transformer` .|
 |[~ трансформатор деструктора](#dtor)|Уничтожает `transformer` блок обмена сообщениями.|
@@ -69,7 +69,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `transformer` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 |[supports_anonymous_source](#supports_anonymous_source)|Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником. (Переопределяет метод [ITarget:: supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -89,7 +89,7 @@ class transformer : public propagator_block<single_link_registry<ITarget<_Output
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -125,7 +125,7 @@ virtual message<_Output>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -197,7 +197,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -297,7 +297,7 @@ transformer(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `transformer` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 

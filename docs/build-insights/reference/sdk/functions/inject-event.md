@@ -71,7 +71,7 @@ void InjectEvent(
 *byteCount*\
 Размер данных, в байтах, указывается на *данные*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о концепциях ETW, таких как [ETW documentation](/windows/win32/etw/about-event-tracing) *провайдер GUID* и *дескриптор событий,* см. Для получения подробной информации о том, как начать сеанс перезаписи [Relog](relog.md)с помощью SDK Build Insights, см.
 

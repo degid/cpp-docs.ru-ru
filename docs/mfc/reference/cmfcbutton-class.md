@@ -168,7 +168,7 @@ class CMFCButton : public CButton
 |[CMFCКнопка::m_bTransparent](#m_btransparent)|Указывает, является ли кнопка прозрачной.|
 |[CMFCButton::m_bWasDblClk](#m_bWasDblClk)| Указывает, было ли последнее событие щелчка двойным щелчком мыши.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Другие типы кнопок `CMFCButton` получены из класса, такие как класс [CMFCURLLinkButton,](../../mfc/reference/cmfclinkctrl-class.md) который поддерживает гиперссылки, и `CMFCColorButton` класс, который поддерживает поле диалога сборщика цветов.
 
@@ -224,7 +224,7 @@ void EnableFullTextTooltip(BOOL bOn=TRUE);
 *Бон*<br/>
 (в) TRUE для отображения всего текста; FALSE для отображения усеченного текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonenablemenufont"></a><a name="enablemenufont"></a>CMFC Кнопка::EnableMenuFont
 
@@ -244,7 +244,7 @@ void EnableMenuFont(
 *bRedraw*<br/>
 (в) TRUE немедленно перерисовать экран; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы не используете этот метод для указания шрифта текста кнопки, можно указать шрифт с помощью [cWnd::SetFont.](../../mfc/reference/cwnd-class.md#setfont) Если вы вообще не указали шрифт, в фреймворке устанавливается шрифт по умолчанию.
 
@@ -261,7 +261,7 @@ static void EnableWindowsTheming(BOOL bEnable = TRUE);
 *bEnable*<br/>
 (в) TRUE использовать текущую тему Windows, чтобы нарисовать границы кнопок; FALSE, чтобы не использовать тему Windows. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод влияет на все кнопки в приложении, которые являются производными `CMFCButton` от класса.
 
@@ -277,7 +277,7 @@ CToolTipCtrl& GetToolTipCtrl();
 
 Ссылка на базовый элемент управления набором инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonisautocheck"></a><a name="isautocheck"></a>CMFCButton::IsAutoCheck
 
@@ -291,7 +291,7 @@ BOOL IsAutoCheck() const;
 
 TRUE, если кнопка имеет стиль BS_AUTOCHECKBOX или BS_AUTORADIOBUTTON; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonisautorepeatcommandmode"></a><a name="isautorepeatcommandmode"></a>CMFCButton::IsAutorepeatCommandMode
 
@@ -305,7 +305,7 @@ BOOL IsAutorepeatCommandMode() const;
 
 TRUE, если кнопка настроена в режим автоматического повторения; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CMFCButton::SetAutorepeatMode](#setautorepeatmode) для установки кнопки в режим автоматического повтора.
 
@@ -321,7 +321,7 @@ BOOL IsCheckBox() const;
 
 ПРАВДА, если кнопка имеет либо BS_CHECKBOX или BS_AUTOCHECKBOX стиль; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonischecked"></a><a name="ischecked"></a>CMFCButton::Проверено
 
@@ -335,7 +335,7 @@ BOOL IsChecked() const;
 
 TRUE, если текущая кнопка проверена; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В фреймворке используются различные способы указания на проверку различных видов кнопок. Например, радиокнопка проверяется, когда она содержит точку; флажок проверяется, когда он содержит **X**.
 
@@ -351,7 +351,7 @@ BOOL IsHighlighted() const;
 
 TRUE, если кнопка выделена; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Кнопка становится выделенной, когда мышь парит над кнопкой.
 
@@ -367,7 +367,7 @@ BOOL IsPressed() const;
 
 TRUE, если кнопка нажата; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonispushed"></a><a name="ispushed"></a>CMFCButton::Ispushed
 
@@ -381,7 +381,7 @@ BOOL IsPushed() const;
 
 TRUE, если кнопка нажата; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonisradiobutton"></a><a name="isradiobutton"></a>CMFCButton::IsRadioButton
 
@@ -395,7 +395,7 @@ BOOL IsRadioButton() const;
 
 ПРАВДА, если стиль кнопки BS_RADIOBUTTON или BS_AUTORADIOBUTTON; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttoniswindowsthemingenabled"></a><a name="iswindowsthemingenabled"></a>CMFCButton::IsWindowsTheming
 
@@ -425,7 +425,7 @@ BOOL m_bDontUseWinXPTheme;
 BOOL m_bDrawFocus;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите `m_bDrawFocus` участника TRUE, чтобы указать, что фреймворк нарисует прямоугольник фокусировки вокруг текста и изображения кнопки, если кнопка получит фокус.
 
@@ -447,7 +447,7 @@ BOOL m_bGrayDisabled;
 BOOL m_bHighlightChecked;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите `m_bHighlightChecked` участника TRUE, чтобы указать, что фреймворк выделит кнопку в стиле BS_CHECKBOX, когда мышь парит над ней.
 
@@ -475,7 +475,7 @@ BOOL m_bRightImage;
 BOOL m_bTopImage;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите `m_bRightImage` член утвердить, что фреймворк будет отображать изображение кнопки справа от текстовой метки кнопки.
 
@@ -487,7 +487,7 @@ BOOL m_bTopImage;
 BOOL m_bTransparent;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите `m_bTransparent` участника TRUE, чтобы указать, что фреймворк сделает кнопку прозрачной. Конструктор `CMFCButton` инициализирует этот член на FALSE.
 
@@ -499,7 +499,7 @@ BOOL m_bTransparent;
 AlignStyle m_nAlignStyle;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте одно `CMFCButton::AlignStyle` из следующих значений перечисления для указания выравнивания текста кнопки:
 
@@ -527,7 +527,7 @@ BOOL m_bWasDblClk;
 FlatStyle  m_nFlatStyle;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В следующей `CMFCButton::m_nFlatStyle` таблице перечислены значения перечисления, которые определяют внешний вид кнопки.
 
@@ -569,7 +569,7 @@ virtual void OnDraw(
 *uiState*<br/>
 (в) Текущее состояние кнопки. Для получения дополнительной `itemState` информации [DRAWITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-drawitemstruct) см.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувизируйте этот метод, чтобы использовать свой собственный код, чтобы нарисовать кнопку.
 
@@ -595,7 +595,7 @@ virtual void OnDrawBorder(
 *uiState*<br/>
 (в) Текущее состояние кнопки. Для получения дополнительной `itemState` информации [DRAWITEMSTRUCT Structure](/windows/win32/api/winuser/ns-winuser-drawitemstruct) см.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувизируйте этот метод, чтобы использовать свой собственный код для рисования границы.
 
@@ -617,7 +617,7 @@ virtual void OnDrawFocusRect(
 *rectClient*<br/>
 (в) Ссылка на прямоугольник, который граничит с кнопкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувизируйте этот метод, чтобы использовать свой собственный код, чтобы нарисовать прямоугольник фокусировки.
 
@@ -651,7 +651,7 @@ virtual void OnDrawText(
 *uiState*<br/>
 [in] Зарезервировано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувизируйте этот метод, чтобы использовать свой собственный код для рисования текста кнопки.
 
@@ -673,7 +673,7 @@ virtual void OnFillBackground(
 *rectClient*<br/>
 (в) Ссылка на прямоугольник, который граничит с кнопкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувизируйте этот метод, чтобы использовать свой собственный код, чтобы нарисовать фон кнопки.
 
@@ -694,7 +694,7 @@ virtual CFont* SelectFont(CDC* pDC);
 
 Переувизируйте этот метод, чтобы использовать свой собственный код для извлечения шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsetautorepeatmode"></a><a name="setautorepeatmode"></a>CMFCButton::SetAutorepeatMode
 
@@ -709,7 +709,7 @@ void SetAutorepeatMode(int nTimeDelay=500);
 *nTimeDelay*<br/>
 (в) Неотрицательное число, оповещаевщее интервал между сообщениями, отправляемыми в родительское окно. Интервал измеряется в миллисекундах, а его значение по умолчанию составляет 500 миллисекунд. Укажите ноль для автоматического автоматического повторения режима сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод заставляет кнопку постоянно отправлять сообщения WM_COMMAND в родительское окно до тех пор, пока кнопка не будет выпущена, или параметр *nTimeDelay* будет сведен к нулю.
 
@@ -776,7 +776,7 @@ void SetCheckedImage(
 *bAlphaBlend*<br/>
 (в) TRUE использовать только 32-битные изображения, которые используют альфа-канал; FALSE, чтобы не использовать только изображения альфа-канала. Значение по умолчанию — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsetfacecolor"></a><a name="setfacecolor"></a>CMFC Кнопка::SetFaceColor
 
@@ -796,7 +796,7 @@ void SetFaceColor(
 *bRedraw*<br/>
 (в) TRUE перерисовать экран немедленно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы определить новый цвет заполнения для фона кнопки (лицо). Обратите внимание, что фон не заполняется, когда переменная [CMFCButton::m_bTransparent](#m_btransparent) член истины.
 
@@ -863,7 +863,7 @@ void SetImage(
 *bAlphaBlend*<br/>
 (в) TRUE использовать только 32-битные изображения, которые используют альфа-канал; FALSE, чтобы не использовать только изображения альфа-канала. Значение по умолчанию — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -885,7 +885,7 @@ void SetMouseCursor(HCURSOR hcursor);
 *hcursor*<br/>
 (в) Ручка курсора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для ассоциировать изображение курсора, например курсор руки, с кнопкой. Курсор загружается из ресурсов приложения.
 
@@ -904,7 +904,7 @@ void SetMouseCursor(HCURSOR hcursor);
 void SetMouseCursorHand();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы связать изображение курсора руки с кнопкой. Курсор загружается из ресурсов приложения.
 
@@ -930,7 +930,7 @@ void SetStdImage(
 *idDisabled*<br/>
 (в) Один из идентификаторов изображений кнопки, который определяется в перечислении. `CMenuImage::IMAGES_IDS` Изображение указывает на то, что кнопка отключена. Значение по умолчанию является `CMenuImages::IdArrowDown`первым изображением кнопки ().
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsettextcolor"></a><a name="settextcolor"></a>CMFCButton::SetTextColor
 
@@ -945,7 +945,7 @@ void SetTextColor(COLORREF clrText);
 *clrText*<br/>
 (в) Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsettexthotcolor"></a><a name="settexthotcolor"></a>CMFCButton::SetTextHotColor
 
@@ -960,7 +960,7 @@ void SetTextHotColor(COLORREF clrTextHot);
 *clrTextHot*<br/>
 (в) Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsettooltip"></a><a name="settooltip"></a>CMFCButton::SetTooltip
 
@@ -975,7 +975,7 @@ void SetTooltip(LPCTSTR lpszToolTipText);
 *lpszToolTipText*<br/>
 (в) Указатель на текст для инструментария. Укажите NULL, чтобы отключить инструментарий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcbuttonsizetocontent"></a><a name="sizetocontent"></a>CMFC Кнопка::SizetoContent
 
@@ -994,7 +994,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly=FALSE);
 
 Объект, `CSize` содержащий новый размер кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод вычисляет новый размер, который включает горизонтальный запас в 10 пикселей и вертикальный запас 5 пикселей.
 

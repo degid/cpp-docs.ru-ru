@@ -27,7 +27,7 @@ ms.locfileid: "88833898"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="begin_category_map"></a><a name="begin_category_map"></a> BEGIN_CATEGORY_MAP
 
@@ -42,7 +42,7 @@ BEGIN_CATEGORY_MAP(theClass)
 *секласс*<br/>
 окне Имя класса, содержащего карту категорий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Таблица категорий используется для указания категорий компонентов, которые будут реализованы классом COM, и категорий, которые требуются для его контейнера.
 
@@ -84,7 +84,7 @@ IMPLEMENTED_CATEGORY(catID)
 *catID*<br/>
 окне Константа или переменная CATID, содержащая глобальный уникальный идентификатор (GUID) для реализованной категории. Адрес *CATID* будет создан и добавлен на карту. Для выбора категорий запасов см. таблицу ниже.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Категории компонентов, перечисленные на карте, будут регистрироваться автоматически при регистрации модуля, если класс имеет связанный [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) или [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) макрос.
 
@@ -121,7 +121,7 @@ REQUIRED_CATEGORY( catID )
 *catID*<br/>
 окне Константа или переменная CATID, содержащая глобальный уникальный идентификатор (GUID) для требуемой категории. Адрес *CATID* будет создан и добавлен на карту. Для выбора категорий запасов см. таблицу ниже.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Категории компонентов, перечисленные на карте, будут регистрироваться автоматически при регистрации модуля, если класс имеет связанный [OBJECT_ENTRY_AUTO](../../atl/reference/object-map-macros.md#object_entry_auto) или [OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO](../../atl/reference/object-map-macros.md#object_entry_non_createable_ex_auto) макрос.
 

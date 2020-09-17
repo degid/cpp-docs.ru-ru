@@ -22,7 +22,7 @@ ms.locfileid: "87222723"
 Хотя битонной сортировка является примером *сети сортировки* , которая сортирует все сочетания входных последовательностей, в этом примере сортируются последовательности, длина которых равна двум.
 
 > [!NOTE]
-> В этом примере для демонстрации используется параллельная подпрограмма сортировки. Можно также использовать встроенные алгоритмы сортировки, предоставляемые PPL: [Concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [Concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Дополнительные сведения см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
+> В этом примере для демонстрации используется параллельная подпрограмма сортировки. Можно также использовать встроенные алгоритмы сортировки, предоставляемые PPL: [concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Дополнительные сведения см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
 
 ## <a name="sections"></a><a name="top"></a>Священ
 
@@ -46,7 +46,7 @@ ms.locfileid: "87222723"
 
 ### <a name="to-perform-the-bitonic-sort-algorithm-in-parallel"></a>Параллельное выполнение алгоритма битонной сортировки
 
-1. Добавьте `#include` директиву для заголовочного файла PPL. h.
+1. Добавьте `#include` директиву для заголовочного файла PPL.h.
 
 [!code-cpp[concrt-parallel-bitonic-sort#10](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine_2.cpp)]
 
@@ -91,7 +91,7 @@ parallel time: 1248
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 
-В этом примере используется `parallel_invoke` алгоритм вместо класса [Concurrency:: task_group](reference/task-group-class.md) , так как время существования каждой группы задач не выходит за пределы функции. Рекомендуется использовать, `parallel_invoke` когда это может быть вызвано меньшими затратами на выполнение `task group` , чем объектами, и, следовательно, позволяет писать более производительный код.
+В этом примере используется `parallel_invoke` алгоритм вместо класса [concurrency::task_group](reference/task-group-class.md) , так как время существования каждой группы задач не выходит за пределы функции. Рекомендуется использовать, `parallel_invoke` когда это может быть вызвано меньшими затратами на выполнение `task group` , чем объектами, и, следовательно, позволяет писать более производительный код.
 
 Параллельные версии некоторых алгоритмов работают лучше, только если достаточно работы. Например, `parallel_bitonic_merge` функция вызывает последовательную версию, `bitonic_merge` Если в последовательности 500 или меньше элементов. Вы также можете спланировать общую стратегию сортировки на основе объема работы. Например, использование последовательной версии алгоритма быстрой сортировки может оказаться более эффективным, если массив содержит менее 500 элементов, как показано в следующем примере:
 

@@ -115,7 +115,7 @@ _variant_t& operator=(
 );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Оператор присваивает новое значение объекту `_variant_t`.
 

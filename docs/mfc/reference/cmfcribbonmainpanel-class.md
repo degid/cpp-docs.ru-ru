@@ -54,7 +54,7 @@ class CMFCRibbonMainPanel : public CMFCRibbonPanel
 |[CMFCRibbonMainPanel::GetCommandsFrame](#getcommandsframe)|Возвращает прямоугольник, представляющий область основной панели ленты.|
 |`CMFCRibbonMainPanel::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Рамочная платформа `CMFCRibbonMainPanel` отображает при открытии панели приложений. Он содержит три стекла:
 
@@ -89,7 +89,7 @@ virtual void Add(CMFCRibbonBaseElement* pElem);
 *pElem*<br/>
 (в, вне) Указатель на элемент ленты, чтобы добавить к основной панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавляет элемент ленты в панель. Элементы, добавленные с помощью этого метода, будут расположены в левой колонке основной панели.
 
@@ -111,7 +111,7 @@ void AddRecentFilesList(
 *nWidth*<br/>
 Определяет ширину в пикселях последней панели списка файлов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonmainpaneladdtobottom"></a><a name="addtobottom"></a>CMFCRibbonMainPanel::Addtobottom
 
@@ -126,7 +126,7 @@ void AddToBottom(CMFCRibbonMainPanelButton* pElem);
 *pElem*<br/>
 (в, вне) Указатель на элемент ленты, чтобы добавить в нижней части основной панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonmainpaneladdtoright"></a><a name="addtoright"></a>CMFCRibbonMainPanel::AddtoRight
 
@@ -146,7 +146,7 @@ void AddToRight(
 *nWidth*<br/>
 Определяет ширину в пикселях правой панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы добавить элемент ленты в правую панель. Правая панель обычно отображает последний список файлов, но здесь можно добавить любой другой элемент ленты.
 

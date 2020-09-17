@@ -126,7 +126,7 @@ class COleSafeArray : public tagVARIANT
 |[COleSafeArray::оператор](#operator_eq_eq)|Сравнивает два варианта`SAFEARRAY` `VARIANT`массива (, `COleVariant`или `COleSafeArray` массивы).|
 |[COleSafeArray::оператор&lt;&lt;](#operator_lt_lt)|Выводы содержимого `COleSafeArray` объекта в контекст еспатого.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `COleSafeArray`вытекает из `VARIANT` структуры OLE. Функции `SAFEARRAY` членов OLE `COleSafeArray`доступны через, а также набор функций членов, специально предназначенных для одномерных массивов байтов.
 
@@ -153,7 +153,7 @@ void AccessData(void** ppvData);
 *ppvData*<br/>
 Указатель указателя на указатель на данные массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -169,7 +169,7 @@ void AccessData(void** ppvData);
 void AllocData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -186,7 +186,7 @@ void AllocDescriptor(DWORD dwDims);
 *dwDims*<br/>
 Количество размеров в безопасном массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -203,7 +203,7 @@ void Attach(VARIANT& varSrc);
 *varSrc*<br/>
 Объект `VARIANT` . Параметр *varSrc* должен иметь [VT_ARRAY](/windows/win32/api/wtypes/ne-wtypes-varenum)VARTYPE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `VARIANT`источника установлен на VT_EMPTY. Эта функция очищает текущие данные массива, если таковые имеются.
 
@@ -219,7 +219,7 @@ void Attach(VARIANT& varSrc);
 void Clear();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция очищает безопасный массив, `VARTYPE` устанавливая объект на VT_EMPTY. Текущее содержимое освобождается и массив освобождается.
 
@@ -261,7 +261,7 @@ VARTYPE нового `COleSafeArray` объекта.
 *Psrc*<br/>
 Указатель на `VARIANT` объект, который должен быть `COleSafeArray` скопирован в новый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все эти конструкторы создают `COleSafeArray` новые объекты. Если параметра нет, `COleSafeArray` создается пустой объект (VT_EMPTY). Если скопирован из другого массива, который `COleSafeArray`VARTYPE известен неявно (a, `COleVariant`, или), `VARIANT`VARTYPE исходного массива сохраняется и не требуется указывать. `COleSafeArray` Если `COleSafeArray` он скопирован из другого массива, о каком VARTYPE не известен (),`SAFEARRAY`VARTYPE должен быть указан в параметре *vtSrc.*
 
@@ -280,7 +280,7 @@ void Copy(LPSAFEARRAY* ppsa);
 *ppsa*<br/>
 Указатель на место, в котором можно вернуть новый дескриптор массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -314,7 +314,7 @@ void Create(
 *rgsabounds*<br/>
 Указатель на вектор границ (по одному для каждого измерения) для выделения для массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция позволит очистить текущие данные массива, если это необходимо. При ошибке функция бросает [CMemoryException.](../../mfc/reference/cmemoryexception-class.md)
 
@@ -348,7 +348,7 @@ void CreateOneDim(
 *nLBound*<br/>
 Нижняя граница массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция выделяет и инициализирует данные для массива, копируя указанные данные, если указатель *pvSrcData* не является NULL.
 
@@ -366,7 +366,7 @@ void CreateOneDim(
 void Destroy();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объекты хранятся в массиве, каждый объект освобождается. При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -378,7 +378,7 @@ void Destroy();
 void DestroyData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объекты хранятся в массиве, каждый объект освобождается. При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -390,7 +390,7 @@ void DestroyData();
 void DestroyDescriptor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [CMemoryException](../../mfc/reference/cmemoryexception-class.md) или [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -406,7 +406,7 @@ VARIANT Detach();
 
 Базовое `VARIANT` значение объекта. `COleSafeArray`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция отсоединяет данные в безопасном массиве, установив VARTYPE объекта на VT_EMPTY. Это ответственность абонента, чтобы освободить массив, позвонив функции Windows [VariantClear](/windows/win32/api/oleauto/nf-oleauto-variantclear).
 
@@ -463,7 +463,7 @@ void GetElement(
 *pvData*<br/>
 Указатель на место для размещения элемента массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция автоматически вызывает `SafeArrayLock` `SafeArrayUnlock` функции окон и до и после извлечения элемента. Если элемент данных является строкой, объектом или вариантом, функция копирует элемент правильным образом. Параметр *pvData* должен указывать на достаточно большой буфер, чтобы содержать элемент.
 
@@ -503,7 +503,7 @@ void GetLBound(
 *pLBound*<br/>
 Указатель на место, чтобы вернуть нижнюю границу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -545,7 +545,7 @@ void GetUBound(
 *pUBound*<br/>
 Указатель на место, чтобы вернуть верхнюю границу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -561,7 +561,7 @@ void GetUBound(
 void Lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По ошибке, он бросает [COleException](../../mfc/reference/coleexception-class.md).
 
@@ -585,7 +585,7 @@ operator LPCVARIANT() const;
 operator LPVARIANT();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что `VARIANT` изменение значения в структуре, доступ к которой будет `COleSafeArray` добавлен указателем этой функции, изменит значение этого объекта.
 
@@ -600,7 +600,7 @@ COleSafeArray& operator=(LPCVARIANT pSrc);
 COleSafeArray& operator=(const COleVariant& varSrc);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Краткое описание каждого оператора:
 
@@ -622,7 +622,7 @@ BOOL operator==(const COleSafeArray& saSrc) const;  BOOL operator==(const VARIAN
 BOOL operator==(LPCVARIANT pSrc) const;  BOOL operator==(const COleVariant& varSrc) const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Два массива равны, если они имеют равное количество измерений, равный размер в каждом измерении и равные значения элементов.
 
@@ -672,7 +672,7 @@ void PutElement(
 *pvData*<br/>
 Указатель на данные, которые требуется поместить в массив. VT_DISPATCH, VT_UNKNOWN и VT_BSTR типами вариантов являются указатели и не требуют другого уровня косвенности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция автоматически вызывает функции Windows [SafeArrayLock](/windows/win32/api/oleauto/nf-oleauto-safearraylock) и [SafeArrayUnlock](/windows/win32/api/oleauto/nf-oleauto-safearrayunlock) до и после назначения элемента. Если строка, объект или вариант являются элементом данных, функция выполняет правильное копирование, а если существующим элементом — правильное удаление.
 
@@ -697,7 +697,7 @@ void Redim(SAFEARRAYBOUND* psaboundNew);
 *psaboundНовые*<br/>
 Указатель на новую структуру связанного безопасного массива, содержащую новую связанную массивную структуру. Изменяются только наименее значительное измерение массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -714,7 +714,7 @@ void ResizeOneDim(DWORD dwElements);
 *dwElements*<br/>
 Количество элементов в одномерном безопасном массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -730,7 +730,7 @@ void ResizeOneDim(DWORD dwElements);
 void UnaccessData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При ошибке функция бросает [COleException.](../../mfc/reference/coleexception-class.md)
 
@@ -746,7 +746,7 @@ void UnaccessData();
 void Unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция вызывается после завершения доступа к данным в массиве. По ошибке, он бросает [COleException](../../mfc/reference/coleexception-class.md).
 

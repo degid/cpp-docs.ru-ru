@@ -18,7 +18,7 @@ ms.locfileid: "79427809"
 ---
 # <a name="lttuplegt-operators"></a>Операторы &lt;tuple&gt;
 
-## <a name="op_neq"></a>operator! =
+## <a name="op_neq"></a> operator!=
 
 Сравнивает объекты `tuple` на неравенство.
 
@@ -34,7 +34,7 @@ bool operator!=(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает значение false, если `N` равно 0; в противном случае — значение `get<0>(tpl1) != get<0>(tpl2) || get<1>(tpl1) != get<1>(tpl2) || ... || get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
@@ -99,7 +99,7 @@ bool operator<(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает значение true, если `N` больше 0, а первое отличающееся значение в `tpl1` при сравнении оказывается меньше, чем соответствующее значение `tpl2`; в противном случае возвращается значение false.
 
@@ -164,7 +164,7 @@ bool operator<=(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает `!(tpl2 < tpl1)`.
 
@@ -213,7 +213,7 @@ true
 false
 ```
 
-## <a name="op_eq_eq"></a>Оператор = =
+## <a name="op_eq_eq"></a> operator==
 
 Сравнение объектов `tuple` на равенство.
 
@@ -229,7 +229,7 @@ bool operator==(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает значение true, если `N` равно 0; в противном случае — значение `get<0>(tpl1) == get<0>(tpl2) && get<1>(tpl1) == get<1>(tpl2) && ... && get<N - 1>(tpl1) == get<N - 1>(tpl2)`.
 
@@ -294,7 +294,7 @@ bool operator>(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает `tpl2 < tpl1`.
 
@@ -359,7 +359,7 @@ bool operator>=(const tuple<T1, T2, ..., TN>& tpl1,
 \ *тн*
 Тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает `!(tpl1 < tpl2)`.
 

@@ -67,7 +67,7 @@ void __addgsqword(
 |`__addgsdword`|X64|
 |`__addgsqword`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

@@ -29,7 +29,7 @@ class invalid_multiple_scheduling : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[invalid_multiple_scheduling](#ctor)|Перегружен. Создает объект `invalid_multiple_scheduling`.|
 
@@ -41,7 +41,7 @@ class invalid_multiple_scheduling : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

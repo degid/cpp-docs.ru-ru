@@ -51,7 +51,7 @@ class CComObjectNoLock : public Base
 |[CComObjectNoLock::QueryInterface](#queryinterface)|Возвращает указатель на запрашиваемый интерфейс.|
 |[CComObjectNoLock::Release](#release)|Декретирует значение ссылки на объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComObjectNoLock`похож на [CComObject](../../atl/reference/ccomobject-class.md) в том, что он реализует [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) для неагрегированного объекта; однако, `CComObjectNoLock` не приравня количество блокировки модуля в конструкторе.
 
@@ -100,7 +100,7 @@ CComObjectNoLock(void* = NULL);
 ~CComObjectNoLock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы и вызывает [FinalRelease](ccomobjectrootex-class.md#finalrelease).
 

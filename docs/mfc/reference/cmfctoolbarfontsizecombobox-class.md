@@ -47,7 +47,7 @@ class CMFCToolBarFontSizeComboBox : public CMFCToolBarComboBoxButton
 |[CMFCToolBarFontSizeComboBox::RebuildFontSizes](#rebuildfontsizes)|Заполняет список комбо-боксов всеми поддерживаемыми размерами шрифта для указанного шрифта.|
 |[CMFCToolBarFontSizeComboBox::SetTwipSize](#settwipsize)|Устанавливает размер шрифта в twips.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы можете `CMFCToolBarFontSizeComboBox` использовать объект вместе с объектом [класса CMFCToolBarFontComboBox,](../../mfc/reference/cmfctoolbarfontcombobox-class.md) чтобы пользователь мог выбрать шрифт и размер шрифта.
 
@@ -108,7 +108,7 @@ void RebuildFontSizes(const CString& strFontName);
 *strFontName*<br/>
 (в) Упогоняет имя шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, когда вы хотите синхронизировать между выбором в комбо-коробке шрифта и комбо-коробке размером шрифта, такой как [CMFCToolBarFontComboBox Class.](../../mfc/reference/cmfctoolbarfontcombobox-class.md)
 
@@ -125,7 +125,7 @@ void SetTwipSize(int nSize);
 *Nsize*<br/>
 (в) Установить размер шрифта (в twips) для установки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете получить предыдущий допустимый размер шрифта позже, позвонив по методу [CMFCToolBarFontSizeComboBox::GetTwipSize.](#gettwipsize)
 

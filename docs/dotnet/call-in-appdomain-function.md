@@ -57,7 +57,7 @@ RetType call_in_appdomain(
 
 Результат выполнения `voidFunc` или `nonvoidFunc` в указанном домене приложения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Аргументы переданной функции `call_in_appdomain` не должны быть ТИПАМИ CLR.
 

@@ -41,7 +41,7 @@ class cancellation_token;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[deregister_callback](#deregister_callback)|Удаляет обратный вызов, ранее зарегистрированный с помощью метода `register` на основании объекта `cancellation_token_registration`, возвращенного во время регистрации.|
 |[is_cancelable](#is_cancelable)|Возвращает значение, указывающее, может ли этот токен быть отменен или нет.|
@@ -53,9 +53,9 @@ class cancellation_token;
 
 |Имя|Описание|
 |----------|-----------------|
-|[operator! =](#operator_neq)||
-|[Оператор =](#operator_eq)||
-|[Оператор = =](#operator_eq_eq)||
+|[operator!=](#operator_neq)||
+|[operator=](#operator_eq)||
+|[operator==](#operator_eq_eq)||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -63,9 +63,9 @@ class cancellation_token;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** pplcancellation_token. h
+**Заголовок:** pplcancellation_token.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="cancellation_token"></a><a name="dtor"></a>~ cancellation_token
 
@@ -135,7 +135,7 @@ static cancellation_token none();
 
 Токен отмены, который невозможно отменить.
 
-## <a name="operator"></a><a name="operator_neq"></a>operator! =
+## <a name="operator"></a><a name="operator_neq"></a>operator!=
 
 ```cpp
 bool operator!= (const cancellation_token& _Src) const;

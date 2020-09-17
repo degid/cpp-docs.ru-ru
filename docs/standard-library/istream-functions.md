@@ -14,10 +14,10 @@ ms.locfileid: "88840977"
 ---
 # <a name="ltistreamgt-functions"></a>Функции &lt;istream&gt;
 
-[позиции](#istream_swap)\
-[Протокол](#ws)
+[swap](#istream_swap)\
+[ws](#ws)
 
-## <a name="swap"></a><a name="istream_swap"></a> позиции
+## <a name="swap"></a><a name="istream_swap"></a> swap
 
 Меняет местами элементы двух объектов-потоков.
 
@@ -35,10 +35,10 @@ void swap(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Поток.
 
-*Правильно*\
+*right*\
 Поток.
 
 ## <a name="ws"></a><a name="ws"></a> Протокол
@@ -58,7 +58,7 @@ template class<Elem, Tr> basic_istream<Elem, Tr>& ws(basic_istream<Elem, Tr>& _I
 
 Поток.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор извлекает и удаляет все элементы `ch` , для которых [use_facet](../standard-library/basic-filebuf-class.md#open) <  **CType** \< **Elem**> > ( [getloc](../standard-library/ios-base-class.md#getloc)). **имеет**значение true ( **CType** \< **Elem**> :: **Space**, **CH**).
 

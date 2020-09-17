@@ -37,19 +37,19 @@ class CDaoFieldExchange
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кдаофиелдексчанже:: Исвалидоператион](#isvalidoperation)|Возвращает ненулевое значение, если текущая операция подходит для типа обновляемого поля.|
 |[Кдаофиелдексчанже:: Сетфиелдтипе](#setfieldtype)|Указывает тип элемента данных набора записей — столбец или параметр, представленный всеми последовательными вызовами функций DFX до следующего вызова `SetFieldType` .|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кдаофиелдексчанже:: m_nOperation](#m_noperation)|Операция DFX, выполняемая текущим вызовом `DoFieldExchange` функции члена набора записей.|
 |[Кдаофиелдексчанже:: m_prs](#m_prs)|Указатель на набор записей, для которого выполняются операции DFX.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDaoFieldExchange`не имеет базового класса.
 
@@ -75,7 +75,7 @@ class CDaoFieldExchange
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдао. h
+**Заголовок:** афксдао.h
 
 ## <a name="cdaofieldexchangeisvalidoperation"></a><a name="isvalidoperation"></a>Кдаофиелдексчанже:: Исвалидоператион
 
@@ -89,7 +89,7 @@ BOOL IsValidOperation();
 
 Ненулевое значение, если текущая операция подходит для типа обновляемого поля.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Некоторые операции, выполняемые методом DFX, применяются только к одному из возможных типов полей. Используйте модель существующих функций DFX.
 
@@ -99,7 +99,7 @@ BOOL IsValidOperation();
 
 Определяет операцию, которая должна быть выполнена с объектом [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) , связанным с объектом поля обмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CDaoFieldExchange`Объект предоставляет контекст для нескольких различных операций DFX в наборе записей.
 
@@ -130,7 +130,7 @@ BOOL IsValidOperation();
 
 Содержит указатель на объект [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md) , связанный с `CDaoFieldExchange` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdaofieldexchangesetfieldtype"></a><a name="setfieldtype"></a>Кдаофиелдексчанже:: Сетфиелдтипе
 
@@ -149,7 +149,7 @@ void SetFieldType(UINT nFieldType);
 
 - `CDaoFieldExchange::param`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно ClassWizard записывает этот вызов. Если вы напишете собственную функцию и используете мастер для написания `DoFieldExchange` функции, добавьте вызовы собственной функции за пределами таблицы полей. Если мастер не используется, таблица полей не будет сопоставлена. Вызов предшествует вызовам DFX функций, по одному для каждого элемента данных поля класса, и определяет тип поля как `CDaoFieldExchange::outputColumn` .
 

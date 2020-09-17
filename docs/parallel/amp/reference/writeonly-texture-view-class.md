@@ -47,33 +47,33 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`scalar_type`||
 |`value_type`|Тип элементов текстуры.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор writeonly_texture_view](#ctor)|Инициализирует новый экземпляр класса `writeonly_texture_view`.|
 |[Деструктор ~ writeonly_texture_view](#ctor)|Уничтожает объект `writeonly_texture_view`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[set](#set)|Задает значение элемента по указанному индексу.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[оператор=](#operator_eq)|Копирует указанный объект `writeonly_texture_view` в этот элемент.|
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа Rank](#rank)|Возвращает ранг объекта `writeonly_texture_view`.|
 
@@ -85,9 +85,9 @@ class writeonly_texture_view<value_type, _Rank> : public details::_Texture_base<
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="dtor"></a>~ writeonly_texture_view
 

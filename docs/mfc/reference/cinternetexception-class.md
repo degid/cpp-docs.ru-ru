@@ -44,7 +44,7 @@ class CInternetException : public CException
 |[CInternetИсключение::m_dwContext](#m_dwcontext)|Значение контекста, связанное с операцией, вызвавшей исключение.|
 |[CInternetИсключение::m_dwError](#m_dwerror)|Ошибка, ставшая причиной исключения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CInternetException` включает в себя два открытых члена данных: один содержит код ошибки, связанный с исключением, а другой содержит идентификатор контекста интернет-приложения, связанного с ошибкой.
 
@@ -75,7 +75,7 @@ CInternetException(DWORD dwError);
 *dwОшибка*<br/>
 Ошибка, ставшая причиной исключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы бросить CInternetException, позвоните в Глобальную функцию MFC [AfxThrowInternetException](internet-url-parsing-globals.md#afxthrowinternetexception).
 
@@ -87,7 +87,7 @@ CInternetException(DWORD dwError);
 DWORD_PTR m_dwContext;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Идентификатор контекста первоначально указан в [CInternetSession](../../mfc/reference/cinternetsession-class.md) и передается MFC [классам CInternetConnection](../../mfc/reference/cinternetconnection-class.md)- и [CInternetFile](../../mfc/reference/cinternetfile-class.md)- производным. Вы можете переопределить этот по умолчанию и назначить любой параметр *dwContext* значение по вашему выбору. *dwContext* связан с любой операцией данного объекта. *dwContext* определяет информацию о состоянии операции, возвращенную [CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback).
 
@@ -99,7 +99,7 @@ DWORD_PTR m_dwContext;
 DWORD m_dwError;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение ошибки может быть кодом системной ошибки, найденным в WINERROR. H или значение ошибки от WININET. H.
 

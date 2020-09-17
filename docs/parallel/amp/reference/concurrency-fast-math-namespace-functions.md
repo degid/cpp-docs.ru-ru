@@ -1326,7 +1326,7 @@ inline float truncf(float _X) restrict(amp);
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** **пространство имен** amp_math. h: Concurrency:: fast_math
+**Заголовок:** **пространство имен** amp_math.h: Concurrency:: fast_math
 
 ## <a name="see-also"></a>См. также раздел
 

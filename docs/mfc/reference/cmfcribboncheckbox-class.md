@@ -62,7 +62,7 @@ class CMFCRibbonCheckBox : public CMFCRibbonButton
 |[CMFCRibbonCheckBox::OnDrawOnList](#ondrawonlist)|(Переопределяет `CMFCRibbonButton::OnDrawOnList`.)|
 |[CMFCRibbonCheckBox::SetACCData](#setaccdata)|(Переопределяет [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать класс `CMFCRibbonCheckBox` в вашем приложении, добавьте в код следующий конструктор:
 
@@ -133,7 +133,7 @@ virtual CSize GetCompactSize(CDC* pDC);
 
 Возвращает `CSize` объект, содержащий компактный размер флажка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не переопределен, возвращает промежуточный размер флажка.
 
@@ -154,7 +154,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 Объект, `CSize` содержащий промежуточный размер флажка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не переопределить, вычисляет промежуточный размер, как размер флажка по умолчанию () `AFX_CHECK_BOX_DEFAULT_SIZE`плюс размер текста, плюс поля.
 
@@ -175,7 +175,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 Возвращает `CSize` объект, содержащий обычный размер флажка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не переопределен, возвращает промежуточный размер флажка.
 
@@ -191,7 +191,7 @@ virtual BOOL IsDrawTooltipImage() const;
 
 Возвращает TRUE, если есть инструментарий изображение, связанное с флажком, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncheckboxondraw"></a><a name="ondraw"></a>CMFCRibbonCheckBox::Ondraw
 
@@ -206,7 +206,7 @@ virtual void OnDraw(CDC* pDC);
 *pDC*<br/>
 (в) Указатель на CDC, в котором нарисовать флажок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncheckboxondrawmenuimage"></a><a name="ondrawmenuimage"></a>CMFCRibbonCheckBox::OndrawMenuImage
 
@@ -228,7 +228,7 @@ virtual BOOL OnDrawMenuImage(CDC*, CRect);
 
 Возвращает TRUE, если изображение было нарисовано, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не переопределить, возвращает FALSE.
 
@@ -266,7 +266,7 @@ virtual void OnDrawOnList(
 *bНазалион*<br/>
 (в) ПРАВДА, если флажок выделен, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncheckboxsetaccdata"></a><a name="setaccdata"></a>CMFCRibbonCheckBox::SetACCData
 
@@ -290,7 +290,7 @@ virtual BOOL SetACCData(
 
 Всегда возвращается TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод устанавливает данные доступности для флажка и всегда возвращает TRUE. Переопределите этот метод, чтобы задать данные специальных возможностей и возвращать значение, указывающее на успешное или неуспешное выполнение.
 

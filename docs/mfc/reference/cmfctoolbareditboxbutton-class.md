@@ -117,7 +117,7 @@ class CMFCToolBarEditBoxButton : public CMFCToolBarButton
 |[CMFCToolBarEditButton::SetFlatMode](#setflatmode)|Определяет плоский стиль внешний вид кнопок коробки для отсечения в приложении.|
 |`CMFCToolBarEditBoxButton::`[CMFCToolBarEditButton::SetStyle](#setstyle)|Определяет стиль кнопки. (Переопределяет [CMFCToolBarButton::SetStyle](../../mfc/reference/cmfctoolbarbutton-class.md#setstyle).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы добавить кнопку ящика для отсечения в панель инструментов, выполните следующие действия:
 
@@ -159,7 +159,7 @@ virtual BOOL CanBeStretched() const;
 
 Этот метод возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию фреймворк не позволяет пользователю растягивать кнопку панели инструментов во время настройки. Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::CanBeStretched](../../mfc/reference/cmfctoolbarbutton-class.md#canbestretched)), позволяя пользователю растягивать кнопку панели инструментов для отодвивания во время настройки.
 
@@ -189,7 +189,7 @@ CMFCToolBarEditBoxButton(
 *iWidth*<br/>
 (в) Определяет ширину пикселей управления отсеивательь.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор по умолчанию устанавливает стиль управления изменением в следующую комбинацию:
 
@@ -210,7 +210,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 *src*<br/>
 (в) Ссылка на кнопку исходного кода, из которой можно скопировать.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы скопировать другую кнопку панели инструментов на эту кнопку панели инструментов. *src* должен быть `CMFCToolBarEditBoxButton`типа .
 
@@ -236,7 +236,7 @@ virtual CEdit* CreateEdit(
 
 Указатель на недавно созданный элемент управления правкой; это NULL, если создание элемента управления и вложение не удается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CMFCToolBarEditBoxButton` объект в два этапа. Сначала вызов конструктора, а `CreateEdit`затем вызов , который создает управление windows `CMFCToolBarEditBoxButton` отсвазание и прикрепляет его к объекту.
 
@@ -257,7 +257,7 @@ static CMFCToolBarEditBoxButton* __stdcall GetByCmd(UINT uiCmd);
 
 Первый `CMFCToolBarEditBoxButton` объект в приложении, который имеет указанный идентификатор команды, или NULL, если такой объект не существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот общий метод утилиты используется такими методами, как [CMFCToolBarEditButtonButton::SetContentsAll](#setcontentsall) и [CMFCToolBarEditButton::GetContentsAll](#getcontentsall) установить или получить текст первого элемента управления панели редактирования, который имеет указанный идентификатор команды.
 
@@ -278,7 +278,7 @@ static CString __stdcall GetContentsAll(UINT uiCmd);
 
 Объект, `CString` содержащий текст первого элемента управления панели инструментов для редактирования, который имеет указанный идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает пустую `CMFCToolBarEditBoxButton` строку, если у объектов нет указанного идентификатора команды.
 
@@ -294,7 +294,7 @@ UINT GetContextMenuID();
 
 Идентификатор ресурса меню ярлыка, который связан с кнопкой или 0, если кнопка не имеет связанного меню ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует идентификатор ресурса для создания меню ярлыка, когда пользователь справа нажимает на кнопку.
 
@@ -311,7 +311,7 @@ virtual void GetEditBorder(CRect& rectBorder);
 *rectBorder*<br/>
 (ваут) Ссылка на `CRect` объект, который получает ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод извлекает прямоугольник ограничивающего элемента управления правки в координатах клиента. Он расширяет размер прямоугольника в каждом направлении на один пиксель.
 
@@ -329,7 +329,7 @@ CEdit* GetEditBox() const;
 
 Указатель на управление [cEdit Class,](../../mfc/reference/cedit-class.md) содержащееся в кнопке. Это NULL, `CEdit` если элемент управления еще не создан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы создаете `CEdit` элемент управления, позвонив [по CMFCToolBarEditButton::CreateEdit](#createedit).
 
@@ -345,7 +345,7 @@ virtual HWND GetHwnd();
 
 Ручка окна, связанная с кнопкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет [метод CMFCToolBarButton::GetHwnd](../../mfc/reference/cmfctoolbarbutton-class.md#gethwnd) метод, вернув ручку окна части управления правкой кнопки отображаемого окна.
 
@@ -361,7 +361,7 @@ virtual const CRect GetInvalidateRect() const;
 
 Объект, `CRect` опознававший область, который должен быть перерисован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса, [CMFCToolBarButton::GetInvalidateRect](../../mfc/reference/cmfctoolbarbutton-class.md#getinvalidaterect), путем включения в регионе области текстовой метки.
 
@@ -377,7 +377,7 @@ virtual BOOL HaveHotBorder() const;
 
 Nonzero, если кнопка отображает свою границу при выборе; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса, [CMFCToolBarButton::HaveHotBorder](../../mfc/reference/cmfctoolbarbutton-class.md#havehotborder), путем возвращения ненулевого значения, если элемент управления виден.
 
@@ -393,7 +393,7 @@ static BOOL __stdcall IsFlatMode();
 
 Nonzero, если кнопки имеют плоский стиль; в противном случае, 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию кнопки для отсеивания коробок имеют плоский стиль. Используйте метод [CMFCToolBarEditButtonButton::SetFlatMode,](#setflatmode) чтобы изменить внешний вид плоского стиля для вашего приложения.
 
@@ -414,7 +414,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 
 ПРАВДА, если кнопка обрабатывает WM_COMMAND сообщение, или FALSE, чтобы указать, что сообщение должно быть обработано родительской панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает этот метод, когда он собирается отправить [WM_COMMAND](/windows/win32/menurc/wm-command) сообщение в родительское окно.
 
@@ -428,7 +428,7 @@ virtual BOOL NotifyCommand(int iNotifyCode);
 virtual void OnAddToCustomizePage();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnAddToCustomizePage](../../mfc/reference/cmfctoolbarbutton-class.md#onaddtocustomizepage)) путем копирования свойств из управления коробкой отсечения в любой панели инструментов, которая имеет тот же идентификатор команды, что и этот объект. Этот метод ничего не делает, если ни одна панель инструментов не имеет элементуправления коробки для отсечения, которое имеет тот же идентификатор команды, что и этот объект.
 
@@ -447,7 +447,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 *pWndParent*<br/>
 (в) Указатель на новое родительское окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию базового класса [(CMFCToolBarButton::OnChangeParentWnd)](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)путем воссоздания внутреннего `CEdit` объекта.
 
@@ -473,7 +473,7 @@ virtual BOOL OnClick(
 
 Nonzero, если кнопка обрабатывает сообщение щелчка; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию базового класса [(CMFCToolBarButton::OnClick),](../../mfc/reference/cmfctoolbarbutton-class.md#onclick)вернув `CEdit` ненулевое значение, если виден внутренний объект.
 
@@ -499,7 +499,7 @@ virtual HBRUSH OnCtlColor(
 
 Ручка к глобальной оконной щетке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию базового класса [(CMFCToolBarButton::OnCtlColor](../../mfc/reference/cmfctoolbarbutton-class.md#onctlcolor)), установив текст и фоновые цвета предоставленного контекста устройства на глобальный текст и фоновые цвета, соответственно.
 
@@ -513,7 +513,7 @@ virtual HBRUSH OnCtlColor(
 virtual void OnGlobalFontsChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnGlobalFontsChanged](../../mfc/reference/cmfctoolbarbutton-class.md#onglobalfontschanged)) путем изменения шрифта управления на глобальный шрифт.
 
@@ -527,7 +527,7 @@ virtual void OnGlobalFontsChanged();
 virtual void OnMove();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию класса по умолчанию [(CMFCToolBarButton::OnMove)](../../mfc/reference/cmfctoolbarbutton-class.md#onmove)путем обновления положения внутреннего `CEdit` объекта
 
@@ -544,7 +544,7 @@ virtual void OnShow(BOOL bShow);
 *bShow*<br/>
 (в) Определяет, видна ли кнопка. Если этот параметр является правдой, кнопка видна. В противном случае кнопка не видна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnShow](../../mfc/reference/cmfctoolbarbutton-class.md#onshow)) путем отображения кнопки, если *bShow* является правдой. В противном случае этот метод скрывает кнопку.
 
@@ -561,7 +561,7 @@ virtual void OnSize(int iSize);
 *iSize*<br/>
 (в) Новая ширина кнопки, в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию класса по умолчанию, [CMFCToolBarButton::OnSize,](../../mfc/reference/cmfctoolbarbutton-class.md#onsize)обновляя размер и положение внутреннего `CEdit` объекта.
 
@@ -595,7 +595,7 @@ virtual BOOL OnUpdateToolTip(
 
 Nonzero, если метод обновляет текст инструментария; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnUpdateToolTip](../../mfc/reference/cmfctoolbarbutton-class.md#onupdatetooltip)) путем отображения текста инструментария, который связан с частью редактирования кнопки. Если внутренний `CEdit` объект NULL или ручка окна `CEdit` объекта не идентифицирует существующее окно, этот метод ничего не делает и возвращает FALSE.
 
@@ -647,7 +647,7 @@ void SetContextMenuID(UINT uiResID);
 *uiCmd*<br/>
 (в) Идентификатор ресурса меню ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует идентификатор ресурса для создания меню ярлыка, когда пользователь справа щелкает кнопку панели инструментов.
 
@@ -664,7 +664,7 @@ static void __stdcall SetFlatMode(BOOL bFlat = TRUE);
 *bFlat*<br/>
 (в) Плоский стиль для отсеивания кнопок коробки. Если этот параметр является правдой, плоский вид стиля включен; в противном случае плоский вид стиля отключен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию плоский стиль для отсеивания кнопок коробки является правдой. Используйте метод [CMFCToolBarEditButtonButton::IsFlatMode](#isflatmode) для получения плоского стиля для вашего приложения.
 
@@ -681,7 +681,7 @@ virtual void SetStyle(UINT nStyle);
 *nStyle*<br/>
 (в) Новый стиль для установки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод устанавливает [CMFCToolBarButton::m_nStyle](../../mfc/reference/cmfctoolbarbutton-class.md#m_nstyle) *nStyle* Он также отстраняет текстовый ящик, когда приложение находится в режиме настройки, и позволяет ему, когда приложение не находится в режиме настройки (см. [CMFCToolBar::SetCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#setcustomizemode) и [CMFCToolBar::IsCustomizeMode](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)). Посмотреть [стили управления панели инструментов](../../mfc/reference/toolbar-control-styles.md) для получения списка действительных флагов стиля.
 

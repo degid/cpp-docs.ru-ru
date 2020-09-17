@@ -24,7 +24,7 @@ ms.locfileid: "80214153"
 enum AsyncStatusInternal;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Задает сопоставление между внутренними перечислениями состояний асинхронных операций и перечислением `Windows::Foundation::AsyncStatus`.
 
@@ -47,7 +47,7 @@ enum AsyncStatusInternal;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Async. h
+**Заголовок:** Async.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

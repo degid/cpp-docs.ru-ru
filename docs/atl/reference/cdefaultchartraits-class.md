@@ -41,7 +41,7 @@ class CDefaultCharTraits
 |[CDefaultChartraits::CharTolower](#chartolower)|(Статик) Вызовите эту функцию, чтобы преобразовать символ в верхний регистр.|
 |[CDefaultChartraits::Chartoupper](#chartoupper)|(Статик) Вызовите эту функцию, чтобы преобразовать символ в нижний регистр.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет функции, которые используются классом [CStringElementTraitsI.](../../atl/reference/cstringelementtraitsi-class.md)
 

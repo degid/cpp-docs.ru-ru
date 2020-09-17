@@ -52,13 +52,13 @@ ActivatableClassWithFactoryEx(
 *serverName*<br/>
 Имя, указывающее подмножество фабрик в модуле.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Не используйте эти макросы с классической моделью COM, если не используется директива `#undef`, чтобы гарантировать удаление определения макроса `__WRL_WINRT_STRICT__`.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 

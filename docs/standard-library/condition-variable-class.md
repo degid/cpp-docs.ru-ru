@@ -64,7 +64,7 @@ class condition_variable;
 condition_variable();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При недостатке памяти этот конструктор вызывает объект [system_error](../standard-library/system-error-class.md), имеющий код ошибки `not_enough_memory`. Если объект не может быть создан из-за недоступности некоторых других ресурсов, конструктор создает объект `system_error`, имеющий код ошибки `resource_unavailable_try_again`.
 
@@ -112,10 +112,10 @@ void wait(unique_lock<mutex>& Lck, Predicate Pred);
 *лкк*\
 Объект [unique_lock \<mutex> ](../standard-library/unique-lock-class.md) .
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до оповещения объекта `condition_variable` путем вызова [notify_one](#notify_one) или [notify_all](#notify_all). Он может также ложно активироваться.
 
@@ -151,7 +151,7 @@ bool wait_for(
 *Rel_time*\
 Объект `chrono::duration`, указывающий количество времени до активации потока.
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -160,7 +160,7 @@ bool wait_for(
 
 Второй метод возвращает значение *пред*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до тех пор, пока `condition_variable` объект не будет сигналь с помощью вызова [notify_one](#notify_one) или [notify_all](#notify_all) или до истечения интервала времени *Rel_time* . Он может также ложно активироваться.
 
@@ -209,7 +209,7 @@ bool wait_until(
 *Abs_time*\
 Объект [chrono::time_point](../standard-library/time-point-class.md).
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -218,7 +218,7 @@ bool wait_until(
 
 Методы, возвращающие, **`bool`** возвращают значение " *пред*".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до оповещения объекта `condition_variable` путем вызова [notify_one](#notify_one) или [notify_all](#notify_all)`Abs_time`. Он может также ложно активироваться.
 

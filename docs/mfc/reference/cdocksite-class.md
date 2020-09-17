@@ -152,7 +152,7 @@ class CDockSite: public CBasePane
 |[CDockSite::ShowRow](#showrow)||
 |[CDockSite::SwapRows](#swaprows)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Платформа создает `CDockSite` объекты автоматически при [вызове CFrameWndEx::EnableDocking](../../mfc/reference/cframewndex-class.md#enabledocking). Окна сайта закрепления располагаются на границе области клиента в главном окне фрейма.
 
@@ -192,7 +192,7 @@ CDockingPanesRow* AddRow(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteadjustdockinglayout"></a><a name="adjustdockinglayout"></a>CdockSite::AdjustDockingLayout
 
@@ -200,7 +200,7 @@ CDockingPanesRow* AddRow(
 virtual void AdjustDockingLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteadjustlayout"></a><a name="adjustlayout"></a>CdockSite:AdjustLayout
 
@@ -208,7 +208,7 @@ virtual void AdjustDockingLayout();
 virtual void AdjustLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitealigndocksite"></a><a name="aligndocksite"></a>CDockSite::AlignDockSite
 
@@ -227,7 +227,7 @@ void AlignDockSite(
 
 (в) *bMoveImmediately*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitecalcfixedlayout"></a><a name="calcfixedlayout"></a>CdockSite::CalcFixedLayout
 
@@ -245,7 +245,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitecanacceptpane"></a><a name="canacceptpane"></a>CDockSite::CanAcceptPane
 
@@ -259,7 +259,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitecreateex"></a><a name="createex"></a>CDockSite::CreateEx
 
@@ -289,7 +289,7 @@ virtual BOOL CreateEx(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitecreaterow"></a><a name="createrow"></a>CDockSite::CreateRow
 
@@ -310,7 +310,7 @@ virtual CDockingPanesRow* CreateRow(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitedockpane"></a><a name="dockpane"></a>CDockSite::DockPane
 
@@ -329,7 +329,7 @@ virtual void DockPane(
 
 (в) *lpRect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitedockpaneleftof"></a><a name="dockpaneleftof"></a>CdockSite::DockPaneLeftOf
 
@@ -353,7 +353,7 @@ virtual BOOL DockPaneLeftOf(
 
 TRUE, если панель пристыкована успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitedoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CDockSite::DoesAllowDynInsertBefore
 
@@ -363,7 +363,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitefindpanebyid"></a><a name="findpanebyid"></a>CdockSite::FindPaneByID
 
@@ -382,7 +382,7 @@ CPane* FindPaneByID(UINT nID);
 
 Указатель на панель с указанным идентификатором команды или NULL, если панель не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitefindrowindex"></a><a name="findrowindex"></a>Кдоксайт::FindRowIndex
 
@@ -396,7 +396,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitefixupvirtualrects"></a><a name="fixupvirtualrects"></a>CDockSite::FixupVirtualRects
 
@@ -404,7 +404,7 @@ int FindRowIndex(CDockingPanesRow* pRow);
 virtual void FixupVirtualRects();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitegetdocksiteid"></a><a name="getdocksiteid"></a>CDockSite:GetDockSiteID
 
@@ -414,7 +414,7 @@ virtual UINT GetDockSiteID() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitegetdocksiterowslist"></a><a name="getdocksiterowslist"></a>CDockSite::GetDockSiteRowsList
 
@@ -424,7 +424,7 @@ const CObList& GetDockSiteRowsList() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitegetpanelist"></a><a name="getpanelist"></a>CDockSite:GetPaneList
 
@@ -446,7 +446,7 @@ virtual BOOL IsAccessibilityCompatible();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteisdragmode"></a><a name="isdragmode"></a>Кдоксит::Исдрагмой
 
@@ -456,7 +456,7 @@ virtual BOOL IsDragMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteislastrow"></a><a name="islastrow"></a>Кдоксит::IsLastRow
 
@@ -470,7 +470,7 @@ bool IsLastRow(CDockingPanesRow* pRow) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteisrectwithindocksite"></a><a name="isrectwithindocksite"></a>CDockSite::IsRecinDockSite
 
@@ -488,7 +488,7 @@ BOOL IsRectWithinDockSite(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteisresizable"></a><a name="isresizable"></a>CDockSite::Изумного
 
@@ -498,7 +498,7 @@ virtual BOOL IsResizable() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitemovepane"></a><a name="movepane"></a>CDockSite:MovePane
 
@@ -519,7 +519,7 @@ virtual BOOL MovePane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteoninsertrow"></a><a name="oninsertrow"></a>Кдоксит::НаИнстерроу
 
@@ -531,7 +531,7 @@ virtual void OnInsertRow(POSITION pos);
 
 (в) *pos*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteonremoverow"></a><a name="onremoverow"></a>Кдоксит::ОнРумероу
 
@@ -547,7 +547,7 @@ virtual void OnRemoveRow(
 
 (в) *bByShow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteonresizerow"></a><a name="onresizerow"></a>Cdocksite::OnResizerow
 
@@ -565,7 +565,7 @@ virtual int OnResizeRow(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteonsizeparent"></a><a name="onsizeparent"></a>Cdocksite:OnSizeParent
 
@@ -587,7 +587,7 @@ virtual void OnSizeParent(
 
 (в) *nOffset*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteonsetwindowpos"></a><a name="onsetwindowpos"></a>Cdocksite::OnsetWindowPos
 
@@ -608,7 +608,7 @@ virtual BOOL OnSetWindowPos(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteonshowrow"></a><a name="onshowrow"></a>Кдоксит::OnShowrow
 
@@ -624,7 +624,7 @@ virtual void OnShowRow(
 
 (в) *bShow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitepanefrompoint"></a><a name="panefrompoint"></a>CDockSite::PaneFromPoint
 
@@ -643,7 +643,7 @@ virtual CPane* PaneFromPoint(CPoint pt);
 
 Указатель на панель, расположенную в указанной точке или NULL, если в указанной точке не было стекол.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiterectsidefrompoint"></a><a name="rectsidefrompoint"></a>CDockSite::RectSideFromPoint
 
@@ -661,7 +661,7 @@ static int __stdcall RectSideFromPoint(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteremovepane"></a><a name="removepane"></a>CDockSite::RemovePane
 
@@ -677,7 +677,7 @@ virtual void RemovePane(
 
 (в) *докМетод*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteremoverow"></a><a name="removerow"></a>CDockSite::RemoveRow
 
@@ -689,7 +689,7 @@ void RemoveRow(CDockingPanesRow* pRow);
 
 (в) *pRow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksitereplacepane"></a><a name="replacepane"></a>CDockSite::ReplacePane
 
@@ -707,7 +707,7 @@ BOOL ReplacePane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiterepositionpanes"></a><a name="repositionpanes"></a>CdockSite:RepositionPanes
 
@@ -719,7 +719,7 @@ virtual void RepositionPanes(CRect& rectNewClientArea);
 
 (в) *rectNewClientArea*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteresizedocksite"></a><a name="resizedocksite"></a>Cdocksite:Resizedocksite
 
@@ -735,7 +735,7 @@ void ResizeDockSite(
 
 (в) *nNewHeight*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteresizerow"></a><a name="resizerow"></a>Кдоксит::Resizerow
 
@@ -756,7 +756,7 @@ int ResizeRow(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteshowpane"></a><a name="showpane"></a>CDockSite:ShowPane
 
@@ -788,7 +788,7 @@ virtual BOOL ShowPane(
 
 ПРАВДА, если панель была показана или скрыта успешно. FALSE, если указанное стекло не принадлежит этому сайту дока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов иметод, чтобы показать или скрыть пристыкованные стекла. Как правило, вам не `CDockSite::ShowPane` нужно звонить напрямую, потому что он вызывается окном родительской рамы или базовым стеклом.
 
@@ -809,7 +809,7 @@ void ShowRow(
 
 (в) *bAdjustLayout*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocksiteswaprows"></a><a name="swaprows"></a>CDockSite:SwapRows
 
@@ -825,7 +825,7 @@ void SwapRows(
 
 (в) *pSecondRow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

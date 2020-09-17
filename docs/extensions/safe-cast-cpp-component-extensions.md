@@ -48,7 +48,7 @@ ms.locfileid: "87225128"
 *expression*<br/>
 Выражение, которое оценивается в дескрипторе ссылки или типа значения, типе значения или отслеживаемой ссылке на ссылку или тип значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **safe_cast** создает исключение, `InvalidCastException` если не может преобразовать *выражение* в тип, указанный параметром *Type-ID*. Для перехвата `InvalidCastException` укажите параметр компилятора [/EH (модель обработки исключений)](../build/reference/eh-exception-handling-model.md) и используйте инструкцию **try/catch** .
 
@@ -108,7 +108,7 @@ Caught expected exception: InvalidCastException
 *expression*<br/>
 Выражение, которое оценивается в дескрипторе ссылки или типа значения, типе значения или отслеживаемой ссылке на ссылку или тип значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выражение `safe_cast<` *типа Type-ID* `>(` *expression* `)` преобразует *выражение* операнда в объект типа *Type-ID*.
 

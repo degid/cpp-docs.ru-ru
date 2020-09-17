@@ -29,14 +29,14 @@ class CMFCDisableMenuAnimation
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCDisableMenuAnimation::CMFCDisableMenuAnimation`|Формирует объект `CMFCDisableMenuAnimation`.|
 |`CMFCDisableMenuAnimation::~CMFCDisableMenuAnimation`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкдисаблеменуаниматион:: RESTORE](#restore)|Восстанавливает предыдущую анимацию, используемую платформой для отображения всплывающего меню.|
 
@@ -46,7 +46,7 @@ class CMFCDisableMenuAnimation
 |-|-|
 |`CMFCDisableMenuAnimation::m_animType`|Сохраняет предыдущий тип анимации всплывающего меню.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот вспомогательный класс, чтобы временно отключить анимацию всплывающего меню (например, при обработке команд мыши или клавиатуры).
 
@@ -66,7 +66,7 @@ class CMFCDisableMenuAnimation
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афкспопупмену. h
+**Заголовок:** афкспопупмену.h
 
 ## <a name="cmfcdisablemenuanimationrestore"></a><a name="restore"></a> Кмфкдисаблеменуаниматион:: RESTORE
 
@@ -76,7 +76,7 @@ class CMFCDisableMenuAnimation
 void Restore ();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается `CMFCDisableMenuAnimation` деструктором для восстановления предыдущей анимации, используемой платформой для отображения всплывающего меню.
 

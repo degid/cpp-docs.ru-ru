@@ -42,7 +42,7 @@ interface_access interface struct name : inherit_access base_interface {};
 *base_interface*<br/>
 (Необязательно) Базовый интерфейс для *имени* интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **interface struct** — это эквивалент **interface class**.
 
@@ -66,7 +66,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 (Отсутствуют комментарии для этой возможности языка, которая применяется только в среде выполнения Windows).
 
@@ -76,7 +76,7 @@ interface_access interface struct name : inherit_access base_interface {};
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 (Отсутствуют комментарии для этой возможности языка, которая применяется только в среде CLR).
 

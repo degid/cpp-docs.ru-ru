@@ -26,7 +26,7 @@ ms.locfileid: "88845046"
 [get_id](#get_id)\
 [sleep_for](#sleep_for)\
 [sleep_until](#sleep_until)\
-[позиции](#swap)\
+[swap](#swap)\
 [yield](#yield)
 
 ## <a name="get_id"></a><a name="get_id"></a> get_id
@@ -56,7 +56,7 @@ inline void sleep_for(const chrono::duration<Rep, Period>& Rel_time);
 *Rel_time*\
 Объект [duration](../standard-library/duration-class.md), задающий интервал времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция блокирует вызывающий поток в течение как минимум времени, заданного *Rel_time*. Эта функция не вызывает исключений.
 
@@ -76,11 +76,11 @@ void sleep_until(const xtime *Abs_time);
 *Abs_time*\
 Представляет момент времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не вызывает исключений.
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Меняет местами состояния двух объектов `thread`.
 
@@ -93,10 +93,10 @@ void swap(thread& Left, thread& Right) noexcept;
 *Слева*\
 Левый объект `thread`.
 
-*Правильно*\
+*right*\
 Правой объект `thread`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция вызывает `Left.swap(Right)`.
 

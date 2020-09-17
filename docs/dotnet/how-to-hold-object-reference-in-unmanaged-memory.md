@@ -17,7 +17,7 @@ ms.locfileid: "79544955"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Практическое руководство. Хранение ссылки на объект в неуправляемой памяти
 
-Можно использовать gcroot. h, который заключает в оболочку <xref:System.Runtime.InteropServices.GCHandle>для хранения ссылки на объект CLR в неуправляемой памяти. Кроме того, можно использовать `GCHandle` напрямую.
+Можно использовать gcroot.h, который заключает в оболочку <xref:System.Runtime.InteropServices.GCHandle>для хранения ссылки на объект CLR в неуправляемой памяти. Кроме того, можно использовать `GCHandle` напрямую.
 
 ## <a name="example"></a>Пример
 

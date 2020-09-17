@@ -41,7 +41,7 @@ class COleUpdateDialog : public COleLinksDialog
 |----------|-----------------|
 |[ColeUpdateДиалог::DoModal](#domodal)|Отображает диалоговую коробку **Edit Links** в режиме обновления.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о OLE конкретных диалоговых коробок, [см.](../../mfc/dialog-boxes-in-ole.md)
 
@@ -93,7 +93,7 @@ explicit COleUpdateDialog(
 *pParentWnd*<br/>
 Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов будет установлено на основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция строит `COleUpdateDialog` только объект. Для отображения диалогового окна позвоните [в DoModal](../../mfc/reference/colelinksdialog-class.md#domodal). Этот класс следует использовать, а не `COleLinksDialog` когда требуется обновлять только существующие связанные или встроенные элементы.
 
@@ -115,7 +115,7 @@ virtual INT_PTR DoModal();
 
 - IDABORT, если произошла ошибка. Если IDABORT возвращается, позвоните в функцию [COleDialog::GetLastError,](../../mfc/reference/coledialog-class.md#getlasterror) чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIEditLinks](/windows/win32/api/oledlg/nf-oledlg-oleuieditlinksw) можно узнать в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все ссылки и/или встраивания обновляются, если пользователь не выберет кнопку «Отмена».
 

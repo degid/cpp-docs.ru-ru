@@ -45,11 +45,11 @@ class WeakReference
 |[WeakReference::operator=](#operator-assign)|Присваивает новое значение объекту WeakReference.|
 |[WeakReference::operator BoolType](#booltype)|Реализует шаблон безопасного логического типа.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс WeakReference сам не является классом ссылок и поэтому не наследуется от Platform::Object^ и не может использоваться в сигнатуре открытого метода.
 
-## <a name="weakreferenceoperator"></a><a name="operator-assign"></a>WeakReference:: operator =
+## <a name="weakreferenceoperator"></a><a name="operator-assign"></a>WeakReference::operator=
 
 Присваивает значение WeakReference.
 
@@ -62,11 +62,11 @@ WeakReference& operator=(WeakReference&& otherArg);
 WeakReference& operator=(const volatile ::Platform::Object^ const otherArg);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Последняя перегрузка в списке выше позволяет назначить класс ссылок переменной WeakReference. В этом случае класс ссылки является производным от класса [Platform:: Object](../cppcx/platform-object-class.md)^. Исходный тип восстанавливается позднее путем указания его в качестве аргумента для параметра типа в функции члена [WeakReference:: Resolve \<T> ](#resolve) .
 
-## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a>WeakReference:: operator BoolType
+## <a name="weakreferenceoperator-booltype"></a><a name="booltype"></a>WeakReference::operator BoolType
 
 Реализует безопасный шаблон bool для класса WeakReference. Не предназначен для явного вызова в коде.
 

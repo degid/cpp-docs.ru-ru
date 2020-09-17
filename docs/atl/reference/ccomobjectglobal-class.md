@@ -58,7 +58,7 @@ class CComObjectGlobal : public Base
 |----------|-----------------|
 |[CComObjectGlobal::m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит HRESULT, возвращенный `CComObjectGlobal` во время строительства объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComObjectGlobal`управляет подсчетом ссылок на `Base` модуль, содержащий объект. `CComObjectGlobal`гарантирует, что ваш объект не будет удален до тех пор, пока модуль не будет выпущен. Объект будет удален только тогда, когда подсчет ссылок на весь модуль достигнет нуля.
 
@@ -86,7 +86,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 Значение, которое может быть полезно для диагностики и тестирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию, `AddRef` звонки `_Module::Lock`, где `_Module` глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или класс, полученный от него.
 
@@ -98,7 +98,7 @@ STDMETHOD_(ULONG, AddRef)();
 CComObjectGlobal(void* = NULL));
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы не получили свой базовый класс от [CComObjectRoot,](../../atl/reference/ccomobjectroot-class.md)вы должны предоставить свой собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
 
@@ -110,7 +110,7 @@ CComObjectGlobal(void* = NULL));
 CComObjectGlobal();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы и вызывает [FinalRelease](ccomobjectrootex-class.md#finalrelease).
 
@@ -142,7 +142,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `QueryInterface` обрабатывает интерфейсы только в таблице сопоставлений COM.
 
@@ -158,7 +158,7 @@ STDMETHOD_(ULONG, Release)();
 
 В сборках отладки возвращается значение, `Release` которое может быть полезно для диагностики и тестирования. В неотлибуговых `Release` сборках всегда возвращается 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию, `Release` звонки `_Module::Unlock`, где `_Module` глобальный экземпляр [CComModule](../../atl/reference/ccommodule-class.md) или класс, полученный от него.
 

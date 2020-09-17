@@ -44,7 +44,7 @@ ms.locfileid: "74304299"
 
 ## <a name="to-create-a-solid-color-brush-and-a-linear-gradient-brush"></a>Создание кисти с сплошным цветом и кисти линейного градиента
 
-1. В **Обозреватель решений**в проекте **MFCD2DWalkthrough** в папке **файлы заголовков откройте файл** MFCD2DWalkthroughView. h. Добавьте следующий код в класс `CMFCD2DWalkthroughView`, чтобы создать три переменные данных:
+1. В **Обозреватель решений**в проекте **MFCD2DWalkthrough** в папке **файлы заголовков откройте файл** MFCD2DWalkthroughView.h. Добавьте следующий код в класс `CMFCD2DWalkthroughView`, чтобы создать три переменные данных:
 
    ```cpp
    CD2DTextFormat* m_pTextFormat;

@@ -40,7 +40,7 @@ class SyncLockT;
 *синктраитс*<br/>
 Тип, который может стать владельцем ресурса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Представляет тип, который может принимать монопольное или совместное владение ресурсом.
 
@@ -80,7 +80,7 @@ name                             | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Microsoft:: WRL:: оболочки::D состояния
 
@@ -92,7 +92,7 @@ name                             | Описание
 ~SyncLockT();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выполняет деинициализацию экземпляра `SyncLockT` класса.
 
@@ -110,7 +110,7 @@ bool IsLocked() const;
 
 **`true`**`SyncLockT`значение, если объект заблокирован; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает `SyncLockT` , владеет ли текущий объект ресурсом, т `SyncLockT` . е. объект *заблокирован*.
 
@@ -122,7 +122,7 @@ bool IsLocked() const;
 typename SyncTraits::Type sync_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит базовый ресурс, представленный `SyncLockT` классом.
 
@@ -148,7 +148,7 @@ explicit SyncLockT(
 *nosync*<br/>
 Ссылка на другой `SyncLockWithStatusT` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует новый экземпляр класса `SyncLockT`.
 
@@ -162,6 +162,6 @@ explicit SyncLockT(
 void Unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает управление ресурсом, удерживаемым текущим `SyncLockT` объектом, если он есть.

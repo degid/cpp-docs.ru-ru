@@ -65,7 +65,7 @@ class CInterpolatorBase : public CUIAnimationInterpolatorBase<CInterpolatorBase>
 |[CInterpolatorBase::SetDuration](#setduration)|Устанавливает продолжительность интерполятора (Переопределения `CUIAnimationInterpolatorBase::SetDuration`.)|
 |[CInterpolatorBase::SetInitialValueAndVelocity](#setinitialvalueandvelocity)|Устанавливает исходное значение и скорость интерполятора. (Переопределяет `CUIAnimationInterpolatorBase::SetInitialValueAndVelocity`.)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот обработчик создается и передается `IUIAnimationTransitionFactory::CreateTransition` при создании `CCustomTransition` объекта в рамках `CAnimationController::AnimateGroup`процесса инициализации анимации (запущенного). Обычно вам не нужно использовать этот класс напрямую, он `CCustomInterpolator`просто разогнат все события на `CCustomTransition`-производный класс, указатель которого передается конструктору .
 

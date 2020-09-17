@@ -25,7 +25,7 @@ ms.locfileid: "68240730"
 
 Дополнительные сведения см. в разделе [Навигация по файловой системе (C++)](../standard-library/file-system-navigation.md).
 
-## <a name="operator"></a>operator==
+## <a name="operator"></a> operator==
 
 ```cpp
 bool operator==(const path& left, const path& right) noexcept;
@@ -33,7 +33,7 @@ bool operator==(const path& left, const path& right) noexcept;
 
 Функция возвращает left.native() == right.native().
 
-## <a name="operator"></a>operator!=
+## <a name="operator"></a> operator!=
 
 ```cpp
 bool operator!=(const path& left, const path& right) noexcept;
@@ -41,7 +41,7 @@ bool operator!=(const path& left, const path& right) noexcept;
 
 Функция возвращает !(left == right).
 
-## <a name="operator"></a>operator<
+## <a name="operator"></a> operator<
 
 ```cpp
 bool operator<(const path& left, const path& right) noexcept;
@@ -49,7 +49,7 @@ bool operator<(const path& left, const path& right) noexcept;
 
 Функция возвращает left.native() < right.native().
 
-## <a name="operator"></a>operator<=
+## <a name="operator"></a> operator<=
 
 ```cpp
 bool operator<=(const path& left, const path& right) noexcept;
@@ -57,7 +57,7 @@ bool operator<=(const path& left, const path& right) noexcept;
 
 Функция возвращает !(right \< left).
 
-## <a name="operator"></a>operator>
+## <a name="operator"></a> operator>
 
 ```cpp
 bool operator>(const path& left, const path& right) noexcept;
@@ -65,7 +65,7 @@ bool operator>(const path& left, const path& right) noexcept;
 
 Функция возвращает right \< left.
 
-## <a name="operator"></a>operator>=
+## <a name="operator"></a> operator>=
 
 ```cpp
 bool operator>=(const path& left, const path& right) noexcept;
@@ -73,7 +73,7 @@ bool operator>=(const path& left, const path& right) noexcept;
 
 Функция возвращает !(left < right).
 
-## <a name="operator"></a>operator/
+## <a name="operator"></a> operator/
 
 ```cpp
 path operator/(const path& left, const path& right);
@@ -87,7 +87,7 @@ path ans = left;
 return (ans /= right);
 ```
 
-## <a name="operator"></a>operator<<
+## <a name="operator"></a> operator<<
 
 ```cpp
 template <class Elem, class Traits>
@@ -96,7 +96,7 @@ basic_ostream<Elem, Traits>& operator<<(basic_ostream<Elem, Traits>& os, const p
 
 Функция возвращает << pval.string\<Elem, Traits>().
 
-## <a name="operator"></a>operator>>
+## <a name="operator"></a> operator>>
 
 ```cpp
 template <class Elem, class Traits>

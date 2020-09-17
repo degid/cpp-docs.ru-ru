@@ -109,7 +109,7 @@ ms.locfileid: "64857546"
 |[Предупреждение компилятора (уровень 3) C4281](../../error-messages/compiler-warnings/compiler-warning-level-3-c4281.md)|произошла рекурсия «operator ->» через тип "*тип1*"|
 |[Предупреждение компилятора (уровень 3) C4282](../../error-messages/compiler-warnings/compiler-warning-level-3-c4282.md)|затем через тип "*тип2*"|
 |[Предупреждение компилятора (уровень 3) C4283](../../error-messages/compiler-warnings/compiler-warning-level-3-c4283.md)|и через тип "*typeN*"|
-|[Предупреждение компилятора (уровень 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|возвращаемый тип для "*идентификатор*:: operator ->" является рекурсивным, если используется инфиксная запись|
+|[Предупреждение компилятора (уровень 2) C4285](../../error-messages/compiler-warnings/compiler-warning-level-2-c4285.md)|возвращаемый тип для "*идентификатор*::operator ->" является рекурсивным, если используется инфиксная запись|
 |[Предупреждение компилятора (уровень 1) C4286](../../error-messages/compiler-warnings/compiler-warning-level-1-c4286.md)|"*производный_тип*": перехвачено базовым классом ("*base_type*") в строке "*номер_строки*"|
 |[Предупреждение компилятора (уровень 3) C4287](../../error-messages/compiler-warnings/compiler-warning-level-3-c4287.md)|"*оператор*": несовпадение константы без знака или отрицательной|
 |[Предупреждение компилятора (уровень 1) C4288](../../error-messages/compiler-warnings/compiler-warning-level-1-c4288.md)|использовано нестандартное расширение: "*переменной*": переменная цикла, объявленная в цикле for используется снаружи цикла; это противоречит объявлению во внешней области|

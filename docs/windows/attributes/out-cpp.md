@@ -23,7 +23,7 @@ ms.locfileid: "88837103"
 [out]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **out** языка C++ имеет ту же функциональность, как и атрибут [out](/windows/win32/Midl/out-idl) языка MIDL.
 

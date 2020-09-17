@@ -68,7 +68,7 @@ ms.locfileid: "88843304"
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сначала необходимо вызвать [релеасеакцессорс](../../data/oledb/caccessorbase-releaseaccessors.md) .
 
@@ -143,7 +143,7 @@ HRESULT ReleaseAccessors(IUnknown* pUnk);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается из [CAccessorRowset:: Close](../../data/oledb/caccessorrowset-close.md).
 

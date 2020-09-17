@@ -35,7 +35,7 @@ class rts_alloc
 *Мбайта*\
 Тип экземпляров кэша, содержащихся в массиве. Это может быть [`cache_chunklist`](../standard-library/cache-chunklist-class.md) , [`cache_freelist`](../standard-library/cache-freelist-class.md) или [`cache_suballoc`](../standard-library/cache-suballoc-class.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот шаблон класса содержит несколько экземпляров распределителя блоков и определяет, какой экземпляр следует использовать для выделения или освобождения в среде выполнения, а не во время компиляции. Он используется с компиляторами, которые не могут скомпилировать повторную привязку.
 
@@ -63,14 +63,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Число выделяемых элементов в массиве.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает `caches[_IDX].allocate(count)` , где индекс `_IDX` определяется запрошенным *количеством*размеров блоков, или, если *Count* слишком велик, возвращается значение `operator new(count)` . `cache`, представляющий объект кэша.
 
@@ -84,13 +84,13 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на первый объект, который должен быть освобожден из хранилища.
 
-*расчета*\
+*count*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член вызывает `caches[_IDX].deallocate(ptr, count)` , где индекс `_IDX` определяется запрошенным *количеством*размеров блока, или, если *Count* слишком велик, возвращается значение `operator delete(ptr)` .
 
@@ -110,7 +110,7 @@ bool equals(const sync<_Cache>& _Other) const;
 *_Other*\
 Объект кэша для сравнения на равенство.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **`true`** значение, если результат `caches[0].equals(other.caches[0])` ; в противном случае — **`false`** . `caches` представляет массив объектов кэша.
 

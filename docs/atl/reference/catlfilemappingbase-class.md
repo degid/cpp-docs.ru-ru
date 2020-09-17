@@ -62,9 +62,9 @@ class CAtlFileMappingBase
 
 |Имя|Описание|
 |----------|-----------------|
-|[Катлфилемаппингбасе:: operator =](#operator_eq)|Задает текущий объект сопоставления файлов для другого объекта сопоставления файлов.|
+|[Катлфилемаппингбасе::operator=](#operator_eq)|Задает текущий объект сопоставления файлов для другого объекта сопоставления файлов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Сопоставление файлов — это привязка содержимого файла к части виртуального адресного пространства процесса. Этот класс предоставляет методы для создания объектов сопоставления файлов, которые позволяют программам легко получать доступ к данным и предоставлять к ним общий доступ.
 
@@ -72,7 +72,7 @@ class CAtlFileMappingBase
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлфиле. h
+**Заголовок:** атлфиле.h
 
 ## <a name="catlfilemappingbasecatlfilemappingbase"></a><a name="catlfilemappingbase"></a>Катлфилемаппингбасе:: Катлфилемаппингбасе
 
@@ -88,7 +88,7 @@ CAtlFileMappingBase() throw();
 *Orig*<br/>
 Исходный объект сопоставления файлов для копирования для создания нового объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает новый объект сопоставления файлов, при необходимости используя существующий объект. По-прежнему необходимо вызвать [катлфилемаппингбасе:: файл сопоставления](#mapfile) , чтобы открыть или создать объект сопоставления файлов для определенного файла.
 
@@ -104,7 +104,7 @@ CAtlFileMappingBase() throw();
 ~CAtlFileMappingBase() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все ресурсы, выделенные классом, и вызывает метод [катлфилемаппингбасе::](#unmap) uncall.
 
@@ -199,7 +199,7 @@ HRESULT MapFile(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После того как объект сопоставления файлов создан, размер файла не должен превышать размер объекта сопоставления файлов; Если это так, не все содержимое файла будет доступно для общего доступа. Дополнительные сведения см. в разделе [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga) и [MapViewOfFileEx](/windows/win32/api/memoryapi/nf-memoryapi-mapviewoffileex) в Windows SDK.
 
@@ -245,7 +245,7 @@ HRESULT MapSharedMem(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `MapShareMem`позволяет совместно использовать существующий объект сопоставления файлов, созданный [CreateFileMapping](/windows/win32/api/winbase/nf-winbase-createfilemappinga), между процессами.
 
@@ -279,11 +279,11 @@ HRESULT OpenMapping(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках возникнет ошибка утверждения, если входные параметры являются недопустимыми.
 
-## <a name="catlfilemappingbaseoperator-"></a><a name="operator_eq"></a>Катлфилемаппингбасе:: operator =
+## <a name="catlfilemappingbaseoperator-"></a><a name="operator_eq"></a>Катлфилемаппингбасе::operator=
 
 Задает текущий объект сопоставления файлов для другого объекта сопоставления файлов.
 
@@ -312,7 +312,7 @@ HRESULT Unmap() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [UnmapViewOfFile](/windows/win32/api/memoryapi/nf-memoryapi-unmapviewoffile) в Windows SDK.
 

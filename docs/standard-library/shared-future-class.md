@@ -36,7 +36,7 @@ template <class Ty>
 class shared_future;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Не вызывайте никакие методы, кроме `valid`, `operator=`, и деструктор в объекте `shared_future`, который является *пустым*.
 
@@ -52,7 +52,7 @@ class shared_future;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[get](#get)|Получает результат, который хранится в *связанном асинхронном состоянии*.|
 |[допустимым](#valid)|Указывает, является ли объект не пустым.|
@@ -64,7 +64,7 @@ class shared_future;
 
 |Имя|Описание|
 |----------|-----------------|
-|[shared_future:: operator =](#op_eq)|Назначает новое связанное асинхронное состояние.|
+|[shared_future::operator=](#op_eq)|Назначает новое связанное асинхронное состояние.|
 
 ## <a name="requirements"></a>Требования
 
@@ -84,7 +84,7 @@ Ty& get() const;
 void get() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если результат — исключение, метод создает его повторно. В противном случае результат будет возвращен.
 
@@ -94,7 +94,7 @@ void get() const;
 
 Так как для специализации не существует сохраненного значения `shared_future<void>` , метод возвращает **`void`** .
 
-## <a name="shared_futureoperator"></a><a name="op_eq"></a>shared_future:: operator =
+## <a name="shared_futureoperator"></a><a name="op_eq"></a>shared_future::operator=
 
 Передает *связанное асинхронное состояние* из указанного объекта.
 
@@ -105,14 +105,14 @@ shared_future& operator=(const shared_future& Right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект `shared_future`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для первого оператора *право* больше не имеет связанного асинхронного состояния после операции.
 
@@ -131,10 +131,10 @@ shared_future(const shared_future& Right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Класс [future](../standard-library/future-class.md) или объект `shared_future`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор конструирует `shared_future` объект, который не имеет *связанного асинхронного состояния*.
 
@@ -162,7 +162,7 @@ bool valid() noexcept;
 void wait() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Связанное асинхронное состояние имеет значение "ready", только если его асинхронный поставщик сохранил возвращаемое значение или исключение.
 
@@ -185,7 +185,7 @@ future_status wait_for(
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Связанное асинхронное состояние *Готово* , только если его асинхронный поставщик сохранил возвращаемое значение или не сохранил исключение.
 
@@ -208,7 +208,7 @@ future_status wait_until(
 
 Состояние [future_status](../standard-library/future-enums.md#future_status), которое указывает причину возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Связанное асинхронное состояние имеет значение "ready", только если его асинхронный поставщик сохранил возвращаемое значение или исключение.
 

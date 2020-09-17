@@ -23,7 +23,7 @@ ms.locfileid: "87217627"
 class recursive_directory_iterator;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В шаблоне класса хранятся:
 
@@ -58,23 +58,23 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 
 |Функция-член|Описание|
 |-|-|
-|[Длина](#depth)|Возвращает `mystack.size() - 1` , поэтому `pval` имеет нулевую глубину.|
+|[depth](#depth)|Возвращает `mystack.size() - 1` , поэтому `pval` имеет нулевую глубину.|
 |[disable_recursion_pending](#disable_recursion_pending)|Сохраняет **`true`** в `no_push` .|
 |[increment](#increment)|Переходит к следующему имени файла в последовательности.|
 |[options](#options)|Возвращает `myoptions`.|
-|[Рор](#pop)|Возвращает следующий объект.|
+|[pор](#pop)|Возвращает следующий объект.|
 |[recursion_pending](#recursion_pending)|Возвращает `!no_push`.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[operator! =](#op_neq)|Возвращает `!(*this == right)`.|
-|[Оператор =](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
-|[Оператор = =](#op_eq)|Возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.|
-|[станции](#op_multiply)|Возвращает `myentry`.|
-|[Оператор->](#op_cast)|Возвращает `&**this`.|
-|[operator + +](#op_increment)|Увеличивает значение `recursive_directory_iterator` .|
+|[operator!=](#op_neq)|Возвращает `!(*this == right)`.|
+|[operator=](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
+|[operator==](#op_eq)|Возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.|
+|[operator*](#op_multiply)|Возвращает `myentry`.|
+|[operator->](#op_cast)|Возвращает `&**this`.|
+|[operator++](#op_increment)|Увеличивает значение `recursive_directory_iterator` .|
 
 ## <a name="requirements"></a>Требования
 
@@ -82,7 +82,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 
 **Пространство имен:** std::tr2::sys
 
-## <a name="recursive_directory_iteratordepth"></a><a name="depth"></a>recursive_directory_iterator::d ЕПС
+## <a name="recursive_directory_iteratordepth"></a><a name="depth"></a>recursive_directory_iterator::depth
 
 Возвращает `mystack.size() - 1` , поэтому `pval` имеет нулевую глубину.
 
@@ -90,7 +90,7 @@ for (recursive_directory_iterator next(path("abc")), end; next != end; ++next)
 int depth() const;
 ```
 
-## <a name="recursive_directory_iteratordisable_recursion_pending"></a><a name="disable_recursion_pending"></a>recursive_directory_iterator::d isable_recursion_pending
+## <a name="recursive_directory_iteratordisable_recursion_pending"></a><a name="disable_recursion_pending"></a>recursive_directory_iterator::disable_recursion_pending
 
 Сохраняет **`true`** в `no_push` .
 
@@ -98,7 +98,7 @@ int depth() const;
 void disable_recursion_pending();
 ```
 
-## <a name="recursive_directory_iteratorincrement"></a><a name="increment"></a>recursive_directory_iterator:: Increment
+## <a name="recursive_directory_iteratorincrement"></a><a name="increment"></a>recursive_directory_iterator::Increment
 
 Переходит к следующему имени файла в последовательности.
 
@@ -111,11 +111,11 @@ recursive_directory_iterator& increment(error_code& ec) noexcept;
 *контроллер*\
 Указанный код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция пытается перейти к имени следующего файла во вложенной последовательности. В случае успеха файл сохраняется в; в `myentry` противном случае — итератор конца последовательности.
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_neq"></a>recursive_directory_iterator:: operator! =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_neq"></a>recursive_directory_iterator::operator!=
 
 Возвращает `!(*this == right)`.
 
@@ -125,10 +125,10 @@ bool operator!=(const recursive_directory_iterator& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) для сравнения.
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_as"></a>recursive_directory_iterator:: operator =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_as"></a>recursive_directory_iterator::operator=
 
 Операторы-члены присваивания по умолчанию работают корректно.
 
@@ -142,7 +142,7 @@ recursive_directory_iterator& operator=(recursive_directory_iterator&&) noexcept
 *recursive_directory_iterator*\
 [Recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) , копируемый в `recursive_directory_iterator` .
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_eq"></a>recursive_directory_iterator:: operator = =
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_eq"></a>recursive_directory_iterator::operator==
 
 Возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.
 
@@ -152,10 +152,10 @@ bool operator==(const recursive_directory_iterator& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Recursive_directory_iterator](../standard-library/recursive-directory-iterator-class.md) для сравнения.
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_multiply"></a>recursive_directory_iterator:: operator *
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_multiply"></a>recursive_directory_iterator::operator*
 
 Возвращает `myentry`.
 
@@ -163,7 +163,7 @@ bool operator==(const recursive_directory_iterator& right) const;
 const directory_entry& operator*() const;
 ```
 
-## <a name="recursive_directory_iteratoroperator-"></a><a name="op_cast"></a>recursive_directory_iterator:: operator — >
+## <a name="recursive_directory_iteratoroperator-"></a><a name="op_cast"></a>recursive_directory_iterator::operator->
 
 Возвращает `&**this`.
 
@@ -171,7 +171,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="recursive_directory_iteratoroperator"></a><a name="op_increment"></a>recursive_directory_iterator:: operator + +
+## <a name="recursive_directory_iteratoroperator"></a><a name="op_increment"></a>recursive_directory_iterator::operator++
 
 Увеличивает значение `recursive_directory_iterator` .
 
@@ -186,11 +186,11 @@ recursive_directory_iterator& operator++(int);
 *int*\
 Указанное приращение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция – член вызывает `increment()` , а затем возвращает **`*this`** . Вторая функция-член создает копию объекта, вызывает `increment()` , а затем возвращает копию.
 
-## <a name="recursive_directory_iteratoroptions"></a><a name="options"></a>recursive_directory_iterator:: параметры
+## <a name="recursive_directory_iteratoroptions"></a><a name="options"></a>recursive_directory_iterator::options
 
 Возвращает `myoptions`.
 
@@ -206,11 +206,11 @@ directory_options options() const;
 void pop();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `depth() == 0`Значение, если объект преобразуется в итератор конца последовательности. В противном случае функция-член завершает проверку текущего (самого глубокого) каталога и возобновляет ее на следующем нижнем уровне глубины.
 
-## <a name="recursive_directory_iteratorrecursion_pending"></a><a name="recursion_pending"></a>recursive_directory_iterator:: recursion_pending
+## <a name="recursive_directory_iteratorrecursion_pending"></a><a name="recursion_pending"></a>recursive_directory_iterator::recursion_pending
 
 Возвращает `!no_push`.
 
@@ -218,7 +218,7 @@ void pop();
 bool recursion_pending() const;
 ```
 
-## <a name="recursive_directory_iteratorrecursive_directory_iterator"></a><a name="recursive_directory_iterator"></a>recursive_directory_iterator:: recursive_directory_iterator
+## <a name="recursive_directory_iteratorrecursive_directory_iterator"></a><a name="recursive_directory_iterator"></a>recursive_directory_iterator::recursive_directory_iterator
 
 Создает документ `recursive_directory_iterator`.
 
@@ -252,7 +252,7 @@ recursive_directory_iterator(recursive_directory_iterator&&) noexcept = default;
 *recursive_directory_iterator*\
 `recursive_directory_iterator`, копией которого будет создаваемый `recursive_directory_iterator`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор создает итератор конца последовательности. Второй и третий конструкторы хранятся **`false`** в `no_push` и `directory_options::none` в, а `myoptions` затем пытаются открыть и прочитать *Pval* как каталог. В случае успеха они инициализируются `mystack` и `myentry` назначают первое имя файла, не являющегося каталогом, во вложенной последовательности. в противном случае они создают итератор конца последовательности.
 

@@ -29,12 +29,12 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомаутокритикалсектион:: Ккомаутокритикалсектион](#ccomautocriticalsection)|Конструктор.|
 |[Ккомаутокритикалсектион:: ~ Ккомаутокритикалсектион](#dtor)|Деструктор|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComAutoCriticalSection`аналогичен классу [ккомкритикалсектион](../../atl/reference/ccomcriticalsection-class.md), за исключением `CComAutoCriticalSection` автоматической инициализации объекта критической секции в конструкторе.
 
@@ -50,7 +50,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="ccomautocriticalsectionccomautocriticalsection"></a><a name="ccomautocriticalsection"></a>Ккомаутокритикалсектион:: Ккомаутокритикалсектион
 
@@ -60,7 +60,7 @@ class CComAutoCriticalSection : public CComCriticalSection
 CComAutoCriticalSection();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает функцию Win32 [инитиализекритикалсектион](/windows/win32/api/synchapi/nf-synchapi-initializecriticalsection), которая инициализирует объект критической секции.
 
@@ -72,7 +72,7 @@ CComAutoCriticalSection();
 ~CComAutoCriticalSection() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор вызывает [делетекритикалсектион](/windows/win32/api/synchapi/nf-synchapi-deletecriticalsection), который освобождает все системные ресурсы, используемые объектом критического раздела.
 

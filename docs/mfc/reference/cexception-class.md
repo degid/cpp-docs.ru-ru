@@ -33,18 +33,18 @@ class AFX_NOVTABLE CException : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CException:: CException](#cexception)|Формирует объект `CException`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CException::D удалить](#delete)|Удаляет `CException` объект.|
 |[CException:: ReportError](#reporterror)|Сообщает пользователю сообщение об ошибке в окне сообщения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Поскольку `CException` является абстрактным базовым классом, нельзя создавать `CException` объекты напрямую; необходимо создавать объекты производных классов. Если необходимо создать собственный `CException` класс, используйте один из производных классов, перечисленных выше, в качестве модели. Убедитесь, что производный класс также использует `IMPLEMENT_DYNAMIC` .
 
@@ -82,7 +82,7 @@ class AFX_NOVTABLE CException : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="cexceptioncexception"></a><a name="cexception"></a> CException:: CException
 
@@ -97,7 +97,7 @@ explicit CException(BOOL bAutoDelete);
 *b_AutoDelete*<br/>
 Укажите значение TRUE, если память для `CException` объекта была выделена в куче. Это приведет к `CException` удалению объекта при `Delete` вызове функции-члена для удаления исключения. Укажите значение FALSE, если `CException` объект находится в стеке или является глобальным объектом. В этом случае `CException` объект не будет удален при `Delete` вызове функции-члена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно вызывать этот конструктор напрямую не требуется. Функция, вызывающая исключение, должна создать экземпляр `CException` производного класса и вызвать его конструктор или использовать одну из функций Throw MFC, например [афкссровфиликсцептион](exception-processing.md#afxthrowfileexception), для создания предопределенного типа. Эта документация предоставляется только для полноты.
 
@@ -109,7 +109,7 @@ explicit CException(BOOL bAutoDelete);
 void Delete();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При удалении `CException` объекта используйте `Delete` функцию-член для удаления исключения. Не используйте **`delete`** оператор напрямую, так как `CException` объект может быть глобальным объектом или создан в стеке.
 

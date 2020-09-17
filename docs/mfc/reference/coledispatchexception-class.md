@@ -45,7 +45,7 @@ class COleDispatchException : public CException
 |[ColeDispatchИсключение::m_strSource](#m_strsource)|Приложение, генерируемое исключением.|
 |[ColeDispatchИсключение::m_wCode](#m_wcode)|`IDispatch`-специфический код ошибки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Как и другие классы `CException` исключений, полученные из базового класса, `COleDispatchException` могут использоваться с macros THROW, THROW_LAST, TRY, CATCH, AND_CATCH и END_CATCH.
 
@@ -73,7 +73,7 @@ class COleDispatchException : public CException
 DWORD m_dwHelpContext;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
 
@@ -89,7 +89,7 @@ DWORD m_dwHelpContext;
 CString m_strDescription;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
 
@@ -125,7 +125,7 @@ CString m_strSource;
 WORD m_wCode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот элемент устанавливается функцией [AfxThrowOleDispatchException,](exception-processing.md#afxthrowoledispatchexception) когда выбрасывается исключение.
 

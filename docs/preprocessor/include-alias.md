@@ -102,7 +102,7 @@ myfile.h(15) : error C2059 : syntax error
 #include "one.h"
 ```
 
-компилятор ищет файл *2. h* , а не *3. h*.
+компилятор ищет файл *2.h* , а не *3.h*.
 
 ## <a name="see-also"></a>См. также
 

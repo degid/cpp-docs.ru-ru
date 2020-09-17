@@ -52,7 +52,7 @@ void _aligned_free (
 *memblock*<br/>
 Указатель на блок памяти, возвращенный в функцию `_aligned_malloc` или `_aligned_offset_malloc`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **_aligned_free** помечено `__declspec(noalias)`, то есть гарантируется, что функция не будет изменять глобальные переменные. Дополнительные сведения см. в разделе [noalias](../../cpp/noalias.md).
 

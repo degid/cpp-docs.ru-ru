@@ -48,7 +48,7 @@ class CSocketAddr
 |[CSocketAddr::GetAddrInfo](#getaddrinfo)|Вызовите этот метод, чтобы вернуть указатель к определенному элементу в списке. `addrinfo`|
 |[CSocketAddr::GetAddrInfoList](#getaddrinfolist)|Вызовите этот метод, чтобы `addrinfo` вернуть указатель в список.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс обеспечивает агностик IP-версии для поиска сетевых адресов для использования с функциями API разъемов Windows и обертками розетки в библиотеках.
 
@@ -68,7 +68,7 @@ class CSocketAddr
 CSocketAddr();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает новый `CSocketAddr` объект и инициализирует связанный список, содержащий информацию об ответе о хосте.
 
@@ -121,7 +121,7 @@ int FindAddr(
 
 Возвращает ноль, если адрес вычисляется успешно. Возвращает ненулевой код ошибки Windows Socket при сбое. В случае успеха расчетный адрес хранится в связанном `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`списке, на который можно ссылаться с использованием и .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр имени хоста может быть в формате IPv4 или IPv6. Этот метод вызывает функцию Win32 API [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) для выполнения преобразования.
 
@@ -155,7 +155,7 @@ int FindINET4Addr(
 
 Возвращает ноль, если адрес вычисляется успешно. Возвращает ненулевой код ошибки Windows Socket при сбое. В случае успеха расчетный адрес хранится в связанном `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`списке, на который можно ссылаться с использованием и .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает функцию Win32 API [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) для выполнения преобразования.
 
@@ -189,7 +189,7 @@ int FindINET6Addr(
 
 Возвращает ноль, если адрес вычисляется успешно. Возвращает ненулевой код ошибки Windows Socket при сбое. В случае успеха расчетный адрес хранится в связанном `CSocketAddr::GetAddrInfoList` `CSocketAddr::GetAddrInfo`списке, на который можно ссылаться с использованием и .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает функцию Win32 API [getaddrinfo](/windows/win32/api/ws2tcpip/nf-ws2tcpip-getaddrinfo) для выполнения преобразования.
 

@@ -35,7 +35,7 @@ ms.locfileid: "88835198"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлснап. h
+**Заголовок:** атлснап.h
 
 ## <a name="begin_extension_snapin_nodeinfo_map"></a><a name="begin_extension_snapin_nodeinfo_map"></a> BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP
 
@@ -50,7 +50,7 @@ BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP(classname)
 *classname*<br/>
 окне Имя класса данных расширения оснастки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запустите карту расширений оснастки с помощью макроса BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP, добавьте записи для каждого типа данных расширения оснастки с помощью макроса [EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry) и завершите карту с помощью макроса [END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map) .
 
@@ -83,7 +83,7 @@ BEGIN_SNAPINTOOLBARID_MAP(_class)
 END_EXTENSION_SNAPIN_NODEINFO_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запустите карту расширений оснастки с помощью макроса [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map) , добавьте записи для каждого из типов данных оснастки расширения с помощью макроса [EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry) и завершите карту с помощью макроса END_EXTENSION_SNAPIN_NODEINFO_MAP.
 
@@ -121,7 +121,7 @@ EXTENSION_SNAPIN_DATACLASS(dataClass )
 *dataClass*<br/>
 окне Класс данных расширения оснастки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс также следует указывать в сопоставлении классов данных расширений оснастки. Запустите карту классов данных расширений оснастки с помощью макроса [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map) , добавьте записи для каждого типа данных расширения оснастки с помощью макроса [EXTENSION_SNAPIN_NODEINFO_ENTRY](#extension_snapin_nodeinfo_entry) и завершите карту с помощью макроса [END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map) .
 
@@ -142,7 +142,7 @@ EXTENSION_SNAPIN_NODEINFO_ENTRY( dataClass )
 *dataClass*<br/>
 окне Класс данных расширения оснастки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запустите карту классов данных расширений оснастки с помощью макроса [BEGIN_EXTENSION_SNAPIN_NODEINFO_MAP](#begin_extension_snapin_nodeinfo_map) , добавьте записи для каждого типа данных расширения оснастки с помощью макроса EXTENSION_SNAPIN_NODEINFO_ENTRY и завершите карту с помощью макроса [END_EXTENSION_SNAPIN_NODEINFO_MAP](#end_extension_snapin_nodeinfo_map) .
 
@@ -176,7 +176,7 @@ SNAPINTOOLBARID_ENTRY( id )
 *идентификатор*<br/>
 окне Определяет элемент управления ToolBar.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макрос [BEGIN_SNAPINTOOLBARID_MAP](#begin_snapintoolbarid_map) отмечает начало отображения идентификатора панели инструментов. конец знака отмечается [END_SNAPINTOOLBARID_MAP](#end_snapintoolbarid_map) макросом.
 

@@ -29,7 +29,7 @@ ms.locfileid: "87186962"
 > *SHIFT-выражение* `<<` *аддитивное выражение*\
 > *shift-expression* `>>` *additive-expression*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!IMPORTANT]
 > Следующие описания и примеры допустимы в Windows для архитектур x86 и x64. Реализация операторов сдвига влево и сдвига вправо в Windows для устройств ARM существенно различается. Дополнительные сведения см. в разделе "операторы сдвига" в записи блога [Hello ARM](https://devblogs.microsoft.com/cppblog/hello-arm-exploring-undefined-unspecified-and-implementation-defined-behavior-in-c/) .

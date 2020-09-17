@@ -302,9 +302,9 @@ const wchar_t* newline = LR"(hello
 goodbye)";
 ```
 
-### <a name="stdstring-literals-c14"></a>литералы std:: String (C++ 14)
+### <a name="stdstring-literals-c14"></a>литералы std::string (C++ 14)
 
-`std::string`литералы являются реализациями определяемых пользователем литералов в стандартной библиотеке (см. ниже), которые представлены как `"xyz"s` (с `s` суффиксом). Этот тип строкового литерала создает временный объект типа `std::string` , `std::wstring` , `std::u32string` или `std::u16string` , в зависимости от указанного префикса. Если префикс не используется, то создается `std::string` . `L"xyz"s`создает `std::wstring` . `u"xyz"s`создает [std:: u16string](../standard-library/string-typedefs.md#u16string)и `U"xyz"s` создает [std:: u32string](../standard-library/string-typedefs.md#u32string).
+`std::string`литералы являются реализациями определяемых пользователем литералов в стандартной библиотеке (см. ниже), которые представлены как `"xyz"s` (с `s` суффиксом). Этот тип строкового литерала создает временный объект типа `std::string` , `std::wstring` , `std::u32string` или `std::u16string` , в зависимости от указанного префикса. Если префикс не используется, то создается `std::string` . `L"xyz"s`создает `std::wstring` . `u"xyz"s`создает [std::u16string](../standard-library/string-typedefs.md#u16string)и `U"xyz"s` создает [std::u32string](../standard-library/string-typedefs.md#u32string).
 
 ```cpp
 //#include <string>

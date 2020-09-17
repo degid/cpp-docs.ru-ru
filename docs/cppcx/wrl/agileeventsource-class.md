@@ -37,7 +37,7 @@ class AgileEventSource :
 *тевентсаурцеоптионс*<br/>
 Структура [инвокемодеоптионс](invokemodeoptions-structure.md) , для которой в поле инвокемоде задано значение `InvokeMode::StopOnFirstError` или `InvokeMode::FireAll`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Подавляющее большинство компонентов в среда выполнения Windows являются гибкими компонентами. Дополнительные сведения см. в разделе Работа [с потоками иC++маршалирование (/CX)](../../cppcx/threading-and-marshaling-c-cx.md).
 
@@ -49,7 +49,7 @@ class AgileEventSource :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Event. h
+**Заголовок:** Event.h
 
 **Пространство имен:** Microsoft::WRL
 
@@ -57,7 +57,7 @@ class AgileEventSource :
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Метод Агиливентсаурце:: Add](#add)|Добавляет в набор обработчиков событий для текущего объекта **агиливентсаурце** обработчик событий Agile, представленный указанным интерфейсом делегата.|
 

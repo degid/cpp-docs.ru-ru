@@ -45,7 +45,7 @@ exception_ptr current_exception();
 
 Объект [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), указывающий на текущее исключение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите функцию `current_exception` в блоке catch. Если исключение находится в полете и блок перехвата может перехватить это исключение, функция `current_exception` возвращает объект `exception_ptr`, который ссылается на это исключение. В противном случае функция возвращает объект `exception_ptr` со значением null.
 
@@ -73,7 +73,7 @@ template <class E>
 
 Объект [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr) , указывающий на копию текущего исключения, *за исключением*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов функции `make_exception_ptr` аналогичен созданию исключения C++, его перехвату в блоке catch и последующему вызову функции [current_exception](../standard-library/exception-functions.md#current_exception) для возвращения объекта `exception_ptr`, ссылающегося на это исключение. Реализация Майкрософт для функции `make_exception_ptr` является более эффективной, чем создание и последующий перехват исключения.
 
@@ -92,7 +92,7 @@ void rethrow_exception(exception_ptr P);
 *Ш*\
 Перехваченное исключение, подлежащее повторному вызову. Если параметр *P* имеет [exception_ptr](../standard-library/exception-typedefs.md#exception_ptr)null, функция создает исключение [std:: bad_exception](../standard-library/bad-exception-class.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После сохранения перехваченного исключения в объект `exception_ptr` основной поток может обработать этот объект. В основном потоке вызовите функцию `rethrow_exception`, указав объект `exception_ptr` в качестве аргумента. Функция `rethrow_exception` извлекает исключение из объекта `exception_ptr` и затем вызывает это исключение в контексте основного потока.
 
@@ -121,7 +121,7 @@ terminate_handler set_terminate(terminate_handler fnew) throw();
 
 Адрес предыдущей функция, используемой для вызова при завершении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция устанавливает новый [terminate_handler](../standard-library/exception-typedefs.md#terminate_handler) в качестве функции * *фнев*. Таким словами, *фнев* не должен быть пустым указателем. Функция возвращает адрес предыдущего обработчика завершения.
 
@@ -168,7 +168,7 @@ template <class E>
     void rethrow_if_nested(const E& e);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не является типом класса полиморфизма или `nested_exception` недоступен или является неоднозначным, то никакого влияния не происходит. В противном случае выполняет динамическое приведение.
 
@@ -189,7 +189,7 @@ unexpected_handler set_unexpected(unexpected_handler fnew) throw();
 
 Адрес предыдущего обработчика `unexpected_handler`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *фнев* не должен быть пустым указателем.
 
@@ -228,7 +228,7 @@ int main()
 void terminate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция вызывает обработчик завершения, функцию типа **`void`** . Если `terminate` программа вызывается непосредственно программой, обработчик завершения является последним установленным путем вызова [set_terminate](../standard-library/exception-functions.md#set_terminate). Если `terminate` вызывается по какой-либо из нескольких других причин во время вычисления выражения Throw, обработчик завершения является, что он действует сразу после вычисления выражения Throw.
 
@@ -245,7 +245,7 @@ template <class T> [[noreturn]]
     void throw_with_nested(T&& t);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает исключение с вложенными исключениями.
 
@@ -322,7 +322,7 @@ In Test::~Test("outside try block")
 void unexpected();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Стандарт C++ требует вызова `unexpected` в том случае, когда функция создает исключение, которого нет в ее списке throw. Текущая реализация это не поддерживает. В данном примере `unexpected` вызывается напрямую, что вызывает обработчик неожиданных исключений.
 

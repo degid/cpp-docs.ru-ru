@@ -30,11 +30,11 @@ ms.locfileid: "88844734"
 |-|-|
 |[any_cast](../standard-library/any-functions.md#any_cast)|Делает объект в любом объекте.|
 |[make_any](../standard-library/any-functions.md#make_any)|Принимает значения и создает объект.|
-|[позиции](../standard-library/any-functions.md#swap)|Меняет местами элементы двух объектов.|
+|[swap](../standard-library/any-functions.md#swap)|Меняет местами элементы двух объектов.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[всеми](../standard-library/any-class.md)|Хранит любой тип, удовлетворяющий требованиям конструктора или не имеющий значения.|
 |[bad_any_cast](../standard-library/bad-any-cast-class.md)|Объекты, созданные при сбое `any_cast` .|

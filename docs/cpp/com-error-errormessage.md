@@ -29,7 +29,7 @@ const TCHAR * ErrorMessage( ) const throw( );
 
 Возвращает строковое сообщение для HRESULT, записанного в объекте `_com_error`. Если HRESULT является сопоставленным 16-битным [wCode](../cpp/com-error-wcode.md), возвращается универсальное сообщение "`IDispatch error #<wCode>`". Если сообщение не найдено, возвращается универсальное сообщение "`Unknown error #<hresult>`". В зависимости от состояния макроса _UNICODE, возвращается строка Юникода или многобайтовая строка.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Извлекает соответствующий системный текст сообщения для HRESULT, записанный в объекте `_com_error`. Текст системного сообщения получается путем вызова функции "Win32 [FormatMessage](/windows/win32/api/winbase/nf-winbase-formatmessage) ". Возвращаемая строка выделяется API `FormatMessage`; эта строка освобождается при уничтожении объекта `_com_error`.
 

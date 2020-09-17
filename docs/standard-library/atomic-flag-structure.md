@@ -27,12 +27,12 @@ struct atomic_flag;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[открытым](#clear)|Устанавливает сохраненный флаг в значение **`false`** .|
+|[clear](#clear)|Устанавливает сохраненный флаг в значение **`false`** .|
 |[test_and_set](#test_and_set)|Задает сохраненный флаг **`true`** и возвращает начальное значение флага.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты `atomic_flag` могут передаваться в функции [atomic_flag_clear](../standard-library/atomic-functions.md#atomic_flag_clear), [atomic_flag_clear_explicit](../standard-library/atomic-functions.md#atomic_flag_clear_explicit), [atomic_flag_test_and_set](../standard-library/atomic-functions.md#atomic_flag_test_and_set) и [atomic_flag_test_and_set_explicit](../standard-library/atomic-functions.md#atomic_flag_test_and_set_explicit), которые не являются функциями-членами. Их можно инициализировать с помощью значения `ATOMIC_FLAG_INIT`.
 
@@ -53,7 +53,7 @@ void atomic_flag::clear(memory_order Order = memory_order_seq_cst) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Порядок*\
+*Order*\
 Перечисление [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ## <a name="atomic_flagtest_and_set"></a><a name="test_and_set"></a>atomic_flag:: test_and_set
@@ -67,7 +67,7 @@ bool atomic_flag::test_and_set(memory_order Order = memory_order_seq_cst) noexce
 
 ### <a name="parameters"></a>Параметры
 
-*Порядок*\
+*Order*\
 Перечисление [memory_order](../standard-library/atomic-enums.md#memory_order_enum).
 
 ### <a name="return-value"></a>Возвращаемое значение

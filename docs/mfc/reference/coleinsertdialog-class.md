@@ -67,7 +67,7 @@ class COleInsertDialog : public COleDialog
 |----------|-----------------|
 |[ColeinsertDialog::m_io](#m_io)|Структура типа OLEUIINSERTOBJECT, которая контролирует поведение диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создайте объект `COleInsertDialog` класса, когда вы хотите вызвать этот диалоговый ящик. После `COleInsertDialog` построения объекта можно использовать [структуру m_io](#m_io) для инициализации значений или состояний элементов управления в диалоговом поле. Структура `m_io` типа OLEUIINSERTOBJECT. Для получения дополнительной информации об [использовании](#domodal) этого класса диалогов см.
 
@@ -130,7 +130,7 @@ COleInsertDialog (
 *pParentWnd*<br/>
 Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно объекта диалога устанавливается к основному окну приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
 
@@ -151,7 +151,7 @@ BOOL CreateItem(COleClientItem* pItem);
 
 Nonzero, если элемент был создан; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны `COleClientItem` выделить объект, прежде чем вы сможете вызвать эту функцию.
 
@@ -188,7 +188,7 @@ INT_PTR
 
 - IDABORT, если произошла ошибка. Если IDABORT возвращается, позвоните в функцию [COleDialog::GetLastError,](../../mfc/reference/coledialog-class.md#getlasterror) чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIInsertObject](/windows/win32/api/oledlg/nf-oledlg-oleuiinsertobjectw) можно узнать в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [m_io](#m_io) структуры, вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
 
@@ -206,7 +206,7 @@ REFCLSID GetClassID() const;
 
 Возвращает CLSID, связанный с выбранным элементом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см. ключ CLSID](/windows/win32/com/clsid-key-hklm) в SDK Windows.
 
@@ -226,7 +226,7 @@ DVASPECT GetDrawAspect() const;
 
 - DVASPECT_ICON возвращена, если проверка флажка Display As As Icon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только в том случае, если [DoModal](#domodal) возвращает IDOK.
 
@@ -268,7 +268,7 @@ UINT GetSelectionType() const;
 
 Тип выбора сделан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значения типа возврата определяются `Selection` типом перечисления, `COleInsertDialog` объявленным в классе.
 
@@ -296,7 +296,7 @@ enum Selection {
 OLEUIINSERTOBJECT m_io;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Члены этой структуры могут быть изменены либо непосредственно, либо через функции членов.
 

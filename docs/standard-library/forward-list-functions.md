@@ -26,9 +26,9 @@ void swap(forward_list <Type, Allocator>& left, forward_list <Type, Allocator>& 
 *left*\
 Объект типа `forward_list`.
 
-*справа*\
+*right*\
 Объект типа `forward_list`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Шаблонная функция выполняет `left.swap(right)`.

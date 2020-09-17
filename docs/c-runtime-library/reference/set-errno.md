@@ -55,7 +55,7 @@ errno_t _set_errno( int error_value );
 
 Возвращает нуль при успешном завершении.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Возможные значения макроса определяются в Errno.h. Также см. раздел [Константы errno](../../c-runtime-library/errno-constants.md).
 

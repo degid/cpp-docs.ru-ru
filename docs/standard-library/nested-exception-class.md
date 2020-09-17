@@ -34,7 +34,7 @@ class nested_exception {
 
 |Имя|Описание|
 |-|-|
-|[Оператор =](#op_as)|Оператор присвоения.|
+|[operator=](#op_as)|Оператор присвоения.|
 
 ### <a name="functions"></a>Функции
 
@@ -43,7 +43,7 @@ class nested_exception {
 |[rethrow_nested](#rethrow_nested)|Создает хранимое исключение.|
 |[nested_ptr](#nested_ptr)|Возвращает сохраненное исключение.|
 
-### <a name="operator"></a><a name="op_as"></a> Оператор =
+### <a name="operator"></a><a name="op_as"></a> operator=
 
 ```cpp
 nested_exception& operator=(const nested_exception&) = default;
@@ -65,7 +65,7 @@ exception_ptr nested_ptr() const;
 [[noreturn]] void rethrow_nested() const;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Если `nested_ptr()` возвращает пустой указатель, функция вызывает `std::terminate()` . В противном случае он создает хранимое исключение, захваченное **`*this`** .
 

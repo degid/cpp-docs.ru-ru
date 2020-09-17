@@ -33,7 +33,7 @@ ms.locfileid: "81372598"
 struct CreatorMap;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Содержит информацию о том, как инициализировать, зарегистрировать и не регистрировать объекты.
 
@@ -85,7 +85,7 @@ union {
 *getRuntimeName*<br/>
 Функция, которая извлекает имя объекта в среде выполнения Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Представляет идентификатор объекта, который определен идентификатором класса классической модели COM или именем в среде выполнения Windows.
 
@@ -97,7 +97,7 @@ union {
 FactoryCache* factoryCache;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хранит указатель на заводской кэш для `CreatorMap`.
 
@@ -131,7 +131,7 @@ A CreatorMap.
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает фабрику для указанного CreatorMap.
 
@@ -143,6 +143,6 @@ A CreatorMap.
 const wchar_t* serverName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хранит имя сервера для объекта CreatorMap.

@@ -36,7 +36,7 @@ class CGopherFile : public CInternetFile
 |----------|-----------------|
 |[CGopherFile::CGopherFile](#cgopherfile)|Формирует объект `CGopherFile`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Служба сусликов не позволяет пользователям записывать данные в файл суслика, потому что эта служба функционирует главным образом как интерфейс, управляемый меню для поиска информации. Функциями `CGopherFile` `Write` `WriteString`участника, `Flush` и не `CGopherFile`реализованы для . Вызов этих функций `CGopherFile` на объект, возвращает [CNotSupportedException](../../mfc/reference/cnotsupportedexception-class.md).
 
@@ -99,7 +99,7 @@ DWORD, содержащий количество байтов в *pstrLocator*.
 *Dwcontext*<br/>
 Указатель на идентификатор контекста открываемого файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вам нужен объект для `CGopherFile` чтения из файла во время сессии Суслик Интернет.
 

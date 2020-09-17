@@ -16,7 +16,7 @@ ms.locfileid: "79424767"
 ---
 # <a name="ltfunctionalgt-operators"></a>Операторы &lt;functional&gt;
 
-## <a name="op_eq_eq"></a>Оператор = =
+## <a name="op_eq_eq"></a> operator==
 
 Проверяет, является ли вызываемый объект пустым.
 
@@ -39,7 +39,7 @@ template <class Fty>
 *нпк*\
 Указатель null
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы принимают аргумент, являющийся ссылкой на объект `function`, и аргумент, являющийся константой указателя null. В обоих случаях возвращается значение true только в том случае, если объект `function` пуст.
 
@@ -75,7 +75,7 @@ empty == true
 empty == false
 ```
 
-## <a name="op_neq"></a>operator! =
+## <a name="op_neq"></a> operator!=
 
 Проверяет, является ли вызываемый объект не пустым.
 
@@ -98,7 +98,7 @@ template <class Fty>
 *нпк*\
 Указатель null
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы принимают аргумент, являющийся ссылкой на объект `function`, и аргумент, являющийся константой указателя null. В обоих случаях возвращается значение true только в том случае, если объект `function` не пуст.
 

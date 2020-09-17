@@ -27,7 +27,7 @@ ms.locfileid: "81330078"
 __interface IAtlAutoThreadModule
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс [CAtlAutoThreadModuleT](../../atl/reference/catlautothreadmodulet-class.md) происходит `IAtlAutoThreadModule`от, используя его для предоставления кода для создания объекта и извлечения указателя интерфейса.
 

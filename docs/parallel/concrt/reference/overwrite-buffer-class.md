@@ -54,7 +54,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[has_value](#has_value)|Проверяет `overwrite_buffer` , имеет ли этот блок сообщений еще значение.|
 |[value](#value)|Возвращает ссылку на текущие полезные данные сообщения, хранящегося в `overwrite_buffer` блоке обмена сообщениями.|
@@ -74,7 +74,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `overwrite_buffer` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 |[supports_anonymous_source](#supports_anonymous_source)|Переопределяет метод `supports_anonymous_source`, чтобы указать, что данный блок может принимать сообщения, предоставляемые ему несвязанным источником. (Переопределяет метод [ITarget:: supports_anonymous_source](itarget-class.md#supports_anonymous_source).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `overwrite_buffer`Блок обмена сообщениями распространяет копии своего сохраненного сообщения на все целевые объекты.
 
@@ -96,7 +96,7 @@ class overwrite_buffer : public propagator_block<multi_link_registry<ITarget<T>>
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -115,7 +115,7 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `overwrite_buffer`Блок обмена сообщениями возвращает копии сообщения в целевые объекты, а не передает владение текущим сообщением.
 
@@ -136,7 +136,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -209,7 +209,7 @@ overwrite_buffer(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `overwrite_buffer` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
@@ -250,7 +250,7 @@ virtual void propagate_to_any_targets(_Inout_ message<T>* _PMessage);
 *_PMessage*<br/>
 Указатель на `message` объект, `overwrite_buffer` владельцем которого является.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод перезаписывает текущее сообщение в `overwrite_buffer` с новым принятым сообщением `_PMessage` .
 
@@ -318,7 +318,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -342,7 +342,7 @@ T value();
 
 Полезные данные текущего сохраненного сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение, хранящееся в, `overwrite_buffer` может измениться сразу после возврата этим методом. Этот метод будет ожидать, пока не будет получено сообщение, если в данный момент не хранится ни одно сообщение `overwrite_buffer` .
 

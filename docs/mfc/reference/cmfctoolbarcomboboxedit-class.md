@@ -40,7 +40,7 @@ class CMFCToolBarComboBoxEdit : public CEdit
 |----------|-----------------|
 |`CMFCToolBarComboBoxEdit::PreTranslateMessage`|Переводит оконные сообщения перед отправкой на функции [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows. (Переопределяет [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Извлеките класс `CMFCToolBarComboBoxEdit` из класса, чтобы настроить свои операции по отдействию.
 

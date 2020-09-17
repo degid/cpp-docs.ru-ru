@@ -27,7 +27,7 @@ ms.locfileid: "82168310"
 class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlAutoThreadModule`является производным от [катлаутосреадмодулет](../../atl/reference/catlautothreadmodulet-class.md) и реализует COM-сервер модели подразделения в пуле потоков. `CAtlAutoThreadModule`использует [ккомапартмент](../../atl/reference/ccomapartment-class.md) для управления апартаментом для каждого потока в модуле.
 
@@ -48,7 +48,7 @@ class CAtlAutoThreadModule : public CAtlAutoThreadModuleT<CAtlAutoThreadModule>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

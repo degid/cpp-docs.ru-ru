@@ -23,7 +23,7 @@ ms.locfileid: "88838975"
 [bindable]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут с **возможностью привязки** к C++ имеет те же функциональные возможности, что и [связываемый](/windows/win32/Midl/bindable) атрибут MIDL. Его можно использовать для свойств, определенных с помощью атрибутов [propget](propget.md), [propput](propput.md)или [propputref](propputref.md) , или можно вручную определить метод, допускающий привязку.
 

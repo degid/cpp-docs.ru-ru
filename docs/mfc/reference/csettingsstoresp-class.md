@@ -51,7 +51,7 @@ class CSettingsStoreSP
 |`m_dwUserData`|Пользовательские пользовательские данные, хранящиеся в объекте. `CSettingsStoreSP` Эти данные предоставляются в `CSettingsStoreSP` конструктор объекта.|
 |`m_pRegistry`|Объект, `CSettingsStore`полученный методом, `Create` создается.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы можете `CSettingsStoreSP` использовать класс для перенаправления всех операций реестра MFC в другие места, такие как файл XML или база данных. Для этого выполните следующие действия.
 
@@ -93,7 +93,7 @@ CSettingsStore& CSettingsStoreSP Create(
 
 Ссылка на вновь созданный `CSettingsStore` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете использовать метод [CSettingsStoreSP::SetRuntimeClass,](#setruntimeclass) чтобы `CSettingsStoreSP::Create` определить, какой тип объекта будет создавать. По умолчанию этот `CSettingsStore` метод создает объект.
 
@@ -120,7 +120,7 @@ CSettingsStoreSP::CSettingsStoreSP(DWORD dwUserData = 0);
 *dwUserData*<br/>
 (в) Данные, определяемые пользователем, `CSettingsStoreSP` которые хранит объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CSettingsStoreSP` хранит данные *dwUserData* в защищенной переменной `m_dwUserData`участника.
 
@@ -141,7 +141,7 @@ static BOOL __stdcall CSettingsStoreSP::SetRuntimeClass(CRuntimeClass* pRTI);
 
 TRUE в случае успеха; FALSE, если класс, идентифицированный *pRTI,* не является производным от `CSettingsStore`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете использовать [класс CSettingsStoreSP](../../mfc/reference/csettingsstoresp-class.md) `CSettingsStore`для получения классов из. Используйте `SetRuntimeClass` метод, если вы хотите создать объекты пользовательского класса, который получен из. `CSettingsStore`
 

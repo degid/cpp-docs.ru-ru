@@ -35,7 +35,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 |[креатеконтроллик](#createcontrollic)|Создает лицензированный элемент управления и прикрепляет его к объекту узла.|
 |[креатеконтроллицекс](#createcontrollicex)|Создает лицензированный элемент управления, присоединяет его к объекту узла и при необходимости настраивает обработчик событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IAxWinHostWindowLic` наследует от [иаксвинхоствиндов](../../atl/reference/iaxwinhostwindow-interface.md) и добавляет методы, которые поддерживают создание лицензированных элементов управления.
 
@@ -48,7 +48,7 @@ interface IAxWinHostWindowLic : IAxWinHostWindow
 |Тип определения|Файл|
 |---------------------|----------|
 |IDL|Описана. idl|
-|C++|Описана. h (также входит в ATLBase. h)|
+|C++|Описана.h (также входит в ATLBase.h)|
 
 ## <a name="iaxwinhostwindowliccreatecontrollic"></a><a name="createcontrollic"></a> Иаксвинхоствиндовлик:: Креатеконтроллик
 
@@ -67,7 +67,7 @@ STDMETHOD(CreateControlLic)(
 *бстрлик*<br/>
 окне Значение BSTR, содержащее лицензионный ключ для элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Описание оставшихся параметров и возвращаемого значения см. в разделе [иаксвинхоствиндов:: CreateControl](../../atl/reference/iaxwinhostwindow-interface.md#createcontrol) .
 
@@ -97,7 +97,7 @@ STDMETHOD(CreateControlLicEx)(
 *бстрлик*<br/>
 окне Значение BSTR, содержащее лицензионный ключ для элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Описание оставшихся параметров и возвращаемого значения см. в разделе [иаксвинхоствиндов:: креатеконтролекс](../../atl/reference/iaxwinhostwindow-interface.md#createcontrolex) .
 

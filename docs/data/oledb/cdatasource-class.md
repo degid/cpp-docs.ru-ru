@@ -93,7 +93,7 @@ class CDataSource
 |[опенвиспромптфиленаме](#openwithpromptfilename)|Позволяет пользователю выбрать ранее созданный файл канала передачи данных, чтобы открыть соответствующий источник данных.|
 |[опенвиссервицекомпонентс](#openwithservicecomponents)|Открывает объект источника данных с помощью диалогового окна «связь данных».|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для одного подключения можно создать один или несколько сеансов базы данных. Эти сеансы представлены `CSession` . Чтобы открыть соединение перед созданием сеанса с, необходимо вызвать метод [CDataSource:: Open](../../data/oledb/cdatasource-open.md) `CSession::Open` .
 
@@ -132,7 +132,7 @@ HRESULT GetInitializationString(BSTR* pInitializationString,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученная строка инициализации может использоваться для повторного открытия этого соединения с источником данных.
 
@@ -157,7 +157,7 @@ HRESULT GetProperties(ULONG ulPropIDSets,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить одно свойство, используйте [параметр-Property](../../data/oledb/cdatasource-getproperty.md).
 
@@ -188,7 +188,7 @@ HRESULT GetProperty(const GUID& guid,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить несколько свойств, используйте [Свойства](../../data/oledb/cdatasource-getproperties.md).
 
@@ -276,7 +276,7 @@ HRESULT Open(LPCSTR szProgID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перегрузка метода, использующая параметр *HWND* , открывает объект источника данных с компонентами службы в oledb32.dll; Эта библиотека DLL содержит реализацию функций компонентов службы, таких как создание пулов ресурсов, автоматическое прикрепление транзакций и т. д. Дополнительные сведения см. в справочнике по OLE DB в [руководстве программиста OLE DB](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
@@ -309,7 +309,7 @@ HRESULT OpenFromFileName(LPCOLESTR szFileName) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод открывает объект источника данных с помощью компонентов службы в oledb32.dll. Эта DLL-библиотека содержит реализацию возможностей компонентов службы, таких как создание пулов ресурсов, автоматическое прикрепление транзакций и т. д. Дополнительные сведения см. в справочнике по OLE DB в [руководстве программиста OLE DB](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
@@ -338,7 +338,7 @@ HRESULT OpenFromInitializationString(LPCOLESTR szInitializationString,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод открывает объект источника данных с помощью компонентов службы в oledb32.dll. Эта DLL-библиотека содержит реализацию возможностей компонентов службы, таких как создание пулов ресурсов, автоматическое прикрепление транзакций и т. д.
 
@@ -369,7 +369,7 @@ HRESULT OpenWithPromptFileName(HWND hWnd = GetActiveWindow(   ),
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод открывает объект источника данных с помощью компонентов службы в oledb32.dll. Эта DLL-библиотека содержит реализацию возможностей компонентов службы, таких как создание пулов ресурсов, автоматическое прикрепление транзакций и т. д. Дополнительные сведения см. в справочнике по OLE DB в [руководстве программиста OLE DB](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 
@@ -407,7 +407,7 @@ HRESULT OpenWithServiceComponents (LPCSTR szProgID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод открывает объект источника данных с помощью компонентов службы в oledb32.dll. Эта DLL-библиотека содержит реализацию возможностей компонентов службы, таких как создание пулов ресурсов, автоматическое прикрепление транзакций и т. д. Дополнительные сведения см. в справочнике по OLE DB в [руководстве программиста OLE DB](/previous-versions/windows/desktop/ms713643(v=vs.85)).
 

@@ -29,11 +29,11 @@ class nested_scheduler_missing_detach : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[nested_scheduler_missing_detach](#ctor)|Перегружен. Формирует объект `nested_scheduler_missing_detach`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это исключение возникает, только когда один планировщик вложен внутрь другого путем вызова метода `Attach` объекта `Scheduler` для контекста, которым уже владеет другой планировщик или к которому он уже прикреплен. Среда выполнения с параллелизмом создает это исключение, рационально, когда он может обнаружить сценарий как вспомогательный для поиска проблемы. Не все экземпляры, которые не вызывают метод `CurrentScheduler::Detach`, гарантированно вызовут это исключение.
 
@@ -45,7 +45,7 @@ class nested_scheduler_missing_detach : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

@@ -52,7 +52,7 @@ class MakeAllocator<T, true>;
 *хасвеакреференцесуппорт*<br/>
 **`true`** выделение памяти для объекта, который поддерживает слабые ссылки; **`false`** выделение памяти для объекта, который не поддерживает слабые ссылки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Выделяет память для класса активируемого с поддержкой слабых ссылок или без нее.
 
@@ -82,7 +82,7 @@ name                                 | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
@@ -98,7 +98,7 @@ __forceinline void* Allocate();
 
 В случае успеха указатель на выделенную память; в противном случае — **`nullptr`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет память и связывает ее с текущим `MakeAllocator` объектом.
 
@@ -114,7 +114,7 @@ __forceinline void* Allocate();
 __forceinline void Detach();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отменяет связь памяти, выделенной методом [выделения](#allocate) , из текущего `MakeAllocator` объекта.
 
@@ -128,7 +128,7 @@ __forceinline void Detach();
 MakeAllocator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует новый экземпляр класса `MakeAllocator`.
 
@@ -140,7 +140,7 @@ MakeAllocator();
 ~MakeAllocator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выполняет деинициализацию текущего экземпляра `MakeAllocator` класса.
 

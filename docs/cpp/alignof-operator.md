@@ -30,7 +30,7 @@ ms.locfileid: "87227638"
 alignof( type )
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Пример:
 

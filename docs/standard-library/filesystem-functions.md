@@ -111,7 +111,7 @@ path absolute(const path& pval, const path& base = current_path());
 
 1. Если `!pval.has_root_name() && !pval.has_root_directory()` функция возвращает `absolute(base)`  /  *Pval*.
 
-## <a name="begin"></a><a name="begin"></a>начале
+## <a name="begin"></a><a name="begin"></a> begin
 
 ```cpp
 const directory_iterator& begin(const directory_iterator& iter) noexcept;
@@ -288,7 +288,7 @@ void current_path(const path& pval, error_code& ec) noexcept;
 
 Функции без параметров *Pval* возвращают путь к текущему каталогу. Оставшиеся функции задают для текущего каталога значение *Pval*.
 
-## <a name="end"></a><a name="end"></a>конце
+## <a name="end"></a><a name="end"></a> end
 
 ```cpp
 directory_iterator& end(const directory_iterator& iter) noexcept;

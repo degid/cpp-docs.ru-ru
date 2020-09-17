@@ -42,7 +42,7 @@ ms.locfileid: "87219005"
     [propput, id(1), helpstring("property Sides")] HRESULT Sides([in] short newVal);
     ```
 
-1. В **Обозреватель решений**откройте поликтл. h и добавьте следующие строки после определения `m_clrFillColor` :
+1. В **Обозреватель решений**откройте поликтл.h и добавьте следующие строки после определения `m_clrFillColor` :
 
     [!code-cpp[NVC_ATL_Windowing#44](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_1.h)]
 
@@ -50,11 +50,11 @@ ms.locfileid: "87219005"
 
 ### <a name="to-update-the-get-and-put-methods"></a>Обновление методов Get и WHERE
 
-1. Задайте значение по умолчанию `m_nSides` . Сделайте фигуру по умолчанию треугольником, добавив строку в конструктор в Поликтл. h:
+1. Задайте значение по умолчанию `m_nSides` . Сделайте фигуру по умолчанию треугольником, добавив строку в конструктор в Поликтл.h:
 
     [!code-cpp[NVC_ATL_Windowing#45](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_2.h)]
 
-1. Реализуйте `Get` `Put` методы и. `get_Sides` `put_Sides` Объявления функций и добавлены в поликтл. h. Теперь добавьте код для `get_Sides` и `put_Sides` в поликтл. cpp со следующим кодом:
+1. Реализуйте `Get` `Put` методы и. `get_Sides` `put_Sides` Объявления функций и добавлены в поликтл.h. Теперь добавьте код для `get_Sides` и `put_Sides` в поликтл. cpp со следующим кодом:
 
     [!code-cpp[NVC_ATL_Windowing#46](../atl/codesnippet/cpp/adding-a-property-to-the-control-atl-tutorial-part-3_3.cpp)]
 

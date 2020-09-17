@@ -50,7 +50,7 @@ ms.locfileid: "77140754"
 
 [!code-cpp[concrt-image-processing-filter#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_1.cpp)]
 
-Следующая функция, `ProcessImage`, вызывает данный объект [std:: Function](../../standard-library/function-class.md) для преобразования значения цвета каждого пикселя в [растровом](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) объекте GDI+. Функция `ProcessImage` использует алгоритм [параллелизма::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельной обработки каждой строки точечного рисунка.
+Следующая функция, `ProcessImage`, вызывает данный объект [std:: Function](../../standard-library/function-class.md) для преобразования значения цвета каждого пикселя в [растровом](/windows/win32/api/gdiplusheaders/nl-gdiplusheaders-bitmap) объекте GDI+. Функция `ProcessImage` использует алгоритм [параллелизма::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельной обработки каждой строки точечного рисунка.
 
 [!code-cpp[concrt-image-processing-filter#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_2.cpp)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "77140754"
 
 [!code-cpp[concrt-image-processing-filter#4](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_3.cpp)]
 
-Следующая функция, `GetColorDominance`, также вызывает функцию `ProcessImage`. Однако вместо изменения значения каждого цвета эта функция использует объекты [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) , чтобы вычислить, является ли изображение красным, зеленым или синим цветом частью изображения.
+Следующая функция, `GetColorDominance`, также вызывает функцию `ProcessImage`. Однако вместо изменения значения каждого цвета эта функция использует объекты [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) , чтобы вычислить, является ли изображение красным, зеленым или синим цветом частью изображения.
 
 [!code-cpp[concrt-image-processing-filter#5](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-image-processing-network_4.cpp)]
 
@@ -118,15 +118,15 @@ ms.locfileid: "77140754"
 
 |Участник|Description|
 |------------|-----------------|
-|`load_bitmap`|Объект [Concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) , который загружает объект `Bitmap` с диска и добавляет запись в объект `map`, чтобы связать образ с его исходным именем файла.|
-|`loaded_bitmaps`|Объект [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) , который отправляет загруженные изображения в фильтры обработки изображений.|
+|`load_bitmap`|Объект [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) , который загружает объект `Bitmap` с диска и добавляет запись в объект `map`, чтобы связать образ с его исходным именем файла.|
+|`loaded_bitmaps`|Объект [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) , который отправляет загруженные изображения в фильтры обработки изображений.|
 |`grayscale`|Объект `transformer`, который преобразует изображения, созданные с помощью тома, в градации серого. Он использует метаданные образа для определения его автора.|
 |`colormask`|Объект `transformer`, который удаляет компоненты зеленого и синего цветов из изображений, которые имеют красный цвет в качестве главного.|
 |`darken`|Объект `transformer`, который затемняет изображения с красным цветом в качестве главного.|
 |`sepiatone`|Объект `transformer`, который применяет выцветшей Тонинг к изображениям, которые не созданы с помощью Tom и не являются преимущественно красными.|
 |`save_bitmap`|Объект `transformer`, сохраняющий обработанные `image` на диск в виде точечного рисунка. `save_bitmap` извлекает исходное имя файла из объекта `map` и изменяет расширение имени файла на. bmp.|
 |`delete_bitmap`|Объект `transformer`, освобождающий память для изображений.|
-|`decrement`|Объект [Concurrency:: Call](../../parallel/concrt/reference/call-class.md) , который выступает в качестве узла терминала в сети. Он уменьшает объект `countdown_event`, чтобы сообщить основному приложению о том, что изображение обработано.|
+|`decrement`|Объект [concurrency::Call](../../parallel/concrt/reference/call-class.md) , который выступает в качестве узла терминала в сети. Он уменьшает объект `countdown_event`, чтобы сообщить основному приложению о том, что изображение обработано.|
 
 Буфер сообщений `loaded_bitmaps` важен, поскольку, как `unbounded_buffer` объект, он предлагает `Bitmap` объекты нескольким получателям. Если целевой блок принимает объект `Bitmap`, объект `unbounded_buffer` не предоставляет этот `Bitmap` объект другим целевым объектам. Поэтому важен порядок, в котором объекты связываются с объектом `unbounded_buffer`. Блоки сообщений `grayscale`, `colormask`и `sepiatone` используют фильтр, чтобы принимать только определенные объекты `Bitmap`. `decrement` буфер сообщений является важной целью `loaded_bitmaps` буфера сообщений, так как он принимает все `Bitmap`ные объекты, отклоненные другими буферами сообщений. Для распространения сообщений по порядку требуется объект `unbounded_buffer`. Таким образом, объект `unbounded_buffer` блокируется до тех пор, пока новый целевой блок не будет связан с ним и не примет сообщение, если текущий целевой блок не принимает это сообщение.
 
@@ -136,7 +136,7 @@ ms.locfileid: "77140754"
 
 ![Сеть обработки изображений](../../parallel/concrt/media/concrt_imageproc.png "Сеть обработки изображений")
 
-Объект `countdown_event` в этом примере позволяет сети обработки изображений сообщать основному приложению о том, что все образы обработаны. Класс `countdown_event` использует объект [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) для сигнализации, если значение счетчика достигает нуля. Основное приложение увеличивает счетчик каждый раз при отправке имени файла в сеть. Узел терминала сети уменьшает счетчик после обработки каждого образа. Когда основное приложение проходит по указанному каталогу, оно ждет, пока объект `countdown_event` сообщит, что его счетчик достиг нуля.
+Объект `countdown_event` в этом примере позволяет сети обработки изображений сообщать основному приложению о том, что все образы обработаны. Класс `countdown_event` использует объект [concurrency::Event](../../parallel/concrt/reference/event-class.md) для сигнализации, если значение счетчика достигает нуля. Основное приложение увеличивает счетчик каждый раз при отправке имени файла в сеть. Узел терминала сети уменьшает счетчик после обработки каждого образа. Когда основное приложение проходит по указанному каталогу, оно ждет, пока объект `countdown_event` сообщит, что его счетчик достиг нуля.
 
 В следующем примере показан класс `countdown_event`:
 

@@ -39,7 +39,7 @@ interface class IView
 |[IView::OninitialUpdate](#oninitialupdate)|Вызывается фреймворком после того, как представление сначала прикрепляется к документу, но до отображения представления.|
 |[IView::OnUpdate](#onupdate)|Вызвано MFC после того, как документ представления был изменен; эта функция позволяет представлению обновлять свой дисплей, чтобы отразить изменения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IView`реализует несколько методов, используемых `CWinFormsView` для переадресовывательных уведомлений общего представления в управляемый элемент управления. Это [OnInitialUpdate](#oninitialupdate), [OnUpdate](#onupdate) и [OnActivateView](#onactivateview).
 
@@ -80,7 +80,7 @@ void OnInitialUpdate();
 void OnUpdate();
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта функция позволяет представлению обновлять свой дисплей, чтобы отразить изменения.
 

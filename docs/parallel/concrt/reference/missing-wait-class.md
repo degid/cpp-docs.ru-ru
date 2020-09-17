@@ -29,11 +29,11 @@ class missing_wait : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[missing_wait](#ctor)|Перегружен. Формирует объект `missing_wait`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Отсутствие потока исключений. Вы несете ответственность за вызов метода `wait` или `run_and_wait` объекта `task_group` или `structured_task_group`, прежде чем разрешить этому объекту уничтожения. Среда выполнения создает это исключение в качестве свидетельства о том, что вы забыли вызвать метод `wait` или `run_and_wait`.
 
@@ -45,7 +45,7 @@ class missing_wait : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

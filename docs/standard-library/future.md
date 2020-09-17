@@ -23,7 +23,7 @@ ms.locfileid: "87220929"
 #include <future>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > В коде, компилируемом с помощью **/CLR**, этот заголовок блокируется.
@@ -46,7 +46,7 @@ ms.locfileid: "87220929"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс Future](../standard-library/future-class.md)|Описывает асинхронный возвращаемый объект.|
 |[Класс future_error](../standard-library/future-error-class.md)|Описывает объект исключения, который можно вызывать методами типов, управляющих объектами `future`.|
@@ -69,7 +69,7 @@ ms.locfileid: "87220929"
 |[future_category](../standard-library/future-functions.md#future_category)|Возвращает ссылку на объект `error_category`, характеризующий ошибки, связанные с объектами `future`.|
 |[make_error_code](../standard-library/future-functions.md#make_error_code)|Создает `error_code`, который имеет объект `error_category`, характеризующий ошибки `future`.|
 |[make_error_condition](../standard-library/future-functions.md#make_error_condition)|Создает `error_condition`, который имеет объект `error_category`, характеризующий ошибки `future`.|
-|[позиции](../standard-library/future-functions.md#swap)|Меняет местами связанное асинхронное состояние одного объекта `promise` с состоянием другого объекта.|
+|[swap](../standard-library/future-functions.md#swap)|Меняет местами связанное асинхронное состояние одного объекта `promise` с состоянием другого объекта.|
 
 ### <a name="enumerations"></a>Перечисления
 

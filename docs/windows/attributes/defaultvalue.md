@@ -28,7 +28,7 @@ ms.locfileid: "88841692"
 *value*<br/>
 Значение, принимаемое данным параметром по умолчанию.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **DefaultValue** C++ имеет те же функциональные возможности, что и атрибут MIDL [DefaultValue](/windows/win32/Midl/defaultvalue) .
 

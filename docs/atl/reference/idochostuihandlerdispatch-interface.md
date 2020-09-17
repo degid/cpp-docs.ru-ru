@@ -52,7 +52,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 |[транслатеурл](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\))|Вызывается MSHTML, чтобы разрешить узлу изменять URL-адрес для загрузки.|
 |[упдатеуи](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753268\(v=vs.85\))|Уведомляет основное приложение об изменении состояния команды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Узел может заменить меню, панели инструментов и контекстные меню, используемые модулем синтаксического анализа и визуализации Microsoft HTML (MSHTML), путем реализации этого интерфейса.
 
@@ -63,7 +63,7 @@ interface IDocHostUIHandlerDispatch : IDispatch
 |Тип определения|Файл|
 |---------------------|----------|
 |IDL|Описана. idl|
-|C++|Описана. h (также входит в ATLBase. h)|
+|C++|Описана.h (также входит в ATLBase.h)|
 
 ## <a name="see-also"></a>См. также раздел
 

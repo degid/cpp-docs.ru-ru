@@ -31,7 +31,7 @@ ms.locfileid: "88833144"
 *auto*<br/>
 Логическое значение, указывающее, извлекается ли метод доступа автоматически (TRUE) или не извлекается (FALSE).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **db_accessor** определяет базовый метод доступа OLE DB для последующих `db_column` `db_param` атрибутов и в одном классе или функции. **db_accessor** можно использовать на уровне членов и используется для группирования `db_column` атрибутов, участвующих в `IAccessor` привязке на основе OLE DB. Он используется в сочетании с `db_table` `db_command` атрибутами или. Вызов этого атрибута аналогичен вызову макросов [BEGIN_ACCESSOR](../../data/oledb/begin-accessor.md) и [END_ACCESSOR](../../data/oledb/end-accessor.md) .
 

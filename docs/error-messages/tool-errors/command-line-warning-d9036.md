@@ -17,7 +17,7 @@ ms.locfileid: "80196629"
 
 > "*option\_2*" вместо "*Option\_1*"
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Предупреждение D9036 — продолжение [командной строки с предупреждением D9035](../../error-messages/tool-errors/command-line-warning-d9035.md). Если вместо устаревшего параметра был выбран один параметр компилятора, он будет указан здесь. Ссылки на дополнительные сведения см. в разделе [устаревшие и удаленные параметры компилятора](../../build/reference/compiler-options-listed-by-category.md#deprecated-and-removed-compiler-options).
 

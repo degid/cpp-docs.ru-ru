@@ -34,7 +34,7 @@ ms.locfileid: "88845475"
 > [!NOTE]
 > \<iostream>Библиотека использует `#include <ios>` операторы,, `#include <streambuf>` `#include <istream>` и `#include <ostream>` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты можно разделить на две группы:
 
@@ -73,7 +73,7 @@ extern ostream cerr;
 
 Объект [ostream](../standard-library/ostream-typedefs.md#ostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой без буферизации в стандартный вывод ошибок в виде байтового потока. После создания объекта выражение `cerr.`[флаги](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) отлично от нуля, и `cerr.tie() == &cout`.
 
@@ -119,7 +119,7 @@ extern istream cin;
 
 Объект [istream](../standard-library/istream-typedefs.md#istream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Объект контролирует получение данных из стандартного ввода, как потока байтов. После создания объекта вызов `cin.`[tie](../standard-library/basic-ios-class.md#tie) возвращает `&`[cout](#cout).
 
@@ -170,7 +170,7 @@ extern ostream clog;
 
 Объект [ostream](../standard-library/ostream-typedefs.md#ostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой с буферизацей в стандартный вывод ошибок в виде байтового потока.
 
@@ -190,7 +190,7 @@ extern ostream cout;
 
 Объект [ostream](../standard-library/ostream-typedefs.md#ostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой в стандартный вывод в виде байтового потока.
 
@@ -210,7 +210,7 @@ extern wostream wcerr;
 
 Объект [wostream](../standard-library/ostream-typedefs.md#wostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой без буферизации в стандартный вывод ошибок в виде двухбайтового потока. После создания объекта выражение `wcerr.`[флаги](../standard-library/ios-base-class.md#flags) `&` [unitbuf](../standard-library/ios-functions.md#unitbuf) отлично от нуля.
 
@@ -230,7 +230,7 @@ extern wistream wcin;
 
 Объект [wistream](../standard-library/istream-typedefs.md#wistream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет извлечением из стандартного ввода в виде двухбайтового потока. После создания объекта вызов `wcin.`[tie](../standard-library/basic-ios-class.md#tie) возвращает `&`[wcout](#wcout).
 
@@ -250,7 +250,7 @@ extern wostream wclog;
 
 Объект [wostream](../standard-library/ostream-typedefs.md#wostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой с буферизацей в стандартный вывод ошибок в виде двухбайтового потока.
 
@@ -270,7 +270,7 @@ extern wostream wcout;
 
 Объект [wostream](../standard-library/ostream-typedefs.md#wostream).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот объект управляет вставкой в стандартный вывод в качестве широкого потока.
 

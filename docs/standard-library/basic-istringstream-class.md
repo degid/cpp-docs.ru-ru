@@ -34,7 +34,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 ### <a name="parameters"></a>Параметры
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
 *Elem*\
@@ -43,7 +43,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 *ТС*\
 Признаки символа, соответствующие основному элементу строки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, управляющий извлечением элементов и закодированных объектов из буфера потока класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **elem**, **tr** `Alloc`>, с элементами типа *elem*, признаки символов которых определяются классом *tr*, а элементы выделяются распределителем *выделения*класса. Этот объект сохраняет объект класса basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
@@ -65,13 +65,13 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 |-|-|
 |[rdbuf](#rdbuf)|Возвращает адрес буфера сохраненного потока типа `pointer` для [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` , `Tr` `Alloc`>.|
 |[str](#str)|Задает или получает текст в буфере строк без изменения позиции записи.|
-|[позиции](#swap)|Меняет местами значения в этом объекте `basic_istringstream` и значения предоставленного объекта.|
+|[swap](#swap)|Меняет местами значения в этом объекте `basic_istringstream` и значения предоставленного объекта.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Назначает значения этому объекту `basic_istringstream` из параметра объекта.|
+|[operator=](#op_eq)|Назначает значения этому объекту `basic_istringstream` из параметра объекта.|
 
 ## <a name="requirements"></a>Требования
 
@@ -79,7 +79,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 
 **Пространство имен:** std
 
-## <a name="basic_istringstreamallocator_type"></a><a name="allocator_type"></a> basic_istringstream:: allocator_type
+## <a name="basic_istringstreamallocator_type"></a><a name="allocator_type"></a> basic_istringstream::allocator_type
 
 Этот тип является синонимом для параметра шаблона `Alloc`.
 
@@ -87,7 +87,7 @@ class basic_istringstream : public basic_istream<Elem, Tr>
 typedef Alloc allocator_type;
 ```
 
-## <a name="basic_istringstreambasic_istringstream"></a><a name="basic_istringstream"></a> basic_istringstream:: basic_istringstream
+## <a name="basic_istringstreambasic_istringstream"></a><a name="basic_istringstream"></a> basic_istringstream::basic_istringstream
 
 Создает объект типа `basic_istringstream`.
 
@@ -111,10 +111,10 @@ basic_istringstream(
 *str*\
 Объект типа `basic_string`.
 
-*Правильно*\
+*right*\
 Ссылка rvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_istream](../standard-library/basic-istream-class.md)( `sb` ), где `sb` — это сохраненный объект класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  `Elem` , `Tr` `Alloc`>. Он также инициализирует `sb` путем вызова `basic_stringbuf`< `Elem`, `Tr`, `Alloc`>( `_Mode` &#124; `ios_base::in`).
 
@@ -122,7 +122,7 @@ basic_istringstream(
 
 Третий конструктор инициализирует объект с содержимым *right*, который рассматривается как ссылка rvalue.
 
-## <a name="basic_istringstreamoperator"></a><a name="op_eq"></a> basic_istringstream:: operator =
+## <a name="basic_istringstreamoperator"></a><a name="op_eq"></a> basic_istringstream::operator=
 
 Назначает значения этому объекту `basic_istringstream` из параметра объекта.
 
@@ -132,14 +132,14 @@ basic_istringstream& operator=(basic_istringstream&& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка rvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор Member заменяет содержимое объекта содержимым *right*, которое рассматривается как присваивание перемещения ссылки rvalue.
 
-## <a name="basic_istringstreamrdbuf"></a><a name="rdbuf"></a> basic_istringstream:: rdbuf
+## <a name="basic_istringstreamrdbuf"></a><a name="rdbuf"></a> basic_istringstream::rdbuf
 
 Возвращает адрес буфера сохраненного потока типа `pointer` для [basic_stringbuf](../standard-library/basic-stringbuf-class.md) <  **elem**, **tr** `Alloc`>.
 
@@ -155,7 +155,7 @@ basic_stringbuf<Elem, Tr, Alloc> *rdbuf() const;
 
 Пример, в котором используется `rdbuf`, см. в разделе [basic_filebuf::close](../standard-library/basic-filebuf-class.md#close).
 
-## <a name="basic_istringstreamstr"></a><a name="str"></a> basic_istringstream:: str
+## <a name="basic_istringstreamstr"></a><a name="str"></a> basic_istringstream::str
 
 Задает или получает текст в буфере строк без изменения позиции записи.
 
@@ -175,7 +175,7 @@ void str(
 
 Возвращает объект класса [basic_string](../standard-library/basic-string-class.md) <  **elem**, **tr** `Alloc`>, управляемой последовательностью которого является копия последовательности, управляемой ** \* этим**объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция – член возвращает [rdbuf](#rdbuf)  ->  [str](../standard-library/basic-stringbuf-class.md#str). Вторая функция-член вызывает `rdbuf`  ->  **str**( `_Newstr` ).
 
@@ -183,7 +183,7 @@ void str(
 
 Пример, в котором используется, см. в разделе [basic_stringbuf:: str](../standard-library/basic-stringbuf-class.md#str) `str` .
 
-## <a name="basic_istringstreamswap"></a><a name="swap"></a> basic_istringstream:: swap
+## <a name="basic_istringstreamswap"></a><a name="swap"></a> basic_istringstream::swap
 
 Меняет местами значения двух объектов `basic_istringstream`.
 
@@ -193,10 +193,10 @@ void swap(basic_istringstream& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка lvalue на объект `basic_istringstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция элемента меняет местами значения этого объекта и значения *right*.
 

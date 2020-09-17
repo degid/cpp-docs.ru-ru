@@ -253,13 +253,13 @@ class CMFCRibbonBaseElement : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |`CMFCRibbonBaseElement`|Формирует объект `CMFCRibbonBaseElement`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Метод CMFCRibbonBaseElement:: Аддтокэйлист](#addtokeylist)|Добавляет keytip для элемента Ribbon в массив подсказок.|
 |[Метод CMFCRibbonBaseElement:: Аддтолистбокс](#addtolistbox)|Добавляет элемент Ribbon в список заданных команд ленты.|
@@ -380,7 +380,7 @@ class CMFCRibbonBaseElement : public CObject
 |[Метод CMFCRibbonBaseElement:: Онпроцесскэй](#onprocesskey)|Вызывается структурой при нажатии пользователем сочетания клавиш.|
 |[Метод CMFCRibbonBaseElement:: OnSetFocus](#onsetfocus)|Вызывается структурой, когда элемент ленты получает или теряет фокус ввода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CMFCRibbonBaseElement`Класс определяет свойства, которые являются общими для всех элементов ленты, включая идентификатор команды, текстовую метку, текст подсказки, описание элемента и состояние (которое может быть отмечено, выделено, нажато, отключено, проверено или отброшено).
 
@@ -423,7 +423,7 @@ virtual void AddToKeyList(
 *арелемс*<br/>
 окне Ссылка на [CArray](../../mfc/reference/carray-class.md) подсказок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если включена функция ключевых подсказок ленты, платформа отображает ключевые подсказки ленты, когда пользователь нажимает клавишу ALT или клавишу F10.
 
@@ -449,7 +449,7 @@ virtual int AddToListBox(
 
 Отсчитываемый от нуля индекс добавленного элемента ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа добавляет элементы ленты в список команд для предоставления пользователю возможности настраивать пользовательский интерфейс.
 
@@ -465,7 +465,7 @@ virtual BOOL CanBeAddedToQuickAccessToolBar() const;
 
 Значение TRUE, если элемент можно добавить; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementcanbecompacted"></a><a name="canbecompacted"></a> Метод CMFCRibbonBaseElement:: Канбекомпактед
 
@@ -479,7 +479,7 @@ virtual BOOL CanBeCompacted() const;
 
 Значение TRUE, если размер элемента ленты может быть компактным; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер элемента Ribbon может быть компактным, промежуточным или большим.
 
@@ -495,7 +495,7 @@ virtual BOOL CanBeStretched();
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение TRUE. Переопределите этот метод, чтобы указать, может ли высота элемента Ribbon увеличиваться вертикально до высоты строки ленты.
 
@@ -511,7 +511,7 @@ virtual BOOL CanBeStretchedHorizontally();
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод, чтобы указать, может ли изменяться ширина элемента ленты.
 
@@ -523,7 +523,7 @@ virtual BOOL CanBeStretchedHorizontally();
 virtual void CleanUpSizes();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод в производном классе, чтобы сбросить настройки измерения для элемента Ribbon.
 
@@ -535,7 +535,7 @@ virtual void CleanUpSizes();
 virtual void ClosePopupMenu();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementcopyfrom"></a><a name="copyfrom"></a> Метод CMFCRibbonBaseElement:: CopyFrom
 
@@ -550,7 +550,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 *src*<br/>
 окне Исходный объект [метод CMFCRibbonBaseElement](../../mfc/reference/cmfcribbonbaseelement-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementdestroyctrl"></a><a name="destroyctrl"></a> Метод CMFCRibbonBaseElement::D Естройктрл
 
@@ -560,7 +560,7 @@ virtual void CopyFrom(const CMFCRibbonBaseElement& src);
 virtual void DestroyCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод в производном классе, чтобы уничтожить элемент Ribbon.
 
@@ -586,7 +586,7 @@ virtual void DrawImage(
 *ректимаже*<br/>
 окне Прямоугольник изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод в производном классе, чтобы нарисовать изображение для элемента Ribbon.
 
@@ -614,7 +614,7 @@ virtual CMFCRibbonBaseElement* Find(const CMFCRibbonBaseElement* pElement);
 
 Указатель на элемент Ribbon, если *пелемент* указывает на текущий объект. в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementfindbydata"></a><a name="findbydata"></a> Метод CMFCRibbonBaseElement:: Финдбидата
 
@@ -633,7 +633,7 @@ virtual CMFCRibbonBaseElement* FindByData(DWORD_PTR dwData);
 
 Указатель на элемент ленты, если он содержит указанные данные; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementfindbyid"></a><a name="findbyid"></a> Метод CMFCRibbonBaseElement:: Финдбид
 
@@ -652,7 +652,7 @@ virtual CMFCRibbonBaseElement* FindByID(UINT uiCmdID);
 
 Указатель на элемент ленты, если этот элемент определен с помощью указанного идентификатора команды. в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementfindbyoriginal"></a><a name="findbyoriginal"></a> Метод CMFCRibbonBaseElement:: Финдбйоригинал
 
@@ -671,7 +671,7 @@ virtual CMFCRibbonBaseElement* FindByOriginal(CMFCRibbonBaseElement* pOriginal);
 
 Указатель на элемент ленты, если его исходный элемент ленты совпадает с указанным элементом ленты. в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элементы ленты, скопированные в другой контейнер, сохраняются в указателе на исходный элемент Ribbon.
 
@@ -731,7 +731,7 @@ virtual CMFCRibbonBaseElement* GetDroppedDown();
 
 Указатель на элемент ленты, если его всплывающее меню выбрасывается вниз; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetelements"></a><a name="getelements"></a> Метод CMFCRibbonBaseElement:: наэлементы
 
@@ -747,7 +747,7 @@ virtual void GetElements(
 *арелементс*<br/>
 [вход, выход] Массив элементов ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetelementsbyid"></a><a name="getelementsbyid"></a> Метод CMFCRibbonBaseElement:: Жетелементсбид
 
@@ -767,7 +767,7 @@ virtual void GetElementsByID(
 *арелементс*<br/>
 окне Массив элементов ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgethighlighted"></a><a name="gethighlighted"></a> Метод CMFCRibbonBaseElement:: выделять
 
@@ -781,7 +781,7 @@ virtual CMFCRibbonBaseElement* GetHighlighted();
 
 Указатель на элемент ленты, если он выделен; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetid"></a><a name="getid"></a> Метод CMFCRibbonBaseElement:: GetID
 
@@ -858,7 +858,7 @@ virtual CRect GetKeyTipRect(
 
 Всегда возвращает прямоугольник со значениями 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод в производном классе, чтобы он возвращал прямоугольник границы keytip.
 
@@ -879,7 +879,7 @@ virtual CSize GetKeyTipSize(CDC* pDC);
 
 Размер текста keytip.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetlocationingroup"></a><a name="getlocationingroup"></a> Метод CMFCRibbonBaseElement:: Жетлокатионинграуп
 
@@ -901,7 +901,7 @@ RibbonElementLocation GetLocationInGroup() const;
 |`RibbonElementLastInGroup`|Элемент Ribbon отображается на правой стороне группы ленты.|
 |`RibbonElementMiddleInGroup`|Элемент Ribbon не отображается ни в одном из концов группы ленты.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Группы элементов ленты выводятся только по горизонтали.
 
@@ -917,7 +917,7 @@ LPCTSTR GetMenuKeys() const;
 
 Меню KeyTip, связанное с элементом Ribbon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При вызове меню KeyTip отображает всплывающее меню.
 
@@ -933,7 +933,7 @@ virtual UINT GetNotifyID();
 
 Идентификатор команды уведомления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetoriginal"></a><a name="getoriginal"></a> Метод CMFCRibbonBaseElement::
 
@@ -947,7 +947,7 @@ CMFCRibbonBaseElement* GetOriginal() const;
 
 Указатель на исходный элемент ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элементы ленты, скопированные в другой контейнер, сохраняются в указателе на исходный элемент Ribbon.
 
@@ -963,7 +963,7 @@ CMFCRibbonCategory* GetParentCategory() const;
 
 Указатель на категорию ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetparentpanel"></a><a name="getparentpanel"></a> Метод CMFCRibbonBaseElement:: Жетпарентпанел
 
@@ -977,7 +977,7 @@ virtual CMFCRibbonPanel* GetParentPanel() const;
 
 Указатель на панель ленты, содержащую элемент ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetparentribbonbar"></a><a name="getparentribbonbar"></a> Метод CMFCRibbonBaseElement:: Жетпарентриббонбар
 
@@ -991,7 +991,7 @@ CMFCRibbonBar* GetParentRibbonBar() const;
 
 Указатель на родительскую панель ленты для элемента Ribbon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetparentwnd"></a><a name="getparentwnd"></a> Метод CMFCRibbonBaseElement:: Жетпарентвнд
 
@@ -1005,7 +1005,7 @@ virtual CWnd* GetParentWnd() const;
 
 Указатель на родительское окно для элемента Ribbon, если метод был успешным; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Родительским окном для элемента Ribbon является [класс CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) или [кмфкриббонпанелменубар](internal-classes.md).
 
@@ -1021,7 +1021,7 @@ virtual CMFCRibbonBaseElement* GetPressed();
 
 Указатель на элемент ленты, если пользователь в данный момент нажимает его; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetquickaccesstoolbarid"></a><a name="getquickaccesstoolbarid"></a> Метод CMFCRibbonBaseElement:: Жеткуиккакцесстулбарид
 
@@ -1035,7 +1035,7 @@ virtual UINT GetQuickAccessToolBarID() const;
 
 Идентификатор команды элемента ленты, если он находится на панели быстрого доступа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementgetrect"></a><a name="getrect"></a> Метод CMFCRibbonBaseElement:: коrect
 
@@ -1066,7 +1066,7 @@ virtual CSize GetRegularSize(CDC* pDC) = 0;
 
 Обычный размер элемента ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Обычный размер — максимальный возможный размер элемента ленты.
@@ -1124,7 +1124,7 @@ CMFCRibbonBar* GetTopLevelRibbonBar() const;
 
 Указатель на ленту верхнего уровня для элемента Ribbon, если метод выполнен успешно; в противном случае значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementhascompactmode"></a><a name="hascompactmode"></a> Метод CMFCRibbonBaseElement:: Хаскомпактмоде
 
@@ -1138,7 +1138,7 @@ virtual BOOL HasCompactMode() const;
 
 Значение TRUE, если элемент ленты имеет компактный режим. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > В компактном режиме элемент отображает только небольшое изображение.
@@ -1155,7 +1155,7 @@ virtual BOOL HasIntermediateMode() const;
 
 Значение TRUE, если элемент ленты имеет промежуточный режим; в противном случае — значение FALSE. В промежуточном режиме элемент отображает небольшое изображение и текст справа от изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementhaslargemode"></a><a name="haslargemode"></a> Метод CMFCRibbonBaseElement:: Хасларжемоде
 
@@ -1169,7 +1169,7 @@ virtual BOOL HasLargeMode() const;
 
 Значение TRUE, если элемент ленты имеет большой режим. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В большом режиме элемент может получить полную высоту родительской панели.
 
@@ -1185,7 +1185,7 @@ virtual BOOL HasMenu() const;
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод в производном классе, чтобы указать, имеет ли элемент Ribbon меню.
 
@@ -1206,7 +1206,7 @@ virtual CMFCRibbonBaseElement* HitTest(CPoint point);
 
 Указатель на элемент ленты, если он существует; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает допустимый указатель на элемент Ribbon, если он существует. Переопределите этот метод, чтобы указать, находится ли точка в элементе Ribbon.
 
@@ -1222,7 +1222,7 @@ virtual BOOL IsAlignByColumn() const;
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение TRUE. Переопределите этот метод в производном классе, чтобы указать, выравнивается ли производный элемент Ribbon вертикально с другими элементами ленты.
 
@@ -1238,7 +1238,7 @@ virtual BOOL IsAlwaysLargeImage() const;
 
 Значение TRUE, если размер изображения элемента ленты всегда велик; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Большой размер изображения — 32 x 32 пикселей.
 
@@ -1259,7 +1259,7 @@ virtual BOOL IsAutoRepeatMode(int& nDelay) const;
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод, чтобы указать, находится ли элемент ленты в автоматическом режиме повтора.
 
@@ -1301,7 +1301,7 @@ BOOL IsDefaultMenuLook() const;
 
 Значение TRUE, если элемент ленты задан как всплывающая команда; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisdisabled"></a><a name="isdisabled"></a> Метод CMFCRibbonBaseElement::
 
@@ -1351,7 +1351,7 @@ virtual BOOL IsGalleryIcon() const;
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод в производном классе, чтобы указать, содержится ли элемент Ribbon в коллекции лент.
 
@@ -1367,7 +1367,7 @@ virtual BOOL IsHighlighted() const;
 
 Значение TRUE, если элемент ленты выделен; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisintermediatemode"></a><a name="isintermediatemode"></a> Метод CMFCRibbonBaseElement:: Исинтермедиатемоде
 
@@ -1381,7 +1381,7 @@ BOOL IsIntermediateMode() const;
 
 Значение TRUE, если изображение для элемента ленты имеет промежуточный размер; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Промежуточный размер изображения — 16 x 16 пикселей.
 
@@ -1397,7 +1397,7 @@ BOOL IsLargeMode() const;
 
 Значение TRUE, если изображение элемента ленты имеет большой размер; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Большой размер изображения — 32 x 32 пикселей.
 
@@ -1413,7 +1413,7 @@ BOOL IsMenuMode() const;
 
 Значение TRUE, если элемент ленты содержится в меню; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementispressed"></a><a name="ispressed"></a> Метод CMFCRibbonBaseElement:: нажимает
 
@@ -1439,7 +1439,7 @@ BOOL IsQATMode() const;
 
 Значение TRUE, если элемент ленты содержится на панели быстрого доступа; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisseparator"></a><a name="isseparator"></a> Метод CMFCRibbonBaseElement::
 
@@ -1453,7 +1453,7 @@ virtual BOOL IsSeparator() const;
 
 Значение TRUE, если элемент ленты является разделителем экрана; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisshowgroupborder"></a><a name="isshowgroupborder"></a> Метод CMFCRibbonBaseElement:: Исшовграупбордер
 
@@ -1467,7 +1467,7 @@ BOOL IsShowGroupBorder() const;
 
 Значение TRUE, если элемент ленты содержится в группе, отображающей общую границу. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisshowtooltiponbottom"></a><a name="isshowtooltiponbottom"></a> Метод CMFCRibbonBaseElement:: Исшовтултипонботтом
 
@@ -1481,7 +1481,7 @@ virtual BOOL IsShowTooltipOnBottom() const;
 
 Значение TRUE, если подсказка отображается под элементом ленты. Значение FALSE, если всплывающая подсказка отображается рядом с указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementistabstop"></a><a name="istabstop"></a> Метод CMFCRibbonBaseElement:: IsTabStop
 
@@ -1495,7 +1495,7 @@ virtual BOOL IsTabStop() const;
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение TRUE. Переопределите этот метод, чтобы указать, можно ли выбирать элемент ленты с помощью клавиатуры.
 
@@ -1511,7 +1511,7 @@ BOOL IsTextAlwaysOnRight() const;
 
 Значение TRUE, если текст для элемента ленты отображается справа; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementisvisible"></a><a name="isvisible"></a> Метод CMFCRibbonBaseElement:: Visible
 
@@ -1525,7 +1525,7 @@ BOOL IsVisible() const;
 
 Значение TRUE, если элемент ленты отображается в данный момент; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementiswholerowheight"></a><a name="iswholerowheight"></a> Метод CMFCRibbonBaseElement:: Исвхолеровхеигхт
 
@@ -1539,7 +1539,7 @@ virtual BOOL IsWholeRowHeight() const;
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод, чтобы указать, совпадает ли высота отображаемого элемента ленты с отображаемой высотой панели ленты, содержащей ее.
 
@@ -1560,7 +1560,7 @@ BOOL NotifyCommand(BOOL bWithDelay = FALSE);
 
 Значение TRUE, если сообщение было отправлено; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementnotifyhighlightlistitem"></a><a name="notifyhighlightlistitem"></a> Метод CMFCRibbonBaseElement:: Нотифихигхлигхтлиститем
 
@@ -1575,7 +1575,7 @@ virtual void NotifyHighlightListItem(int nIndex);
 *ниндекс*<br/>
 окне Индекс элемента ленты в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementonaddtoqatoolbar"></a><a name="onaddtoqatoolbar"></a> Метод CMFCRibbonBaseElement:: Онаддтокатулбар
 
@@ -1594,7 +1594,7 @@ virtual BOOL OnAddToQAToolbar(CMFCRibbonQuickAccessToolBar& qat);
 
 Всегда возвращает значение TRUE, указывающее, что элемент ленты был добавлен на панель быстрого доступа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementonafterchangerect"></a><a name="onafterchangerect"></a> Метод CMFCRibbonBaseElement:: Онафтерчанжерект
 
@@ -1609,7 +1609,7 @@ virtual void OnAfterChangeRect(CDC* pDC);
 *Хозяин*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод обновляет подсказку для элемента Ribbon. Переопределите этот метод, чтобы обновить элемент Ribbon после изменения прямоугольника экрана.
 
@@ -1625,7 +1625,7 @@ virtual BOOL OnAutoRepeat();
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод для обработки длительных входных данных пользователя.
 
@@ -1642,7 +1642,7 @@ virtual void OnCalcTextSize(CDC* pDC);
 *Хозяин*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод, чтобы вычислить размер текста для элемента Ribbon.
 
@@ -1663,7 +1663,7 @@ virtual void OnChangeMenuHighlight(CMFCRibbonPanelMenuBar* pPanelMenuBar
 *фот*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод, чтобы обновить элемент ленты, расположенный в меню при изменении выделения.
 
@@ -1680,7 +1680,7 @@ virtual void OnDraw(CDC* pDC) = 0;
 *Хозяин*<br/>
 окне Указатель на контекст устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод в производном классе, если требуется настроить Рисование определенного элемента Ribbon.
 
@@ -1706,7 +1706,7 @@ virtual void OnDrawKeyTip(
 *бисмену*<br/>
 окне Значение TRUE, если keytip — для всплывающей кнопки меню; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementondrawmenuimage"></a><a name="ondrawmenuimage"></a> Метод CMFCRibbonBaseElement:: Ондравменуимаже
 
@@ -1730,7 +1730,7 @@ virtual BOOL OnDrawMenuImage(
 
 Всегда возвращает значение TRUE, указывающее, что изображение было нарисовано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementondrawonlist"></a><a name="ondrawonlist"></a> Метод CMFCRibbonBaseElement:: Ондравонлист
 
@@ -1766,7 +1766,7 @@ virtual void OnDrawOnList(
 *бхигхлигхтед*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В окне Список команд отображаются элементы ленты, позволяющие пользователям настраивать панель быстрого доступа.
 
@@ -1787,7 +1787,7 @@ virtual BOOL OnKey(BOOL bIsMenuKey);
 
 Значение TRUE, если событие было обработано; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementonmenukey"></a><a name="onmenukey"></a> Метод CMFCRibbonBaseElement:: Онменукэй
 
@@ -1806,7 +1806,7 @@ virtual BOOL OnMenuKey(UINT nUpperChar);
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает значение FALSE. Переопределите этот метод, чтобы он отвечал, когда пользователь нажимает кнопку меню keytip на главной панели.
 
@@ -1827,7 +1827,7 @@ virtual BOOL OnProcessKey(UINT nChar);
 
 Всегда возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, если необходимо, чтобы элемент Ribbon обрабатывал сочетание клавиш.
 
@@ -1844,7 +1844,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 *бисртл*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод, чтобы настроить элемент Ribbon при изменении направления расположения. Направление макета по умолчанию — слева направо.
 
@@ -1856,7 +1856,7 @@ virtual void OnRTLChanged(BOOL bIsRTL);
 virtual void OnSetFocus(BOOL B);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод в производном классе, если требуется, чтобы приложение обрабатывал изменение фокуса элемента Ribbon.
 
@@ -1873,7 +1873,7 @@ virtual void OnShow(BOOL bShow);
 *bShow*<br/>
 окне Этот параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод не выполняет никаких действий. Переопределите этот метод, чтобы показать или скрыть элемент ленты.
 
@@ -1885,7 +1885,7 @@ virtual void OnShow(BOOL bShow);
 virtual void OnShowPopupMenu();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод уведомляет родительское окно панели ленты, что элемент ленты будет отображать всплывающее меню.
 
@@ -1902,7 +1902,7 @@ void PostMenuCommand(UINT uiCmdId);
 *уикмдид*<br/>
 окне Параметр не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сообщение о закрытии отправляется, только если элемент ленты находится во всплывающем меню.
 
@@ -1914,7 +1914,7 @@ void PostMenuCommand(UINT uiCmdId);
 virtual void Redraw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод перерисовывает прямоугольник отображения для элемента Ribbon путем вызова [CWnd:: редраввиндов](/windows/win32/api/winuser/nf-winuser-redrawwindow) с набором флагов RDW_INVALIDATE, RDW_ERASE и RDW_UPDATENOW.
 
@@ -1940,7 +1940,7 @@ virtual BOOL SetACCData(
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод задает данные о специальных возможностях для элемента Ribbon и всегда возвращает значение TRUE. Переопределите этот метод, чтобы задать данные специальных возможностей и возвращать значение, указывающее на успешное или неуспешное выполнение.
 
@@ -1957,7 +1957,7 @@ virtual void SetCompactMode(BOOL bCompactMode = TRUE);
 *бкомпактмоде*<br/>
 окне Значение TRUE, чтобы уменьшить размер отображаемого элемента ленты; Значение FALSE, чтобы увеличить размер отображаемого элемента ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В следующей таблице приведена сводка по логике для этого метода.
 
@@ -1994,7 +1994,7 @@ void SetDefaultMenuLook(BOOL bIsDefaultMenuLook = TRUE);
 *бисдефаултменулук*<br/>
 окне Значение TRUE, чтобы задать отображение элемента ленты как всплывающей команды; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementsetdescription"></a><a name="setdescription"></a> Метод CMFCRibbonBaseElement:: SetDescription
 
@@ -2009,7 +2009,7 @@ virtual void SetDescription(LPCTSTR lpszText);
 *lpszText*<br/>
 окне Описание элемента Ribbon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа отображает новое описание либо в строке состояния, либо в подсказке, либо при нажатии кнопки меню.
 
@@ -2039,7 +2039,7 @@ virtual void SetInitialMode(BOOL bOneRow = FALSE);
 *бонеров*<br/>
 окне Значение TRUE, чтобы ограничить отображаемый размер элемента ленты компактным или промежуточным. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отображаемый размер элементов ленты может быть компактным, промежуточным или большим.
 
@@ -2074,7 +2074,7 @@ virtual void SetOriginal(CMFCRibbonBaseElement* pOriginal);
 *поригинал*<br/>
 окне Указатель на элемент ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элементы ленты, скопированные в другой контейнер, сохраняются в указателе на исходный элемент Ribbon.
 
@@ -2091,7 +2091,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pParent);
 *ппарент*<br/>
 окне Указатель на категорию ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Группы с вкладками в элементах управления ленты называются категориями.
 
@@ -2108,7 +2108,7 @@ virtual void SetParentMenu(CMFCRibbonPanelMenuBar* pMenuBar);
 *пменубар*<br/>
 окне Родительское меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementsetparentribbonbar"></a><a name="setparentribbonbar"></a> Метод CMFCRibbonBaseElement:: Сетпарентриббонбар
 
@@ -2123,7 +2123,7 @@ virtual void SetParentRibbonBar(CMFCRibbonBar* pRibbonBar);
 *приббонбар*<br/>
 окне Указатель на родительскую панель ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementsetrect"></a><a name="setrect"></a> Метод CMFCRibbonBaseElement:: SetRect
 
@@ -2138,7 +2138,7 @@ void SetRect(CRect rect);
 *rect*<br/>
 окне Размеры прямоугольника.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementsettext"></a><a name="settext"></a> Метод CMFCRibbonBaseElement:: SetText
 
@@ -2153,7 +2153,7 @@ virtual void SetText(LPCTSTR lpszText);
 *lpszText*<br/>
 окне Текст и keytip для элемента Ribbon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы задать keytip для элемента Ribbon, добавьте escape-последовательность новой строки, а затем символы KeyTip в *лпсзтекст*.
 
@@ -2181,7 +2181,7 @@ virtual void SetTextAlwaysOnRight(BOOL bSet = TRUE);
 *Управляемое bSet*<br/>
 окне Значение TRUE, чтобы отображать текст справа; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementsettooltiptext"></a><a name="settooltiptext"></a> Метод CMFCRibbonBaseElement:: Сеттултиптекст
 
@@ -2209,7 +2209,7 @@ void SetVisible(BOOL bIsVisible);
 *бисвисибле*<br/>
 окне Значение TRUE для вывода элемента ленты; Значение FALSE, чтобы скрыть элемент ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementstretchhorizontally"></a><a name="stretchhorizontally"></a> Метод CMFCRibbonBaseElement:: Стретчхоризонталли
 
@@ -2219,7 +2219,7 @@ void SetVisible(BOOL bIsVisible);
 virtual void StretchHorizontally();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод создает ошибку утверждения в отладочных сборках и поэтому не должна вызываться. Переопределите этот метод, чтобы растянуть ширину элемента ленты.
 
@@ -2245,7 +2245,7 @@ virtual BOOL StretchToWholeRow(
 
 Значение TRUE, если высота дисплея задана. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, чтобы изменить высоту отображаемого элемента ленты на указанную высоту строки.
 
@@ -2257,7 +2257,7 @@ virtual BOOL StretchToWholeRow(
 virtual void UpdateTooltipInfo();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbaseelementhasfocus"></a><a name="hasfocus"></a> Метод CMFCRibbonBaseElement:: Хасфокус
 
@@ -2271,7 +2271,7 @@ virtual BOOL HasFocus() const;
 
 Значение TRUE, если элемент ленты имеет особое значение; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

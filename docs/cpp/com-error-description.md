@@ -29,7 +29,7 @@ _bstr_t Description( ) const;
 
 Возвращает результат `IErrorInfo::GetDescription` для объекта `IErrorInfo`, записанного в объекте `_com_error`. Результирующая функция `BSTR` инкапсулируется в объект `_bstr_t`. Если `IErrorInfo` не записано, возвращается пустая `_bstr_t`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызывает функцию `IErrorInfo::GetDescription` и извлекает `IErrorInfo`, записанные в объекте `_com_error`. Любой сбой при вызове метода `IErrorInfo::GetDescription` игнорируется.
 

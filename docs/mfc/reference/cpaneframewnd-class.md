@@ -233,7 +233,7 @@ class CPaneFrameWnd : public CWnd
 |----------|-----------------|
 |[CPaneFrameWnd::m_bUseSaveBits](#m_busesavebits)|Определяется, следует ли регистрировать класс окон в стиле CS_SAVEBITS класса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Когда панель переходит из закрепленного состояния в плавающее, платформа автоматически создает объект `CPaneFrameWnd`.
 
@@ -306,7 +306,7 @@ virtual void AdjustLayout();
 virtual void AdjustPaneFrames();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndcalcbordersize"></a><a name="calcbordersize"></a>CPaneFrameWnd::CalcBorderSize
 
@@ -321,7 +321,7 @@ virtual void CalcBorderSize(CRect& rectBorderSize) const;
 *rectBorderSize*<br/>
 (ваут) Содержит размер в пикселях границы окна мини-кадра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фреймворкой для расчета размера границы окна мини-кадра. Возвращающееся размер зависит от того, содержит ли окно miniframe панель инструментов или [CDockablePane.](../../mfc/reference/cdockablepane-class.md)
 
@@ -355,7 +355,7 @@ virtual void CalcExpectedDockedRect(
 *ppTargetBar*<br/>
 (ваут) Указатель на целевое стекло.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вычисляет прямоугольник, который занимал бы окно, если пользователь перетащил окно в точку, указанную *ptMouse,* и пристыковал его туда.
 
@@ -394,7 +394,7 @@ Nonzero, если мини-рамка может быть пристыкован
 virtual void CheckGripperVisibility();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndconverttotabbeddocument"></a><a name="converttotabbeddocument"></a>CPaneFrameWnd::ConvertToTabbedDocument
 
@@ -438,7 +438,7 @@ virtual BOOL Create(
 
 TRUE, если окно было создано успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Окно мини-кадра создается в два этапа. Во-первых, фреймворк `CPaneFrameWnd` создает объект. Во-вторых, он призывает `Create` создать окно миникадровой системы Windows и прикрепить его к объекту. `CPaneFrameWnd`
 
@@ -480,7 +480,7 @@ virtual BOOL CreateEx(
 
 TRUE, если окно было создано успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Окно мини-кадра создается в два этапа. Во-первых, фреймворк `CPaneFrameWnd` создает объект. Во-вторых, он призывает `Create` создать окно миникадровой системы Windows и прикрепить его к объекту. `CPaneFrameWnd`
 
@@ -560,7 +560,7 @@ virtual int GetCaptionHeight() const;
 
 Высота, в пикселях, окна мини-кадра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы определить высоту окна мини-рамки. По умолчанию высота установлена на SM_CYSMCAPTION. Для получения дополнительной [GetSystemMetrics Function](/windows/win32/api/winuser/nf-winuser-getsystemmetrics)информации см.
 
@@ -577,7 +577,7 @@ virtual void GetCaptionRect(CRect& rectCaption) const;
 *rectCaption*<br/>
 (ваут) Содержит размер и положение подписи окна мини-рамки в координатах экрана.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фреймворцом для расчета связующего прямоугольника подписи окна мини-рамки.
 
@@ -593,7 +593,7 @@ virtual CString GetCaptionText();
 
 Заголовок текста окна мини-рамки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фректовом при отображении текста подписи.
 
@@ -605,7 +605,7 @@ CDockingManager* GetDockingManager() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetdockingmode"></a><a name="getdockingmode"></a>CPaneFrameWnd::GetDockingMode
 
@@ -645,7 +645,7 @@ CPoint GetHotPoint() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetpane"></a><a name="getpane"></a>CPaneFrameWnd::GetPane
 
@@ -659,7 +659,7 @@ virtual CWnd* GetPane() const;
 
 Панель, содержащаяся в мини-кадре, или NULL, если окно мини-рамки не содержит стекол.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetpanecount"></a><a name="getpanecount"></a>CPaneFrameWnd::GetPaneCount
 
@@ -673,7 +673,7 @@ virtual int GetPaneCount() const;
 
 Количество стекол в окне мини-кадра. Это значение может быть равно 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetparent"></a><a name="getparent"></a>CPaneFrameWnd::GetParent
 
@@ -683,7 +683,7 @@ CWnd* GetParent();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetpinstate"></a><a name="getpinstate"></a>CPaneFrameWnd::GetPinState
 
@@ -693,7 +693,7 @@ BOOL GetPinState() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetrecentfloatingrect"></a><a name="getrecentfloatingrect"></a>CPaneFrameWnd::GetRecentFloatingRect
 
@@ -703,7 +703,7 @@ CRect GetRecentFloatingRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndgetvisiblepanecount"></a><a name="getvisiblepanecount"></a>CPaneFrameWnd::GetVisiblePaneCount
 
@@ -717,7 +717,7 @@ virtual int GetVisiblePaneCount() const;
 
 Количество видимых стекол.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndhittest"></a><a name="hittest"></a>CPaneFrameWnd::HitTest
 
@@ -763,7 +763,7 @@ BOOL IsCaptured() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndisdelayshow"></a><a name="isdelayshow"></a>CPaneFrameWnd::IsDelayShow
 
@@ -773,7 +773,7 @@ BOOL IsDelayShow() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndisrolldown"></a><a name="isrolldown"></a>CPaneFrameWnd::IsRollDown
 
@@ -787,7 +787,7 @@ virtual BOOL IsRollDown() const;
 
 ПРАВДА, если окно мини-рамки должно быть свернуто; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фректовом, чтобы определить, следует ли свернуть окно мини-рамки. Функция свертывания/свертывания включена для окна мини-кадра, если оно содержит по крайней мере одно стекло, которое имеет AFX_CBRS_AUTO_ROLLUP флаг. Этот флаг устанавливается при создании панели. Для получения дополнительной информации [см. CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
@@ -805,7 +805,7 @@ virtual BOOL IsRollUp() const;
 
 ПРАВДА, если окно мини-рамки должно быть свернуто; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фректовом, чтобы определить, следует ли свернуть окно мини-рамки. Функция свертывания/свертывания включена для окна мини-кадра, если оно содержит по крайней мере одно стекло, которое имеет AFX_CBRS_AUTO_ROLLUP флаг. Этот флаг устанавливается при создании панели. Для получения дополнительной информации [см. CBasePane::CreateEx](../../mfc/reference/cbasepane-class.md#createex).
 
@@ -849,7 +849,7 @@ TRUE, если состояние панели было загружено ус�
 AFX_IMPORT_DATA static BOOL m_bUseSaveBits;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите этот статический член к TRUE, чтобы зарегистрировать класс окна мини-рамки, который имеет CS_SAVEBITS стиль. Это может помочь уменьшить мерцание, когда пользователь перетаскивает окно мини-рамки.
 
@@ -873,7 +873,7 @@ TRUE, если стыковка возможна; в противном случ
 virtual void OnCheckRollState();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фректовом, чтобы определить, следует ли свернуть окно мини-рамки вверх или вниз.
 
@@ -900,7 +900,7 @@ virtual void OnDrawBorder(CDC* pDC);
 *pDC*<br/>
 (в) Контекст устройства, используемый для рисования границы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод называется фреймворком для рисования границ окна мини-рамки.
 
@@ -938,7 +938,7 @@ virtual void OnMovePane(
 virtual void OnPaneRecalcLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамка вызывает этот метод, когда он должен настроить макет панели внутри окна мини-рамки.
 
@@ -970,7 +970,7 @@ virtual void OnShowPane(
 *bShow*<br/>
 (в) ПРАВДА, если панель отображается; FALSE, если панель скрыта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается фреймворком, когда панель в окне мини-рамки отображается или скрыта. Реализация по умолчанию не выполняет никаких действий.
 
@@ -984,7 +984,7 @@ void Pin(BOOL bPin = TRUE);
 
 (в) *bПин*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndpanefrompoint"></a><a name="panefrompoint"></a>CPaneFrameWnd::PaneFromPoint
 
@@ -1012,7 +1012,7 @@ virtual CBasePane* PaneFromPoint(
 
 Панель, которую пользователь нажал, или NULL, если в этом месте нет панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить панель, содержащую заданную точку.
 
@@ -1024,7 +1024,7 @@ virtual CBasePane* PaneFromPoint(
 static void RedrawAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод обновляет все окна мини-рамки, вызывая [CWnd::RedrawWindow](../../mfc/reference/cwnd-class.md#redrawwindow) для каждого окна.
 
@@ -1058,7 +1058,7 @@ virtual void RemovePane(
 *bNoDelayedDestroy*<br/>
 (в) Если правда, задержки уничтожения отключен. Если FALSE, задержка уничтожения включена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамки могут уничтожить окна мини-рамки сразу или после определенной задержки. Если вы хотите отсрочить разрушение окон мини-рам, пройдите FALSE в параметре *bNoDelayedDestroy.* Задержка разрушения происходит, когда фреймворк обрабатывает AFX_WM_CHECKEMPTYMINIFRAME сообщение.
 
@@ -1133,7 +1133,7 @@ void SetDelayShow(BOOL bDelayShow);
 
 (в) *bDelayShow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndsetdockingmanager"></a><a name="setdockingmanager"></a>CPaneFrameWnd::SetDockingManager
 
@@ -1145,7 +1145,7 @@ void SetDockingManager(CDockingManager* pManager);
 
 (в) *pManager*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndsetdockingtimer"></a><a name="setdockingtimer"></a>CPaneFrameWnd::SetDockingTimer
 
@@ -1183,7 +1183,7 @@ void SetHotPoint(CPoint& ptNew);
 
 (в) *ptNew*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndsetpredockstate"></a><a name="setpredockstate"></a>CPaneFrameWnd::SetPreDockState
 
@@ -1225,7 +1225,7 @@ virtual BOOL SetPreDockState(
 virtual void SizeToContent();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы настроить размер окна мини-рамки до размера содержащегося стекла.
 
@@ -1256,7 +1256,7 @@ virtual void StoreRecentDockSiteInfo(CPane* pBar);
 
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpaneframewndstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a>CPaneFrameWnd::StoreRecentTabRelatedInfo
 
@@ -1271,7 +1271,7 @@ virtual void StoreRecentTabRelatedInfo(
 (в) *pDockingBar*<br/>
 (в) *pTabbedBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

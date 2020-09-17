@@ -47,7 +47,7 @@ class CSize : public tagSIZE
 |[CSize::оператор -](#operator_-_eq)|Вычитает размер из `CSize`.|
 |[CSize::оператор](#operator_eq_eq)|Проверки на `CSize` равенство между и размер.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс происходит от `SIZE` структуры. Это означает, что `CSize` вы можете пройти `SIZE` в параметр, который `SIZE` требует и что `CSize`данные членов структуры доступны холостых данных членов .
 
@@ -95,7 +95,7 @@ CSize( DWORD dwSize) throw();
 *dwSize*<br/>
 DWORD используется для `CSize`инициализации . Слово низкого порядка является `cx` членом, а слово `cy` высокого порядка — членом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если аргументы не `cx` приводятся, и `cy` инициализированы до нуля.
 
@@ -111,7 +111,7 @@ DWORD используется для `CSize`инициализации . Сло
 BOOL operator==(SIZE size) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает ненулевой, если размеры равны, otherwize 0.
 
@@ -127,7 +127,7 @@ BOOL operator==(SIZE size) const throw();
 BOOL operator!=(SIZE size) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает ненулевой, если размеры не равны, в противном случае 0.
 
@@ -169,7 +169,7 @@ CPoint operator+(POINT point) const throw();
 CRect operator+(const RECT* lpRect) const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите следующие описания отдельных операторов:
 
@@ -200,7 +200,7 @@ CRect operator-(const RECT* lpRect) const throw();
 CSize operator-() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Четвертый оператор, неиссякаемый `CSize` минус, меняет знак значения. Смотрите следующие описания отдельных операторов:
 

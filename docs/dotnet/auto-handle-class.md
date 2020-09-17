@@ -42,14 +42,14 @@ ref class auto_handle;
 
 ### <a name="public-constructors"></a>Открытые конструкторы  
 
-|Имя|Описание:|  
+|Имя|Описание|  
 |---------|-----------|  
 |[auto_handle::auto_handle](#auto-handle)|`auto_handle`Конструктор.|  
 |[auto_handle:: ~ auto_handle](#tilde-auto-handle)|`auto_handle`Деструктор.|  
 
 ### <a name="public-methods"></a>Открытые методы  
 
-|Имя|Описание:|  
+|Имя|Описание|  
 |---------|-----------|  
 |[auto_handle::get](#get)|Возвращает содержащийся объект.|  
 |[auto_handle::release](#release)|Освобождает объект от `auto_handle` управления.|
@@ -58,13 +58,13 @@ ref class auto_handle;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|  
+|Имя|Описание|  
 |---------|-----------|
-|[auto_handle:: operator —&gt;](#operator-arrow)|Оператор доступа к члену.|
+|[auto_handle::operator-&gt;](#operator-arrow)|Оператор доступа к члену.|
 |[auto_handle::operator=](#operator-assign)|Оператор присвоения.|
 |[auto_handle::operator auto_handle](#operator-auto-handle)|Оператор приведения типа между `auto_handle` и совместимыми типами.|  
 |[auto_handle::operator bool](#operator-bool)|Оператор для использования `auto_handle` в условном выражении.|
-|[auto_handle:: operator!](#operator-logical-not)|Оператор для использования `auto_handle` в условном выражении.|  
+|[auto_handle::operator!](#operator-logical-not)|Оператор для использования `auto_handle` в условном выражении.|  
 
 ## <a name="requirements"></a>Требования
 
@@ -171,7 +171,7 @@ done
 ~auto_handle();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор также деструктуре принадлежащего объекта.
 
@@ -441,7 +441,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="auto_handleoperator-gt"></a><a name="operator-arrow"></a>auto_handle:: operator —&gt;
+## <a name="auto_handleoperator-gt"></a><a name="operator-arrow"></a>auto_handle::operator-&gt;
 
 Оператор доступа к члену.
 
@@ -490,7 +490,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="auto_handleoperator"></a><a name="operator-assign"></a>auto_handle:: operator =
+## <a name="auto_handleoperator"></a><a name="operator-assign"></a>auto_handle::operator=
 
 Оператор присвоения.
 
@@ -574,7 +574,7 @@ done
 in ClassA destructor: second
 ```
 
-## <a name="auto_handleoperator-auto_handle"></a><a name="operator-auto-handle"></a>auto_handle:: operator auto_handle
+## <a name="auto_handleoperator-auto_handle"></a><a name="operator-auto-handle"></a>auto_handle::operator auto_handle
 
 Оператор приведения типа между `auto_handle` и совместимыми типами.
 
@@ -629,7 +629,7 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="auto_handleoperator-bool"></a><a name="operator-bool"></a>auto_handle:: operator bool
+## <a name="auto_handleoperator-bool"></a><a name="operator-bool"></a>auto_handle::operator bool
 
 Оператор для использования `auto_handle` в условном выражении.
 
@@ -641,7 +641,7 @@ operator bool();
 
 **`true`** значение, если упакованный объект является допустимым; **`false`** в противном случае — значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор фактически преобразует в `_detail_class::_safe_bool` , который является более безопасным, чем, **`bool`** так как он не может быть преобразован в целочисленный тип.
 
@@ -674,7 +674,7 @@ s2 is valid
 s2 is now invalid
 ```
 
-## <a name="auto_handleoperator"></a><a name="operator-logical-not"></a>auto_handle:: operator!
+## <a name="auto_handleoperator"></a><a name="operator-logical-not"></a>auto_handle::operator!
 
 Оператор для использования `auto_handle` в условном выражении.
 

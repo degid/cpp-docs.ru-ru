@@ -65,7 +65,7 @@ class CTokenGroups
 |[CTokenGroups::оператор const TOKEN_GROUPS](#operator_const_token_groups__star)|Отбрасывает `CTokenGroups` объект указателю на `TOKEN_GROUPS` структуру.|
 |[CTokenGroups::оператор](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [Токен доступа](/windows/win32/SecAuthZ/access-tokens) — это объект, описывающий контекст безопасности процесса или потока и выделенный каждому пользователю, зарегистрированного на систему Windows.
 
@@ -97,7 +97,7 @@ void Add(const TOKEN_GROUPS& rTokenGroups) throw(...);
 *rTokenGroups*<br/>
 Структура [TOKEN_GROUPS.](/windows/win32/api/winnt/ns-winnt-token_groups)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти методы добавляют `CSid` один или несколько объектов и связанные с ними атрибуты к объекту. `CTokenGroups`
 
@@ -116,7 +116,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 *rhs*<br/>
 Объект `CTokenGroups` или [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) структуру, `CTokenGroups` с помощью которой можно построить объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CTokenGroups` может быть создан по `TOKEN_GROUPS` желанию с `CTokenGroups` помощью структуры или ранее определенного объекта.
 
@@ -128,7 +128,7 @@ CTokenGroups(const TOKEN_GROUPS& rhs) throw(...);
 virtual ~CTokenGroups() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор освобождает все выделенные ресурсы.
 
@@ -177,7 +177,7 @@ UINT GetCount() const throw();
 UINT GetLength() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает общий размер `CTokenGroup` объекта в байтах.
 
@@ -211,7 +211,7 @@ void GetSidsAndAttributes(
 *pAttributes*<br/>
 Указатель на массив DWORDs. Если этот параметр опущен или NULL, атрибуты не извлекаются.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод будет перечислять все `CSid` объекты, `CTokenGroups` содержащиеся в объекте, и размещать их и (по желанию) атрибут флаги в объекты массива.
 
@@ -237,7 +237,7 @@ bool LookupSid(
 
 Возвращает верно, `CSid` если найдено, ложное в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установка *pdwAttributes* на NULL обеспечивает способ подтверждения `CSid` существования атрибута без доступа к атрибуту. Обратите внимание, что этот метод не должен использоваться для проверки прав доступа. Вместо этого приложения должны использовать метод [CAccessToken::CheckTokenMembership.](../../atl/reference/caccesstoken-class.md#checktokenmembership)
 
@@ -267,7 +267,7 @@ CTokenGroups& operator= (const CTokenGroups& rhs) throw(...);
 operator const TOKEN_GROUPS *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отбрасывает значение указателю на [TOKEN_GROUPS](/windows/win32/api/winnt/ns-winnt-token_groups) структуру.
 

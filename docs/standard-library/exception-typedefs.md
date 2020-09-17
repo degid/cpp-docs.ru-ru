@@ -23,7 +23,7 @@ ms.locfileid: "81368728"
 typedef unspecified exception_ptr;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Неуказанный внутренний класс, используемый для реализации типа `exception_ptr`.
 
@@ -47,7 +47,7 @@ typedef unspecified exception_ptr;
 typedef void (*terminate_handler)();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип, который описывает указатель на функцию, подходящую для использования в качестве обработчика завершения.
 

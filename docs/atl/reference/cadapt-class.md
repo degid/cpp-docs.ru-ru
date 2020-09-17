@@ -39,7 +39,7 @@ class CAdapt
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кадапт:: Кадапт](#cadapt)|Конструктор.|
 
@@ -47,11 +47,11 @@ class CAdapt
 
 |Имя|Описание|
 |----------|-----------------|
-|[Кадапт:: operator const T&](#operator_const_t_amp)|Возвращает **`const`** ссылку на `m_T` .|
-|[Кадапт:: operator T&](#operator_t_amp)|Возвращает ссылку на `m_T`.|
-|[Кадапт:: operator <](#operator_lt)|Сравнивает объект адаптированного типа с `m_T`.|
-|[Кадапт:: operator =](#operator_eq)|Присваивает `m_T` объект адаптированного типа.|
-|[Кадапт:: operator = =](#operator_eq_eq)|Сравнивает объект адаптированного типа с `m_T`.|
+|[Кадапт::operator const T&](#operator_const_t_amp)|Возвращает **`const`** ссылку на `m_T` .|
+|[Кадапт::operator T&](#operator_t_amp)|Возвращает ссылку на `m_T`.|
+|[Кадапт::operator<](#operator_lt)|Сравнивает объект адаптированного типа с `m_T`.|
+|[Кадапт::operator=](#operator_eq)|Присваивает `m_T` объект адаптированного типа.|
+|[Кадапт::operator==](#operator_eq_eq)|Сравнивает объект адаптированного типа с `m_T`.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -59,7 +59,7 @@ class CAdapt
 |----------|-----------------|
 |[Кадапт:: m_T](#m_t)|Адаптируемые данные.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAdapt` представляет собой простой шаблон, который используется для создания оболочек классов, переопределяющих оператор взятия адреса (`operator &`), чтобы он возвращал нечто, отличное от адреса объекта. Примерами таких классов являются классы ATL `CComBSTR`, `CComPtr` и `CComQIPtr`, а также класс поддержки COM компилятора `_com_ptr_t`. Эти классы переопределяют оператор взятия адреса для получения адреса одного из их членов данных (BSTR в случае `CComBSTR` , и указателя интерфейса в случае других классов).
 
@@ -71,7 +71,7 @@ class CAdapt
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlcomcli. h
+**Заголовок:** atlcomcli.h
 
 ## <a name="cadaptcadapt"></a><a name="cadapt"></a>Кадапт:: Кадапт
 
@@ -101,11 +101,11 @@ CAdapt(CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 T m_T;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **`public`** Доступ к этому члену данных можно получить напрямую или косвенно с помощью [оператора const t&](#operator_const_t_amp) и [оператора t&](#operator_t_amp).
 
-## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a>Кадапт:: operator const T&amp;
+## <a name="cadaptoperator-const-tamp"></a><a name="operator_const_t_amp"></a>Кадапт::operator const T&amp;
 
 Возвращает **`const`** ссылку на элемент [m_T](#m_t) , позволяя обрабатывать объект адаптера так, как будто он был объектом типа *T*.
 
@@ -117,7 +117,7 @@ operator const T&() const;
 
 **`const`** Ссылка на `m_T` .
 
-## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a>Кадапт:: operator T&amp;
+## <a name="cadaptoperator-tamp"></a><a name="operator_t_amp"></a>Кадапт::operator T&amp;
 
 Возвращает ссылку на элемент [m_T](#m_t) , позволяя обрабатывать объект адаптера так, как будто он был объектом типа *T*.
 
@@ -129,7 +129,7 @@ operator T&();
 
 Ссылка на идентификатор `m_T`.
 
-## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a>Кадапт:: operator&lt;
+## <a name="cadaptoperator-lt"></a><a name="operator_lt"></a>Кадапт::operator&lt;
 
 Сравнивает объект адаптированного типа с [m_T](#m_t).
 
@@ -146,7 +146,7 @@ bool operator<(const T& rSrc) const;
 
 Результат сравнения между `m_T` и *rsrc*.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq"></a>Кадапт:: operator =
+## <a name="cadaptoperator-"></a><a name="operator_eq"></a>Кадапт::operator=
 
 Оператор присваивания присваивает аргумент *rsrc*элементу данных, [m_T](#m_t) и возвращает текущий объект адаптера.
 
@@ -168,7 +168,7 @@ CAdapt& operator= (CAdapt<T>&& rSrCA) noexcept; // (Visual Studio 2017)
 
 Ссылка на текущий объект.
 
-## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a>Кадапт:: operator = =
+## <a name="cadaptoperator-"></a><a name="operator_eq_eq"></a>Кадапт::operator==
 
 Сравнивает объект адаптированного типа с [m_T](#m_t).
 

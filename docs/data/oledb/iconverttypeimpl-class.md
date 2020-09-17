@@ -50,7 +50,7 @@ class ATL_NO_VTABLE IConvertTypeImpl
 |-|-|
 |[канконверт](#canconvert)|Предоставляет сведения о доступности преобразований типов в команде или в наборе строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот интерфейс является обязательным для команд, наборов строк и наборов строк индекса. `IConvertTypeImpl` реализует интерфейс путем делегирования объекту преобразования, предоставленному OLE DB.
 
@@ -70,7 +70,7 @@ STDMETHOD(CanConvert)(DBTYPE wFromType,
 
 См. раздел [Интерфейс IConvertType:: канконверт](/previous-versions/windows/desktop/ms711224(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Использует OLE DB преобразования данных в `MSADC.DLL` .
 

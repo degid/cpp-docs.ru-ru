@@ -61,13 +61,13 @@ struct _ATL_BASE_MODULE70 {
 `m_rgResourceInstance`<br/>
 Массив, используемый для поиска ресурсов во всех экземплярах ресурсов, в которых учитывается ATL. Используется внутренне библиотекой ATL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [_ATL_BASE_MODULE](atl-typedefs.md#_atl_base_module) определяется как typedef _ATL_BASE_MODULE70.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="see-also"></a>См. также
 

@@ -41,7 +41,7 @@ friend _bstr_t operator+( const wchar_t* s3, const _bstr_t& s1);
 *S3*<br/>
 Строка Юникода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти операторы выполняют объединение строк:
 

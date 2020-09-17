@@ -31,7 +31,7 @@ class RemoveIUnknown : public T;
 *T*<br/>
 Класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создает тип, эквивалентный базовому типу `IUnknown`, но имеющий невиртуальные функции-члены `QueryInterface`, `AddRef` и `Release`.
 
@@ -41,7 +41,7 @@ class RemoveIUnknown : public T;
 
 ### <a name="public-typedefs"></a>Открытые определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`ReturnType`|Синоним для типа, эквивалентный параметру-шаблону *T* , но имеющий невиртуальные `IUnknown` члены.|
 

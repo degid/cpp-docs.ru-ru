@@ -28,7 +28,7 @@ ms.locfileid: "88836248"
 *uuid*<br/>
 UUID, определяющий версию интерфейса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **async_uuid** C++ имеет те же функциональные возможности, что и атрибут [async_uuid](/windows/win32/Midl/async-uuid) MIDL.
 

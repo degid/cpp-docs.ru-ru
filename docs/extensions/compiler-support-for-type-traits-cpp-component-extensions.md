@@ -74,7 +74,7 @@ ms.locfileid: "87219785"
 
 ## <a name="all-runtimes"></a>Все среды выполнения
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Признаки типов особенно важны для программистов, создающих библиотеки.
 
@@ -520,7 +520,7 @@ ms.locfileid: "87219785"
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `__has_finalizer(` *type* `)` Характеристика типа типа не поддерживается, так как эта платформа не поддерживает методы завершения.
 
@@ -530,7 +530,7 @@ ms.locfileid: "87219785"
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 

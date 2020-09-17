@@ -53,7 +53,7 @@ class ITarget;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[распространения](#propagate)|При переопределении в производном классе асинхронно передает сообщение из исходного блока в этот целевой блок.|
 |[send](#send)|При переопределении в производном классе синхронно передает сообщение в целевой блок.|
@@ -67,7 +67,7 @@ class ITarget;
 |[unlink_source](#unlink_source)|При переопределении в производном классе отменяет связь указанного исходного блока с этим `ITarget` блоком.|
 |[unlink_sources](#unlink_sources)|При переопределении в производном классе отменяет связь всех исходных блоков с этим `ITarget` блоком.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -79,7 +79,7 @@ class ITarget;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="itarget"></a><a name="dtor"></a>~ ITarget
 
@@ -102,7 +102,7 @@ virtual void link_source(_Inout_ ISource<T>* _PSource) = 0;
 *_PSource*<br/>
 `ISource`Блок, связанный с этим `ITarget` блоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не должна вызываться напрямую в `ITarget` блоке. Блоки должны быть соединены вместе с помощью `link_target` метода для `ISource` блоков, которые будут вызывать `link_source` метод для соответствующего целевого объекта.
 
@@ -128,7 +128,7 @@ virtual message_status propagate(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
@@ -154,7 +154,7 @@ virtual message_status send(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если `_PMessage` параметр или имеет значение `_PSource` `NULL` .
 
@@ -187,7 +187,7 @@ virtual void unlink_source(_Inout_ ISource<T>* _PSource) = 0;
 *_PSource*<br/>
 `ISource`Несвязанный с этим `ITarget` блоком блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не должна вызываться напрямую в `ITarget` блоке. Блоки должны быть отключены с `unlink_target` помощью `unlink_targets` методов или для `ISource` блоков, которые будут вызывать `unlink_source` метод для соответствующего целевого объекта.
 

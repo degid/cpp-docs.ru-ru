@@ -24,7 +24,7 @@ ms.locfileid: "88845748"
 #include <iomanip>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каждый из этих манипуляторов возвращает неуказанный тип, вызываемый с `T1` помощью `T10` , который перегружает `basic_istream` \<**Elem**, **Tr**> `::` [Операторы>>](../standard-library/istream-operators.md#op_gt_gt) и `basic_ostream` \<**Elem**, **Tr**> `::` [operator<<](../standard-library/ostream-operators.md#op_lt_lt).
 

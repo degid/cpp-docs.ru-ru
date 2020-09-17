@@ -17,7 +17,7 @@ ms.locfileid: "87196556"
 
 > возвращаемый тип "*функция*" должен быть "*тип1*", а не "*тип2*"
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция вернула тип, отличный от *Type1*. Например, при использовании [/Za](../../build/reference/za-ze-disable-language-extensions.md) **Main** не возвращает **`int`** .
 

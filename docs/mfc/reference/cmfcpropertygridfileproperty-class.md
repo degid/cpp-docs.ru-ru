@@ -41,7 +41,7 @@ class CMFCPropertyGridFileProperty : public CMFCPropertyGridProperty
 |`CMFCPropertyGridFileProperty::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 |`CMFCPropertyGridFileProperty::OnClickButton`|(Переопределяет [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -99,7 +99,7 @@ CMFCPropertyGridFileProperty(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полный список доступных флагов можно найти в [структуре OPENFILENAME.](/windows/win32/api/commdlg/ns-commdlg-openfilenamew)
 

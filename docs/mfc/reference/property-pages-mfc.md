@@ -71,13 +71,13 @@ void AFXAPI DDP_CBIndex(
 *псзпропнаме*<br/>
 Имя свойства элемента управления, которое должно быть заменено элементом управления "поле со списком", заданным по *идентификатору*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_CBIndex` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_cbstring"></a><a name="ddp_cbstring"></a> DDP_CBString
 
@@ -105,13 +105,13 @@ void AFXAPI DDP_CBString(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено строкой поля со списком, заданным по *идентификатору*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_CBString` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_cbstringexact"></a><a name="ddp_cbstringexact"></a> DDP_CBStringExact
 
@@ -139,13 +139,13 @@ void AFXAPI DDP_CBStringExact(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено строкой поля со списком, заданным по *идентификатору*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_CBStringExact` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_check"></a><a name="ddp_check"></a> DDP_Check
 
@@ -173,13 +173,13 @@ void AFXAPI DDP_Check(
 *псзпропнаме*<br/>
 Имя свойства элемента управления, которое должно быть заменено элементом управления флажком, заданным по *идентификатору*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_Check` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_lbindex"></a><a name="ddp_lbindex"></a> DDP_LBIndex
 
@@ -207,13 +207,13 @@ void AFXAPI DDP_LBIndex(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено строкой списка, заданной *идентификатором*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_LBIndex` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_lbstring"></a><a name="ddp_lbstring"></a> DDP_LBString
 
@@ -241,13 +241,13 @@ void AFXAPI DDP_LBString(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено строкой списка, заданной *идентификатором*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_LBString` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_lbstringexact"></a><a name="ddp_lbstringexact"></a> DDP_LBStringExact
 
@@ -275,13 +275,13 @@ void AFXAPI DDP_LBStringExact(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено строкой списка, заданной *идентификатором*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_LBStringExact` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_postprocessing"></a><a name="ddp_postprocessing"></a> DDP_PostProcessing
 
@@ -296,7 +296,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 *pDX*<br/>
 Указатель на `CDataExchange` объект. Структура предоставляет этот объект для формирования контекста обмена данными, включая его направление.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться после завершения всех функций обмена данными. Пример:
 
@@ -304,7 +304,7 @@ void AFXAPI DDP_PostProcessing(CDataExchange * pDX);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_radio"></a><a name="ddp_radio"></a> DDP_Radio
 
@@ -332,13 +332,13 @@ void AFXAPI DDP_Radio(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое должно быть заменено переключателем, заданным по *идентификатору*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_Radio` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="ddp_text"></a><a name="ddp_text"></a> DDP_Text
 
@@ -408,13 +408,13 @@ void AFXAPI DDP_Text(
 *псзпропнаме*<br/>
 Имя свойства свойства элемента управления, которое будет передаваться элементу управления, заданному *идентификатором*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед `DDX_Text` вызовом соответствующей функции.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="begin_proppageids"></a><a name="begin_proppageids"></a> BEGIN_PROPPAGEIDS
 
@@ -432,7 +432,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 *count*<br/>
 Количество страниц свойств, используемых классом элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В файле реализации (. cpp), который определяет функции-члены для класса, откройте список страниц свойств с помощью макроса BEGIN_PROPPAGEIDS, добавьте записи макросов для каждой страницы свойств и заполните список страниц свойств с помощью макроса END_PROPPAGEIDS.
 
@@ -440,7 +440,7 @@ BEGIN_PROPPAGEIDS(class_name,  count)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="end_proppageids"></a><a name="end_proppageids"></a> END_PROPPAGEIDS
 
@@ -457,7 +457,7 @@ END_PROPPAGEIDS(class_name)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="proppageid"></a><a name="proppageid"></a> проппажеид
 
@@ -472,13 +472,13 @@ PROPPAGEID(clsid)
 *этому*<br/>
 Уникальный идентификатор класса страницы свойств.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все макросы ПРОППАЖЕИД должны располагаться между BEGIN_PROPPAGEIDS и END_PROPPAGEIDS макросами в файле реализации элемента управления.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="see-also"></a>См. также раздел
 

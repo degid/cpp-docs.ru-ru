@@ -34,7 +34,7 @@ class CFolderPickerDialog : public CFileDialog;
 |[CFolderPickerДиалог::: »CFolderPickerDialog](#_dtorcfolderpickerdialog)|Деструктор.|
 |[CFolderPickerДиалог::CFolderPickerDialog](#cfolderpickerdialog)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -82,7 +82,7 @@ explicit CFolderPickerDialog(
 *dwSize*<br/>
 Размер структуры OPENFILENAME.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfolderpickerdialogcfolderpickerdialog"></a><a name="_dtorcfolderpickerdialog"></a>CFolderPickerДиалог::: »CFolderPickerDialog
 
@@ -92,7 +92,7 @@ explicit CFolderPickerDialog(
 virtual ~CFolderPickerDialog();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

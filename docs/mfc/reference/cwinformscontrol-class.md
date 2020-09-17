@@ -60,7 +60,7 @@ class CWinFormsControl : public CWnd
 |[CWinFormsControl:оператор -&gt;](#operator_-_gt)|Заменяет [CWinFormsControl::GetControl](#getcontrol) в выражениях.|
 |[CWinFormsControl::оператор TManagedControl](#operator_tmanagedcontrol)|Отбрасывает тип в качестве указателя на элемент управления формами Windows.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CWinFormsControl` предоставляет основную функциональность для хостинга управления формами Windows.
 
@@ -132,7 +132,7 @@ inline BOOL CreateManagedControl(
 
 В случае успеха возвращает ненулевое значение. В случае неудачи, возвращаетнулно ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод мгновенно управляет системой форм Windows .NET в контейнере MFC.
 
@@ -154,7 +154,7 @@ inline BOOL CreateManagedControl(
 CWinFormsControl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Управление формами Windows мгновенно происходит при вызове [CWinFormsControl::CreateManagedControl.](#createmanagedcontrol)
 
@@ -186,7 +186,7 @@ inline HWND GetControlHandle() const;
 
 Возвращает ручку в управление форм Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetControlHandle`— это метод помощника, который возвращает ручку окна, хранящуюся в свойствах управления .NET Framework. Значение ручки окна скопировано в [CWnd::m_hWnd](../../mfc/reference/cwnd-class.md#m_hwnd) во время вызова [к CWnd::Attach](../../mfc/reference/cwnd-class.md#attach).
 
@@ -198,7 +198,7 @@ inline HWND GetControlHandle() const;
 inline TManagedControl^  operator->() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор обеспечивает удобный синтаксис, который заменяет `GetControl` в выражениях.
 
@@ -212,7 +212,7 @@ inline TManagedControl^  operator->() const;
 inline operator TManagedControl^() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор `CWinFormsControl<TManagedControl>` переходит к функциям, которые принимают указатель на управление формами Windows.
 

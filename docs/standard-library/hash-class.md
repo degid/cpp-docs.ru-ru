@@ -41,7 +41,7 @@ struct hash {
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект функции определяет хэш-функцию для сопоставления значений типа *Ty* с распределением значений индекса. Член `operator()` Возвращает хэш-код для *Val*, который подходит для использования с шаблонами классов `unordered_map`, `unordered_multimap`, `unordered_set`и `unordered_multiset`. Стандартная библиотека предоставляет специализации для основных типов: *Ty* может иметь любой скалярный тип, включая типы указателей и типы перечисления. Кроме того, имеются специализации для типов библиотек `string`, `wstring`, `u16string`, `u32string`, `string_view`, `wstring_view`, `u16string_view`, `u32string_view`, `bitset`, `error_code`, `error_condition`, `optional`, `shared_ptr`, `thread`, `type_index`, `unique_ptr`, `variant` и `vector<bool>`.
 

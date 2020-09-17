@@ -52,7 +52,7 @@ class CStringElementTraitsI : public CElementTraitsBase<T>
 |[CStringElementTraitsI:CompareElementsOrdered](#compareelementsordered)|Вызовите эту статическую функцию, чтобы сравнить два элемента строки, игнорируя различия в случае.|
 |[CStringElementTraitsI:Хэш](#hash)|Вызовите эту статическую функцию, чтобы вычислить значение хэша для данного элемента строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет статические функции для сравнения строк и для создания значения хэша. Эти функции полезны при использовании класса сбора для хранения строковых данных. Используйте [CStringRefElementTraits,](../../atl/reference/cstringrefelementtraits-class.md) когда объекты строки должны рассматриваться в качестве ссылок.
 
@@ -88,7 +88,7 @@ static bool CompareElements(INARGTYPE str1, INARGTYPE str2) throw();
 
 Возвращает верно, если элементы равны, ложные в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнения являются случаями нечувствительными.
 
@@ -112,7 +112,7 @@ static int CompareElementsOrdered(INARGTYPE str1, INARGTYPE str2) throw();
 
 Ноль, если строки идентичны, < 0, если *str1* меньше, чем *str2,* или > 0, если *str1* больше, чем *str2.* Для выполнения сравнений используется метод [CStringT::Compare.](../../atl-mfc-shared/reference/cstringt-class.md#compare)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнения являются случаями нечувствительными.
 

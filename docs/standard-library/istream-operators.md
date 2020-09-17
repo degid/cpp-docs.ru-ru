@@ -62,7 +62,7 @@ basic_istream<Elem, Tr>& operator>>(
 *Истр*\
 Поток.
 
-*Ул*\
+*str*\
 Строка.
 
 *Валь*\
@@ -72,7 +72,7 @@ basic_istream<Elem, Tr>& operator>>(
 
 Поток.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс `basic_istream` также определяет несколько операторов извлечения. Дополнительные сведения см. в разделе [basic_istream::operator>>](../standard-library/basic-istream-class.md#op_gt_gt).
 

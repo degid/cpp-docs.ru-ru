@@ -24,7 +24,7 @@ ms.locfileid: "81752439"
 class CMFCDragFrameImpl
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект этого класса встраивается в каждый объект [класса CPane.](../../mfc/reference/cpane-class.md) Таким образом, каждая `CanFloat` панель, используюая метод, отображает прямоугольник перетаскивания, когда пользователь перетаскивает его.
 
@@ -48,7 +48,7 @@ void EndDrawDragFrame(BOOL bClearInternalRects = TRUE);
 
 (в) *bClearInternalRects*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdragframeimplinit"></a><a name="init"></a>CMFCDragFrameImpl::Init
 
@@ -60,7 +60,7 @@ void Init(CWnd* pDraggedWnd);
 
 (в) *pDraggedWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdragframeimplmovedragframe"></a><a name="movedragframe"></a>CMFCDragFrameImpl::MoveDragFrame
 
@@ -72,7 +72,7 @@ void MoveDragFrame(BOOL bForceMove = FALSE);
 
 (в) *bForceMove*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdragframeimplplacetabpredocking"></a><a name="placetabpredocking"></a>CMFCDragFrameImpl::PлейтакТабДокинг
 
@@ -92,7 +92,7 @@ void PlaceTabPreDocking(CWnd* pCBarToPlaceOn);
 
 (в) *pCbartoplaceon*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdragframeimplremovetabpredocking"></a><a name="removetabpredocking"></a>CMFCDragFrameImpl::RemoveTabPreDocking
 
@@ -104,7 +104,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 
 (в) *pOldTargetBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdragframeimplresetstate"></a><a name="resetstate"></a>CMFCDragFrameImpl::Resetstate
 
@@ -112,7 +112,7 @@ void RemoveTabPreDocking(CDockablePane* pOldTargetBar = NULL);
 void ResetState();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

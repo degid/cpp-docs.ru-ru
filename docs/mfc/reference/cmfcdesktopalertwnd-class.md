@@ -89,7 +89,7 @@ class CMFCDesktopAlertWnd : public CWnd
 |[CMFCDesktopAlertWnd::SetSmallCaption](#setsmallcaption)|Переключается между малыми и нормальными подписями.|
 |[CMFCDesktopAlertWnd::SetTransparency](#settransparency)|Устанавливает уровень прозрачности.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Окно оповещения на рабочем столе может быть прозрачным, оно может отображаться с эффектами анимации, и оно может исчезнуть (после указанной задержки или когда пользователь отклоняет его, нажав кнопку закрытия).
 
@@ -182,7 +182,7 @@ virtual BOOL Create(
 
 TRUE, если окно оповещения было создано успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы создать окно оповещения. Область клиента окна оповещения содержит детское диалоговое окно, в котором размещаются все элементы управления, отображаемые пользователю.
 
@@ -202,7 +202,7 @@ UINT GetAnimationSpeed() const;
 
 Скорость анимации окна оповещения, в миллисекундах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Скорость анимации описывает, как быстро открывается и закрывается окно оповещения.
 
@@ -240,7 +240,7 @@ int GetAutoCloseTime() const;
 
 Время, в миллисекундах, после чего окно оповещения автоматически закрывается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы определить, сколько времени должно продолжаться до автоматического закрытия окна оповещения.
 
@@ -256,7 +256,7 @@ virtual int GetCaptionHeight();
 
 Высота, в пикселях, подписи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод может быть переопределен в производном классе. Реализация по умолчанию также: возвращает небольшое значение высоты заголовка (7 пикселей), если всплывающее окно `GetSystemMetrics(SM_CYSMCAPTION)`должно отображать небольшую подпись, или значение, полученное от функции API Windows.
 
@@ -272,7 +272,7 @@ CPoint GetLastPos() const;
 
 Точка, в координатах экрана.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает последнее действительное положение окна оповещения на экране.
 
@@ -288,7 +288,7 @@ BYTE GetTransparency() const;
 
 Уровень прозрачности между 0 и 255, включительно. Чем больше значение, тем более непрозрачным является окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для получения текущего уровня прозрачности окна оповещения.
 
@@ -304,7 +304,7 @@ BOOL HasSmallCaption() const;
 
 TRUE, если всплывающее окно отображается с небольшой подписью; FALSE, если всплывающее окно отображается с речкой обычного размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы определить, есть ли всплывающее окно имеет небольшую подпись или подпись обычного размера. По умолчанию высота небольшой подписи составляет 7 пикселей. Вы можете получить высоту подписи обычного размера, позвонив в функцию `GetSystemMetrics(SM_CYCAPTION)`API Windows.
 
@@ -320,7 +320,7 @@ virtual BOOL OnBeforeShow(CPoint&);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndonclicklinkbutton"></a><a name="onclicklinkbutton"></a>CMFCDesktopAlertWnd::OnClickLinkButton
 
@@ -339,7 +339,7 @@ virtual BOOL OnClickLinkButton(UINT uiCmdID);
 
 Всегда значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, если вы хотите получать уведомления, когда пользователь нажимает на ссылку на окне оповещения.
 
@@ -359,7 +359,7 @@ virtual BOOL OnCommand(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndondraw"></a><a name="ondraw"></a>CMFCDesktopAlertWnd::OnDraw
 
@@ -371,7 +371,7 @@ virtual void OnDraw(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndprocesscommand"></a><a name="processcommand"></a>CMFCDesktopAlertWnd::ProcessCommand
 
@@ -385,7 +385,7 @@ BOOL ProcessCommand(HWND hwnd);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcdesktopalertwndsetanimationspeed"></a><a name="setanimationspeed"></a>CMFCDesktopAlertWnd::SetAnimationSpeed
 
@@ -400,7 +400,7 @@ void SetAnimationSpeed(UINT nSpeed);
 *nСкорость*<br/>
 (в) Определяет новую скорость анимации, в миллисекундах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы установить скорость анимации для окна оповещения. Скорость анимации по умолчанию составляет 30 миллисекунд.
 
@@ -417,7 +417,7 @@ void SetAnimationType(CMFCPopupMenu::ANIMATION_TYPE type);
 *type*<br/>
 (в) Определяет тип анимации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для установки типа анимации. Можно указать одно из следующих значений.
 
@@ -444,7 +444,7 @@ void SetAutoCloseTime(int nTime);
 *nВремя*<br/>
 (в) Время, в миллисекундах, которое продляется до того, как окно оповещения автоматически закрывается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Окно оповещения автоматически закрывается после указанного времени, если пользователь не взаимодействует с окном.
 
@@ -461,7 +461,7 @@ void SetSmallCaption(BOOL bSmallCaption = TRUE);
 *bSmallCaptioncaption*<br/>
 (в) TRUE указать, что окно оповещения отображает небольшую подпись; в противном случае FALSE уточнил, что окно оповещения отображает подпись обычного размера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для отображения подписи небольшого или обычного размера. По умолчанию высота небольшой подписи составляет 7 пикселей. Размер обычной подписи можно получить, позвонив в функцию `GetSystemMetrics(SM_CYCAPTION)`API Windows.
 
@@ -478,7 +478,7 @@ void SetTransparency(BYTE nTransparency);
 *nПрозрачность*<br/>
 (в) Определяет уровень прозрачности. Это значение должно быть между 0 и 255, включительно. Чем больше значение, тем более непрозрачным является окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы установить уровень прозрачности всплывающее окно.
 
@@ -490,7 +490,7 @@ virtual CSize GetDialogSize();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

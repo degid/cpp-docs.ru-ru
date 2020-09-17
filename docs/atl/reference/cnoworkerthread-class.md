@@ -48,7 +48,7 @@ class CNoWorkerThread
 |[CNoWorkerThread::RemoveHandle](#removehandle)|Нефункциональный эквивалент [CWorkerThread::RemoveHandle](../../atl/reference/cworkerthread-class.md#removehandle).|
 |[CNoWorkerThread::Закрытие](#shutdown)|Нефункциональный эквивалент [CWorkerThread::Shutdown](../../atl/reference/cworkerthread-class.md#shutdown).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет тот же общедоступный интерфейс, что и [CWorkerThread.](../../atl/reference/cworkerthread-class.md) Этот интерфейс, как ожидается, будет предоставлен параметром `MonitorClass` шаблона для кэша классов.
 
@@ -72,7 +72,7 @@ HRESULT AddHandle(HANDLE /* hObject */,
 
 Всегда возвращается S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -91,7 +91,7 @@ HRESULT AddTimer(DWORD /* dwInterval */,
 
 Всегда возвращается S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -107,7 +107,7 @@ HANDLE GetThreadHandle() throw();
 
 Всегда возвращает значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -123,7 +123,7 @@ DWORD GetThreadId() throw();
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -139,7 +139,7 @@ HRESULT Initialize() throw();
 
 Всегда возвращается S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -155,7 +155,7 @@ HRESULT RemoveHandle(HANDLE /* hObject */) throw();
 
 Всегда возвращается S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.
 
@@ -171,6 +171,6 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 Всегда возвращается S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация, предоставляемая этим классом, ничего не делает.

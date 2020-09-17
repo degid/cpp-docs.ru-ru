@@ -28,7 +28,7 @@ ms.locfileid: "87215466"
 > [!NOTE]
 > Операторы `Type&` , использующие, включены в `namespace rel_ops` .
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Проверяет неравенство объекта pair слева от оператора объекту pair справа от оператора.
 
@@ -42,17 +42,17 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair`.
 
-*Правильно*\
+*right*\
 Объект типа `pair`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если пары не равны; **`false`** значение, если пары равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Один объект pair равен другому объекту pair, если все их соответствующие элементы равны. Два объекта pair не равны, если первый или второй элемент одного объекта не равен соответствующему элементу другого.
 
@@ -103,7 +103,7 @@ The pairs p1 and p2 are not equal.
 The pairs p1 and p3 are equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Проверяет равенство объекта pair слева от оператора объекту pair справа от оператора.
 
@@ -114,17 +114,17 @@ constexpr bool operator==(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair`.
 
-*Правильно*\
+*right*\
 Объект типа `pair`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если пары равны; **`false`** Если значения `pair` не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Один объект pair равен другому объекту pair, если все их соответствующие элементы равны. Функция возвращает `left`. **сначала**  ==  `right` . **сначала**  &&  `left` . **второй**  ==  `right` . **второй**. Два объекта pair не равны, если первый или второй элемент одного объекта не равен соответствующему элементу другого.
 
@@ -166,7 +166,7 @@ int main( )
 }
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Проверяет, меньше ли объект pair слева от оператора объекта pair справа от оператора.
 
@@ -177,17 +177,17 @@ constexpr bool operator<(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair` в левой части оператора.
 
-*Правильно*\
+*right*\
 Объект типа `pair` в правой части оператора.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если в `pair` левой части оператора строго меньше, чем в правой части `pair` оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Считается, что `left` `pair` объект строго меньше, чем объект, `right` `pair` Если *Left* меньше и не равно *right*.
 
@@ -240,7 +240,7 @@ The pair p1 is less than the pair p2.
 The pair p1 is not less than the pair p3.
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> operator&lt;=
 
 Проверяет, что объект pair слева от оператора меньше или равен объекту pair справа от оператора.
 
@@ -254,17 +254,17 @@ constexpr bool operator<=(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair` в левой части оператора.
 
-*Правильно*\
+*right*\
 Объект типа `pair` в правой части оператора.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если `pair` слева от оператора меньше или равно объекту `pair` справа от оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При сравнении объектов pair первые элементы значений двух объектов имеют самый высокий приоритет. Если они отличаются, результат их сравнения рассматривается как результат сравнения объектов pair. Если значения первых элементов совпадают, сравниваются значения вторых элементов и результат их сравнения рассматривается как результат сравнения объектов pair.
 
@@ -325,7 +325,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is less than or equal to the pair p4.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> operator&gt;
 
 Проверяет, больше ли объект pair слева от оператора объекта pair справа от оператора.
 
@@ -339,17 +339,17 @@ constexpr bool operator>(const pair<T, U>& left, const pair<T, U>& right);
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair` в левой части оператора.
 
-*Правильно*\
+*right*\
 Объект типа `pair` в правой части оператора.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если в `pair` левой части оператора строго больше, чем `pair` справа от оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Считается, что `left` `pair` объект строго больше, чем объект, `right` `pair` Если *Left* больше и не равно *right*.
 
@@ -412,7 +412,7 @@ The pair p1 is greater than the pair p3.
 The pair p1 is not greater than the pair p4.
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> operator&gt;=
 
 Проверяет, больше или равен ли объект pair слева от оператора объекту pair справа от оператора.
 
@@ -426,17 +426,17 @@ template <class T, class U>
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `pair` в левой части оператора.
 
-*Правильно*\
+*right*\
 Объект типа `pair` в правой части оператора.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если `pair` слева от оператора больше или равно объекту `pair` справа от оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При сравнении объектов pair первые элементы значений двух объектов имеют самый высокий приоритет. Если они отличаются, результат их сравнения рассматривается как результат сравнения объектов pair. Если значения первых элементов совпадают, сравниваются значения вторых элементов и результат их сравнения рассматривается как результат сравнения объектов pair.
 

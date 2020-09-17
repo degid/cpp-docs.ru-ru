@@ -31,7 +31,7 @@ ms.locfileid: "87225622"
 ref class lock;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `lock`доступен только для объектов CLR и может использоваться только в коде CLR.
 
@@ -41,14 +41,14 @@ ref class lock;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
 |[lock::lock](#lock)|Создает `lock` объект, при необходимости ожидающий получения блокировки в течение заданного промежутка времени или вообще без него.|
 |[Блокировка блокировки:: ~](#tilde-lock)|Разструктура `lock` объекта.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
 |[lock::acquire](#acquire)|Запрашивает блокировку на объект, при необходимости ожидая получения блокировки в течение заданного времени или вообще без него.|
 |[lock::is_locked](#is-locked)|Указывает, удерживается ли блокировка.|
@@ -57,11 +57,11 @@ ref class lock;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
-|[логический:: operator &nbsp; bool](#operator-bool)|Оператор для использования `lock` в условном выражении.|
+|[логический::operator &nbsp; bool](#operator-bool)|Оператор для использования `lock` в условном выражении.|
 |[lock::operator==](#operator-equality)|Оператор равенства.|
-|[Lock:: operator! =](#operator-inequality)|Оператор неравенства.|
+|[Lock::operator!=](#operator-inequality)|Оператор неравенства.|
 
 ## <a name="requirements"></a>Требования
 
@@ -103,7 +103,7 @@ template<class T> lock(
 
 Вызывает исключение <xref:System.ApplicationException> , если получение блокировки не происходит до истечения времени ожидания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первые три формы конструктора пытаются получить блокировку в `_object` течение заданного периода ожидания (или <xref:System.Threading.Timeout.Infinite> Если ни один из них не указан).
 
@@ -211,7 +211,7 @@ All threads completed.
 ~lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор вызывает [блокировку:: Release](../dotnet/lock-release.md).
 
@@ -328,7 +328,7 @@ void acquire(
 
 Вызывает исключение <xref:System.ApplicationException> , если получение блокировки не происходит до истечения времени ожидания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение времени ожидания не указано, то время ожидания по умолчанию — <xref:System.Threading.Timeout.Infinite> .
 
@@ -527,7 +527,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator-bool"></a><a name="operator-bool"></a>логический:: operator bool
+## <a name="lockoperator-bool"></a><a name="operator-bool"></a>логический::operator bool
 
 Оператор для использования `lock` в условном выражении.
 
@@ -539,7 +539,7 @@ operator bool();
 
 **`true`** значение, если блокировка удерживается; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор фактически преобразует в `_detail_class::_safe_bool` , который является более безопасным, чем, **`bool`** так как он не может быть преобразован в целочисленный тип.
 
@@ -642,7 +642,7 @@ All threads completed.
 void release();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если блокировка не удерживается, `release` не выполняет никаких действий.
 
@@ -760,7 +760,7 @@ bool try_acquire(
 
 **`true`** значение, если блокировка была получена, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если блокировка уже получена, эта функция не выполняет никаких действий.
 
@@ -854,7 +854,7 @@ In thread 6, Counter = 10
 All threads completed.
 ```
 
-## <a name="lockoperator"></a><a name="operator-equality"></a>Lock:: operator = =
+## <a name="lockoperator"></a><a name="operator-equality"></a>Lock::operator==
 
 Оператор равенства.
 
@@ -897,7 +897,7 @@ int main () {
 Equal!
 ```
 
-## <a name="lockoperator"></a><a name="operator-inequality"></a>Lock:: operator! =
+## <a name="lockoperator"></a><a name="operator-inequality"></a>Lock::operator!=
 
 Оператор неравенства.
 

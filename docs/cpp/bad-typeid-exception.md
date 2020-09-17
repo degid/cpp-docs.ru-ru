@@ -26,7 +26,7 @@ catch (bad_typeid)
    statement
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс для **bad_typeid** :
 

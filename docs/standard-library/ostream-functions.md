@@ -26,7 +26,7 @@ ms.locfileid: "88842641"
 [endl](#endl)\
 [начинает](#ends)\
 [идет](#flush)\
-[позиции](#swap)
+[swap](#swap)
 
 ## <a name="endl"></a>endl
 
@@ -53,7 +53,7 @@ basic_ostream<Elem, Tr>& endl(
 
 Объект типа **basic_ostream**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор вызывает *OSTR*. [Размещение](../standard-library/basic-ostream-class.md#put)(*OSTR*.[ Расширьте](../standard-library/basic-ios-class.md#widen)(' \n ')), а затем вызывает *OSTR*. [Сброс](../standard-library/basic-ostream-class.md#flush). Он возвращает *OSTR*.
 
@@ -100,7 +100,7 @@ basic_ostream<Elem, Tr>& ends(
 
 Объект типа `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор вызывает *OSTR*. [Размещение](../standard-library/basic-ostream-class.md#put)(*elem*(' \ 0 ')). Он возвращает *OSTR*.
 
@@ -149,7 +149,7 @@ basic_ostream<Elem, Tr>& flush(
 
 Объект типа `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор вызывает *OSTR*. [Сброс](../standard-library/basic-ostream-class.md#flush). Он возвращает *OSTR*.
 
@@ -190,13 +190,13 @@ void swap(
 *ТС*\
 Признаки символа.
 
-*слева*\
+*left*\
 Ссылка lvalue на объект `basic_ostream`.
 
-*Правильно*\
+*right*\
 Ссылка lvalue на объект `basic_ostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона `swap` выполняет `left.swap(right)`.
 

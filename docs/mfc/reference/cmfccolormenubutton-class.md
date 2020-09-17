@@ -97,7 +97,7 @@ class CMFCColorMenuButton : public CMFCToolBarMenuButton
 |[CMFCColorMenuButton::Ondraw](#ondraw)|Вызывается по системе для отображения изображения на кнопке.|
 |[CMFCColorMenuButton::OnDrawOnCustomizeList](#ondrawoncustomizelist)|Вызывается фреймворком перед отображением `CMFCColorMenuButton` объекта в списке диалогового окна настройки панели инструментов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы заменить исходную кнопку команды `CMFCColorMenuButton` меню или `CMFCColorMenuButton` кнопку панели инструментов объектом, создайте `ReplaceButton` объект, установите любые соответствующие стили [класса CMFCColorBar,](../../mfc/reference/cmfccolorbar-class.md) а затем позвоните по методу класса [CMFCToolBar.](../../mfc/reference/cmfctoolbar-class.md) Если вы настраиваете панель инструментов, позвоните в метод [CMFCToolBarsCustomizeDialog::ReplaceButton.](../../mfc/reference/cmfctoolbarscustomizedialog-class.md#replacebutton)
 
@@ -150,7 +150,7 @@ CMFCColorMenuButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первым конструктором является конструктор по умолчанию. Текущий цвет объекта и автоматический цвет инициализированы к черному (RGB (0, 0, 0)).
 
@@ -169,7 +169,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 *src*<br/>
 (в) Кнопка исходного кода для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод для копирования объектов, полученных `CMFCColorMenuButton` от объекта.
 
@@ -185,7 +185,7 @@ virtual CMFCPopupMenu* CreatePopupMenu();
 
 Объект, представляющий поле диалога сборщика цветов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фреймворком, когда пользователь нажимает кнопку цветового меню.
 
@@ -211,7 +211,7 @@ void EnableAutomaticButton(
 *bEnable*<br/>
 (в) Уточняется, является ли кнопка автоматической или нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Автоматическая кнопка применяет текущий цвет по умолчанию.
 
@@ -233,7 +233,7 @@ void EnableDocumentColors(
 *bEnable*<br/>
 (в) TRUE для отображения конкретных цветов документа или FALSE для отображения цвета системы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для отображения текущих цветов документа или цветов палитры системы, когда пользователь нажимает кнопку цветового меню.
 
@@ -259,7 +259,7 @@ void EnableOtherButton(
 *bEnable*<br/>
 (в) Указать TRUE для отображения "другой" кнопки; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolormenubuttonenabletearoff"></a><a name="enabletearoff"></a>CMFCColorMenuButton::EnableTearOff
 
@@ -283,7 +283,7 @@ void EnableTearOff(
 *nHorzDockRows*<br/>
 (в) Определяет количество строк для горизонтально пристыкованного цветового стекла в состоянии отрыва.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы включить функцию «слезы» для `CMFCColorMenuButton` цветового стекла, которое всплывает при нажатии кнопки.
 
@@ -299,7 +299,7 @@ COLORREF GetAutomaticColor() const;
 
 Значение цвета RGB, представляющее текущий автоматический цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позвоните по этому методу, чтобы получить автоматический цвет, который устанавливается [CMFCColorMenuButton::EnableAutomaticButton](#enableautomaticbutton).
 
@@ -315,7 +315,7 @@ COLORREF GetColor() const;
 
 Цвет кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolormenubuttongetcolorbycmdid"></a><a name="getcolorbycmdid"></a>CMFCColorMenuButton::GetColorByCmdID
 
@@ -334,7 +334,7 @@ static COLORREF GetColorByCmdID(UINT uiCmdID);
 
 Цвет, соответствующий указанному идентификатору команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, когда у вас есть несколько цветовых кнопок в приложении. Когда пользователь нажимает кнопку цвета, кнопка отправляет свой идентификатор команды в WM_COMMAND сообщение своему родителю. Метод `GetColorByCmdID` использует идентификатор команды для получения соответствующего цвета.
 
@@ -350,7 +350,7 @@ virtual BOOL IsEmptyMenuAllowed() const;
 
 Nonzero, если разрешено пустое меню; в противном случае, ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пустые меню поддерживаются по умолчанию. Переопределить этот метод, чтобы изменить это поведение в производном классе.
 
@@ -367,7 +367,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 *pWndParent*<br/>
 (в) Указатель на новое родительское окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolormenubuttonondraw"></a><a name="ondraw"></a>CMFCColorMenuButton::Ondraw
 
@@ -411,7 +411,7 @@ virtual void OnDraw(
 *bGrayDisabledButtons*<br/>
 (в) TRUE указать, что отключенные кнопки серые (затуманенные) из; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolormenubuttonondrawoncustomizelist"></a><a name="ondrawoncustomizelist"></a>CMFCColorMenuButton::OnDrawOnCustomizeList
 
@@ -439,7 +439,7 @@ virtual int OnDrawOnCustomizeList(
 
 Ширина кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается фреймворкой, когда `CMFCColorMenuButton` объект отображается в поле списка в процессе настройки панели инструментов.
 
@@ -465,7 +465,7 @@ virtual BOOL OpenColorDialog(
 
 Nonzero, если пользователь выбирает новый цвет; в противном случае, ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При нажатии кнопки меню позвоните по этому методу, чтобы открыть цветное поле диалога. Если значение возврата ненулевое, цвет, выбранный пользователем, сохраняется в параметре *colorRes.* Используйте метод [CMFCColorMenuButton::EnableOtherButton](#enableotherbutton) для переключения между стандартным цветным диалоговым полем и диалоговым окном [cmFCColorDialog.](../../mfc/reference/cmfccolordialog-class.md)
 
@@ -487,7 +487,7 @@ virtual void SetColor(
 *bNotify*<br/>
 (в) TRUE для применения цвета параметра *clr* к любой связанной кнопке меню или кнопке панели инструментов; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы изменить цвет текущей кнопки цвета. Если параметр *bNotify* незеролитный, цвет соответствующей кнопки в любом связанном всплывающем меню или панели инструментов изменяется на цвет, указанный параметром *clr.*
 
@@ -527,7 +527,7 @@ static void SetColorName(
 *strName*<br/>
 (в) Новое название цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolormenubuttonsetcolumnsnumber"></a><a name="setcolumnsnumber"></a>CMFCColorMenuButton::SetColumnsНомер
 
@@ -542,7 +542,7 @@ void SetColumnsNumber(int nColumns);
 *nColumns*<br/>
 (в) Количество столбцов для отображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

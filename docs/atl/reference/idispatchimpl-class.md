@@ -77,7 +77,7 @@ class ATL_NO_VTABLE IDispatchImpl : public T
 |[IDispatchImpl::GetTypeInfoCount](#gettypeinfocount)|Определяет, есть ли информация типа, доступная для двойного интерфейса.|
 |[IDispatchImpl::Invoke](#invoke)|Обеспечивает доступ к методам и свойствам, подверженным двойному интерфейсу.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IDispatchImpl`обеспечивает реализацию по `IDispatch` умолчанию для части любого двойного интерфейса на объекте. Двойной интерфейс происходит `IDispatch` от и использует только типы, совместимые с автоматизацией. Как и dispinterface, двойной интерфейс поддерживает раннюю привязку и поздняя привязка; однако, двойной интерфейс также поддерживает vtable привязки.
 
@@ -112,7 +112,7 @@ STDMETHOD(GetIDsOfNames)(
     DISPID* rgdispid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetIDsOfNames](/windows/win32/api/oaidl/nf-oaidl-idispatch-getidsofnames) в Windows SDK.
 
@@ -127,7 +127,7 @@ STDMETHOD(GetTypeInfo)(
     ITypeInfo** pptinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::GetTypeInfo](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfo) в Windows SDK.
 
@@ -139,7 +139,7 @@ STDMETHOD(GetTypeInfo)(
 STDMETHOD(GetTypeInfoCount)(UINT* pctinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите `IDispatch::GetTypeInfoCount` в Windows SDK.
 
@@ -167,7 +167,7 @@ STDMETHOD(Invoke)(
     UINT* puArgErr);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IDispatch::Вызвать](/windows/win32/api/oaidl/nf-oaidl-idispatch-invoke) в Windows SDK.
 

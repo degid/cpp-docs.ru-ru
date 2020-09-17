@@ -38,11 +38,11 @@ ms.locfileid: "90042150"
 
 |Компонент|Описание|
 |-|-|
-|[operator! =](../standard-library/unordered-map-operators.md#op_neq)|Проверяет, не равен ли объект unordered_map в левой части объекту unordered_map в правой части.|
-|[Оператор = =](../standard-library/unordered-map-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_map в левой части объекту unordered_map в правой части.|
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Проверяет, не равен ли объект unordered_map в левой части объекту unordered_map в правой части.|
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_map в левой части объекту unordered_map в правой части.|
 |[Функция swap (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Меняет местами два сопоставления.|
-|[operator! =](../standard-library/unordered-map-operators.md#op_neq)|Проверяет, не равен ли объект unordered_multimap в левой части объекту unordered_multimap в правой части.|
-|[Оператор = =](../standard-library/unordered-map-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_multimap в левой части объекту unordered_multimap в правой части.|
+|[operator!=](../standard-library/unordered-map-operators.md#op_neq)|Проверяет, не равен ли объект unordered_multimap в левой части объекту unordered_multimap в правой части.|
+|[operator==](../standard-library/unordered-map-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_multimap в левой части объекту unordered_multimap в правой части.|
 |[Функция swap (unordered_map)](../standard-library/unordered-map-functions.md#swap)|Меняет местами два объекта multimap.|
 
 ## <a name="see-also"></a>См. также раздел

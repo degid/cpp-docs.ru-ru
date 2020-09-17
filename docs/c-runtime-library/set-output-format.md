@@ -56,7 +56,7 @@ unsigned int _set_output_format(
 
 Предыдущий формат вывода.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `_set_output_format` используется для настройки вывода форматированных функций ввода-вывода, таких как [printf_s](../c-runtime-library/reference/printf-s-printf-s-l-wprintf-s-wprintf-s-l.md). В настоящее время единственное соглашение о форматировании, которое эта функция может изменить, — число цифр показателя степени в числах с плавающей запятой.
 

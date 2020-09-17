@@ -111,7 +111,7 @@ class CStringArray : public CObject
 |----------|-----------------|
 |[CStringArray::оператор \[\]](../../mfc/reference/cobarray-class.md#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CStringArray`включает IMPLEMENT_SERIAL макрос для поддержки сериализации и сброса его элементов. Если массив объект `CString` сохраняется в архив с помощью перегруженного оператора вставки или функции-члена `Serialize`, каждый элемент сериализуется.
 

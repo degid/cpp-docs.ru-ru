@@ -51,7 +51,7 @@ class ATL_NO_VTABLE IRowsetNotifyImpl : public IRowsetNotify
 |[онровчанже](#onrowchange)|Уведомляет объект-получатель о первом изменении в строке или о любом изменении, оказывающем влияние на всю строку.|
 |[онровсетчанже](#onrowsetchange)|Уведомляет объект-получатель о любом изменении, влияющем на весь набор строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. статью [Получение уведомлений](../../data/oledb/receiving-notifications.md) о реализации интерфейса точки подключения на потребителе.
 
@@ -82,7 +82,7 @@ STDMETHOD(OnFieldChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онфиелдчанже](/previous-versions/windows/desktop/ms715961(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онфиелдчанже](/previous-versions/windows/desktop/ms715961(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 
@@ -110,7 +110,7 @@ STDMETHOD(OnRowChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онровчанже](/previous-versions/windows/desktop/ms722694(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онровчанже](/previous-versions/windows/desktop/ms722694(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 
@@ -136,7 +136,7 @@ STDMETHOD(OnRowsetChange)(
 
 Описание возвращаемого значения см. в разделе [IRowsetNotify клиента:: онровсетчанже](/previous-versions/windows/desktop/ms722669(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает оболочку для метода [IRowsetNotify клиента:: онровсетчанже](/previous-versions/windows/desktop/ms722669(v=vs.85)) . Дополнительные сведения см. в описании этого метода в справочнике по OLE DB программиста.
 

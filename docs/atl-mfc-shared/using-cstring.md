@@ -73,7 +73,7 @@ int main() {
 [CStringT](../atl-mfc-shared/reference/cstringt-class.md)<br/>
 Содержит справочные сведения о классе `CStringT`.
 
-[Класс Ксимплестрингт](../atl-mfc-shared/reference/csimplestringt-class.md)<br/>
+[Класс CSimpleStringT](../atl-mfc-shared/reference/csimplestringt-class.md)<br/>
 Содержит справочные сведения о классе `CSimpleStringT`.
 
 ## <a name="related-sections"></a>Связанные разделы

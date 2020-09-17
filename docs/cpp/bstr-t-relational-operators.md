@@ -37,7 +37,7 @@ bool operator<=(const _bstr_t& str) const throw( );
 bool operator>=(const _bstr_t& str) const throw( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти операторы производят лексикографическое сравнение двух объектов `_bstr_t` . Операторы возвращают **`true`** , если сравнения содержат, в противном случае возвращает **`false`** .
 

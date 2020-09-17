@@ -37,7 +37,7 @@ ref class UnorderedMapView sealed;
 *В*<br/>
 Тип, предоставляющий объект функции, который может сравнивать два ключевых значения для определения равенства. По умолчанию [std:: equal_to \<K> ](../standard-library/equal-to-struct.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 UnorderedMapView является конкретной реализацией C++ интерфейса [Windows:: Foundation:: Collections:: IMapView \<K,V> ](/uwp/api/windows.foundation.collections.imapview-2) , который передается через двоичный интерфейс приложения (ABI). Дополнительные сведения см. в разделе [Collections (C++/CX)](../cppcx/collections-c-cx.md).
 
@@ -51,7 +51,7 @@ UnorderedMapView является конкретной реализацией C+
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[UnorderedMapView:: First](#first)|Возвращает итератор, который инициализируется первым элементом в представлении карты.|
 |[UnorderedMapView:: HasKey](#haskey)|Определяет, содержит ли текущий объект UnorderedMapView указанный ключ.|
@@ -85,7 +85,7 @@ virtual Windows::Foundation::Collections::IIterator<
 
 Итератор, указывающий первый элемент в представлении сопоставления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myMapView->First();`.
 
@@ -163,7 +163,7 @@ void Split(
 *секондпартитион*<br/>
 Вторая часть исходного объекта UnorderedMapView.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод не выполняет никаких действий.
 

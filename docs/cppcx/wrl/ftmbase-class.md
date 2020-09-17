@@ -46,7 +46,7 @@ class FtmBase :
     >;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [класс RuntimeClass](runtimeclass-class.md).
 
@@ -82,7 +82,7 @@ class FtmBase :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** FTM. h
+**Заголовок:** FTM.h
 
 **Пространство имен:** Microsoft::WRL
 
@@ -105,7 +105,7 @@ static HRESULT CreateGlobalInterfaceTable(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. на веб-сайте [`IGlobalInterfaceTable`](/windows/win32/api/objidl/nn-objidl-iglobalinterfacetable).
 

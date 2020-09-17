@@ -55,7 +55,7 @@ class CParabolicTransitionFromAcceleration : public CBaseTransition;
 |[CParabolicTransitionFromУскорение::m_dblFinalValue](#m_dblfinalvalue)|Значение переменной анимации в конце перехода.|
 |[CParabolicTransitionFromУскорение::m_dblFinalVelocity](#m_dblfinalvelocity)|Скорость переменной анимации в конце перехода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Во время перехода параболического ускорения значение переменной анимации изменяется от исходного значения к конечному значению, заканчиваемому с заданной скоростью. Вы можете контролировать, как быстро переменная достигает конечного значения, указывая скорость ускорения. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
 

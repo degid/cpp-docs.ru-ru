@@ -46,13 +46,13 @@ template<typename Factory>
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если *фабрика* параметров шаблона не является производной от интерфейса `IActivationFactory`, генерируется ошибка Assert.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 

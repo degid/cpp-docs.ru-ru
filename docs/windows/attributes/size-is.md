@@ -28,7 +28,7 @@ ms.locfileid: "88841770"
 *expression*<br/>
 Размер памяти, выделенной для указателей размера.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **size_is** C++ имеет те же функциональные возможности, что и атрибут [size_is](/windows/win32/Midl/size-is) MIDL.
 

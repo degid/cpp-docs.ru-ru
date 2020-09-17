@@ -53,7 +53,7 @@ class CPaneDialog : public CDockablePane
 |`CPaneDialog::OnWindowPosChanging`|Обрабатывает [WM_WINDOWPOSCHANGING](/windows/win32/winmsg/wm-windowposchanging) сообщение. (Переопределяет [CWnd::OnWindowPosChanging](../../mfc/reference/cwnd-class.md#onwindowposchanging).)|
 |[CPaneDialog::SetOccDialogInfo](#setoccdialoginfo)|Определяет шаблон для диалогового окна, который является контейнером управления OLE.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Постройте `CPaneDialog` объект в два этапа. Во-первых, построить объект в коде. Во-вторых, вызов [CPaneDialog::Создание](#create). Необходимо указать действительное имя шаблона ресурса или идентификатор шаблона и передать указатель в родительское окно. В противном случае процесс создания завершается неудачей. В диалоговом окне должен быть указан WS_CHILD и WS_VISIBLE стиль. Мы рекомендуем также указать WS_CLIPCHILDREN и WS_CLIPSIBLINGS стили. Для получения дополнительной информации [см.](styles-used-by-mfc.md#window-styles)
 
@@ -146,7 +146,7 @@ BOOL Create(
 
 ПРАВДА, если этот метод удается; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -177,7 +177,7 @@ afx_msg LRESULT HandleInitDialog(
 
 ПРАВДА, если этот метод является успешным; в противном случае, FALSE. Кроме того, TRUE устанавливает фокус клавиатуры на элемент управления, указанный параметром *wParam;* FALSE предотвращает установку фокуса клавиатуры по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует этот метод для инициализации элементов управления и появления диалогового окна. Платформа вызывает этот метод перед отображением диалогового окна.
 
@@ -198,7 +198,7 @@ virtual BOOL SetOccDialogInfo(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 
 Всегда TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод поддерживает класс [COccManager,](../../mfc/reference/coccmanager-class.md) который управляет сайтами управления OLE и управлением ActiveX. Структура _AFX_OCC_DIALOG_INFO определяется в файле заголовка afxocc.h.
 

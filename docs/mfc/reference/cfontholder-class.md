@@ -70,7 +70,7 @@ class CFontHolder
 |----------|-----------------|
 |[CFontHolder:::m_pFont](#m_pfont)|Указатель `IFont` на `CFontHolder` интерфейс объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CFontHolder`не имеет базового класса.
 
@@ -97,7 +97,7 @@ explicit CFontHolder(LPPROPERTYNOTIFYSINK pNotify);
 *pNotify*<br/>
 Указатель на интерфейс `IPropertyNotifySink` шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перед его `InitializeFont` использованием необходимо позвонить, чтобы инициализировать полученный объект.
 
@@ -130,7 +130,7 @@ LPFONTDISP GetFontDispatch();
 
 Указатель `IFontDisp` на `CFontHolder` интерфейс объекта. Обратите внимание, что `GetFontDispatch` функция, вызываемый вызовами, должна вызывать `IUnknown::Release` этот указатель интерфейса, когда она будет сделана с ней.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позвоните `InitializeFont` `GetFontDispatch`перед вызовом .
 
@@ -158,7 +158,7 @@ HFONT GetFontHandle(
 
 Ручка к объекту шрифта; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Соотношение *cyLogical* и *cyHimetric* используется для расчета правильного размера дисплея, в логических единицах, для размера точки шрифта, выраженного в MM_HIMETRIC единиц:
 
@@ -184,7 +184,7 @@ void InitializeFont(
 *pFontDispАмбent*<br/>
 Указатель на свойство окружающего шрифта контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *pFontDispAmbient* не является `CFontHolder` NULL, объект подключен к `IFont` клону интерфейса, используемого свойством окружающего шрифта контейнера.
 
@@ -247,7 +247,7 @@ CFont* Select(
 
 Указатель на заменяемый шрифт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [GetFontHandle](#getfonthandle) для обсуждения *циклических* и *цихиметрических* параметров.
 

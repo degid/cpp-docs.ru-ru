@@ -14,7 +14,7 @@ ms.locfileid: "87232876"
 ---
 # <a name="ltsystem_errorgt-operators"></a>Операторы &lt;system_error&gt;
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Проверяет равенство объекта слева от оператора объекту справа от оператора.
 
@@ -31,21 +31,21 @@ bool operator==(const error_condition& left,
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект для проверки на равенство.
 
-*Правильно*\
+*right*\
 Объект для проверки на равенство.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если объекты равны; значение **`false`** , если объекты не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает `left.category() == right.category() && left.value() == right.value()`.
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Проверяет неравенство объекта слева от оператора объекту справа от оператора.
 
@@ -58,21 +58,21 @@ bool operator!=(const error_condition& left, const error_condition& right);
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект для проверки на неравенство.
 
-*Правильно*\
+*right*\
 Объект для проверки на неравенство.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если переданный объект не равен объекту, переданному по *правому* *краю* ; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает `!(left == right)`.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Проверяет, меньше ли какой-либо объект переданного для сравнения объекта.
 
@@ -102,21 +102,21 @@ inline bool operator<(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Сравниваемый объект.
 
-*Правильно*\
+*right*\
 Сравниваемый объект.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если объект, переданный в *левой части* , меньше объекта, переданного по *правому*краю; В противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция проверяет порядок ошибок.
 
-## <a name="operatorltlt"></a><a name="op_ostream"></a>станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_ostream"></a> operator&lt;&lt;
 
 ```cpp
 template <class charT, class traits>

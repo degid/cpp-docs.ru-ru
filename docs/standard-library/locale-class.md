@@ -38,7 +38,7 @@ ms.locfileid: "90040605"
 class locale;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Аспект — это указатель на объект класса, выведенного производным от класса [facet](#facet_class), который обладает общим объектом в формате:
 
@@ -168,10 +168,10 @@ cout.imbue(loc);
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Назначает языковой стандарт.|
-|[operator! =](#op_neq)|Проверка двух языковых стандартов на неравенство.|
-|[оператор ()](#op_call)|Сравнивает два объекта `basic_string`.|
-|[Оператор = =](#op_eq_eq)|Проверка двух языковых стандартов на равенство.|
+|[operator=](#op_eq)|Назначает языковой стандарт.|
+|[operator!=](#op_neq)|Проверка двух языковых стандартов на неравенство.|
+|[operator()](#op_call)|Сравнивает два объекта `basic_string`.|
+|[operator==](#op_eq_eq)|Проверка двух языковых стандартов на равенство.|
 
 ### <a name="classes"></a>Классы
 
@@ -443,7 +443,7 @@ locale(const locale& from_locale, const Facet* new_facet);
 *from_locale*\
 Языковой стандарт, который будет копироваться при создании нового языкового стандарта.
 
-*Иной*\
+*Other*\
 Языковой стандарт, из которого будет выбираться категория.
 
 *new_category*\
@@ -551,7 +551,7 @@ The name of the previous locale is: C.
 The name of the current locale is: German_Germany.1252.
 ```
 
-## <a name="localeoperator"></a><a name="op_eq"></a> языковой стандарт:: operator =
+## <a name="localeoperator"></a><a name="op_eq"></a> языковой стандарт::operator=
 
 Назначает языковой стандарт.
 
@@ -559,7 +559,7 @@ The name of the current locale is: German_Germany.1252.
 const locale& operator=(const locale& other) noexcept;
 ```
 
-## <a name="localeoperator"></a><a name="op_neq"></a> языковой стандарт:: operator! =
+## <a name="localeoperator"></a><a name="op_neq"></a> языковой стандарт::operator!=
 
 Проверка двух языковых стандартов на неравенство.
 
@@ -569,7 +569,7 @@ bool operator!=(const locale& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Один из языковых стандартов для проверки на неравенство.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -620,7 +620,7 @@ locales loc1 (German_Germany.1252) and
 loc3 (English_United States.1252) are not equal.
 ```
 
-## <a name="localeoperator"></a><a name="op_call"></a> языковой стандарт:: operator ()
+## <a name="localeoperator"></a><a name="op_call"></a> языковой стандарт::operator ()
 
 Сравнивает два `basic_string` объекта в соответствии с правилами сравнения лексикографическим порядком, определенными `std::collate<charT>` аспектом локали.
 
@@ -633,10 +633,10 @@ bool operator()(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Первая сравниваемая строка.
 
-*Правильно*\
+*right*\
 Вторая сравниваемая строка.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -686,7 +686,7 @@ int main( )
 0
 ```
 
-## <a name="localeoperator"></a><a name="op_eq_eq"></a> языковой стандарт:: operator = =
+## <a name="localeoperator"></a><a name="op_eq_eq"></a> языковой стандарт::operator==
 
 Проверка двух языковых стандартов на равенство.
 
@@ -696,7 +696,7 @@ bool operator==(const locale& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Один из языковых стандартов для проверки на равенство.
 
 ### <a name="return-value"></a>Возвращаемое значение

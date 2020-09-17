@@ -28,7 +28,7 @@ do
 while ( expression ) ;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Проверка условия завершения выполняется после каждого выполнения цикла. Таким образом, цикл **do-while** выполняется один или несколько раз в зависимости от значения выражения завершения. Выполнение оператора **do-while** также может прерваться, если в теле оператора выполняется оператор [break](../cpp/break-statement-cpp.md), [goto](../cpp/goto-statement-cpp.md) или [return](../cpp/return-statement-cpp.md).
 

@@ -80,10 +80,10 @@ class directory_entry;
 |[operator!=](#op_neq)|Заменяет элементы списка копией другого списка.|
 |[оператор=](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
 |[operator==](#op_eq)|Возвращает `mypath == right.mypath`.|
-|[оператор<](#op_lt)|Возвращает `mypath < right.mypath`.|
-|[оператор<=](#op_lteq)|Возвращает `!(right < *this)`.|
-|[оператор>](#op_gt)|Возвращает `right < *this`.|
-|[оператор>=](#op_gteq)|Возвращает `!(*this < right)`.|
+|[operator<](#op_lt)|Возвращает `mypath < right.mypath`.|
+|[operator<=](#op_lteq)|Возвращает `!(right < *this)`.|
+|[operator>](#op_gt)|Возвращает `right < *this`.|
+|[operator>=](#op_gteq)|Возвращает `!(*this < right)`.|
 |[Оператор const path_type &](#path_type)|Возвращает `mypath`.|
 
 ## <a name="requirements"></a>Требования
@@ -137,7 +137,7 @@ explicit directory_entry(const std::experimental::filesystem::path& pval,
 *symstat_arg*\
 Состояние символьной ссылки для имени сохраненного файла.
 
-## <a name="op_neq"></a>operator! =
+## <a name="op_neq"></a> operator!=
 
 Функция-член возвращает значение `!(*this == right)`.
 
@@ -147,7 +147,7 @@ bool operator!=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
 ## <a name="op_as"></a>Оператор =
@@ -161,10 +161,10 @@ directory_entry& operator=(directory_entry&&) noexcept = default;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) копируется `directory_entry`в.
 
-## <a name="op_eq"></a>Оператор = =
+## <a name="op_eq"></a> operator==
 
 Функция-член возвращает значение `mypath == right.mypath`.
 
@@ -174,7 +174,7 @@ bool operator==(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
 ## <a name="op_lt"></a> Оператор&lt;
@@ -187,10 +187,10 @@ bool operator<(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
-## <a name="op_lteq"></a>станции&lt;=
+## <a name="op_lteq"></a> operator&lt;=
 
 Функция-член возвращает значение `!(right < *this)`.
 
@@ -200,7 +200,7 @@ bool operator&lt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
 ## <a name="op_gt"></a> Оператор&gt;
@@ -213,10 +213,10 @@ bool operator&gt;(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
-## <a name="op_gteq"></a>станции&gt;=
+## <a name="op_gteq"></a> operator&gt;=
 
 Функция-член возвращает значение `!(*this < right)`.
 
@@ -226,7 +226,7 @@ bool operator&gt;=(const directory_entry& right) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_entry](../standard-library/directory-entry-class.md) сравнивается `directory_entry`с.
 
 ## <a name="path_type"></a>Оператор const path_type &

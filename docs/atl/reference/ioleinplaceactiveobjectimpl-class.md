@@ -56,7 +56,7 @@ class IOleInPlaceActiveObjectImpl
 |[IoleInPlaceActiveObjectImpl::ResizeBorder](#resizeborder)|Информирует о контроле, необходимом для изогивания своих границ. Реализация ATL возвращает S_OK.|
 |[IoleInPlaceActiveObjectImpl::TranslateAccelerator](#translateaccelerator)|Обрабатывает акселератор-ключ меню сообщений из контейнера. Реализация ATL возвращает E_NOTIMPL.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IOleInPlaceActiveObject](/windows/win32/api/oleidl/nn-oleidl-ioleinplaceactiveobject) помогает в общении между управлением на месте и контейнером; например, сообщение об активном состоянии элемента управления и контейнера и информирование о контроле, необходимом для изобретивания размера. Класс `IOleInPlaceActiveObjectImpl` обеспечивает реализацию `IOleInPlaceActiveObject` и `IUnknown` поддержку по умолчанию, отправляя информацию на устройство сброса в сборках отладок.
 
@@ -84,7 +84,7 @@ HRESULT ContextSensitiveHelp(BOOL fEnterMode);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleWindow:: ContextSensitiveHelp](/windows/win32/api/oleidl/nf-oleidl-iolewindow-contextsensitivehelp) в Windows SDK.
 
@@ -100,7 +100,7 @@ HRESULT EnableModeless(BOOL fEnable);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceActiveObject::Опромновение](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-enablemodeless) в Windows SDK.
 
@@ -112,7 +112,7 @@ HRESULT EnableModeless(BOOL fEnable);
 HRESULT GetWindow(HWND* phwnd);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Некоторые контейнеры не будут работать с элементом управления, который был без окон, даже если он в настоящее время окон. В реализации ATL, `CComControl::m_bWasOnceWindowless` если участник данных является правдой, функция возвращается E_FAIL. В противном случае, если \* `GetWindow` *phwnd* не является NULL, присваивает *phwnd* члену `m_hWnd` данных класса управления и возвращает S_OK.
 
@@ -130,7 +130,7 @@ HRESULT OnDocWindowActivate(BOOL fActivate);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceActiveObject::OnDocWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-ondocwindowactivate) в Windows SDK.
 
@@ -146,7 +146,7 @@ HRESULT OnFrameWindowActivate(BOOL fActivate);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceActiveObject::OnFrameWindowActivate](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-onframewindowactivate) в Windows SDK.
 
@@ -165,7 +165,7 @@ HRESULT ResizeBorder(
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceActiveObject::ResizeBorder](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-resizeborder) в Windows SDK.
 
@@ -185,7 +185,7 @@ S_OK, успешно ли было переведено сообщение.
 
 S_FALSE, если сообщение не было переведено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleInPlaceActiveObject::TranslateAccelerator](/windows/win32/api/oleidl/nf-oleidl-ioleinplaceactiveobject-translateaccelerator) в Windows SDK.
 

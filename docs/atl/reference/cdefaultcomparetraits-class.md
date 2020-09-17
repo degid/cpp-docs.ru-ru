@@ -41,7 +41,7 @@ class CDefaultCompareTraits
 |[CDefaultCompareTraits::CompareElements](#compareelements)|(Статик) Назовите эту функцию для сравнения двух элементов для равенства.|
 |[CDefaultCompareTraits::CompareElementsOrdered](#compareelementsordered)|(Статик) Вызовите эту функцию, чтобы определить больший и меньший элемент.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс содержит две статические функции для сравнения элементов, хранящихся в объекте класса коллекции. Этот класс используется [классом CDefaultElementTraits.](../../atl/reference/cdefaultelementtraits-class.md)
 
@@ -71,7 +71,7 @@ static bool CompareElements(const T& element1, const T& element2);
 
 Возвращает верно, если элементы равны, ложные в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выполнение этой функции по умолчанию — это оператор равенства ()**==** Для объектов, не относясь от простых типов данных, эту функцию, возможно, потребуется переопределить.
 
@@ -101,7 +101,7 @@ static int CompareElementsOrdered(const T& element1, const T& element2);
 |*элемент1* == *элемент2*|0|
 |*элемент1* > *элемент2*|> 0|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В реализации этой функции **\<** по **>** умолчанию используются операторы и операторы. **==** Для объектов, не относясь от простых типов данных, эту функцию, возможно, потребуется переопределить.
 

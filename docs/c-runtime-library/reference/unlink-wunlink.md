@@ -71,7 +71,7 @@ int _wunlink(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_unlink** удаляет файл, указанный параметром *filename*. **_wunlink** — это версия **_unlink**для расширенных символов; Аргумент *filename* для **_wunlink** является строкой расширенных символов. В остальном эти функции ведут себя одинаково.
 

@@ -23,7 +23,7 @@ ms.locfileid: "88839950"
 [propput]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **propput** C++ имеет те же функциональные возможности, что и атрибут [propput](/windows/win32/Midl/propput) MIDL.
 

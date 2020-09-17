@@ -50,7 +50,7 @@ class CWinTraitsOR
 |[CWinTraitsOR:GetWndExStyle](#getwndexstyle)|Извлекает расширенные стили `CWinTraitsOR` для объекта.|
 |[CWinTraitsOR:GetWndStyle](#getwndstyle)|Извлекает стандартные стили `CWinTraitsOR` для объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс [черт оконов](../../atl/understanding-window-traits.md) предоставляет простой метод стандартизации стилей, используемых для создания объекта окна ATL. Используйте специализацию этого класса в качестве параметра шаблона для [CWindowImpl](../../atl/reference/cwindowimpl-class.md) или другого из оконных классов ATL, чтобы указать минимальный набор стандартных и расширенных стилей, которые будут использоваться для экземпляров этого класса окон.
 

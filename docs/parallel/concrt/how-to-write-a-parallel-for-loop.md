@@ -14,7 +14,7 @@ ms.locfileid: "77141863"
 ---
 # <a name="how-to-write-a-parallel_for-loop"></a>Практическое руководство. Написание цикла parallel_for
 
-В этом примере показано, как использовать метод [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) , чтобы вычислить произведение двух матриц.
+В этом примере показано, как использовать метод [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) , чтобы вычислить произведение двух матриц.
 
 ## <a name="example"></a>Пример
 

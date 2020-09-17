@@ -75,7 +75,7 @@ class CVSListBox : public CVSListBoxBase
 |----------|-----------------|
 |[CVSListBox::GetListHwnd](#getlisthwnd)|Возвращает ручку в текущий элемент управления представления встроенного списка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CVSListBox` предоставляет набор кнопок для элементов, которые позволяют пользователю создавать, изменять, удалять или переставлять элементы в элементы управления списком.
 
@@ -133,7 +133,7 @@ virtual int AddItem(
 
 Индекс нулевой основе положения строки в управлении список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CVSListBox::GetItemData](#getitemdata) для получения значения, указанного параметром *dwData.* Это значение может быть рядом с приложением или указателем на другие данные.
 
@@ -147,7 +147,7 @@ CVSListBox();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cvslistboxedititem"></a><a name="edititem"></a>CVSListBox::EditItem
 
@@ -166,7 +166,7 @@ virtual BOOL EditItem(int iIndex);
 
 TRUE, если операция по отдействию начинается успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пользователь начинает операцию по отдействию либо путем двойного нажатия на этикетку элемента, либо нажатием клавиши **F2** или **SPACEBAR,** когда элемент имеет фокус.
 
@@ -182,7 +182,7 @@ virtual int GetCount() const;
 
 Число элементов в элементе управления "Список".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что значение этого показателя превышает значение индекса последнего элемента, поскольку индекс на нулевом уровне.
 
@@ -203,7 +203,7 @@ virtual DWORD_PTR GetItemData(int iIndex) const;
 
 32-битное значение, связанное с указанным элементом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [CVSListBox::SetItemData](#setitemdata) или [CVSListBox::AddItem](#additem) метод связать 32-битное значение с элементом управления списком. Это значение может быть рядом с приложением или указателем на другие данные.
 
@@ -224,7 +224,7 @@ virtual CString GetItemText(int iIndex) const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий текст указанного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cvslistboxgetlisthwnd"></a><a name="getlisthwnd"></a>CVSListBox::GetListHwnd
 
@@ -238,7 +238,7 @@ virtual HWND GetListHwnd() const;
 
 Ручка для элементаруемого элемента управления представлениям списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для извлечения ручки в `CVSListBox` элемент управления представления списка, поддерживающего класс.
 
@@ -254,7 +254,7 @@ virtual int GetSelItem() const;
 
 Если этот метод удался, индекс нулевой основе выбранного в настоящее время элемента; в противном случае, -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cvslistboxremoveitem"></a><a name="removeitem"></a>CVSlistBox::RemoveItem
 
@@ -273,7 +273,7 @@ virtual BOOL RemoveItem(int iIndex);
 
 TRUE, если указанный элемент удален; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cvslistboxselectitem"></a><a name="selectitem"></a>CVSlistBox::SelectItem
 
@@ -292,7 +292,7 @@ virtual BOOL SelectItem(int iItem);
 
 ПРАВДА, если этот метод является успешным; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод выбирает указанный элемент, и если он необходим, прокручивает элемент в представлении.
 
@@ -314,7 +314,7 @@ virtual void SetItemData(
 *dwData*<br/>
 (в) 32-битное значение. Это значение может быть рядом с приложением или указателем на другие данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

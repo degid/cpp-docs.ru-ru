@@ -44,7 +44,7 @@ class source_link_manager;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`const_pointer`|Тип, предоставляющий указатель на **`const`** элемент в `source_link_manager` объекте.|
 |`const_reference`|Тип, предоставляющий ссылку на **`const`** элемент, хранящийся в объекте, `source_link_manager` для чтения и выполнения операций const.|
@@ -53,17 +53,17 @@ class source_link_manager;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[source_link_manager](#ctor)|Формирует объект `source_link_manager`.|
 |[Деструктор ~ source_link_manager](#dtor)|Уничтожает `source_link_manager` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[add](#add)|Добавляет ссылку на объект в качестве источника `source_link_manager` .|
-|[начале](#begin)|Возвращает итератор на первый элемент в `source_link_manager` объекте.|
+|[begin](#begin)|Возвращает итератор на первый элемент в `source_link_manager` объекте.|
 |[contains](#contains)|Выполняет поиск `network_link_registry` `source_link_manager` указанного блока в этом объекте.|
 |[count](#count)|Подсчитывает количество связанных блоков в `source_link_manager` объекте.|
 |[reference](#reference)|Получает ссылку на `source_link_manager` объект.|
@@ -72,7 +72,7 @@ class source_link_manager;
 |[remove](#remove)|Удаляет ссылку из `source_link_manager` объекта.|
 |[set_bound](#set_bound)|Задает максимальное число ссылок на источники, которые могут быть добавлены к этому `source_link_manager` объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Сейчас блоки исходного кода подсчитываются. Это оболочка для `network_link_registry` объекта, который разрешает одновременный доступ к ссылкам и предоставляет возможность ссылаться на ссылки через обратные вызовы. Блоки сообщений `target_block` `propagator_block` должны использовать этот класс для ссылок на исходные элементы.
 
@@ -84,7 +84,7 @@ class source_link_manager;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="add"></a><a name="add"></a>включить
 
@@ -111,7 +111,7 @@ iterator begin();
 
 Итератор, обращающийся к первому элементу в `source_link_manager` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конечное состояние итератора обозначается `NULL` ссылкой.
 

@@ -55,13 +55,13 @@ class CLinkCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CLinkCtrl:: CLinkCtrl](#clinkctrl)|Формирует объект `CLinkCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CLinkCtrl:: Create](#create)|Создает элемент управления Link и прикрепляет его к `CLinkCtrl` объекту.|
 |[CLinkCtrl:: Креатикс](#createex)|Создает элемент управления Link с расширенными стилями и прикрепляет его к `CLinkCtrl` объекту.|
@@ -77,7 +77,7 @@ class CLinkCtrl : public CWnd
 |[CLinkCtrl:: Сетитемстате](#setitemstate)|Задает состояние элемента управления ссылки.|
 |[CLinkCtrl:: Сетитемурл](#setitemurl)|Задает URL-адрес, представленный элементом управления ссылки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Элемент управления "ссылка" предоставляет удобный способ встраивания гипертекстовых ссылок в окно. Фактический элемент управления — это окно, которое отображает помеченный текст и запускает соответствующие приложения, когда пользователь щелкает внедренную ссылку. В одном элементе управления поддерживается несколько ссылок, доступ к которым можно получить с помощью индекса, начинающегося с нуля.
 
@@ -146,7 +146,7 @@ virtual BOOL Create(DWORD dwStyle,
 
 Значение TRUE, если инициализация прошла успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CLinkCtrl`Объект создается в два этапа. Сначала вызовите конструктор, а затем вызовите метод `Create` , который создает элемент управления Link и присоединяет его к `CLinkCtrl` объекту. Если вы хотите использовать расширенные стили Windows с элементом управления, вызовите [CLinkCtrl:: креатикс](#createex) вместо `Create` .
 
@@ -208,7 +208,7 @@ virtual BOOL CreateEx(DWORD  dwExStyle,
 
 Значение TRUE, если инициализация прошла успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные константы стиля Windows.
 
@@ -226,7 +226,7 @@ int GetIdealHeight() const;
 
 Идеальная высота элемента управления (в пикселях).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [LM_GETIDEALHEIGHT](/windows/win32/Controls/lm-getidealheight), как описано в Windows SDK.
 
@@ -252,7 +252,7 @@ int GetIdealSize(
 
 Предпочтительная высота текста ссылки в пикселях. Возвращаемое значение совпадает со значением элемента *CY* `SIZE` структуры.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пример `GetIdealSize` метода см. в примере в [CLinkCtrl:: Create](#create).
 
@@ -275,7 +275,7 @@ BOOL GetItem(PLITEM pItem) const;
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [LM_GETITEM](/windows/win32/Controls/lm-getitem), как описано в Windows SDK.
 
@@ -315,7 +315,7 @@ BOOL GetItemID(
 > [!NOTE]
 > Эта функция также возвращает значение FALSE, если буфер *сзид или Стрид* меньше MAX_LINKID_TEXT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает идентификатор определенного элемента управления ссылки. Дополнительные сведения см. в [LM_GETITEM](/windows/win32/Controls/lm-getitem) сообщения Win32 в Windows SDK.
 
@@ -345,7 +345,7 @@ BOOL GetItemState(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Извлекает значение указанного элемента состояния определенного элемента управления ссылки. Дополнительные сведения см. в [LM_GETITEM](/windows/win32/Controls/lm-getitem) сообщения Win32 в Windows SDK.
 
@@ -385,7 +385,7 @@ BOOL GetItemUrl(
 > [!NOTE]
 > Эта функция также возвращает значение FALSE, если буфер *сзурл или strUrl* меньше MAX_LINKID_TEXT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Извлекает URL-адрес, представленный указанным элементом управления ссылки. Дополнительные сведения см. в [LM_GETITEM](/windows/win32/Controls/lm-getitem) сообщения Win32 в Windows SDK.
 
@@ -406,7 +406,7 @@ BOOL HitTest(PLHITTESTINFO phti) const;
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [LM_HITTEST](/windows/win32/Controls/lm-hittest), как описано в Windows SDK.
 
@@ -427,7 +427,7 @@ BOOL SetItem(PLITEM pItem);
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [LM_SETITEM](/windows/win32/Controls/lm-setitem), как описано в Windows SDK.
 
@@ -453,7 +453,7 @@ BOOL SetItemID(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Задает идентификатор конкретного элемента управления ссылки. Дополнительные сведения см. в [LM_SETITEM](/windows/win32/Controls/lm-setitem) сообщения Win32 в Windows SDK.
 
@@ -483,7 +483,7 @@ BOOL SetItemState(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Задает значение указанного элемента состояния конкретного элемента управления ссылки. Дополнительные сведения см. в [LM_SETITEM](/windows/win32/Controls/lm-setitem) сообщения Win32 в Windows SDK.
 
@@ -509,7 +509,7 @@ BOOL SetItemUrl(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Задает URL-адрес, представленный указанным элементом управления ссылки. Дополнительные сведения см. в [LM_SETITEM](/windows/win32/Controls/lm-setitem) сообщения Win32 в Windows SDK.
 

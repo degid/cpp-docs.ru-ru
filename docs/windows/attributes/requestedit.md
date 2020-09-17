@@ -23,7 +23,7 @@ ms.locfileid: "88846021"
 [requestedit]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **рекуестедит** C++ имеет те же функциональные возможности, что и атрибут [рекуестедит](/windows/win32/Midl/requestedit) MIDL.
 

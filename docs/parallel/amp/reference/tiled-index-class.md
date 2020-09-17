@@ -67,13 +67,13 @@ class tiled_index<_Dim0, 0, 0> : public _Tiled_index_base<1>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор tiled_index](#ctor)|Инициализирует новый экземпляр класса `tile_index`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[get_tile_extent](#tiled_index__get_tile_extent)|Возвращает объект [экстента](extent-class.md) , содержащий значения `tiled_index` аргументов шаблона `_Dim0` , `_Dim1` и `_Dim2` .|
 

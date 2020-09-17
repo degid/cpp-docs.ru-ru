@@ -104,7 +104,7 @@ class CRowsetImpl :
 |[m_strCommandText](#strcommandtext)|Содержит начальную команду набора строк.|
 |[m_strIndexText](#strindextext)|Содержит начальный индекс набора строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CRowsetImpl` предоставляет переопределения в виде статических преобразований. Методы управляют способом, которым данный набор строк будет проверять текст команды. Можно создать собственный `CRowsetImpl` класс, сделав интерфейсы реализации множественно наследуемыми. Единственный метод, для которого необходимо предоставить реализацию, — это `Execute` . В зависимости от типа создаваемого набора строк методы Creator будут иметь разные сигнатуры `Execute` . Например, если `CRowsetImpl` для реализации набора строк схемы используется производный класс, `Execute` метод будет иметь следующую сигнатуру:
 
@@ -143,7 +143,7 @@ HRESULT CRowsetBaseImpl::NameFromDBID(DBID* pDBID,
 
 Стандартное значение HRESULT. В зависимости от того `DBID` , является ли объект таблицей или индексом (обозначенным *биндекс*), метод возвратит DB_E_NOINDEX или DB_E_NOTABLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается `CRowsetImpl` реализациями [Валидатекоммандид](../../data/oledb/crowsetimpl-validatecommandid.md) и [жеткоммандфромид](../../data/oledb/crowsetimpl-getcommandfromid.md).
 
@@ -170,7 +170,7 @@ HRESULT CRowsetBaseImpl::SetCommandText(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `SetCommentText`Метод вызывается `CreateRowset` статическим методом преобразованный метода `IOpenRowsetImpl` .
 
@@ -199,7 +199,7 @@ static ATLCOLUMNINFO* CRowsetBaseImpl::GetColumnInfo(T* pv,
 
 Указатель на статическую `ATLCOLUMNINFO` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод является расширенным переопределением.
 
@@ -232,7 +232,7 @@ HRESULT CRowsetBaseImpl::GetCommandFromID(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается через статическое преобразование, `CRowsetImpl` чтобы заполнить элементы данных [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) и [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). По умолчанию этот метод проверяет, содержат ли один или оба параметра строковые значения. Если они содержат строковые значения, этот метод копирует строковые значения в элементы данных. Поместив метод с этой сигнатурой в `CRowsetImpl` производный класс, вместо базовой реализации будет вызываться метод.
 
@@ -259,7 +259,7 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается с помощью статического приведения by `CRowsetImpl` для заполнения его элементов данных [m_strCommandText](../../data/oledb/crowsetimpl-m-strcommandtext.md) и [m_strIndexText](../../data/oledb/crowsetimpl-m-strindextext.md). По умолчанию этот метод проверяет, содержат ли один или оба `DBID` строковые значения, и, если да, копирует их в элементы данных. Поместив метод с этой сигнатурой в `CRowsetImpl` производный класс, вместо базовой реализации будет вызываться метод.
 
@@ -273,7 +273,7 @@ HRESULT CRowsetBaseImpl::ValidateCommandID(DBID* pTableID,
 ArrayType CRowsetBaseImpl::m_rgRowData;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *ArrayType* — это параметр шаблона для `CRowsetImpl` .
 

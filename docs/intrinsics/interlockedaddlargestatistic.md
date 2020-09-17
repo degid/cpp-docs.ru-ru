@@ -48,7 +48,7 @@ long _InterlockedAddLargeStatistic(
 |---------------|------------------|
 |`_InterlockedAddLargeStatistic`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

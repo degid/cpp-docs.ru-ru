@@ -71,7 +71,7 @@ class CMFCRibbonSlider : public CMFCRibbonBaseElement
 |[CMFCRibbonSlider::Set'mButtons](#setzoombuttons)|Показывает или скрывает кнопки масштабирования.|
 |[CMFCRibbonSlider::Set'mIncrement](#setzoomincrement)|Устанавливает размер приращения зума для управления ползунок.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот `SetRange` метод можно настроить для настройки диапазона приращений увеличения для ползунка. Можно установить текущее положение слайдера с помощью метода. `SetPos`
 
@@ -114,7 +114,7 @@ CMFCRibbonSlider(
 
 [in]. *nWidth* Ширина слайдера в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструирует ленточный ползунок, который *nWidth* пикселей широкий в категории панели, где ползунок добавляется. По умолчанию ползунок является горизонтальным.
 
@@ -168,7 +168,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonslidergetzoomincrement"></a><a name="getzoomincrement"></a>CMFCRibbonSlider::Get'mIncrement
 
@@ -206,7 +206,7 @@ virtual void OnDraw(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonslidersetpos"></a><a name="setpos"></a>CMFCRibbonSlider::SetPos
 
@@ -244,7 +244,7 @@ void SetRange(
 *nMax*<br/>
 (в) Определяет максимальное значение управления ползунок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определяет диапазон значений для управления ползунок, установив минимальные и максимальные значения.
 

@@ -41,7 +41,7 @@ class CRichEditCntrItem : public COleClientItem
 |----------|-----------------|
 |[CrichEditCntrItem:SyncToRichEditObject](#synctoricheditobject)|Активирует элемент как другой тип.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 "Богатый элемент управления редактированием" — это окно, в котором пользователь может вводить и отстранять текст. Текст может быть назначен символ и форматирование абзацев, и может включать встроенные объекты OLE. Управление богатым редактированием обеспечивает интерфейс программирования для форматирования текста. Однако приложение должно реализовать все компоненты пользовательского интерфейса, необходимые для того, чтобы операции форматирования были доступны пользователю.
 
@@ -85,7 +85,7 @@ CRichEditCntrItem(
 *pContainer*<br/>
 Указатель на контейнерный документ, который будет содержать этот элемент. Если *pContainer* является NULL, необходимо явно позвонить [в COleDocument::AddItem,](../../mfc/reference/coledocument-class.md#additem) чтобы добавить этот элемент клиента в документ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не выполняет никакой инициализации OLE.
 
@@ -104,7 +104,7 @@ void SyncToRichEditObject(REOBJECT& reo);
 *Reo*<br/>
 Ссылка на структуру [REOBJECT,](/windows/win32/api/richole/ns-richole-reobject) описывающая элемент OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см.](/windows/win32/api/wtypes/ne-wtypes-dvaspect)
 

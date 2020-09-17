@@ -95,7 +95,7 @@ class CDocTemplate : public CCmdTarget
 |[CDocTemplate::SetPreviewInfo](#setpreviewinfo)|Настройки из обработчика просмотра процесса.|
 |[CDocTemplate::SetServerInfo](#setserverinfo)|Определяет ресурсы и классы при встраивании или редактировании серверного документа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обычно при реализации `InitInstance` функции приложения обычно создается один или несколько шаблонов документов. Шаблон документа определяет отношения между тремя типами классов:
 
@@ -144,7 +144,7 @@ virtual void AddDocument(CDocument* pDoc);
 *pDoc*<br/>
 Указатель на добавленный документ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученные классы [CMultiDocTemplate](../../mfc/reference/cmultidoctemplate-class.md) и [CSingleDocTemplate](../../mfc/reference/csingledoctemplate-class.md) переопределяют эту функцию. Если вы получаете свой собственный класс документа-шаблона из, `CDocTemplate`ваш производный класс должен переопределить эту функцию.
 
@@ -186,7 +186,7 @@ END
 *pViewClass*<br/>
 Указывает на `CRuntimeClass` объект класса представления. Этот класс `CView`является классом, который вы определяете для отображения документов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию `CDocTemplate` члена для построения объекта. Динамически выделите `CDocTemplate` объект и передайте его [CWinApp::AddDocTemplate](../../mfc/reference/cwinapp-class.md#adddoctemplate) из функции `InitInstance` участника вашего класса приложений.
 
@@ -203,7 +203,7 @@ virtual void CloseAllDocuments(BOOL bEndSession);
 *bEndSession*<br/>
 Не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена обычно используется как часть команды File Exit. Реализация этой функции по умолчанию вызывает функцию члена [CDocument::DeleteContents,](../../mfc/reference/cdocument-class.md#deletecontents) чтобы удалить данные документа, а затем закрывает окна кадра для всех представлений, прилагаемых к документу.
 
@@ -243,7 +243,7 @@ virtual CFrameWnd* CreateNewFrame(
 
 Указатель на вновь созданное окно кадра или NULL, если происходит ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateNewFrame`использует `CRuntimeClass` объекты, переданные конструктору, для создания нового окна кадра с прикрепленным представлением и документом. Если параметр *pDoc* является NULL, фреймворк выводит сообщение TRACE.
 
@@ -275,7 +275,7 @@ CFrameWnd* CreateOleFrame(
 
 Указатель на окно рамы в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bCreateView* равен нулю, создается пустая рамка.
 
@@ -315,7 +315,7 @@ virtual BOOL GetDocString(
 
 Nonzero, если указанная подстрока была найдена; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы получить определенный подстроку, описывающую тип документа. Строка, содержащая эти подстроки, хранится в шаблоне документа и выводится из строки в файле ресурса для приложения. Платформа вызывает эту функцию, чтобы получить строки, необходимые для пользовательского интерфейса приложения. Если вы указали расширение имени файла для документов приложения, платформа также вызывает эту функцию при добавлении записи в базу данных регистрации Windows; это позволяет открывать документы из диспетчера файлов Windows.
 
@@ -333,7 +333,7 @@ virtual POSITION GetFirstDocPosition() const = 0;
 
 Значение POSITION, которое может быть использовано для итерирования через список документов, связанных с этим шаблоном документа; или NULL, если список пуст.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы получить позицию первого документа в списке документов, связанных с этим шаблоном. Используйте значение POSITION в качестве аргумента для [CDocTemplate::GetNextDoc](#getnextdoc) для итерации через список документов, связанных с шаблоном.
 
@@ -356,7 +356,7 @@ virtual CDocument* GetNextDoc(POSITION& rPos) const = 0;
 *rPos*<br/>
 Ссылка на значение POSITION, возвращенное предыдущим вызовом [в GetFirstDocPosition](#getfirstdocposition) или `GetNextDoc`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если извлеченный элемент является последним в списке, то новое значение *rPos* устанавливается на NULL.
 
@@ -386,7 +386,7 @@ virtual void InitialUpdateFrame(
 *bMakeVisible*<br/>
 Указывает, должен ли кадр стать видимым и активным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов `IntitialUpdateFrame` после создания нового `CreateNewFrame`кадра с . Вызов этой функции приводит к тому, `OnInitialUpdate` что представления в этом окне кадра принимают их вызовы. Кроме того, если ранее не было активного представления, основное представление окна кадра становится активным; основным представлением является представление с идентификатором ребенка AFX_IDW_PANE_FIRST. Наконец, окно кадра становится видимым, если *bMakeVisible* не является нулевым. Если *bMakeVisible* равен нулю, текущее фокусии и видимое состояние окна кадра останутся неизменными.
 
@@ -400,7 +400,7 @@ virtual void InitialUpdateFrame(
 virtual void LoadTemplate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена вызывается инфраструктурой для загрузки ресурсов для данного `CDocTemplate` или производного класса. Обычно он называется во время строительства, за исключением случаев, когда шаблон строится глобально. В этом случае вызов `LoadTemplate` задерживается до вызова [CWinApp:AddDocTemplate.](../../mfc/reference/cwinapp-class.md#adddoctemplate)
 
@@ -438,7 +438,7 @@ enum Confidence
     };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы определить тип шаблона документа для открытия файла. Например, если приложение поддерживает несколько типов файлов, эту функцию можно использовать, чтобы определить, `MatchDocType` какой из доступных шаблонов документов подходит для данного файла, вызывая каждый шаблон по очереди и выбирая шаблон в соответствии с возвращенным значением доверия.
 
@@ -474,7 +474,7 @@ virtual CDocument* OpenDocumentFile(
 
 Указатель на документ, файл которого назван *lpszPathName*; NULL, если безуспешно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Открывает файл, путь которого указан *lpszPathName.* Если *lpszPathName* является NULL, создается новый файл, содержащий документ типа, связанного с этим шаблоном.
 
@@ -491,7 +491,7 @@ virtual void RemoveDocument(CDocument* pDoc);
 *pDoc*<br/>
 Указатель на документ, который будет удален.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученные `CMultiDocTemplate` классы `CSingleDocTemplate` и переопределить эту функцию. Если вы получаете свой собственный класс документа-шаблона из, `CDocTemplate`ваш производный класс должен переопределить эту функцию.
 
@@ -520,7 +520,7 @@ void SetContainerInfo(UINT nIDOleInPlaceContainer);
 *nIDOleInPlaceContainer*<br/>
 Идентификатор ресурсов, используемых при активации встроенного объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы настроить ресурсы, которые будут использоваться при активации объекта OLE. Эти ресурсы могут включать меню и таблицы акселераторов. Эта функция обычно вызывается в [CWinApp::InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) функции вашего приложения.
 
@@ -539,7 +539,7 @@ virtual void SetDefaultTitle(CDocument* pDocument) = 0;
 *pДокумент*<br/>
 Указатель на документ, название которого должно быть установлено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения информации о `CDocTemplate::docName` названии [CDocTemplate::GetDocString](#getdocstring)по умолчанию, см.
 
@@ -569,7 +569,7 @@ void SetServerInfo(
 *pOleViewClass*<br/>
 Указатель на `CRuntimeClass` структуру, содержащую информацию о классе для объекта представления, созданный при активации на месте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов ими функции участника для идентификации ресурсов, которые будут использоваться серверным приложением, когда пользователь запрашивает активацию встроенного объекта. Эти ресурсы состоят из меню и таблиц акселератора. Эта функция обычно вызывается в приложении. `InitInstance`
 
@@ -597,7 +597,7 @@ CFrameWnd* CreatePreviewFrame(
 
 Действительный `CFrameWnd` указатель на объект, или NULL, если создание не удается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdoctemplatesetpreviewinfo"></a><a name="setpreviewinfo"></a>CDocTemplate::SetPreviewInfo
 
@@ -621,7 +621,7 @@ void SetPreviewInfo(
 *pPreviewViewClass*<br/>
 Определяет указатель на информационную структуру класса выполнения представления предварительного просмотра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

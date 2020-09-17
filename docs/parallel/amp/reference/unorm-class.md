@@ -27,22 +27,22 @@ class unorm;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор unorm](#ctor)|Перегружен. Конструктор по умолчанию. Инициализируйте до 0,0 f.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|unorm:: operator--||
-|unorm:: operator float|Оператор преобразования. Преобразуйте номер unorm в значение с плавающей запятой.|
-|unorm:: operator * =||
-|unorm:: operator/=||
-|unorm:: operator + +||
-|unorm:: operator + =||
-|unorm:: operator =||
-|unorm:: operator-=||
+|unorm::operator--||
+|unorm::operator float|Оператор преобразования. Преобразуйте номер unorm в значение с плавающей запятой.|
+|unorm::operator*=||
+|unorm::operator/=||
+|unorm::operator++||
+|unorm::operator+=||
+|unorm::operator=||
+|unorm::operator-=||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -50,9 +50,9 @@ class unorm;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="ctor"></a>unorm
 

@@ -52,7 +52,7 @@ template <typename T, typename E>
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[VectorView:: First](#first)|Возвращает итератор, указывающий первый элемент объекта VectorView.|
 |[VectorView:: GetAt](#getat)|Извлекает элемент текущего VectorView, указанный заданным индексом.|
@@ -86,7 +86,7 @@ virtual Windows::Foundation::Collections::IIterator<T>^
 
 Итератор, указывающий первый элемент объекта VectorView.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удобным способом удержания итератора, возвращенного первым (), является присвоение возвращаемого значения переменной, объявленной с **`auto`** ключевым словом выведения типа. Например, `auto x = myVectorView->First();`.
 

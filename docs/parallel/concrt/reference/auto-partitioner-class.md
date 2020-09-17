@@ -29,7 +29,7 @@ class auto_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[auto_partitioner](#ctor)|Формирует объект `auto_partitioner`.|
 |[Деструктор ~ auto_partitioner](#dtor)|Уничтожает объект `auto_partitioner`.|
@@ -40,7 +40,7 @@ class auto_partitioner;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** PPL. h
+**Заголовок:** PPL.h
 
 **Пространство имен:** concurrency
 

@@ -28,7 +28,7 @@ enum ModuleType;
 
 ### <a name="values"></a>Значения
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`InProc`|Внутрипроцессный сервер.|
 |`OutOfProc`|Сервер вне процесса.|
@@ -38,7 +38,7 @@ enum ModuleType;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 

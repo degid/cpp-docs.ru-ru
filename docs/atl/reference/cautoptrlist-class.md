@@ -43,7 +43,7 @@ class CAutoPtrList :
 |----------|-----------------|
 |[CAutoPtrlist:CAutoPtrlist](#cautoptrlist)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет конструктор и получает методы из [CAtlList](../../atl/reference/catllist-class.md) и [CAutoPtrElementTraits,](../../atl/reference/cautoptrelementtraits-class.md) чтобы помочь создать объект списка хранения интеллектуальных указателей. Класс [CAutoPtrArray](../../atl/reference/cautoptrarray-class.md) предоставляет аналогичную функцию для объекта массива.
 
@@ -72,7 +72,7 @@ CAutoPtrList(UINT nBlockSize = 10) throw();
 *nBlockSize*<br/>
 Размер блока, с значением по умолчанию 10.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер блока — это мера объема памяти, выделенного при необходимости нового элемента. Большие размеры блоков уменьшают вызовы для процедур распределения памяти, но используют больше ресурсов.
 

@@ -80,7 +80,7 @@ class CInternetSession : public CObject
 |----------|-----------------|
 |[CInternetSession:оператор HINTERNET](#operator_hinternet)|Ручка для текущей сессии Интернета.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если подключение к Интернету должно быть сохранено в `CInternetSession` течение всего срока действия приложения, вы можете создать члена класса [CWinApp.](../../mfc/reference/cwinapp-class.md)
 
@@ -158,7 +158,7 @@ CInternetSession(
 
 - INTERNET_FLAG_OFFLINE операции загрузки удовлетворяются только через постоянный кэш. Если элемент не существует в кэше, возвращается соответствующий код ошибки. Этот флаг может быть объединен с оператором bitwise **OR** **(&#124;). **
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CInternetSession`является первой функцией Интернета, вызванной приложением. Он инициализирует внутренние структуры данных и готовится к будущим вызовам из приложения.
 
@@ -197,7 +197,7 @@ BOOL EnableStatusCallback(BOOL bEnable = TRUE);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При обработке вызова статуса можно предоставить статус о ходе операции (например, решение имени, подключение к серверу и т.д.) в панели статуса приложения. Отображение статуса операции особенно желательно во время длительной операции.
 
@@ -219,7 +219,7 @@ DWORD_PTR GetContext() const;
 
 Идентификатор контекста, определяемый приложением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [OnStatusCallback](#onstatuscallback) использует идентификатор контекста, возвращенный, `GetContext` чтобы сообщить о состоянии конкретного приложения. Например, когда пользователь активирует интернет-запрос, связанный с возвратом информации о статусе, обратный вызов состояния использует идентификатор контекста для сообщения о состоянии данного конкретного запроса. Если пользователь активирует два отдельных Интернет-запроса, которые касаются получения информации о состоянии, `OnStatusCallback` использует идентификаторы контекста для возврата статуса соответствующих запросов. Следовательно, идентификатор контекста используется для всех операций обратного вызова состояния и связан с сеансом до окончания сеанса.
 
@@ -264,7 +264,7 @@ static BOOL GetCookie(
 
 - ERROR_INSUFFICIENT_BUFFER Значение, передаваемые в *dwBufLen,* недостаточно для копирования всех данных cookie. Значение, возвращенное в *dwBufLen,* представляет собой размер буфера, необходимого для получения всех данных.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Во второй перегрузке MFC получает данные `CString` cookie в поставляемый объект.
 
@@ -290,7 +290,7 @@ static DWORD GetCookieLength(
 
 Значение DWORD с указанием длины файла cookie, хранящегося в буфере. Ноль, если нет файла cookie с именем, указанным *pstrCookieName.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение используется [GetCookie](#getcookie).
 
@@ -335,7 +335,7 @@ CFtpConnection* GetFtpConnection(
 
 Указатель на объект [CFtpConnection.](../../mfc/reference/cftpconnection-class.md) Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetFtpConnection`подключается к серверу FTP, создает и `CFTPConnection` возвращает указатель на объект. Он не выполняет никаких конкретных операций на сервере. Например, если вы собираетесь читать или писать файлы, вы должны выполнять эти операции в виде отдельных шагов. Ознакомиться с классами [CFtpConnection](../../mfc/reference/cftpconnection-class.md) и [CFtpFileFind](../../mfc/reference/cftpfilefind-class.md) можно найти информацию о поиске файлов, открытии файлов, чтении или письме в файлах. Смотрите статью [Интернет Программирование с WinInet](../../mfc/win32-internet-extensions-wininet.md) для шагов в выполнении общих задач соединения FTP.
 
@@ -373,7 +373,7 @@ CGopherConnection* GetGopherConnection(
 
 Указатель на объект [CGopherConnection.](../../mfc/reference/cgopherconnection-class.md) Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetGopherConnection`подключается к серверу сусликов, создает `CGopherConnection` и возвращает указатель на объект. Он не выполняет никаких конкретных операций на сервере. Например, если вы собираетесь читать или писать данные, вы должны выполнять эти операции в виде отдельных шагов. Смотрите классы [CGopherConnection](../../mfc/reference/cgopherconnection-class.md), [CGopherFile](../../mfc/reference/cgopherfile-class.md)и [CGopherFileFind](../../mfc/reference/cgopherfilefind-class.md) для получения информации о поиске файлов, открытии файлов и чтении или записи файлов. Для получения информации о просмотре сайта [OpenURL](#openurl)FTP см. Смотрите статью [Интернет Программирование с WinInet](../../mfc/win32-internet-extensions-wininet.md) для шагов в выполнении общих задач соединения суслик.
 
@@ -417,7 +417,7 @@ CHttpConnection* GetHttpConnection(
 
 Указатель на объект [CHttpConnection.](../../mfc/reference/chttpconnection-class.md) Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetHttpConnection`подключается к серверу HTTP, создает и `CHttpConnection` возвращает указатель объекту. Он не выполняет никаких конкретных операций на сервере. Например, если вы собираетесь запросить заголовок HTTP, необходимо выполнить эту операцию в качестве отдельного шага. Смотрите классы [CHttpConnection](../../mfc/reference/chttpconnection-class.md) и [CHttpFile](../../mfc/reference/chttpfile-class.md) для получения информации об операциях, которые можно выполнить с помощью подключения к серверу HTTP. Для получения информации о просмотре сайта HTTP см. функцию участника [OpenURL](#openurl). Смотрите статью [Интернет Программирование с WinInet](../../mfc/win32-internet-extensions-wininet.md) для шагов в выполнении общих задач подключения HTTP.
 
@@ -447,7 +447,7 @@ virtual void OnStatusCallback(
 *dwStatusInformationДлина*<br/>
 Размер *lpvStatusInformation*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сначала необходимо позвонить [в EnableStatusCallback,](#enablestatuscallback) чтобы воспользоваться обратным вызовом статуса.
 
@@ -534,7 +534,7 @@ CStdioFile* OpenURL(
 |`gopher://`|`CGopherFile*`|
 |`ftp://`|`CInternetFile*`|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *dwFlags* должен включать либо INTERNET_FLAG_TRANSFER_ASCII, либо INTERNET_FLAG_TRANSFER_BINARY, но не оба. Остальные флаги могут быть объединены с bitwise **ИЛИ** оператора **(&#124;). **
 
@@ -576,7 +576,7 @@ static BOOL SetCookie(
 
 Возвращает TRUE в случае успеха, или FALSE в противном случае. Чтобы получить конкретный код ошибки, позвоните`GetLastError.`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член реализует поведение сообщения Win32 [InternetSetCookie](/windows/win32/api/wininet/nf-wininet-internetsetcookiew), как описано в SDK Windows.
 

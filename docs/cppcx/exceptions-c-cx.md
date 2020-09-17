@@ -65,7 +65,7 @@ C++/CX поддерживает набор стандартных исключе
 
 В Windows 8.1 можно подписываться на статическое событие [Windows:: ApplicationModel:: Core:: CoreApplication:: UnhandledErrorDetected](/uwp/api/windows.applicationmodel.core.icoreapplicationunhandlederror.unhandlederrordetected) , которое предоставляет доступ к необработанным ошибкам, которые будут выдавать процесс. Независимо от того, где возникла ошибка, она достигнет этого обработчика в виде объекта [Windows::ApplicationModel::Core::UnhandledError](/uwp/api/windows.applicationmodel.core.unhandlederror) , который передается с аргументами события. При вызове метода `Propagate` для объекта он создает исключение `Platform::*Exception` типа, соответствующего коду ошибки. В блоках catch можно сохранить пользовательское состояние при необходимости, а затем либо разрешить завершение процесса путем вызова **`throw`** , либо выполнить какие-либо действия для возвращения программы в известное состояние. В следующем примере демонстрируется использование основного подхода:
 
-В App. XAML. h:
+В App. XAML.h:
 
 ```cpp
 void OnUnhandledException(Platform::Object^ sender, Windows::ApplicationModel::Core::UnhandledErrorDetectedEventArgs^ e);
@@ -97,7 +97,7 @@ void App::OnUnhandledException(Platform::Object^ sender, Windows::ApplicationMod
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 C++/CX не использует **`finally`** предложение.
 

@@ -246,7 +246,7 @@ ComPtr<TDelegateInterface> Callback(
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Event. h
+**Заголовок:** Event.h
 
 **Пространство имен:** Microsoft::WRL
 

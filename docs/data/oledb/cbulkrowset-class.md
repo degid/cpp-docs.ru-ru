@@ -271,7 +271,7 @@ HRESULT MoveToRatio(DBCOUNTITEM nNumerator,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `MoveToRatio` выбирает строки примерно в соответствии со следующей формулой:
 
@@ -308,7 +308,7 @@ void SetRows(DBROWCOUNT nRows) throw();
 *nRows*<br/>
 окне Новый размер набора строк (число строк).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При вызове этой функции она должна быть перед открытием набора строк.
 

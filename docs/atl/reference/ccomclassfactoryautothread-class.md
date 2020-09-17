@@ -40,7 +40,7 @@ class CComClassFactoryAutoThread
 |[CComClassFactoryAutoThread::CreateInstance](#createinstance)|Создает объект указанного CLSID.|
 |[CComClassFactoryAutoThread::LockServer](#lockserver)|Запирает фабрику классов в памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComClassFactoryAutoThread`похож на [CComClassFactory](../../atl/reference/ccomclassfactory-class.md), но позволяет объекты, которые будут созданы в нескольких квартирах. Чтобы воспользоваться этой поддержкой, выберите модуль EXE из [CComAutoThreadModule.](../../atl/reference/ccomautothreadmodule-class.md)
 
@@ -88,7 +88,7 @@ STDMETHODIMP CreateInstance(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если модуль происходит от [CComAutoThreadModule,](../../atl/reference/ccomautothreadmodule-class.md) `CreateInstance` сначала выбирает поток для создания объекта в сопутствующая квартира.
 
@@ -109,7 +109,7 @@ STDMETHODIMP LockServer(BOOL fLock);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При `CComClassFactoryAutoThread`использовании , как правило, `_Module` относится к глобальному экземпляру [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md).
 

@@ -22,7 +22,7 @@ ms.locfileid: "80213673"
 struct Nil;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется для указания неуказанного необязательного параметра шаблона.
 
@@ -34,7 +34,7 @@ struct Nil;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

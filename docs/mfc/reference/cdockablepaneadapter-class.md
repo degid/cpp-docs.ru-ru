@@ -42,7 +42,7 @@ class CDockablePaneAdapter : public CDockablePane
 |[CDockablePaneAdapter::SaveState](#savestate)|(Перекрывает [CDockablePane::SaveState](cdockablepane-class.md).)|
 |[CDockablePaneAdapter::SetWrappedWnd](#setwrappedwnd)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обычно фреймворк мгновенно использует объекты этого класса при использовании методов [CMFCBaseTabCtrl::AddTab](../../mfc/reference/cmfcbasetabctrl-class.md#addtab) или [CMFCBaseTabCtrl::InsertTab.](../../mfc/reference/cmfcbasetabctrl-class.md#inserttab)
 
@@ -74,7 +74,7 @@ virtual CWnd* GetWrappedWnd() const;
 
 Указатель на завернутое окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для доступа к завернутому окну.
 
@@ -102,7 +102,7 @@ virtual BOOL LoadState(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdockablepaneadaptersavestate"></a><a name="savestate"></a>CDockablePaneAdapter::SaveState
 
@@ -128,7 +128,7 @@ virtual BOOL SaveState(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdockablepaneadaptersetwrappedwnd"></a><a name="setwrappedwnd"></a>CDockablePaneAdapter::SetWrappedWnd
 
@@ -145,7 +145,7 @@ virtual BOOL SetWrappedWnd(CWnd* pWnd);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

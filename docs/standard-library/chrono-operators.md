@@ -13,7 +13,7 @@ ms.locfileid: "87230147"
 ---
 # <a name="ltchronogt-operators"></a>Операторы &lt;chrono&gt;
 
-## <a name="operator-"></a><a name="operator-"></a>станции
+## <a name="operator-"></a><a name="operator-"></a> operator
 
 Оператор вычитания или отрицания объектов [duration](../standard-library/duration-class.md) и [time_point](../standard-library/time-point-class.md).
 
@@ -42,7 +42,7 @@ constexpr typename common_type<Duration1, Duration2>::type
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 *Таймаут*\
@@ -59,7 +59,7 @@ constexpr typename common_type<Duration1, Duration2>::type
 
 Третья функция возвращает `duration` объект, представляющий интервал времени между *левым* и *правым*.
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Оператор неравенства для объектов [duration](../standard-library/duration-class.md) и [time_point](../standard-library/time-point-class.md).
 
@@ -80,14 +80,14 @@ constexpr bool operator!=(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Каждая функция возвращает значение `!(Left == Right)`.
 
-## <a name="operator"></a><a name="op_star"></a>станции
+## <a name="operator"></a><a name="op_star"></a> operator
 
 Оператор деления для объектов [duration](../standard-library/chrono-operators.md#op_star).
 
@@ -122,7 +122,7 @@ constexpr duration<typename common_type<Rep1, Rep2>::type, Period2>
 
 Если `is_convertible<Rep1, common_type<Rep1, Rep2>>`*не содержит значение true*, вторая функция не участвует в разрешении перегрузки. Дополнительные сведения см. в разделе [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="operator"></a><a name="op_div"></a>станции
+## <a name="operator"></a><a name="op_div"></a> operator
 
 Оператор деления для объектов[duration](../standard-library/chrono-operators.md#op_star).
 
@@ -151,7 +151,7 @@ constexpr typename common_type<Rep1, Rep2>::type
 *Слева*\
 Левый объект `duration`.
 
-*Правильно*\
+*right*\
 Правой объект `duration`.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -162,7 +162,7 @@ constexpr typename common_type<Rep1, Rep2>::type
 
 Если `is_convertible<Rep2, common_type<Rep1, Rep2>>`*содержит значение true*, а `Rep2` не является экземпляром `duration`, первый оператор не участвует в разрешении перегрузки. Дополнительные сведения см. в разделе [<type_traits>](../standard-library/type-traits.md).
 
-## <a name="operator"></a><a name="op_add"></a>operator +
+## <a name="operator"></a><a name="op_add"></a> operator+
 
 Добавляет объекты [duration](../standard-library/duration-class.md) и [time_point](../standard-library/time-point-class.md).
 
@@ -191,7 +191,7 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 *Таймаут*\
@@ -206,7 +206,7 @@ time_point<Clock, constexpr typename common_type<duration<Rep1, Period1>, Durati
 
 Вторая и третья функции возвращают `time_point` объект, представляющий точку во времени, которая отменяется с интервалом в *длит*от *момента времени*.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Определяет, справедливо ли, что один из объектов [duration](../standard-library/duration-class.md) или [time_point](../standard-library/time-point-class.md) меньше, чем другой объект `duration` или `time_point`.
 
@@ -227,7 +227,7 @@ constexpr bool operator<(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -236,7 +236,7 @@ constexpr bool operator<(
 
 Вторая функция возвращает, **`true`** Если *Left* находится перед *right*. В противном случае функция возвращает значение **`false`** .
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> operator&lt;=
 
 Определяет, верно ли, что один из объектов [duration](../standard-library/duration-class.md) или [time_point](../standard-library/time-point-class.md) меньше другого объекта `duration` или `time_point` или равен ему.
 
@@ -257,14 +257,14 @@ constexpr bool operator<=(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Каждая функция возвращает значение `!(Right < Left)`.
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Определяет, справедливо ли, что два объекта `duration` представляют интервалы времени, имеющие одинаковую длину, или, что два объекта `time_point` представляют один и тот же момент времени.
 
@@ -285,7 +285,7 @@ constexpr bool operator==(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -294,7 +294,7 @@ constexpr bool operator==(
 
 Вторая функция возвращает **`true`** , если *Left* и *right* представляют один и тот же момент времени. В противном случае функция возвращает значение **`false`** .
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> operator&gt;
 
 Определяет, верно ли, что один из объектов [duration](../standard-library/duration-class.md) или [time_point](../standard-library/time-point-class.md) больше, чем другой объект `duration` или `time_point`.
 
@@ -315,14 +315,14 @@ constexpr bool operator>(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Каждая функция возвращает значение `Right < Left`.
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> operator&gt;=
 
 Определяет, верно ли, что один из объектов [duration](../standard-library/duration-class.md) или [time_point](../standard-library/time-point-class.md) больше другого объекта `duration` или `time_point` или равен ему.
 
@@ -343,7 +343,7 @@ constexpr bool operator>=(
 *Слева*\
 Левый объект `duration` или объект `time_point`.
 
-*Правильно*\
+*right*\
 Правый объект `duration` или объект `time_point`.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -379,7 +379,7 @@ constexpr typename common_type<duration<Rep1, _Period1>, duration<Rep2, Period2>
 *Слева*\
 Левый объект `duration`.
 
-*Правильно*\
+*right*\
 Правой объект `duration`.
 
 ### <a name="return-value"></a>Возвращаемое значение

@@ -36,7 +36,7 @@ class freelist : public Max
 *Максимальной*\
 Класс max, представляющий максимальное количество элементов, которые необходимо сохранить в свободном списке. Классом max может быть [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md), [max_fixed_size](../standard-library/max-fixed-size-class.md) или [max_variable_size](../standard-library/max-variable-size-class.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот шаблон класса управляет списком блоков памяти размером *SZ* с максимальной длиной списка, определяемой классом Max, который передается *Max*.
 
@@ -50,7 +50,7 @@ class freelist : public Max
 
 |Функция-член|Описание|
 |-|-|
-|[Рор](#pop)|Удаляет первый блок памяти из свободного списка.|
+|[pор](#pop)|Удаляет первый блок памяти из свободного списка.|
 |[push](#push)|Добавляет блок памяти в список.|
 
 ## <a name="requirements"></a>Требования
@@ -67,7 +67,7 @@ class freelist : public Max
 freelist();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="freelistpop"></a><a name="pop"></a> freelist::p Op
 
@@ -81,7 +81,7 @@ void *pop();
 
 Возвращает указатель на блок памяти, удаленный из списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает значение NULL, если список пуст. В противном случае удаляет первый блок памяти из списка.
 
@@ -95,14 +95,14 @@ bool push(void* ptr);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на блок памяти, которые необходимо добавить в свободный список.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`**`full`значение, если функция класса max Возвращает **`false`** . в противном случае `push` функция возвращает значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `full` функция класса max Возвращает **`false`** , эта функция-член добавляет блок памяти, на который указывает *ptr* , в заголовок списка.
 

@@ -80,7 +80,7 @@ class CComboBoxEx : public CComboBox
 |[CComboBoxEx::Setitem](#setitem)|Устанавливает атрибуты элемента в `ComboBoxEx` элементе управления.|
 |[CComboBoxEx::SetWindowTheme](#setwindowtheme)|Устанавливает визуальный стиль расширенного управления комбо-коробкой.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 С `CComboBoxEx` помощью элементов управления комбо-коробкой вам больше не нужно реализовывать свой собственный код рисования изображений. Вместо этого `CComboBoxEx` используйте для доступа к изображениям из списка изображений.
 
@@ -162,7 +162,7 @@ virtual BOOL Create(
 
 Nonzero, если объект был создан успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создание `CComboBoxEx` объекта в два этапа:
 
@@ -222,7 +222,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте `CreateEx` `Create` вместо того, чтобы применять расширенные стили Windows, указанные в предисловии расширенного стиля Windows **WS_EX_.**
 
@@ -245,7 +245,7 @@ int DeleteItem(int iIndex);
 
 Количество элементов, оставшихся в элементе управления. Если *iIndex* недействителен, функция возвращается CB_ERR.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует функциональность сообщения [CBEM_DELETEITEM,](/windows/win32/Controls/cbem-deleteitem)как описано в SDK Windows. При вызове DeleteItem в родительское окно будет отправлено [WM_NOTIFY](/windows/win32/controls/wm-notify) сообщение с уведомлением CBEN_DELETEITEM.
 
@@ -261,7 +261,7 @@ CComboBox* GetComboBoxCtrl();
 
 Указатель на объект `CComboBox`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент `CComboBoxEx` управления состоит из родительского окна, которое инкапсулирует `CComboBox`.
 
@@ -279,7 +279,7 @@ CEdit* GetEditCtrl();
 
 Указатель на объект [CEdit.](../../mfc/reference/cedit-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент `CComboBoxEx` управления использует редактированную коробку, когда он создается с CBS_DROPDOWN стилем.
 
@@ -297,7 +297,7 @@ DWORD GetExtendedStyle() const;
 
 Значение DWORD, содержащее расширенные стили, которые используются для управления комбо-коробкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации об этих стилях можно ознакомиться с [расширенными стилями Управления ComboBoxEx](/windows/win32/Controls/comboboxex-control-extended-styles) в SDK windows.
 
@@ -313,7 +313,7 @@ CImageList* GetImageList() const;
 
 Указатель на объект [CImageList.](../../mfc/reference/cimagelist-class.md) Если это не удается, эта функция члена возвращает NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, `CImageList` на который указывает сятвое значение возврата, является временным объектом и уничтожается во время следующего простоя обработки.
 
@@ -334,7 +334,7 @@ BOOL GetItem(COMBOBOXEXITEM* pCBItem);
 
 Nonzero, если операция была успешной; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член реализует функциональность сообщения [CBEM_GETITEM,](/windows/win32/Controls/cbem-getitem)как описано в SDK Windows.
 
@@ -350,7 +350,7 @@ BOOL HasEditChanged();
 
 Nonzero, если пользователь набрал в поле отсвагиваем элемента управления; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член реализует функциональность сообщения [CBEM_HASEDITCHANGED,](/windows/win32/Controls/cbem-haseditchanged)как описано в SDK Windows.
 
@@ -371,7 +371,7 @@ int InsertItem(const COMBOBOXEXITEM* pCBItem);
 
 Индекс, по которому новый элемент был вставлен в случае успеха; в противном случае -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При вызове `InsertItem` [WM_NOTIFY](/windows/win32/controls/wm-notify) сообщение с [уведомлением CBEN_INSERTITEM](/windows/win32/Controls/cben-insertitem) будет отправлено в родительское окно.
 
@@ -397,7 +397,7 @@ DWORD SetExtendedStyle(
 
 Значение DWORD, содержащее расширенные стили, ранее использовавававаемые для управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации об этих стилях можно ознакомиться с [расширенными стилями Управления ComboBoxEx](/windows/win32/Controls/comboboxex-control-extended-styles) в SDK windows.
 
@@ -420,7 +420,7 @@ CImageList* SetImageList(CImageList* pImageList);
 
 Указатель на объект [CImageList,](../../mfc/reference/cimagelist-class.md) содержащий изображения, `CComboBoxEx` ранее используемые элементом управления. NULL, если список изображений не был установлен ранее.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член реализует функциональность сообщения [CBEM_SETIMAGELIST,](/windows/win32/Controls/cbem-setimagelist)как описано в SDK Windows. Если вы измените высоту управления изменениями по умолчанию, позвоните функции Win32 [SetWindowPos,](/windows/win32/api/winuser/nf-winuser-setwindowpos) чтобы изменить размер управления после вызова, `SetImageList`или он не будет отображаться должным образом.
 
@@ -443,7 +443,7 @@ BOOL SetItem(const COMBOBOXEXITEM* pCBItem);
 
 Nonzero, если операция была успешной; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует функциональность сообщения [CBEM_SETITEM,](/windows/win32/Controls/cbem-setitem)как описано в SDK Windows.
 
@@ -464,7 +464,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 Значение возврата не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена имитирует функциональность [CBEM_SETWINDOWTHEME](/windows/win32/Controls/cbem-setwindowtheme) сообщения, как описано в SDK Windows.
 

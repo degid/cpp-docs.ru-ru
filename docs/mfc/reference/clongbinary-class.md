@@ -42,7 +42,7 @@ class CLongBinary : public CObject
 |[CLongBinary::m_dwDataLength](#m_dwdatalength)|Содержит фактический размер байтов объекта данных, `m_hData`в котором хранится ручка.|
 |[CLongBinary::m_hData](#m_hdata)|Содержит ручку Windows HGLOBAL к объекту фактического изображения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Например, поле записи в таблице S'L может содержать битную карту, представляющую изображение. Объект `CLongBinary` хранит такой объект и отслеживает его размер.
 
@@ -81,7 +81,7 @@ CLongBinary();
 SQLULEN m_dwDataLength;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот размер может быть меньше, чем размер блока памяти, выделенного для данных. Позвоните в функцию Win32 [GLobalSize,](/windows/win32/api/winbase/nf-winbase-globalsize) чтобы получить выделенный размер.
 

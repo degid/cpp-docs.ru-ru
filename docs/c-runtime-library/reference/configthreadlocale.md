@@ -57,7 +57,7 @@ int _configthreadlocale( int per_thread_locale_type );
 
 Предыдущее состояние языкового стандарта для каждого потока (**_DISABLE_PER_THREAD_LOCALE** или **_ENABLE_PER_THREAD_LOCALE**) или-1 в случае сбоя.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_configurethreadlocale** используется для управления использованием языков, зависящих от конкретного потока. Используйте один из этих *per_thread_locale_type* параметров, чтобы указать или определить состояние языкового стандарта для каждого потока:
 

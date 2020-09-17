@@ -29,7 +29,7 @@ ms.locfileid: "88837818"
 
 | Имя | Описание |
 |-|-|
-|[Оператор =](../cpp/com-error-operator-equal.md)|Присваивает существующий объект **_com_error** другому объекту.|
+|[operator=](../cpp/com-error-operator-equal.md)|Присваивает существующий объект **_com_error** другому объекту.|
 
 ### <a name="extractor-functions"></a>Функции извлечения
 

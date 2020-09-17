@@ -49,7 +49,7 @@ class IOpenRowsetImpl : public IOpenRowset
 |[CreateRowset](#createrowset)|Создает объект набора строк. Не вызывается непосредственно пользователем.|
 |[OpenRowset](#openrowset)|Открывает и возвращает набор строк, включающий все строки из одной базовой таблицы или индекса. (Не в ATLDB. Высоты|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IOpenRowset](/previous-versions/windows/desktop/ms716946(v=vs.85)) является обязательным для объекта сеанса. Он открывает и возвращает набор строк, включающий все строки из одной базовой таблицы или индекса.
 
@@ -101,7 +101,7 @@ HRESULT OpenRowset(IUnknown* pUnkOuter,
 
 См. раздел [IOpenRowset:: OPENROWSET](/previous-versions/windows/desktop/ms716724(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод не найден в ATLDB. Высоты. Он создается мастером объектов ATL при создании поставщика.
 

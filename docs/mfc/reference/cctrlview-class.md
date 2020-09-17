@@ -55,7 +55,7 @@ class CCtrlView : public CView
 |[CCtrlView::m_dwDefaultStyle](#m_dwdefaultstyle)|Содержит стиль по умолчанию для класса представления.|
 |[CCtrlView::m_strClass](#m_strclass)|Содержит название класса Windows для класса представления.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CCtrlView` и его производные, [CEditView,](../../mfc/reference/ceditview-class.md) [CListView](../../mfc/reference/clistview-class.md), [CTreeView](../../mfc/reference/ctreeview-class.md)и [CRichEditView,](../../mfc/reference/cricheditview-class.md)адаптируют архитектуру просмотра документов к новым общим элементам управления, поддерживаемым версиями Windows 95/98 и Windows NT 3.51 и позже. Для получения дополнительной информации об [Document/View Architecture](../../mfc/document-view-architecture.md)архитектуре просмотра документов см.
 
@@ -93,7 +93,7 @@ CCtrlView(
 *dwStyle*<br/>
 Стиль класса представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм вызывает конструктора при создании нового окна кадра или разделении окна. Переуряднетесь [CView::OnInitialUpdate](../../mfc/reference/cview-class.md#oninitialupdate) для инициализации представления после присоединения документа. Вызов [CWnd::Создать](../../mfc/reference/cwnd-class.md#create) или [CWnd::CreateEx](../../mfc/reference/cwnd-class.md#createex) для создания объекта Windows.
 
@@ -113,7 +113,7 @@ CString m_strClass;
 DWORD m_dwDefaultStyle;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот стиль применяется при создании окна.
 
@@ -130,7 +130,7 @@ virtual void OnDraw(CDC* pDC);
 *pDC*<br/>
 Указатель на контекст устройства, в котором происходит рисунок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OnDraw`обычно требуется для отображения экрана, проходя контекст экрана устройства, указанного *pDC.*
 
@@ -151,7 +151,7 @@ virtual BOOL PreCreateWindow(CREATESTRUCT& cs);
 
 Nonzero, если создание окна должно продолжаться; 0, чтобы указать сбой создания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Никогда не звоните в эту функцию напрямую.
 

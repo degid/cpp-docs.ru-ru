@@ -33,7 +33,7 @@ class CArchiveException : public CException
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Карчивиксцептион:: Карчивиксцептион](#carchiveexception)|Формирует объект `CArchiveException`.|
 
@@ -44,7 +44,7 @@ class CArchiveException : public CException
 |[Карчивиксцептион:: m_cause](#m_cause)|Указывает причину исключения.|
 |[Карчивиксцептион:: m_strFileName](#m_strfilename)|Указывает имя файла для этого условия исключения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CArchiveException`Класс включает открытый элемент данных, указывающий причину исключения.
 
@@ -60,7 +60,7 @@ class CArchiveException : public CException
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="carchiveexceptioncarchiveexception"></a><a name="carchiveexception"></a>Карчивиксцептион:: Карчивиксцептион
 
@@ -80,7 +80,7 @@ CArchiveException(
 *лпсзарчивенаме*<br/>
 Указывает на строку, содержащую имя `CArchive` объекта, вызвавшего исключение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете создать `CArchiveException` объект в куче и вызвать его самостоятельно или позволить глобальной функции [афкссроварчивиксцептион](../../mfc/reference/exception-processing.md#afxthrowarchiveexception) его обработку.
 
@@ -94,7 +94,7 @@ CArchiveException(
 int m_cause;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот элемент данных является открытой переменной типа **`int`** . Его значения определяются `CArchiveException` перечисляемым типом. Перечислители и их значение представлено далее.
 

@@ -34,13 +34,13 @@ class CComCriticalSection
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомкритикалсектион:: Ккомкритикалсектион](#ccomcriticalsection)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомкритикалсектион:: init](#init)|Создает и инициализирует объект критической секции.|
 |[Ккомкритикалсектион:: Lock](#lock)|Получает владение объектом критической секции.|
@@ -49,11 +49,11 @@ class CComCriticalSection
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомкритикалсектион:: m_sec](#m_sec)|Объект CRITICAL_SECTION.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComCriticalSection`аналогичен классу [ккомаутокритикалсектион](../../atl/reference/ccomautocriticalsection-class.md), за исключением того, что необходимо явно инициализировать и освободить критический раздел.
 
@@ -63,7 +63,7 @@ class CComCriticalSection
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="ccomcriticalsectionccomcriticalsection"></a><a name="ccomcriticalsection"></a>Ккомкритикалсектион:: Ккомкритикалсектион
 
@@ -73,7 +73,7 @@ class CComCriticalSection
 CComCriticalSection() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Задает для элемента данных [m_sec](#m_sec) значение null.
 
@@ -101,7 +101,7 @@ HRESULT Lock() throw();
 
 Возвращает S_OK при успешном выполнении, E_OUTOFMEMORY или E_FAIL при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект критической секции сначала необходимо инициализировать с помощью вызова метода [init](#init) . После завершения выполнения защищенного кода поток должен вызвать [Unlock](#unlock) , чтобы освободить владение критической секцией.
 
@@ -125,7 +125,7 @@ HRESULT Term() throw();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `Term` вызова критическая секция больше не может использоваться для синхронизации.
 
@@ -141,7 +141,7 @@ HRESULT Unlock() throw();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы сначала получить владение, поток должен вызвать метод [Lock](#lock) . Каждый вызов метода `Lock` требует соответствующего вызова, `Unlock` чтобы освободить владение критическим разделом.
 

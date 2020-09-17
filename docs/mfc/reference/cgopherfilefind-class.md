@@ -68,7 +68,7 @@ class CGopherFileFind : public CFileFind
 |[CGopherFileFind::GetScreenName](#getscreenname)|Получает имя суслика экрана.|
 |[CGopherFileFind::IsDots](#isdots)|Тесты для текущих маркеров каталога и родительских каталогов при итерации файлов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CGopherFileFind`включает функции участника, которые начинают поиск, находят файл и возвращают URL-адрес файла.
 
@@ -121,7 +121,7 @@ explicit CGopherFileFind(
 *Dwcontext*<br/>
 Идентификатор контекста для операции. Смотрите **Замечания** для получения дополнительной информации о *dwContext*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение по умолчанию для *dwContext* отправляется MFC `CGopherFileFind` объекту с объекта [CInternetSession,](../../mfc/reference/cinternetsession-class.md) создавого `CGopherFileFind` объект. При построении `CGopherFileFind` объекта можно переопределить значение по умолчанию, чтобы установить идентификатор контекста на значение по вашему выбору. Идентификатор контекста возвращается [в CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) для предоставления статуса объекта, с помощью которого он идентифицируется. Для получения дополнительной информации об идентификаторе контекста смотрите статью [Internet First Steps: WinInet.](../../mfc/wininet-basics.md)
 
@@ -163,7 +163,7 @@ virtual BOOL FindFile(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Чтобы получить расширенную информацию об ошибке, позвоните в функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `FindFile` вызова, чтобы получить первый объект суслик, вы можете вызвать [FindNextFile](#findnextfile) для получения последующих файлов суслик.
 
@@ -200,7 +200,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 
 Nonzero, если успешно; 0, если не удается. `GetCreationTime`возвращает 0 только в том случае, `CGopherFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetCreationTime`по крайней мере один раз, прежде чем звонить .
 
@@ -228,7 +228,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 
 Nonzero, если успешно; 0, если не удается. `GetLastAccessTime`возвращает 0 только в том случае, `CGopherFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetLastAccessTime`по крайней мере один раз, прежде чем звонить .
 
@@ -256,7 +256,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 
 Nonzero, если успешно; 0, если не удается. `GetLastWriteTime`возвращает 0 только в том случае, `CGopherFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetLastWriteTime`по крайней мере один раз, прежде чем звонить .
 
@@ -275,7 +275,7 @@ virtual ULONGLONG GetLength() const;
 
 Длина, в байтах, найденного файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetLength`использует структуру Win32 [WIN32_FIND_DATA,](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) чтобы получить значение размера файла в байтах.
 
@@ -322,7 +322,7 @@ virtual BOOL IsDots() const;
 
 Nonzero, если найденный файл имеет имя "." или "..," указывает на то, что найденный файл на самом деле является каталогом. В противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `IsDots`по крайней мере один раз, прежде чем звонить .
 

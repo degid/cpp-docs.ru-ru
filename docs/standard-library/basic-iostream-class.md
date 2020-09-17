@@ -33,7 +33,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, который управляет вставками, `Tr` через его базовый класс [basic_ostream,](../standard-library/basic-ostream-class.md)< `Elem`> и извлечений, через basic_istream базового [basic_istream](../standard-library/basic-istream-class.md)< `Elem`класса, `Tr`>. Эти два объекта имеют общую `Tr` [виртуальную](../standard-library/basic-ios-class.md)< `Elem`базовую basic_ios класса,>. Они также управляют общим буфером потока с элементами типа `Elem`, признаки символов которых определяются классом `Tr`. Конструктор инициализирует базовые классы с помощью `basic_istream`( **strbuf**) и `basic_ostream`( **strbuf**).
 
@@ -78,16 +78,16 @@ basic_iostream();
 *strbuf*\
 Существующий объект `basic_streambuf`.
 
-*Правильно*\
+*right*\
 Существующий объект `basic_iostream`, который используется для создания нового объекта `basic_iostream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовые объекты посредством `basic_istream(strbuf)` и `basic_ostream(strbuf)`.
 
 Второй конструктор инициализирует базовые `move(right)`объекты, вызывая .
 
-## <a name="basic_iostreamoperator"></a><a name="op_eq"></a>basic_iostream::оператор
+## <a name="basic_iostreamoperator"></a><a name="op_eq"></a>basic_iostream::operator
 
 Присваивает значение указанного объекта `basic_iostream` этому объекту. Это назначение перемещения, включающее rvalue, которое не оставляет копию.
 
@@ -97,10 +97,10 @@ basic_iostream& operator=(basic_iostream&& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка `rvalue` на объект `basic_iostream`, на основе которого будет присвоено значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор-член `swap(right)`звонит .
 
@@ -114,10 +114,10 @@ void swap(basic_iostream& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект `basic_iostream` для обмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовы функции участника `swap(right)`.
 

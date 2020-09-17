@@ -29,7 +29,7 @@ class message_not_found : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[message_not_found](#ctor)|Перегружен. Формирует объект `message_not_found`.|
 
@@ -41,7 +41,7 @@ class message_not_found : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

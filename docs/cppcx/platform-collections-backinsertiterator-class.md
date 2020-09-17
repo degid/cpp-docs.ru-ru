@@ -31,7 +31,7 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 *T*<br/>
 Тип элемента в текущей коллекции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс BackInsertIterator реализует правила, необходимые для [back_insert_iterator Class](../standard-library/back-insert-iterator-class.md).
 
@@ -39,17 +39,17 @@ public ::std::iterator<::std::output_iterator_tag, void, void, void, void>;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[BackInsertIterator:: BackInsertIterator](#ctor)|Инициализирует новый экземпляр класса BackInsertIterator.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Оператор BackInsertIterator::operator*](#operator-dereference)|Получает ссылку на текущий объект BackInsertIterator.|
-|[Оператор BackInsertIterator:: operator + +](#operator-increment)|Возвращает ссылку на текущий объект BackInsertIterator. Итератор не изменяется.|
-|[Оператор BackInsertIterator:: operator =](#operator-assign)|Добавляет указанный объект в конец текущей упорядоченной коллекции.|
+|[Оператор BackInsertIterator::operator++](#operator-increment)|Возвращает ссылку на текущий объект BackInsertIterator. Итератор не изменяется.|
+|[Оператор BackInsertIterator::operator=](#operator-assign)|Добавляет указанный объект в конец текущей упорядоченной коллекции.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -77,11 +77,11 @@ explicit BackInsertIterator(
 *3,3*<br/>
 Объект IVector \<T> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `BackInsertIterator` вставляет элементы после последнего элемента объекта, указанного параметром `v`.
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-assign"></a>Оператор BackInsertIterator:: operator =
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-assign"></a>Оператор BackInsertIterator::operator=
 
 Добавляет указанный объект в конец текущей упорядоченной коллекции.
 
@@ -100,7 +100,7 @@ BackInsertIterator& operator=( const T& t);
 
 Ссылка на текущий объект BackInsertIterator.
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-dereference"></a>Оператор BackInsertIterator:: operator *
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-dereference"></a>Оператор BackInsertIterator::operator*
 
 Получает ссылку на текущий объект BackInsertIterator.
 
@@ -114,11 +114,11 @@ BackInsertIterator& operator*();
 
 Ссылка на текущий объект BackInsertIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор возвращает ссылку на текущий BackInsertIterator, а не на любой элемент в текущей коллекции.
 
-## <a name="backinsertiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор BackInsertIterator:: operator + +
+## <a name="backinsertiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор BackInsertIterator::operator++
 
 Возвращает ссылку на текущий объект BackInsertIterator. Итератор не изменяется.
 
@@ -134,7 +134,7 @@ BackInsertIterator operator++(int);
 
 Ссылка на текущий объект BackInsertIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выражение в первом примере синтаксиса увеличивает значение текущего элемента BackInsertIterator перед его использованием, а во втором — после его использования. **`int`** Тип во втором синтаксисе указывает на операцию после приращения, а не на фактический целочисленный операнд.
 

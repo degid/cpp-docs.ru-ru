@@ -29,7 +29,7 @@ class uninitialized_object : public runtime_exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор uninitialized_object](#uninitialized_object)|Инициализирует новый экземпляр класса `uninitialized_object`.|
 
@@ -43,7 +43,7 @@ class uninitialized_object : public runtime_exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
 **Пространство имен** : Concurrency
 

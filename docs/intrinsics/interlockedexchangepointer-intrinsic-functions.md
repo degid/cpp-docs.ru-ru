@@ -78,9 +78,9 @@ void * _InterlockedExchangePointer_HLERelease(
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`_InterlockedExchangePointer`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM, ARM64|\<> Intrin. h|
-|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|X64|\<> использованием immintrin. h|
+|`_InterlockedExchangePointer`|x86, ARM, x64, ARM64|\<> Intrin.h|
+|`_InterlockedExchangePointer_acq`, `_InterlockedExchangePointer_rel`, `_InterlockedExchangePointer_nf`|ARM, ARM64|\<> Intrin.h|
+|`_InterlockedExchangePointer_HLEAcquire`, `_InterlockedExchangePointer_HLERelease`|X64|\<> использованием immintrin.h|
 
 В архитектуре x86, `_InterlockedExchangePointer` есть макрос, вызывающий `_InterlockedExchange`.
 

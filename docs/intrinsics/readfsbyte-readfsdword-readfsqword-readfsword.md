@@ -64,7 +64,7 @@ unsigned __int64 __readfsqword(
 |`__readfsqword`|x86|
 |`__readfsword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

@@ -171,7 +171,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ошибка утверждения испускается, `__WRL_STRICT__` `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` если или не определена.
 
@@ -194,7 +194,7 @@ STDMETHOD(GetTrustLevel)(
 
 Всегда S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ошибка утверждения испускается, `__WRL_STRICT__` `__WRL_FORCE_INSPECTABLE_CLASS_MACRO__` если или не определена.
 
@@ -268,7 +268,7 @@ STDMETHOD_(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если количество ссылок становится `RuntimeClass` нулевым, объект удаляется.
 

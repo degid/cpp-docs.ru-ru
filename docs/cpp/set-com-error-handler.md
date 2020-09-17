@@ -37,7 +37,7 @@ void __stdcall _set_com_error_handler(
 *perrinfo*<br/>
 Объект `IErrorInfo`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию [_com_raise_error](../cpp/com-raise-error.md) обрабатывает все ошибки COM. Вы можете изменить это поведение, используя **_set_com_error_handler** для вызова собственной функции обработки ошибок.
 

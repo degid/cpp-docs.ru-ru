@@ -51,7 +51,7 @@ ms.locfileid: "88839391"
    :::column-end:::
 :::row-end:::
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти подпрограммы проверяют символы на соответствие заданным условиям.
 

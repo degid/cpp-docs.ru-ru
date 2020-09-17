@@ -26,7 +26,7 @@ ms.locfileid: "88834405"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlwinmoduleaddcreatewnddata"></a><a name="atlwinmoduleaddcreatewnddata"></a> атлвинмодулеаддкреатевнддата
 
@@ -50,7 +50,7 @@ ATLINLINE ATLAPI_(void) AtlWinModuleAddCreateWndData(
 *Объект*<br/>
 Указатель на **`this`** указатель объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует `_AtlCreateWndData` структуру, которая используется для хранения **`this`** указателя, используемого для ссылки на экземпляры класса, и добавляет его в список, на который ссылается структура модуля `_ATL_WIN_MODULE70` . Вызывается методом [катлвинмодуле:: аддкреатевнддата](catlwinmodule-class.md#addcreatewnddata).
 
@@ -71,7 +71,7 @@ ATLINLINE ATLAPI_(void*) AtlWinModuleExtractCreateWndData(_ATL_WIN_MODULE* pWinM
 
 Возвращает указатель на структуру [_AtlCreateWndData](../../atl/reference/atlcreatewnddata-structure.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция извлекает существующую `_AtlCreateWndData` структуру из списка, на который ссылается `_ATL_WIN_MODULE70` Структура модуля.
 

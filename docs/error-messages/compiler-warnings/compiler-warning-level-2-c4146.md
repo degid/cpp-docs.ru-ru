@@ -29,7 +29,7 @@ ms.locfileid: "87218160"
 
 Ожидаемая вторая строка `1 is greater than the most negative int` не печатается, так как `((unsigned int)1) > 2147483648` имеет значение false.
 
-Можно избежать C4146 с помощью INT_MIN из limits. h, имеющего тип **`signed int`** .
+Можно избежать C4146 с помощью INT_MIN из limits.h, имеющего тип **`signed int`** .
 
 ## <a name="example"></a>Пример
 

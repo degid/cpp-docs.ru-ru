@@ -73,7 +73,7 @@ class CCommandLineInfo : public CObject
 |[CCommandLineInfo::m_strPrinterName](#m_strprintername)|Указывает имя принтера, если команда оболочки — Print To; в противном случае пустой.|
 |[CCommandLineInfo::m_strRestartIdentifier](#m_strrestartidentifier)|Указывает уникальный идентификатор перезагрузки для менеджера перезагрузки, если менеджер перезагрузки перезапустил приложение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Приложение MFC обычно создает локальный экземпляр этого класса в функции [InitInstance](../../mfc/reference/cwinapp-class.md#initinstance) объекта приложения. Этот объект затем передается [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline), который неоднократно вызывает `CCommandLineInfo` [ParseParam](#parseparam) для заполнения объекта. Затем `CCommandLineInfo` объект передается [cWinApp::ProcessShellCommand](../../mfc/reference/cwinapp-class.md#processshellcommand) для обработки аргументов и флагов командной строки.
 
@@ -111,7 +111,7 @@ class CCommandLineInfo : public CObject
 CCommandLineInfo();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию, чтобы показать `m_bShowSplash=TRUE`всплеск экрана ( ) и выполнить новую команду в меню файла ( `m_nShellCommand` **»NewFile**).
 
@@ -129,7 +129,7 @@ CCommandLineInfo();
 BOOL m_bRunAutomated;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если true, это означает запуск в качестве сервера автоматизации OLE.
 
@@ -141,7 +141,7 @@ BOOL m_bRunAutomated;
 BOOL m_bRunEmbedded;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если true, это означает запуск для редактирования встроенного элемента OLE.
 
@@ -153,7 +153,7 @@ BOOL m_bRunEmbedded;
 BOOL m_bShowSplash;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если true, это означает, что экран всплеска для этого приложения должен отображаться во время запуска. По умолчанию реализация [ParseParam](#parseparam) устанавливает этот член данных в TRUE, если [m_nShellCommand](#m_nshellcommand) равен `CCommandLineInfo::FileNew`.
 
@@ -165,7 +165,7 @@ BOOL m_bShowSplash;
 m_nShellCommand;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип для этого участника данных является следующим перечисленным типом, который определяется в `CCommandLineInfo` классе.
 
@@ -215,7 +215,7 @@ enum {
 CString m_strDriverName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот параметр обычно является именем драйвера принтера для команды оболочки Print To. Реализация [ParseParam](#parseparam) по умолчанию устанавливает этот `/pt` член данных только в том случае, если флаг был найден на командной строке.
 
@@ -227,7 +227,7 @@ CString m_strDriverName;
 CString m_strFileName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот параметр обычно является для открытия файла.
 
@@ -239,7 +239,7 @@ CString m_strFileName;
 CString m_strPortName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот параметр обычно является названием порта принтера для команды оболочки Print To. Реализация [ParseParam](#parseparam) по умолчанию устанавливает этот `/pt` член данных только в том случае, если флаг был найден на командной строке.
 
@@ -251,7 +251,7 @@ CString m_strPortName;
 CString m_strPrinterName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот параметр обычно является именем принтера для команды оболочки Print To. Реализация [ParseParam](#parseparam) по умолчанию устанавливает этот `/pt` член данных только в том случае, если флаг был найден на командной строке.
 
@@ -263,7 +263,7 @@ CString m_strPrinterName;
 CString m_strRestartIdentifier;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Идентификатор перезагрузки уникален для каждого экземпляра приложения.
 
@@ -296,7 +296,7 @@ virtual void ParseParam(
 *Взрыв*<br/>
 Указывает, является ли это последним параметром или флагом на командной строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [CWinApp::ParseCommandLine](../../mfc/reference/cwinapp-class.md#parsecommandline) `ParseParam` вызывает один раз для каждого параметра или флага на командной строке, передавая аргумент *pszParam*. Если первый символ параметра **-** является ' **/** или ' ', то он удаляется и *bFlag* установлен на TRUE. При разборе окончательного параметра, *bLast* установлен на TRUE.
 

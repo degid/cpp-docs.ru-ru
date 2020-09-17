@@ -25,7 +25,7 @@ ms.locfileid: "88833599"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlinternalqueryinterface"></a><a name="atlinternalqueryinterface"></a> атлинтерналкуеринтерфаце
 
@@ -57,7 +57,7 @@ HRESULT AtlInternalQueryInterface(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlInternalQueryInterface` обрабатывает интерфейсы только в таблице сопоставлений COM. Если объект является агрегатным, `AtlInternalQueryInterface` не выполняет делегирование внешнему неизвестному объекту. Вы можете вводить интерфейсы в таблицу-сопоставлении COM с помощью макроса [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) или одного из вариантов.
 

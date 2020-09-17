@@ -43,13 +43,13 @@ __interface
 |[SetSize](#setsize)|Вызовите этот метод, чтобы задать количество потоков в пуле.|
 |[SetTimeout](#settimeout)|Вызовите этот метод, чтобы задать максимальное время в миллисекундах, в течение которого пул потоков будет ожидать завершения работы потока.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот интерфейс реализуется с помощью [ксреадпул](../../atl/reference/cthreadpool-class.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="ithreadpoolconfiggetsize"></a><a name="getsize"></a> Исреадпулконфиг:: DataSize
 

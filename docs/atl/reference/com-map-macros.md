@@ -25,7 +25,7 @@ ms.locfileid: "88833586"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="begin_com_map"></a><a name="begin_com_map"></a> BEGIN_COM_MAP
 
@@ -40,7 +40,7 @@ BEGIN_COM_MAP(x)
 *x*<br/>
 окне Имя объекта класса, на котором вы предоставляете интерфейсы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [CComObjectRootEx:: интерналкуеринтерфаце](ccomobjectrootex-class.md#internalqueryinterface) Возвращает указатели только для интерфейсов в сопоставлении com. Запустите карту интерфейса с помощью макроса BEGIN_COM_MAP, добавьте записи для каждого интерфейса с помощью макроса [COM_INTERFACE_ENTRY](com-interface-entry-macros.md#com_interface_entry) или одного из его вариантов и завершите карту с помощью макроса [END_COM_MAP](#end_com_map) .
 

@@ -26,7 +26,7 @@ ms.locfileid: "80181165"
 unsigned int length ( ) const throw( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Завершение блока, относящегося только к системам Майкрософт**
 

@@ -17,7 +17,7 @@ ms.locfileid: "87207957"
 
 > "*переменная*": символ, объявленный с __declspec (Process), должен быть константой в режиме/clr: pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 

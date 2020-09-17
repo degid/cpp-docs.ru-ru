@@ -23,7 +23,7 @@ ms.locfileid: "87219421"
 
 > **inline_depth #pragma (** [ *n* ] **)**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта директива pragma управляет встраиванием функций, помеченных как [встроенные](../cpp/inline-functions-cpp.md) и [__inline](../cpp/inline-functions-cpp.md), или встроенных автоматически при `/Ob` выборе параметра.
 

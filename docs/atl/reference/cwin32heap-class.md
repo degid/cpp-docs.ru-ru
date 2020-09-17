@@ -63,7 +63,7 @@ class CWin32Heap : public IAtlMemMgr
 |[CWin32 Heap:::m_bOwnHeap](#m_bownheap)|Флаг, используемый для определения текущего владения ручкой кучи.|
 |[CWin32 Heap::m_hHeap](#m_hheap)|Обработка к объекту кучи.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CWin32Heap`реализует методы распределения памяти с использованием функций распределения кучи Win32, включая [HeapAlloc](/windows/win32/api/heapapi/nf-heapapi-heapalloc) и [HeapFree.](/windows/win32/api/heapapi/nf-heapapi-heapfree) В отличие от `CWin32Heap` других классов Кучи, требуется допустимая ручка кучи, которая должна быть предоставлена до выделения памяти: другие классы по умолчанию используют процессную кучу. Ручка может быть поставлена конструктору или методу [CWin32Heap::Attach.](#attach) Более подробную информацию можно узнать из метода [CWin32Heap::CWin32Heap.](#cwin32heap)
 
@@ -98,7 +98,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CWin32Heap::Free](#free) или [CWin32Heap::Перераспределите,](#reallocate) чтобы освободить память, выделенную этим методом.
 
@@ -120,7 +120,7 @@ void Attach(HANDLE hHeap, bool bTakeOwnership) throw();
 *bTakeOwnership*<br/>
 Флаг, указывающий, должен ли `CWin32Heap` объект взять в собственность ресурсы кучи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bTakeOwnership* является `CWin32Heap` правдой, объект несет ответственность за удаляние ручки кучи.
 
@@ -151,7 +151,7 @@ CWin32Heap(
 *nMaxSize*<br/>
 Максимальный размер кучи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перед выделением памяти необходимо предоставить объект `CWin32Heap` с действительным дескриптором кучи. Для этого проще всего использовать кучу процесса:
 
@@ -177,7 +177,7 @@ CWin32Heap(
 ~CWin32Heap() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Уничтожает ручку `CWin32Heap` кучи, если объект имеет право собственности на кучу.
 
@@ -239,7 +239,7 @@ bool m_bOwnHeap;
 HANDLE m_hHeap;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переменная, используемая для хранения ручки к объекту кучи.
 
@@ -263,7 +263,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *p* является NULL, предполагается, что блок памяти еще не выделен и [CWin32Heap::Выделение](#allocate) называется, с аргументом *nBytes*.
 

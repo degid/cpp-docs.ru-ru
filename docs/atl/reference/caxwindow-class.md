@@ -56,9 +56,9 @@ class CAxWindow : public CWindow
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#operator_eq)|Присваивает HWND существующему `CAxWindow` объекту.|
+|[operator=](#operator_eq)|Присваивает HWND существующему `CAxWindow` объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет методы для манипуляций с окном, в котором размещается элемент управления ActiveX. Размещение обеспечивается " **AtlAxWin80"**, заключенного в `CAxWindow` .
 
@@ -70,7 +70,7 @@ class CAxWindow : public CWindow
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="caxwindowattachcontrol"></a><a name="attachcontrol"></a> Каксвиндов:: Аттачконтрол
 
@@ -94,7 +94,7 @@ HRESULT AttachControl(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Присоединяемый объект элемента управления должен быть правильно инициализирован перед вызовом `AttachControl` .
 
@@ -158,7 +158,7 @@ HRESULT CreateControl(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если используется вторая версия этого метода, создается HTML-элемент управления и связывается с ресурсом, идентифицируемым *двресид*.
 
@@ -234,7 +234,7 @@ HRESULT CreateControlEx(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод аналогичен [каксвиндов:: CreateControl](#createcontrol), но в отличие от этого метода, `CreateControlEx` также позволяет получить указатель интерфейса на только что созданном элементе управления и настроить приемник событий для получения событий, инициированных элементом управления.
 
@@ -256,7 +256,7 @@ static LPCTSTR GetWndClassName();
 
 Указатель на строку, содержащую имя класса окна, в котором могут размещаться нелицензированные элементы управления ActiveX.
 
-## <a name="caxwindowoperator-"></a><a name="operator_eq"></a> Каксвиндов:: operator =
+## <a name="caxwindowoperator-"></a><a name="operator_eq"></a> Каксвиндов::operator=
 
 Присваивает HWND существующему `CAxWindow` объекту.
 
@@ -323,7 +323,7 @@ HRESULT QueryHost(Q** ppUnk);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Интерфейс узла предоставляет доступ к базовым функциональным возможностям кода, реализованного в `AxWin` .
 
@@ -361,7 +361,7 @@ HRESULT SetExternalUIHandler(IDocHostUIHandlerDispatch* pUIHandler);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Внешний `IDocHostUIHandlerDispatch` интерфейс используется элементами управления, которые запрашивают интерфейс узла узла `IDocHostUIHandlerDispatch` . Элемент управления WebBrowser — это один из элементов управления, который делает это.
 

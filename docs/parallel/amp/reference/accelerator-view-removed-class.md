@@ -30,13 +30,13 @@ class accelerator_view_removed : public runtime_exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор accelerator_view_removed](#ctor)|Инициализирует новый экземпляр класса `accelerator_view_removed`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[get_view_removed_reason](#get_view_removed_reason)|Возвращает код ошибки HRESULT, указывающий на причину удаления объекта `accelerator_view`.|
 
@@ -50,7 +50,7 @@ class accelerator_view_removed : public runtime_exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
 **Пространство имен** : Concurrency
 

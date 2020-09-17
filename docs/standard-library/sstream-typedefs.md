@@ -37,7 +37,7 @@ ms.locfileid: "88846138"
 typedef basic_istringstream<char> istringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_istringstream](../standard-library/basic-istringstream-class.md)шаблона класса, специализированного для элементов типа **`char`** .
 
@@ -49,7 +49,7 @@ typedef basic_istringstream<char> istringstream;
 typedef basic_ostringstream<char> ostringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ostringstream](../standard-library/basic-ostringstream-class.md)шаблона класса, специализированного для элементов типа **`char`** .
 
@@ -61,7 +61,7 @@ typedef basic_ostringstream<char> ostringstream;
 typedef basic_stringbuf<char> stringbuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_stringbuf](../standard-library/basic-stringbuf-class.md)шаблона класса, специализированного для элементов типа **`char`** .
 
@@ -73,7 +73,7 @@ typedef basic_stringbuf<char> stringbuf;
 typedef basic_stringstream<char> stringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_stringstream](../standard-library/basic-stringstream-class.md)шаблона класса, специализированного для элементов типа **`char`** .
 
@@ -85,7 +85,7 @@ typedef basic_stringstream<char> stringstream;
 typedef basic_istringstream<wchar_t> wistringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_istringstream](../standard-library/basic-istringstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** .
 
@@ -97,7 +97,7 @@ typedef basic_istringstream<wchar_t> wistringstream;
 typedef basic_ostringstream<wchar_t> wostringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ostringstream](../standard-library/basic-ostringstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** .
 
@@ -109,7 +109,7 @@ typedef basic_ostringstream<wchar_t> wostringstream;
 typedef basic_stringbuf<wchar_t> wstringbuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_stringbuf](../standard-library/basic-stringbuf-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** .
 
@@ -121,7 +121,7 @@ typedef basic_stringbuf<wchar_t> wstringbuf;
 typedef basic_stringstream<wchar_t> wstringstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_stringstream](../standard-library/basic-stringstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** .
 

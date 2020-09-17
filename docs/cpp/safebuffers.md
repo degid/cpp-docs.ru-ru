@@ -26,7 +26,7 @@ ms.locfileid: "87213246"
 __declspec( safebuffers )
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр компилятора **/GS** заставляет компилятор проверить переполнение буфера, вставив проверки безопасности в стек. Типы структур данных, подходящих для проверок безопасности, описаны в параметре [/GS (проверка безопасности буфера)](../build/reference/gs-buffer-security-check.md). Дополнительные сведения об обнаружении переполнения буфера см. [в разделе функции безопасности в компилятором MSVC](https://devblogs.microsoft.com/cppblog/security-features-in-microsoft-visual-c/).
 

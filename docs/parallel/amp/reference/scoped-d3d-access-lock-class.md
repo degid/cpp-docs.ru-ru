@@ -27,14 +27,14 @@ class scoped_d3d_access_lock;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор scoped_d3d_access_lock](#ctor)|Перегружен. Формирует объект `scoped_d3d_access_lock`. Блокировка освобождается, когда объект выходит из области действия.|
 |[Деструктор ~ scoped_d3d_access_lock](#dtor)|Освобождает блокировку доступа D3D для связанного объекта `accelerator_view`.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[оператор=](#operator_eq)|Получает владение блокировкой от другого `scoped_d3d_access_lock`.|
 
@@ -44,9 +44,9 @@ class scoped_d3d_access_lock;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
-**Пространство имен:** concurrency::d irect3d
+**Пространство имен:** concurrency::direct3d
 
 ## <a name="ctor"></a>scoped_d3d_access_lock
 
@@ -110,4 +110,4 @@ Accelerator_view, из которого будет перемещена блок
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Concurrency::direct3d](concurrency-direct3d-namespace.md)
+[Пространство имен concurrency::direct3d](concurrency-direct3d-namespace.md)

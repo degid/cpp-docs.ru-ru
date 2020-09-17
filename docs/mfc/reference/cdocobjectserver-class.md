@@ -55,7 +55,7 @@ class CDocObjectServer : public CCmdTarget
 |[CDocObjectServer::OnApplyViewState](#onapplyviewstate)|Восстанавливает состояние представления DocObject.|
 |[CDocObjectServer::OnSaveviewState](#onsaveviewstate)|Сохраняет состояние представления DocObject.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDocObjectServer`происходит от `CCmdTarget` и работает в `COleServerDoc` тесном контакте с подвергать интерфейсы.
 
@@ -85,7 +85,7 @@ class CDocObjectServer : public CCmdTarget
 void ActivateDocObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ActivateDocObject`вызова `IOleDocumentSite`'s `ActivateMe` метод, но не показывает вид, потому что он ждет конкретных инструкций о том, как настроить и отобразить представление, данное в вызове [на CDocObjectServer: OnActivateView](#onactivateview).
 
@@ -109,7 +109,7 @@ explicit CDocObjectServer(
 *pDocSite*<br/>
 Указатель на `IOleDocumentSite` интерфейс, реализованный контейнером.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда DocObject активен, интерфейс клиента `IOleDocumentSite`сайта OLE () позволяет серверу DocObject общаться со своим клиентом (контейнером). При активации сервера DocObject сначала проверяется, реализует `IOleDocumentSite` ли контейнер интерфейс. Если это так, [COleServerDoc::GetDocObjectServer](../../mfc/reference/coleserverdoc-class.md#getdocobjectserver) называется, чтобы увидеть, если контейнер поддерживает DocObjects. По умолчанию возвращает `GetDocObjectServer` NULL. Необходимо `COleServerDoc::GetDocObjectServer` переопределить, чтобы `CDocObjectServer` построить новый объект или собственный объект, `COleServerDoc` с `IOleDocumentSite` указателями на контейнер и его интерфейс в качестве аргументов для конструктора.
 
@@ -125,7 +125,7 @@ virtual HRESULT OnActivateView();
 
 Возвращает значение ошибки или предупреждения. По умолчанию, возвращает NOERROR в случае успеха; в противном случае, E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция создает окно кадра на месте, рисует прокрутки в представлении, настраивает меню, которое сервер делит с контейнером, добавляет элементы управления кадром, устанавливает активный объект, затем, наконец, показывает окно кадра на месте и устанавливает фокус.
 
@@ -142,7 +142,7 @@ virtual void OnApplyViewState(CArchive& ar);
 *ar*<br/>
 Объект, `CArchive` с которого можно выставить состояние представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция вызывается при отображении представления в первый раз после его мгновенного воспроизведения. `OnApplyViewState`инструктирует представление о репрефализации `CArchive` в соответствии с данными на объекте, ранее сохраненных с [OnSaveViewState.](#onsaveviewstate) Представление должно проверять данные `CArchive` в объекте, поскольку контейнер не пытается интерпретировать данные состояния представления каким-либо образом.
 
@@ -161,7 +161,7 @@ virtual void OnSaveViewState(CArchive& ar);
 *ar*<br/>
 Объект, `CArchive` состояние представления которого является последовательным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Состояние может включать такие свойства, как тип представления, коэффициент масштабирования, пункт вставки и выбора и так далее. Контейнер обычно вызывает эту функцию перед деактивацией представления. Сохраненное состояние позже может быть восстановлено через [OnApplyViewState.](#onapplyviewstate)
 

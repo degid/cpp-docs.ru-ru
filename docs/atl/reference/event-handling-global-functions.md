@@ -27,7 +27,7 @@ ms.locfileid: "88833456"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlwaitwithmessageloop"></a><a name="atlwaitwithmessageloop"></a> атлваитвисмессажелуп
 
@@ -49,7 +49,7 @@ BOOL AtlWaitWithMessageLoop(HANDLE hEvent);
 
 Возвращает значение TRUE, если объект был сигнальным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это полезно, если требуется дождаться события объекта и получать уведомления о нем, но разрешить сообщения окон в ожидании.
 

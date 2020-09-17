@@ -69,13 +69,13 @@ class CPagerCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CPagerCtrl:: CPagerCtrl](#cpagerctrl)|Формирует объект `CPagerCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CPagerCtrl:: Create](#create)|Создает элемент управления страничный навигатор с указанными стилями и прикрепляет его к текущему `CPagerCtrl` объекту.|
 |[CPagerCtrl:: Креатикс](#createex)|Создает элемент управления страничного навигатора с указанными расширенными стилями и прикрепляет его к текущему `CPagerCtrl` объекту.|
@@ -98,7 +98,7 @@ class CPagerCtrl : public CWnd
 |[CPagerCtrl:: Сетчилд](#setchild)|Задает автономное окно для текущего элемента управления страничного навигатора.|
 |[CPagerCtrl:: Сетскроллпос](#setscrollpos)|Задает расположение прокрутки для текущего элемента управления страничного навигатора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Элемент управления страничного навигатора — это окно, которое содержит другое окно, которое является линейным и большим, чем содержащее его окно, и позволяет прокручивать содержимое окна на представление. В элементе управления страничного навигатора отображаются две кнопки прокрутки, которые автоматически исчезают, когда вложенное окно прокручивается до самого дальнего экстента, и в противном случае снова появляется. Можно создать элемент управления страничный навигатор, который прокручивается горизонтально или вертикально.
 
@@ -128,7 +128,7 @@ class CPagerCtrl : public CWnd
 CPagerCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CPagerCtrl:: Create](#create) или [CPagerCtrl:: креатикс](#createex) , чтобы создать элемент управления страничного навигатора и присоединить его к `CPagerCtrl` объекту.
 
@@ -162,7 +162,7 @@ virtual BOOL Create(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы создать элемент управления страничного навигатора, объявите `CPagerCtrl` переменную, а затем вызовите метод [CPagerCtrl:: Create](#create) или [CPagerCtrl:: креатикс](#createex) для этой переменной.
 
@@ -206,7 +206,7 @@ virtual BOOL CreateEx(
 
 Значение TRUE, если этот метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы создать элемент управления страничного навигатора, объявите `CPagerCtrl` переменную, а затем вызовите метод [CPagerCtrl:: Create](#create) или [CPagerCtrl:: креатикс](#createex) для этой переменной.
 
@@ -223,7 +223,7 @@ void ForwardMouse(BOOL bForward);
 *бфорвард*\
 окне Значение TRUE, чтобы переслать сообщения мыши, или FALSE, чтобы не пересылать сообщения мыши.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_FORWARDMOUSE](/windows/win32/Controls/pgm-forwardmouse) сообщение, описанное в Windows SDK.
 
@@ -239,7 +239,7 @@ int GetBorder() const;
 
 Текущий размер границы, измеряемый в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBORDER](/windows/win32/Controls/pgm-getborder) сообщение, описанное в Windows SDK.
 
@@ -261,7 +261,7 @@ COLORREF GetBkColor() const;
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , содержащее текущий цвет фона элемента управления страничного навигатора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBKCOLOR](/windows/win32/Controls/pgm-getbkcolor) сообщение, описанное в Windows SDK.
 
@@ -283,7 +283,7 @@ int GetButtonSize() const;
 
 Размер текущей кнопки, измеряемый в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSIZE](/windows/win32/Controls/pgm-getbuttonsize) сообщение, описанное в Windows SDK.
 
@@ -306,7 +306,7 @@ DWORD GetButtonState(int iButton) const;
 
 Состояние кнопки, заданной параметром *ибуттон* . Состояние имеет значение PGF_INVISIBLE, PGF_NORMAL, PGF_GRAYED, PGF_DEPRESSED или PGF_HOT. Дополнительные сведения см. в разделе "возвращаемое значение" сообщения [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) сообщение, описанное в Windows SDK.
 
@@ -322,7 +322,7 @@ IDropTarget* GetDropTarget() const;
 
 Указатель на `IDropTarget` интерфейс для текущего элемента управления страничного навигатора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IDropTarget` — один из интерфейсов, которые реализуются для поддержки операций перетаскивания в приложении.
 
@@ -340,7 +340,7 @@ int GetScrollPos() const;
 
 Текущая положенная прокрутка, измеряемая в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETPOS](/windows/win32/Controls/pgm-getpos) сообщение, описанное в Windows SDK.
 
@@ -367,7 +367,7 @@ BOOL IsButtonDepressed(int iButton) const;
 
 Значение TRUE, если указанная кнопка находится в состоянии нажатия; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) сообщение, описанное в Windows SDK. Затем проверяется, является ли возвращаемое состояние PGF_DEPRESSED. Дополнительные сведения см. в разделе "возвращаемое значение" сообщения [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) .
 
@@ -388,7 +388,7 @@ BOOL IsButtonGrayed(int iButton) const;
 
 Значение TRUE, если указанная кнопка находится в неактивном состоянии; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) сообщение, описанное в Windows SDK. Затем проверяется, является ли возвращаемое состояние PGF_GRAYED. Дополнительные сведения см. в разделе "возвращаемое значение" сообщения [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) .
 
@@ -409,7 +409,7 @@ BOOL IsButtonHot(int iButton) const;
 
 Значение TRUE, если указанная кнопка находится в активном состоянии; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) сообщение, описанное в Windows SDK. Затем проверяется, является ли возвращаемое состояние PGF_HOT. Дополнительные сведения см. в разделе "возвращаемое значение" сообщения [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) .
 
@@ -430,7 +430,7 @@ BOOL IsButtonInvisible(int iButton) const;
 
 Значение TRUE, если указанная кнопка находится в невидимом состоянии; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Windows делает кнопку прокрутки в определенном направлении невидимой, когда вложенное окно прокручивается до самого крайнего экстента, так как нажатие кнопки больше не может привести к представлению большего количества вложенного окна.
 
@@ -459,7 +459,7 @@ BOOL IsButtonNormal(int iButton) const;
 
 Значение TRUE, если указанная кнопка находится в нормальном состоянии; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) сообщение, описанное в Windows SDK. Затем проверяется, является ли возвращаемое состояние PGF_NORMAL. Дополнительные сведения см. в разделе "возвращаемое значение" сообщения [PGM_GETBUTTONSTATE](/windows/win32/Controls/pgm-getbuttonstate) .
 
@@ -471,7 +471,7 @@ BOOL IsButtonNormal(int iButton) const;
 void RecalcSize();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_RECALCSIZE](/windows/win32/Controls/pgm-recalcsize) сообщение, описанное в Windows SDK. Следовательно, элемент управления страничного навигатора отправляет [PGN_CALCSIZE](/windows/win32/Controls/pgn-calcsize) уведомление, чтобы получить прокручиваемые размеры автономного окна.
 
@@ -504,7 +504,7 @@ COLORREF SetBkColor(COLORREF clrBk);
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , содержащее предыдущий цвет фона элемента управления страничного навигатора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_SETBKCOLOR](/windows/win32/Controls/pgm-setbkcolor) сообщение, описанное в Windows SDK.
 
@@ -531,7 +531,7 @@ int SetBorder(int iBorder);
 
 Размер предыдущей границы, измеряемый в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_SETBORDER](/windows/win32/Controls/pgm-setborder) сообщение, описанное в Windows SDK.
 
@@ -558,7 +558,7 @@ int SetButtonSize(int iButtonSize);
 
 Размер предыдущей кнопки, измеряемый в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_SETBUTTONSIZE](/windows/win32/Controls/pgm-setpos) сообщение, описанное в Windows SDK.
 
@@ -583,7 +583,7 @@ void SetChild(HWND hwndChild);
 *хвндчилд*\
 окне Обработчик для содержащегося в нем окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_SETCHILD](/windows/win32/Controls/pgm-setchild) сообщение, описанное в Windows SDK.
 
@@ -608,7 +608,7 @@ void SetScrollPos(int iPos);
 *ипос*\
 окне Новая точка прокрутки, измеряемая в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [PGM_SETPOS](/windows/win32/Controls/pgm-setpos) сообщение, описанное в Windows SDK.
 

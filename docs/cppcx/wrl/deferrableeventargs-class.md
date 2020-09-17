@@ -46,7 +46,7 @@ class DeferrableEventArgs : public TEventArgsInterface;
 | [DeferrableEventArgs::GetDeferral](#getdeferral) | Получает ссылку на объект [отсрочки,](/uwp/api/windows.foundation.deferral) представляющий отложенное событие. |
 | [DeferrableEventArgs::InvokeAllFinished](#invokeallfinished) | Вызывается, чтобы указать, что вся обработка для отложенного события завершена. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляры этого класса передаются в обработчики событий для отложенных событий. Параметры шаблона представляют интерфейс, определяющий подробные сведения об аргументах событий для конкретного типа отложенного события, а также класс, реализующий этот интерфейс.
 
@@ -83,6 +83,6 @@ HRESULT GetDeferral([out, retval] Windows::Foundation::IDeferral** result)
 void InvokeAllFinished()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод следует позвонить после вызова источника событий [InvokeAll.](eventsource-class.md#invokeall) Вызов этого метода предотвращает ввод последующих задержек и вызывает принудительное выполнение обработчика завершения, если задержки отсутствовали.

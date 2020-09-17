@@ -96,7 +96,7 @@ class IPropertyPageImpl
 |[IPropertyPageImpl::m_ppUnk](#m_ppunk)|Указывает на массив `IUnknown` указателей на объекты, связанные со страницей свойств.|
 |[IPropertyPageImpl::m_size](#m_size)|Хранит высоту и ширину диалогового окна страницы свойств в пикселях.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IPropertyPage](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) позволяет объекту управлять определенной страницей свойств в листе свойств. Класс `IPropertyPageImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -123,7 +123,7 @@ HRESULT Activate(
     BOOL bModal);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию диалоговая коробка всегда беспрейрана, независимо от значения параметра *bModal.*
 
@@ -141,7 +141,7 @@ HRESULT Apply();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage:: Применить](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-apply) в Windows SDK.
 
@@ -153,7 +153,7 @@ HRESULT Apply();
 HRESULT Deactivate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage: :Dактивировать](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-deactivate) в Windows SDK.
 
@@ -165,7 +165,7 @@ HRESULT Deactivate();
 HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetPageInfo`загружает строки ресурсов, связанных с [m_dwDocString,](#m_dwdocstring) [m_dwHelpFile](#m_dwhelpfile)и [m_dwTitle.](#m_dwtitle)
 
@@ -179,7 +179,7 @@ HRESULT GetPageInfo(PROPPAGEINFO* pPageInfo);
 HRESULT Help(PROPPAGEINFO* pPageInfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage::Помощь](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-help) в Windows SDK.
 
@@ -191,7 +191,7 @@ HRESULT Help(PROPPAGEINFO* pPageInfo);
 IPropertyPageImpl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует всех участников данных.
 
@@ -203,7 +203,7 @@ IPropertyPageImpl();
 HRESULT IsPageDirty(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IsPageDirty`возвращает S_OK, если страница изменилась с момента ее активации.
 
@@ -287,7 +287,7 @@ SIZE m_size;
 HRESULT Move(LPCRECT pRect);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage:: Перемещение](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-move) в Windows SDK.
 
@@ -304,7 +304,7 @@ void SetDirty(BOOL bDirty);
 *bDirty*<br/>
 (в) Если true, состояние страницы свойства помечено как измененное. В противном случае он помечается как неизменный.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При необходимости сообщает `SetDirty` кадр о том, что страница свойств изменилась.
 
@@ -316,7 +316,7 @@ void SetDirty(BOOL bDirty);
 HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage:: SetObjects](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setobjects) в Windows SDK.
 
@@ -328,7 +328,7 @@ HRESULT SetObjects(ULONG nObjects, IUnknown** ppUnk);
 HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage::SetPageSite](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-setpagesite) в SDK Windows.
 
@@ -340,7 +340,7 @@ HRESULT SetPageSite(IPropertyPageSite* pPageSite);
 HRESULT Show(UINT nCmdShow);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage::Показать](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-show) в Windows SDK.
 
@@ -352,7 +352,7 @@ HRESULT Show(UINT nCmdShow);
 HRESULT TranslateAccelerator(MSG* pMsg);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage::TranslateAccelerator](/windows/win32/api/ocidl/nf-ocidl-ipropertypage-translateaccelerator) в Windows SDK.
 

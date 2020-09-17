@@ -52,7 +52,7 @@ class CTypedPtrArray : public BASE_CLASS
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Ктипедптраррай:: Add](#add)|Добавляет новый элемент в конец массива. При необходимости расширяет массив|
 |[Ктипедптраррай:: Append](#append)|Добавляет содержимое одного массива в конец другого. При необходимости расширяет массив|
@@ -67,9 +67,9 @@ class CTypedPtrArray : public BASE_CLASS
 
 |Имя|Описание|
 |----------|-----------------|
-|[Ктипедптраррай:: operator \[\]](#operator_at)|Получает или задает элемент с указанным индексом.|
+|[Ктипедптраррай::operator \[\]](#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При использовании `CTypedPtrArray` , а не `CPtrArray` или `CObArray` , средство проверки типов C++ помогает устранить ошибки, вызванные несовпадением типов указателей.
 
@@ -109,7 +109,7 @@ INT_PTR Add(TYPE newElement);
 
 Индекс добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: Add](../../mfc/reference/cobarray-class.md#add).
 
@@ -136,7 +136,7 @@ INT_PTR Append(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 
 Индекс первого добавленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: Append](../../mfc/reference/cobarray-class.md#append).
 
@@ -159,7 +159,7 @@ void Copy(const CTypedPtrArray<BASE_CLASS, TYPE>& src);
 *src*<br/>
 Источник элементов, копируемых в массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: Copy](../../mfc/reference/cobarray-class.md#copy).
 
@@ -183,7 +183,7 @@ TYPE& ElementAt(INT_PTR nIndex);
 
 Временная ссылка на элемент в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом*параметра шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: ElementAt](../../mfc/reference/cobarray-class.md#elementat).
 
@@ -207,7 +207,7 @@ TYPE GetAt(INT_PTR nIndex) const;
 
 Копия элемента в расположении, заданном параметром *ниндекс*. Этот элемент имеет тип, заданный *типом*параметра шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: GetAt](../../mfc/reference/cobarray-class.md#getat)
 
@@ -249,13 +249,13 @@ void InsertAt(
 *пневаррай*<br/>
 Другой массив, содержащий элементы для добавления в этот массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: инсертат](../../mfc/reference/cobarray-class.md#insertat).
 
-## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a>Ктипедптраррай:: operator []
+## <a name="ctypedptrarrayoperator--"></a><a name="operator_at"></a>Ктипедптраррай::operator []
 
-Эти встроенные операторы вызывают `BASE_CLASS` **:: operator []**.
+Эти встроенные операторы вызывают `BASE_CLASS` **::operator []**.
 
 ```
 TYPE& operator[ ](int_ptr nindex);
@@ -270,7 +270,7 @@ TYPE operator[ ](int_ptr nindex) const;
 *ниндекс*<br/>
 Целочисленный индекс, который больше или равен 0 и меньше или равен значению, возвращенному `BASE_CLASS` **:: GetUpperBound**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый оператор, вызываемый для массивов, которые не являются **`const`** , можно использовать как справа (r-значение), так и слева (l-значение) оператора присваивания. Второй метод, вызываемый для **`const`** массивов, может использоваться только справа.
 
@@ -297,7 +297,7 @@ void SetAt(
 *ptr*<br/>
 Указатель на элемент, который необходимо вставить в массив в Ниндекс. Разрешено значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: SetAt](../../mfc/reference/cobarray-class.md#setat).
 
@@ -322,7 +322,7 @@ void SetAtGrow(
 *невелемент*<br/>
 Указатель на объект, добавляемый в этот массив. Разрешено значение **null** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Более подробные примечания см. в разделе [кобаррай:: сетатгров](../../mfc/reference/cobarray-class.md#setatgrow).
 

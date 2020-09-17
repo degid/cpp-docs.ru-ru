@@ -29,33 +29,33 @@ Visual Studio предоставляет расширенную поддержк
 
 Такие средства, как [Визуализатор параллелизма](/visualstudio/profiling/concurrency-visualizer) , используют эту функцию. Таким образом, обычно не требуется работать с этими событиями напрямую. Однако эти события полезны при разработке пользовательского профилировщика или при использовании таких средств трассировки событий, как [Xperf](https://go.microsoft.com/fwlink/p/?linkid=160628).
 
-Среда выполнения с параллелизмом вызывает эти события только при включенной трассировке. Вызовите функцию [Concurrency:: енаблетраЦинг](reference/concurrency-namespace-functions.md#enabletracing) , чтобы включить трассировку событий и функцию [Concurrency::D исаблетраЦинг](reference/concurrency-namespace-functions.md#disabletracing) , чтобы отключить трассировку.
+Среда выполнения с параллелизмом вызывает эти события только при включенной трассировке. Вызовите функцию [concurrency::EnableTracing](reference/concurrency-namespace-functions.md#enabletracing) , чтобы включить трассировку событий и функцию [concurrency::DisableTracing](reference/concurrency-namespace-functions.md#disabletracing) , чтобы отключить трассировку.
 
 В следующей таблице описаны события, которые среда выполнения вызывает при включенной трассировке событий.
 
 |событие|Описание|Значение|
 |-----------|-----------------|-----------|
-|[Concurrency:: ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|Идентификатор поставщика трассировки событий Windows для среда выполнения с параллелизмом.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|
-|[Concurrency:: Контекстевентгуид](reference/concurrency-namespace-constants1.md#contexteventguid)|Отмечает события, связанные с контекстами.|`5727a00f-50be-4519-8256-f7699871fecb`|
-|[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)|Помечает вход и Exit для вызовов алгоритма [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) .|`31c8da6b-6165-4042-8b92-949e315f4d84`|
-|[concurrency::PPLParallelForeachEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeacheventguid)|Помечает вход и Exit для вызовов алгоритма [Concurrency::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) .|`5cb7d785-9d66-465d-bae1-4611061b5434`|
-|[Concurrency::P Плпараллелинвокивентгуид](reference/concurrency-namespace-constants1.md#pplparallelinvokeeventguid)|Помечает вход и Exit для вызовов алгоритма [Concurrency::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) .|`d1b5b133-ec3d-49f4-98a3-464d1a9e4682`|
-|[Concurrency:: Счедулеревентгуид](reference/concurrency-namespace-constants1.md#schedulereventguid)|Отмечает события, связанные с [планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md).|`e2091f8a-1e0a-4731-84a2-0dd57c8a5261`|
-|[Concurrency:: Виртуалпроцессоревентгуид](reference/concurrency-namespace-constants1.md#virtualprocessoreventguid)|Отмечает события, связанные с виртуальными процессорами.|`2f27805f-1676-4ecc-96fa-7eb09d44302f`|
+|[concurrency::ConcRT_ProviderGuid](reference/concurrency-namespace-constants1.md#concrt_providerguid)|Идентификатор поставщика трассировки событий Windows для среда выполнения с параллелизмом.|`f7b697a3-4db5-4d3b-be71-c4d284e6592f`|
+|[concurrency::ContextEventGuid](reference/concurrency-namespace-constants1.md#contexteventguid)|Отмечает события, связанные с контекстами.|`5727a00f-50be-4519-8256-f7699871fecb`|
+|[concurrency::PPLParallelForEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeventguid)|Помечает вход и Exit для вызовов алгоритма [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) .|`31c8da6b-6165-4042-8b92-949e315f4d84`|
+|[concurrency::PPLParallelForeachEventGuid](reference/concurrency-namespace-constants1.md#pplparallelforeacheventguid)|Помечает вход и Exit для вызовов алгоритма [concurrency::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) .|`5cb7d785-9d66-465d-bae1-4611061b5434`|
+|[concurrency::P Плпараллелинвокивентгуид](reference/concurrency-namespace-constants1.md#pplparallelinvokeeventguid)|Помечает вход и Exit для вызовов алгоритма [concurrency::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) .|`d1b5b133-ec3d-49f4-98a3-464d1a9e4682`|
+|[concurrency::SchedulerEventGuid](reference/concurrency-namespace-constants1.md#schedulereventguid)|Отмечает события, связанные с [планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md).|`e2091f8a-1e0a-4731-84a2-0dd57c8a5261`|
+|[concurrency::VirtualProcessorEventGuid](reference/concurrency-namespace-constants1.md#virtualprocessoreventguid)|Отмечает события, связанные с виртуальными процессорами.|`2f27805f-1676-4ecc-96fa-7eb09d44302f`|
 
 Среда выполнения с параллелизмом определяет, но в настоящее время не вызывает следующие события. Среда выполнения резервирует эти события для будущего использования:
 
-- [Concurrency:: Конкртевентгуид](reference/concurrency-namespace-constants1.md#concrteventguid)
+- [concurrency::ConcRTEventGuid](reference/concurrency-namespace-constants1.md#concrteventguid)
 
-- [Concurrency:: Счедулеграупевентгуид](reference/concurrency-namespace-constants1.md#schedulereventguid)
+- [concurrency::ScheduleGroupEventGuid](reference/concurrency-namespace-constants1.md#schedulereventguid)
 
-- [Concurrency:: Чоривентгуид](reference/concurrency-namespace-constants1.md#choreeventguid)
+- [concurrency::ChoreEventGuid](reference/concurrency-namespace-constants1.md#choreeventguid)
 
-- [Concurrency:: Локкевентгуид](reference/concurrency-namespace-constants1.md#lockeventguid)
+- [concurrency::LockEventGuid](reference/concurrency-namespace-constants1.md#lockeventguid)
 
-- [Concurrency:: Ресаурцеманажеревентгуид](reference/concurrency-namespace-constants1.md#resourcemanagereventguid)
+- [concurrency::ResourceManagerEventGuid](reference/concurrency-namespace-constants1.md#resourcemanagereventguid)
 
-Перечисление [Concurrency:: ConcRT_EventType](reference/concurrency-namespace-enums.md#concrt_eventtype) указывает возможные операции, которые отслеживает событие. Например, во время входа `parallel_for` алгоритма среда выполнения `PPLParallelForEventGuid` создает событие и предоставляет `CONCRT_EVENT_START` его в качестве операции. Перед возвратом `PPLParallelForEventGuid`алгоритма среда выполнения снова создает событие и предоставляет `CONCRT_EVENT_END` его в качестве операции. `parallel_for`
+Перечисление [concurrency::ConcRT_EventType](reference/concurrency-namespace-enums.md#concrt_eventtype) указывает возможные операции, которые отслеживает событие. Например, во время входа `parallel_for` алгоритма среда выполнения `PPLParallelForEventGuid` создает событие и предоставляет `CONCRT_EVENT_START` его в качестве операции. Перед возвратом `PPLParallelForEventGuid`алгоритма среда выполнения снова создает событие и предоставляет `CONCRT_EVENT_END` его в качестве операции. `parallel_for`
 
 В следующем примере показано, как включить трассировку для вызова `parallel_for`. Среда выполнения не выполняет трассировку первого вызова, `parallel_for` так как трассировка не включена. Вызов метода `EnableTracing` позволяет среде выполнения выполнить трассировку второго `parallel_for`вызова.
 

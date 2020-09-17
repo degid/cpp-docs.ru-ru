@@ -28,13 +28,13 @@ namespace Microsoft::WRL::Wrappers;
 
 ### <a name="typedefs"></a>Определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`FileHandle`|`HandleT<HandleTraits::FileHandleTraits>`|
 
 ### <a name="classes"></a>Классы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс CriticalSection](criticalsection-class.md)|Представляет объект критической секции.|
 |[Класс Event (WRL)](event-class-wrl.md)|Представляет событие.|
@@ -48,7 +48,7 @@ namespace Microsoft::WRL::Wrappers;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 

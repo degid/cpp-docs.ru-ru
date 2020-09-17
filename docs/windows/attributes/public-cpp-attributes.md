@@ -23,7 +23,7 @@ ms.locfileid: "88836911"
 [public]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`public`** Атрибут C++ имеет те же функциональные возможности, что и [открытый](/windows/win32/Midl/public) атрибут MIDL.
 

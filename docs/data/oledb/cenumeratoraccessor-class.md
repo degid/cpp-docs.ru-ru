@@ -68,7 +68,7 @@ class CEnumeratorAccessor
 |[m_szName](#szname)|Имя источника данных или перечислителя.|
 |[m_szParseName](#szparsename)|Строка для передачи в [ипарседисплайнаме](/windows/win32/api/oleidl/nn-oleidl-iparsedisplayname) для получения моникера для источника данных или перечислителя.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот набор строк состоит из источников данных и перечислителей, видимых из текущего перечислителя.
 
@@ -82,7 +82,7 @@ class CEnumeratorAccessor
 VARIANT_BOOL m_bIsParent;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) в *справочнике программиста OLE DB* .
 
@@ -96,7 +96,7 @@ VARIANT_BOOL m_bIsParent;
 USHORT m_nType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) в *справочнике программиста OLE DB* .
 
@@ -110,7 +110,7 @@ USHORT m_nType;
 WCHAR m_szDescription[129];
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) в *справочнике программиста OLE DB* .
 
@@ -124,7 +124,7 @@ WCHAR m_szDescription[129];
 WCHAR m_szName[129];
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) в *справочнике программиста OLE DB* .
 
@@ -138,7 +138,7 @@ WCHAR m_szName[129];
 WCHAR m_szParseName[129];
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ISourcesRowset:: GetSourcesRowset](/previous-versions/windows/desktop/ms711200(v=vs.85)) в *справочнике программиста OLE DB* .
 

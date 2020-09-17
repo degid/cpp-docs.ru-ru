@@ -49,13 +49,13 @@ struct _ATL_COM_MODULE70 {
 `m_csObjMap`<br/>
 Критическая секция для сериализации доступа к записям схемы объекта. Используется внутренне библиотекой ATL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [_ATL_COM_MODULE](atl-typedefs.md#_atl_com_module) определяется как typedef _ATL_COM_MODULE70.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

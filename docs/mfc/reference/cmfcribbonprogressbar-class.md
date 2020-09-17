@@ -65,7 +65,7 @@ class CMFCRibbonProgressBar : public CMFCRibbonBaseElement
 |[CMFCRibbonProgressBar::SetPos](#setpos)|Устанавливает текущий прогресс.|
 |[CMFCRibbonProgressBar::SetRange](#setrange)|Устанавливает минимальные и максимальные значения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 A `CMFCRibbonProgressBar` может работать в двух режимах: регулярном и бесконечном. В обычном режиме панель прогресса заполняется слева направо и останавливается, когда достигает максимального значения. В бесконечном режиме панель прогресса неоднократно заполняется от минимального значения до максимального значения. Можно использовать бесконечный режим, чтобы указать, что операция продолжается, но время завершения неизвестно.
 
@@ -123,7 +123,7 @@ int GetPos () const;
 
 Значение, представляющее текущее положение панели прогресса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диапазон, устанавливаемый, должен находиться в пределах диапазона, указанного методом [CMFCRibbonProgressBar::SetRange.](#setrange)
 
@@ -139,7 +139,7 @@ int GetRangeMax() const;
 
 Максимальное значение текущего диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonprogressbargetrangemin"></a><a name="getrangemin"></a>CMFCRibbonProgressBar::GetRangeMin
 
@@ -167,7 +167,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonprogressbarisinfinitemode"></a><a name="isinfinitemode"></a>CMFCRibbonProgressBar::IsInfiniteMode
 
@@ -181,7 +181,7 @@ BOOL IsInfiniteMode() const;
 
 TRUE, если панель прогресса находится в бесконечном режиме; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В бесконечном режиме панель прогресса заполняется повторно от минимального значения до максимального значения. Можно использовать бесконечный режим, чтобы указать, что операция продолжается, но время завершения неизвестно.
 
@@ -197,7 +197,7 @@ virtual void OnDraw(CDC* pDC);
 
 (в) *pDC*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonprogressbarsetinfinitemode"></a><a name="setinfinitemode"></a>CMFCRibbonProgressBar::SetInfiniteMode
 
@@ -212,7 +212,7 @@ void SetInfiniteMode(BOOL bSet = TRUE);
 *bSet*<br/>
 (в) TRUE указать, что панель прогресса находится в бесконечном режиме; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно, если панель прогресса находится в бесконечном режиме, она говорит пользователю, что операция продолжается, но время завершения неизвестно. Таким образом, панель прогресса заполняет повторно от минимального значения к максимальному значению.
 
@@ -234,7 +234,7 @@ void SetPos(
 *bRedraw*<br/>
 (в) Определяет, следует ли перерисовывать планку прогресса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диапазон, устанавливаемый, должен находиться в пределах диапазона, указанного методом [CMFCRibbonProgressBar::SetRange.](#setrange)
 
@@ -256,7 +256,7 @@ void SetRange(
 *nMax*<br/>
 (в) Определяет максимальное значение диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для определения диапазона панели прогресса, установив минимальные и максимальные значения.
 

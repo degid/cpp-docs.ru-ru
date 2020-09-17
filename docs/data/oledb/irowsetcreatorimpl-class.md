@@ -55,7 +55,7 @@ class ATL_NO_VTABLE IRowsetCreatorImpl
 |-|-|
 |[SetSite](#setsite)|Задает сайт, содержащий объект набора строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс наследует от [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) и переопределяет [IObjectWithSite:: SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite). Когда команда поставщика или объект сеанса создает набор строк, он вызывает `QueryInterface` объект набора строк для поиска `IObjectWithSite` и вызывает `SetSite` передачу интерфейса объекта набора строк в `IUnkown` качестве интерфейса сайта.
 
@@ -78,7 +78,7 @@ STDMETHOD(SetSite )(IUnknown* pCreator);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Кроме того, `IRowsetCreatorImpl::SetSite` включает свойства OLE DB `DBPROPCANSCROLLBACKWARDS DBPROPCANFETCHBACKWARDS` .
 

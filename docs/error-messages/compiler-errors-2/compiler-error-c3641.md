@@ -17,7 +17,7 @@ ms.locfileid: "80200516"
 
 > "*функция*": недопустимое соглашение о вызовах "calling_convention" для функции, скомпилированной с параметрами/clr: pure или/CLR: Сейф
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 

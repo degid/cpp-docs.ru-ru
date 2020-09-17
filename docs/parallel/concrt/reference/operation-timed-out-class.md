@@ -29,7 +29,7 @@ class operation_timed_out : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[operation_timed_out](#ctor)|Перегружен. Создает объект `operation_timed_out`.|
 
@@ -41,7 +41,7 @@ class operation_timed_out : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

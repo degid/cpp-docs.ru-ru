@@ -109,7 +109,7 @@ class CCommand :
 |[SetParameterInfo](#setparameterinfo)|Задает собственный тип для каждого параметра команды.|
 |[Unprepare](#unprepare)|Отменяет текущий план выполнения команды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте этот класс, если необходимо выполнить операцию на основе параметров или выполнить команду. Если нужно просто открыть простой набор строк, используйте вместо него [CTable](../../data/oledb/ctable-class.md) .
 
@@ -127,7 +127,7 @@ class CCommand :
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Команда использует набор строк, метод доступа set Result и (необязательно) метод доступа к параметру (в отличие от таблиц, которые не поддерживают параметры и не требуют метода доступа к параметрам).
 
@@ -164,7 +164,7 @@ HRESULT GetNextResult(DBROWCOUNT* pulRowsAffected,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если результирующий набор был ранее выбран, эта функция освобождает предыдущий результирующий набор и отменяет привязку столбцов. Если *ббинд* имеет значение **`true`** , то он привязывает новые столбцы.
 
@@ -243,7 +243,7 @@ HRESULT Open(DBPROPSET *pPropSet = NULL,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первые три формы `Open` принимают сеанс, создают команду и выполняют команду, привязывая все необходимые параметры.
 
@@ -292,7 +292,7 @@ HRESULT CCommandBase::Create(const CSession& session,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая форма `Create` принимает строку команды в Юникоде. Вторая форма `Create` принимает строку команды ANSI (предоставляется для обеспечения обратной совместимости с существующими приложениями ANSI).
 
@@ -315,7 +315,7 @@ HRESULT CCommandBase::CreateCommand(const CSession& session) throw ();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает команду, используя указанный объект сеанса.
 
@@ -358,7 +358,7 @@ HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает оболочку для метода OLE DB [ICommandPrepare::P готовка](/previous-versions/windows/desktop/ms718370(v=vs.85)).
 
@@ -372,7 +372,7 @@ HRESULT CCommandBase::Prepare(ULONG cExpectedRuns = 0) throw();
 void CCommandBase::ReleaseCommand() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ReleaseCommand` используется в сочетании с `Close` . Сведения об использовании см. в разделе " [Закрыть](../../data/oledb/ccommand-close.md) ".
 
@@ -410,7 +410,7 @@ HRESULT CCommandBase::Unprepare() throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает оболочку для метода OLE DB [ICommandPrepare:: unprepare](/previous-versions/windows/desktop/ms719635(v=vs.85)).
 

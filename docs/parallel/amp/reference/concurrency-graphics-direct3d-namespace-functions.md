@@ -176,10 +176,10 @@ inline uint4 msad4(
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
-**Пространство имен:** Concurrency:: Graphics::d irect3d
+**Пространство имен:** concurrency::graphics::direct3d
 
 ## <a name="see-also"></a>См. также раздел
 
-[Concurrency:: Graphics::d пространство имен irect3d](concurrency-graphics-direct3d-namespace.md)
+[Пространство имен concurrency::graphics::direct3d](concurrency-graphics-direct3d-namespace.md)

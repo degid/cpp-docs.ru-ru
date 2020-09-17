@@ -49,7 +49,7 @@ name                                                       | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 
@@ -65,7 +65,7 @@ inline static Type GetInvalidValue();
 
 Всегда возвращает указатель на недопустимую критическую секцию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Модификатор `Type` определен как `typedef CRITICAL_SECTION* Type;`.
 
@@ -84,7 +84,7 @@ inline static void Unlock(
 *сложных*<br/>
 Указатель на объект критической секции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Модификатор `Type` определен как `typedef CRITICAL_SECTION* Type;`.
 

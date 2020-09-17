@@ -61,7 +61,7 @@ class CComApartment
 |[CComApartment::m_hThread](#m_hthread)|Содержит ручку потока.|
 |[CComApartment::m_nLockCnt](#m_nlockcnt)|Содержит текущее количество блокировки потока.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComApartment`используется [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md) для управления квартирой в модуле EXE, объединенном потоками. `CComApartment`предоставляет методы для приращения и decrementing блокировки рассчитывать на поток.
 
@@ -81,7 +81,7 @@ DWORD Apartment();
 
 Всегда равно 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Автоматически устанавливается во время [CComAutoThreadModule::Init](../../atl/reference/ccomautothreadmodule-class.md#init).
 
@@ -93,7 +93,7 @@ DWORD Apartment();
 CComApartment();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует данные `CComApartment` членов [m_nLockCnt](#m_nlockcnt) и [m_hThread](#m_hthread).
 
@@ -121,7 +121,7 @@ LONG Lock();
 
 Значение, которое может быть полезно для диагностики или тестирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается [CComAutoThreadModule::Lock](../../atl/reference/ccomautothreadmodule-class.md#lock).
 
@@ -163,7 +163,7 @@ LONG Unlock();
 
 Значение, которое может быть полезно для диагностики или тестирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается [CComAutoThreadModule::Разблокировка](../../atl/reference/ccomautothreadmodule-class.md#lock).
 

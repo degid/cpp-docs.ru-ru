@@ -54,7 +54,7 @@ _com_error err(hr, perrinfo, true);
 *что*<br/>
 Существующий объект **_com_error** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Первый конструктор создает новый объект с заданным значением HRESULT и необязательным `IErrorInfo` объектом. Вторая создает копию существующего объекта **_com_error** .
 

@@ -187,13 +187,13 @@ class CDaoRecordset : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CDaoRecordset:: CDaoRecordset](#cdaorecordset)|Формирует объект `CDaoRecordset`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CDaoRecordset:: AddNew](#addnew)|Подготовка к добавлению новой записи. Вызовите [Update](#update) , чтобы завершить добавление.|
 |[CDaoRecordset:: Канаппенд](#canappend)|Возвращает ненулевое значение, если новые записи можно добавить в набор записей с помощью функции члена [AddNew](#addnew) .|
@@ -327,7 +327,7 @@ class CDaoRecordset : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдао. h
+**Заголовок:** афксдао.h
 
 ## <a name="cdaorecordsetaddnew"></a><a name="addnew"></a> CDaoRecordset:: AddNew
 

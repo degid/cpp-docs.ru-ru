@@ -38,7 +38,7 @@ ms.locfileid: "81377269"
 class SRWLock;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Тонкий замок читателя/писателя используется для синхронизации доступа между потоками к объекту или ресурсу. Для получения дополнительной [Synchronization Functions](/windows/win32/Sync/synchronization-functions)информации см.
 

@@ -25,7 +25,7 @@ ms.locfileid: "88835289"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="declare_object_description"></a><a name="declare_object_description"></a> DECLARE_OBJECT_DESCRIPTION
 
@@ -40,7 +40,7 @@ DECLARE_OBJECT_DESCRIPTION( x )
 *x*<br/>
 окне Описание объекта класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL вводит это описание в карту объектов с помощью макроса [OBJECT_ENTRY_AUTO](#object_entry_auto) .
 
@@ -70,7 +70,7 @@ OBJECT_ENTRY_AUTO( clsid, class )
 *class*<br/>
 окне Имя класса C++, реализующего класс COM, представленный *CLSID*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макросы записи объекта помещаются в глобальной области видимости в проекте для поддержки регистрации, инициализации и создания класса.
 
@@ -102,7 +102,7 @@ OBJECT_ENTRY_NON_CREATEABLE_EX_AUTO( clsid, class )
 *class*<br/>
 окне Имя класса C++, реализующего класс COM, представленный *CLSID*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макросы записи объекта помещаются в глобальной области видимости в проекте для поддержки регистрации, инициализации и создания класса.
 

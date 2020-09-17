@@ -90,7 +90,7 @@ class CMFCAutoHideBar : public CPane
 |----------|-----------------|
 |[CMFCAutoHideBar::m_nShowAHWndDelay](#m_nshowahwnddelay)|Задержка времени между моментом, когда пользователь помещает курсор мыши на [класс CMFCAutoHideButton,](../../mfc/reference/cmfcautohidebutton-class.md) и моментом, когда фреймворк показывает связанное окно.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Когда пользователь переключает область закрепления в режим автоматического скрытия, платформа автоматически создает объект `CMFCAutoHideBar`. Он также создает необходимые [объекты CAutoHideDockSite](../../mfc/reference/cautohidedocksite-class.md) и [CMFCAutoHideButton.](../../mfc/reference/cmfcautohidebutton-class.md) Каждый объект `CAutoHideDockSite` связан с определенным объектом `CMFCAutoHideButton`.
 
@@ -142,7 +142,7 @@ CMFCAutoHideButton* AddAutoHideWindow(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *dwAlignment* указывает, где находится кнопка автоматического укрытия в приложении. Параметру может быть присвоено одно из следующих значений:
 
@@ -162,7 +162,7 @@ virtual BOOL AllowShowOnPaneMenu() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarcalcfixedlayout"></a><a name="calcfixedlayout"></a>CMFCAutoHideBar::CalcFixedLayout
 
@@ -180,7 +180,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarcmfcautohidebar"></a><a name="cmfcautohidebar"></a>CMFCAutoHideBar::CMFCAutoHideBar
 
@@ -190,7 +190,7 @@ virtual CSize CalcFixedLayout(
 CMFCAutoHideBar();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarcreate"></a><a name="create"></a>CMFCAutoHideBar::Создание
 
@@ -223,7 +223,7 @@ virtual BOOL Create(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebargetfirstahwindow"></a><a name="getfirstahwindow"></a>CMFCAutoHideBar::GetFirstAHWindow
 
@@ -237,7 +237,7 @@ CDockablePane* GetFirstAHWindow();
 
 Первое окно автоматического скрытия в приложении или значение NULL, если его не существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebargetvisiblecount"></a><a name="getvisiblecount"></a>CMFCAutoHideBar::GetVisibleCount
 
@@ -251,7 +251,7 @@ int GetVisibleCount();
 
 Возвращает количество видимых кнопок автоматического скрытия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarm_nshowahwnddelay"></a><a name="m_nshowahwnddelay"></a>CMFCAutoHideBar::m_nShowAHWndDelay
 
@@ -261,7 +261,7 @@ int GetVisibleCount();
 int CMFCAutoHideBar::m_nShowAHWndDelay = 400;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда пользователь помещает курсор мыши `CMFCAutoHideButton`на, есть небольшая задержка, прежде чем фреймворк отображает связанное окно. Этот параметр определяет длину этой задержки в миллисекундах.
 
@@ -277,7 +277,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarremoveautohidewindow"></a><a name="removeautohidewindow"></a>CMFCAutoHideBar::RemoveAutoHideWindow
 
@@ -295,7 +295,7 @@ CDockablePane *pAutoHideWnd* автоматическое окно для уда
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarsetactiveingroup"></a><a name="setactiveingroup"></a>CMFCAutoHidebar::SetActiveInGroup
 
@@ -309,7 +309,7 @@ virtual void SetActiveInGroup(BOOL bActive);
 
 (в) BOOL *bActive* TRUE, чтобы установить на активную; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [CPane::SetActiveInGroup](../../mfc/reference/cpane-class.md#setactiveingroup).
 
@@ -324,7 +324,7 @@ void SetRecentVisibleState(BOOL bState);
 *bState*<br/>
 (в) Состояние для установки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarshowautohidewindow"></a><a name="showautohidewindow"></a>CMFCAutoHideBar:ShowAutoHideWindow
 
@@ -352,7 +352,7 @@ BOOL ShowAutoHideWindow(
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarstretchpane"></a><a name="stretchpane"></a>CMFCAutoHideBar::StretchPane
 
@@ -376,7 +376,7 @@ virtual CSize StretchPane(
 
 Размер, полученный в результате изменения размера панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Производные классы могут переопределять этот метод для настройки поведения.
 
@@ -392,7 +392,7 @@ void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup)
 
 pFirstBarInGroup Указатель на первый автоматический бар в группе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebarupdatevisiblestate"></a><a name="updatevisiblestate"></a>CMFCAutoHideBar::ОбновлениеВидимоегосударство
 
@@ -402,7 +402,7 @@ pFirstBarInGroup Указатель на первый автоматически
 void UpdateVisibleState();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

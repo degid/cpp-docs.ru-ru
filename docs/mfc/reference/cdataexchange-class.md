@@ -61,7 +61,7 @@ class CDataExchange
 |[CDataExchange::m_bSaveAndValidate](#m_bsaveandvalidate)|Флаг для направления DDX и DDV.|
 |[CDataExchange::m_pDlgWnd](#m_pdlgwnd)|Окно диалога или окно, где происходит обмен данными.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDataExchange`не имеет базового класса.
 
@@ -95,7 +95,7 @@ CDataExchange(
 *bSaveAndValidate*<br/>
 Если true, этот объект проверяет данные, а затем записывает данные из элементов управления для членов. Если FALSE, этот объект будет перемещать данные от элементов к элементам управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Постройте `CDataExchange` объект самостоятельно для хранения дополнительной информации в объекте обмена данными для передачи функции [cWnd::DoDataExchange.](../../mfc/reference/cwnd-class.md#dodataexchange)
 
@@ -111,7 +111,7 @@ CDataExchange(
 void Fail();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Fail`восстанавливает фокус и выделение элемента управления, проверка которого не удалась (при наличии элемента управления для восстановления). `Fail`затем бросает исключение типа [CUserException,](../../mfc/reference/cuserexception-class.md) чтобы остановить процесс проверки. Исключение приводит к тому, что окно сообщений, объясняющее отображение ошибки, отображается. После сбоя проверки DDV пользователь может повторно ввести данные в управление правонарушения.
 
@@ -127,7 +127,7 @@ void Fail();
 BOOL m_bSaveAndValidate;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Флаг незерн, `CDataExchange` если объект используется для перемещения данных из элементов управления диалогом в члены данных диалогового класса после того, как пользователь отодвигает элементы управления. Флаг равен нулю, если объект используется для инициализации элементов управления диалогом от членов данных диалогового класса.
 
@@ -143,7 +143,7 @@ BOOL m_bSaveAndValidate;
 CWnd* m_pDlgWnd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот объект обычно является объектом [CDialog.](../../mfc/reference/cdialog-class.md) Исполнители пользовательских процедур DDX или DDV могут использовать этот указатель для получения доступа к окну диалога, содержащей элементы управления, на которые они работают.
 
@@ -166,7 +166,7 @@ HWND PrepareCtrl(int nIDC);
 
 HWND управления готовится к DDX или DDV.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вместо этого используйте [PrepareEditCtrl](#prepareeditctrl) для элементов управления; использовать эту функцию члена для всех других элементов управления.
 
@@ -193,7 +193,7 @@ HWND PrepareEditCtrl(int nIDC);
 
 HWND элемента управления правки, готовящемся для DDX или DDV.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вместо этого используйте [PrepareCtrl](#preparectrl) для всех элементов управления без отсылки.
 
@@ -220,7 +220,7 @@ COleControlSite* PrepareOleCtrl(int nIDC);
 
 Указатель на сайт управления OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вместо этого используйте [PrepareEditCtrl](#prepareeditctrl) для элементов управления или [prepareCtrl](#preparectrl) для всех других элементов управления, не относясь к OLE.
 

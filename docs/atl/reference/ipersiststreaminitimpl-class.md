@@ -55,7 +55,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 |[IPersistStreamInitImpl::Load](#load)|Загружает свойства объекта из указанного потока.|
 |[IPersistStreamInitImpl::Сохранить](#save)|Сохраняет свойства объекта в указанном потоке.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IPersistStreamInit](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) позволяет клиенту запрашивать, чтобы ваш объект загружал и сохраняет свои постоянные данные в одном потоке. Класс `IPersistStreamInitImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -79,7 +79,7 @@ class ATL_NO_VTABLE IPersistStreamInitImpl
 STDMETHOD(GetClassID)(CLSID* pClassID);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) в Windows SDK.
 
@@ -95,7 +95,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistStreamInit::GetSizeMax](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-getsizemax) в Windows SDK.
 
@@ -107,7 +107,7 @@ STDMETHOD(GetSizeMax)(ULARGE_INTEGER FAR* pcbSize);
 STDMETHOD(InitNew)();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistStreamInit::InitNew](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-initnew) в Windows SDK.
 
@@ -119,7 +119,7 @@ STDMETHOD(InitNew)();
 STDMETHOD(IsDirty)();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistStreamInit::Грязный](/windows/win32/api/ocidl/nf-ocidl-ipersiststreaminit-isdirty) в Windows SDK.
 
@@ -131,7 +131,7 @@ STDMETHOD(IsDirty)();
 STDMETHOD(Load)(LPSTREAM pStm);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для получения этой информации.
 
@@ -145,7 +145,7 @@ ATL использует карту свойств объекта для пол�
 STDMETHOD(Save)(LPSTREAM pStm, BOOL fClearDirty);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для хранения этой информации.
 

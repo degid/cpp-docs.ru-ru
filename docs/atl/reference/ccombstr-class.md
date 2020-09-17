@@ -98,7 +98,7 @@ class CComBSTR
 |----------|-----------------|
 |[CComBSTR::m_str](#m_str)|Содержит BSTR, связанный с объектом. `CComBSTR`|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CComBSTR` представляет собой обертку для BST, которые являются длинн-фиксированными строками. Длина хранится в виде целых в месте памяти, предшествующем данным в строке.
 
@@ -147,7 +147,7 @@ HRESULT Append(LPCOLESTR lpsz, int nLen) throw();
 
 S_OK на успех, или любое стандартное значение ошибки HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Строка ANSI будет преобразована в Unicode перед приложением.
 
@@ -172,7 +172,7 @@ HRESULT AppendBSTR(BSTR p) throw();
 
 S_OK на успех, или любое стандартное значение ошибки HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не передайте этому методу обычную широкохарактерную строку. Компилятор не может поймать ошибку и ошибки времени выполнения будут происходить.
 
@@ -251,7 +251,7 @@ void Attach(BSTR src) throw();
 *src*<br/>
 (в) BSTR прикрепить к объекту.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не передайте этому методу обычную широкохарактерную строку. Компилятор не может поймать ошибку и ошибки времени выполнения будут происходить.
 
@@ -291,7 +291,7 @@ unsigned int ByteLength() const throw();
 
 Длина [m_str](#m_str) члена в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает 0, если `m_str` NULL.
 
@@ -332,7 +332,7 @@ CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 *guid*<br/>
 (в) Ссылка на `GUID` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конвейер копирования `m_str` устанавливается на копию члена BSTR *src*. Конструктор `REFGUID` преобразует GUID в строку, `StringFromGUID2` используя и хранит результат.
 
@@ -354,7 +354,7 @@ CComBSTR(CComBSTR&& src) throw(); // (Visual Studio 2017)
 ~CComBSTR();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор освобождает строку, на которую указывает `m_str`.
 
@@ -396,7 +396,7 @@ HRESULT CopyTo(VARIANT* pvarDest) throw();
 
 Стандартное значение HRESULT, указывающее на успех или неудачу копии.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После вызова этого метода, VARIANT указал на *pvarDest* будет типа VT_BSTR.
 
@@ -465,7 +465,7 @@ bool LoadString(UINT nID) throw();
 
 Возвращает TRUE, если строка успешно загружена; в противном случае, возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция загружает ресурс из модуля, идентифицированного вами, через параметр *hInst.* Вторая функция загружает ресурс из ресурсного модуля, связанного с объектом, полученным в этом проекте, полученным [cComModule.](../../atl/reference/ccommodule-class.md)
 
@@ -493,7 +493,7 @@ BSTR m_str;
 operator BSTR() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позволяет передавать `CComBSTR` объекты функциям, которые имеют параметры **BSTR.**
 
@@ -513,7 +513,7 @@ bool operator!() const throw();
 
 Возвращает TRUE, если [m_str](#m_str) член NULL; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор проверяет только значение NULL, а не пустую строку.
 
@@ -547,7 +547,7 @@ bool operator!= (int nNull) const throw();
 
 Возвращает TRUE, если сравниваемый `CComBSTR` элемент не равен объекту; в противном случае, возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CComBSTR`s сравниваются текстово в контексте локального локального по умолчанию пользователя. Окончательный оператор сравнения просто сравнивает содержащуюся строку с NULL.
 
@@ -559,7 +559,7 @@ bool operator!= (int nNull) const throw();
 BSTR* operator&() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CComBstr operator &`имеет специальное утверждение, связанное с ним, чтобы помочь определить утечки памяти. Программа будет утверждать, `m_str` когда участник инициализирован. Это утверждение было создано для определения `& operator` ситуаций, когда `m_str` программист использует для присвоения новому значению участнику без освобождения первого выделения `m_str`. Если `m_str` равняется NULL, программа предполагает, что m_str еще не выделен. В этом случае программа не будет утверждать.
 
@@ -588,7 +588,7 @@ CComBSTR& operator+= (const LPCOLESTR pszSrc);
 *pszSrc*<br/>
 (в) Строка с нулевым завершением приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CComBSTR`s сравниваются текстово в контексте локального локального по умолчанию пользователя. Сравнение LPCOLESTR осуществляется с использованием `memcmp` необработанных данных в каждой строке. Сравнение LPCSTR осуществляется таким же образом, как только была создана временная копия *PszSrc* Unicode. Окончательный оператор сравнения просто сравнивает содержащуюся строку с NULL.
 
@@ -610,7 +610,7 @@ bool operator<(LPCSTR pszSrc) const throw();
 
 Возвращает TRUE, если сравниваемый `CComBSTR` элемент меньше объекта; в противном случае, возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение выполняется с помощью локального по умолчанию пользователя.
 
@@ -625,7 +625,7 @@ CComBSTR& operator= (LPCSTR pSrc);
 CComBSTR& operator= (CComBSTR&& src) throw(); // (Visual Studio 2017)
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *pSrc* определяет либо LPCOLESTR для версий Unicode, либо LPCSTR для версий ANSI.
 
@@ -659,7 +659,7 @@ bool operator== (int nNull) const throw();
 
 Возвращает TRUE, если сравниваемый `CComBSTR` элемент равен объекту; в противном случае, возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Окончательный оператор сравнения просто сравнивает содержащуюся строку с NULL.
 
@@ -675,7 +675,7 @@ bool operator>(const CComBSTR& bstrSrc) const throw();
 
 Возвращает TRUE, если сравниваемый `CComBSTR` элемент больше, чем объект; в противном случае, возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение выполняется с помощью локального по умолчанию пользователя.
 
@@ -696,7 +696,7 @@ HRESULT ReadFromStream(IStream* pStream) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ReadToStream`требует, чтобы содержимое потока в текущем положении было совместимо с форматом данных, записанным по вызову [WriteToStream.](#writetostream)
 
@@ -716,7 +716,7 @@ HRESULT ToLower() throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительную информацию о том, как выполняется преобразование, можно `CharLowerBuff` ознакомиться.
 
@@ -732,7 +732,7 @@ HRESULT ToUpper() throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительную информацию о том, как выполняется преобразование, можно `CharUpperBuff` ознакомиться.
 
@@ -753,7 +753,7 @@ HRESULT WriteToStream(IStream* pStream) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете воссоздать BSTR из содержимого потока с помощью функции [ReadFromStream.](#readfromstream)
 

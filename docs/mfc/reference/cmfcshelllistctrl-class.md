@@ -84,7 +84,7 @@ class CMFCShellListCtrl : public CMFCListCtrl
 |[CMFCShellListCtrl::Обновление](#refresh)|Обновляет и перекраивает элемент управления список.|
 |[CMFCShellListCtrl:SetItemTypes](#setitemtypes)|Устанавливает тип элементов, отображаемых элементом управления списком.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCShellListCtrl` расширяет функциональность класса [CMFCListCtrl,](../../mfc/reference/cmfclistctrl-class.md) позволяя программе перечислять элементы оболочки Windows. Используемый формат отображения похож на представление списка для окна Explorer.
 
@@ -179,7 +179,7 @@ BOOL GetCurrentFolder(CString& strPath) const;
 
 Ненулевое значение в случае успешного выполнения. В противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод выходит из строя, если `CMFCShellListCtrl`в папке нет папки, выбранной в .
 
@@ -200,7 +200,7 @@ BOOL GetCurrentFolderName(CString& strName) const;
 
 Ненулевое значение в случае успешного выполнения. В противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод выходит из строя, если `CMFCShellListCtrl`в папке нет папки, выбранной в .
 
@@ -228,7 +228,7 @@ const IShellFolder* GetCurrentShellFolder() const;
 
 Указатель на [интерфейс IShellFolder](/windows/win32/api/shobjidl_core/nn-shobjidl_core-ishellfolder) для выбранного объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает NULL, если объект в настоящее время не выбран.
 
@@ -254,7 +254,7 @@ BOOL GetItemPath(
 
 Значение TRUE в случае успешного выполнения. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс, поставляемый *iItem,* основан на элементах, которые в настоящее время отображаются объектом [класса CMFCShellListCtrl.](../../mfc/reference/cmfcshelllistctrl-class.md)
 
@@ -270,7 +270,7 @@ SHCONTF GetItemTypes() const;
 
 Значение [SHCONTF,](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf) содержащее тип элементов, перечисленных в `CMFCShellListCtrl`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы установить тип элементов, перечисленных `CMFCShellListCtrl`в, позвоните [CMFCShellListCtrl::SetItemTypes](#setitemtypes).
 
@@ -305,7 +305,7 @@ virtual int OnCompareItems(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcshelllistctrlonformatfiledate"></a><a name="onformatfiledate"></a>CMFCShelllistctrl::OnFormatFileDate
 
@@ -325,7 +325,7 @@ virtual void OnFormatFileDate(
 *Ул*<br/>
 (ваут) Строка, содержащая отформатированную дату файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда объект [класса CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) отображает дату, связанную с файлом, он должен преобразовать эту дату в формат строки. Использует `CMFCShellListCtrl` этот метод, чтобы сделать это преобразование. По умолчанию этот метод использует текущий локаль для формата даты в строку.
 
@@ -347,7 +347,7 @@ virtual void OnFormatFileSize(
 *Ул*<br/>
 (ваут) Строка, содержащая отформатированный размер файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда объекту [класса CMFCShellListCtrl](../../mfc/reference/cmfcshelllistctrl-class.md) необходимо отображать размер файла, ему необходимо преобразовать размер файла в формат строки. Использует `CMFCShellListCtrl` этот метод, чтобы сделать это преобразование. По умолчанию этот метод преобразует размер файла из байтов в килобайт, а затем использует текущий локаль для формата размера в строку.
 
@@ -373,7 +373,7 @@ virtual int OnGetItemIcon(
 
 Индекс изображения значка в случае успеха; -1, если функция выходит из строя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс изображения значка основан на списке изображений системы.
 
@@ -405,7 +405,7 @@ virtual CString OnGetItemText(
 
 A, `CString` содержащий текст, связанный с элементом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый элемент `CMFCShellListCtrl` объекта может иметь текст в одном или нескольких столбцах. Когда фреймворк вызывает этот метод, он определяет интересуемый им столбец. Если вы называете эту функцию вручную, необходимо также указать интересуемый вами столбец.
 
@@ -419,7 +419,7 @@ A, `CString` содержащий текст, связанный с элемен
 virtual void OnSetColumns();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию фреймворк `CMFCShellListCtrl` создает четыре столбца в объекте. Названия этих **столбцов: Имя,** **Размер,** **Тип**и **Изменено.** Этот метод можно переопределить, чтобы настроить количество столбцов и их имена.
 
@@ -435,7 +435,7 @@ virtual HRESULT Refresh();
 
 `S_OK`в случае успеха; в противном случае значение ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы обновить `CMFCShellListCtrl` список элементов, отображаемых объектом.
 
@@ -452,7 +452,7 @@ void SetItemTypes(SHCONTF nTypes);
 *nТипы*<br/>
 (в) Список типов элементов, которые поддерживает `CMFCShellListCtrl` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о [SHCONTF](/windows/win32/api/shobjidl_core/ne-shobjidl_core-_shcontf)списке типов элементов см.
 

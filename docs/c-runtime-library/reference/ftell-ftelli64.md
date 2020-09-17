@@ -66,7 +66,7 @@ __int64 _ftelli64(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **ftell** и **_ftelli64** извлекают текущую позиции указателя файла (при наличии), связанного с *потоком*. Позиция представляется как смещение относительно начала потока.
 

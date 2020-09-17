@@ -26,7 +26,7 @@ ms.locfileid: "81371855"
 struct BoolStruct;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Структура `BoolStruct` определяет, `ComPtr` управляет ли a течением срока службы объекта интерфейса. `BoolStruct`используется внутренне оператором [BoolType()](comptr-class.md#operator-microsoft-wrl-details-booltype)
 
@@ -56,6 +56,6 @@ struct BoolStruct;
 int Member;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Упомянет, что [ComPtr](comptr-class.md) управляет или не управляет сроком службы объекта интерфейса.

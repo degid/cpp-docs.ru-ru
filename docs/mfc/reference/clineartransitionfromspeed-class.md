@@ -52,7 +52,7 @@ class CLinearTransitionFromSpeed : public CBaseTransition;
 |[CLinearTransitionFromSpeed::m_dblFinalValue](#m_dblfinalvalue)|Значение переменной анимации в конце перехода.|
 |[CLinearTransitionFromSpeed::m_dblSpeed](#m_dblspeed)|Абсолютное значение скорости переменной.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Во время перехода линейной скорости значение переменной анимации изменяется с определенной скоростью. Продолжительность перехода определяется разницей между начальной и указанной конечной стоимостью. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
 

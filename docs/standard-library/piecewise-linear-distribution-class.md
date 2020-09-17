@@ -83,7 +83,7 @@ public:
 *реалтипе*\
 Тип результата с плавающей запятой, по умолчанию — **`double`** . Возможные типы см. в разделе [\<random>](../standard-library/random.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Выборочное распределение использует меняющиеся интервалы ширины с линейно меняющейся вероятностью в каждом интервале. Сведения о других выборочных распределениях см. в разделах [piecewise_linear_distribution](../standard-library/piecewise-constant-distribution-class.md) и [discrete_distribution](../standard-library/discrete-distribution-class.md).
 
@@ -259,7 +259,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 *диапазона*\
 Объект [initializer_list](../cpp/initializers.md) с интервалами распределения.
 
-*расчета*\
+*count*\
 Количество элементов в диапазоне распределения.
 
 *xmin*\
@@ -274,7 +274,7 @@ explicit piecewise_linear_distribution(const param_type& parm);
 *ParM*\
 Структура параметров, используемая для формирования распределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор по умолчанию задает хранимые параметры таким образом, чтобы существовал один интервал от 0 до 1 с плотностью вероятности 1.
 
@@ -348,7 +348,7 @@ struct param_type {
 
 См. параметры конструктора [piecewise_linear_distribution](#piecewise_linear_distribution).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Предварительное условие:**`xmin < xmax`
 

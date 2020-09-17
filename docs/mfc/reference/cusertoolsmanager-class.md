@@ -92,7 +92,7 @@ class CUserToolsManager : public CObject
 |[CUserToolsManager::SetDefExt](#setdefext)|Упомяните расширение по умолчанию, которое файл **Открыть** диалоговое окно [(CFileDialog класса](../../mfc/reference/cfiledialog-class.md)) использует в поле **команды** на вкладке **Инструменты** **настраиваемый** диалоговый ящик.|
 |[CUserToolsManager::SetFilter](#setfilter)|Упоняет файловый фильтр, который файл **Open** диалоговый ящик [(CFileDialog Class)](../../mfc/reference/cfiledialog-class.md)используется в поле **Командования** на вкладке **Tools** box of **the Customize** dialog.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы включить пользовательские инструменты в приложение, необходимо:
 
@@ -134,7 +134,7 @@ CUserTool* CreateNewTool();
 
 Указатель на недавно созданный пользовательский инструмент, или NULL, если количество пользовательских инструментов превысило максимум. Возвращается тип такой же, как тип, который передается `CWinAppEx::EnableUserTools` в качестве параметра *pToolRTC.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод находит первый доступный идентификатор команды меню в диапазоне, который поставляется в вызове [cWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) и назначает пользователю этот идентификатор.
 
@@ -176,7 +176,7 @@ CUserToolsManager(
 *uInitDirMenuID*<br/>
 (в) Идентификатор ресурса меню начального всплывающее меню каталога.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не называйте этот конструктор. Вместо этого позвоните [в CWinAppEx::EnableUserTools,](../../mfc/reference/cwinappex-class.md#enableusertools) чтобы включить пользовательские инструменты, и позвоните `CUserToolsManager` [cWinAppEx::GetUserToolsManager,](../../mfc/reference/cwinappex-class.md#getusertoolsmanager) чтобы получить указатель на . Для получения дополнительной [User-defined Tools](../../mfc/user-defined-tools.md)информации см.
 
@@ -197,7 +197,7 @@ CUserTool* FindTool(UINT uiCmdId) const;
 
 Указатель на [CUserTool](../../mfc/reference/cusertool-class.md) класса `CUserTool`или -производные объекта, если успех; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда `FindTool` он успешен, тип возврата такой же, как тип параметра *pToolRTC* для [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
@@ -213,7 +213,7 @@ UINT GetArgumentsMenuID() const;
 
 Идентификатор ресурса меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *uArgMenuID* [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) определяет идентификатор ресурса.
 
@@ -253,7 +253,7 @@ UINT GetInitialDirMenuID() const;
 
 Идентификатор ресурсов меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвратный идентификатор указан в параметре *uInitDirMenuID* [CWinAppEx:EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
@@ -269,7 +269,7 @@ int GetMaxTools() const;
 
 Максимальное количество пользовательских инструментов, которые могут быть выделены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить максимальное количество инструментов, которые могут быть выделены в приложении. Это число является числом инт-идов в диапазоне от *uiCmdFirst* через *uiCmdLast* параметров, которые вы передайте [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools).
 
@@ -285,7 +285,7 @@ UINT GetToolsEntryCmd() const;
 
 Идентификатор команды заполнителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для включения пользовательских инструментов вы [звоните CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools). Параметр *uiCmdToolsDummy* определяет идентификатор команды команды входа инструментов. Этот метод возвращает идентификатор команды входа инструментов. Везде, где этот идентификатор используется в меню, он заменяется списком пользовательских инструментов при поясне меню.
 
@@ -301,7 +301,7 @@ const CObList& GetUserTools() const;
 
 Ссылка на объект [класса CObList,](../../mfc/reference/coblist-class.md) содержащий список пользовательских инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить список пользовательских инструментов, которые поддерживает объект [CUserToolsManager.](../../mfc/reference/cusertoolsmanager-class.md) Каждый пользовательский инструмент представлен объектом [типа CUserTool Class](../../mfc/reference/cusertool-class.md) `CUserTool`или типом, полученным из. Тип указан параметром *pToolRTC* при вызове [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) для включения пользовательских инструментов.
 
@@ -322,7 +322,7 @@ BOOL InvokeTool(UINT uiCmdId);
 
 Nonzero, если команда, связанная с пользовательским инструментом, была успешно выполнена; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для выполнения приложения, связанного с пользовательским инструментом, который имеет идентификатор команды, указанный *uiCmdId.*
 
@@ -343,7 +343,7 @@ BOOL IsUserToolCmd(UINT uiCmdId) const;
 
 Nonzero, если данный идентификатор команды связан с пользовательским инструментом; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод проверяет, находится ли данный идентификатор команды в диапазоне идентификаторов команд. Вы указываете диапазон при вызове [CWinAppEx::EnableUserTools](../../mfc/reference/cwinappex-class.md#enableusertools) для включения пользовательских инструментов.
 
@@ -364,7 +364,7 @@ BOOL LoadState(LPCTSTR lpszProfileName=NULL);
 
 Nonzero, если государство было загружено успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод загружает `CUserToolsManager` состояние объекта из реестра Windows.
 
@@ -387,7 +387,7 @@ BOOL MoveToolDown(CUserTool* pTool);
 
 Nonzero, если пользовательский инструмент был успешно перемещен вниз; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод не удается, если инструмент, который *pTool* определяет не во внутреннем списке или если инструмент является последним в списке.
 
@@ -408,7 +408,7 @@ BOOL MoveToolUp(CUserTool* pTool);
 
 Nonzero, если пользовательский инструмент был успешно перемещен; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод завершается неудачей, если инструмент, который указывает параметр *pTool,* не находится во внутреннем списке или если инструмент является первым элементом инструмента в списке.
 
@@ -429,7 +429,7 @@ BOOL RemoveTool(CUserTool* pTool);
 
 ПРАВДА, если инструмент успешно удален. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если инструмент успешно удален, этот метод удаляет *pTool.*
 
@@ -450,7 +450,7 @@ BOOL SaveState(LPCTSTR lpszProfileName=NULL);
 
 Nonzero, если государство было сохранено успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод хранит текущее состояние `CUserToolsManager` объекта в реестре Windows.
 
@@ -469,7 +469,7 @@ void SetDefExt(const CString& strDefExt);
 *strDefExt*<br/>
 (в) Текстовая строка, содержащая расширение имени файла по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы указать расширение имени файла по умолчанию в диалоговом поле **File Open,** которое отображается при выборе приложением для ассоциирования с пользователем. По умолчанию является "exe".
 

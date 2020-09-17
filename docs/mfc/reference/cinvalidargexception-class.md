@@ -33,7 +33,7 @@ class CInvalidArgException : public CSimpleException
 |----------|-----------------|
 |[CInvalidargException::CInvalidargException](#cinvalidargexception)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект `CInvalidArgException` представляет собой недействительное условие исключения аргумента.
 
@@ -61,7 +61,7 @@ class CInvalidArgException : public CSimpleException
 CInvalidArgException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не используйте этот конструктор напрямую; вызов глобальной функции **AfxThrowInvalidargException**.
 

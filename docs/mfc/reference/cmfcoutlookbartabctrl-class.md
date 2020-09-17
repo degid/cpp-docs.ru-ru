@@ -104,7 +104,7 @@ class CMFCOutlookBarTabCtrl : public CMFCBaseTabCtrl
 |[CMFCOutlookBarTabCtrl::SetToolbarImageList](#settoolbarimagelist)|Устанавливает битную карту, содержащую значки, отображаемые в нижней части панели Outlook в режиме Outlook 2003 (см. [класс CMFCOutlookBar).](../../mfc/reference/cmfcoutlookbar-class.md)|
 |[CMFCOutlookBarTabCtrl::SetVisiblePageButtons](#setvisiblepagebuttons)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для создания панели Outlook с поддержкой `CMFCOutlookBar` стыковки используйте объект для размещения элемента управления вкладкой панели Outlook. Для получения дополнительной информации [см.](../../mfc/reference/cmfcoutlookbar-class.md)
 
@@ -161,7 +161,7 @@ void AddControl(
 *dwControlBarStyle*<br/>
 (в) Обращите AFX_ CBRS_ стиль для завернутых стыковочных стекол.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы добавить элемент управления в качестве новой страницы панели Outlook.
 
@@ -187,7 +187,7 @@ virtual BOOL CanShowFewerPageButtons() const;
 
 TRUE, если есть более чем одна кнопка; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Управление вкладками панели Outlook динамически добавляет или удаляет вкладки с дисплея в зависимости от того, сколько места доступно. Этот метод используется рамками для оказания помощи в этом процессе.
 
@@ -203,7 +203,7 @@ virtual BOOL CanShowMorePageButtons() const;
 
 TRUE, если есть кнопки, которые в настоящее время не видны; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Управление вкладками панели Outlook динамически добавляет или удаляет вкладки с дисплея, в зависимости от того, сколько места доступно. Этот метод используется рамками для оказания помощи в этом процессе.
 
@@ -233,7 +233,7 @@ virtual BOOL Create(
 
 Nonzero, если элемент управления был успешно создан; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно элементы управления вкладками панели Outlook создаются, когда [класс CMFCOutlookBar](../../mfc/reference/cmfcoutlookbar-class.md) контролирует WM_CREATE сообщение процесса.
 
@@ -250,7 +250,7 @@ static void EnableAnimation(BOOL bEnable=TRUE);
 *bEnable*<br/>
 (в) Уточняется, должна ли анимация быть включена или отключена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы включить и отключить анимацию. Когда пользователь открывает страницу вкладок, подпись страницы скользит вверх или вниз, если анимация включена. Если анимация отключена, страница сразу же активируется.
 
@@ -269,7 +269,7 @@ virtual void EnableInPlaceEdit(BOOL bEnable);
 *bEnable*<br/>
 Если true, включите редактирование текста на месте. Если FALSE, отогнать на месте редактирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы включить или отключить редактирование текстовых меток на кнопках страницы вкладок. По умолчанию редактирование на месте отключено.
 
@@ -295,7 +295,7 @@ void EnableScrollButtons(
 *bIsDown*<br/>
 (в) Определяет, отображается ли нижняя панель прокрутки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позволяет отображать кнопки прокрутки. Этот метод вызывается фректовом при изменении активной вкладки для восстановления кнопок прокрутки.
 
@@ -319,7 +319,7 @@ int GetVisiblePageButtons() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcoutlookbartabctrlisanimation"></a><a name="isanimation"></a>CMFCOutlookBarTabCtrl::Анимация
 
@@ -333,7 +333,7 @@ static BOOL IsAnimation();
 
 Nonzero, если анимация включена; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позвоните в [CMFCOutlookBarTabCtrl::EnableAnimation](#enableanimation) функции для включения или отключить анимацию.
 
@@ -349,7 +349,7 @@ BOOL IsMode2003() const;
 
 ПРАВДА, если управление вкладками панели Outlook находится в режиме Outlook 2003; в противном случае FALSE;
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение устанавливается [CMFCOutlookBar::SetMode2003](../../mfc/reference/cmfcoutlookbar-class.md#setmode2003).
 
@@ -361,7 +361,7 @@ BOOL IsMode2003() const;
 virtual void OnShowFewerPageButtons();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод регулирует количество видимых кнопок вкладок страницы при повторном размере элемента управления.
 
@@ -373,7 +373,7 @@ virtual void OnShowFewerPageButtons();
 virtual void OnShowMorePageButtons();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод регулирует количество кнопок страницы вкладок, которые видны при повторном размере элемента управления.
 
@@ -385,7 +385,7 @@ virtual void OnShowMorePageButtons();
 virtual void OnShowOptions();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диалоговая коробка **Navigation Pane Options** позволяет пользователю выбрать, какие кнопки страницы вкладок должны отображаться, и порядок, в котором они отображаются.
 
@@ -408,7 +408,7 @@ virtual BOOL SetActiveTab(int iTab);
 
 Nonzero, если указанная вкладка была успешно открыта; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Визуальный эффект настройки активной вкладки зависит от того, включили ли вы анимацию. Для получения дополнительной информации [см. CMFCOutlookBarTabCtrl::EnableAnimation](#enableanimation).
 
@@ -425,7 +425,7 @@ void SetBorderSize(int nBorderSize);
 *nBorderSize*<br/>
 (в) Определяет новый размер границы в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает новый размер границы и пересчитывает макет окна outlook.
 
@@ -447,7 +447,7 @@ void SetPageButtonTextAlign(
 *bRedraw*<br/>
 (в) Если true, окно перспективы будет перерисовано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы изменить выравнивание текста для кнопок страницы.
 
@@ -487,7 +487,7 @@ BOOL SetToolbarImageList(
 
 Возвращает TRUE в случае успеха; в противном случае возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы прикрепить список изображений, изображения которого будут отображаться на кнопках панели инструментов в режиме Microsoft Office 2003. Индексы изображений должны соответствовать индексам страниц.
 
@@ -503,7 +503,7 @@ void SetVisiblePageButtons(int nVisiblePageButtons);
 
 (в) *nVisiblePageButtons*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

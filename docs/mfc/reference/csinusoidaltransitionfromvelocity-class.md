@@ -52,7 +52,7 @@ class CSinusoidalTransitionFromVelocity : public CBaseTransition;
 |[CSinusoidalTransitionFromVelocity::m_duration](#m_duration)|Продолжительность перехода.|
 |[CSinusoidalTransitionFromVelocity::m_period](#m_period)|Период колебаний синусоидальной волны в считанные секунды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Значение переменной анимации колеблется вокруг исходного значения в течение всего периода синусоидального перехода. Амплитуда колебаний определяется скоростью переменной анимации при начале перехода. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
 

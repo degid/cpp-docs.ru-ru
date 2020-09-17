@@ -70,15 +70,15 @@ ms.locfileid: "87222697"
 
 #### <a name="to-implement-the-serial-version-of-the-mandelbrot-application"></a>Реализация серийной версии приложения фрактала Мандельброта
 
-1. В файле *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях) добавьте следующую `#include` директиву:
+1. В файле *PCH.h* (*stdafx.h* в Visual Studio 2017 и более ранних версиях) добавьте следующую `#include` директиву:
 
    [!code-cpp[concrt-mandelbrot#1](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_1.h)]
 
-1. В Чилдвиев. h после `pragma` директивы Определите `BitmapPtr` тип. `BitmapPtr`Тип позволяет использовать указатель на `Bitmap` объект для совместного использования несколькими компонентами. `Bitmap`Объект удаляется, если на него больше не ссылается ни один компонент.
+1. В Чилдвиев.h после `pragma` директивы Определите `BitmapPtr` тип. `BitmapPtr`Тип позволяет использовать указатель на `Bitmap` объект для совместного использования несколькими компонентами. `Bitmap`Объект удаляется, если на него больше не ссылается ни один компонент.
 
    [!code-cpp[concrt-mandelbrot#2](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_2.h)]
 
-1. В Чилдвиев. h добавьте следующий код в **`protected`** раздел `CChildView` класса:
+1. В Чилдвиев.h добавьте следующий код в **`protected`** раздел `CChildView` класса:
 
    [!code-cpp[concrt-mandelbrot#3](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_3.h)]
 
@@ -118,17 +118,17 @@ ms.locfileid: "87222697"
 
 В этом разделе показано, как удалить работу по отрисовке из потока пользовательского интерфейса в приложении фрактала Мандельброта. Перемещая работу по отрисовке из потока пользовательского интерфейса в рабочий поток, поток пользовательского интерфейса может обрабатывать сообщения, когда рабочий поток создает изображение в фоновом режиме.
 
-Среда выполнения с параллелизмом предоставляет три способа выполнения задач: [группы задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)и [упрощенные задачи](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Хотя можно использовать любой из этих механизмов для удаления работы из потока пользовательского интерфейса, в этом примере используется объект [Concurrency:: task_group](reference/task-group-class.md) , так как группы задач поддерживают отмену. В этом пошаговом руководстве будет использоваться Отмена, чтобы уменьшить объем работы, выполняемой при изменении размера окна клиента, и выполнить очистку при уничтожении окна.
+Среда выполнения с параллелизмом предоставляет три способа выполнения задач: [группы задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md), [асинхронные агенты](../../parallel/concrt/asynchronous-agents.md)и [упрощенные задачи](../../parallel/concrt/task-scheduler-concurrency-runtime.md). Хотя можно использовать любой из этих механизмов для удаления работы из потока пользовательского интерфейса, в этом примере используется объект [concurrency::task_group](reference/task-group-class.md) , так как группы задач поддерживают отмену. В этом пошаговом руководстве будет использоваться Отмена, чтобы уменьшить объем работы, выполняемой при изменении размера окна клиента, и выполнить очистку при уничтожении окна.
 
-В этом примере также используется объект [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) , позволяющий ПОТОКУ пользовательского интерфейса и рабочему потоку взаимодействовать друг с другом. После того, как рабочий поток создаст образ, он отправляет указатель на `Bitmap` объект `unbounded_buffer` объекту, а затем отправляет сообщение Paint в поток пользовательского интерфейса. Затем поток пользовательского интерфейса получает от `unbounded_buffer` объекта `Bitmap` объект и отображает его в клиентском окне.
+В этом примере также используется объект [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) , позволяющий ПОТОКУ пользовательского интерфейса и рабочему потоку взаимодействовать друг с другом. После того, как рабочий поток создаст образ, он отправляет указатель на `Bitmap` объект `unbounded_buffer` объекту, а затем отправляет сообщение Paint в поток пользовательского интерфейса. Затем поток пользовательского интерфейса получает от `unbounded_buffer` объекта `Bitmap` объект и отображает его в клиентском окне.
 
 #### <a name="to-remove-the-drawing-work-from-the-ui-thread"></a>Удаление работы по отрисовке из потока пользовательского интерфейса
 
-1. В файле *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях) добавьте следующие `#include` директивы:
+1. В файле *PCH.h* (*stdafx.h* в Visual Studio 2017 и более ранних версиях) добавьте следующие `#include` директивы:
 
    [!code-cpp[concrt-mandelbrot#101](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_9.h)]
 
-1. В Чилдвиев. h добавьте `task_group` `unbounded_buffer` переменные члена и в **`protected`** раздел `CChildView` класса. `task_group`Объект содержит задачи, выполняющие рисование; `unbounded_buffer` объект содержит готовое изображение фрактала Мандельброта.
+1. В Чилдвиев.h добавьте `task_group` `unbounded_buffer` переменные члена и в **`protected`** раздел `CChildView` класса. `task_group`Объект содержит задачи, выполняющие рисование; `unbounded_buffer` объект содержит готовое изображение фрактала Мандельброта.
 
    [!code-cpp[concrt-mandelbrot#102](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_10.h)]
 
@@ -136,7 +136,7 @@ ms.locfileid: "87222697"
 
    [!code-cpp[concrt-mandelbrot#103](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_11.cpp)]
 
-1. В `CChildView::DrawMandelbrot` методе после вызова `Bitmap::UnlockBits` вызовите функцию [Concurrency:: send](reference/concurrency-namespace-functions.md#send) , чтобы передать `Bitmap` объект в поток пользовательского интерфейса. Затем опубликуйте сообщение Paint в потоке пользовательского интерфейса и сделает клиентскую область недействительной.
+1. В `CChildView::DrawMandelbrot` методе после вызова `Bitmap::UnlockBits` вызовите функцию [concurrency::send](reference/concurrency-namespace-functions.md#send) , чтобы передать `Bitmap` объект в поток пользовательского интерфейса. Затем опубликуйте сообщение Paint в потоке пользовательского интерфейса и сделает клиентскую область недействительной.
 
    [!code-cpp[concrt-mandelbrot#104](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_12.cpp)]
 
@@ -154,7 +154,7 @@ ms.locfileid: "87222697"
 
 ## <a name="improving-drawing-performance"></a><a name="performance"></a>Повышение производительности рисования
 
-Поколение фрактала Мандельброта является хорошим кандидатом для параллелизации, поскольку вычисление каждого пикселя не зависит от других вычислений. Для параллелизации процедуры рисования преобразуйте внешний **`for`** цикл в `CChildView::DrawMandelbrot` методе в вызов алгоритма [concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) , как показано ниже.
+Поколение фрактала Мандельброта является хорошим кандидатом для параллелизации, поскольку вычисление каждого пикселя не зависит от других вычислений. Для параллелизации процедуры рисования преобразуйте внешний **`for`** цикл в `CChildView::DrawMandelbrot` методе в вызов алгоритма [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) , как показано ниже.
 
 [!code-cpp[concrt-mandelbrot#301](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_14.cpp)]
 
@@ -172,7 +172,7 @@ ms.locfileid: "87222697"
 
 Приложение фрактала Мандельброта создает `Bitmap` объекты, размеры которых соответствуют размеру клиентского окна. При каждом изменении размера окна клиента приложение создает дополнительную фоновую задачу для создания изображения для нового размера окна. Приложению не требуются эти промежуточные образы; для этого требуется только изображение для конечного размера окна. Чтобы приложение не выполняло эту дополнительную работу, можно отменить все активные задачи рисования в обработчиках сообщений для `WM_SIZE` сообщений и, `WM_SIZING` а затем перепланировать работу рисования после изменения размера окна.
 
-Для отмены активных задач рисования при изменении размера окна приложение вызывает метод [Concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) в обработчиках `WM_SIZING` `WM_SIZE` сообщений и. Обработчик для `WM_SIZE` сообщения также вызывает метод [Concurrency:: task_group:: wait](reference/task-group-class.md#wait) для ожидания завершения всех активных задач, а затем повторно планирует задачу рисования для обновленного размера окна.
+Для отмены активных задач рисования при изменении размера окна приложение вызывает метод [concurrency::task_group:: Cancel](reference/task-group-class.md#cancel) в обработчиках `WM_SIZING` `WM_SIZE` сообщений и. Обработчик для `WM_SIZE` сообщения также вызывает метод [concurrency::task_group:: wait](reference/task-group-class.md#wait) для ожидания завершения всех активных задач, а затем повторно планирует задачу рисования для обновленного размера окна.
 
 При удалении клиентского окна рекомендуется отменить все активные задачи рисования. Отмена любых активных задач рисования гарантирует, что рабочие потоки не передают сообщения в поток пользовательского интерфейса после уничтожения окна клиента. Приложение отменяет все активные задачи рисования в обработчике `WM_DESTROY` сообщения.
 
@@ -182,7 +182,7 @@ ms.locfileid: "87222697"
 
 ##### <a name="to-add-support-for-cancellation-in-the-mandelbrot-application"></a>Добавление поддержки отмены в приложение фрактала Мандельброта
 
-1. В Чилдвиев. h в **`protected`** разделе `CChildView` класса добавьте объявления для `OnSize` `OnSizing` `OnDestroy` функций схемы сообщений, и.
+1. В Чилдвиев.h в **`protected`** разделе `CChildView` класса добавьте объявления для `OnSize` `OnSizing` `OnDestroy` функций схемы сообщений, и.
 
    [!code-cpp[concrt-mandelbrot#201](../../parallel/concrt/codesnippet/cpp/walkthrough-removing-work-from-a-user-interface-thread_15.h)]
 

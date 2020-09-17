@@ -29,20 +29,20 @@ struct CMemoryState
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CMemoryState:: CMemoryState](#cmemorystate)|Создает структуру, похожую на класс, которая управляет контрольными точками памяти.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CMemoryState:: Checkpoint](#checkpoint)|Получает моментальный снимок (контрольная точка) текущего состояния памяти.|
 |[CMemoryState::D ифференце](#difference)|Вычисление разницы между двумя объектами типа `CMemoryState` .|
 |[CMemoryState::D Умпаллобжектссинце](#dumpallobjectssince)|Выводит сводку всех объектов, выделенных в данный момент с момента создания предыдущей контрольной точки.|
 |[CMemoryState::D Умпстатистикс](#dumpstatistics)|Печать статистики выделения памяти для `CMemoryState` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CMemoryState`является структурой и не имеет базового класса.
 
@@ -73,7 +73,7 @@ struct CMemoryState
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="cmemorystatecheckpoint"></a><a name="checkpoint"></a>CMemoryState:: Checkpoint
 
@@ -83,7 +83,7 @@ struct CMemoryState
 void Checkpoint();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CMemoryState`Функции элементов [различаются](#difference) и [DumpAllObjectsSince](#dumpallobjectssince) использовать эти данные моментального снимка.
 
@@ -125,7 +125,7 @@ BOOL Difference(
 
 Ненулевое значение, если два состояния памяти различаются; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для каждого из двух параметров состояния памяти должна быть вызвана [контрольная точка](#checkpoint) .
 
@@ -141,7 +141,7 @@ BOOL Difference(
 void DumpAllObjectsSince() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов `DumpAllObjectsSince` с неинициализированным `CMemoryState` объектом приведет к дампу всех объектов, находящихся в памяти в данный момент.
 
@@ -157,7 +157,7 @@ void DumpAllObjectsSince() const;
 void DumpStatistics() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отчет, который печатается на устройстве [афксдумп](diagnostic-services.md#afxdump) , содержит следующие сведения:
 

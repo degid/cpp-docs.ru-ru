@@ -42,7 +42,7 @@ ms.locfileid: "88845371"
 [_vsprintf_p, _vsprintf_p_l, _vswprintf_p, _vswprintf_p_l](../c-runtime-library/reference/vsprintf-p-vsprintf-p-l-vswprintf-p-vswprintf-p-l.md)\
 [vsprintf_s, _vsprintf_s_l, vswprintf_s, _vswprintf_s_l](../c-runtime-library/reference/vsprintf-s-vsprintf-s-l-vswprintf-s-vswprintf-s-l.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции `vprintf` выполняют те же действия, что и перечисленные в следующей таблице аналоги. Но при этом каждая функция `vprintf` принимает указатель на список аргументов, а их аналоги — сам список аргументов.
 

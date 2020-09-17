@@ -49,7 +49,7 @@ class CDebugReportHook
 |[CDebugReportHook::SetPipeName](#setpipename)|Вызовите этот метод, чтобы установить машину и название трубы, на которую будут отправлены отчеты об отладке.|
 |[CDebugReportHook::SetTimeout](#settimeout)|Вызовите этот метод, чтобы установить время в миллисекундах, что этот класс будет ждать, пока названная труба станет доступной.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создайте экземпляр этого класса в отладочных сборках ваших служб или приложений для отправки отчетов об отладке в названную трубу. Отчеты об ошибке генерируются путем вызова [_CrtDbgReport](../../c-runtime-library/reference/crtdbgreport-crtdbgreportw.md) или использования обертки для этой функции, такой как макросы [ATLTRACE](debugging-and-error-reporting-macros.md#atltrace) и [ATLASSERT.](debugging-and-error-reporting-macros.md#atlassert)
 
@@ -117,7 +117,7 @@ static int __cdecl CDebugReportHookProc(
 
 Возвращает FALSE, если крючок обрабатывает сообщение, о котором идет речь, так что никаких дополнительных отчетов не требуется. Возвращает TRUE, если `_CrtDbgReport` следует сообщить сообщение в обычном порядке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция отчетности пытается открыть названную трубу и связаться с процессом на другом конце. Если труба занята, функция отчетности будет ждать, пока труба не станет свободной или истекло тайм-аут. Тайм-аут может быть установлен конструктором или вызовом [на CDebugReportHook::SetTimeout](#settimeout).
 
@@ -131,7 +131,7 @@ static int __cdecl CDebugReportHookProc(
 void RemoveHook() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовы [_CrtSetReportHook2](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) для восстановления предыдущего крючка отчета.
 
@@ -143,7 +143,7 @@ void RemoveHook() throw();
 void SetHook() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовы [_CrtSetReportHook2,](../../c-runtime-library/reference/crtsetreporthook2-crtsetreporthookw2.md) чтобы отладить отчеты направляется через [CDebugReportHookProc](#cdebugreporthookproc) к названной трубе. Этот класс отслеживает предыдущий крюк отчета, чтобы он мог быть восстановлен при вызове [RemoveHook.](#removehook)
 

@@ -43,7 +43,7 @@ class auto_gcroot;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
 |[auto_gcroot:: auto_gcroot](#auto-gcroot)|`auto_gcroot`Конструктор.|
 |[auto_gcroot::~auto_gcroot](#tilde-auto-gcroot)|`auto_gcroot`Деструктор.
@@ -51,7 +51,7 @@ class auto_gcroot;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
 |[auto_gcroot::attach](#attach)|Присоединение `auto_gcroot` к объекту.|
 |[auto_gcroot::get](#get)|Возвращает содержащийся объект.|
@@ -61,13 +61,13 @@ class auto_gcroot;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |---------|-----------|
-|[auto_gcroot:: operator —&gt;](#operator-arrow)|Оператор доступа к члену.|  
+|[auto_gcroot::operator-&gt;](#operator-arrow)|Оператор доступа к члену.|  
 |[auto_gcroot::operator=](#operator-assign)|Оператор присвоения.|
-|[auto_gcroot:: operator &nbsp; auto_gcroot](#operator-auto-gcroot)|Оператор приведения типа между `auto_gcroot` и совместимыми типами.|
-|[auto_gcroot:: operator &nbsp; bool](#operator-bool)|Оператор для использования `auto_gcroot` в условном выражении.|  
-|[auto_gcroot:: operator!](#operator-logical-not)|Оператор для использования `auto_gcroot` в условном выражении.|
+|[auto_gcroot::operator &nbsp; auto_gcroot](#operator-auto-gcroot)|Оператор приведения типа между `auto_gcroot` и совместимыми типами.|
+|[auto_gcroot::operator &nbsp; bool](#operator-bool)|Оператор для использования `auto_gcroot` в условном выражении.|  
+|[auto_gcroot::operator!](#operator-logical-not)|Оператор для использования `auto_gcroot` в условном выражении.|
 
 ## <a name="requirements"></a>Требования
 
@@ -100,7 +100,7 @@ auto_gcroot(
 *_right*<br/>
 Существующий `auto_gcroot`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При построении `auto_gcroot` из существующего `auto_gcroot` `auto_gcroot` объекта существующий освобождает его объект до передачи владения объектом в новый `auto_gcroot` .
 
@@ -199,7 +199,7 @@ done
 ~auto_gcroot();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор также деструктуре принадлежащего объекта.
 
@@ -264,7 +264,7 @@ auto_gcroot<_element_type> & attach(
 
 Текущая версия `auto_gcroot`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `_right` параметр имеет значение `auto_gcroot` , он освобождает владение объектом до того, как объект присоединяется к текущему объекту `auto_gcroot` .
 
@@ -563,7 +563,7 @@ s1 = 'string one', s2 = 'string two'
 s1 = 'string two', s2 = 'string one'
 ```
 
-## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a>auto_gcroot:: operator —&gt;
+## <a name="auto_gcrootoperator-gt"></a><a name="operator-arrow"></a>auto_gcroot::operator-&gt;
 
 Оператор доступа к члену.
 
@@ -612,7 +612,7 @@ Hello from first A!
 a->m_i = 5
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a>auto_gcroot:: operator =
+## <a name="auto_gcrootoperator"></a><a name="operator-assign"></a>auto_gcroot::operator=
 
 Оператор присвоения.
 
@@ -704,7 +704,7 @@ done
 in ClassA destructor: third
 ```
 
-## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a>auto_gcroot:: operator auto_gcroot
+## <a name="auto_gcrootoperator-auto_gcroot"></a><a name="operator-auto-gcroot"></a>auto_gcroot::operator auto_gcroot
 
 Оператор приведения типа между `auto_gcroot` и совместимыми типами.
 
@@ -759,7 +759,7 @@ Hello from first B!
 Hello from first A!
 ```
 
-## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a>auto_gcroot:: operator bool
+## <a name="auto_gcrootoperator-bool"></a><a name="operator-bool"></a>auto_gcroot::operator bool
 
 Оператор для использования `auto_gcroot` в условном выражении.
 
@@ -771,7 +771,7 @@ operator bool() const;
 
 **`true`** значение, если упакованный объект является допустимым; **`false`** в противном случае — значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор фактически преобразует в `_detail_class::_safe_bool` , что является более безопасным, чем, **`bool`** так как его нельзя преобразовать в целочисленный тип.
 
@@ -804,7 +804,7 @@ now s is valid
 now s is invalid
 ```
 
-## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a>auto_gcroot:: operator!
+## <a name="auto_gcrootoperator"></a><a name="operator-logical-not"></a>auto_gcroot::operator!
 
 Оператор для использования `auto_gcroot` в условном выражении.
 

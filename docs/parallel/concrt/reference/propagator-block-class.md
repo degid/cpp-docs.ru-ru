@@ -55,27 +55,27 @@ public ITarget<typename _SourceLinkRegistry::type::source_type>;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`source_iterator`|Тип итератора для `source_link_manager` для этого `propagator_block`.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[propagator_block](#ctor)|Формирует объект `propagator_block`.|
 |[Деструктор ~ propagator_block](#dtor)|Уничтожает объект `propagator_block`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[распространения](#propagate)|Асинхронно передает сообщение из исходного блока в этот целевой блок.|
 |[send](#send)|Синхронно инициирует сообщение для этого блока. Вызывается блоком `ISource`. По завершении этой функции сообщение уже будет распространено в блок.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[decline_incoming_messages](#decline_incoming_messages)|Указывает блоку, что следует отклонять новые сообщения.|
 |[initialize_source_and_target](#initialize_source_and_target)|Инициализирует базовый объект. В частности, необходимо инициализировать объект `message_processor`.|
@@ -88,7 +88,7 @@ public ITarget<typename _SourceLinkRegistry::type::source_type>;
 |[unlink_source](#unlink_source)|Отменяет связь указанного исходного блока с этим `propagator_block` объектом.|
 |[unlink_sources](#unlink_sources)|Отменяет связь со всеми исходными блоками этого `propagator_block` объекта. (Переопределяет метод [ITarget:: unlink_sources](itarget-class.md#unlink_sources).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы избежать множественного наследования, класс `propagator_block` наследует от класса `source_block` и `ITarget` абстрактного класса. Большая часть функциональных возможностей класса `target_block` реплицируется здесь.
 
@@ -116,7 +116,7 @@ public ITarget<typename _SourceLinkRegistry::type::source_type>;
 void decline_incoming_messages();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается деструктором, чтобы гарантировать отклонение новых сообщений в процессе уничтожения.
 
@@ -186,7 +186,7 @@ virtual message_status propagate(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод `propagate` вызывается в целевом блоке связанным исходным блоком. Она помещает в очередь асинхронную задачу для работы с сообщением, если она еще не находится в очереди или не исполняется.
 
@@ -273,7 +273,7 @@ virtual message_status send(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_PMessage` или `_PSource` имеет значение `NULL`.
 
@@ -291,7 +291,7 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот блок возвращает `declined`, если только они не переопределены производным классом.
 

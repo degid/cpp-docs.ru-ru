@@ -66,7 +66,7 @@ void * _aligned_realloc(
 
 Будет ошибкой повторно выделить память и изменить выравнивание блока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **_aligned_realloc** основан на **malloc**. Дополнительные сведения об использовании **_aligned_offset_malloc**см. в разделе [malloc](malloc.md).
 

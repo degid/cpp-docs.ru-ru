@@ -45,13 +45,13 @@ struct _ATL_MODULE70 {
 `m_csStaticDataInitAndTypeInfo`<br/>
 Используется для координации доступа к внутренним данным в многопоточных ситуациях.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [_ATL_MODULE](atl-typedefs.md#_atl_module) определяется как typedef для `_ATL_MODULE70`.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

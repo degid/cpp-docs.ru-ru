@@ -64,7 +64,7 @@ class COleConvertDialog : public COleDialog
 |----------|-----------------|
 |[ColeConvertДиалог:::m_cv](#m_cv)|Структура, контролирующая поведение диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Этот класс используется с генерируемым приложением Wizard.?
@@ -127,7 +127,7 @@ explicit COleConvertDialog (
 *pParentWnd*<br/>
 Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов устанавливается на основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
 
@@ -150,7 +150,7 @@ BOOL DoConvert(COleClientItem* pItem);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент преобразуется или активируется в соответствии с информацией, выбранной пользователем в диалоговом поле Convert.
 
@@ -172,7 +172,7 @@ virtual INT_PTR DoModal();
 
 - IDABORT, если произошла ошибка. Если IDABORT возвращается, позвоните в функцию [COleDialog::GetLastError,](../../mfc/reference/coledialog-class.md#getlasterror) чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIConvert](/windows/win32/api/oledlg/nf-oledlg-oleuiconvertw) можно узнать в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [структуры m_cv,](#m_cv) вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
 
@@ -190,7 +190,7 @@ REFCLSID GetClassID() const;
 
 CLSID, связанный с элементом, выбранным в диалоговом окне Convert.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
 
@@ -212,7 +212,7 @@ DVASPECT GetDrawAspect() const;
 
 - DVASPECT_ICON возвращена, если проверка флажка Display As As Icon.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
 
@@ -242,7 +242,7 @@ UINT GetSelectionType() const;
 
 Тип выбора сделан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значения типа возврата определяются `Selection` типом перечисления, `COleConvertDialog` объявленным в классе.
 
@@ -270,7 +270,7 @@ enum Selection {
 OLEUICONVERT m_cv;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Члены этой структуры могут быть изменены либо непосредственно, либо через функции членов.
 

@@ -29,14 +29,14 @@ class cancellation_token_registration;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[cancellation_token_registration](#ctor)||
 |[Деструктор ~ cancellation_token_registration](#dtor)||
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[operator!=](#operator_neq)||
 |[оператор=](#operator_eq)||
@@ -48,7 +48,7 @@ class cancellation_token_registration;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** pplcancellation_token. h
+**Заголовок:** pplcancellation_token.h
 
 **Пространство имен:** concurrency
 
@@ -73,7 +73,7 @@ cancellation_token_registration(cancellation_token_registration&& _Src);
 *_Src*<br/>
 `cancellation_token_registration` для копирования или перемещения.
 
-## <a name="operator_neq"></a>operator! =
+## <a name="operator_neq"></a>operator!=
 
 ```cpp
 bool operator!= (const cancellation_token_registration& _Rhs) const;

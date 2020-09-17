@@ -101,7 +101,7 @@ class CMFCRibbonStatusBar : public CMFCRibbonBar
 |----------|-----------------|
 |[CMFCRibbonStatusBar::OndrawInformation](#ondrawinformation)|Отображает строку информации, которая отображается на строке состояния ленты при включении информационного режима.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Пользователи могут изменить видимость элементов ленты на ленте статус бар с помощью встроенного контекстного меню для ленты статус бар. Вы можете добавлять или удалять элементы динамически.
 
@@ -149,7 +149,7 @@ void AddDynamicElement(CMFCRibbonBaseElement* pElement);
 *pElement*<br/>
 (в) Указатель на динамический элемент.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отличие от обычных элементов, динамические элементы не настраиваются и настраиваемое меню панели статуса не отображает их.
 
@@ -197,7 +197,7 @@ void AddExtendedElement(
 *bIsVisible*<br/>
 (в) ПРАВДА, если вы хотите добавить элемент, как видимые, FALSE, если вы хотите добавить элемент как скрытый.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Расширенная область находится в правой части элемента управления состоянием строки.
 
@@ -209,7 +209,7 @@ void AddExtendedElement(
 void AddSeparator();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа добавляет сепаратор по методу [CMFCRibbonStatusBar::AddElement](#addelement). вставляет последний элемент.
 
@@ -284,7 +284,7 @@ CMFCRibbonBaseElement* FindByID(UINT uiCmdID, BOOL = TRUE);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarfindelement"></a><a name="findelement"></a>CMFCRibbonStatusBar::FindElement
 
@@ -332,7 +332,7 @@ CMFCRibbonBaseElement* GetElement(int nIndex);
 
 Указатель на элемент, расположенный в указанном индексе. NULL, если индекс отрицательный или превышает количество элементов в панели статуса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbargetexcount"></a><a name="getexcount"></a>CMFCRibbonStatusBar::GetExCount
 
@@ -363,7 +363,7 @@ CMFCRibbonBaseElement* GetExElement(int nIndex);
 
 Указатель на элемент, расположенный по заданному индексу в расширенной области строки состояния ленты. NULL, если *nIndex* отрицательный или превышает количество элементов в расширенной области ленты статус бар.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbargetextendedarea"></a><a name="getextendedarea"></a>CMFCRibbonStatusBar::GetExtendedArea
 
@@ -379,7 +379,7 @@ virtual BOOL GetExtendedArea(CRect& rect) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbargetspace"></a><a name="getspace"></a>CMFCRibbonStatusBar::GetSpace
 
@@ -391,7 +391,7 @@ int GetSpace() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarisbottomframe"></a><a name="isbottomframe"></a>CMFCRibbonStatusBar::IsbottomFrame
 
@@ -403,7 +403,7 @@ BOOL IsBottomFrame() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarisextendedelement"></a><a name="isextendedelement"></a>CMFCRibbonStatusBar::IsExtendedElement
 
@@ -419,7 +419,7 @@ BOOL IsExtendedElement(CMFCRibbonBaseElement* pElement) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarisinformationmode"></a><a name="isinformationmode"></a>CMFCRibbonStatusBar::IsinformationMode
 
@@ -433,7 +433,7 @@ BOOL IsInformationMode() const;
 
 TRUE, если панель статуса может работать в информационном режиме; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В информационном режиме строка состояния скрывает все обычные панели и отображает строку сообщения.
 
@@ -459,7 +459,7 @@ virtual void OnDrawInformation(
 *rectInfo*<br/>
 (в) Ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, если вы хотите настроить внешний вид строки информации на строке статуса. Используйте [метод CMFCRibbonStatusBar::SetInformation,](#setinformation) чтобы поместить планку статуса в информационном режиме. В этом режиме строка состояния скрывает все панели и отображает строку информации, указанную *strInfo.*
 
@@ -471,7 +471,7 @@ virtual void OnDrawInformation(
 virtual void RecalcLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarremoveall"></a><a name="removeall"></a>CMFCRibbonStatusBar::RemoveAll
 
@@ -511,7 +511,7 @@ void SetInformation(LPCTSTR lpszInfo);
 *lpszInfo*<br/>
 (в) Информационная строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы поместить панель статуса в информационном режиме. В этом режиме строка состояния скрывает все панели и отображает строку информации, указанную *lpszInfo.*
 

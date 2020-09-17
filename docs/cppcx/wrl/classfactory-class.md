@@ -61,7 +61,7 @@ class ClassFactory :
 *I2*<br/>
 Второй интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется `ClassFactory` для предоставления определяемой пользователем фабрики.
 
@@ -110,7 +110,7 @@ name                                            | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 
@@ -154,7 +154,7 @@ STDMETHOD(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ClassFactory`отслеживает объекты в базовом экземпляре класса [module](module-class.md) .
 

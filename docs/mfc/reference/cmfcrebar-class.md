@@ -64,7 +64,7 @@ class CMFCReBar : public CPane
 |[CMFCReBar::OnUpdateCmdUI](#onupdatecmdui)|(Оверлет [CBasePane::OnUpdateCmdUI](cbasepane-class.md).)|
 |[CMFCReBar::SetPaneAlignment](#setpanealignment)|(Переопределяет [CBasePane::SetPaneAlignment](../../mfc/reference/cbasepane-class.md#setpanealignment).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект `CMFCReBar` может содержать различные детские окна. Это включает в себя отодевать коробки, панели инструментов и списки. Вы можете изменить размер арматы программно, или пользователь может вручную изменить размер арматы, перетащив ее сцепление бар. Вы также можете установить фон арматы объекта на бит-карту по вашему выбору.
 
@@ -163,7 +163,7 @@ BOOL Create(
 
 ПРАВДА, если армата была создана успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebargetrebarctrl"></a><a name="getrebarctrl"></a>CMFCRebar:GetrebarCtrl
 
@@ -177,7 +177,7 @@ CReBarCtrl& GetReBarCtrl() const;
 
 Ссылка на основной `CReBarCtrl` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы воспользоваться общей функциональностью управления арматой Windows при настройке армазы.
 
@@ -196,7 +196,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebarcanfloat"></a><a name="canfloat"></a>CMFCReBar:CanFloat
 
@@ -206,7 +206,7 @@ virtual BOOL CanFloat() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebarenabledocking"></a><a name="enabledocking"></a>CMFCReBar::EnableDocking
 
@@ -218,7 +218,7 @@ void EnableDocking(DWORD dwDockStyle);
 
 (в) *dwDockStyle*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebargetrebarbandinfosize"></a><a name="getrebarbandinfosize"></a>CMFCRebar:GetrebarBandinfosize
 
@@ -228,7 +228,7 @@ UINT GetReBarBandInfoSize() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebaronshowcontrolbarmenu"></a><a name="onshowcontrolbarmenu"></a>CMFCRebar::OnShowControlbarMenu
 
@@ -242,7 +242,7 @@ virtual BOOL OnShowControlBarMenu(CPoint);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebarontoolhittest"></a><a name="ontoolhittest"></a>CMFCRebar::Ontoolhittest
 
@@ -259,7 +259,7 @@ virtual INT_PTR OnToolHitTest(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebaronupdatecmdui"></a><a name="onupdatecmdui"></a>CMFCReBar::OnUpdateCmdUI
 
@@ -274,7 +274,7 @@ virtual void OnUpdateCmdUI(
 (в) *pTarget*<br/>
 (в) *bDisableIfNoHndler*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcrebarsetpanealignment"></a><a name="setpanealignment"></a>CMFCReBar::SetPaneAlignment
 
@@ -286,7 +286,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 
 (в) *dwAlignment*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -142,7 +142,7 @@ struct CDaoFieldInfo
 *m_strDefaultValue*<br/>
 Значение по умолчанию объекта поля DAO. При создании новой записи параметр свойства DefaultValue автоматически вводится в качестве значения для поля. Подробнее о ней читайте в справке DAO". Вы можете установить это свойство для таблицы с [CDaoTableDef::CreateField](../../mfc/reference/cdaotabledef-class.md#createfield).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ссылки на Первоначальное, Среднее, и все выше `GetFieldInfo` перечисление, как информация возвращается функцией участника в классах [CDaoTableDef](../../mfc/reference/cdaotabledef-class.md#getfieldinfo), [CDao-КуириDef](../../mfc/reference/cdaoquerydef-class.md#getfieldinfo), и [CDaoRecordset](../../mfc/reference/cdaorecordset-class.md#getfieldinfo).
 

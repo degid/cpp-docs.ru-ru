@@ -36,7 +36,7 @@ static WORD HRESULTToWCode(
 
 16-разрядный `wCode` сопоставляется с 32-битным значением HRESULT.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [_com_error:: wCode](../cpp/com-error-wcode.md) .
 

@@ -62,7 +62,7 @@ class ICollectionOnSTLImpl : public T
 |----------|-----------------|
 |[ICollectionOnSTLImpl::m_coll](#m_coll)|Коллекция.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс обеспечивает реализацию для трех методов интерфейса сбора: [getcount,](#get_count) [get_Item](#get_item)и [get__NewEnum.](#newenum)
 
@@ -128,7 +128,7 @@ STDMETHOD(get_Item)(long Index, ItemType* pvar);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент получен путем копирования данных в указанном положении в [m_coll](#m_coll) используя метод копирования `ICollectionOnSTLImpl` класса [политики копирования,](../../atl/atl-copy-policy-classes.md) переданный в качестве аргумента шаблона в специализации.
 
@@ -149,7 +149,7 @@ STDMETHOD(get__NewEnum)(IUnknown** ppUnk);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вновь созданный регистратор поддерживает итератор в оригинальной коллекции `m_coll`(так что копия не производится) и содержит ссылку COM на объект коллекции, чтобы убедиться, что коллекция остается в живых, пока есть выдающиеся регистраторы.
 

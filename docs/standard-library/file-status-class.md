@@ -81,7 +81,7 @@ file_status(file_status&&) noexcept = default;
 *file_status*\
 Сохраненный объект.
 
-## <a name="op_as"></a>file_status:: operator =
+## <a name="op_as"></a>file_status::operator=
 
 Операторы-члены присваивания по умолчанию работают корректно.
 

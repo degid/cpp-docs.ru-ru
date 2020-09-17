@@ -53,8 +53,8 @@ unsigned char _BitScanReverse64(
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`_BitScanReverse`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_BitScanReverse64`|ARM64, x64|\<> Intrin. h|
+|`_BitScanReverse`|x86, ARM, x64, ARM64|\<> Intrin.h|
+|`_BitScanReverse64`|ARM64, x64|\<> Intrin.h|
 
 ## <a name="example"></a>Пример
 

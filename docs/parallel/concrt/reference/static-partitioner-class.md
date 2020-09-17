@@ -29,7 +29,7 @@ class static_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[static_partitioner](#ctor)|Формирует объект `static_partitioner`.|
 |[Деструктор ~ static_partitioner](#dtor)|Уничтожает объект `static_partitioner`.|
@@ -40,7 +40,7 @@ class static_partitioner;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** PPL. h
+**Заголовок:** PPL.h
 
 **Пространство имен:** concurrency
 

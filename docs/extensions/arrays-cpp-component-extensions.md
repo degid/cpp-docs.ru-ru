@@ -70,7 +70,7 @@ ms.locfileid: "80182244"
 *initialization-list*<br/>
 (Необязательно) Разделенный запятыми список инициализирующих элементы массива значений в фигурных скобках. Например, если *rank-size-list* имеет значение `(3)`, т. е. объявляется одномерным массивом из 3 элементов, *initialization-list* может иметь вид `{1,2,3}`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Во время компиляции с помощью `__is_ref_array(type)` можно определить, является ли тип массивом с подсчетом ссылок. Подробные сведения см. в статье [Compiler Support for Type Traits (C++/CLI and C++/CX)](compiler-support-for-type-traits-cpp-component-extensions.md) (Поддержка характеристик типов компилятором (C++/CLI and C++/CX)).
 
@@ -131,7 +131,7 @@ int main() {
 
 Например, если *rank-size-list* имеет значение `(3)`, т. е. объявляется одномерным массивом из 3 элементов, *initialization-list* может иметь вид `{1,2,3}`. Если параметр *rank-size-list* имеет значение `(3,2,4)`, т. е. объявляется трехмерным массивом с 3 элементами в первом измерении, 2 элементами во втором и 4 элементами в третьем, то параметр *initialization-list* может иметь вид `{{1,2,3},{0,0},{-5,10,-21,99}}`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **Массив** находится в пространстве имен [Platform, default, and cli Namespaces](platform-default-and-cli-namespaces-cpp-component-extensions.md).
 

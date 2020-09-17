@@ -48,7 +48,7 @@ class wstring_convert
 *Elem*\
 Тип двухбайтового элемента.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, который управляет преобразованием между строковыми объектами класса `std::basic_string<Elem>` и строкового объекта класса `std::basic_string<char>` (также известного как `std::string` ). Шаблон класса определяет типы `wide_string` и `byte_string` синонимы для этих двух типов. Преобразование между последовательностями значений `Elem` (хранятся в объекте `wide_string`) и многобайтовыми последовательностями (хранятся в объекте `byte_string`) выполняется объектом класса `Codecvt<Elem, char, std::mbstate_t>`, который соответствует требованиям аспекта стандартного преобразования кода `std::codecvt<Elem, char, std::mbstate_t>`.
 
@@ -102,7 +102,7 @@ class wstring_convert
 typedef std::basic_string<char> byte_string;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом `std::basic_string<char>`.
 
@@ -118,7 +118,7 @@ size_t converted() const;
 
 Число успешных преобразований.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Число успешных преобразований хранится в объекте счетчика преобразований.
 
@@ -138,23 +138,23 @@ wide_string from_bytes(const char* first, const char* last);
 *Двухбайтовых*\
 Последовательность одноэлементных байт для преобразования.
 
-*указатель*\
+*ptr*\
 Последовательность символов в стиле С, оканчивающаяся нулем, для преобразования.
 
 *Освобождаемой*\
 Строка [byte_string](#byte_string) для преобразования.
 
-*началь*\
+*first*\
 Первый символ в диапазоне символов для преобразования.
 
-*Последняя*\
+*last*\
 Последний символ в диапазоне символов для преобразования.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Объект строки двухбайтовых символов, полученный в результате преобразования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект [состояния преобразования](../standard-library/wstring-convert-class.md) *не* был создан с явно заданным значением, то перед началом преобразования ему присваивается значение по умолчанию (исходное состояние преобразования). В противном случае он остается неизменным.
 
@@ -168,7 +168,7 @@ wide_string from_bytes(const char* first, const char* last);
 typedef typename wide_string::traits_type::int_type int_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом `wide_string::traits_type::int_type`.
 
@@ -184,7 +184,7 @@ state_type state() const;
 
 Объект [состояния преобразования](../standard-library/wstring-convert-class.md), который представляет состояние преобразования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="wstring_convertstate_type"></a><a name="state_type"></a> wstring_convert:: state_type
 
@@ -194,7 +194,7 @@ state_type state() const;
 typedef typename Codecvt::state_type state_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип описывает объект, который может представлять состояние преобразования. Тип является синонимом `Codecvt::state_type`.
 
@@ -220,13 +220,13 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 *встр*\
 Строка [wide_string](#wide_string) для преобразования.
 
-*началь*\
+*first*\
 Первый элемент в диапазоне преобразуемых элементов.
 
-*Последняя*\
+*last*\
 Последний элемент в диапазоне преобразуемых элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект [состояния преобразования](../standard-library/wstring-convert-class.md) *не* был создан с явно заданным значением, то перед началом преобразования ему присваивается значение по умолчанию (исходное состояние преобразования). В противном случае он остается неизменным.
 
@@ -240,7 +240,7 @@ byte_string to_bytes(const Elem* first, const Elem* last);
 typedef std::basic_string<Elem> wide_string;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом `std::basic_string<Elem>`.
 
@@ -268,6 +268,6 @@ wstring_convert(const byte_string& _Berr, const wide_string& Werr = wide_string(
 *верр*\
 Объект [wide_string](#wide_string) для отображения ошибок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор сохраняет *Pcvt_arg* в [объекте преобразования](../standard-library/wstring-convert-class.md)

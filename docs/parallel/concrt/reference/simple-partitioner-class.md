@@ -29,7 +29,7 @@ class simple_partitioner;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[simple_partitioner](#ctor)|Формирует объект `simple_partitioner`.|
 |[Деструктор ~ simple_partitioner](#dtor)|Уничтожает объект `simple_partitioner`.|
@@ -40,7 +40,7 @@ class simple_partitioner;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** PPL. h
+**Заголовок:** PPL.h
 
 **Пространство имен:** concurrency
 

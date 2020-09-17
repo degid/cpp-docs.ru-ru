@@ -44,7 +44,7 @@ class CMiniFrameWnd : public CFrameWnd
 |[CMiniFrameWnd::Создание](#create)|Создает `CMiniFrameWnd` объект после строительства.|
 |[CMiniFrameWnd::CreateEx](#createex)|Создает `CMiniFrameWnd` объект (с дополнительными опциями) после строительства.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти окна мини-рамки ведут себя как обычные окна кадра, за исключением того, что они не имеют минимизации / максимизировать кнопки или меню, и вы только должны одним нажатием на меню системы, чтобы уволить их.
 
@@ -76,7 +76,7 @@ class CMiniFrameWnd : public CFrameWnd
 CMiniFrameWnd();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы создать окно, позвоните [cMiniFrameWnd::Create](#create).
 
@@ -142,7 +142,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Create`инициализация имени класса окна и имени окна и регистрирует значения по умолчанию для его стиля и родительского значения.
 
@@ -188,7 +188,7 @@ virtual BOOL CreateEx(
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметры `CreateEx` определяют WNDCLASS, стиль окна и (по желанию) исходное положение и размер окна. `CreateEx`также указывается родитель окна (если таковые имеется) и идентификатор.
 

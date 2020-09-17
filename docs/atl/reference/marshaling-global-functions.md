@@ -28,7 +28,7 @@ ms.locfileid: "88835328"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlfreemarshalstream"></a><a name="atlfreemarshalstream"></a> атлфримаршалстреам
 
@@ -73,7 +73,7 @@ HRESULT AtlMarshalPtrInProc(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Флаг MSHLFLAGS_TABLESTRONG установлен таким образом, чтобы можно было маршалировать указатель на несколько потоков. Указатель также можно распаковать несколько раз.
 

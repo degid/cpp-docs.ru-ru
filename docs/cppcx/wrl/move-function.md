@@ -39,7 +39,7 @@ inline typename RemoveReference<T>::Type&& Move(
 
 Параметр *arg* после удаления ссылки или ссылочного значения rvalue, если таковые имеются, были удалены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Перемещает указанный аргумент из одного расположения в другое.
 
@@ -47,7 +47,7 @@ inline typename RemoveReference<T>::Type&& Move(
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

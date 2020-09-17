@@ -30,7 +30,7 @@ type
 *type*<br/>
 Тип переключателя может быть целым числом, символом, логическим значением или типом перечисления.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **switch_type** C++ имеет те же функциональные возможности, что и атрибут [switch_type](/windows/win32/Midl/switch-type) MIDL.
 

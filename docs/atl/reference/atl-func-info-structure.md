@@ -45,7 +45,7 @@ struct _ATL_FUNC_INFO {
 `pVarTypes`<br/>
 Массив вариативных типов параметров функции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Внутри библиотека ATL использует эту структуру для хранения информации, полученной из библиотеки типов. Вам может потребоваться манипулировать этой структурой напрямую, если указать сведения о типе для обработчика событий, используемого с классом [IDispEventSimpleImpl](../../atl/reference/idispeventsimpleimpl-class.md) и [SINK_ENTRY_INFO](composite-control-macros.md#sink_entry_info) макросе.
 

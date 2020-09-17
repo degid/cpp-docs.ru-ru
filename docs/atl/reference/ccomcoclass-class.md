@@ -49,7 +49,7 @@ class CComCoClass
 |[CComCoClass:GetObjectCLSID](#getobjectclsid)|(Статик) Возвращает идентификатор класса объекта.|
 |[CComCoClass::GetObjectОписание](#getobjectdescription)|(Статик) Переопределение, чтобы вернуть описание объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComCoClass`предоставляет методы для извлечения CLSID объекта, настройки информации об ошибках и создания экземпляров класса. Любой класс, зарегистрированный на карте `CComCoClass`объектов, должен быть выведен из.
 
@@ -94,7 +94,7 @@ static HRESULT CreateInstance(IUnknown* punkOuter, Q** pp);
 
 Стандартное значение HRESULT. См [CoCreateInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) в SDK Windows для описания возможных значений возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте первую перегрузку этой функции для создания типичных объектов; использовать вторую перегрузку, когда вам нужно агрегировать создаваемый объект.
 
@@ -181,7 +181,7 @@ static HRESULT Error(
 
 Стандартное значение HRESULT. Дополнительные сведения см. в разделе "Заметки".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для `Error`вызова объект должен `ISupportErrorInfo Interface` реализовать интерфейс.
 
@@ -211,7 +211,7 @@ static LPCTSTR WINAPI GetObjectDescription();
 
 Описание объекта класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию возвращает NULL. Этот метод можно переопределить с помощью [макроса DECLARE_OBJECT_DESCRIPTION.](object-map-macros.md#declare_object_description) Пример:
 

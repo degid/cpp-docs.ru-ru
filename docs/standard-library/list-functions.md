@@ -28,9 +28,9 @@ template <class T, class Allocator>
 *left*\
 Объект типа `list`.
 
-*справа*\
+*right*\
 Объект типа `list`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Шаблонная функция выполняет `left.swap(right)`.

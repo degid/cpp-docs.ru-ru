@@ -49,9 +49,9 @@ class COleCurrency
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[COleCurrency:: Format](#format)|Формирует форматированное строковое представление `COleCurrency` объекта.|
+|[COleCurrency::Format](#format)|Формирует форматированное строковое представление `COleCurrency` объекта.|
 |[COleCurrency::/Status](#getstatus)|Возвращает состояние (допустимость) данного `COleCurrency` объекта.|
 |[COleCurrency::P Арсекурренци](#parsecurrency)|Считывает значение валюты из строки и задает значение `COleCurrency` .|
 |[COleCurrency:: Сеткурренци](#setcurrency)|Задает значение этого `COleCurrency` объекта.|
@@ -61,7 +61,7 @@ class COleCurrency
 
 |Имя|Описание|
 |----------|-----------------|
-|[Оператор =](#operator_eq)|Копирует `COleCurrency` значение.|
+|[operator=](#operator_eq)|Копирует `COleCurrency` значение.|
 |[operator +,-](#operator_plus_minus)|Добавляет, вычитает и изменяет знак `COleCurrency` значений.|
 |[operator + =,-=](#operator_plus_minus_eq)|Добавляет и вычитает `COleCurrency` значение из этого `COleCurrency` объекта.|
 |[Оператор */](#operator_star)|Масштабирует `COleCurrency` значение с помощью целочисленного значения.|
@@ -144,7 +144,7 @@ COleCurrency(
 
 [!code-cpp[NVC_MFCOleContainer#10](../../mfc/codesnippet/cpp/colecurrency-class_1.cpp)]
 
-## <a name="colecurrencyformat"></a><a name="format"></a>COleCurrency:: Format
+## <a name="colecurrencyformat"></a><a name="format"></a>COleCurrency::Format
 
 Вызовите эту функцию-член, чтобы создать форматированное представление значения валюты.
 
@@ -294,7 +294,7 @@ enum CurrencyStatus{
 > [!CAUTION]
 > Этот элемент данных предназначен для более сложных сценариев программирования. Следует использовать встроенные функции элементов с параметром " [Status](#getstatus) " и [SetStatus](#setstatus). Дополнительные `SetStatus` предостережения относительно явного задания этого элемента данных см. в разделе.
 
-## <a name="colecurrencyoperator-"></a><a name="operator_eq"></a>COleCurrency:: operator =
+## <a name="colecurrencyoperator-"></a><a name="operator_eq"></a>COleCurrency::operator=
 
 Эти перегруженные операторы присваивания копируют значение исходной валюты в этот `COleCurrency` объект.
 
@@ -320,7 +320,7 @@ const COleCurrency& operator=(const VARIANT& varSrc);
 
 [!code-cpp[NVC_MFCOleContainer#15](../../mfc/codesnippet/cpp/colecurrency-class_4.cpp)]
 
-## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus"></a>COleCurrency:: operator +,-
+## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus"></a>COleCurrency::operator+,-
 
 Эти операторы позволяют добавлять и вычитать два `COleCurrency` значения между собой и для изменения знака `COleCurrency` значения.
 
@@ -344,7 +344,7 @@ COleCurrency operator-() const;
 
 [!code-cpp[NVC_MFCOleContainer#16](../../mfc/codesnippet/cpp/colecurrency-class_5.cpp)]
 
-## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus_eq"></a>COleCurrency:: operator + =,-=
+## <a name="colecurrencyoperator---"></a><a name="operator_plus_minus_eq"></a>COleCurrency::operator+=,-=
 
 Позволяет добавлять и вычитать `COleCurrency` значения из этого `COleCurrency` объекта.
 
@@ -367,7 +367,7 @@ const COleCurrency& operator-=(const COleCurrency& cur);
 
 [!code-cpp[NVC_MFCOleContainer#17](../../mfc/codesnippet/cpp/colecurrency-class_6.cpp)]
 
-## <a name="colecurrencyoperator--and-"></a><a name="operator_star"></a>COleCurrency:: operator \* и/
+## <a name="colecurrencyoperator--and-"></a><a name="operator_star"></a>COleCurrency::operator \* и/
 
 Позволяет масштабировать `COleCurrency` значение по целочисленному значению.
 
@@ -390,7 +390,7 @@ COleCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_MFCOleContainer#18](../../mfc/codesnippet/cpp/colecurrency-class_7.cpp)]
 
-## <a name="colecurrencyoperator--"></a><a name="operator_star_div_eq"></a>COleCurrency:: operator \* =,/=
+## <a name="colecurrencyoperator--"></a><a name="operator_star_div_eq"></a>COleCurrency::operator \* =,/=
 
 Позволяет масштабировать это `COleCurrency` значение по целочисленному значению.
 
@@ -413,7 +413,7 @@ const COleCurrency& operator/=(long nOperand);
 
 [!code-cpp[NVC_MFCOleContainer#19](../../mfc/codesnippet/cpp/colecurrency-class_8.cpp)]
 
-## <a name="colecurrencyoperator-ltlt-gtgt"></a><a name="operator_stream"></a>COleCurrency:: operator &lt; &lt; ,&gt;&gt;
+## <a name="colecurrencyoperator-ltlt-gtgt"></a><a name="operator_stream"></a>COleCurrency::operator &lt; &lt; ,&gt;&gt;
 
 Поддерживает дампы и хранение в архиве.
 

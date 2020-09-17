@@ -49,19 +49,19 @@ class float_2;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`value_type`||
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор float_2](#ctor)|Перегружен. Конструктор по умолчанию инициализирует все элементы значением 0.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |float_2::get_x||
 |float_2::get_xy||
@@ -78,26 +78,26 @@ class float_2;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|float_2:: operator —||
-|float_2:: operator--||
-|float_2:: operator * =||
-|float_2:: operator/=||
-|float_2:: operator + +||
-|float_2:: operator + =||
-|float_2:: operator =||
-|float_2:: operator-=||
+|float_2::operator-||
+|float_2::operator--||
+|float_2::operator*=||
+|float_2::operator/=||
+|float_2::operator++||
+|float_2::operator+=||
+|float_2::operator=||
+|float_2::operator-=||
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа размера](#float_2__size)||
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |float_2:: g||
 |float_2:: GR||
@@ -114,9 +114,9 @@ class float_2;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="ctor"></a>float_2
 

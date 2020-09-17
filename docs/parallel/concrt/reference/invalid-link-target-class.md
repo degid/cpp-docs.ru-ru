@@ -29,7 +29,7 @@ class invalid_link_target : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[invalid_link_target](#ctor)|Перегружен. Создает объект `invalid_link_target`.|
 
@@ -41,7 +41,7 @@ class invalid_link_target : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

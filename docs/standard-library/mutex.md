@@ -24,7 +24,7 @@ ms.locfileid: "88838558"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > В коде, компилируемом с помощью **/CLR**, этот заголовок блокируется.
@@ -51,7 +51,7 @@ ms.locfileid: "88838558"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Класс lock_guard](../standard-library/lock-guard-class.md)|Представляет шаблон, для которого можно создать экземпляры и объект, деструктор которого разблокирует `mutex`.|
 |[Класс Mutex (стандартная библиотека C++)](../standard-library/mutex-class-stl.md)|Представляет тип мьютекса. Используйте объекты этого типа для принудительного взаимного исключения в программе.|
@@ -67,7 +67,7 @@ ms.locfileid: "88838558"
 |-|-|
 |[call_once](../standard-library/mutex-functions.md#call_once)|Предоставляет механизм для однократного вызова указанного объекта во время выполнения.|
 |[lock](../standard-library/mutex-functions.md#lock)|Пытается заблокировать все аргументы без взаимоблокировки.|
-|[позиции](../standard-library/mutex-functions.md#swap)||
+|[swap](../standard-library/mutex-functions.md#swap)||
 |[try_lock](../standard-library/mutex-functions.md#try_lock)||
 
 ### <a name="structs"></a>Структуры

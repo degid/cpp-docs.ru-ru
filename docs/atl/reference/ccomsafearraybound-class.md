@@ -46,9 +46,9 @@ class CComSafeArrayBound : public SAFEARRAYBOUND
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#operator_eq)|Задает `CComSafeArrayBound` новое значение.|
+|[operator=](#operator_eq)|Задает `CComSafeArrayBound` новое значение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс является оболочкой для `SAFEARRAYBOUND` структуры, используемой [CComSafeArray](../../atl/reference/ccomsafearray-class.md). Он предоставляет методы для запросов и установки верхних и нижних границ одного измерения `CComSafeArray` объекта и числа элементов, содержащихся в нем. В многомерном `CComSafeArray` объекте используется массив `CComSafeArrayBound` объектов, по одному для каждого измерения. Поэтому при использовании таких методов, как [NOCOUNT](#getcount), следует помнить, что этот метод не возвращает общее число элементов в многомерном массиве.
 
@@ -74,7 +74,7 @@ CComSafeArrayBound(ULONG ulCount = 0, LONG lLowerBound = 0) throw();
 *лловербаунд*<br/>
 Нижняя граница, с которой пронумерован массив.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если доступ к массиву осуществляется из программы на языке C++, рекомендуется, чтобы нижняя граница была определена как 0. Может быть предпочтительнее использовать другое значение нижней границы, если массив используется с другими языками, например Visual Basic.
 
@@ -90,7 +90,7 @@ ULONG GetCount() const throw();
 
 Возвращает количество элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если связанный `CComSafeArray` объект представляет многомерный массив, этот метод возвратит только общее число элементов в крайнем правом измерении. Чтобы получить общее количество элементов, используйте [CComSafeArray:: NOCOUNT](../../atl/reference/ccomsafearray-class.md#getcount) .
 
@@ -118,11 +118,11 @@ LONG GetUpperBound() const throw();
 
 Возвращает верхнюю границу `CComSafeArrayBound` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Верхняя граница зависит от количества элементов и значения нижней границы. Например, если нижняя граница равна 0, а число элементов равно 10, то верхняя граница будет автоматически установлена в значение 9.
 
-## <a name="ccomsafearrayboundoperator-"></a><a name="operator_eq"></a> Ккомсафеаррайбаунд:: operator =
+## <a name="ccomsafearrayboundoperator-"></a><a name="operator_eq"></a> Ккомсафеаррайбаунд::operator=
 
 Задает `CComSafeArrayBound` новое значение.
 
@@ -143,7 +143,7 @@ CComSafeArrayBound& operator= (ULONG ulCount) throw();
 
 Возвращает указатель на `CComSafeArrayBound` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CComSafeArrayBound`Объект может быть назначен с помощью существующего `CComSafeArrayBound` или путем предоставления количества элементов, в противном случае значение нижней границы по умолчанию равно 0.
 
@@ -181,7 +181,7 @@ LONG SetLowerBound(LONG lLowerBound) throw();
 
 Возвращает новую нижнюю границу `CComSafeArrayBound` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если доступ к массиву осуществляется из Visual C++ программы, рекомендуется, чтобы нижняя граница была определена как 0. Может быть предпочтительнее использовать другое значение нижней границы, если массив используется с другими языками, например Visual Basic.
 

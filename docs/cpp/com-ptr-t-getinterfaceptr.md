@@ -26,7 +26,7 @@ Interface* GetInterfacePtr( ) const throw( );
 Interface*& GetInterfacePtr() throw();
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Возвращает инкапсулированный указатель на интерфейс, который может иметь значение NULL.
 

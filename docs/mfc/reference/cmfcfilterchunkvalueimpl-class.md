@@ -101,7 +101,7 @@ class CMFCFilterChunkValueImpl : public ATL::IFilterChunkValue;
 |----------|-----------------|
 |[CMFCFilterChunkValueImpl::SetChunk](#setchunk)|Функция помощника, которая устанавливает общие свойства куска.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать, вы просто создаете CMFCFilterChunkValueValueImpl класса правильного вида
 
@@ -133,7 +133,7 @@ hr й кусок. SetFileTimeValue (PKEY_ItemDate, ftLastModified);
 void Clear();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="cmfcfilterchunkvalueimpl"></a>CMFCFilterChunkValueImpl::CMFCFilterChunkValueImpl
 
@@ -143,7 +143,7 @@ void Clear();
 CMFCFilterChunkValueImpl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplcmfcfilterchunkvalueimpl"></a><a name="_dtorcmfcfilterchunkvalueimpl"></a>CMFCFilterChunkValueImpl:: CMFCFilterChunkValueImpl
 
@@ -153,7 +153,7 @@ CMFCFilterChunkValueImpl();
 virtual ~CMFCFilterChunkValueImpl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplcopychunk"></a><a name="copychunk"></a>CMFCFilterChunkValueImpl::CopyChunk
 
@@ -172,7 +172,7 @@ HRESULT CopyChunk(STAT_CHUNK* pStatChunk);
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplcopyfrom"></a><a name="copyfrom"></a>CMFCFilterChunkValueImpl::CopyFrom
 
@@ -187,7 +187,7 @@ void CopyFrom (IFilterChunkValue* pValue);
 *pValue*<br/>
 Определяет исходное значение для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetchunkguid"></a><a name="getchunkguid"></a>CMFCFilterChunkValueImpl::GetChunkGUID
 
@@ -201,7 +201,7 @@ REFGUID GetChunkGUID() const;
 
 Ссылка на GUID, идентифицирующий кусок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetchunkpid"></a><a name="getchunkpid"></a>CMFCFilterChunkValueImpl::GetChunkPID
 
@@ -215,7 +215,7 @@ DWORD GetChunkPID() const;
 
 Значение DWORD, содержащее идентификатор свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetchunktype"></a><a name="getchunktype"></a>CMFCFilterChunkValueImpl::GetChunkType
 
@@ -229,7 +229,7 @@ CHUNKSTATE GetChunkType() const;
 
 ЗНАЧЕНИЕ CHUNKSTATE, в котором указывается, является ли текущий кусок свойством типа текста или свойством типа значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetstring"></a><a name="getstring"></a>CMFCFilterChunkValueImpl::GetString
 
@@ -243,7 +243,7 @@ CString &GetString();
 
 Строка, содержащая значение фрагмента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetvalue"></a><a name="getvalue"></a>CMFCFilterChunkValueImpl::GetValue
 
@@ -262,7 +262,7 @@ HRESULT GetValue(PROPVARIANT** ppPropVariant);
 
 S_OK, если PROPVARIANT был успешно выделен и значение куска было успешно скопировано на *ppPropVariant;* в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplgetvaluenoalloc"></a><a name="getvaluenoalloc"></a>CMFCFilterChunkValueImpl::GetValueNoAlloc
 
@@ -276,7 +276,7 @@ PROPVARIANT GetValueNoAlloc ();
 
 Возвращает текущее значение фрагмента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplisvalid"></a><a name="isvalid"></a>CMFCFilterChunkValueImpl::IsValid
 
@@ -290,7 +290,7 @@ BOOL IsValid() const;
 
 TRUE, если текущее значение куска является действительным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetboolvalue"></a><a name="setboolvalue"></a>CMFCFilterChunkValueImpl::SetBoolValue
 
@@ -343,7 +343,7 @@ HRESULT SetBoolValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetchunk"></a><a name="setchunk"></a>CMFCFilterChunkValueImpl::SetChunk
 
@@ -383,7 +383,7 @@ HRESULT SetChunk(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetdwordvalue"></a><a name="setdwordvalue"></a>CMFCFilterChunkValueImpl::SetDwordValue
 
@@ -427,7 +427,7 @@ HRESULT SetDwordValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetfiletimevalue"></a><a name="setfiletimevalue"></a>CMFCFilterChunkValueImpl::SetFileTimeValue
 
@@ -471,7 +471,7 @@ HRESULT SetFileTimeValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetint64value"></a><a name="setint64value"></a>CMFCFilterChunkValueImpl::SetInt64Value
 
@@ -515,7 +515,7 @@ HRESULT SetInt64Value(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetintvalue"></a><a name="setintvalue"></a>CMFCFilterChunkValueImpl::SetIntValue
 
@@ -559,7 +559,7 @@ HRESULT SetIntValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetlongvalue"></a><a name="setlongvalue"></a>CMFCFilterChunkValueImpl::SetLongValue
 
@@ -603,7 +603,7 @@ HRESULT SetLongValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsetsystemtimevalue"></a><a name="setsystemtimevalue"></a>CMFCFilterChunkValueImpl::SetSystemTimeValue
 
@@ -647,7 +647,7 @@ HRESULT SetSystemTimeValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfilterchunkvalueimplsettextvalue"></a><a name="settextvalue"></a>CMFCFilterChunkValueImpl::SetTextValue
 
@@ -691,7 +691,7 @@ HRESULT SetTextValue(
 
 S_OK в случае успеха; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

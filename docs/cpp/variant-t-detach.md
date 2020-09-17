@@ -32,7 +32,7 @@ VARIANT Detach( );
 
 Инкапсулированный `VARIANT`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Извлекает и возвращает инкапсулированный `VARIANT`, а затем удаляет этот объект `_variant_t` без его уничтожения. Эта функция члена удаляет `VARIANT` из инкапсуляции и задает для `VARTYPE` этого `_variant_t` объекта значение VT_EMPTY. Можно освободить возвращенный `VARIANT`, вызвав функцию [вариантклеар](/windows/win32/api/oleauto/nf-oleauto-variantclear) .
 

@@ -57,7 +57,7 @@ class CGdiObject : public CObject
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кгдиобжект:: Attach](#attach)|Присоединяет объект Windows GDI к `CGdiObject` объекту.|
 |[Кгдиобжект:: Креатестоккобжект](#createstockobject)|Извлекает маркер одного из предопределенных стандартных перьев, кистей или шрифтов Windows.|
@@ -74,9 +74,9 @@ class CGdiObject : public CObject
 
 |Имя|Описание|
 |----------|-----------------|
-|[Кгдиобжект:: operator! =](#operator_neq)|Определяет, логически не равны два объекта GDI.|
-|[Кгдиобжект:: operator = =](#operator_eq_eq)|Определяет, логически ли равны два объекта GDI.|
-|[Кгдиобжект:: operator ХГДИОБЖ](#operator_hgdiobj)|Извлекает маркер присоединенного объекта Windows GDI.|
+|[Кгдиобжект::operator!=](#operator_neq)|Определяет, логически не равны два объекта GDI.|
+|[Кгдиобжект::operator==](#operator_eq_eq)|Определяет, логически ли равны два объекта GDI.|
+|[Кгдиобжект::operator ХГДИОБЖ](#operator_hgdiobj)|Извлекает маркер присоединенного объекта Windows GDI.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -84,7 +84,7 @@ class CGdiObject : public CObject
 |----------|-----------------|
 |[Кгдиобжект:: m_hObject](#m_hobject)|МАРКЕР, содержащий ХБИТМАП, ХПАЛЕТТЕ, ХРГН, ХБРУШ, ХПЕН или ХФОНТ, прикрепленный к этому объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы никогда не создаете `CGdiObject` напрямую. Вместо этого создается объект из одного из производных от него классов, например `CPen` или `CBrush` .
 
@@ -125,7 +125,7 @@ BOOL Attach(HGDIOBJ hObject);
 CGdiObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда не создаете `CGdiObject` напрямую. Вместо этого создается объект из одного из производных от него классов, например `CPen` или `Cbrush` .
 
@@ -146,7 +146,7 @@ BOOL CreateStockObject(int nIndex);
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию с одним из производных классов, которые соответствуют типу объекта Windows GDI, например `CPen` для фондовой биржи.
 
@@ -162,7 +162,7 @@ BOOL DeleteObject();
 
 Ненулевое значение, если объект GDI был успешно удален; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот вызов не влияет на хранилище, связанное с `CGdiObject` объектом. Приложение не должно вызываться `DeleteObject` для `CGdiObject` объекта, выбранного в данный момент в контексте устройства.
 
@@ -176,7 +176,7 @@ BOOL DeleteObject();
 static void PASCAL DeleteTempMap();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `DeleteTempMap`Отсоединяет объект Windows GDI, присоединенный к временному `CGdiObject` объекту, перед удалением `CGdiObject` объекта.
 
@@ -213,7 +213,7 @@ static CGdiObject* PASCAL FromHandle(HGDIOBJ hObject);
 
 Указатель на объект `CGdiObject` , который может быть временным или постоянным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CGdiObject` объект еще не присоединен к объекту Windows GDI, `CGdiObject` создается и прикрепляется временный объект.
 
@@ -241,7 +241,7 @@ int GetObject(
 
 Число извлеченных байтов; в противном случае — 0, если возникает ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция получает структуру данных, тип которой зависит от типа графического объекта, как показано в следующем списке:
 
@@ -308,7 +308,7 @@ HGDIOBJ GetSafeHandle() const;
 
 МАРКЕР присоединенного объекта Windows GDI; в противном случае значение NULL, если объект не присоединен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это является частью парадигмы интерфейса общего обработчика и полезна, когда NULL является допустимым или специальным значением для маркера.
 
@@ -324,7 +324,7 @@ HGDIOBJ GetSafeHandle() const;
 HGDIOBJ m_hObject;
 ```
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>Кгдиобжект:: operator! =
+## <a name="cgdiobjectoperator-"></a><a name="operator_neq"></a>Кгдиобжект::operator!=
 
 Определяет, логически не равны два объекта GDI.
 
@@ -337,11 +337,11 @@ BOOL operator!=(const CGdiObject& obj) const;
 *obj*<br/>
 Указатель на существующий объект `CGdiObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определяет, не равен ли объект GDI в левой части объекта GDI в правой части.
 
-## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>Кгдиобжект:: operator = =
+## <a name="cgdiobjectoperator-"></a><a name="operator_eq_eq"></a>Кгдиобжект::operator==
 
 Определяет, логически ли равны два объекта GDI.
 
@@ -354,11 +354,11 @@ BOOL operator==(const CGdiObject& obj) const;
 *obj*<br/>
 Ссылка на существующий объект `CGdiObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Определяет, равен ли объект GDI в левой части объекту GDI справа.
 
-## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>Кгдиобжект:: operator ХГДИОБЖ
+## <a name="cgdiobjectoperator-hgdiobj"></a><a name="operator_hgdiobj"></a>Кгдиобжект::operator ХГДИОБЖ
 
 Извлекает маркер присоединенного объекта Windows GDI; в противном случае значение NULL, если объект не присоединен.
 
@@ -378,7 +378,7 @@ BOOL UnrealizeObject();
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хотя `UnrealizeObject` является функцией-членом `CGdiObject` класса, она должна вызываться только для `CBrush` `CPalette` объектов или.
 

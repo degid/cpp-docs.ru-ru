@@ -106,7 +106,7 @@ RUNTIME_CLASS объекта, производного от [CWinThread](../../m
 
 Указатель на только что созданный объект потока или значение NULL, если происходит сбой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая форма `AfxBeginThread` создает рабочий поток. Вторая форма создает поток, который может выступать в качестве потока пользовательского интерфейса или рабочего потока.
 
@@ -122,7 +122,7 @@ RUNTIME_CLASS объекта, производного от [CWinThread](../../m
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxcontextmenumanager"></a><a name="afxcontextmenumanager"></a> афксконтекстменуманажер
 
@@ -136,7 +136,7 @@ CContextMenuManager* afxContextMenuManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксконтекстменуманажер. h
+**Заголовок:** афксконтекстменуманажер.h
 
 ## <a name="afxendthread"></a><a name="afxendthread"></a> афксендсреад
 
@@ -156,7 +156,7 @@ void AFXAPI AfxEndThread(
 *бделете*\
 Удаляет объект потока из памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Должен вызываться из потока для завершения.
 
@@ -164,7 +164,7 @@ void AFXAPI AfxEndThread(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxfindresourcehandle"></a><a name="afxfindresourcehandle"></a> афксфиндресаурцехандле
 
@@ -187,7 +187,7 @@ HINSTANCE AFXAPI AfxFindResourceHandle( LPCTSTR lpszName,  LPCTSTR lpszType );
 
 Обработчик для модуля, содержащего ресурс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxFindResourceHandle` находит конкретный ресурс и возвращает маркер модуля, содержащего ресурс. Ресурс может находиться в любой загружаемой библиотеке DLL расширения MFC. `AfxFindResourceHandle` Указывает, какой из них имеет ресурс.
 
@@ -224,7 +224,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 
 Значение TRUE, если функция выполнена. в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxFreeLibrary` уменьшает число ссылок загруженного модуля библиотеки динамической компоновки (DLL). Когда счетчик ссылок достигает нуля, модуль не сопоставляется с адресным пространством вызывающего процесса, и этот маркер становится недействительным. Этот счетчик ссылок увеличивается каждый раз, когда `AfxLoadLibrary` вызывается.
 
@@ -240,7 +240,7 @@ BOOL AFXAPI AfxFreeLibrary(HINSTANCE hInstLib);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXDLL_. h
+  **Заголовок** AFXDLL_.h
 
 ## <a name="afxgetapp"></a><a name="afxgetapp"></a> афксжетапп
 
@@ -254,7 +254,7 @@ CWinApp* AFXAPI AfxGetApp();
 
 Указатель на один `CWinApp` объект для приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если этот метод возвращает значение NULL, это может означать, что главное окно приложения еще не полностью инициализировано. Это также может указывать на проблему.
 
@@ -264,7 +264,7 @@ CWinApp* AFXAPI AfxGetApp();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxgetappname"></a><a name="afxgetappname"></a> афксжетаппнаме
 
@@ -284,7 +284,7 @@ LPCTSTR AFXAPI AfxGetAppName();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxgetinstancehandle"></a><a name="afxgetinstancehandle"></a> афксжетинстанцехандле
 
@@ -298,7 +298,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
 
 Значение HINSTANCE для текущего экземпляра приложения. Если вызывается из библиотеки DLL, связанной с УСРДЛЛ версией MFC, возвращается значение HINSTANCE для библиотеки DLL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxGetInstanceHandle` всегда возвращает значение HINSTANCE для исполняемого файла (. EXE), если только он не вызывается из библиотеки DLL, связанной с УСРДЛЛ версией MFC. В этом случае он возвращает значение HINSTANCE для библиотеки DLL.
 
@@ -308,7 +308,7 @@ HINSTANCE  AFXAPI AfxGetInstanceHandle();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxgetmainwnd"></a><a name="afxgetmainwnd"></a> афксжетмаинвнд
 
@@ -326,7 +326,7 @@ CWnd* AFXAPI AfxGetMainWnd();
 
 Если `AfxGetMainWnd` вызывается из основного потока приложения, он возвращает главное окно приложения согласно приведенным выше правилам. Если функция вызывается из вторичного потока в приложении, функция возвращает главное окно, связанное с потоком, который выполнил вызов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если приложение не является сервером OLE, то вызов этой функции эквивалентен непосредственной ссылке на *m_pMainWnd* элемент объекта приложения.
 
@@ -336,7 +336,7 @@ CWnd* AFXAPI AfxGetMainWnd();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxgetperuserregistration"></a><a name="afxgetperuserregistration"></a> афксжетперусеррегистратион
 
@@ -350,7 +350,7 @@ BOOL AFXAPI AfxGetPerUserRegistration();
 
 Значение TRUE указывает, что данные реестра направляются на узел HKCU. Значение FALSE указывает, что приложение записывает сведения о реестре в узел по умолчанию. Узел по умолчанию — **HKEY_CLASSES_ROOT** (**HKCR**).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если включить перенаправление реестра, платформа перенаправит доступ из **HKCR** в **HKEY_CURRENT_USER \софтваре\классес**. Перенаправление затрагивает только платформы MFC и ATL.
 
@@ -358,7 +358,7 @@ BOOL AFXAPI AfxGetPerUserRegistration();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxstat_. h
+  **Заголовок** afxstat_.h
 
 ## <a name="afxgetresourcehandle"></a><a name="afxgetresourcehandle"></a> афксжетресаурцехандле
 
@@ -378,7 +378,7 @@ extern HINSTANCE  AfxGetResourceHandle();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxgetthread"></a><a name="afxgetthread"></a> афксжетсреад
 
@@ -392,7 +392,7 @@ CWinThread* AfxGetThread();
 
 Указатель на выполняющийся в данный момент поток; в противном случае — NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Должен вызываться из потока.
 
@@ -405,7 +405,7 @@ CWinThread* AfxGetThread();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxinitrichedit"></a><a name="afxinitrichedit"></a> афксинитричедит
 
@@ -415,7 +415,7 @@ CWinThread* AfxGetThread();
 BOOL AFXAPI AfxInitRichEdit();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция предоставляется для обеспечения обратной совместимости. Новые приложения должны использовать [требуется метод afxinitrichedit2](#afxinitrichedit2).
 
@@ -427,7 +427,7 @@ BOOL AFXAPI AfxInitRichEdit();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxinitrichedit2"></a><a name="afxinitrichedit2"></a> Требуется метод afxinitrichedit2
 
@@ -437,13 +437,13 @@ BOOL AFXAPI AfxInitRichEdit();
 BOOL AFXAPI AfxInitRichEdit2();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы загрузить RICHED20.DLL и инициализировать версию 2,0 элемента управления Rich Edit. При вызове `Create` метода [CRichEditCtrl](../../mfc/reference/cricheditctrl-class.md), [CRichEditView](../../mfc/reference/cricheditview-class.md)или [CRichEditDoc](../../mfc/reference/cricheditdoc-class.md)обычно не требуется вызывать эту функцию, но в некоторых случаях это может потребоваться.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxisextendedframeclass"></a><a name="afxisextendedframeclass"></a> афксисекстендедфрамекласс
 
@@ -464,7 +464,7 @@ BOOL AFXAPI AfxIsExtendedFrameClass( CWnd* pWnd );
 
 Значение TRUE, если предоставленное окно является расширенным объектом Frame; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает значение TRUE, если *приводится* является производным от одного из следующих классов:
 
@@ -503,7 +503,7 @@ BOOL AFXAPI AfxIsMFCToolBar(CWnd* pWnd);
 
 Значение TRUE, если предоставленное окно является объектом панели инструментов; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает значение `TRUE` , если *приводится* является производным от `CMFCToolBar` . Этот метод полезен при проверке того, что параметр функции или метода является `CMFCToolBar` объектом.
 
@@ -523,7 +523,7 @@ CKeyboardManager* afxKeyboardManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афкскэйбоардманажер. h
+**Заголовок:** афкскэйбоардманажер.h
 
 ## <a name="afxloadlibrary"></a><a name="afxloadlibrary"></a> афкслоадлибрари
 
@@ -546,7 +546,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 Если функция выполнена, возвращаемое значение является обработчиком модуля. При сбое возвращаемое значение равно NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он возвращает маркер, который можно использовать в [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) для получения адреса функции DLL. `AfxLoadLibrary` также может использоваться для отображения других исполняемых модулей.
 
@@ -554,7 +554,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 Обязательно используйте `AfxLoadLibrary` и `AfxFreeLibrary` (вместо функций Win32 `LoadLibrary` и `FreeLibrary` ), если приложение использует несколько потоков, и если оно динамически загружает библиотеку DLL расширения MFC. С помощью `AfxLoadLibrary` и `AfxFreeLibrary` гарантируется, что код запуска и завершения работы, выполняемый при загрузке и ВЫГРУЗКЕ библиотеки DLL расширения MFC, не повреждает глобальное состояние MFC.
 
-Для использования `AfxLoadLibrary` в приложении необходимо динамически связываться с DLL-версией MFC. Файл заголовка для `AfxLoadLibrary` , Afxdll_. h, включается, только если MFC связан с приложением в качестве библиотеки DLL. Это требование обусловлено проектированием, поскольку для использования или создания библиотек DLL расширения MFC необходимо создать ссылку на библиотеку DLL MFC.
+Для использования `AfxLoadLibrary` в приложении необходимо динамически связываться с DLL-версией MFC. Файл заголовка для `AfxLoadLibrary` , Afxdll_.h, включается, только если MFC связан с приложением в качестве библиотеки DLL. Это требование обусловлено проектированием, поскольку для использования или создания библиотек DLL расширения MFC необходимо создать ссылку на библиотеку DLL MFC.
 
 ### <a name="example"></a>Пример
 
@@ -564,7 +564,7 @@ HINSTANCE AFXAPI AfxLoadLibrary(LPCTSTR lpszModuleName);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXDLL_. h
+  **Заголовок** AFXDLL_.h
 
 ## <a name="afxloadlibraryex"></a><a name="afxloadlibraryex"></a> афкслоадлибрарекс
 
@@ -593,7 +593,7 @@ HINSTANCE AFXAPI AfxLoadLibraryEx(LPCTSTR lpFileName, HANDLE hFile, DWORD dwFlag
 
 Если функция выполнена, возвращаемое значение является обработчиком модуля. При сбое возвращаемое значение равно NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxLoadLibraryEx` Возвращает маркер, который можно использовать в [GetProcAddress](/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) для получения адреса функции DLL. `AfxLoadLibraryEx` также может использоваться для отображения других исполняемых модулей.
 
@@ -601,11 +601,11 @@ HINSTANCE AFXAPI AfxLoadLibraryEx(LPCTSTR lpFileName, HANDLE hFile, DWORD dwFlag
 
 Обязательно используйте `AfxLoadLibraryEx` и `AfxFreeLibrary` (вместо функций Win32 `LoadLibraryEx` и `FreeLibrary` ), если приложение использует несколько потоков и динамически загружает библиотеку DLL расширения MFC. Использование `AfxLoadLibraryEx` и `AfxFreeLibrary` гарантирует, что код запуска и завершения работы, выполняемый при загрузке и ВЫГРУЗКЕ библиотеки DLL расширения MFC, не повреждает глобальное состояние MFC.
 
-Для использования `AfxLoadLibraryEx` в приложении необходимо динамически связываться с DLL-версией MFC. Файл заголовка для `AfxLoadLibraryEx` , Afxdll_. h, включается, только если MFC связан с приложением в качестве библиотеки DLL. Это требование обусловлено проектированием, поскольку для использования или создания библиотек DLL расширения MFC необходимо создать ссылку на библиотеку DLL MFC.
+Для использования `AfxLoadLibraryEx` в приложении необходимо динамически связываться с DLL-версией MFC. Файл заголовка для `AfxLoadLibraryEx` , Afxdll_.h, включается, только если MFC связан с приложением в качестве библиотеки DLL. Это требование обусловлено проектированием, поскольку для использования или создания библиотек DLL расширения MFC необходимо создать ссылку на библиотеку DLL MFC.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXDLL_. h
+  **Заголовок** AFXDLL_.h
 
 ## <a name="afxmenutearoffmanager"></a><a name="afxmenutearoffmanager"></a> афксменутеароффманажер
 
@@ -619,7 +619,7 @@ CMenuTearOffManager* g_pTearOffMenuManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксменутеароффманажер. h
+**Заголовок:** афксменутеароффманажер.h
 
 ## <a name="afxmousemanager"></a><a name="afxmousemanager"></a> афксмаусеманажер
 
@@ -633,7 +633,7 @@ CMouseManager* afxMouseManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксмаусеманажер. h
+**Заголовок:** афксмаусеманажер.h
 
 ## <a name="afxregisterclass"></a><a name="afxregisterclass"></a> афксрегистеркласс
 
@@ -652,7 +652,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 
 Значение TRUE, если класс успешно зарегистрирован; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При использовании этой функции класс автоматически отменяет регистрацию при выгрузке библиотеки DLL.
 
@@ -664,7 +664,7 @@ BOOL AFXAPI AfxRegisterClass(WNDCLASS* lpWndClass);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxregisterwndclass"></a><a name="afxregisterwndclass"></a> афксрегистервндкласс
 
@@ -707,7 +707,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 > [!NOTE]
 > Возвращаемое значение является указателем на статический буфер. Чтобы сохранить эту строку, присвойте ее `CString` переменной.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Библиотека Microsoft Foundation Class автоматически регистрирует несколько стандартных классов окон. Вызывайте эту функцию, если требуется зарегистрировать собственные классы окон.
 
@@ -723,7 +723,7 @@ LPCTSTR AFXAPI AfxRegisterWndClass(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxsetperuserregistration"></a><a name="afxsetperuserregistration"></a> афкссетперусеррегистратион
 
@@ -738,7 +738,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 *бенабле*\
 окне Значение TRUE указывает, что данные реестра направляются на узел HKCU. Значение FALSE указывает, что приложение записывает сведения о реестре в узел по умолчанию. Узел по умолчанию — **HKEY_CLASSES_ROOT** (**HKCR**).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 До Windows Vista приложения, которые обращаются к реестру, часто использовали узел **HKEY_CLASSES_ROOT** . Однако в Windows Vista или более поздних операционных системах необходимо запустить приложение в режиме с повышенными правами для записи в раздел HKCR.
 
@@ -750,7 +750,7 @@ void AFXAPI AfxSetPerUserRegistration(BOOL bEnable);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxstat_. h
+  **Заголовок** afxstat_.h
 
 ## <a name="afxsetresourcehandle"></a><a name="afxsetresourcehandle"></a> афкссетресаурцехандле
 
@@ -771,7 +771,7 @@ void AFXAPI AfxSetResourceHandle(HINSTANCE hInstResource);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxshellmanager"></a><a name="afxshellmanager"></a> афксшеллманажер
 
@@ -785,7 +785,7 @@ CShellManager* afxShellManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксшеллманажер. h
+**Заголовок:** афксшеллманажер.h
 
 ## <a name="afxsocketinit"></a><a name="afxsocketinit"></a> афкссоккетинит
 
@@ -804,13 +804,13 @@ BOOL AfxSocketInit(WSADATA* lpwsaData = NULL);
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При использовании сокетов MFC во вторичных потоках в статическом связанном приложении MFC необходимо вызвать `AfxSocketInit` в каждом потоке, использующем сокеты для инициализации библиотек сокетов. По умолчанию `AfxSocketInit` метод вызывается только в основном потоке.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афкссокк. h
+  **Заголовок** афкссокк.h
 
 ## <a name="afxusertoolsmanager"></a><a name="afxusertoolsmanager"></a> афксусертулсманажер
 
@@ -824,7 +824,7 @@ CUserToolsManager* afxUserToolsManager;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксусертулсманажер. h
+**Заголовок:** афксусертулсманажер.h
 
 ## <a name="afxwininit"></a><a name="afxwininit"></a> афксвининит
 
@@ -852,7 +852,7 @@ BOOL AFXAPI AfxWinInit(
 *нкмдшов*\
 Указывает, как будет отображаться главное окно приложения с графическим пользовательским интерфейсом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для консольного приложения, которое не использует предоставляемую MFC `WinMain` функцию, необходимо напрямую вызвать метод `AfxWinInit` для инициализации MFC.
 
@@ -867,7 +867,7 @@ BOOL AFXAPI AfxWinInit(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="see-also"></a>См. также раздел
 

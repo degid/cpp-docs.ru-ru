@@ -82,7 +82,7 @@ ios_base& boolalpha(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию переменные типа **`bool`** отображаются как 1 или 0.
 
@@ -134,7 +134,7 @@ ios_base& dec(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию целочисленные переменные отображаются в десятичной записи.
 
@@ -183,7 +183,7 @@ ios_base& defaultfloat(ios_base& iosbase);
 *_Iosbase*\
 Объект `ios_base`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор фактически вызывает `iosbase.` [ios_base:: unsetf](../standard-library/ios-base-class.md#unsetf) `(ios_base::floatfield)` , а затем возвращает *iosbase*.
 
@@ -204,7 +204,7 @@ ios_base& fixed(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `fixed`— это отображаемая по умолчанию нотация для чисел с плавающей запятой. [scientific](../standard-library/ios-functions.md#scientific) вызывает отображение чисел с плавающей запятой в экспоненциальном представлении.
 
@@ -252,7 +252,7 @@ ios_base& hex(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию целочисленные переменные отображаются в десятичной записи. [dec](../standard-library/ios-functions.md#dec) и [oct](../standard-library/ios-functions.md#oct) также изменяют способ показа целочисленных переменных.
 
@@ -293,7 +293,7 @@ ios_base& internal(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [showpos](../standard-library/ios-functions.md#showpos) вызывает показ знака для отображения положительных чисел.
 
@@ -351,7 +351,7 @@ ios_base& left(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор фактически вызывает `str.` [setf](../standard-library/ios-base-class.md#setf) `(ios_base::left, ios_base::adjustfield)` , а затем возвращает *str*.
 
@@ -406,7 +406,7 @@ ios_base& noboolalpha(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию действует `noboolalpha`.
 
@@ -435,7 +435,7 @@ ios_base& noshowbase(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `noshowbase` включен по умолчанию. Используйте [showbase](../standard-library/ios-functions.md#showbase) для указания основания чисел.
 
@@ -462,7 +462,7 @@ ios_base& noshowpoint(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию `noshowpoint` включен. Используйте [showpoint](../standard-library/ios-functions.md#showpoint) и [precision](../standard-library/ios-base-class.md#precision) для показа нулей после десятичной запятой.
 
@@ -509,7 +509,7 @@ ios_base& noshowpos(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `noshowpos` включен по умолчанию.
 
@@ -536,7 +536,7 @@ ios_base& noskipws(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию используется [skipws](../standard-library/ios-functions.md#skipws). При чтении пробела из входного потока он сообщает о конце буфера.
 
@@ -578,7 +578,7 @@ ios_base& nounitbuf(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [unitbuf](../standard-library/ios-functions.md#unitbuf) вызывает обработку буфера, когда он не пустой.
 
@@ -601,7 +601,7 @@ ios_base& nouppercase(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Манипулятор фактически вызывает `str.` [unsetf](../standard-library/ios-base-class.md#unsetf) `(ios_base::uppercase)` , а затем возвращает *str*.
 
@@ -626,7 +626,7 @@ ios_base& oct(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию целочисленные переменные отображаются в десятичной записи. [dec](../standard-library/ios-functions.md#dec) и [hex](../standard-library/ios-functions.md#hex) также изменяют способ показа целочисленных переменных.
 
@@ -653,7 +653,7 @@ ios_base& right(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [left](../standard-library/ios-functions.md#left) также изменяет выравнивание текста.
 
@@ -710,7 +710,7 @@ ios_base& scientific(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию числа с плавающей запятой показываются в нотации [fixed](../standard-library/ios-functions.md#fixed).
 
@@ -755,7 +755,7 @@ ios_base& showbase(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запись числа можно изменить при помощи [dec](../standard-library/ios-functions.md#dec), [oct](../standard-library/ios-functions.md#oct) или [hex](../standard-library/ios-functions.md#hex).
 
@@ -809,7 +809,7 @@ ios_base& showpoint(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию действует [noshowpoint](../standard-library/ios-functions.md#noshowpoint).
 
@@ -836,7 +836,7 @@ ios_base& showpos(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию используется [noshowpos](../standard-library/ios-functions.md#noshowpos).
 
@@ -881,7 +881,7 @@ ios_base& skipws(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию действует `skipws`. [noskipws](../standard-library/ios-functions.md#noskipws) устанавливает режим чтения пробелов из входного потока.
 
@@ -933,7 +933,7 @@ ios_base& unitbuf(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что `endl` также очищает буфер.
 
@@ -958,7 +958,7 @@ ios_base& uppercase(ios_base& str);
 
 Ссылка на объект, из которого является производным *str* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию действует [nouppercase](../standard-library/ios-functions.md#nouppercase).
 

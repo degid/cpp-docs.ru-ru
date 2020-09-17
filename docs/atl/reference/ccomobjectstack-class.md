@@ -58,7 +58,7 @@ class CComObjectStack : public Base
 |----------|-----------------|
 |[CComObjectStack::m_hResFinalConstruct](#m_hresfinalconstruct)|Содержит HRESULT, возвращенный `CComObjectStack` во время строительства объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComObjectStack`используется для создания временного объекта COM и обеспечения объекта `IUnknown`скелетной реализации. Как правило, объект используется в качестве локальной переменной в пределах одной функции (т.е. нажата на стек). Поскольку объект разрушается по окончании функции, подсчет ссылок не выполняется для повышения эффективности.
 
@@ -90,7 +90,7 @@ STDMETHOD_(ULONG, AddRef)();
 
 Возвращает ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В режиме отладки, вызовы `_ASSERTE`.
 
@@ -102,7 +102,7 @@ STDMETHOD_(ULONG, AddRef)();
 CComObjectStack(void* = NULL);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовы, `FinalConstruct` а затем устанавливает [m_hResFinalConstruct](#m_hresfinalconstruct) на HRESULT вернулся `FinalConstruct`. Если вы не получили свой базовый класс от [CComObjectRoot,](../../atl/reference/ccomobjectroot-class.md)вы должны предоставить свой собственный `FinalConstruct` метод. Деструктор вызывает `FinalRelease`.
 
@@ -114,7 +114,7 @@ CComObjectStack(void* = NULL);
 CComObjectStack();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы и вызывает [FinalRelease](ccomobjectrootex-class.md#finalrelease).
 
@@ -138,7 +138,7 @@ HRESULT    QueryInterface(REFIID, void**);
 
 Возвращает E_NOINTERFACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В режиме отладки, вызовы `_ASSERTE`.
 
@@ -154,7 +154,7 @@ STDMETHOD_(ULONG, Release)();
 
 Возвращает ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В режиме отладки, вызовы `_ASSERTE`.
 

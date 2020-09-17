@@ -71,11 +71,11 @@ ms.locfileid: "87214858"
 |Оператор|Описание|
 |--------------|-----------------|
 |[operator== (pair) (STL/CLR)](#op_eq)|Сравнение пар "равенство".|
-|[operator! = (пара) (STL/CLR)](#op_neq)|Сравнение пар "не равно".|
-|[Оператор< (пары) (STL/CLR)](#op_lt)|Сравнение пар "меньше".|
+|[operator!= (пара) (STL/CLR)](#op_neq)|Сравнение пар "не равно".|
+|[operator< (пары) (STL/CLR)](#op_lt)|Сравнение пар "меньше".|
 |[operator \< = (пара) (STL/CLR)](#op_lteq)|Сравнение пар "меньше или равно".|
-|[Оператор> (пары) (STL/CLR)](#op_gt)|Пара "больше, чем сравнение".|
-|[Оператор>= (пары) (STL/CLR)](#op_gteq)|Сравнение пар "больше или равно".|
+|[operator> (пары) (STL/CLR)](#op_gt)|Пара "больше, чем сравнение".|
+|[operator>= (пары) (STL/CLR)](#op_gteq)|Сравнение пар "больше или равно".|
 
 |Компонент|Описание|
 |--------------|-----------------|
@@ -124,7 +124,7 @@ template<typename Value1,
 |--------------|-----------------|
 |[pair::operator= (STL/CLR)](#op_as)|Заменяет сохраненную пару значений.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект хранит пару значений. Этот класс шаблона используется для объединения двух значений в один объект. Кроме того, объект `cliext::pair` (описанный здесь) хранит только управляемые типы; для хранения пары неуправляемых типов используйте `std::pair` , объявленную в `<utility>` .
 
@@ -138,7 +138,7 @@ template<typename Value1,
 Value1 first;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект сохраняет первое упакованное значение.
 
@@ -175,7 +175,7 @@ int main()
 typedef Value1 first_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для параметра-шаблона *value1*.
 
@@ -202,7 +202,7 @@ int main()
 [x, 3]
 ```
 
-## <a name="pairoperator-stlclr"></a><a name="op_as"></a>Оператор пары:: operator = (STL/CLR)
+## <a name="pairoperator-stlclr"></a><a name="op_as"></a>Оператор пары::operator= (STL/CLR)
 
 Заменяет сохраненную пару значений.
 
@@ -217,7 +217,7 @@ pair<Value1, Value2>% operator=(pair<Value1, Value2>% right);
 *Правильно*<br/>
 Пара для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены сохраненной пары значений копией сохраненной пары значений в *правой*части.
 
@@ -270,7 +270,7 @@ pair(Value1 val1, Value2 val2);
 *val2*<br/>
 Второе значение для хранения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор:
 
@@ -341,7 +341,7 @@ int main()
 Value2 second;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект хранит второе упакованное значение.
 
@@ -378,7 +378,7 @@ int main()
 typedef Value2 second_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для параметра-шаблона *value2*.
 
@@ -420,7 +420,7 @@ void swap(pair<Value1, Value2>% right);
 *Правильно*<br/>
 Связывание с содержимым для замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член меняет местами хранимую пару значений между **`*this`** и *right*.
 
@@ -500,7 +500,7 @@ template<typename Value1,
 *second*<br/>
 Второе значение для переноса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона возвращает `pair<Value1, Value2>(first, second)`. Он используется для создания `pair<Value1, Value2>` объекта из пары значений.
 
@@ -527,7 +527,7 @@ int main()
 [y, 4]
 ```
 
-## <a name="operator-pair-stlclr"></a><a name="op_neq"></a>operator! = (пара) (STL/CLR)
+## <a name="operator-pair-stlclr"></a><a name="op_neq"></a>operator!= (пара) (STL/CLR)
 
 Сравнение пар "не равно".
 
@@ -548,7 +548,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `!(left == right)` . Он используется для проверки, не упорядочивается ли *Left* *так, как если* бы две пары сравнивались по элементу.
 
@@ -602,7 +602,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `left.first <` `right.first || !(right.first <` `left.first &&` `left.second <` `right.second` . Он используется для проверки, упорядочивается ли *Left* *справа* , когда две пары сравниваются по элементу.
 
@@ -656,7 +656,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `!(right < left)` . Он используется для проверки, не упорядочен ли *Left* после *right* , когда две пары сравниваются по элементу.
 
@@ -710,7 +710,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `left.first ==` `right.first &&` `left.second ==` `right.second` . Он используется для проверки, упорядочивается ли *Left* так же, как и *справа* , если две пары сравниваются по элементу.
 
@@ -764,7 +764,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `right` `<` `left` . Он используется для проверки, упорядочен ли *Left* после *right* , когда две пары сравниваются по элементу.
 
@@ -818,7 +818,7 @@ template<typename Value1,
 *Правильно*<br/>
 Для сравнения — правая пара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция оператора возвращает `!(left < right)` . Используйте его, чтобы проверить, не упорядочивается ли *Left* перед *right* , когда две пары сравниваются по элементу.
 

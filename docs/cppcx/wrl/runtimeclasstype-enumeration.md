@@ -28,7 +28,7 @@ enum RuntimeClassType;
 
 ### <a name="values"></a>Значения
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`ClassicCom`|Классический класс среды выполнения COM.|
 |`Delegate`|Эквивалент `ClassicCom`.|
@@ -39,7 +39,7 @@ enum RuntimeClassType;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

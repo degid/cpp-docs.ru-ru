@@ -33,7 +33,7 @@ using add_volatile_t = typename add_volatile<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `add_volatile<T>`У экземпляра есть член **`typedef`** `type` , который имеет значение *t* , если *T* является ссылкой, функцией или типом с квалификатором, в противном случае **`volatile`** *t*. Псевдоним `add_volatile_t` является ярлыком для доступа к элементу **`typedef`** `type` .
 

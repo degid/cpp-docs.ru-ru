@@ -35,13 +35,13 @@ namespace Microsoft::WRL;
 
 ### <a name="typedefs"></a>Определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`InhibitWeakReferencePolicy`|`RuntimeClassFlags<WinRt | InhibitWeakReference>`|
 
 ### <a name="classes"></a>Классы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс ActivationFactory](activationfactory-class.md)|Позволяет одному или нескольким классам быть активированными средой выполнения Windows.|
 |[Класс AsyncBase](asyncbase-class.md)|Реализует асинхронный конечный автомат среды выполнения Windows.|
@@ -58,7 +58,7 @@ namespace Microsoft::WRL;
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Структура ChainInterfaces](chaininterfaces-structure.md)|Указывает функции проверки и инициализации, которые могут применяться к набору идентификаторов интерфейсов.|
 |[Структура CloakedIid](cloakediid-structure.md)|Указывает на шаблоны `RuntimeClass`, `Implements` и `ChainInterfaces`, которые указанный интерфейс недоступен в списке IID.|
@@ -68,7 +68,7 @@ namespace Microsoft::WRL;
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Перечисление AsyncResultType](asyncresulttype-enumeration.md)|Задает тип результата, возвращаемого методом `GetResults()`.|
 |[Перечисление ModuleType](moduletype-enumeration.md)|Указывает, должен ли модуль поддерживать внутрипроцессный или внепроцессный сервер.|
@@ -76,7 +76,7 @@ namespace Microsoft::WRL;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция AsWeak](asweak-function.md)|Извлекает слабую ссылку на определенный экземпляр.|
 |[Функция Callback (WRL)](callback-function-wrl.md)|Создает объект, функция-член которого является методом обратного вызова.|
@@ -86,7 +86,7 @@ namespace Microsoft::WRL;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Async. h, Client. h, кореврапперс. h, Event. h, FTM. h, реализует. h, internal. h, Module. h
+**Заголовок:** Async.h, Client.h, кореврапперс.h, Event.h, FTM.h, реализует.h, internal.h, Module.h
 
 **Пространство имен:** Microsoft::WRL
 

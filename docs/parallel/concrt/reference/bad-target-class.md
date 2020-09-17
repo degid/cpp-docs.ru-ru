@@ -29,11 +29,11 @@ class bad_target : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[bad_target](#ctor)|Перегружен. Формирует объект `bad_target`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это исключение обычно вызывается по таким причинам, как цель пытается использовать сообщение, которое зарезервировано для другого целевого объекта или освобождения резервирования, которое не удерживается.
 
@@ -45,7 +45,7 @@ class bad_target : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

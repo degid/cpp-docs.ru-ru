@@ -95,13 +95,13 @@ class CSliderCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CSliderCtrl:: CSliderCtrl](#csliderctrl)|Формирует объект `CSliderCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CSliderCtrl:: Клеарсел](#clearsel)|Очищает текущий выделенный фрагмент в элементе управления "ползунок".|
 |[CSliderCtrl:: Клеартикс](#cleartics)|Удаляет текущие деления из элемента управления "ползунок".|
@@ -137,7 +137,7 @@ class CSliderCtrl : public CWnd
 |[CSliderCtrl:: Сеттипсиде](#settipside)|Размещает элемент управления ToolTip, используемый элементом управления TrackBar.|
 |[CSliderCtrl:: Сеттултипс](#settooltips)|Назначает элемент управления ToolTip элементу управления "ползунок".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Элемент управления "ползунок" (также известный как TrackBar) — это окно, содержащее ползунок и необязательные деления. Когда пользователь перемещает ползунок с помощью мыши или клавиш направления, элемент управления отправляет сообщения уведомления для указания на изменение.
 
@@ -221,7 +221,7 @@ virtual BOOL Create(
 
 Ненулевое значение, если инициализация прошла успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Построение создается `CSliderCtrl` в два этапа. Сначала вызовите конструктор, а затем вызовите метод `Create` , который создает элемент управления Slider и присоединяет его к `CSliderCtrl` объекту.
 
@@ -263,7 +263,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
@@ -296,7 +296,7 @@ CWnd* GetBuddy(BOOL fLocation = TRUE) const;
 
 Указатель на объект [CWnd](../../mfc/reference/cwnd-class.md) , который является дружественным окном в расположении, заданном параметром *fLocation*, или значение null, если в этом расположении не существует дружественного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [TBM_GETBUDDY](/windows/win32/Controls/tbm-getbuddy), как описано в Windows SDK. Описание стилей элемента управления "ползунок" см. в разделе [стили элементов управления TrackBar](/windows/win32/Controls/trackbar-control-styles) в Windows SDK.
 
@@ -313,7 +313,7 @@ void GetChannelRect(LPRECT lprc) const;
 *лпрк*<br/>
 Указатель на объект [крект](../../atl-mfc-shared/reference/crect-class.md) , который содержит размер и расположение ограничивающего прямоугольника канала при возврате функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Канал — это область, в которую перемещается ползунок, который содержит выделение при выборе диапазона.
 
@@ -329,7 +329,7 @@ int GetLineSize() const;
 
 Размер линии для элемента управления "ползунок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер линии влияет на то, сколько ползунков перемещается для TB_LINEUP и TB_LINEDOWNных уведомлений. Значение по умолчанию для параметра Размер линии равно 1.
 
@@ -357,7 +357,7 @@ int GetPageSize() const;
 
 Размер страницы для элемента управления "ползунок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер страницы влияет на то, сколько ползунков перемещается для TB_PAGEUP и TB_PAGEDOWN уведомлений.
 
@@ -391,7 +391,7 @@ void GetRange(
 *Nмакс.*<br/>
 Ссылка на целое число, которое получает максимальную точку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция копирует значения в целые числа, на которые ссылаются *nмин.* и *nмакс.*.
 
@@ -449,7 +449,7 @@ int GetThumbLength() const;
 
 Длина ползунка в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [TBM_GETTHUMBLENGTH](/windows/win32/Controls/tbm-getthumblength) сообщение, описанное в Windows SDK.
 
@@ -524,7 +524,7 @@ CToolTipCtrl* GetToolTips() const;
 
 Указатель на объект [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) или значение null, если подсказки не используются. Если элемент управления "ползунок" не использует стиль TBS_TOOLTIPS, возвращается значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [TBM_GETTOOLTIPS](/windows/win32/Controls/tbm-gettooltips), как описано в Windows SDK. Обратите внимание, что эта функция-член возвращает `CToolTipCtrl` объект, а не обработчик элемента управления.
 
@@ -556,7 +556,7 @@ CWnd* SetBuddy(
 
 Указатель на объект [CWnd](../../mfc/reference/cwnd-class.md) , который ранее был назначен элементу управления Slider в этом расположении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [TBM_SETBUDDY](/windows/win32/Controls/tbm-setbuddy), как описано в Windows SDK. Обратите внимание, что эта функция члена использует указатели на `CWnd` объекты, а не на дескрипторы окон как для возвращаемого значения, так и для параметра.
 
@@ -579,7 +579,7 @@ int SetLineSize(int nSize);
 
 Размер предыдущей строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер линии влияет на то, сколько ползунков перемещается для TB_LINEUP и TB_LINEDOWNных уведомлений.
 
@@ -600,7 +600,7 @@ int SetPageSize(int nSize);
 
 Предыдущий размер страницы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер страницы влияет на то, сколько ползунков перемещается для TB_PAGEUP и TB_PAGEDOWN уведомлений.
 
@@ -706,7 +706,7 @@ void SetThumbLength(int nLength);
 *нленгс*\
 окне Длина ползунка в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для этого метода необходимо, чтобы для элемента управления TrackBar было задано значение [TBS_FIXEDLENGTH](/windows/win32/Controls/trackbar-control-styles) Style.
 
@@ -754,7 +754,7 @@ void SetTicFreq(int nFreq);
 *нфрек*<br/>
 Частота делений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Например, если для периодичности задано значение 2, то для каждого второго шага в диапазоне ползунка отображается деление. Значение по умолчанию для периодичности равно 1 (то есть каждый инкремент в диапазоне связан с делениями).
 
@@ -777,7 +777,7 @@ int SetTipSide(int nLocation);
 
 Значение, представляющее предыдущее расположение элемента управления ToolTip. Возвращаемое значение равно одному из возможных значений для *nрасположение*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 TBM_SETTIPSIDE, как описано в Windows SDK. Элементы управления "ползунок", использующие отображение подсказок TBS_TOOLTIPS стиля. Описание стилей элемента управления "ползунок" см. в разделе [стили элементов управления TrackBar](/windows/win32/Controls/trackbar-control-styles) в Windows SDK.
 
@@ -794,7 +794,7 @@ void SetToolTips(CToolTipCtrl* pWndTip);
 *пвндтип*<br/>
 Указатель на объект [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) , содержащий подсказки для использования с элементом управления "ползунок".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [TBM_SETTOOLTIPS](/windows/win32/Controls/tbm-settooltips), как описано в Windows SDK. При создании элемента управления "ползунок" с TBS_TOOLTIPS стилем он создает элемент управления ToolTip по умолчанию, который отображается рядом с ползунком, отображая текущую положение ползунка. Описание стилей элемента управления "ползунок" см. в разделе [стили элементов управления TrackBar](/windows/win32/Controls/trackbar-control-styles) в Windows SDK.
 

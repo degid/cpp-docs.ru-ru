@@ -58,7 +58,7 @@ class CComDynamicUnkArray
 |[CComDynamicUnkArray::](#getunknown)|Вызовите этот `IUnknown` метод, чтобы получить указатель, связанный с данным файлом cookie.|
 |[CComDynamicUnkArray::Удалить](#remove)|Вызов иметод, `IUnknown` чтобы удалить указатель из массива.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComDynamicUnkArray`содержит динамически распределенный `IUnknown` массив указателей, каждый из которых имеет интерфейс на точке соединения. `CComDynamicUnkArray`может быть использован в качестве параметра для класса шаблонов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md)
 
@@ -103,7 +103,7 @@ IUnknown**
 
 Указатель на `IUnknown` указатель интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Коллекция содержит указатели на интерфейсы, `IUnknown`хранящиеся локально как. Вы отбрасываете каждый `IUnknown` интерфейс в реальный тип интерфейса, а затем вызвать через него. Сначала не нужно запросить интерфейс.
 
@@ -125,7 +125,7 @@ void clear();
 CComDynamicUnkArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает размер коллекции до нуля и инициализирует значения до NULL. Деструктор освобождает коллекцию, если это необходимо.
 
@@ -137,7 +137,7 @@ CComDynamicUnkArray();
 ~CComDynamicUnkArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает ресурсы, выделенные конструктором класса.
 
@@ -188,7 +188,7 @@ DWORD WINAPI GetCookie(IUnknown** ppFind);
 
 Возвращает файлcookieо-файлы, связанные с указателем, `IUnknown` или ноль, если не найдено соответствующего `IUnknown` указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если существует несколько экземпляров `IUnknown` одного и того же указателя, эта функция возвращает файл cookie для первого.
 

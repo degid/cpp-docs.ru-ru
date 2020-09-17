@@ -16,7 +16,7 @@ ms.locfileid: "77141764"
 ---
 # <a name="how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime"></a>Практическое руководство. Преобразование параллельного цикла for OpenMP для использования среды выполнения с параллелизмом
 
-В этом примере показано, как преобразовать базовый цикл, использующий директивы OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) и [for](../../parallel/openmp/reference/for-openmp.md) , для использования алгоритма среда выполнения с параллелизмом [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) .
+В этом примере показано, как преобразовать базовый цикл, использующий директивы OpenMP [Parallel](../../parallel/concrt/how-to-use-parallel-invoke-to-write-a-parallel-sort-routine.md#parallel) и [for](../../parallel/openmp/reference/for-openmp.md) , для использования алгоритма среда выполнения с параллелизмом [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) .
 
 ## <a name="example---prime-count"></a>Пример — число простых
 
@@ -35,13 +35,13 @@ found 107254 prime numbers.
 
 Алгоритм `parallel_for` и OpenMP 3,0 допускают, чтобы тип индекса был целочисленным типом со знаком или целочисленным типом без знака. Алгоритм `parallel_for` также гарантирует, что указанный диапазон не приведет к переполнению типа со знаком. В OpenMPх версий 2,0 и 2,5 допускается только для целочисленных типов индексов со знаком. OpenMP также не проверяет диапазон индексов.
 
-Версия этого примера, в которой используется среда выполнения с параллелизмом, также использует объект [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) вместо директивы [Atomic](../../parallel/openmp/reference/atomic.md) для увеличения значения счетчика без необходимости синхронизации.
+Версия этого примера, в которой используется среда выполнения с параллелизмом, также использует объект [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) вместо директивы [Atomic](../../parallel/openmp/reference/atomic.md) для увеличения значения счетчика без необходимости синхронизации.
 
 Дополнительные сведения о `parallel_for` и других параллельных алгоритмах см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md). Дополнительные сведения о классе `combinable` см. в разделе [Parallel Containers and Objects](../../parallel/concrt/parallel-containers-and-objects.md).
 
 ## <a name="example---use-stdarray"></a>Пример. использование std:: Array
 
-В этом примере предыдущий объект изменяется для работы с объектом [std:: Array](../../standard-library/array-class-stl.md) , а не в собственном массиве. Поскольку OpenMP версий 2,0 и 2,5 допускают использование целочисленных типов индексов со знаком только в конструкции `parallel_for`, нельзя использовать итераторы для доступа к C++ элементам контейнера стандартной библиотеки параллельно. Библиотека параллельных шаблонов (PPL) предоставляет алгоритм [параллелизма::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) , который параллельно выполняет задачи в итеративном контейнере, например, предоставленном C++ стандартной библиотекой. Он использует ту же логику секционирования, которую использует алгоритм `parallel_for`. Алгоритм `parallel_for_each` похож на C++ алгоритм стандартной библиотеки [std:: for_each](../../standard-library/algorithm-functions.md#for_each) , за исключением того, что алгоритм `parallel_for_each` параллельно выполняет задачи.
+В этом примере предыдущий объект изменяется для работы с объектом [std:: Array](../../standard-library/array-class-stl.md) , а не в собственном массиве. Поскольку OpenMP версий 2,0 и 2,5 допускают использование целочисленных типов индексов со знаком только в конструкции `parallel_for`, нельзя использовать итераторы для доступа к C++ элементам контейнера стандартной библиотеки параллельно. Библиотека параллельных шаблонов (PPL) предоставляет алгоритм [параллелизма::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) , который параллельно выполняет задачи в итеративном контейнере, например, предоставленном C++ стандартной библиотекой. Он использует ту же логику секционирования, которую использует алгоритм `parallel_for`. Алгоритм `parallel_for_each` похож на C++ алгоритм стандартной библиотеки [std:: for_each](../../standard-library/algorithm-functions.md#for_each) , за исключением того, что алгоритм `parallel_for_each` параллельно выполняет задачи.
 
 [!code-cpp[concrt-openmp#10](../../parallel/concrt/codesnippet/cpp/how-to-convert-an-openmp-parallel-for-loop-to-use-the-concurrency-runtime_2.cpp)]
 

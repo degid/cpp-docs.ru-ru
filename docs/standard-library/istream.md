@@ -38,14 +38,14 @@ ms.locfileid: "88846463"
 
 |Имя|Описание|
 |-|-|
-|[Протокол](../standard-library/istream-functions.md#ws)|Пропускает пробелы в потоке.|
-|[позиции](../standard-library/istream-functions.md#istream_swap)|Меняет местами два объекта потоков.|
+|[ws](../standard-library/istream-functions.md#ws)|Пропускает пробелы в потоке.|
+|[swap](../standard-library/istream-functions.md#istream_swap)|Меняет местами два объекта потоков.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор>>](../standard-library/istream-operators.md#op_gt_gt)|Извлекает символы и строки из потока.|
+|[operator>>](../standard-library/istream-operators.md#op_gt_gt)|Извлекает символы и строки из потока.|
 
 ### <a name="classes"></a>Классы
 

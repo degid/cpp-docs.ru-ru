@@ -23,7 +23,7 @@ ms.locfileid: "88841484"
 #include <regex>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы создать объект регулярного выражения, используйте [класс class basic_regex](../standard-library/basic-regex-class.md) или одну из его специализаций, [Regex](../standard-library/regex-typedefs.md#regex) и [wregex](../standard-library/regex-typedefs.md#wregex)вместе с флагами синтаксиса типа [regex_constants:: syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
@@ -80,19 +80,19 @@ ms.locfileid: "88841484"
 |[regex_match](../standard-library/regex-functions.md#regex_match)|Точно соответствует регулярному выражению.|
 |[regex_replace](../standard-library/regex-functions.md#regex_replace)|Заменяет соответствующие регулярные выражения.|
 |[regex_search](../standard-library/regex-functions.md#regex_search)|Поиск соответствия регулярному выражению.|
-|[позиции](../standard-library/regex-functions.md#swap)|Меняет местами объекты `basic_regex` и `match_results`.|
+|[swap](../standard-library/regex-functions.md#swap)|Меняет местами объекты `basic_regex` и `match_results`.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор = =](../standard-library/regex-operators.md#op_eq_eq)|Сравнение различных объектов, равенство.|
-|[operator! =](../standard-library/regex-operators.md#op_neq)|Сравнение различных объектов, неравенство.|
-|[Оператор<](../standard-library/regex-operators.md#op_lt)|Сравнение различных объектов, меньше.|
-|[станции\<=](../standard-library/regex-operators.md#op_gt_eq)|Сравнение различных объектов, меньше или равно.|
-|[Оператор>](../standard-library/regex-operators.md#op_gt)|Сравнение различных объектов, больше.|
-|[Оператор>=](../standard-library/regex-operators.md#op_gt_eq)|Сравнение различных объектов, больше или равно.|
-|[Оператор<<](../standard-library/regex-operators.md#op_lt_lt)|Вставляет `sub_match` в поток.|
+|[operator==](../standard-library/regex-operators.md#op_eq_eq)|Сравнение различных объектов, равенство.|
+|[operator!=](../standard-library/regex-operators.md#op_neq)|Сравнение различных объектов, неравенство.|
+|[operator<](../standard-library/regex-operators.md#op_lt)|Сравнение различных объектов, меньше.|
+|[operator\<=](../standard-library/regex-operators.md#op_gt_eq)|Сравнение различных объектов, меньше или равно.|
+|[operator>](../standard-library/regex-operators.md#op_gt)|Сравнение различных объектов, больше.|
+|[operator>=](../standard-library/regex-operators.md#op_gt_eq)|Сравнение различных объектов, больше или равно.|
+|[operator<<](../standard-library/regex-operators.md#op_lt_lt)|Вставляет `sub_match` в поток.|
 
 ## <a name="see-also"></a>См. также раздел
 

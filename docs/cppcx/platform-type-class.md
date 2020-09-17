@@ -27,7 +27,7 @@ public ref class Platform::Type :
     Platform::Details::IPrintable
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Type`Класс полезен в приложениях, которые должны напрямую обрабатываться с помощью **`if`** **`switch`** оператора или, который выполняет ветвление на основе типа объекта во время выполнения. Код типа, описывающий категорию типа, извлекается с помощью функции-члена [Type:: GetTypeCode](#gettypecode) .
 
@@ -102,7 +102,7 @@ Platform::TypeCode GetTypeCode();
 
 Одно из значений перечисления Platform::TypeCode.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эквивалентом метода члена GetTypeCode () является **`typeid`** свойство.
 

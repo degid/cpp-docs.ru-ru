@@ -29,7 +29,7 @@ struct is_nothrow_move_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* имеет конструктор перемещения "Throw", в противном случае — значение false.
 

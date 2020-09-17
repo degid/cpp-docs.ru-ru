@@ -28,7 +28,7 @@ ms.locfileid: "88845267"
 *expression*<br/>
 Одно или несколько выражений языка C. Пустые слоты аргументов разрешены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **first_is** C++ имеет те же функциональные возможности, что и атрибут [first_is](/windows/win32/Midl/first-is) MIDL.
 

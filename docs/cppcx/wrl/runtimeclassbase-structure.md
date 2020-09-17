@@ -22,7 +22,7 @@ ms.locfileid: "80213594"
 struct RuntimeClassBase;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется для обнаружения `RuntimeClass` в функции [make](make-function.md) .
 
@@ -34,7 +34,7 @@ struct RuntimeClassBase;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

@@ -103,7 +103,7 @@ class CWordArray : public CObject
 |----------|-----------------|
 |[CWordArray::оператор &#91;&#93;](../../mfc/reference/cobarray-class.md#operator_at)|Получает или задает элемент с указанным индексом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CWordArray`включает [IMPLEMENT_SERIAL](run-time-object-model-services.md#implement_serial) макрос для поддержки сериализации и сброса его элементов. Если массив слов хранится в архиве, либо с перегруженным оператором вставки, либо с [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) функция элемента, каждый элемент, в свою очередь, сериализован.
 

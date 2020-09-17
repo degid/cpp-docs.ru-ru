@@ -23,7 +23,7 @@ ms.locfileid: "88845657"
 
 **Пространство имен:** std
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объекты типа `strstream` работают с **`char`** *, которые представляют собой строки на языке C. Используется [\<sstream>](../standard-library/sstream.md) для работы с объектами типа [basic_string](../standard-library/basic-string-class.md).
 
@@ -34,7 +34,7 @@ ms.locfileid: "88845657"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Класс strstreambuf](../standard-library/strstreambuf-class.md)|Класс описывает буфер потока, который управляет передачей элементов в последовательность элементов, хранящейся в объекте массива, и из нее **`char`** .|
 |[Класс istrstream](../standard-library/istrstream-class.md)|Этот класс описывает объект, управляющий извлечением элементов и закодированных объектов из буфера потока класса [strstreambuf](../standard-library/strstreambuf-class.md).|

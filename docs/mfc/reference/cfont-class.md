@@ -62,7 +62,7 @@ class CFont : public CGdiObject
 |----------|-----------------|
 |[CFont:оператор HFONT](#operator_hfont)|Возвращает ручку шрифта Windows GDI, прикрепленную к объекту. `CFont`|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать `CFont` объект, `CFont` построить объект и прикрепить шрифт Windows к нему с [CreateFont,](#createfont) [CreateFontIndirect](#createfontindirect), [CreatePointFont](#createpointfont), или [CreatePointFontIndirect](#createpointfontindirect), а затем использовать функции члена объекта для манипулирования шрифтом.
 
@@ -90,7 +90,7 @@ class CFont : public CGdiObject
 CFont();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученный объект должен быть `CreateFont` `CreateFontIndirect`инициализирован с , `CreatePointFont`или `CreatePointFontIndirect` до того, как он может быть использован.
 
@@ -178,7 +178,7 @@ A `CString` или указатель на нулевую строку, кото
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Впоследствии шрифт может быть выбран в качестве шрифта для любого контекста устройства.
 
@@ -209,7 +209,7 @@ BOOL CreateFontIndirect(const LOGFONT* lpLogFont);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Впоследствии шрифт может быть выбран в качестве текущего шрифта для любого устройства.
 
@@ -247,7 +247,7 @@ A `CString` или указатель на нулевую строку, кото
 
 Nonzero, если успешно, в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он автоматически преобразует высоту в *nPointSize* в логические единицы, используя объект CDC, на который указывает *pDC.*
 
@@ -279,7 +279,7 @@ BOOL CreatePointFontIndirect(
 
 Nonzero, если успешно, в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция автоматически преобразует `lfHeight` высоту в логические единицы, используя объект `LOGFONT` CDC, на который указывает *pDC,* прежде чем передать структуру на Windows.
 
@@ -306,7 +306,7 @@ static CFont* PASCAL FromHandle(HFONT hFont);
 
 Указатель на `CFont` объект в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CFont` объект еще не прикреплен к ручке, создается и прикрепляется временный `CFont` объект. Этот `CFont` временный объект действителен только до следующего времени, когда приложение не будет проходить время в цикле событий, после чего все временные графические объекты удаляются. Другой способ сказать это заключается в том, что временный объект действителен только при обработке одного окна сообщения.
 
@@ -347,7 +347,7 @@ operator HFONT() const;
 
 Ручка шрифта Windows GDI объект `CFont` прилагается в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку этот оператор автоматически используется `CFont` для конверсий из `CFont` [шрифтов и текста,](/windows/win32/gdi/fonts-and-text)вы можете передавать объекты функциям, которые ожидают HFONTs.
 

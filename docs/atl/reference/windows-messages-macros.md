@@ -21,7 +21,7 @@ ms.locfileid: "88834444"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="wm_forwardmsg"></a><a name="wm_forwardmsg"></a> WM_FORWARDMSG
 
@@ -35,7 +35,7 @@ WM_FORWARDMSG
 
 Ненулевое значение, если сообщение было обработано, ноль, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте WM_FORWARDMSG для пересылки сообщения, полученного окном, в другое окно для обработки. Параметры LPARAM и WPARAM используются следующим образом:
 

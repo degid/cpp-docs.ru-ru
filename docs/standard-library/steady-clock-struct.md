@@ -21,7 +21,7 @@ ms.locfileid: "87217406"
 struct steady_clock;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В Windows `steady_clock` заключает в оболочку `QueryPerformanceCounter` функцию.
 

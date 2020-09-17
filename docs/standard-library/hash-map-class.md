@@ -117,16 +117,16 @@ class hash_map
 *Раздел*\
 Тип данных ключа для сохранения в hash_map.
 
-*Тип*\
+*Type*\
 Тип данных элемента для сохранения в hash_map.
 
-*Признаки*\
+*Traits*\
 Тип, который включает два объекта-функции, один из классов compare, который может сравнить значения двух элементов как ключей сортировки, чтобы определить их относительный порядок, и хэш-функцию, которая является унарным предикатом, который сопоставляет значения ключей элементов с целыми числами без знака типа `size_t`. Этот аргумент является необязательным, и hash_compare<`Key` `Key` значение по умолчанию меньше<> > .
 
-*Выделен*\
+*Allocator*\
 Тип, представляющий сохраненный объект распределителя, который инкапсулирует сведения о выделении и освобождении памяти для hash_map. Этот аргумент является необязательным, а значение по умолчанию — распределитель \<pair <const `Key`, `Type`>>.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 hash_map:
 
@@ -172,11 +172,11 @@ Hash_map упорядочивает последовательность, кот
 |[const_reference](#const_reference)|Тип, предоставляющий ссылку на **`const`** элемент, хранящийся в, `hash_map` для чтения и выполнения **`const`** операций.|
 |[const_reverse_iterator](#const_reverse_iterator)|Тип, предоставляющий двунаправленный итератор, который может читать любой **`const`** элемент в `hash_map` .|
 |[difference_type](#difference_type)|Тип целого числа со знаком, пригодный для представления количества элементов в контейнере `hash_map` в диапазоне между элементами, на которые указывают итераторы.|
-|[итераци](#iterator)|Тип, предоставляющий двунаправленный итератор, который может считывать или изменять любой элемент в `hash_map`.|
+|[iterator](#iterator)|Тип, предоставляющий двунаправленный итератор, который может считывать или изменять любой элемент в `hash_map`.|
 |[key_compare](#key_compare)|Тип, предоставляющий объект функции, который может сравнить два ключа сортировки для определения относительного порядка двух элементов в контейнере `hash_map`.|
 |[key_type](#key_type)|Тип описывает объект ключа сортировки, составляющий каждый элемент `hash_map`.|
 |[mapped_type](#mapped_type)|Тип, который представляет тип данных, хранящийся в контейнере `hash_map`.|
-|[вид](#pointer)|Тип, предоставляющий указатель на элемент в `hash_map`.|
+|[pointer](#pointer)|Тип, предоставляющий указатель на элемент в `hash_map`.|
 |[reference](#reference)|Тип, предоставляющий ссылку на элемент, хранящийся в контейнере `hash_map`.|
 |[reverse_iterator](#reverse_iterator)|Тип, предоставляющий двунаправленный итератор, который может считывать или изменять элемент в обращенном контейнере `hash_map`.|
 |[size_type](#size_type)|Целочисленный Typedef без знака, который может представлять число элементов в `hash_map`.|
@@ -187,17 +187,17 @@ Hash_map упорядочивает последовательность, кот
 |Функция-член|Описание|
 |-|-|
 |[at](#at)|Находит элемент в `hash_map` с указанным значением ключа.|
-|[начале](#begin)|Возвращает итератор, обращающийся к первый элемент в контейнере `hash_map`.|
+|[begin](#begin)|Возвращает итератор, обращающийся к первый элемент в контейнере `hash_map`.|
 |[cbegin](#cbegin)|Возвращает итератор const, обращающийся к первому элементу в `hash_map`.|
 |[cend](#cend)|Возвращает итератор const, который обращается к месту, следующему за последним элементом в `hash_map`.|
-|[открытым](#clear)|Стирает все элементы в `hash_map`.|
+|[clear](#clear)|Стирает все элементы в `hash_map`.|
 |[count](#count)|Возвращает число элементов в контейнере `hash_map`, ключи которых соответствуют ключу, заданному параметром.|
 |[crbegin](#crbegin)|Возвращает итератор const, который обращается к первому элементу в обращенном контейнере `hash_map`.|
 |[crend](#crend)|Возвращает итератор const, который обращается к месту, следующему за последним элементом в обращенном контейнере `hash_map`.|
 |[emplace](#emplace)|Вставляет созданный на месте элемент в `hash_map`.|
 |[emplace_hint](#emplace_hint)|Вставляет созданный на месте элемент в `hash_map` с подсказкой о размещении.|
 |[empty](#empty)|Проверяет, пуст ли `hash_map`.|
-|[конце](#end)|Возвращает итератор, который обращается к месту, следующему за последним элементом в контейнере `hash_map`.|
+|[end](#end)|Возвращает итератор, который обращается к месту, следующему за последним элементом в контейнере `hash_map`.|
 |[equal_range](#equal_range)|Возвращает пару итераторов соответственно на первый элемент в наборе `hash_map` с ключом, который больше, чем указанный ключ, и на первый элемент в наборе `hash_map` с ключом, который больше или равен данному ключу.|
 |[erase](#erase)|Удаляет элемент или диапазон элементов с указанных положений в `hash_map`.|
 |[find](#find)|Возвращает итератор, адресующий расположение элемента в наборе `hash_map` с ключом, эквивалентным указанному ключу.|
@@ -209,7 +209,7 @@ Hash_map упорядочивает последовательность, кот
 |[rbegin](#rbegin)|Возвращает итератор, который обращается к первому элементу в обращенном контейнере `hash_map`.|
 |[rend](#rend)|Возвращает итератор, который обращается к месту, следующему за последним элементом в обращенном контейнере `hash_map`.|
 |[size](#size)|Возвращает количество элементов в контейнере `hash_map`.|
-|[позиции](#swap)|Выполняет обмен элементами между двумя объектами `hash_map`.|
+|[swap](#swap)|Выполняет обмен элементами между двумя объектами `hash_map`.|
 |[upper_bound](#upper_bound)|Возвращает итератор, указывающий на первый элемент в `hash_map` со значением ключа, которое больше указанного ключа.|
 |[value_comp](#value_comp)|Извлекает копию объекта сравнения, который используется для упорядочивания значений элементов в наборе `hash_map`.|
 
@@ -217,8 +217,8 @@ Hash_map упорядочивает последовательность, кот
 
 |Оператор|Описание|
 |-|-|
-|[оператор&#91;&#93;](#op_at)|Вставляет элемент в `hash_map` с заданным значением ключа.|
-|[hash_map:: operator =](#op_eq)|Заменяет элементы `hash_map` копией другого `hash_map`.|
+|[operator&#91;&#93;](#op_at)|Вставляет элемент в `hash_map` с заданным значением ключа.|
+|[hash_map::operator=](#op_eq)|Заменяет элементы `hash_map` копией другого `hash_map`.|
 
 ## <a name="requirements"></a>Требования
 
@@ -263,7 +263,7 @@ const Type& at(const Key& key) const;
 
 Ссылка на значение данных найденного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение ключа аргумента не найдено, функция создает объект класса [out_of_range Class](../standard-library/out-of-range-class.md).
 
@@ -414,7 +414,7 @@ const_iterator cend() const;
 
 Двунаправленный итератор const, адресующий место, следующее за последним элементом в [hash_map](../standard-library/hash-map-class.md). Если `hash_map` пуст, то `hash_map::cend == hash_map::begin`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `cend` используется для проверки, достиг ли итератор конца своего `hash_map`.
 
@@ -461,7 +461,7 @@ The value of last element of hm1 is 30.
 void clear();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -511,7 +511,7 @@ The size of the hash_map after clearing is 0.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_iterator const_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `const_iterator`нельзя использовать для изменения значения элемента.
 
@@ -536,7 +536,7 @@ typedef list<typename Traits::value_type, typename Traits::allocator_type>::cons
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_pointer const_pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `const_pointer`нельзя использовать для изменения значения элемента.
 
@@ -553,7 +553,7 @@ typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::co
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::const_reference const_reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -609,7 +609,7 @@ The data value of the first element in the hash_map is 10.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::const_reverse)iterator const_reverse_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `const_reverse_iterator` не может изменять значение элемента и используется для последовательного прохождения через hash_map в обратном направлении.
 
@@ -643,7 +643,7 @@ size_type count(const Key& key) const;
 
 1, если объект hash_map содержит элемент, ключ сортировки которого совпадает с ключом параметра. 0, если объект hash_map не содержит ни одного элемента с соответствующим ключом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает количество элементов *x* в диапазоне
 
@@ -710,7 +710,7 @@ const_reverse_iterator crbegin() const;
 
 Константный обратный двунаправленный итератор, адресующий первый элемент в обратном [hash_map](../standard-library/hash-map-class.md) (или адресующий элемент, ранее бывший последним элементом в `hash_map` до изменения его порядка на обратный).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `crbegin` используется с обратным hash_map точно так же, как [begin](#begin) используется с `hash_map`.
 
@@ -762,7 +762,7 @@ const_reverse_iterator crend() const;
 
 Константный обратный двунаправленный итератор, адресующий место после последнего элемента в обратном [hash_map](../standard-library/hash-map-class.md) (расположение перед первым элементом в `hash_map` до изменения его порядка на обратный).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `crend` используется с обратным `hash_map` точно так же, как [hash_map::end](#end) используется с `hash_map`.
 
@@ -802,7 +802,7 @@ int main( )
 The last element of the reversed hash_map hm1 is 3.
 ```
 
-## <a name="hash_mapdifference_type"></a><a name="difference_type"></a> hash_map::d ifference_type
+## <a name="hash_mapdifference_type"></a><a name="difference_type"></a> hash_map::difference_type
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_map](../standard-library/unordered-map-class.md).
@@ -888,7 +888,7 @@ emplace(
 
 ### <a name="parameters"></a>Параметры
 
-*Val*\
+*val*\
 Значение, используемое для перемещения, создает элемент для вставки в [hash_map](../standard-library/hash-map-class.md), кроме случаев, когда `hash_map` уже содержит этот элемент (или, в более общем смысле, элемент, ключ которого эквивалентно упорядочен).
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -897,7 +897,7 @@ emplace(
 
 Для доступа к компоненту итератора пары `pr`, возвращенной этой функцией-членом, используйте `pr.first` и разыменуйте ее с помощью `*(pr.first)`. Для доступа к **`bool`** компоненту пары, `pr` возвращаемой этой функцией-членом, используйте `pr.second` , и для разыменования этой функции используйте `*(pr.second)` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [hash_map::value_type](#value_type) элемента — это пара, поэтому значением элемента будет упорядоченная пара, первый элемент которой равен значению ключа, а второй — значению данных элемента.
 
@@ -946,7 +946,7 @@ iterator emplace_hint(
 
 ### <a name="parameters"></a>Параметры
 
-*Val*\
+*val*\
 Значение, используемое для перемещения, создает элемент для вставки в [hash_map](../standard-library/hash-map-class.md), кроме случаев, когда `hash_map` уже содержит этот элемент (или, в более общем смысле, элемент, ключ которого эквивалентно упорядочен).
 
 *_Where*\
@@ -956,7 +956,7 @@ iterator emplace_hint(
 
 Функция-член [hash_multimap::emplace](../standard-library/hash-multimap-class.md#emplace) возвращает итератор, который указывает на позицию вставки нового элемента в `hash_map` или место, где находится существующий элемент с эквивалентным упорядочением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [hash_map::value_type](#value_type) элемента — это пара, поэтому значением элемента будет упорядоченная пара, первый элемент которой равен значению ключа, а второй — значению данных элемента.
 
@@ -1006,7 +1006,7 @@ bool empty() const;
 
 **`true`** значение, если hash_map пустой; **`false`** если hash_map не пуста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -1059,7 +1059,7 @@ iterator end();
 
 Двунаправленный итератор, адресующий расположение после последнего элемента в hash_map. Если hash_map является пустым, то hash_map::end == hash_map::begin.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `end` используется для проверки того, достиг ли итератор конца hash_map.
 
@@ -1137,7 +1137,7 @@ pair <iterator, iterator> equal_range (const Key& key);
 
 Для доступа к первому итератору пары `pr`, возвращаемой функцией-членом, нужно использовать `pr`. **сначала** и для разыменования итератора нижней границы используйте \* ( `pr` . **первый**). Для доступа ко второму итератору пары `pr`, возвращаемой функцией-членом, нужно использовать `pr`. **второй** и для разыменования итератора верхней границы используйте \* ( `pr` . **второй**).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -1220,10 +1220,10 @@ size_type erase(const key_type& key);
 *_Where*\
 Положение элемента, удаляемого из объекта hash_map.
 
-*началь*\
+*first*\
 Положение первого элемента, удаляемого из объекта hash_map.
 
-*Последняя*\
+*last*\
 Положение сразу после последнего элемента, удаляемого из объекта hash_map.
 
 *раздел*\
@@ -1235,7 +1235,7 @@ size_type erase(const key_type& key);
 
 Для третьей функции-члена возвращает число элементов, которые были удалены из объекта hash_map.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функции-члены не создают исключений.
 
@@ -1346,7 +1346,7 @@ const_iterator find(const Key& key) const;
 
 Итератор, адресующий расположение элемента с указанным ключом или расположение после последнего элемента в hash_map, если совпадений для ключа не найдено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `find` Возвращает итератор, который обращается к элементу в hash_map, ключ сортировки которого эквивалентен ключу аргумента в бинарном предикате, который вызывает упорядочивание на основе отношения сравнения "меньше".
 
@@ -1418,7 +1418,7 @@ Allocator get_allocator() const;
 
 Распределитель, используемый hash_map.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Распределители для класса hash_map определяют, как этот класс управляет хранилищем. Распределителей по умолчанию в классах контейнеров стандартной библиотеки C++ достаточно для большинства задач программирования. Написание и использование собственного класса распределителя требует расширенных навыков работы с C++.
 
@@ -1538,19 +1538,19 @@ hash_map(
 *Соответствовал*\
 Функция сравнения типа const `Traits` используется для упорядочения элементов в hash_map, чье значение по умолчанию — `hash_compare`.
 
-*Правильно*\
+*right*\
 hash_map, для которой создаваемая схема должна стать копией.
 
-*Началь*\
+*First*\
 Положение первого элемента в диапазоне копируемых элементов.
 
-*Последняя*\
+*last*\
 Положение первого элемента после диапазона копируемых элементов.
 
 *Интерфейс*\
 initializer_list
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все конструкторы хранят тип объекта-распределителя, который управляет хранилищем памяти для hash_map и который позже может быть получен путем вызова [get_allocator](#get_allocator). Параметр-распределитель часто не указывается в объявлениях класса и в макросах предварительной обработки, используемых для замены альтернативных распределителей.
 
@@ -1599,16 +1599,16 @@ iterator insert(
 
 ### <a name="parameters"></a>Параметры
 
-*Val*\
+*val*\
 Значение элемента для вставки в hash_map, кроме случаев, когда hash_map уже содержит этот элемент (или, в более общем смысле, элемент, ключ которого эквивалентно упорядочен).
 
 *_Where*\
 Подсказка о месте начала поиска правильной точки вставки.
 
-*началь*\
+*first*\
 Позиция первого элемента, который следует скопировать из hash_map.
 
-*Последняя*\
+*last*\
 Позиция непосредственно перед последним элементом, который следует скопировать из hash_map.
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -1621,7 +1621,7 @@ iterator insert(
 
 Последние две `insert` функции члена ведут себя так же, как первые два, за исключением того, что они перемещают конструкцию вставленного значения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [value_type](../standard-library/map-class.md#value_type) элемента — это pair, поэтому значением элемента будет упорядоченная пара, первый компонент которой равен значению ключа, а второй — значению данных элемента.
 
@@ -1748,7 +1748,7 @@ After the move insertion, hm4 contains:
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::iterator iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, `iterator` определенный hash_map, указывает на элементы, которые являются объектами [value_type](#value_type), то есть тип `pair<const Key, Type>` , первый элемент которого является ключом элемента, а второй элемент — сопоставленная база данных, удерживаемая элементом.
 
@@ -1777,7 +1777,7 @@ key_compare key_comp() const;
 
 Возвращает объект функции, который hash_map использует для упорядочения своих элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хранимый объект определяет функцию-член
 
@@ -1849,7 +1849,7 @@ int main( )
 typedef Traits key_compare;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `key_compare` является синонимом для параметра-шаблона `Traits`.
 
@@ -1870,7 +1870,7 @@ typedef Traits key_compare;
 typedef Key key_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `key_type` является синонимом для параметра-шаблона `Key`.
 
@@ -1904,7 +1904,7 @@ const_iterator lower_bound(const Key& key) const;
 
 Если возвращаемое значение `lower_bound` назначено `const_iterator`, объект hash_map изменить нельзя. Если возвращаемое значение `lower_bound` присваивается `iterator` , то объект hash_map можно изменить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -1968,7 +1968,7 @@ The element of hm1 with a key matching that of the last element is: 30.
 typedef Type mapped_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `mapped_type` является синонимом для параметра-шаблона `Type`.
 
@@ -1993,7 +1993,7 @@ size_type max_size() const;
 
 Максимально возможная длина hash_map.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -2017,7 +2017,7 @@ int main( )
 }
 ```
 
-## <a name="hash_mapoperator"></a><a name="op_at"></a> hash_map:: operator []
+## <a name="hash_mapoperator"></a><a name="op_at"></a> hash_map::operator[]
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_map](../standard-library/unordered-map-class.md).
@@ -2039,7 +2039,7 @@ Type& operator[](Key&& key);
 
 Ссылка на значение данных вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение ключа аргумента не найдено, он вставляется вместе со значением по умолчанию для такого типа данных.
 
@@ -2113,7 +2113,7 @@ int main( )
 }
 ```
 
-## <a name="hash_mapoperator"></a><a name="op_eq"></a> hash_map:: operator =
+## <a name="hash_mapoperator"></a><a name="op_eq"></a> hash_map::operator=
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_map](../standard-library/unordered-map-class.md).
@@ -2128,10 +2128,10 @@ hash_map& operator=(hash_map&& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Класс hash_map](../standard-library/hash-map-class.md), который копируется в `hash_map`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После стирания любых существующих элементов в `hash_map` , `operator=` копирует или перемещает содержимое *непосредственно* в `hash_map` .
 
@@ -2184,7 +2184,7 @@ int main( )
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::pointer pointer;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `pointer` можно использовать для изменения значения элемента.
 
@@ -2207,7 +2207,7 @@ reverse_iterator rbegin();
 
 Обратный двунаправленный итератор, адресующий первый элемент в обратном hash_map или адресующий элемент, ранее бывший последним элементом в hash_map до изменения его порядка на обратный.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `rbegin` используется с обратным hash_map точно так же, как [begin](#begin) используется с hash_map.
 
@@ -2285,7 +2285,7 @@ After the erasure, the first element in the reversed hash_map is 2.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::reference reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -2354,7 +2354,7 @@ reverse_iterator rend();
 
 Обратный двунаправленный итератор, адресующий место после последнего элемента в обратном hash_map (расположение перед первым элементом в hash_map до изменения его порядка на обратный).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `rend` используется с обратным hash_map точно так же, как [end](#end) используется с hash_map.
 
@@ -2438,7 +2438,7 @@ After the erasure, the last element in the reversed hash_map is 2.
 typedef list<typename Traits::value_type, typename Traits::allocator_type>::reverse_iterator reverse_iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип `reverse_iterator` не может изменять значение элемента и используется для последовательного прохождения через hash_map в обратном направлении.
 
@@ -2467,7 +2467,7 @@ size_type size() const;
 
 Текущая длина hash_map.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -2513,7 +2513,7 @@ The hash_map length is now 2.
 typedef list<typename _Traits::value_type, typename _Traits::allocator_type>::size_type size_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -2532,10 +2532,10 @@ void swap(hash_map& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 hash_map аргументов, предоставляющий элементы, которые следует поменять местами с целевой hash_map.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член не делает недействительным ссылки, указатели или итераторы, обозначающие элементы в двух hash_map, для которых выполняется обмен элементами.
 
@@ -2617,7 +2617,7 @@ const_iterator upper_bound(const Key& key) const;
 
 Если для `const_iterator` назначено возвращаемое значение, объект hash_map изменить нельзя. Если возвращаемое значение присвоено `iterator` , то объект hash_map можно изменить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -2686,7 +2686,7 @@ value_compare value_comp() const;
 
 Возвращает объект функции сравнения, который hash_map использует для упорядочения своих элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для hash_map *m*, если два элемента *E1* (*K1*, *D1*) и *e2* (*априорной оценкой K2*, *D2*) являются объектами типа [value_type](#value_type), где *k1* и *априорной оценкой K2* — это ключи типа [key_type](#key_type) , а *D1* и *D2* — их данные типа [mapped_type](#mapped_type), то `m.value_comp()(e1, e2)` он эквивалентен `m.key_comp()(k1, k2)` . Хранимый объект определяет функцию-член
 
@@ -2750,7 +2750,7 @@ int main( )
 typedef pair<const Key, Type> value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `value_type` объявляется `pair<const key_type, mapped_type>` как, а не из- `pair<key_type, mapped_type>` за того, что ключи ассоциативного контейнера не могут быть изменены с помощью неконстантного итератора или ссылки.
 

@@ -23,7 +23,7 @@ ms.locfileid: "88842173"
 [optional]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Необязательный** атрибут C++ имеет те же функциональные возможности, что и [необязательный](/windows/win32/Midl/optional) атрибут MIDL.
 

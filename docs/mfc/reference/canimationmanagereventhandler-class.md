@@ -47,7 +47,7 @@ class CAnimationManagerEventHandler : public CUIAnimationManagerEventHandlerBase
 |[CAnimationManagerEventhandler::OnManagerStatusChanged](#onmanagerstatuschanged)|Вызывается при изменении статуса менеджера анимации. (Переопределяет `CUIAnimationManagerEventHandlerBase::OnManagerStatusChanged`.)|
 |[CAnimationManagerEventHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обработчик событий создается и передается методу IUIAnimationManager::SetManagerEventHandler метод, когда вы звоните CAnimationController::EnableAnimationManagerEvent.
 

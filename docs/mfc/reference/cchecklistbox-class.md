@@ -68,7 +68,7 @@ class CCheckListBox : public CListBox
 |[CCheckListBox::SetCheck](#setcheck)|Устанавливает состояние флажка предмета.|
 |[CCheckListBox::SetCheckStyle](#setcheckstyle)|Устанавливает стиль флажков управления.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 "Окно списка" отображает список элементов, таких как имена файлов. Каждый элемент в списке имеет флажок рядом с ним, что пользователь может проверить или очистить.
 
@@ -120,7 +120,7 @@ class CCheckListBox : public CListBox
 CCheckListBox();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CCheckListBox` объект в два этапа. Сначала определите класс, `CCheckListBox`полученный `Create`из, затем вызов , который инициализирует окно контрольного списка Windows и прикрепляет его к объекту. `CCheckListBox`
 
@@ -158,7 +158,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CCheckListBox` объект в два этапа. Во-первых, определить класс, полученный из, `CcheckListBox` а затем вызвать `Create`, который `CCheckListBox`инициализирует окно контрольного списка Windows и прикрепляет его к . Смотрите [CCheckListBox::CCheckListBox](#cchecklistbox) для образца.
 
@@ -195,7 +195,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *lpDrawItemStruct*<br/>
 Длинный указатель на структуру [DRAWITEMSTRUCT,](/windows/win32/api/winuser/ns-winuser-drawitemstruct) содержащую информацию о типе требуемого чертежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `itemState` Члены `itemAction` `DRAWITEMSTRUCT` структуры определяют действие чертежа, которое должно быть выполнено.
 
@@ -258,7 +258,7 @@ UINT GetCheckStyle();
 
 Стиль контрольно-пропускных коробок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения информации о возможных стилях, см [SetCheckStyle](#setcheckstyle).
 
@@ -292,7 +292,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 *lpИзмеренныйПункт*<br/>
 Длинный указатель на структуру [MEASUREITEMSTRUCT.](/windows/win32/api/winuser/ns-winuser-measureitemstruct)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию эта функция-член ничего не делает. Переопределить эту функцию члена `MEASUREITEMSTRUCT` и заполнить структуру, чтобы сообщить Windows о размерах элементов контрольного списка. Если поле контрольного списка создается с [LBS_OWNERDRAWVARIABLE](../../mfc/reference/styles-used-by-mfc.md#list-box-styles) стилем, фреймворк вызывает эту функцию элемента для каждого элемента в поле списка. В противном случае этот участник называется только один раз.
 
@@ -318,7 +318,7 @@ virtual CRect OnGetCheckPosition(
 
 Положение и размер флажка предмета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию возвращает только положение по`rectCheckBox`умолчанию и размер флажка (). По умолчанию флажок выровнен в левом верхнем углу предмета и представляет собой стандартный размер флажка. Там могут быть случаи, когда вы хотите флажки справа, или хотите больше или меньше флажок. В этих случаях `OnGetCheckPosition` переопределить, чтобы изменить положение флажка и размер внутри элемента.
 
@@ -340,7 +340,7 @@ void SetCheck(
 *Nпроверьте*<br/>
 Состояние кнопки для указанного флажка. Смотрите раздел Замечания для возможных значений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В следующей таблице перечислены возможные значения параметра *nCheck.*
 
@@ -363,7 +363,7 @@ void SetCheckStyle(UINT nStyle);
 *nStyle*<br/>
 Определяет стиль флажков в контрольном ящике.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Действительные стили:
 

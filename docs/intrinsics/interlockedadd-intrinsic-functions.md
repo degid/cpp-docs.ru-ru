@@ -101,7 +101,7 @@ __int64 _InterlockedAdd64_rel(
 |`_InterlockedAdd64_nf`|ARM, ARM64|
 |`_InterlockedAdd64_rel`|ARM, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

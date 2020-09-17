@@ -24,7 +24,7 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="classes"></a>Классы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс ComPtrRef](comptrref-class.md)|Представляет ссылку на объект типа ComPtr \<T> .|
 |[Класс оператор comptrrefbase](comptrrefbase-class.md)|Представляет базовый класс для класса [ComPtrRef](comptrref-class.md) .|
@@ -37,7 +37,7 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[ArgTraits - структура](argtraits-structure.md)|Объявляет указанный интерфейс делегата и анонимную функцию-член с заданным числом параметров.|
 |[ArgTraitsHelper - структура](argtraitshelper-structure.md)|Помогает определить общие характеристики аргументов делегата.|
@@ -63,13 +63,13 @@ namespace Microsoft::WRL::Details;
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[AsyncStatusInternal - перечисление](asyncstatusinternal-enumeration.md)|Задает сопоставление между внутренними перечислениями состояний асинхронных операций и перечислением `Windows::Foundation::AsyncStatus`.|
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция Активатионфакторикаллбакк](activationfactorycallback-function.md)|Возвращает фабрику активации для указанного идентификатора активации.|
 |[Move, функция](move-function.md)|Перемещает указанный аргумент из одного расположения в другое.|
@@ -79,7 +79,7 @@ namespace Microsoft::WRL::Details;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Async. h, Client. h, кореврапперс. h, Event. h, FTM. h, реализует. h, internal. h, Module. h
+**Заголовок:** Async.h, Client.h, кореврапперс.h, Event.h, FTM.h, реализует.h, internal.h, Module.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

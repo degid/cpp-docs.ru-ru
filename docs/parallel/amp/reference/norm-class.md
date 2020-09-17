@@ -26,23 +26,23 @@ class norm;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[норма, конструктор](#ctor)|Перегружен. Конструктор по умолчанию. Инициализируйте до 0,0 f.|
+|[norm, конструктор](#ctor)|Перегружен. Конструктор по умолчанию. Инициализируйте до 0,0 f.|
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|норма:: operator-||
-|норма:: operator--||
-|норма:: оператор float|Оператор преобразования. Преобразуйте нормативное число в значение с плавающей запятой.|
-|норма:: operator * =||
-|норма:: оператор/=||
-|норма:: operator + +||
-|норма:: operator + =||
-|норма:: оператор =||
-|норма:: operator-=||
+|norm::operator-||
+|norm::operator--||
+|norm::operator float|Оператор преобразования. Преобразуйте нормативное число в значение с плавающей запятой.|
+|norm::operator*=||
+|norm::operator/=||
+|norm::operator++||
+|norm::operator+=||
+|norm::operator=||
+|norm::operator-=||
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -50,11 +50,11 @@ class norm;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_short_vectors. h
+**Заголовок:** amp_short_vectors.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
-## <a name="ctor"></a>норма
+## <a name="ctor"></a>norm
 
 Конструктор по умолчанию. Инициализируйте до 0,0 f.
 

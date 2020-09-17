@@ -41,7 +41,7 @@ class CCachedDataPathProperty : public CDataPathProperty
 |----------|-----------------|
 |[CCachedDataPathProperty::m_Cache](#m_cache)|`CMemFile`объект, в котором кэшировать данные.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Файл памяти хранится в оперативной памяти, а не на диске и полезен для быстрых временных переводов.
 
@@ -95,7 +95,7 @@ CCachedDataPathProperty(
 *lpszPath*<br/>
 Путь, который может быть абсолютным или относительным, используется для создания асинхронного прозвища, которое ссылается на фактическое абсолютное местоположение свойства. `CCachedDataPathProperty`использует URL-адреса, а не имена файлов. Если требуется `CCachedDataPathProperty` объект для файла, подготовите file:// к пути.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, `COleControl` на который указывает *pControl,* используется [Open](../../mfc/reference/cdatapathproperty-class.md#open) и извлекается полученными классами. Если *pControl* является NULL, `Open` элемент управления, используемого с должны быть установлены с [SetControl](../../mfc/reference/cdatapathproperty-class.md#setcontrol). Если *lpszPath* является NULL, вы можете `Open` пройти по пути через или установить его с [SetPath](../../mfc/reference/cdatapathproperty-class.md#setpath).
 
@@ -107,7 +107,7 @@ CCachedDataPathProperty(
 CMemFile m_Cache;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файл памяти хранится в оперативной памяти, а не на диске.
 

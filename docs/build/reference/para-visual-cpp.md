@@ -30,7 +30,7 @@ ms.locfileid: "80171181"
 *content*<br/>
 Текст абзаца.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы обработать и сохранить комментарии документации в файл, при компиляции необходимо использовать параметр [/doc](doc-process-documentation-comments-c-cpp.md).
 

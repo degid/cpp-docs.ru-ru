@@ -87,7 +87,7 @@ ms.locfileid: "88835302"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="alt_msg_map"></a><a name="alt_msg_map"></a> ALT_MSG_MAP
 
@@ -102,7 +102,7 @@ ALT_MSG_MAP(msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL идентифицирует каждую карту сообщений по числу. Схема сообщений по умолчанию (объявленная с помощью макроса BEGIN_MSG_MAP) определяется значением 0. Альтернативная схема сообщения определяется *мсгмапид*.
 
@@ -126,7 +126,7 @@ ATL идентифицирует каждую карту сообщений по
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="begin_msg_map"></a><a name="begin_msg_map"></a> BEGIN_MSG_MAP
 
@@ -141,7 +141,7 @@ BEGIN_MSG_MAP(theClass)
 *секласс*<br/>
 окне Имя класса, содержащего схему сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Квиндовимпл:: WindowProc](cwindowimpl-class.md#windowproc) использует схему сообщений по умолчанию для обработки сообщений, отправляемых в окно. Схема сообщений направляет сообщения либо в соответствующую функцию обработчика, либо на другую схему сообщений.
 
@@ -205,7 +205,7 @@ BEGIN_MSG_MAP(theClass)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="chain_msg_map_alt"></a><a name="chain_msg_map_alt"></a> CHAIN_MSG_MAP_ALT
 
@@ -223,7 +223,7 @@ CHAIN_MSG_MAP_ALT(theChainClass, msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 CHAIN_MSG_MAP_ALT направляет сообщения на альтернативную карту сообщений в базовом классе. Необходимо объявить эту альтернативную схему сообщений с помощью [ALT_MSG_MAP (мсгмапид)](#alt_msg_map). Чтобы направить сообщения в схему сообщений по умолчанию базового класса (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)), используйте CHAIN_MSG_MAP. Пример см. в разделе [CHAIN_MSG_MAP](#chain_msg_map).
 
@@ -234,7 +234,7 @@ CHAIN_MSG_MAP_ALT направляет сообщения на альтерна�
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="chain_msg_map_alt_member"></a><a name="chain_msg_map_alt_member"></a> CHAIN_MSG_MAP_ALT_MEMBER
 
@@ -252,7 +252,7 @@ CHAIN_MSG_MAP_ALT_MEMBER(theChainMember, msgMapID)
 *мсгмапид*<br/>
 окне Идентификатор схемы сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 CHAIN_MSG_MAP_ALT_MEMBER направляет сообщения на альтернативную карту сообщений в элементе данных. Необходимо объявить эту альтернативную схему сообщений с помощью [ALT_MSG_MAP (мсгмапид)](#alt_msg_map). Чтобы направить сообщения в схему сообщений элемента данных по умолчанию (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)), используйте CHAIN_MSG_MAP_MEMBER. Пример см. в разделе [CHAIN_MSG_MAP_MEMBER](#chain_msg_map_member).
 
@@ -263,7 +263,7 @@ CHAIN_MSG_MAP_ALT_MEMBER направляет сообщения на альте
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="chain_msg_map"></a><a name="chain_msg_map"></a> CHAIN_MSG_MAP
 
@@ -278,7 +278,7 @@ CHAIN_MSG_MAP(theChainClass)
 *сечаинкласс*<br/>
 окне Имя базового класса, содержащего схему сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 CHAIN_MSG_MAP направляет сообщения в схему сообщений по умолчанию базового класса (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)). Чтобы направить сообщения на альтернативную карту сообщений базового класса (объявленной с помощью [ALT_MSG_MAP](#alt_msg_map)), используйте [CHAIN_MSG_MAP_ALT](#chain_msg_map_alt).
 
@@ -301,7 +301,7 @@ CHAIN_MSG_MAP направляет сообщения в схему сообще
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="chain_msg_map_dynamic"></a><a name="chain_msg_map_dynamic"></a> CHAIN_MSG_MAP_DYNAMIC
 
@@ -316,7 +316,7 @@ CHAIN_MSG_MAP_DYNAMIC(dynaChainID)
 *диначаинид*<br/>
 окне Уникальный идентификатор для схемы сообщений объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 CHAIN_MSG_MAP_DYNAMIC направляет сообщения во время выполнения в схему сообщений по умолчанию в другом объекте. Объект и его схема сообщений связаны с *диначаинид*, определяемым с помощью [Кдинамикчаин:: сетчаинентри](cdynamicchain-class.md#setchainentry). Для использования CHAIN_MSG_MAP_DYNAMIC необходимо создать производный класс от `CDynamicChain` . Пример см. в обзоре [кдинамикчаин](../../atl/reference/cdynamicchain-class.md) .
 
@@ -327,7 +327,7 @@ CHAIN_MSG_MAP_DYNAMIC направляет сообщения во время в
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="chain_msg_map_member"></a><a name="chain_msg_map_member"></a> CHAIN_MSG_MAP_MEMBER
 
@@ -342,7 +342,7 @@ CHAIN_MSG_MAP_MEMBER(theChainMember)
 *сечаинмембер*<br/>
 окне Имя элемента данных, содержащего схему сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 CHAIN_MSG_MAP_MEMBER направляет сообщения в схему сообщений элемента данных по умолчанию (объявленную с помощью [BEGIN_MSG_MAP](#begin_msg_map)). Чтобы направить сообщения на альтернативную карту сообщений элемента данных (объявленную с помощью [ALT_MSG_MAP](#alt_msg_map)), используйте [CHAIN_MSG_MAP_ALT_MEMBER](#chain_msg_map_alt_member).
 
@@ -365,7 +365,7 @@ CHAIN_MSG_MAP_MEMBER направляет сообщения в схему со�
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="command_code_handler"></a><a name="command_code_handler"></a> COMMAND_CODE_HANDLER
 
@@ -385,7 +385,7 @@ COMMAND_CODE_HANDLER(code, func)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="command_handler"></a><a name="command_handler"></a> COMMAND_HANDLER
 
@@ -406,7 +406,7 @@ COMMAND_HANDLER(id, code, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 COMMAND_HANDLER сопоставляет [WM_COMMAND](/windows/win32/menurc/wm-command) сообщение с указанной функцией обработчика на основе кода уведомления и идентификатора элемента управления. Пример:
 
@@ -427,7 +427,7 @@ COMMAND_HANDLER сопоставляет [WM_COMMAND](/windows/win32/menurc/wm-c
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="command_id_handler"></a><a name="command_id_handler"></a> COMMAND_ID_HANDLER
 
@@ -447,7 +447,7 @@ COMMAND_ID_HANDLER(id, func)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="command_range_code_handler"></a><a name="command_range_code_handler"></a> COMMAND_RANGE_CODE_HANDLER
 
@@ -471,13 +471,13 @@ COMMAND_RANGE_CODE_HANDLER(idFirst, idLast, code, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот диапазон основан на идентификаторе элемента меню, элемента управления или ускорителе отправки сообщения.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="command_range_handler"></a><a name="command_range_handler"></a> COMMAND_RANGE_HANDLER
 
@@ -498,13 +498,13 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот диапазон основан на идентификаторе элемента меню, элемента управления или ускорителе отправки сообщения.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="declare_empty_msg_map"></a><a name="declare_empty_msg_map"></a> DECLARE_EMPTY_MSG_MAP
 
@@ -514,7 +514,7 @@ COMMAND_RANGE_HANDLER( idFirst, idLast, func)
 DECLARE_EMPTY_MSG_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 DECLARE_EMPTY_MSG_MAP — это удобный макрос, вызывающий макросы [BEGIN_MSG_MAP](#begin_msg_map) и [END_MSG_MAP](#end_msg_map) для создания пустой схемы сообщения:
 
@@ -530,7 +530,7 @@ DEFAULT_REFLECTION_HANDLER()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="end_msg_map"></a><a name="end_msg_map"></a> END_MSG_MAP
 
@@ -540,7 +540,7 @@ DEFAULT_REFLECTION_HANDLER()
 END_MSG_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для пометки начала схемы сообщения всегда используйте макрос [BEGIN_MSG_MAP](#begin_msg_map) . Используйте [ALT_MSG_MAP](#alt_msg_map) для объявления последующих альтернативных схем сообщений.
 
@@ -560,7 +560,7 @@ END_MSG_MAP()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="forward_notifications"></a><a name="forward_notifications"></a> FORWARD_NOTIFICATIONS
 
@@ -570,13 +570,13 @@ END_MSG_MAP()
 FORWARD_NOTIFICATIONS()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Укажите этот макрос в составе схемы сообщений.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="message_handler"></a><a name="message_handler"></a> MESSAGE_HANDLER
 
@@ -594,7 +594,7 @@ MESSAGE_HANDLER( msg, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 MESSAGE_HANDLER сопоставляет сообщение Windows с указанной функцией обработчика.
 
@@ -617,7 +617,7 @@ MESSAGE_HANDLER сопоставляет сообщение Windows с указ�
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="message_range_handler"></a><a name="message_range_handler"></a> MESSAGE_RANGE_HANDLER
 
@@ -640,7 +640,7 @@ MESSAGE_RANGE_HANDLER( msgFirst, msgLast, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="notify_code_handler"></a><a name="notify_code_handler"></a> NOTIFY_CODE_HANDLER
 
@@ -660,7 +660,7 @@ NOTIFY_CODE_HANDLER(cd, func)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="notify_handler"></a><a name="notify_handler"></a> NOTIFY_HANDLER
 
@@ -681,7 +681,7 @@ NOTIFY_HANDLER( id, cd, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 NOTIFY_HANDLER сопоставляет [WM_NOTIFY](/windows/win32/controls/wm-notify) сообщение с указанной функцией обработчика на основе кода уведомления и идентификатора элемента управления.
 
@@ -704,7 +704,7 @@ NOTIFY_HANDLER сопоставляет [WM_NOTIFY](/windows/win32/controls/wm-n
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="notify_id_handler"></a><a name="notify_id_handler"></a> NOTIFY_ID_HANDLER
 
@@ -724,7 +724,7 @@ NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="notify_range_code_handler"></a><a name="notify_range_code_handler"></a> NOTIFY_RANGE_CODE_HANDLER
 
@@ -748,13 +748,13 @@ NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот диапазон основан на идентификаторе элемента управления, отправляющего сообщение.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="notify_range_handler"></a><a name="notify_range_handler"></a> NOTIFY_RANGE_HANDLER
 
@@ -775,13 +775,13 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 *func*<br/>
 окне Имя функции обработчика сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот диапазон основан на идентификаторе элемента управления, отправляющего сообщение.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflect_notifications"></a><a name="reflect_notifications"></a> REFLECT_NOTIFICATIONS
 
@@ -791,13 +791,13 @@ NOTIFY_RANGE_HANDLER( idFirst, idLast, func )
 REFLECT_NOTIFICATIONS()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Укажите этот макрос как часть схемы сообщения родительского окна.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_command_code_handler"></a><a name="reflected_command_code_handler"></a> REFLECTED_COMMAND_CODE_HANDLER
 
@@ -817,7 +817,7 @@ REFLECTED_COMMAND_CODE_HANDLER( code, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_command_handler"></a><a name="reflected_command_handler"></a> REFLECTED_COMMAND_HANDLER
 
@@ -840,7 +840,7 @@ REFLECTED_COMMAND_HANDLER( id, code, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_command_id_handler"></a><a name="reflected_command_id_handler"></a> REFLECTED_COMMAND_ID_HANDLER
 
@@ -860,7 +860,7 @@ REFLECTED_COMMAND_ID_HANDLER( id, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_command_range_code_handler"></a><a name="reflected_command_range_code_handler"></a> REFLECTED_COMMAND_RANGE_CODE_HANDLER
 
@@ -886,7 +886,7 @@ REFLECTED_COMMAND_RANGE_CODE_HANDLER( idFirst, idLast, code, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_command_range_handler"></a><a name="reflected_command_range_handler"></a> REFLECTED_COMMAND_RANGE_HANDLER
 
@@ -909,7 +909,7 @@ REFLECTED_COMMAND_RANGE_HANDLER( idFirst, idLast, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_notify_code_handler"></a><a name="reflected_notify_code_handler"></a> REFLECTED_NOTIFY_CODE_HANDLER
 
@@ -929,7 +929,7 @@ REFLECTED_NOTIFY_CODE_HANDLER_EX( cd, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_notify_handler"></a><a name="reflected_notify_handler"></a> REFLECTED_NOTIFY_HANDLER
 
@@ -952,7 +952,7 @@ REFLECTED_NOTIFY_HANDLER( id, cd, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_notify_id_handler"></a><a name="reflected_notify_id_handler"></a> REFLECTED_NOTIFY_ID_HANDLER
 
@@ -972,7 +972,7 @@ REFLECTED_NOTIFY_ID_HANDLER( id, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_notify_range_code_handler"></a><a name="reflected_notify_range_code_handler"></a> REFLECTED_NOTIFY_RANGE_CODE_HANDLER
 
@@ -998,7 +998,7 @@ REFLECTED_NOTIFY_RANGE_CODE_HANDLER( idFirst, idLast, cd, func )
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="reflected_notify_range_handler"></a><a name="reflected_notify_range_handler"></a> REFLECTED_NOTIFY_RANGE_HANDLER
 

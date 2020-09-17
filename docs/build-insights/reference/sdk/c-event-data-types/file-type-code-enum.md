@@ -38,6 +38,6 @@ SDK Build Insights совместим с Visual Studio 2017 и выше. Что�
 | `FILE_TYPE_CODE_IMP_LIB` | 4 (0x000000004) | Библиотека импорта (к.либ) |
 | `FILE_TYPE_CODE_EXP` | 5 (0x000000005) | Экспортный файл( файл. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ::: moniker-end

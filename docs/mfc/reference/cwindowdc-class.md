@@ -41,7 +41,7 @@ class CWindowDC : public CDC
 |----------|-----------------|
 |[CWindowDC::m_hWnd](#m_hwnd)|HWND, к `CWindowDC` которому это прилагается.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызывает функцию Windows [GetWindowDC](/windows/win32/api/winuser/nf-winuser-getwindowdc)во время строительства и [ReleaseDC](/windows/win32/api/winuser/nf-winuser-releasedc) во время разрушения. Это означает, `CWindowDC` что объект получает доступ ко всей площади экрана [CWnd](../../mfc/reference/cwnd-class.md) (как клиент, так и неклиентобласти).
 
@@ -72,7 +72,7 @@ explicit CWindowDC(CWnd* pWnd);
 *pWnd*<br/>
 Окно, к которой будет доступ клиент, к объекту-контексту устройства будет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор вызывает функцию Windows [GetWindowDC.](/windows/win32/api/winuser/nf-winuser-getwindowdc)
 
@@ -90,7 +90,7 @@ HWND указателя `CWnd` используется для построен�
 HWND m_hWnd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `m_hWnd`защищенная переменная типа HWND.
 

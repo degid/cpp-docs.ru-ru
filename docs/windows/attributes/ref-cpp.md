@@ -23,7 +23,7 @@ ms.locfileid: "88846112"
 [ref]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **ref** C++ имеет те же функциональные возможности, что и атрибут [ref](/windows/win32/Midl/ref) MIDL.
 

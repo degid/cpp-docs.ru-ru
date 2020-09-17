@@ -14,12 +14,12 @@ ms.locfileid: "88845799"
 ---
 # <a name="lthash_setgt-operators"></a>Операторы &lt;hash_set&gt;
 
-[operator! =](#op_neq)\
-[operator! = (hash_multiset)](#op_neq_hash_multiset)\
-[Оператор = =](#op_eq_eq)\
-[оператор = = (hash_multiset)](#op_eq_eq_hash_multiset)
+[operator!=](#op_neq)\
+[operator!= (hash_multiset)](#op_neq_hash_multiset)\
+[operator==](#op_eq_eq)\
+[operator== (hash_multiset)](#op_eq_eq_hash_multiset)
 
-## <a name="operator"></a><a name="op_neq"></a> operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_set](../standard-library/unordered-set-class.md).
@@ -32,17 +32,17 @@ bool operator!=(const hash_set <Key, Traits, Allocator>& left, const hash_set <K
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `hash_set`.
 
-*Правильно*\
+*right*\
 Объект типа `hash_set`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** Если hash_sets не равны; **`false`** если Hash_sets равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение между объектами hash_set основывается на попарном сравнении их элементов. Два объекта hash_set равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -87,7 +87,7 @@ The hash_sets hs1 and hs2 are not equal.
 The hash_sets hs1 and hs3 are equal.
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_set](../standard-library/unordered-set-class.md).
@@ -100,17 +100,17 @@ bool operator!==(const hash_set <Key, Traits, Allocator>& left, const hash_set <
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `hash_set`.
 
-*Правильно*\
+*right*\
 Объект типа `hash_set`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если hash_set слева от оператора равно hash_set с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение между объектами hash_set основывается на попарном сравнении их элементов. Два объекта hash_set равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -153,7 +153,7 @@ The hash_sets s1 and s2 are not equal.
 The hash_sets s1 and s3 are equal.
 ```
 
-## <a name="operator-hash_multiset"></a><a name="op_neq_hash_multiset"></a> operator! = (hash_multiset)
+## <a name="operator-hash_multiset"></a><a name="op_neq_hash_multiset"></a> operator!= (hash_multiset)
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_set](../standard-library/unordered-set-class.md).
@@ -166,17 +166,17 @@ bool operator!=(const hash_multiset <Key, Traits, Allocator>& left, const hash_m
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `hash_multiset`.
 
-*Правильно*\
+*right*\
 Объект типа `hash_multiset`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** Если hash_multisets не равны; **`false`** если Hash_multisets равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение между объектами hash_multiset основывается на попарном сравнении их элементов. Два объекта hash_multiset равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 
@@ -219,7 +219,7 @@ The hash_multisets hs1 and hs2 are not equal.
 The hash_multisets hs1 and hs3 are equal.
 ```
 
-## <a name="operator-hash_multiset"></a><a name="op_eq_eq_hash_multiset"></a> оператор = = (hash_multiset)
+## <a name="operator-hash_multiset"></a><a name="op_eq_eq_hash_multiset"></a> operator== (hash_multiset)
 
 > [!NOTE]
 > Этот API устарел. Вместо него следует использовать [класс unordered_set](../standard-library/unordered-set-class.md).
@@ -232,17 +232,17 @@ bool operator!==(const hash_multiset <Key, Traits, Allocator>& left, const hash_
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `hash_multiset`.
 
-*Правильно*\
+*right*\
 Объект типа `hash_multiset`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если hash_multiset слева от оператора равно hash_multiset с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сравнение между объектами hash_multiset основывается на попарном сравнении их элементов. Два объекта hash_multiset равны, если они содержат одинаковое количество элементов, а их соответствующие элементы имеют одинаковые значения. В противном случае они не равны.
 

@@ -29,11 +29,11 @@ class improper_lock : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[improper_lock](#ctor)|Перегружен. Создает элемент `improper_lock exception`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Как правило, это исключение возникает при попытке получить блокировку, не допускающую повторного входа, рекурсивно в том же контексте.
 
@@ -45,7 +45,7 @@ class improper_lock : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

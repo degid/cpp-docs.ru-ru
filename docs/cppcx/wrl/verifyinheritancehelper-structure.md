@@ -38,7 +38,7 @@ struct VerifyInheritanceHelper<I, Nil>;
 *Базы*<br/>
 Другой тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Тестирует, является ли один интерфейс производным от другого интерфейса.
 
@@ -68,7 +68,7 @@ struct VerifyInheritanceHelper<I, Nil>;
 static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тестирует два интерфейса, указанные текущими параметрами шаблона, и определяет, является ли один интерфейс производным от другого.
 

@@ -62,7 +62,7 @@ class CIPAddressCtrl : public CWnd
 |[CIPAddressCtrl::SetFieldFocus](#setfieldfocus)|Устанавливает фокус клавиатуры на указанное поле в IP-управлении.|
 |[CIPAddressCtrl::SetFieldRange](#setfieldrange)|Устанавливает диапазон в указанном поле в IP-управлении.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Контроль IP-адреса, элемент управления, аналогичный правку, позволяет вводить и манипулировать числовым адресом в формате Интернет-протокола (IP).
 
@@ -100,7 +100,7 @@ CIPAddressCtrl();
 void ClearAddress();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_CLEARADDRESS,](/windows/win32/Controls/ipm-clearaddress)как описано в SDK Windows.
 
@@ -134,7 +134,7 @@ virtual BOOL Create(
 
 Незерно, если инициализация была успешной; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CIPAddressCtrl` объект в два этапа.
 
@@ -178,7 +178,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте `CreateEx` вместо [создания](#create) для применения расширенных стилей Windows, указанных в предисловии расширенного стиля Windows **WS_EX_.**
 
@@ -217,7 +217,7 @@ int GetAddress(DWORD& dwAddress);
 
 Количество непустых полей в IP-управлении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_GETADDRESS,](/windows/win32/Controls/ipm-getaddress)как описано в SDK Windows. В первом прототипе выше, номера в полях от 0 до 3 управления, читать слева направо соответственно, заполнить четыре параметра. Во втором прототипе выше, *dwAddress* заселен следующим образом.
 
@@ -240,7 +240,7 @@ BOOL IsBlank() const;
 
 Nonzero, если все поля ip-адреса управления пусты; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_ISBLANK,](/windows/win32/Controls/ipm-isblank)как описано в SDK Windows.
 
@@ -275,7 +275,7 @@ void SetAddress(DWORD dwAddress);
 *dwАдрес*<br/>
 Значение DWORD, содержащее новый IP-адрес. Смотрите **замечания** для таблицы, которая показывает, как заполняется значение DWORD.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_SETADDRESS,](/windows/win32/Controls/ipm-setaddress)как описано в SDK Windows. В первом прототипе выше, номера в полях от 0 до 3 управления, читать слева направо соответственно, заполнить четыре параметра. Во втором прототипе выше, *dwAddress* заселен следующим образом.
 
@@ -299,7 +299,7 @@ void SetFieldFocus(WORD nField);
 *nФилд*<br/>
 Индекс полей на нулевой основе, на который следует установить фокус. Если это значение больше, чем количество полей, фокус устанавливается на первое пустое поле. Если все поля не пустые, фокус устанавливается на первое поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_SETFOCUS,](/windows/win32/Controls/ipm-setfocus)как описано в SDK Windows.
 
@@ -325,7 +325,7 @@ void SetFieldRange(
 *nУппер*<br/>
 Ссылка на ряд, получающий верхний предел указанного поля в данном IP-управлении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение сообщения Win32 [IPM_SETRANGE,](/windows/win32/Controls/ipm-setrange)как описано в SDK Windows. Используйте два параметра, *nLower* и *nUpper*, чтобы указать нижние и верхние пределы поля, вместо параметра *wRange,* используемого с сообщением Win32.
 

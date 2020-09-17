@@ -48,7 +48,7 @@ class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 |[IPersistPropertyBagImpl::Load](#load)|Загружает свойства объекта из сумки с свойств, поставляемой клиентом.|
 |[IPersistPropertyBagImpl::Сохранить](#save)|Сохраняет свойства объекта в сумке с клиентами.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IPersistPropertyBag](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768205\(v=vs.85\)) позволяет объекту сохранять свои свойства в пакете свойств, поставляемых клиентом. Класс `IPersistPropertyBagImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -74,7 +74,7 @@ class ATL_NO_VTABLE IPersistPropertyBagImpl : public IPersistPropertyBag
 STDMETHOD(GetClassID)(CLSID* pClassID);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) в Windows SDK.
 
@@ -90,7 +90,7 @@ STDMETHOD(InitNew)();
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistPropertyBag::InitNew](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa768204\(v=vs.85\)) в Windows SDK.
 
@@ -102,7 +102,7 @@ STDMETHOD(InitNew)();
 STDMETHOD(Load)(LPPROPERTYBAG pPropBag, LPERRORLOG pErrorLog);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для получения этой информации.
 
@@ -119,7 +119,7 @@ STDMETHOD(Save)(
     BOOL fSaveAllProperties);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для хранения этой информации. По умолчанию этот метод сохраняет все свойства, независимо от значения *fSaveAllProperties.*
 

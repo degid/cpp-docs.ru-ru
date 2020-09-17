@@ -47,7 +47,7 @@ class CMFCLinkCtrl : public CMFCButton
 |----------|-----------------|
 |[CMFCLinkCtrl::OnDrawFocusRect](#ondrawfocusrect)|Вызывается рамки до фокус прямоугольника кнопки обращается.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При нажатии кнопки, полученной `CMFCLinkCtrl` из класса, фреймворк передает URL-адрес кнопки в качестве параметра методу. `ShellExecute` Затем `ShellExecute` метод открывает цель URL.
 
@@ -94,7 +94,7 @@ virtual void OnDrawFocusRect(
 *rectClient*<br/>
 (в) Прямоугольник, который граничит с управлением ссылкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, когда вы хотите использовать свой собственный код, чтобы нарисовать прямоугольник фокуса кнопки.
 
@@ -111,7 +111,7 @@ void SetURL(LPCTSTR lpszURL);
 *lpszURL*<br/>
 (в) Текст кнопки для отображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfclinkctrlseturlprefix"></a><a name="seturlprefix"></a>CMFCLinkCtrl:SetURLPrefix
 
@@ -126,7 +126,7 @@ void SetURLPrefix(LPCTSTR lpszPrefix);
 *lpszPrefix*<br/>
 (в) Префикс протокола URL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для установки префикса URL. Префикс не отображается на лице кнопки, но вы можете использовать его, чтобы помочь просматривать цель URL.
 
@@ -152,7 +152,7 @@ virtual CSize SizeToContent(
 
 Объект [CSize,](../../atl-mfc-shared/reference/csize-class.md) содержащий новый размер управления ссылками.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

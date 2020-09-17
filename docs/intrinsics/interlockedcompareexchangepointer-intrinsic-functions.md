@@ -96,9 +96,9 @@ long _InterlockedCompareExchangePointer_rel (
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`_InterlockedCompareExchangePointer`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM, ARM64|\<> ииинтрин. h|
-|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<> использованием immintrin. h|
+|`_InterlockedCompareExchangePointer`|x86, ARM, x64, ARM64|\<> Intrin.h|
+|`_InterlockedCompareExchangePointer_acq`, `_InterlockedCompareExchangePointer_nf`, `_InterlockedCompareExchangePointer_rel`|ARM, ARM64|\<> ииинтрин.h|
+|`_InterlockedCompareExchangePointer_HLEAcquire`, `_InterlockedCompareExchangePointer_HLERelease`|x86, x64|\<> использованием immintrin.h|
 
 ## <a name="remarks"></a>Примечания
 

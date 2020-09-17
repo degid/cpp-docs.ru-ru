@@ -23,13 +23,13 @@ namespace stdx;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция declval](declval-function.md)||
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** из ppltasks. h
+**Заголовок:** из ppltasks.h
 
 ## <a name="see-also"></a>См. также раздел
 

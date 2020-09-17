@@ -23,7 +23,7 @@ ms.locfileid: "88834184"
 [lcid]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **LCID** C++ реализует функциональные возможности атрибута [LCID](/windows/win32/Midl/lcid) MIDL. Если требуется реализовать языковой стандарт для библиотечного блока, используйте параметр **LCID =** в `lcid` атрибуте [module](module-cpp.md) .
 

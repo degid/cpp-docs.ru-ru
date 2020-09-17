@@ -39,7 +39,7 @@ ref class ptr;
 *_interface_type*<br/>
 COM-интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `com::ptr`Также можно использовать в качестве локальной переменной функции для упрощения различных задач COM и автоматизации управления жизненным циклом.
 
@@ -187,9 +187,9 @@ int main() {
 
 |Имя|Описание|
 |---------|-----------|
-|[Оператор PTR:: operator-&gt;](#operator-arrow)|Оператор доступа к членам, используемый для вызова методов в принадлежащем COM-объекте.|
-|[Оператор PTR:: operator =](#operator-assign)|Присоединяет COM-объект к `com::ptr` .|
-|[Оператор PTR:: operator &nbsp; bool](#operator-bool)|Оператор для использования `com::ptr` в условном выражении.|
+|[Оператор PTR::operator-&gt;](#operator-arrow)|Оператор доступа к членам, используемый для вызова методов в принадлежащем COM-объекте.|
+|[Оператор PTR::operator=](#operator-assign)|Присоединяет COM-объект к `com::ptr` .|
+|[Оператор PTR::operator &nbsp; bool](#operator-bool)|Оператор для использования `com::ptr` в условном выражении.|
 |[ptr::operator!](#operator-logical-not)|Оператор, чтобы определить, является ли принадлежащий объект COM недопустимым.|
 
 ## <a name="requirements"></a>Требования
@@ -214,7 +214,7 @@ ptr(
 *P*<br/>
 Указатель интерфейса COM.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор без аргументов присваивается **`nullptr`** базовому обработчику объекта. Будущие вызовы метода `com::ptr` проверяют внутренний объект и автоматически завершаются сбоем, пока объект не будет создан или присоединен.
 
@@ -293,7 +293,7 @@ int main() {
 ~ptr();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При уничтожении `com::ptr` освобождает все ссылки, которыми владеет объект COM. При условии, что отсутствуют другие ссылки на COM-объект, COM-объект будет удален и освобождена память.
 
@@ -379,7 +379,7 @@ void Attach(
 
 Если `com::ptr` уже владеет ссылкой на COM-объект, `Attach` вызывает исключение <xref:System.InvalidOperationException> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов ссылается на `Attach` COM-объект, но не освобождает ссылку вызывающего объекта.
 
@@ -524,7 +524,7 @@ void CreateInstance(
 
 Эта функция вызывает `CoCreateInstance` и использует <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> для преобразования любой ошибки `HRESULT` в соответствующее исключение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateInstance`использует `CoCreateInstance` для создания нового экземпляра указанного объекта, идентифицируемого из ProgID или CLSID. `com::ptr`Ссылается на только что созданный объект и автоматически освобождает все принадлежащие ему ссылки при уничтожении.
 
@@ -597,7 +597,7 @@ _interface_type * Detach();
 
 Внутренне `QueryInterface` метод вызывается для принадлежащего объекта COM, и любая ошибка `HRESULT` преобразуется в исключение с помощью <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Detach`сначала добавляет ссылку на COM-объект от имени вызывающего объекта, а затем освобождает все ссылки, принадлежащие объекту `com::ptr` .  Вызывающая сторона должна в конечном итоге освободить возвращенный объект, чтобы уничтожить его.
 
@@ -700,7 +700,7 @@ _interface_type * GetInterface();
 
 Внутренне `QueryInterface` метод вызывается для принадлежащего объекта COM, и любая ошибка `HRESULT` преобразуется в исключение с помощью <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `com::ptr`Компонент добавляет ссылку на COM-объект от имени вызывающего объекта, а также сохраняет собственную ссылку на COM-объект. Вызывающая сторона должна в конечном итоге освободить ссылку на возвращенный объект или никогда не будет уничтожена.
 
@@ -846,7 +846,7 @@ void QueryInterface(
 
 Внутренне `QueryInterface` метод вызывается для принадлежащего объекта COM, и любая ошибка `HRESULT` преобразуется в исключение с помощью <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод используется для создания оболочки COM для другого интерфейса COM-объекта, принадлежащего текущей обертке. Этот метод вызывает `QueryInterface` через собственный COM-объект для запроса указателя на конкретный интерфейс COM-объекта и присоединяет возвращенный указатель интерфейса к переданному объекту `com::ptr` .
 
@@ -965,7 +965,7 @@ int main() {
 void Release();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов этой функции освобождает все ссылки, принадлежащие объекту COM, и задает для внутреннего дескриптора COM-объекта значение **`nullptr`** .  Если других ссылок на COM-объект не существует, он будет уничтожен.
 
@@ -1045,7 +1045,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-gt"></a><a name="operator-arrow"></a>Оператор PTR:: operator-&gt;
+## <a name="ptroperator-gt"></a><a name="operator-arrow"></a>Оператор PTR::operator-&gt;
 
 Оператор доступа к членам, используемый для вызова методов в принадлежащем COM-объекте.
 
@@ -1061,7 +1061,7 @@ _detail::smart_com_ptr<_interface_type> operator->();
 
 Внутренне `QueryInterface` метод вызывается для принадлежащего объекта COM, и любая ошибка `HRESULT` преобразуется в исключение с помощью <xref:System.Runtime.InteropServices.Marshal.ThrowExceptionForHR%2A> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор позволяет вызывать методы принадлежащего объекта COM. Он возвращает временный объект `smart_com_ptr` , который автоматически обрабатывает свои собственные `AddRef` и `Release` .
 
@@ -1187,7 +1187,7 @@ int main() {
 <word>persnickety</word>
 ```
 
-## <a name="ptroperator"></a><a name="operator-assign"></a>Оператор PTR:: operator =
+## <a name="ptroperator"></a><a name="operator-assign"></a>Оператор PTR::operator=
 
 Присоединяет COM-объект к `com::ptr` .
 
@@ -1210,7 +1210,7 @@ ptr<_interface_type> % operator=(
 
 Если `com::ptr` уже владеет ссылкой на COM-объект, `operator=` вызывает исключение <xref:System.InvalidOperationException> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Назначение COM-объекта объекту `com::ptr` ссылается на COM-объект, но не освобождает ссылку на него вызывающего объекта.
 
@@ -1292,7 +1292,7 @@ int main() {
 }
 ```
 
-## <a name="ptroperator-bool"></a><a name="operator-bool"></a>Оператор PTR:: operator bool
+## <a name="ptroperator-bool"></a><a name="operator-bool"></a>Оператор PTR::operator bool
 
 Оператор для использования `com::ptr` в условном выражении.
 
@@ -1304,7 +1304,7 @@ operator bool();
 
 **`true`** значение, если объект, принадлежащий объекту COM, является допустимым; **`false`** в противном случае — значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, принадлежащий объекту COM, является допустимым, если нет **`nullptr`** .
 
@@ -1363,7 +1363,7 @@ int main() {
 DOM Document created.
 ```
 
-## <a name="ptroperator"></a><a name="operator-logical-not"></a>Оператор PTR:: operator!
+## <a name="ptroperator"></a><a name="operator-logical-not"></a>Оператор PTR::operator!
 
 Оператор, чтобы определить, является ли принадлежащий объект COM недопустимым.
 
@@ -1375,7 +1375,7 @@ bool operator!();
 
 **`true`** значение, если принадлежащего COM-объекта является недопустимым; **`false`** в противном случае — значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, принадлежащий объекту COM, является допустимым, если нет **`nullptr`** .
 

@@ -47,7 +47,7 @@ class CHeapPtrList
 |----------|-----------------|
 |[CHeapPtrlist::CHeapPtrlist](#cheapptrlist)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет конструктор и получает методы из [CAtlList](../../atl/reference/catllist-class.md) и [CHeapPtrElementTraits,](../../atl/reference/cheapptrelementtraits-class.md) чтобы помочь в создании объекта сбора класса хранения кучи указателей.
 
@@ -74,7 +74,7 @@ CHeapPtrList(UINT nBlockSize = 10) throw();
 *nBlockSize*<br/>
 Размер блока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер блока — это мера объема памяти, выделенного при необходимости нового элемента. Большие размеры блоков уменьшают вызовы для процедур распределения памяти, но используют больше ресурсов.
 

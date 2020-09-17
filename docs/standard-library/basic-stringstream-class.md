@@ -41,7 +41,7 @@ class basic_stringstream : public basic_iostream<Elem, Tr>
 *Tr*\
 Признаки символа, соответствующие основному элементу строки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, который управляет вставкой и извлечением элементов и закодированных `Alloc` объектов с `Elem`помощью буфера потока класса `Tr` [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem,** **Tr**,>, с элементами типа, чьи черты характера определяются классом, и элементы которых выделяются распределителем класса. `Alloc` Этот объект сохраняет объект класса basic_stringbuf< **Elem**, **Tr**, `Alloc`>.
 
@@ -93,10 +93,10 @@ explicit basic_stringstream(const basic_string<Elem, Tr, Alloc>& str, ios_base::
 *_mode*\
 Одно из перечислений в [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*Ул*\
+*str*\
 Объект типа `basic_string`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовый класс, позвонив [basic_iostream](../standard-library/basic-iostream-class.md) **(sb),** `sb` где `Alloc` хранится объект класса [basic_stringbuf](../standard-library/basic-stringbuf-class.md)< **Elem,** **Tr,**>. Он также `sb` инициализирует, позвонив basic_stringbuf< **Elem**, **Tr**, `Alloc`>(). `_Mode`
 
@@ -138,7 +138,7 @@ void str(
 
 Возвращает объект класса [basic_string](../standard-library/basic-string-class.md)< **Elem** `Alloc` , **Tr**,>, чья контролируемая последовательность является копией последовательности, контролируемой ** \*этим.**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция первого члена возвращает [rdbuf](#rdbuf) -> [str.](../standard-library/basic-stringbuf-class.md#str) Функция второго `rdbuf`  -> члена `_Newstr`вызывает **str**().
 

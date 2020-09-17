@@ -50,7 +50,7 @@ class ATL_NO_VTABLE IDBCreateCommandImpl
 |-|-|
 |[CreateCommand](#createcommand)|Создает новую команду.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Необязательный интерфейс объекта Session для получения новой команды.
 

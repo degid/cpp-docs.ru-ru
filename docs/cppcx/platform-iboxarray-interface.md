@@ -31,7 +31,7 @@ interface class IBoxArray
 *T*<br/>
 Тип упакованного значение в каждом элементе массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IBoxArray` — имя C++/cx для `Windows::Foundation::IReferenceArray`.
 
@@ -62,7 +62,7 @@ property T Value {T get();}
 
 Возвращает значение, которое было изначально сохранено в этом объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пример см. в разделе [Упаковка](../cppcx/boxing-c-cx.md).
 

@@ -30,10 +30,10 @@ class front_insert_iterator;
 
 ### <a name="parameters"></a>Параметры
 
-*Контейнера*\
+*Container*\
 Тип контейнера, в переднюю часть которого итератор `front_insert_iterator` вставит элементы.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Контейнер должен удовлетворять требованиям последовательности вставки в переднюю часть, если можно вставить элементы в начало последовательности в постоянном времени с поправкой на амортизацию. Контейнеры последовательности стандартной библиотеки C++, определенные классами [deque](../standard-library/deque-class.md) и [list](../standard-library/list-class.md), обеспечивают необходимую функцию-член `push_front` и удовлетворяют этим требованиям. Напротив, контейнеры последовательности, заданные классом [vector](../standard-library/vector-class.md), не удовлетворяют данным требованиям и не могут быть адаптированы для использования в сочетании с итераторами `front_insert_iterator`. Итератор `front_insert_iterator` всегда необходимо инициализировать с его контейнером.
 
@@ -54,9 +54,9 @@ class front_insert_iterator;
 
 |Оператор|Описание|
 |-|-|
-|[станции](#op_star)|Оператор разыменования, используемый для реализации выражения итератора вывода \* `i`  =  `x` для вставки на передний план.|
-|[operator + +](#op_add_add)|Увеличивает `front_insert_iterator` до следующего местоположения, в котором можно сохранить значение.|
-|[Оператор =](#op_eq)|Оператор присваивания, используемый для реализации выражения итератора вывода \* `i`  =  `x` для вставки на передний план.|
+|[operator*](#op_star)|Оператор разыменования, используемый для реализации выражения итератора вывода \* `i`  =  `x` для вставки на передний план.|
+|[operator++](#op_add_add)|Увеличивает `front_insert_iterator` до следующего местоположения, в котором можно сохранить значение.|
+|[operator=](#op_eq)|Оператор присваивания, используемый для реализации выражения итератора вывода \* `i`  =  `x` для вставки на передний план.|
 
 ## <a name="requirements"></a>Требования
 
@@ -72,7 +72,7 @@ class front_insert_iterator;
 typedef Container container_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра-шаблона *Container*.
 
@@ -169,7 +169,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator:: operator\*
+## <a name="front_insert_iteratoroperator"></a><a name="op_star"></a>front_insert_iterator::operator\*
 
 Разыменовывает итератор вставки и возвращает адресованный элемент.
 
@@ -181,7 +181,7 @@ front_insert_iterator<Container>& operator*();
 
 Функция-член возвращает значение адресованного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется для реализации значения ** \* iter**выражения итератора вывода  =  **value**. Если `Iter` является итератором, который обращается к элементу последовательности, то значение ** \* iter**  =  **value** заменяет этот элемент значением и не изменяет общее число элементов в последовательности.
 
@@ -230,7 +230,7 @@ After the front insertions, the list L is:
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator:: operator + +
+## <a name="front_insert_iteratoroperator"></a><a name="op_add_add"></a>front_insert_iterator::operator++
 
 Увеличивает `back_insert_iterator` до следующего местоположения, в котором можно сохранить значение.
 
@@ -244,7 +244,7 @@ front_insert_iterator<Container> operator++(int);
 
 `front_insert_iterator`, адресующий следующее местоположение, в котором можно сохранить значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы preincrementation и postincrementation возвращают одинаковый результат.
 
@@ -281,7 +281,7 @@ The list L1 is: ( 30 20 10 ).
 */
 ```
 
-## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator:: operator =
+## <a name="front_insert_iteratoroperator"></a><a name="op_eq"></a>front_insert_iterator::operator=
 
 Добавляет (заносит) значение в переднюю часть контейнера.
 
@@ -293,14 +293,14 @@ front_insert_iterator<Container>& operator=(typename Container::value_type&& val
 
 ### <a name="parameters"></a>Параметры
 
-*Val*\
+*val*\
 Значение, которое должно быть присвоено контейнеру.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Ссылка на последний элемент, вставленный в начале контейнера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый оператор члена вычисляет `container.push_front( val)` , а затем возвращает **`*this`** .
 

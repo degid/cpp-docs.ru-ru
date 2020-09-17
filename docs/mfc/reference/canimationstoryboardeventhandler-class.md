@@ -50,7 +50,7 @@ class CAnimationStoryboardEventHandler : public CUIAnimationStoryboardEventHandl
 |[CAnimationStoryboardEventHandler::OnStoryboardUpdated](#onstoryboardupdated)|Обработка `OnStoryboardUpdated` событий, которые происходят при обновлении раскадровки (Overrides `CUIAnimationStoryboardEventHandlerBase::OnStoryboardUpdated`.)|
 |[CAnimationStoryboardEventHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обработчик событий создается `IUIAnimationStoryboard::SetStoryboardEventHandler` и передается `CAnimationController::EnableStoryboardEventHandler`методу при вызове.
 

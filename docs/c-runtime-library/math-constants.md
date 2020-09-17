@@ -41,7 +41,7 @@ ms.locfileid: "79438265"
 #include <math.h>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Определены символические обозначения для следующих величин:
 

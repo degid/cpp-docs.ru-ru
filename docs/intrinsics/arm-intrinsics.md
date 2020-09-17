@@ -4234,7 +4234,7 @@ void _MoveToCoprocessor2(
 
 Нет.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Значения `coproc` параметров,,, `opcode1` `crn` `crm` и `opcode2` встроенных функций должны быть константными выражениями, известными во время компиляции.
 
@@ -4268,7 +4268,7 @@ void _MoveFromCoprocessor64(
 
 Нет.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Значения `coproc` `opcode1` параметров, и `crm` встроенных функций должны быть константными выражениями, известными во время компиляции.
 

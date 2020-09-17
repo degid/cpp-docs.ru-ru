@@ -56,13 +56,13 @@ BEGIN_CONNECTION_PART(theClass, localClass)
 *локалкласс*<br/>
 Указывает имя локального класса, реализующего точку подключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
-В файле объявления (. h), который определяет функции-члены для класса, запустите точку подключения с помощью макроса BEGIN_CONNECTION_PART, добавьте CONNECTION_IID макрос и другие функции-члены, которые требуется реализовать, и завершите карту точек подключения с помощью макроса END_CONNECTION_PART.
+В файле объявления (.h), который определяет функции-члены для класса, запустите точку подключения с помощью макроса BEGIN_CONNECTION_PART, добавьте CONNECTION_IID макрос и другие функции-члены, которые требуется реализовать, и завершите карту точек подключения с помощью макроса END_CONNECTION_PART.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="end_connection_part"></a><a name="end_connection_part"></a> END_CONNECTION_PART
 
@@ -79,7 +79,7 @@ END_CONNECTION_PART(localClass)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="connection_iid"></a><a name="connection_iid"></a> CONNECTION_IID
 
@@ -94,7 +94,7 @@ CONNECTION_IID(iid)
 *IID*<br/>
 Идентификатор интерфейса, вызываемого точкой соединения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *IID* — это идентификатор интерфейса, используемый для идентификации интерфейса, который точка подключения будет вызывать для подключенных к нему приемников. Пример:
 
@@ -104,7 +104,7 @@ CONNECTION_IID(iid)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="declare_connection_map"></a><a name="declare_connection_map"></a> DECLARE_CONNECTION_MAP
 
@@ -114,13 +114,13 @@ CONNECTION_IID(iid)
 DECLARE_CONNECTION_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если элемент управления поддерживает дополнительные точки, используйте макрос DECLARE_CONNECTION_MAP в конце объявления класса. Затем в cpp – файле, который определяет функции элементов для класса, используйте макрос BEGIN_CONNECTION_MAP, CONNECTION_PART макросы для каждой точки соединения элемента управления и макрос END_CONNECTION_MAP для объявления конца схемы соединения.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="begin_connection_map"></a><a name="begin_connection_map"></a> BEGIN_CONNECTION_MAP
 
@@ -138,13 +138,13 @@ BEGIN_CONNECTION_MAP(theClass, theBase)
 *себасе*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В реализации (. CPP), который определяет функции-члены для класса, запускает схему подключения с помощью макроса BEGIN_CONNECTION_MAP, а затем добавляет записи макросов для каждой точки подключения с помощью макроса [CONNECTION_PART](#connection_part) . Наконец, завершите схему подключения с помощью макроса [END_CONNECTION_MAP](#end_connection_map) .
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="end_connection_map"></a><a name="end_connection_map"></a> END_CONNECTION_MAP
 
@@ -156,7 +156,7 @@ END_CONNECTION_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="connection_part"></a><a name="connection_part"></a> CONNECTION_PART
 
@@ -177,7 +177,7 @@ CONNECTION_PART(theClass, iid, localClass)
 *локалкласс*<br/>
 Указывает имя локального класса, реализующего точку подключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пример:
 
@@ -187,7 +187,7 @@ CONNECTION_PART(theClass, iid, localClass)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="afxconnectionadvise"></a><a name="afxconnectionadvise"></a> афксконнектионадвисе
 
@@ -229,7 +229,7 @@ BOOL AFXAPI AfxConnectionAdvise(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxctl. h
+**Заголовок:** afxctl.h
 
 ## <a name="afxconnectionunadvise"></a><a name="afxconnectionunadvise"></a> афксконнектионунадвисе
 
@@ -271,7 +271,7 @@ BOOL AFXAPI AfxConnectionUnadvise(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxctl. h
+**Заголовок:** afxctl.h
 
 ## <a name="see-also"></a>См. также раздел
 

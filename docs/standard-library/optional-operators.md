@@ -25,7 +25,7 @@ ms.locfileid: "87224686"
 ---
 # <a name="ltoptionalgt-operators"></a>&lt;необязательные &gt; операторы
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Проверяет равенство объекта `optional` слева от оператора объекту `optional` справа от оператора.
 
@@ -39,13 +39,13 @@ template <class T, class U> constexpr bool operator==(const U&, const optional<T
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Проверяет неравенство объекта `optional` слева от оператора объекту `optional` справа от оператора.
 
@@ -59,17 +59,17 @@ template <class T, class U> constexpr bool operator!=(const U&, const optional<T
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона возвращает `!(left == right)`.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Проверяет, меньше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора.
 
@@ -83,17 +83,17 @@ template <class T, class U> constexpr bool operator<(const U&, const optional<T>
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если список слева от оператора меньше, но не равен списку с правой стороны оператора; в противном случае — значение **`false`** .
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> operator&lt;=
 
 Проверяет, меньше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора, или равен ему.
 
@@ -107,21 +107,21 @@ template <class T, class U> constexpr bool operator<=(const U&, const optional<T
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если список слева от оператора меньше или равен списку с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона возвращает `!(right < left)`.
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> operator&gt;
 
 Проверяет больше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора.
 
@@ -135,21 +135,21 @@ template <class T, class U> constexpr bool operator>(const U&, const optional<T>
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если список в левой части оператора больше списка с правой стороны оператора; в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона возвращает `right < left`.
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> operator&gt;=
 
 Проверяет больше ли объект `optional` слева от оператора, чем объект `optional` справа от оператора, или равен ему.
 
@@ -163,16 +163,16 @@ template <class T, class U> constexpr bool operator>=(const U&, const optional<T
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
-*Правильно*\
+*right*\
 Объект типа `optional` , `nullopt_t` или `T` .
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если `optional` слева от оператора больше или равно объекту `optional` справа от оператора; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона возвращает `!(left < right)`.

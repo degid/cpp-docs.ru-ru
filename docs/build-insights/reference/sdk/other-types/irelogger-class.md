@@ -52,7 +52,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Значение возврата по умолчанию для всех функций, которые не переопределены, находится `AnalysisControl::CONTINUE`под этим. Для получения дополнительной информации [см.](analysis-control-enum-class.md)
 

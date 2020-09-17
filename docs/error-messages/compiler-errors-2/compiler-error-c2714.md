@@ -19,7 +19,7 @@ ms.locfileid: "87225414"
 
 Оператору передано недопустимое значение.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ `alignof` оператор](../../cpp/alignof-operator.md) .
 

@@ -101,7 +101,7 @@ class CObList : public CObject
 |[CObList::RemoveTail](#removetail)|Удаляет элемент из хвоста списка.|
 |[Коблист:SetAt](#setat)|Устанавливает элемент в заданной позиции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CObList`списки ведут себя как вдвойне связанные списки.
 
@@ -160,7 +160,7 @@ void AddHead(CObList* pNewList);
 |[CPtrList](../../mfc/reference/cptrlist-class.md)|**POSITION AddHead (пустота);** <strong>\*</strong> `newElement` **);**<br /><br /> **пустота AddHead (CPtrList** <strong>\*</strong> `pNewList` **);**|
 |[CStringList](../../mfc/reference/cstringlist-class.md)|**POSITION AddHead (конст CString** `newElement` **&);**<br /><br /> **POSITION AddHead (LPCTSTR);** `newElement` **);**<br /><br /> **пустота AddHead (CStringList** <strong>\*</strong> `pNewList` **);**|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список может быть пустым до операции.
 
@@ -199,7 +199,7 @@ void AddTail(CObList* pNewList);
 
 Первая версия возвращает значение POSITION вновь вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список может быть пустым до операции.
 
@@ -237,7 +237,7 @@ CObList(INT_PTR nBlockSize = 10);
 *nBlockSize*<br/>
 Детализация распределения памяти для расширения списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По мере роста списка память распределяется в единицах записей *nBlockSize.* Если выделение памяти завершается неудачей, он `CMemoryException` бросается.
 
@@ -280,7 +280,7 @@ POSITION Find(
 
 Значение POSITION, которое может быть использовано для итерации или поиска указателя объекта; NULL, если объект не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что сравниваются значения указателя, а не содержимое объектов.
 
@@ -314,7 +314,7 @@ POSITION FindIndex(INT_PTR nIndex) const;
 
 Значение POSITION, которое может быть использовано для итерации или поиска указателя объекта; NULL, если *nIndex* слишком велик. (Основа генерирует утверждение, если *nIndex* отрицательный.)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он начинает последовательное сканирование от главы списка, останавливаясь на *n*th элемент.
 
@@ -349,7 +349,7 @@ const CObject*& GetAt(POSITION position) const;
 
 Смотрите описание значения возврата для [GetHead.](#gethead)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это не то же самое, что индекс, и вы не можете работать на стоимость POSITION себя. `GetAt`получает указатель, `CObject` связанный с заданной позицией.
 
@@ -406,7 +406,7 @@ const CObject*& GetHead() const;
 
 Если список доступен непосредственно или через `CObList`указатель `GetHead` на, затем `CObject` возвращает ссылку на указатель. Это позволяет использовать функцию по обе стороны оператора назначения и, таким образом, позволяет модифицировать записи списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны убедиться, что список не пуст, прежде чем звонить `GetHead`. Если список пуст, то версия Debug библиотеки класса Microsoft Foundation утверждает. Используйте [IsEmpty,](#isempty) чтобы убедиться, что список содержит элементы.
 
@@ -468,7 +468,7 @@ const CObject* GetNext(POSITION& rPosition) const;
 
 Смотрите описание значения возврата для [GetHead.](#gethead)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете `GetNext` использовать в цикле передних итерации, если `GetHeadPosition` `Find`вы установите исходное положение с вызовом или .
 
@@ -519,7 +519,7 @@ const CObject* GetPrev(POSITION& rPosition) const;
 
 Смотрите описание значения возврата для [GetHead.](#gethead)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете `GetPrev` использовать в обратном цикле итерации, если `GetTailPosition` `Find`вы установите исходное положение с вызовом или .
 
@@ -562,7 +562,7 @@ INT_PTR GetSize() const;
 
 Количество элементов в списке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить количество элементов в списке.
 
@@ -592,7 +592,7 @@ const CObject*& GetTail() const;
 
 Смотрите описание значения возврата для [GetHead.](#gethead)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны убедиться, что список не пуст, прежде чем звонить `GetTail`. Если список пуст, то версия Debug библиотеки класса Microsoft Foundation утверждает. Используйте [IsEmpty,](#isempty) чтобы убедиться, что список содержит элементы.
 
@@ -753,7 +753,7 @@ Nonzero, если этот список пуст; в противном случ
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ошибка не генерируется, если список уже пуст.
 
@@ -785,7 +785,7 @@ void RemoveAt(POSITION position);
 *Позиции*<br/>
 Положение элемента, который будет удален из списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При удалении элемента из `CObList`списка вы удалите указатель объекта из списка. Вы несете ответственность за удаление самих объектов.
 
@@ -826,7 +826,7 @@ CObject* RemoveHead();
 
 Указатель `CObject` ранее возглавлял список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны убедиться, что список не пуст, прежде чем звонить `RemoveHead`. Если список пуст, то версия Debug библиотеки класса Microsoft Foundation утверждает. Используйте [IsEmpty,](#isempty) чтобы убедиться, что список содержит элементы.
 
@@ -855,7 +855,7 @@ CObject* RemoveTail();
 
 Указатель на объект, который находился в хвосте списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны убедиться, что список не пуст, прежде чем звонить `RemoveTail`. Если список пуст, то версия Debug библиотеки класса Microsoft Foundation утверждает. Используйте [IsEmpty,](#isempty) чтобы убедиться, что список содержит элементы.
 
@@ -890,7 +890,7 @@ POSITION элемента, который будет установлен.
 *newElement*<br/>
 Указатель, `CObject` который будет записан в список.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переменная типа POSITION является ключом к списку. Это не то же самое, что индекс, и вы не можете работать на стоимость POSITION себя. `SetAt`записывает `CObject` указатель на указанную позицию в списке.
 

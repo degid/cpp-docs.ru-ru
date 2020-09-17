@@ -61,7 +61,7 @@ class ATL_NO_VTABLE IConnectionPointImpl : public _ICPLocator<piid>
 |----------|-----------------|
 |[IConnectionPointImpl::m_vec](#m_vec)|Управляет соединениями для точки соединения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IConnectionPointImpl`реализует точку соединения, которая позволяет объекту предоставить исходящий интерфейс клиенту. Клиент реализует этот интерфейс на объекте, называемом раковиной.
 
@@ -89,7 +89,7 @@ STDMETHOD(Advise)(
     DWORD* pdwCookie);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [Unadvise](#unadvise) для завершения вызова соединения.
 
@@ -103,7 +103,7 @@ STDMETHOD(Advise)(
 STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPoint::EnumConnections](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-enumconnections) в Windows SDK.
 
@@ -115,7 +115,7 @@ STDMETHOD(EnumConnections)(IEnumConnections** ppEnum);
 STDMETHOD(GetConnectionInterface)(IID* piid2);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPoint::GetConnectionInterface](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectioninterface) в Windows SDK.
 
@@ -127,7 +127,7 @@ STDMETHOD(GetConnectionInterface)(IID* piid2);
 STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPoint::GetConnectionPointContainer](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-getconnectionpointcontainer) в Windows SDK.
 
@@ -139,7 +139,7 @@ STDMETHOD(GetConnectionPointContainer)(IConnectionPointContainer** ppCPC);
 CDV m_vec;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию, `m_vec` является [типом CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md).
 
@@ -151,7 +151,7 @@ CDV m_vec;
 STDMETHOD(Unadvise)(DWORD dwCookie);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPoint::Unadvise](/windows/win32/api/ocidl/nf-ocidl-iconnectionpoint-unadvise) в Windows SDK.
 

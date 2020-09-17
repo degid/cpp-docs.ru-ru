@@ -84,7 +84,7 @@ class CContainedWindowT : public TBase
 |[CContainedWindowT::m_pfnSuperWindowProc](#m_pfnsuperwindowproc)|Указывает на оригинальную процедуру окна класса окон.|
 |[CContainedWindowT::m_pObject](#m_pobject)|Указывает на содержащий объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CContainedWindowT`реализует окно, содержащееся в другом объекте. `CContainedWindowT`Процедура окна 'S использует карту сообщений в содержащем объекте для направления сообщений соответствующим обработчикам. При построении объекта указывается, какая карта сообщений `CContainedWindowT` должна использоваться.
 
@@ -147,7 +147,7 @@ CContainedWindowT(
 *dwMsgMapID*<br/>
 (в) Идентифицирует карту сообщений, которая будет обрабатывать сообщения, содержащиеся в окне. Значение по умолчанию, 0, определяет карту сообщения по умолчанию, объявленную [с BEGIN_MSG_MAP.](message-map-macros-atl.md#begin_msg_map) Использовать альтернативную карту сообщений, объявленную с ALT_MSG_MAP `msgMapID` [(msgMapID),](message-map-macros-atl.md#alt_msg_map)пройдите.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите создать новое окно через [Create,](#create)необходимо передать имя существующего класса окон для параметра *lpszClassName.* Например, [см.](../../atl/reference/ccontainedwindowt-class.md)
 
@@ -235,7 +235,7 @@ HWND Create(
 
 В случае успеха ручка к вновь созданному окну; в противном случае, NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Существующее имя класса окон сохраняется в [m_lpszClassName.](#m_lpszclassname) `Create`затем создает окно на основе этого нового класса. Новое окно автоматически прикрепляется `CContainedWindowT` к объекту.
 
@@ -272,7 +272,7 @@ LRESULT DefWindowProc(
 
 Результат обработки сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию вызывает функцию `DefWindowProc` [CallWindowProc](/windows/win32/api/winuser/nf-winuser-callwindowprocw) Win32 для отправки информации о сообщении в процедуру окна, указанную в [m_pfnSuperWindowProc.](#m_pfnsuperwindowproc)
 
@@ -296,7 +296,7 @@ const _ATL_MSG* GetCurrentMessage();
 DWORD m_dwMsgMapID;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта карта сообщений должна быть объявлена в содержащем объекте.
 
@@ -312,7 +312,7 @@ DWORD m_dwMsgMapID;
 LPTSTR m_lpszClassName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При создании окна [Создать](#create) регистрирует новый класс окон, основанный на этом существующем классе, но использующийся [CContainedWindowT::WindowProc.](#windowproc)
 
@@ -326,7 +326,7 @@ LPTSTR m_lpszClassName;
 WNDPROC m_pfnSuperWindowProc;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если содержащееся окно является суперклассным, то есть оно основано `m_pfnSuperWindowProc` на классе окон, который изменяет существующий класс, указывает на процедуру окна существующего класса окна.
 
@@ -340,7 +340,7 @@ WNDPROC m_pfnSuperWindowProc;
 CMessageMap* m_pObject;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот контейнер, класс которого должен быть получен из [CMessageMap,](../../atl/reference/cmessagemap-class.md)объявляет карту сообщений, используемую содержащимся в окне.
 
@@ -358,7 +358,7 @@ ATOM RegisterWndSuperClass();
 
 В случае успеха атом, который однозначно идентифицирует зарегистрированный класс окон; в противном случае, ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс окон основан на существующем классе, но использует [CContainedWindowT::WindowProc.](#windowproc) Имя и процедура окна существующего класса окон сохраняются в [m_lpszClassName](#m_lpszclassname) и [m_pfnSuperWindowProc](#m_pfnsuperwindowproc)соответственно.
 
@@ -379,7 +379,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 TRUE, если окно успешно подклассифицировано; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Подклассное окно теперь использует [CContainedWindowT::WindowProc](#windowproc). Оригинальная процедура окна сохраняется в [m_pfnSuperWindowProc.](#m_pfnsuperwindowproc)
 
@@ -399,7 +399,7 @@ void SwitchMessageMap(DWORD dwMsgMapID);
 *dwMsgMapID*<br/>
 (в) Идентификатор карты сообщений. Чтобы использовать карту сообщения по умолчанию, объявленную [с BEGIN_MSG_MAP,](message-map-macros-atl.md#begin_msg_map)передайте ноль. Использовать альтернативную карту сообщений, объявленную с ALT_MSG_MAP `msgMapID` [(msgMapID),](message-map-macros-atl.md#alt_msg_map)пройдите.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Карта сообщений должна быть определена в содержащем объекте.
 
@@ -422,7 +422,7 @@ HWND UnsubclassWindow(BOOL bForce = FALSE);
 
 Ручка к окну ранее подклассифицирована. Если *bForce* настроен на FALSE и `CContainedWindowT` процедура окна для этого объекта в настоящее время не активна, возвращает NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод только в том случае, если вы хотите восстановить исходную процедуру окна до того, как окно будет уничтожено. В противном случае [WindowProc](#windowproc) автоматически сделает это при разрушении окна.
 
@@ -456,7 +456,7 @@ static LRESULT CALLBACK WindowProc(
 
 Результат обработки сообщений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `WindowProc`направляет сообщения на карту сообщений, идентифицированную [m_dwMsgMapID.](#m_dwmsgmapid) При необходимости звоните `WindowProc` в [DefWindowProc](#defwindowproc) для дополнительной обработки сообщений.
 

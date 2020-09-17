@@ -19,7 +19,7 @@ ms.locfileid: "79440882"
 
 > **Extern** ⟦*Language — Type*⟧ *Name* ⟦ __(__ *АЛТИД* __)__ ⟧ __:__ *Type* ⟦ __,__ ⟦*Language-Type*⟧ *Name* ⟦ __(__ *АЛТИД* __)__ ⟧ __:__ *Type* ... ⟧
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Аргумент *Language-Type* допустим только в 32-разрядном MASM.
 

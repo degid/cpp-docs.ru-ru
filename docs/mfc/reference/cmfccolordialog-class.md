@@ -78,7 +78,7 @@ class CMFCColorDialog : public CDialogEx
 |`m_wndColors`|Объект управления сборщиком цветов.|
 |`m_wndStaticPlaceHolder`|Статический элемент управления, который является заполнителем для листа свойства сборщика цветов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Коробка диалога выбора цвета отображается как лист свойств с двумя страницами. На первой странице вы выбираете стандартный цвет из системной палитры; на второй странице вы выбираете пользовательский цвет.
 
@@ -136,7 +136,7 @@ CMFCColorDialog(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolordialoggetcolor"></a><a name="getcolor"></a>CMFCColorДиалог::GetColor
 
@@ -150,7 +150,7 @@ COLORREF GetColor() const;
 
 Значение [COLORREF,](/windows/win32/gdi/colorref) содержащее информацию О РГБ для цвета, выбранного в цветном диалоговом поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию после вызова метода. `DoModal`
 
@@ -166,7 +166,7 @@ CPalette* GetPalette() const;
 
 Указатель на `CPalette` объект, указанный `CMFCColorDialog` в конструкторе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Цветовая палитра определяет цвета, которые пользователь может выбрать.
 
@@ -191,7 +191,7 @@ void SetCurrentColor(COLORREF rgb);
 *Rgb*<br/>
 (в) Значение цвета RGB
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolordialogsetnewcolor"></a><a name="setnewcolor"></a>CMFCColorДиалог::SetNewColor
 
@@ -206,7 +206,7 @@ void SetNewColor(COLORREF rgb);
 *Rgb*<br/>
 (в) [COLORREF,](/windows/win32/gdi/colorref) который определяет цвет RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolordialogsetpageone"></a><a name="setpageone"></a>CMFCColorДиалог::SetPageOne
 
@@ -230,7 +230,7 @@ void SetPageOne(
 *B*<br/>
 (в) Определяет синий компонент значения RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccolordialogsetpagetwo"></a><a name="setpagetwo"></a>CMFCColorДиалог::SetPageTwo
 
@@ -254,7 +254,7 @@ void SetPageTwo(
 *B*<br/>
 (в) Определяет синий компонент значения RGB
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

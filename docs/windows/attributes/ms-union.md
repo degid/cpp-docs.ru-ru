@@ -23,7 +23,7 @@ ms.locfileid: "88838845"
 [ms_union]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **ms_union** C++ имеет те же функциональные возможности, что и атрибут [ms_union](/windows/win32/Midl/ms-union-attrib) MIDL.
 

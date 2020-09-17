@@ -98,7 +98,7 @@ class CMFCDropDownToolbarButton : public CMFCToolBarButton
 |----------|-----------------|
 |[CMFCDropDownToolbarButton::m_uiShowBarDelay](#m_uishowbardelay)|Определяет продолжительность времени, в течение которого пользователь должен удерживать кнопку мыши до того, как появится панель инструментов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 А `CMFCDropDownToolBarButton` отличается от обычной кнопки тем, что она имеет небольшую стрелку в правом нижнем углу кнопки. После того, как пользователь выбирает кнопку из панели инструментов, панель инструментов отображается, фреймворк отображает свою иконку на кнопке панели инструментов верхнего уровня (кнопка с небольшой стрелкой в правом нижнем углу).
 
@@ -131,7 +131,7 @@ virtual void CopyFrom(const CMFCToolBarButton& src);
 *src*<br/>
 (в) Ссылка на кнопку исходного кода, из которой можно скопировать.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы скопировать другую кнопку панели инструментов на эту кнопку панели инструментов. *src* должен быть `CMFCDropDownToolbarButton`типа .
 
@@ -155,7 +155,7 @@ CMFCDropDownToolbarButton(
 *pToolBar*<br/>
 (в) Указатель на `CMFCDropDownToolBar` объект, который отображается при нажатии кнопки пользователя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вторая перегрузка конструктора скопирует на кнопку выпадения первой кнопки из панели инструментов, которую указывает *pToolBar.*
 
@@ -184,7 +184,7 @@ BOOL DropDownToolbar(CWnd* pWnd);
 
 Nonzero, если метод успешен; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Метод CMFCDropDownToolbarButton::OnClick](#onclick) называет этот метод, чтобы открыть панель инструментов, когда пользователь нажимает и удерживает кнопку панели инструментов вниз.
 
@@ -209,7 +209,7 @@ virtual BOOL ExportToMenuButton(CMFCToolBarMenuButton& menuButton) const;
 
 Ненулевое значение, если метод выполнен успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод называет реализацию базового класса [(CMFCToolBarButton::ExportToMenuButton](../../mfc/reference/cmfctoolbarbutton-class.md#exporttomenubutton)), а затем прикладывает к кнопке меню целевого меню всплывающее меню, содержащее каждый элемент меню панели инструментов в этой кнопке. Этот метод не приговывает подменю к всплывающем меню.
 
@@ -227,7 +227,7 @@ CMFCToolBar* GetDropDownToolBar() const;
 
 Панель инструментов выпадения, связанная с кнопкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод `m_pToolBar` возвращает член данных.
 
@@ -243,7 +243,7 @@ BOOL IsDropDown() const;
 
 Nonzero, если панель инструментов выпадения в настоящее время открыта; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа открывает панель инструментов с выпадениеса с помощью метода [CMFCDropDownToolbarButton::DropDownToolbar.](#dropdowntoolbar) Рамка закрывает панель инструментов, когда пользователь нажимает кнопку левой мыши в области неклиента панели инструментов.
 
@@ -259,7 +259,7 @@ virtual BOOL IsExtraSize() const;
 
 Nonzero, если кнопка панели инструментов может отображаться с расширенной границей; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о расширенных границах, см [CMFCToolBarButton::IsExtraSize](../../mfc/reference/cmfctoolbarbutton-class.md#isextrasize).
 
@@ -271,7 +271,7 @@ Nonzero, если кнопка панели инструментов может 
 static UINT m_uiShowBarDelay;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Время задержки измеряется в миллисекундах. По умолчанию используется значение 500. Можно установить еще одну задержку, изменив значение этого общего члена данных.
 
@@ -301,7 +301,7 @@ virtual SIZE OnCalculateSize(
 
 Структура, `SIZE` содержащая размеры кнопки, в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnCalculateSize),](../../mfc/reference/cmfctoolbarbutton-class.md#oncalculatesize)добавляя ширину стрелки выпадения в горизонтальное измерение размера кнопки.
 
@@ -318,7 +318,7 @@ virtual void OnChangeParentWnd(CWnd* pWndParent);
 *pWndParent*<br/>
 (в) Новое родительское окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет реализацию базового класса [(CMFCToolBarButton::OnChangeParentWnd](../../mfc/reference/cmfctoolbarbutton-class.md#onchangeparentwnd)) путем очистки текстовой этикетки [(CMFCToolBarButton:::m_strText)](../../mfc/reference/cmfctoolbarbutton-class.md#m_strtext)и установка [CMFCToolBarButton::m_bText](../../mfc/reference/cmfctoolbarbutton-class.md#m_btext) и [CMFCToolBarButton::m_bUserButton](../../mfc/reference/cmfctoolbarbutton-class.md#m_buserbutton) членов данных false.
 
@@ -344,7 +344,7 @@ virtual BOOL OnClick(
 
 Nonzero, если кнопка обрабатывает сообщение щелчка; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса, [CMFCToolBarButton::OnClick](../../mfc/reference/cmfctoolbarbutton-class.md#onclick), путем обновления состояния панели инструментов для выпадения.
 
@@ -362,7 +362,7 @@ virtual BOOL OnClickUp();
 
 Nonzero, если кнопка обрабатывает сообщение щелчка; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса, [CMFCToolBarButton::OnClickUp](../../mfc/reference/cmfctoolbarbutton-class.md#onclickup), путем обновления состояния панели инструментов для выпадающих.
 
@@ -387,7 +387,7 @@ virtual BOOL OnContextHelp(CWnd* pWnd);
 
 Nonzero, если кнопка обрабатывает сообщение справки; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnContextHelp](../../mfc/reference/cmfctoolbarbutton-class.md#oncontexthelp)), позвонив в [CMFCDropDownToolbarButton::OnClick](#onclick) метод с *bDelay,* установленным на FALSE. Этот метод возвращает значение, которое возвращается [CMFCDropDownToolbarButton::OnClick](#onclick).
 
@@ -410,7 +410,7 @@ virtual BOOL OnCustomizeMenu(CMenu* pMenu);
 
 Этот метод возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::OnCustomizeMenu)](../../mfc/reference/cmfctoolbarbutton-class.md#oncustomizemenu)путем отключения следующих элементов меню:
 
@@ -468,7 +468,7 @@ virtual void OnDraw(
 *bGrayDisabledButtons*<br/>
 (в) Уточняется, следует ли оттенить кнопки для инвалидов или использовать коллекцию отключенных изображений. Этот параметр является правдой, когда отключенные кнопки должны быть затенены и FALSE, когда этот метод должен использовать коллекцию отключенных изображений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, чтобы настроить рисунок кнопки панели инструментов.
 
@@ -498,7 +498,7 @@ virtual int OnDrawOnCustomizeList(
 
 Ширина в пикселях кнопки на указанном контексте устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается полем диалога настройки **(вкладка Команд),** когда кнопка необходима для отображения в поле списка владельца.draw.
 
@@ -517,7 +517,7 @@ virtual void Serialize(CArchive& ar);
 *ar*<br/>
 (в) Объект, `CArchive` с которого или к которому сериализовать.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод расширяет реализацию базового класса [(CMFCToolBarButton::Serialize)](../../mfc/reference/cmfctoolbarbutton-class.md#serialize)путем сериализации идентификатора ресурсов родительской панели инструментов. При загрузке архива [(CArchive::IsLoading](../../mfc/reference/carchive-class.md#isloading) возвращает ненулевое `m_pToolBar` значение) этот метод устанавливает член данных в панель инструментов, содержащую идентификатор сериализованного ресурса.
 
@@ -534,7 +534,7 @@ void SetDefaultCommand(UINT uiCmd);
 *uiCmd*<br/>
 (в) Идентификатор команды по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы указать команду по умолчанию, которую выполняет инфраструктура, когда пользователь нажимает на кнопку. Элемент с идентификатором команды, указанным *uiCmd,* должен находиться в панели родительских выпадающих инструментов.
 

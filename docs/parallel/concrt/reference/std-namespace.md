@@ -23,13 +23,13 @@ namespace std;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Функция make_exception_ptr](make-exception-ptr-function.md)||
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** из ppltasks. h
+**Заголовок:** из ppltasks.h
 
 ## <a name="see-also"></a>См. также раздел
 

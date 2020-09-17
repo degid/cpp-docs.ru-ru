@@ -68,7 +68,7 @@ class ATL_NO_VTABLE CUtlProps : public CUtlPropsBase
 |[OnPropertyChanged](#onpropertychanged)|Вызывается после задания свойства для управления связанными свойствами.|
 |[сетпропвалуе](#setpropvalue)|Задает свойство в наборе свойств.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Большая часть этого класса является подробным описанием реализации.
 
@@ -126,7 +126,7 @@ virtual HRESULT CUtlPropsBase::IsValidValue(ULONG /* iCurSet */,
 
 Стандартное значение HRESULT. Возвращаемое значение по умолчанию — S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если у вас есть подпрограммы проверки, которые необходимо использовать для задания значения свойства, следует переопределить эту функцию. Например, можно проверить DBPROP_AUTH_PASSWORD для таблицы паролей, чтобы определить допустимое значение.
 
@@ -145,7 +145,7 @@ virtual HRESULT CUtlPropsBase::OnInterfaceRequested(REFIID riid);
 *riid*<br/>
 окне IID запрошенного интерфейса. Дополнительные сведения см. в описании параметра *riid* `ICommand::Execute` в *справочнике программиста OLE DB* (в *пакете SDK для MDAC*).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OnInterfaceRequested` обрабатывает запросы потребителей для необязательного интерфейса, когда потребитель вызывает метод для одного из интерфейсов создания объекта (например `IDBCreateSession` ,, `IDBCreateCommand` `IOpenRowset` или `ICommand` ). Он устанавливает соответствующее свойство OLE DB для запрошенного интерфейса. Например, если потребитель запрашивает `IID_IRowsetLocate` , `OnInterfaceRequested` задает `DBPROP_IRowsetLocate` интерфейс. Это позволит поддерживать правильное состояние во время создания набора строк.
 
@@ -188,7 +188,7 @@ virtual HRESULT OnPropertyChanged(ULONG /* iCurSet */,
 
 Стандартное значение HRESULT. Возвращаемое значение по умолчанию — S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если требуется управлять связанными свойствами, такими как закладки или обновления, значения которых зависят от значения другого свойства, следует переопределить эту функцию.
 

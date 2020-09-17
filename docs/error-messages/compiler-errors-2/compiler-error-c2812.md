@@ -17,7 +17,7 @@ ms.locfileid: "80202108"
 
 > \#import не поддерживается с параметрами/clr: pure и/CLR: Сейф
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметры компилятора **/clr: pure** и **/clr: Сейф** являются устаревшими в Visual Studio 2015 и не поддерживаются в Visual Studio 2017.
 

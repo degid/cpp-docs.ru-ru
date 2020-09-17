@@ -46,7 +46,7 @@ class recursive_timed_mutex;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[lock](#lock)|Блокирует вызывающий поток до тех пор, пока этот поток не получит права владельца объекта `mutex`.|
 |[try_lock](#try_lock)|Попытки получить права владельца объекта `mutex` без блокировки.|
@@ -68,7 +68,7 @@ class recursive_timed_mutex;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток уже владеет `mutex`, метод немедленно возвращает значение и предыдущая блокировка остается в силе.
 
@@ -88,7 +88,7 @@ recursive_timed_mutex();
 ~recursive_timed_mutex();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если при выполнении деструктора объект заблокирован, поведение не определено.
 
@@ -104,7 +104,7 @@ bool try_lock() noexcept;
 
 **`true`** значение, если метод успешно получил владение объектом `mutex` или, если вызывающий поток уже владеет `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток уже владеет `mutex` , функция немедленно возвращает значение **`true`** , а предыдущая блокировка остается в силе.
 
@@ -126,7 +126,7 @@ bool try_lock_for(const chrono::duration<Rep, Period>& Rel_time);
 
 **`true`** значение, если метод успешно получает владение или, `mutex` Если вызывающий поток уже владеет `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток уже владеет `mutex` , метод немедленно возвращает значение **`true`** , и предыдущая блокировка остается в силе.
 
@@ -150,7 +150,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 **`true`** значение, если метод успешно получает владение или, `mutex` Если вызывающий поток уже владеет `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток уже владеет `mutex` , метод немедленно возвращает значение **`true`** , и предыдущая блокировка остается в силе.
 
@@ -162,7 +162,7 @@ bool try_lock_until(const xtime* Abs_time);
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод освобождает владение `mutex` только если он вызван столько раз, сколько [lock](#lock), [try_lock](#try_lock), [try_lock_for](#try_lock_for) и [try_lock_until](#try_lock_until) были успешно вызваны для объекта `recursive_timed_mutex`.
 

@@ -68,7 +68,7 @@ class ATL_NO_VTABLE IViewObjectExImpl
 |[IViewObjectExImpl::SetAdvise](#setadvise)|Устанавливает соединение между элементом управления и раковиной советовать, чтобы раковина была уведомлена об изменениях в представлении элемента управления.|
 |[IViewObjectExImpl::Разморозка](#unfreeze)|Размногивает нарисованное представление элемента управления. Реализация ATL возвращает E_NOTIMPL.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейсы [IViewObject,](/windows/win32/api/oleidl/nn-oleidl-iviewobject) [IViewObject2](/windows/win32/api/oleidl/nn-oleidl-iviewobject2)и [IViewObjectEx](/windows/win32/api/ocidl/nn-ocidl-iviewobjectex) позволяют элементу управления отображаться напрямую, а также создавать и управлять советом, чтобы уведомить контейнер об изменениях в дисплее управления. Интерфейс `IViewObjectEx` обеспечивает поддержку расширенных функций управления, таких как рисунок без мерцания, непрямоугольные и прозрачные элементы управления, а также хит-тестирование (например, как близко мыши нажмите должны быть рассмотрены на элементе управления). Класс `IViewObjectExImpl` обеспечивает реализацию этих интерфейсов и `IUnknown` реализаций по умолчанию, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -99,7 +99,7 @@ STDMETHOD(Draw)(
     DWORD_PTR /* dwContinue */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод `CComControl::OnDrawAdvanced` вызывает, который, в `OnDraw` свою очередь, вызывает метод вашего класса управления. Метод `OnDraw` автоматически добавляется в класс управления при создании элемента управления с помощью atL Control Wizard. По умолчанию `OnDraw` Волшебник рисует прямоугольник с меткой "ATL 3.0".
 
@@ -117,7 +117,7 @@ STDMETHOD(Freeze)(
     DWORD* /* pdwFreeze */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IViewObject::Заморозить](/windows/win32/api/oleidl/nf-oleidl-iviewobject-freeze) в Windows SDK.
 
@@ -132,7 +132,7 @@ STDMETHOD(GetAdvise)(
     IAdviseSink** /* ppAdvSink */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Консультационная раковина хранится в элементе данных класса управления [CComControlBase::m_spAdviseSink](../../atl/reference/ccomcontrolbase-class.md#m_spadvisesink).
 
@@ -152,7 +152,7 @@ STDMETHOD(GetColorSet)(
     LOGPALETTE** /* ppColorSet */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IViewObject::GetColorSet](/windows/win32/api/oleidl/nf-oleidl-iviewobject-getcolorset) в Windows SDK.
 
@@ -168,7 +168,7 @@ STDMETHOD(GetExtent)(
     LPSIZEL* lpsizel);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IViewObject2::GetExtent](/windows/win32/api/oleidl/nf-oleidl-iviewobject2-getextent) в Windows SDK.
 
@@ -186,7 +186,7 @@ STDMETHOD(GetNaturalExtent)(
     LPSIZEL psizel);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `dwAspect` DVASPECT_CONTENT и *pExtentInfo->dwExtentMode* является `psizel` DVEXTENT_CONTENT, устанавливает к члену данных класса управления [CComControlBase::m_sizeNatural](../../atl/reference/ccomcontrolbase-class.md#m_sizenatural). В противном случае возвращает ошибку HRESULT.
 
@@ -200,7 +200,7 @@ STDMETHOD(GetNaturalExtent)(
 STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IViewObjectEx::GetRect](/windows/win32/api/ocidl/nf-ocidl-iviewobjectex-getrect) в Windows SDK.
 
@@ -212,7 +212,7 @@ STDMETHOD(GetRect)(DWORD /* dwAspect */, LPRECTL /* pRect */);
 STDMETHOD(GetViewStatus)(DWORD* pdwStatus);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию НАБОРы `pdwStatus` ATL указывают, что элемент управления поддерживает VIEWSTATUS_OPAQUE (возможные значения находятся в перечислении [VIEWSTATUS).](/windows/win32/api/ocidl/ne-ocidl-viewstatus)
 
@@ -231,7 +231,7 @@ STDMETHOD(QueryHitPoint)(
     DWORD* /* pHitResult */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение может быть как HITRESULT_HIT, так и HITRESULT_OUTSIDE.
 
@@ -252,7 +252,7 @@ STDMETHOD(QueryHitRect)(
     DWORD* /* pHitResult */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение может быть как HITRESULT_HIT, так и HITRESULT_OUTSIDE.
 
@@ -271,7 +271,7 @@ STDMETHOD(SetAdvise)(
     IAdviseSink* pAdvSink);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указатель на интерфейс [IAdviseSink](/windows/win32/api/objidl/nn-objidl-iadvisesink) на раковине советуют хранится в элементе данных класса управления [CComControlBase::m_spAdviseSink](ccomcontrolbase-class.md#m_spadvisesink).
 
@@ -285,7 +285,7 @@ STDMETHOD(SetAdvise)(
 STDMETHOD(Unfreeze)(DWORD /* dwFreeze */);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IViewObject::Разморозить](/windows/win32/api/oleidl/nf-oleidl-iviewobject-unfreeze) в Windows SDK.
 
@@ -306,7 +306,7 @@ HRESULT CloseHandle(HANDLE hHandle);
 
 Возврат S_OK на успех, или ошибка HRESULT на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ручка, переданная этому методу, ранее была связана с этим объектом путем вызова [cWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
 
@@ -336,7 +336,7 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 Возврат S_OK на успех, или ошибка HRESULT на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ручка и DWORD/pointer, переданные этому методу, ранее были связаны с этим объектом путем вызова [CWorkerThread::AddHandle](../../atl/reference/cworkerthread-class.md#addhandle).
 

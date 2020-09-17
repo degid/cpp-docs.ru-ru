@@ -70,7 +70,7 @@ class CAccessorRowset : public TAccessor, public TRowset<TAccessor>
 | [фрирекордмемори](#freerecordmemory) | Освобождает все столбцы в текущей записи, которые необходимо освободить. |
 | [GetColumnInfo](#getcolumninfo) | Реализует [IColumnsInfo:: GetColumnInfo](/previous-versions/windows/desktop/ms722704\(v=vs.85\)). |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `TAccessor` управляет методом доступа. Класс *тровсет* управляет набором строк.
 
@@ -108,7 +108,7 @@ CAccessorRowset();
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает любую связанную память.
 
@@ -145,7 +145,7 @@ HRESULT GetColumnInfo(DBORDINAL* pColumns,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пользователь должен освободить информацию о возвращаемом столбце и буфере строк. Используйте вторую версию этого метода при использовании [CDynamicAccessor](../../data/oledb/cdynamicaccessor-class.md) и необходимости переопределения привязок.
 

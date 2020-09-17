@@ -23,7 +23,7 @@ ms.locfileid: "87227612"
 break;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`break`** Оператор используется с оператором условного [переключения](../cpp/switch-statement-cpp.md) и с операторами [Do](../cpp/do-while-statement-cpp.md), [for](../cpp/for-statement-cpp.md)и [while](../cpp/while-statement-cpp.md) .
 

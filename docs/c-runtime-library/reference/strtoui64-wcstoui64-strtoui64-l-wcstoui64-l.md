@@ -110,7 +110,7 @@ unsigned __int64 _wcstoui64(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_strtoui64** преобразует *стрсаурце* в **`unsigned __int64`** . **_wcstoui64** — это версия **_strtoui64**для расширенных символов; его аргумент *стрсаурце* является строкой расширенных символов. В остальном эти функции работают одинаково.
 

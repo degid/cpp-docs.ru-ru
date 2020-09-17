@@ -33,7 +33,7 @@ class COleDialog : public CCommonDialog
 |----------|-----------------|
 |[ColeDialog::GetLastError](#getlasterror)|Возвращает код ошибки в диалоговое окно.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Библиотека класса Фонда Майкрософт предоставляет `COleDialog`несколько классов, полученных из:
 
@@ -87,7 +87,7 @@ UINT GetLastError() const;
 
 Коды ошибок, `GetLastError` возвращенные в зависимости от отображаемого окна диалога.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Просматривайте `DoModal` функцию участника в производных классах для получения информации о конкретных сообщениях об ошибках.
 

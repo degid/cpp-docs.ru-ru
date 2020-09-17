@@ -35,7 +35,7 @@ class CPtrList : public CObject
 
 `void*& CPtrList::GetHead() const;`
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CPtrList`включает в себя макрос IMPLEMENT_DYNAMIC для поддержки доступа к типу во время выполнения и дампа в `CDumpContext` объекте. Если требуется дамп отдельных элементов списка указателей, необходимо установить глубину контекста дампа в 1 или более.
 
@@ -53,7 +53,7 @@ class CPtrList : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксколл. h
+**Заголовок:** афксколл.h
 
 ## <a name="see-also"></a>См. также статью
 

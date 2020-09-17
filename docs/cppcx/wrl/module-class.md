@@ -144,7 +144,7 @@ name                                                    | Описание:
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft::WRL
 
@@ -259,7 +259,7 @@ HRESULT GetClassObject(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод следует использовать только для COM, а не для среда выполнения Windows. Этот метод предоставляет только `IClassFactory` методы.
 
@@ -308,7 +308,7 @@ virtual long IncrementObjectCount();
 Module();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот конструктор защищен и не может быть вызван с помощью **`new`** ключевого слова. Вместо этого вызовите либо [Module:: имя_модуля](#getmodule) , либо [модуль:: Create](#create).
 
@@ -354,7 +354,7 @@ WRL_NOTHROW virtual HRESULT RegisterCOMObject(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT (например, CO_E_OBJISREG), указывающее причину неудачного завершения операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 COM-объекты зарегистрированы с помощью перечислителя CLSCTX_LOCAL_SERVER перечисления CLSCTX.
 
@@ -427,7 +427,7 @@ ReleaseNotifier *releaseNotifier_;
 void Terminate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает фабрики в кэше.
 

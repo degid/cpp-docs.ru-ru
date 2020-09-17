@@ -14,7 +14,7 @@ ms.locfileid: "77141871"
 ---
 # <a name="how-to-write-a-parallel_for_each-loop"></a>Практическое руководство. Написание цикла parallel_for_each
 
-В этом примере показано, как использовать алгоритм [параллелизма::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) , чтобы вычислить число простых чисел в объекте [std:: Array](../../standard-library/array-class-stl.md) параллельно.
+В этом примере показано, как использовать алгоритм [параллелизма::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) , чтобы вычислить число простых чисел в объекте [std:: Array](../../standard-library/array-class-stl.md) параллельно.
 
 ## <a name="example"></a>Пример
 
@@ -42,7 +42,7 @@ took 1653 ms
 
 ## <a name="robust-programming"></a>Отказоустойчивость
 
-Лямбда-выражение, которое в примере передается в алгоритм `parallel_for_each`, использует функцию `InterlockedIncrement` для включения параллельных итераций цикла для одновременного увеличения счетчика. Если вы используете такие функции, как `InterlockedIncrement` для синхронизации доступа к общим ресурсам, в коде можно представлять узкие места производительности. Чтобы исключить одновременный доступ к общим ресурсам, можно использовать механизм синхронизации без блокировки, например класс [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) . Пример, в котором используется класс `combinable`, см. в разделе [руководство. Использование класса combinable для повышения производительности](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md).
+Лямбда-выражение, которое в примере передается в алгоритм `parallel_for_each`, использует функцию `InterlockedIncrement` для включения параллельных итераций цикла для одновременного увеличения счетчика. Если вы используете такие функции, как `InterlockedIncrement` для синхронизации доступа к общим ресурсам, в коде можно представлять узкие места производительности. Чтобы исключить одновременный доступ к общим ресурсам, можно использовать механизм синхронизации без блокировки, например класс [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) . Пример, в котором используется класс `combinable`, см. в разделе [руководство. Использование класса combinable для повышения производительности](../../parallel/concrt/how-to-use-combinable-to-improve-performance.md).
 
 ## <a name="see-also"></a>См. также раздел
 

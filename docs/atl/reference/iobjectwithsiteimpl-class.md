@@ -51,7 +51,7 @@ template <class T>
 |----------|-----------------|
 |[IObjectWithSiteImpl::m_spUnkSite](#m_spunksite)|Управляет `IUnknown` указателем сайта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IObjectWithSite](/windows/win32/api/ocidl/nn-ocidl-iobjectwithsite) позволяет объекту общаться со своим сайтом. Класс `IObjectWithSiteImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -79,7 +79,7 @@ STDMETHOD(GetSite)(
     void** ppvSite);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если сайт поддерживает этот интерфейс, указатель `ppvSite`возвращается через . В `ppvSite` противном случае, устанавливается на NULL.
 
@@ -93,7 +93,7 @@ STDMETHOD(GetSite)(
 CComPtr<IUnknown> m_spUnkSite;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `m_spUnkSite`первоначально получает этот указатель через звонок к [SetSite.](#setsite)
 
@@ -122,7 +122,7 @@ HRESULT SetChildSite(IUnknown* pUnkSite);
 STDMETHOD(SetSite)(IUnknown* pUnkSite);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IObjectWithSite::SetSite](/windows/win32/api/ocidl/nf-ocidl-iobjectwithsite-setsite) в SDK Windows.
 

@@ -42,7 +42,7 @@ virtual [access-specifier] base-class-name
 *имя базового класса*<br/>
 Определяет ранее объявленный тип класса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [виртуальные функции](../cpp/virtual-functions.md) .
 

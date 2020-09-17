@@ -101,7 +101,7 @@ unsigned long _wcstoul_l(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каждая из этих функций преобразует входную строку *стрсаурце* в **`unsigned long`** .
 

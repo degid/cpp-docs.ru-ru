@@ -47,13 +47,13 @@ class COleDispatchDriver
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDispatchDriver:: COleDispatchDriver](#coledispatchdriver)|Формирует объект `COleDispatchDriver`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDispatchDriver:: Аттачдиспатч](#attachdispatch)|Присоединяет `IDispatch` соединение к `COleDispatchDriver` объекту.|
 |[COleDispatchDriver:: Креатедиспатч](#createdispatch)|Создает `IDispatch` соединение и прикрепляет его к `COleDispatchDriver` объекту.|
@@ -65,14 +65,14 @@ class COleDispatchDriver
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[COleDispatchDriver:: operator =](#operator_eq)|Копирует исходное значение в `COleDispatchDriver` объект.|
-|[COleDispatchDriver:: operator ЛПДИСПАТЧ](#operator_lpdispatch)|Обращается к базовому `IDispatch` указателю.|
+|[COleDispatchDriver::operator=](#operator_eq)|Копирует исходное значение в `COleDispatchDriver` объект.|
+|[COleDispatchDriver::operator ЛПДИСПАТЧ](#operator_lpdispatch)|Обращается к базовому `IDispatch` указателю.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleDispatchDriver:: m_bAutoRelease](#m_bautorelease)|Указывает, следует ли освободить `IDispatch` во время `ReleaseDispatch` или уничтожения объекта.|
 |[COleDispatchDriver:: m_lpDispatch](#m_lpdispatch)|Указывает указатель на интерфейс, `IDispatch` присоединенный к объекту `COleDispatchDriver` .|
@@ -340,7 +340,7 @@ LPDISPATCH m_lpDispatch;
 
   См. пример для [COleDispatchDriver:: аттачдиспатч](#attachdispatch).
 
-## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a>COleDispatchDriver:: operator =
+## <a name="coledispatchdriveroperator-"></a><a name="operator_eq"></a>COleDispatchDriver::operator=
 
 Копирует исходное значение в `COleDispatchDriver` объект.
 
@@ -353,7 +353,7 @@ const COleDispatchDriver& operator=(const COleDispatchDriver& dispatchSrc);
 *диспатчсрк*<br/>
 Указатель на существующий `COleDispatchDriver` объект.
 
-## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a>COleDispatchDriver:: operator ЛПДИСПАТЧ
+## <a name="coledispatchdriveroperator-lpdispatch"></a><a name="operator_lpdispatch"></a>COleDispatchDriver::operator ЛПДИСПАТЧ
 
 Обращается к базовому `IDispatch` указателю `COleDispatchDriver` объекта.
 

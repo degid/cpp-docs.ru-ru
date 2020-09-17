@@ -33,13 +33,13 @@ class sampler;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор образцов](#ctor)|Перегружен. Конструирует экземпляр образца.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[get_address_mode](#get_address_mode)|Возвращает `address_mode`, связанный с объектом образца.|
 |[get_border_color](#get_border_color)|Возвращает цвет границы, связанный с объектом образца.|
@@ -47,13 +47,13 @@ class sampler;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[оператор=](#operator_eq)|Перегружен. Оператор присвоения.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[address_mode](#address_mode)|Возвращает режим адреса объекта `sampler`.|
 |[border_color](#border_color)|Возвращает цвет границы для объекта `sampler`.|
@@ -65,9 +65,9 @@ class sampler;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="ctor"></a>образец
 

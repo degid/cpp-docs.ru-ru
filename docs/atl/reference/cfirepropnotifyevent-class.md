@@ -40,7 +40,7 @@ class CFirePropNotifyEvent
 |[CFirepropNotifyEvent::FireonChanged](#fireonchanged)|(Статик) Уведомляет раковину контейнера о том, что элемент управления изменился.|
 |[CFirePropNotifyEvent::FireOnRequestEdit](#fireonrequestedit)|(Статик) Уведомляет раковину контейнера о том, что элемент управления вот-вот изменится.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CFirePropNotifyEvent`имеет два метода, которые уведомляют раковину контейнера о том, что свойство управления изменилось или вот-вот изменится.
 
@@ -72,7 +72,7 @@ static HRESULT FireOnChanged(IUnknown* pUnk, DISPID dispID);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту функцию можно вызвать, даже если элемент управления не поддерживает точки соединения.
 
@@ -96,7 +96,7 @@ static HRESULT FireOnRequestEdit(IUnknown* pUnk, DISPID dispID);
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту функцию можно вызвать, даже если элемент управления не поддерживает точки соединения.
 

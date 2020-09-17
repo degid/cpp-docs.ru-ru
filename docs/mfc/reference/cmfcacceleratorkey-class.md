@@ -44,7 +44,7 @@ class CMFCAcceleratorKey : public CObject
 |[CMFCAcceleratorKey::Формат](#format)|Переводит структуру ACCEL на ее визуальное представление.|
 |[CMFCAcceleratorKey:SetAccelerator](#setaccelerator)|Устанавливает ключ ярлыка `CMFCAcceleratorKey` для объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ключи от ускорителя также известны как клавиши ярлыка. Если вы хотите отобразить ярлыки клавиатуры, в которые входит пользователь, то на ключевые клавишные клавиши [CMFCAcceleratorKeyAssignCtrl Class,](../../mfc/reference/cmfcacceleratorkeyassignctrl-class.md) такие как Alt-Shift-S, можно посмотреть на пользовательский текстовый формат, такой как "Alt и Shift s". Каждый `CMFCAcceleratorKey` объект отображает один ключ от короткого ключа к текстовому формату.
 
@@ -80,7 +80,7 @@ CMFCAcceleratorKey(LPACCEL lpAccel);
 *lpAccel*<br/>
 (в) Указатель на клавишу ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если при создании ключа краткивы `CMFCAccleratorKey`вы не предоставляете, используйте [метод CMFCAcceleratorKey::SetAccelerator](#setaccelerator) для ассоциировать ключ кратки с вашим `CMFCAcceleratorKey` объектом.
 
@@ -97,7 +97,7 @@ void Format(CString& str) const;
 *Ул*<br/>
 (ваут) Ссылка на `CString` объект, где метод пишет переведенный ключ ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод получает формат строки связанного ключа ярлыка. Вы можете установить формат строки объекта [CMFCAcceleratorKey](../../mfc/reference/cmfcacceleratorkey-class.md) с помощью либо конструктора, либо метода [CMFCAcceleratorKey::SetAccelerator](#setaccelerator).
 
@@ -114,7 +114,7 @@ void SetAccelerator(LPACCEL lpAccel);
 *lpAccel*<br/>
 (в) Указатель на клавишу ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы установить ключ ярлыка для того, `CMFCAcceleratorKey` если `CMFCAcceleratorKey`вы не предоставили ключ ярлыка при создании .
 

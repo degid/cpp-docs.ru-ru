@@ -54,7 +54,7 @@ _invalid_parameter_handler _get_thread_local_invalid_parameter_handler(void);
 
 Указатель на установленную в данный момент функцию обработчика недопустимого параметра или указатель NULL, если такая функция не задана.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_get_invalid_parameter_handler** получает текущий установленный в данный момент глобальный обработчик недопустимых параметров. Если глобальный обработчик недопустимого параметра не задан, возвращается указатель NULL. Аналогичным образом **_get_thread_local_invalid_parameter_handler** получает текущий локальный обработчик недопустимых параметров потока, для которого он вызывается, или указатель null, если обработчик не был задан. Дополнительные сведения об установке глобального и локального для потока обработчика недопустимого параметра см. в разделе [_set_invalid_parameter_handler, _set_thread_local_invalid_parameter_handler](set-invalid-parameter-handler-set-thread-local-invalid-parameter-handler.md).
 

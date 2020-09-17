@@ -58,7 +58,7 @@ class CCriticalSection : public CSyncObject
 |----------|-----------------|
 |[CCriticalSection::m_sect](#m_sect)|Объект CRITICAL_SECTION.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Критические разделы полезны, когда только один поток в то время может быть разрешено изменять данные или другой контролируемый ресурс. Например, добавление узлов в связанный список — это процесс, который должен быть разрешен только одним потоком за раз. С помощью `CCriticalSection` объекта для управления связанным списком доступ к списку может получить только один поток.
 
@@ -97,7 +97,7 @@ class CCriticalSection : public CSyncObject
 CCriticalSection();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить доступ `CCriticalSection` к объекту или освободить объект, создайте объект [CSingleLock](../../mfc/reference/csinglelock-class.md) и позвоните в его функции [lock](../../mfc/reference/csinglelock-class.md#lock) and [Unlock.](../../mfc/reference/csinglelock-class.md#unlock) Если `CCriticalSection` объект используется автономно, позвоните в функцию члена [Unlock,](#unlock) чтобы освободить его.
 
@@ -125,7 +125,7 @@ BOOL Lock(DWORD dwTimeout);
 
 Nonzero, если функция была успешной; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Lock`— это блокирующий вызов, который не вернется до тех пор, пока не будет сигнализирован критический объект раздела (становится доступным).
 
@@ -155,7 +155,7 @@ CRITICAL_SECTION m_sect;
 operator CRITICAL_SECTION*();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов ими функции для получения указателя на внутренний объект CRITICAL_SECTION.
 
@@ -171,7 +171,7 @@ BOOL Unlock();
 
 Nonzero, `CCriticalSection` если объект принадлежал потоку и выпуск был успешным; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CCriticalSection` используется автономный, `Unlock` необходимо вызываться сразу же после завершения использования ресурса, контролируемого критическим разделом. Если используется объект [CSingleLock,](../../mfc/reference/csinglelock-class.md) `CCriticalSection::Unlock` он будет вызываться функцией члена объекта блокировки. `Unlock`
 

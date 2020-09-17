@@ -120,7 +120,7 @@ class ATL_NO_VTABLE CStockPropImpl :
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[get_Appearance](#get_appearance)|Вызовите этот метод, чтобы получить стиль заливки, используемый элементом управления, например Flat или 3D.|
 |[get_AutoSize](#get_autosize)|Вызовите этот метод, чтобы получить состояние флага, указывающего, может ли элемент управления иметь другой размер.|
@@ -178,7 +178,7 @@ class ATL_NO_VTABLE CStockPropImpl :
 |[putref_MouseIcon](#putref_mouseicon)|Вызовите этот метод, чтобы задать свойства рисунка (значок, точечный рисунок или метафайл), отображаемые при наведении указателя мыши на элемент управления со счетчиком ссылок.|
 |[putref_Picture](#putref_picture)|Вызовите этот метод, чтобы задать отображение свойств рисунка (значка, точечного рисунка или метафайла) со счетчиком ссылок.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CStockPropImpl` предоставляет методы **размещения** и **получения** для каждого стандартного свойства. Эти методы предоставляют код, необходимый для задания или получения элемента данных, связанного с каждым свойством, а также для уведомления и синхронизации с контейнером при изменении любого свойства.
 
@@ -206,7 +206,7 @@ Visual Studio обеспечивает поддержку стандартных
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлктл. h
+**Заголовок:** атлктл.h
 
 ## <a name="cstockpropimplget_appearance"></a><a name="get_appearance"></a> Кстоккпропимпл:: get_Appearance
 
@@ -956,7 +956,7 @@ HRESULT STDMETHODCALLTYPE put_HWND(LONG_PTR /* hWnd */);
 
 Возвращает E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер окна является значением только для чтения.
 
@@ -1096,7 +1096,7 @@ HRESULT STDMETHODCALLTYPE put_Window(LONG_PTR hWnd);
 
 Возвращает E_FAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер окна является значением только для чтения.
 
@@ -1117,7 +1117,7 @@ HRESULT STDMETHODCALLTYPE putref_Font(IFontDisp* pFont);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 То же, что и [кстоккпропимпл::p ut_Font](#put_font), но со счетчиком ссылок.
 
@@ -1138,7 +1138,7 @@ HRESULT STDMETHODCALLTYPE putref_MouseIcon(IPictureDisp* pPicture);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 То же, что и [кстоккпропимпл::p ut_MouseIcon](#put_mouseicon), но со счетчиком ссылок.
 
@@ -1159,7 +1159,7 @@ HRESULT STDMETHODCALLTYPE putref_Picture(IPictureDisp* pPicture);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 То же, что и [кстоккпропимпл::p ut_Picture](#put_picture), но со счетчиком ссылок.
 

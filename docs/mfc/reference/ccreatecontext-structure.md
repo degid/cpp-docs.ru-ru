@@ -23,7 +23,7 @@ ms.locfileid: "81369381"
 struct CCreateContext
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CCreateContext`является структурой и не имеет базового класса.
 

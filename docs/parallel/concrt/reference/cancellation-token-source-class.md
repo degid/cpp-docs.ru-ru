@@ -32,14 +32,14 @@ class cancellation_token_source;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[cancellation_token_source](#ctor)|Перегружен. Конструирует новый объект `cancellation_token_source`. Источник можно использовать, чтобы сигнализировать об отмене некоторой отменяемой операции.|
 |[Деструктор ~ cancellation_token_source](#dtor)||
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[cancel](#cancel)|Отменяет токен. Любой элемент `task_group`, `structured_task_group` или `task`, который использует этот токен, будет отменен при этом вызове и создаст исключение в следующей точке прерывания.|
 |[create_linked_source](#create_linked_source)|Перегружен. Создает `cancellation_token_source`, который отменяется при отмене предоставленного токена.|
@@ -47,7 +47,7 @@ class cancellation_token_source;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[operator!=](#operator_neq)||
 |[оператор=](#operator_eq)||
@@ -59,7 +59,7 @@ class cancellation_token_source;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** pplcancellation_token. h
+**Заголовок:** pplcancellation_token.h
 
 **Пространство имен:** concurrency
 
@@ -136,7 +136,7 @@ cancellation_token get_token() const;
 
 Токен отмены, связанный с этим источником.
 
-## <a name="operator_neq"></a>operator! =
+## <a name="operator_neq"></a>operator!=
 
 ```cpp
 bool operator!= (const cancellation_token_source& _Src) const;

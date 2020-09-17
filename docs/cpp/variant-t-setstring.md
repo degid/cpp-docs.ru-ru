@@ -30,7 +30,7 @@ void SetString(const char* pSrc);
 *Psrc*<br/>
 Указатель на строку знаков.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Преобразует символьную строку ANSI в строку `BSTR` Юникода и присваивает ее данному объекту `_variant_t`.
 

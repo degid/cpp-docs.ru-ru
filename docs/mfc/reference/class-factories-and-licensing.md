@@ -42,7 +42,7 @@ DECLARE_OLECREATE_EX(class_name)
 *class_name*<br/>
 Имя класса элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос в файле заголовка класса Control для элемента управления, который не поддерживает лицензирование.
 
@@ -52,7 +52,7 @@ DECLARE_OLECREATE_EX(class_name)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="implement_olecreate_ex"></a><a name="implement_olecreate_ex"></a> IMPLEMENT_OLECREATE_EX
 
@@ -86,13 +86,13 @@ IMPLEMENT_OLECREATE_EX(
 *l, W1, W2, B1, B2, B3, B4, B5, B6, B7, B8*<br/>
 Компоненты CLSID класса. Дополнительные сведения об этих параметрах см. в примечаниях для [IMPLEMENT_OLECREATE](run-time-object-model-services.md#implement_olecreate).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос должен присутствовать в файле реализации для любого класса элементов управления, который использует макрос DECLARE_OLECREATE_EX или макросы BEGIN_OLEFACTORY и END_OLEFACTORY. Внешнее имя — это идентификатор элемента управления OLE, который предоставляется другим приложениям. Контейнеры используют это имя для запроса объекта этого класса элемента управления.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="begin_olefactory"></a><a name="begin_olefactory"></a> BEGIN_OLEFACTORY
 
@@ -107,13 +107,13 @@ BEGIN_OLEFACTORY(class_name)
 *class_name*<br/>
 Указывает имя класса элемента управления, для которого задана фабрика класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объявления функций лицензирования фабрики класса должны начинаться сразу же после BEGIN_OLEFACTORY.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="end_olefactory"></a><a name="end_olefactory"></a> END_OLEFACTORY
 
@@ -130,7 +130,7 @@ END_OLEFACTORY(class_name)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="afxverifylicfile"></a><a name="afxverifylicfile"></a> афксверифиликфиле
 
@@ -162,7 +162,7 @@ BOOL AFXAPI AfxVerifyLicFile(
 
 Ненулевое значение, если файл лицензии существует и начинается с последовательности символов в *псзликфилеконтентс*; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *Кч* имеет значение-1, эта функция использует:
 
@@ -170,7 +170,7 @@ BOOL AFXAPI AfxVerifyLicFile(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="see-also"></a>См. также раздел
 

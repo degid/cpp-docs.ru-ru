@@ -80,7 +80,7 @@ class CStatusBar : public CControlBar
 |[CStatusBar::SetPaneStyle](#setpanestyle)|Устанавливает стиль индикатора для данного индекса.|
 |[CStatusBar::SetPaneText](#setpanetext)|Устанавливает текст индикатора для данного индекса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Выходные панели обычно используются в качестве строк сообщений и индикаторов состояния. Примеры включают строки справки меню, которые кратко объясняют выбранную команду меню и индикаторы, отображающие состояние SCROLL LOCK, NUM LOCK и других ключей.
 
@@ -143,7 +143,7 @@ int CommandToIndex(UINT nIDFind) const;
 
 Индекс индикатора в случае успеха; -1, если не удалось.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс первого индикатора составляет 0.
 
@@ -179,7 +179,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Также устанавливает начальный шрифт и устанавливает высоту панели статуса до значения по умолчанию.
 
@@ -219,7 +219,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция также устанавливает исходный шрифт и устанавливает высоту панели статуса до значения по умолчанию.
 
@@ -246,7 +246,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *lpDrawItemStruct*<br/>
 Указатель на структуру [DRAWITEMSTRUCT,](/windows/win32/api/winuser/ns-winuser-drawitemstruct) содержащую информацию о типе требуемого чертежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Член `itemAction` `DRAWITEMSTRUCT` структуры определяет действие чертежа, которое должно быть выполнено. Переопределить эту функцию элемента для `CStatusBar` реализации чертежа для объекта владельца-рисования. Приложение должно восстановить все объекты интерфейса графического устройства (GDI), выбранные для контекста отображения, поставляемые в *lpDrawItemStruct* до прекращения этой функции участника.
 
@@ -285,7 +285,7 @@ void GetItemRect(
 *lpRect*<br/>
 Указывает на структуру [RECT](/windows/win32/api/windef/ns-windef-rect) или объект [CRect,](../../atl-mfc-shared/reference/crect-class.md) который получит координаты индикатора, указанного *nIndex.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Координаты находятся в пикселях относительно верхнего левого угла панели статуса.
 
@@ -332,7 +332,7 @@ UINT GetPaneStyle(int nIndex) const;
 
 Стиль панели статус-бара, указанный *nIndex*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Стиль панели определяет, как отображается панель.
 
@@ -358,7 +358,7 @@ CString GetPaneText(int nIndex) const;  void GetPaneText(int nIndex, CString& rS
 
 Объект, `CString` содержащий текст панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вторая форма этой функции `CString` члена заполняет объект текстом строки.
 
@@ -374,7 +374,7 @@ CStatusBarCtrl& GetStatusBarCtrl() const;
 
 Содержит ссылку на объект [CStatusBarCtrl.](../../mfc/reference/cstatusbarctrl-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте, `GetStatusBarCtrl` чтобы воспользоваться функциональностью общего элемента управления статус-баром Windows и воспользоваться [поддержкой, которая предоставляет CStatusBarCtrl](../../mfc/reference/cstatusbarctrl-class.md) для настройки статус-бара. Например, используя общий элемент управления, можно указать стиль, включающий сцепление размеров в панели статуса, или можно указать стиль, чтобы в верхней части клиентской области родительского окна отображалась панель статуса.
 
@@ -428,7 +428,7 @@ void SetPaneInfo(
 *cxВимизм*<br/>
 Новая ширина панели индикатора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поддерживаются следующие стили индикаторов:
 
@@ -460,7 +460,7 @@ void SetPaneStyle(
 *nStyle*<br/>
 Стиль панели, стиль которого должен быть установлен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Стиль панели определяет, как отображается панель.
 
@@ -492,7 +492,7 @@ BOOL SetPaneText(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После вызова `SetPaneText`необходимо добавить обработчик обновления uI для отображения нового текста в панели статуса.
 

@@ -42,7 +42,7 @@ ms.locfileid: "80170311"
 #define compl ~
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор ~.
 
@@ -74,4 +74,4 @@ int main( )
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

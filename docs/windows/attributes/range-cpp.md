@@ -31,7 +31,7 @@ ms.locfileid: "88839482"
 *высоком*<br/>
 Большое значение диапазона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **Range** в C++ имеет те же функциональные возможности, что и атрибут [Range](/windows/win32/Midl/range) MIDL.
 

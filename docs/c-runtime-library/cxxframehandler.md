@@ -60,7 +60,7 @@ EXCEPTION_DISPOSITION __CxxFrameHandler(
 
 Одно из значений *выражения фильтра*, используемое в [операторе try-except](../cpp/try-except-statement.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
 

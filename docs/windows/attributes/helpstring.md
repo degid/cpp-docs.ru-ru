@@ -28,7 +28,7 @@ ms.locfileid: "88831038"
 *строка*<br/>
 Текст строки справки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **helpString** C++ имеет те же функциональные возможности, что и атрибут [helpString](/windows/win32/Midl/helpstring) MIDL.
 

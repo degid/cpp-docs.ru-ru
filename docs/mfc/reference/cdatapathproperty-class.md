@@ -56,7 +56,7 @@ class CDataPathProperty : public CAsyncMonikerFile
 |[CDataPathProperty::SetControl](#setcontrol)|Устанавливает асинхронный элемент управления ActiveX (OLE), связанный с свойством.|
 |[CDataPathProperty::SetPath](#setpath)|Устанавливает имя пути свойства.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Асинхронные свойства загружаются после синхронного начала.
 
@@ -103,7 +103,7 @@ CDataPathProperty(LPCTSTR lpszPath, COleControl* pControl = NULL);
 *lpszPath*<br/>
 Путь, который может быть абсолютным или относительным, используется для создания асинхронного прозвища, которое ссылается на фактическое абсолютное местоположение свойства. `CDataPathProperty`использует URL-адреса, а не имена файлов. Если требуется `CDataPathProperty` объект для файла, `file://` подготовьтесь к пути.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, `COleControl` на который указывает *pControl,* используется `Open` и извлекается полученными классами. Если *pControl* null, то `Open` элемент управления, `SetControl`используемый с, должен быть установлен с . Если *lpszPath* является NULL, вы можете `Open` пройти по `SetPath`пути через или установить его с .
 
@@ -167,7 +167,7 @@ virtual BOOL Open(CFileException* pError = NULL);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция пытается получить `IBindHost` интерфейс от управления.
 
@@ -185,7 +185,7 @@ virtual BOOL Open(CFileException* pError = NULL);
 virtual void ResetData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Открытие должно быть перезапущено. Выведенные классы могут переопределить эту функцию для различных по умолчанию.
 

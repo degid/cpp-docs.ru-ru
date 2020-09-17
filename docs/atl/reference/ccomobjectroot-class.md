@@ -24,7 +24,7 @@ ms.locfileid: "87224244"
 typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComObjectRoot`— Это **`typedef`** [CComObjectRootEx](../../atl/reference/ccomobjectrootex-class.md) преобразованный в потоковой модели сервера по умолчанию. Таким же [ккомобжектсреадмодел](atl-typedefs.md#ccomobjectthreadmodel) будет ссылаться либо на [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) , либо на [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md).
 
@@ -32,7 +32,7 @@ typedef CComObjectRootEx<CComObjectThreadModel> CComObjectRoot;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="see-also"></a>См. также статью
 

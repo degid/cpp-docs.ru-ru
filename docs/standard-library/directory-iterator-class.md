@@ -68,12 +68,12 @@ class directory_iterator;
 
 |Оператор|Описание|
 |-|-|
-|[operator! =](#op_neq)|Возвращает `!(*this == right)`.|
-|[Оператор =](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
-|[Оператор = =](#op_eq)|Возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.|
-|[станции](#op_star)|Возвращает `myentry`.|
-|[Оператор->](#op_cast)|Возвращает `&**this`.|
-|[operator + +](#op_increment)|Вызывает `increment()` , затем возвращает **`*this`** или создает копию объекта, вызывает `increment()` , а затем возвращает копию.|
+|[operator!=](#op_neq)|Возвращает `!(*this == right)`.|
+|[operator=](#op_as)|Операторы-члены присваивания по умолчанию работают корректно.|
+|[operator==](#op_eq)|Возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.|
+|[operator*](#op_star)|Возвращает `myentry`.|
+|[operator->](#op_cast)|Возвращает `&**this`.|
+|[operator++](#op_increment)|Вызывает `increment()` , затем возвращает **`*this`** или создает копию объекта, вызывает `increment()` , а затем возвращает копию.|
 
 ## <a name="requirements"></a>Требования
 
@@ -115,7 +115,7 @@ directory_iterator(directory_iterator&&) noexcept = default;
 directory_iterator& increment(error_code& ec) noexcept;
 ```
 
-## <a name="directory_iteratoroperator"></a><a name="op_neq"></a>directory_iterator:: operator! =
+## <a name="directory_iteratoroperator"></a><a name="op_neq"></a>directory_iterator::operator!=
 
 Оператор-член возвращает `!(*this == right)`.
 
@@ -125,10 +125,10 @@ bool operator!=(const directory_iterator& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_iterator](../standard-library/directory-iterator-class.md) сравнивается с `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_as"></a>directory_iterator:: operator =
+## <a name="directory_iteratoroperator"></a><a name="op_as"></a>directory_iterator::operator=
 
 Операторы-члены присваивания по умолчанию работают корректно.
 
@@ -139,10 +139,10 @@ directory_iterator& operator=(directory_iterator&&) noexcept = default;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_iterator](../standard-library/directory-iterator-class.md) , копируемый в `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_eq"></a>directory_iterator:: operator = =
+## <a name="directory_iteratoroperator"></a><a name="op_eq"></a>directory_iterator::operator==
 
 Оператор-член возвращает, **`true`** только если оба **`*this`** и *право* являются итераторами конца последовательности или оба являются итераторами конца последовательности.
 
@@ -152,10 +152,10 @@ bool operator==(const directory_iterator& right) const;
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Directory_iterator](../standard-library/directory-iterator-class.md) сравнивается с `directory_iterator` .
 
-## <a name="directory_iteratoroperator"></a><a name="op_star"></a>directory_iterator:: operator *
+## <a name="directory_iteratoroperator"></a><a name="op_star"></a>directory_iterator::operator*
 
 Оператор-член возвращает `myentry`.
 
@@ -163,7 +163,7 @@ bool operator==(const directory_iterator& right) const;
 const directory_entry& operator*() const;
 ```
 
-## <a name="directory_iteratoroperator-"></a><a name="op_cast"></a>directory_iterator:: operator — >
+## <a name="directory_iteratoroperator-"></a><a name="op_cast"></a>directory_iterator::operator->
 
 Функция-член возвращает значение `&**this`.
 
@@ -171,7 +171,7 @@ const directory_entry& operator*() const;
 const directory_entry * operator->() const;
 ```
 
-## <a name="directory_iteratoroperator"></a><a name="op_increment"></a>directory_iterator:: operator + +
+## <a name="directory_iteratoroperator"></a><a name="op_increment"></a>directory_iterator::operator++
 
 Первая функция – член вызывает `increment()` , а затем возвращает **`*this`** . Вторая функция-член создает копию объекта, вызывает `increment()` , а затем возвращает копию.
 

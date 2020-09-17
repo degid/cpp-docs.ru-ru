@@ -59,7 +59,7 @@ class CTabbedView : public CView
 |[CTabView::IsScrollBar](#isscrollbar)|Вызывается фректовом при создании представления вкладки, чтобы определить, имеет ли представление вкладки общую горизонтальную панель прокрутки.|
 |[CTabView::OnActivateView](#onactivateview)|Вызывается фреймворком при том, что представление вкладки становится активным или неактивным.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс упрощает поставить представление вкладок в приложение документа/просмотра. `CTabView`является `CView`классом, полученным, `CMFCTabCtrl` который содержит встроенный объект. `CTabView`обрабатывает все сообщения, необходимые для поддержки `CMFCTabCtrl` объекта. Просто выведивайте класс `CTabView` и `CView`подключите его к `AddView` приложению, а затем добавьте классы, полученные с помощью метода. Управление вкладками будет отображать эти представления в виде вкладок.
 
@@ -107,7 +107,7 @@ int AddView(
 
 Индекс представления, если этот метод удается. В противном случае –1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы добавить представление в элемент управления вкладками, встроенное в кадр.
 
@@ -128,7 +128,7 @@ int FindTab(HWND hWndView) const;
 
 Индекс представления, если он найден; в противном случае, -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов ими функции для получения индекса представления с указанной ручкой.
 
@@ -144,7 +144,7 @@ CView* GetActiveView() const;
 
 Действительный указатель на активное представление, или NULL, если нет активного представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="ctabviewgettabcontrol"></a><a name="gettabcontrol"></a>CTabView::GetTabControl
 
@@ -170,7 +170,7 @@ virtual BOOL IsScrollBar() const;
 
 TRUE, если представление вкладок должно быть создано вместе с общей панелью прокрутки. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При создании объекта *CTabView* система называет этот метод.
 
@@ -189,7 +189,7 @@ virtual void OnActivateView(CView* view);
 *Вид*<br/>
 (в) Указатель на вид.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию не выполняет никаких действий. Переопределить этот метод `CTabView`в классе, полученном для обработки этого уведомления.
 
@@ -210,7 +210,7 @@ BOOL RemoveView(int iTabNum);
 
 Индекс удаленного представления, если этот метод удается. В противном случае -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="ctabviewsetactiveview"></a><a name="setactiveview"></a>CTabView::SetActiveView
 
@@ -229,7 +229,7 @@ BOOL SetActiveView(int iTabNum);
 
 ПРАВДА, если указанное представление было сделано активным, FALSE, если индекс представления является недействительным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см. CMFCTabCtrl::SetActiveTab](../../mfc/reference/cmfctabctrl-class.md#setactivetab).
 

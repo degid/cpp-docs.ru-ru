@@ -53,7 +53,7 @@ int main()
 7
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [`auto`](../cpp/auto-cpp.md) , [ `function` класс](../standard-library/function-class.md)и [вызов функции](../cpp/function-call-cpp.md).
 
@@ -173,7 +173,7 @@ int main()
 The first even number in the list is 42.
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о `find_if` функции см. в разделе [`find_if`](../standard-library/algorithm-functions.md#find_if) . Дополнительные сведения о функциях стандартной библиотеки C++, которые выполняют стандартные алгоритмы, см. в разделе [`<algorithm>`](../standard-library/algorithm.md) .
 
@@ -211,7 +211,7 @@ int main()
 13
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В этом примере значение параметра `[](int y) { return y * 2; }` является вложенным лямбда-выражением.
 
@@ -353,7 +353,7 @@ int main()
 12
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция `ApplyScale` использует лямбда-выражение для выведения произведения масштаба на каждый элемент объекта `vector`. Лямбда-выражение неявно захватывает, **`this`** чтобы он мог получить доступ к `_scale` элементу.
 
@@ -417,7 +417,7 @@ After negate_all():
 -56
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о шаблонах C++ см. в разделе [шаблоны](../cpp/templates-cpp.md).
 
@@ -473,7 +473,7 @@ int main()
 Caught 'invalid vector<T> subscript'.
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об обработке исключений см. в разделе [обработка исключений](../cpp/exception-handling-in-visual-cpp.md).
 
@@ -510,7 +510,7 @@ int main()
 Hello!
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Можно также использовать лямбда-выражения с библиотекой STL/CLR. Дополнительные сведения см. в разделе [Справочник по библиотеке STL/CLR](../dotnet/stl-clr-library-reference.md).
 

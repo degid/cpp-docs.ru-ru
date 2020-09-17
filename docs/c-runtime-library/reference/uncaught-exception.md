@@ -45,7 +45,7 @@ bool __uncaught_exception(
 
 **`true`** с момента возникновения исключения в **`try`** блоке до **`catch`** инициализации соответствующего блока; в противном случае — значение **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
 

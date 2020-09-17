@@ -371,7 +371,7 @@ HRESULT Remove(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной `EventRegistrationToken` информации о структуре, см. **Windows::Основа::EventRegistrationToken Структура** тема в **Windows Runtime** справочной документации.
 
@@ -383,7 +383,7 @@ HRESULT Remove(
 ComPtr<Details::EventTargetArray> targets_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При возникновении события, представленного `EventSource` текущим объектом, вызовуются обработчики событий.
 

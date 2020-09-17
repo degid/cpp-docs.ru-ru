@@ -38,7 +38,7 @@ class ATL_NO_VTABLE CMessageMap
 |----------|-----------------|
 |[CMessageMap::ProcessWindowMessage](#processwindowmessage)|Доступ к карте сообщений `CMessageMap`в классе -выведенных.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CMessageMap`— это абстрактный базовый класс, позволяющий доступ к картам сообщений объекта к другому объекту. Для того, чтобы объект разоблачил свои карты `CMessageMap`сообщений, его класс должен вытекать из .
 
@@ -92,7 +92,7 @@ virtual BOOL ProcessWindowMessage(
 
 TRUE, если сообщение полностью обработано; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается процедурой окна объекта [CContainedWindow](../../atl/reference/ccontainedwindowt-class.md) или объекта, который динамически приковывается к карте сообщений.
 

@@ -14,10 +14,10 @@ ms.locfileid: "88846255"
 ---
 # <a name="ltscoped_allocatorgt-operators"></a>Операторы &lt;scoped_allocator&gt;
 
-[operator! =](#op_neq)\
-[Оператор = =](#op_eq_eq)
+[operator!=](#op_neq)\
+[operator==](#op_eq_eq)
 
-## <a name="operator"></a><a name="op_neq"></a> operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Сравнивает два объекта `scoped_allocator_adaptor`, чтобы определить их неравенство.
 
@@ -30,17 +30,17 @@ bool operator!=(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Левый объект `scoped_allocator_adaptor`.
 
-*Правильно*\
+*right*\
 Правой объект `scoped_allocator_adaptor`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 `!(left == right)`
 
-## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Сравнивает два объекта `scoped_allocator_adaptor`, чтобы определить, равны ли они.
 
@@ -53,10 +53,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Левый объект `scoped_allocator_adaptor`.
 
-*Правильно*\
+*right*\
 Правой объект `scoped_allocator_adaptor`.
 
 ### <a name="return-value"></a>Возвращаемое значение

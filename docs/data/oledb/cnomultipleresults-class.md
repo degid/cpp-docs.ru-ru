@@ -25,7 +25,7 @@ ms.locfileid: "80211722"
 class CNoMultipleResults
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если требуется, чтобы команда обрабатывала несколько результирующих наборов, используйте вместо него [CMultipleResults](../../data/oledb/cmultipleresults-class.md) .
 

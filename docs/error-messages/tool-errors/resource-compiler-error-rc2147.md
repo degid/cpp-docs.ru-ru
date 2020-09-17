@@ -23,4 +23,4 @@ ms.locfileid: "80191149"
 
 **LANGUAGE** *Primary_language_ID*языка,*secondary_language_ID*
 
-Допустимые идентификаторы языков определяются как **SUBLANG_** константы в файле WINNT. h.
+Допустимые идентификаторы языков определяются как **SUBLANG_** константы в файле WINNT.h.

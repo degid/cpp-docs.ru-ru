@@ -103,7 +103,7 @@ class CMFCOutlookBarPane : public CMFCToolBar
 |[CMFCOutlookBarPane:EnableContextMenuItems](#enablecontextmenuitems)|Определяет, какие элементы меню ярлыка отображаются в режиме настройки.|
 |[CMFCOutlookBarPane::RemoveAllButtons](#removeallbuttons)|Удаляет все кнопки из панели Outlook. (Перекрывает [CMFCToolBar::RemoveAllButtons](../../mfc/reference/cmfctoolbar-class.md#removeallbuttons).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения информации о том, [CMFCOutlookBar Class](../../mfc/reference/cmfcoutlookbar-class.md)как реализовать панель Outlook, см.
 
@@ -208,7 +208,7 @@ BOOL AddButton(
 
 TRUE, если кнопка была добавлена успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы вставить новую кнопку на страницу бара Outlook. Изображение кнопки может быть загружено либо с ресурсов приложения, либо из дискового файла.
 
@@ -226,7 +226,7 @@ virtual BOOL CanBeAttached() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcoutlookbarpaneclearall"></a><a name="clearall"></a>CMFCOutlookBarPane::ClearAll
 
@@ -236,7 +236,7 @@ virtual BOOL CanBeAttached() const;
 void ClearAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод непосредственно вызывает [CMFCToolBarImages::Clear](../../mfc/reference/cmfctoolbarimages-class.md#clear), который называется на изображениях, которые используются панелью Outlook.
 
@@ -270,7 +270,7 @@ virtual BOOL Create(
 
 ПРАВДА, если метод был успешным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы построить `CMFCOutlookBarPane` объект, сначала позвоните в `Create`конструктор, а затем вызов , который создает `CMFCOutlookBarPane` панель Outlook панели управления и прикрепляет его к объекту.
 
@@ -298,7 +298,7 @@ virtual BOOL EnableContextMenuItems(
 
 Возвращает TRUE, если меню ярлыка должно быть отображено; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, чтобы изменить стандартное меню ярлыка, которое фреймотображается в режиме настройки.
 
@@ -332,7 +332,7 @@ DECLARE_MESSAGE_MAPCOLORREF GetRegularColor() const;
 
 Текущий цвет текста как значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [CMFCOutlookBarPane::SetTextColor](#settextcolor) для установки текущего (обычного и выбранного) цвета текста панели Outlook. Вы можете получить цвет текста по умолчанию, позвонив в функцию [GetSysColor](/windows/win32/api/winuser/nf-winuser-getsyscolor) с индексом COLOR_WINDOW.
 
@@ -348,7 +348,7 @@ BOOL IsBackgroundTexture() const;
 
 TRUE, если есть фоновое изображение для отображения; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете добавить фоновое изображение, позвонив в функцию [CMFCOutlookBarPane::SetBackImage.](#setbackimage)
 
@@ -404,7 +404,7 @@ void SetBackColor(COLORREF color);
 *Цвет*<br/>
 [in] Задает новый цвет фона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы установить текущий цвет фона для бара Outlook. Цвет фона используется только в том случае, если нет фонового изображения.
 
@@ -421,7 +421,7 @@ void SetBackImage(UINT uiImageID);
 *uiImageID*<br/>
 (в) Упогоняет идентификатор ресурса изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы установить фоновое изображение панели Outlook. Список фоновых изображений управляется встроенным объектом [класса CMFCToolBarImages.](../../mfc/reference/cmfctoolbarimages-class.md)
 
@@ -433,7 +433,7 @@ void SetBackImage(UINT uiImageID);
 void SetDefaultState();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод восстанавливает кнопки панели Outlook в исходном наборе. Этот метод `CMFCOutlookBarPane::RestoreOriginalstate`похож на, за исключением того, что он не вызывает перерисовку панели Outlook.
 
@@ -476,7 +476,7 @@ void SetTransparentColor(COLORREF color);
 *Цвет*<br/>
 Определяет новый прозрачный цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Прозрачный цвет необходим для отображения прозрачных изображений. Любое появление этого цвета на изображении окрашено фоновым цветом.  Нет никакого смешения фоновых и передних изображений.
 

@@ -61,7 +61,7 @@ class promise;
 
 |Имя|Описание|
 |----------|-----------------|
-|[обещание::оператор](#op_eq)|Назначение общего состояния этого объекта promise.|
+|[обещание::operator](#op_eq)|Назначение общего состояния этого объекта promise.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -81,13 +81,13 @@ class promise;
 future<Ty> get_future();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект promise пустой, этот метод выдает [future_error](../standard-library/future-error-class.md) с [error_code](../standard-library/error-code-class.md)`no_state`.
 
 Если этот метод уже вызывался для объекта promise с тем же самым связанным асинхронным состоянием, метод выдает `future_error` с `error_code``future_already_retrieved`.
 
-## <a name="promiseoperator"></a><a name="op_eq"></a>обещание::оператор
+## <a name="promiseoperator"></a><a name="op_eq"></a>обещание::operator
 
 Передает *связанное асинхронное состояние* от указанного объекта `promise`.
 
@@ -104,7 +104,7 @@ promise& operator=(promise&& Other) noexcept;
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор переводит связанное асинхронное состояние из *другого.* После передачи, *Другие* *пуст*.
 
@@ -127,7 +127,7 @@ promise(promise&& Other) noexcept;
 *Других*\
 Объект `promise` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор создает *пустой* `promise` объект.
 
@@ -148,7 +148,7 @@ void set_exception(exception_ptr Exc);
 *Exc*\
 [Exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), который сохраняется этим методом как результат исключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект `promise` не имеет связанного асинхронного состояния, этот метод выдает [future_error](../standard-library/future-error-class.md) с кодом ошибки `no_state`.
 
@@ -169,7 +169,7 @@ void set_exception_at_thread_exit(exception_ptr Exc);
 *Exc*\
 [Exception_ptr](../standard-library/exception-typedefs.md#exception_ptr), который сохраняется этим методом как результат исключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект promise не имеет *связанного асинхронного состояния*, этот метод выдает [future_error](../standard-library/future-error-class.md) с кодом ошибки `no_state`.
 
@@ -193,7 +193,7 @@ void promise<void>::set_value();
 *Валь*\
 Значение, которое будет сохранено в качестве результата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект `promise` не имеет связанного асинхронного состояния, этот метод выдает [future_error](../standard-library/future-error-class.md) с кодом ошибки `no_state`.
 
@@ -225,7 +225,7 @@ void promise<void>::set_value_at_thread_exit();
 *Валь*\
 Значение, которое будет сохранено в качестве результата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект promise не имеет *связанного асинхронного состояния*, этот метод выдает [future_error](../standard-library/future-error-class.md) с кодом ошибки `no_state`.
 

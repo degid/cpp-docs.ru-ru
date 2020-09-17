@@ -80,7 +80,7 @@ friend class ComPtr;
 *U*<br/>
 Класс, к которому текущий объект `ComPtr` является дружественным. (Шаблон, который использует этот параметр, защищен.)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `ComPtr<>`объявляет тип, представляющий указатель базового интерфейса. Используйте `ComPtr<>` для объявления переменной, а затем используйте оператор доступа к членам стрелки ( `->` ) для доступа к функции-члену интерфейса.
 
@@ -128,12 +128,12 @@ name                                                      | Описание
 
 Имя                                                                                           | Описание
 ---------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------
-[ComPtr:: operator&](#operator-ampersand)                                                       | Извлекает адрес текущего объекта `ComPtr` .
-[ComPtr:: operator — >](#operator-arrow)                                                          | Извлекает указатель на тип, заданный текущим параметром шаблона.
-[ComPtr:: operator =](#operator-assign)                                                          | Присваивает значение текущему `ComPtr` .
-[ComPtr:: operator = =](#operator-equality)                                                       | Определение равенства двух объектов `ComPtr`.
-[ComPtr:: operator! =](#operator-inequality)                                                     | Указывает `ComPtr` , являются ли два объекта неравными.
-[ComPtr:: operator Microsoft:: WRL::D состояния:: BoolType](#operator-microsoft-wrl-details-booltype) | Указывает, `ComPtr` управляет ли объект временем существования объекта в интерфейсе.
+[ComPtr::operator&](#operator-ampersand)                                                       | Извлекает адрес текущего объекта `ComPtr` .
+[ComPtr::operator- >](#operator-arrow)                                                          | Извлекает указатель на тип, заданный текущим параметром шаблона.
+[ComPtr::operator=](#operator-assign)                                                          | Присваивает значение текущему `ComPtr` .
+[ComPtr::operator==](#operator-equality)                                                       | Определение равенства двух объектов `ComPtr`.
+[ComPtr::operator!=](#operator-inequality)                                                     | Указывает `ComPtr` , являются ли два объекта неравными.
+[ComPtr::operator Microsoft:: WRL::D состояния:: BoolType](#operator-microsoft-wrl-details-booltype) | Указывает, `ComPtr` управляет ли объект временем существования объекта в интерфейсе.
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
@@ -183,7 +183,7 @@ HRESULT As(
 *ш*<br/>
 `ComPtr`Объект, представляющий интерфейс, указанный параметром *U*. Параметр *p* не должен ссылаться на текущий `ComPtr` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый шаблон — это форма, которую необходимо использовать в коде. Второй шаблон является внутренней вспомогательной специализацией. Он поддерживает функции языка C++, такие как ключевое слово выведения типа [Auto](../../cpp/auto-cpp.md) .
 
@@ -294,7 +294,7 @@ WRL_NOTHROW ComPtr(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор является конструктором по умолчанию, который неявно создает пустой объект. Второй конструктор указывает [__nullptr](../../extensions/nullptr-cpp-component-extensions.md), который явно создает пустой объект.
 
@@ -339,7 +339,7 @@ HRESULT CopyTo(
 
 S_OK в случае успеха; в противном случае возвращается значение HRESULT, указывающее, почему `QueryInterface` не удалось выполнить неявную операцию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция возвращает копию указателя на интерфейс, связанный с этим `ComPtr` . Эта функция всегда возвращает значение S_OK.
 
@@ -392,7 +392,7 @@ T** GetAddressOf();
 void InternalAddRef() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод защищен.
 
@@ -404,11 +404,11 @@ void InternalAddRef() const;
 unsigned long InternalRelease();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод защищен.
 
-## <a name="comptroperatoramp"></a><a name="operator-ampersand"></a>ComPtr:: operator&amp;
+## <a name="comptroperatoramp"></a><a name="operator-ampersand"></a>ComPtr::operator&amp;
 
 Освобождает интерфейс, связанный с этим объектом `ComPtr`, а затем извлекает адрес объекта `ComPtr`.
 
@@ -422,11 +422,11 @@ const Details::ComPtrRef<const WeakRef> operator&() const
 
 Слабая ссылка на текущий объект `ComPtr`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отличается от [ComPtr:: GetAddressOf](#getaddressof) тем, что этот метод освобождает ссылку на указатель интерфейса. Используйте `ComPtr::GetAddressOf` , если требуется адрес указателя интерфейса, но не требуется освобождать этот интерфейс.
 
-## <a name="comptroperator-gt"></a><a name="operator-arrow"></a>ComPtr:: operator —&gt;
+## <a name="comptroperator-gt"></a><a name="operator-arrow"></a>ComPtr::operator-&gt;
 
 Извлекает указатель на тип, заданный текущим параметром шаблона.
 
@@ -438,11 +438,11 @@ WRL_NOTHROW Microsoft::WRL::Details::RemoveIUnknown<InterfaceType>* operator->()
 
 Указатель на тип, заданный текущим именем типа шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция удаляет лишнюю нагрузку, вызванную использованием макроса STDMETHOD. Эта функция создает `IUnknown` типы **`private`** , а не **`virtual`** .
 
-## <a name="comptroperator"></a><a name="operator-assign"></a>ComPtr:: operator =
+## <a name="comptroperator"></a><a name="operator-assign"></a>ComPtr::operator=
 
 Присваивает значение текущему `ComPtr` .
 
@@ -485,7 +485,7 @@ WRL_NOTHROW ComPtr& operator=(
 
 Ссылка на текущий объект `ComPtr` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая версия этого оператора присваивает пустое значение текущему значению `ComPtr` .
 
@@ -501,7 +501,7 @@ WRL_NOTHROW ComPtr& operator=(
 
 Седьмая версия — это оператор Copy, использующий семантику перемещения; Ссылка rvalue на `ComPtr` тип *U* является статической приведением и присваивается текущему `ComPtr` .
 
-## <a name="comptroperator"></a><a name="operator-equality"></a>ComPtr:: operator = =
+## <a name="comptroperator"></a><a name="operator-equality"></a>ComPtr::operator==
 
 Определение равенства двух объектов `ComPtr`.
 
@@ -536,7 +536,7 @@ bool operator==(
 
 Второй и третий операторы дают значение **`true`** , если объект *a* равен **`nullptr`** ; в противном случае — значение **`false`** .
 
-## <a name="comptroperator"></a><a name="operator-inequality"></a>ComPtr:: operator! =
+## <a name="comptroperator"></a><a name="operator-inequality"></a>ComPtr::operator!=
 
 Указывает `ComPtr` , являются ли два объекта неравными.
 
@@ -571,7 +571,7 @@ bool operator!=(
 
 Второй и третий операторы возвращают **`true`** , если объект *a* не равен **`nullptr`** ; в противном случае — **`false`** .
 
-## <a name="comptroperator-microsoftwrldetailsbooltype"></a><a name="operator-microsoft-wrl-details-booltype"></a>ComPtr:: operator Microsoft:: WRL::D состояния:: BoolType
+## <a name="comptroperator-microsoftwrldetailsbooltype"></a><a name="operator-microsoft-wrl-details-booltype"></a>ComPtr::operator Microsoft:: WRL::D состояния:: BoolType
 
 Указывает, `ComPtr` управляет ли объект временем существования объекта в интерфейсе.
 
@@ -591,7 +591,7 @@ WRL_NOTHROW operator Microsoft::WRL::Details::BoolType() const;
 InterfaceType *ptr_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ptr_`— Это внутренний, защищенный элемент данных.
 

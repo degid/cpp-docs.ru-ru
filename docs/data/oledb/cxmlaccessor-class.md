@@ -39,7 +39,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**: Atldbcli. h
+**Заголовок**: Atldbcli.h
 
 ## <a name="members"></a>Элементы
 
@@ -50,7 +50,7 @@ class CXMLAccessor : public CDynamicStringAccessorW
 |[жетксмлколумндата](#getxmlcolumndata)|Извлекает сведения о столбце.|
 |[жетксмлровдата](#getxmlrowdata)|Извлекает все содержимое таблицы по строкам.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Однако `CXMLAccessor` отличается от `CDynamicStringAccessorW` в том, что он преобразует все данные, доступ к которым осуществлялся из хранилища данных, в формате XML (с тегами). Это особенно удобно для вывода на веб-страницы, поддерживающие XML. Имена XML-тегов будут соответствовать именам столбцов хранилища данных как можно точнее.
 
@@ -81,7 +81,7 @@ HRESULT GetXMLColumnData(CSimpleStringW& strOutput) throw();
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ниже показано, как в XML форматируется информация о типе столбца. `type` Указывает тип данных столбца. Обратите внимание, что типы данных основаны OLE DB типах данных, а не к базе данных, к которой осуществляется доступ.
 
@@ -114,7 +114,7 @@ HRESULT GetXMLRowData(CSimpleStringW& strOutput,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ниже показано, как данные строки форматируются в формате XML. `DATA` Ниже представлены данные строки. Используйте методы Move для перехода к нужной строке.
 

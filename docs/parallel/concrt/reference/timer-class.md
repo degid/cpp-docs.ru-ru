@@ -45,14 +45,14 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[активности](#ctor)|Перегружен. Конструирует `timer` блок обмена сообщениями, который будет запускать заданное сообщение после указанного интервала.|
 |[Деструктор ~ Timer](#dtor)|Уничтожает `timer` блок обмена сообщениями.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[pause](#pause)|Останавливает `timer` блок обмена сообщениями. Если это `timer` блок повторяющегося обмена сообщениями, его можно перезапустить при последующем `start()` вызове. Для неповторяющихся таймеров это действие аналогично `stop` вызову.|
 |[start](#start)|Запускает `timer` блок обмена сообщениями. Указанное число миллисекунд после вызова этого параметра, указанное значение будет распространяться в нисходящем направлении как `message` .|
@@ -60,7 +60,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[accept_message](#accept_message)|Принимает сообщение, которое было предложено этим `timer` блоком обмена сообщениями, передавая владение вызывающему объекту.|
 |[consume_message](#consume_message)|Использует сообщение, которое было ранее предложено `timer` и зарезервировано целевым объектом, передавая владение вызывающему объекту.|
@@ -70,7 +70,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 |[reserve_message](#reserve_message)|Резервирует сообщение, которое было ранее предложено этим `timer` блоком обмена сообщениями. (Переопределяет [source_block:: reserve_message](source-block-class.md#reserve_message).)|
 |[resume_propagation](#resume_propagation)|Возобновляет распространение после освобождения резервирования. (Переопределяет [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -86,7 +86,7 @@ class timer : public Concurrency::details::_Timer, public source_block<single_li
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -122,7 +122,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -185,7 +185,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -259,7 +259,7 @@ timer(
 *_ScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `timer` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_Scheduler` или `_ScheduleGroup` .
 

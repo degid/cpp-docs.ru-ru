@@ -39,7 +39,7 @@ class CComHeapPtr : public CHeapPtr<T, CComAllocator>
 |----------|-----------------|
 |[CComHeapPtr::CComHeapPtr](#ccomheapptr)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComHeapPtr`вытекает `CHeapPtr`из , но использует [CComAllocator](../../atl/reference/ccomallocator-class.md) для выделения памяти с помощью COM процедур. Ознакомиться с доступными методами можно найти [cHeapPtr](../../atl/reference/cheapptr-class.md) и [CHeapPtrBase.](../../atl/reference/cheapptrbase-class.md)
 
@@ -69,7 +69,7 @@ explicit CComHeapPtr(T* pData) throw();
 *Pdata*<br/>
 Существующий объект `CComHeapPtr`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указатель кучи может быть дополнительно создан `CComHeapPtr` с помощью существующего объекта. Если это так, новый `CComHeapPtr` объект берет на себя ответственность за управление новым указателем и ресурсами.
 

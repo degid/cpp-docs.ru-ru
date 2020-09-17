@@ -28,7 +28,7 @@ ms.locfileid: "81750697"
 void Clear( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызовы `VariantClear` на инкапсулированный `VARIANT` объект.
 

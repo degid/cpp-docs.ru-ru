@@ -28,7 +28,7 @@ ms.locfileid: "88840808"
 *type*<br/>
 Указывает тип данных, передаваемый между клиентом и сервером.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **transmit_as** C++ имеет те же функциональные возможности, что и атрибут [transmit_as](/windows/win32/Midl/transmit-as) MIDL.
 

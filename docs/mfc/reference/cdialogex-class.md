@@ -45,7 +45,7 @@ class CDialogEx : public CDialog
 |[CDialogEx::SetBackgroundColor](#setbackgroundcolor)|Задает цвет фона диалогового окна.|
 |[CDialogEx::SetBackgroundImage](#setbackgroundimage)|Задает фоновое изображение диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать класс `CDialogEx`, сформируйте класс диалогового окна из класса `CDialogEx` вместо класса `CDialog`.
 
@@ -99,7 +99,7 @@ CDialogEx(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdialogexsetbackgroundcolor"></a><a name="setbackgroundcolor"></a>CDialogEx::SetBackgroundColor
 
@@ -119,7 +119,7 @@ void SetBackgroundColor(
 *bRepaint*<br/>
 (в) TRUE для немедленного обновления экрана; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdialogexsetbackgroundimage"></a><a name="setbackgroundimage"></a>CDialogEx::SetBackgroundImage
 
@@ -159,7 +159,7 @@ BOOL SetBackgroundImage(
 
 Во втором методе перегрузки синтаксиса, TRUE, если метод является успешным; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Изображение, указанное, не растягивается в соответствии с областью клиента диалогового окна.
 

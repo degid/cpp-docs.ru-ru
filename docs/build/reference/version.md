@@ -21,7 +21,7 @@ ms.locfileid: "79438764"
 /VERSION:left[,right]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот параметр помещает номер версии в заголовок изображения.
 

@@ -55,5 +55,5 @@ void swap(any& left, any& right) noexcept;
 *left*\
 Объект типа `any`.
 
-*справа*\
+*right*\
 Объект типа `any`.

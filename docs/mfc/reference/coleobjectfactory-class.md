@@ -85,7 +85,7 @@ class COleObjectFactory : public CCmdTarget
 |[ColeObjectFactory::VerifyLicenseKey](#verifylicensekey)|Проверяется, что ключ, встроенный в элемент управления, соответствует ключу, встроенного в контейнер.|
 |[ColeObjectFactory::VerifyUserLicense](#verifyuserlicense)|Проверяется, что элемент управления лицензирован для использования в проектно-сохранном времени.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `COleObjectFactory` имеет функции члена для выполнения следующих функций:
 
@@ -157,7 +157,7 @@ COleObjectFactory(
 *lpszProgID*<br/>
 Указатель на строку, содержащую идентификатор словесной программы, например "Microsoft Excel".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Однако для использования объекта необходимо зарегистрировать его.
 
@@ -175,7 +175,7 @@ REFCLSID GetClassID() const;
 
 Ссылка на идентификатор класса OLE, который представляет эта фабрика.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см. ключ CLSID](/windows/win32/com/clsid-key-hklm) в SDK Windows.
 
@@ -201,7 +201,7 @@ virtual BOOL GetLicenseKey(
 
 Nonzero, если строка с ключом лицензии не является NULL; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию возвращает 0 и ничего не хранит в BSTR. Если вы используете MFC ActiveX ControlWizard для создания проекта, ControlWizard поставляет переопределение, которое получает ключ лицензии управления.
 
@@ -241,7 +241,7 @@ virtual CCmdTarget* OnCreateObject();
 
 Указатель на созданный объект. Он может выбросить исключение памяти, если он не удается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы создать объект из чего-то другого, чем [CRuntimeClass](../../mfc/reference/cruntimeclass-structure.md) передается конструктору.
 
@@ -257,7 +257,7 @@ virtual BOOL Register();
 
 Nonzero, если завод успешно зарегистрирован; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обычно вызывается [CWinApp::InitInstance,](../../mfc/reference/cwinapp-class.md#initinstance) когда приложение запущено.
 
@@ -273,7 +273,7 @@ static BOOL PASCAL RegisterAll();
 
 Nonzero, если заводы успешно зарегистрированы; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обычно вызывается [CWinApp::InitInstance,](../../mfc/reference/cwinapp-class.md#initinstance) когда приложение запущено.
 
@@ -285,7 +285,7 @@ Nonzero, если заводы успешно зарегистрированы; 
 void Revoke();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает эту функцию автоматически до завершения приложения. При необходимости позвоните по номеру из переопределения [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).
 
@@ -297,7 +297,7 @@ void Revoke();
 static void PASCAL RevokeAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает эту функцию автоматически до завершения приложения. При необходимости позвоните по номеру из переопределения [CWinApp::ExitInstance](../../mfc/reference/cwinapp-class.md#exitinstance).
 
@@ -330,7 +330,7 @@ virtual BOOL UpdateRegistry(BOOL bRegister);
 *bРегистрация*<br/>
 Определяет, должна ли быть зарегистрирована фабрика объектов контрольного класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Краткое обсуждение двух форм для этой функции следует:
 
@@ -357,7 +357,7 @@ static BOOL PASCAL UpdateRegistryAll(BOOL bRegister = TRUE);
 
 Nonzero, если заводы успешно обновляются; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обычно вызывается [CWinApp::InitInstance,](../../mfc/reference/cwinapp-class.md#initinstance) когда приложение запущено.
 
@@ -378,7 +378,7 @@ BSTR, хранящей версию лицензионной строки кон
 
 Nonzero, если лицензия времени выполнения действительна; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Версия по умолчанию вызывает [GetLicenseKey,](#getlicensekey) чтобы получить копию строки лицензии управления и сравнивает ее со строкой в *bstrKey.* Если две строки совпадают, функция возвращает ненулевое значение; в противном случае он возвращает 0.
 

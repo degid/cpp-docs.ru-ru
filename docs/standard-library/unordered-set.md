@@ -30,7 +30,7 @@ ms.locfileid: "88846385"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Класс unordered_multiset](../standard-library/unordered-multiset-class.md)|Содержит хэш-таблицу ключей.|
 |[Класс unordered_set](../standard-library/unordered-set-class.md)|Содержит хэш-таблицу ключей.|
@@ -39,12 +39,12 @@ ms.locfileid: "88846385"
 
 |Имя|Описание|
 |-|-|
-|[operator! =](../standard-library/unordered-set-operators.md#op_neq)|Проверяет, не равен ли объект unordered_multiset в левой части объекту unordered_multiset в правой части.|
-|[Оператор = =](../standard-library/unordered-set-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_multiset в левой части объекту unordered_multiset в правой части.|
-|[позиции](../standard-library/unordered-set-functions.md#swap_unordered_multiset)|Меняет местами два объекта multiset.|
-|[operator! =](../standard-library/unordered-set-operators.md#op_neq)|Проверяет, не равен ли объект unordered_set в левой части объекту unordered_set в правой части.|
-|[Оператор = =](../standard-library/unordered-set-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_set в левой части объекту unordered_set в правой части.|
-|[позиции](../standard-library/unordered-set-functions.md#swap)|Меняет местами два сопоставления.|
+|[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Проверяет, не равен ли объект unordered_multiset в левой части объекту unordered_multiset в правой части.|
+|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_multiset в левой части объекту unordered_multiset в правой части.|
+|[swap](../standard-library/unordered-set-functions.md#swap_unordered_multiset)|Меняет местами два объекта multiset.|
+|[operator!=](../standard-library/unordered-set-operators.md#op_neq)|Проверяет, не равен ли объект unordered_set в левой части объекту unordered_set в правой части.|
+|[operator==](../standard-library/unordered-set-operators.md#op_eq_eq)|Проверяет, равен ли объект unordered_set в левой части объекту unordered_set в правой части.|
+|[swap](../standard-library/unordered-set-functions.md#swap)|Меняет местами два сопоставления.|
 
 ## <a name="see-also"></a>См. также раздел
 

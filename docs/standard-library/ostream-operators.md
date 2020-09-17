@@ -13,9 +13,9 @@ ms.locfileid: "90039772"
 ---
 # <a name="ltostreamgt-operators"></a>Операторы &lt;ostream&gt;
 
-[станции&lt;&lt;](#op_lt_lt)
+[operator&lt;&lt;](#op_lt_lt)
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a> станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> operator&lt;&lt;
 
 Записывает в поток различные типы.
 
@@ -93,7 +93,7 @@ basic_ostream <_Elem, _Tr>& operator<<(
 *_Tr*\
 Признаки символа.
 
-*Val*\
+*val*\
 Тип.
 
 ### <a name="return-value"></a>Возвращаемое значение

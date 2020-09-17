@@ -45,23 +45,23 @@ ms.locfileid: "88841848"
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](../standard-library/tuple-operators.md#op_eq_eq)|Сравнение `tuple` объектов, равное.|
-|[operator! =](../standard-library/tuple-operators.md#op_neq)|Сравнение `tuple` объектов, не равно.|
-|[Оператор<](../standard-library/tuple-operators.md#op_lt)|Сравнение `tuple` объектов, меньше.|
-|[Оператор<=](../standard-library/tuple-operators.md#op_lt_eq)|Сравнение `tuple` объектов, меньше или равно.|
-|[Оператор>](../standard-library/tuple-operators.md#op_gt)|Сравнение `tuple` объектов, большее, чем.|
-|[Оператор>=](../standard-library/tuple-operators.md#op_gt_eq)|Сравнение `tuple` объектов, больше или равно.|
+|[operator==](../standard-library/tuple-operators.md#op_eq_eq)|Сравнение `tuple` объектов, равное.|
+|[operator!=](../standard-library/tuple-operators.md#op_neq)|Сравнение `tuple` объектов, не равно.|
+|[operator<](../standard-library/tuple-operators.md#op_lt)|Сравнение `tuple` объектов, меньше.|
+|[operator<=](../standard-library/tuple-operators.md#op_lt_eq)|Сравнение `tuple` объектов, меньше или равно.|
+|[operator>](../standard-library/tuple-operators.md#op_gt)|Сравнение `tuple` объектов, большее, чем.|
+|[operator>=](../standard-library/tuple-operators.md#op_gt_eq)|Сравнение `tuple` объектов, больше или равно.|
 
 ### <a name="functions"></a>Функции
 
 |Имя|Описание|
 |-|-|
-|[касаться](../standard-library/tuple-functions.md#apply)|Вызывает функцию с кортежем.|
+|[apply](../standard-library/tuple-functions.md#apply)|Вызывает функцию с кортежем.|
 |[forward_as_tuple](../standard-library/tuple-functions.md#forward)|Конструирует кортеж ссылок.|
 |[get](../standard-library/tuple-functions.md#get)|Возвращает элемент из объекта `tuple`.|
 |[make_from_tuple](../standard-library/tuple-functions.md#make_from_tuple)|Краткая форма для создания `tuple` .|
 |[make_tuple](../standard-library/tuple-functions.md#make_tuple)|Создает `tuple` из значений элементов.|
-|[позиции](../standard-library/tuple-functions.md#swap)||
+|[swap](../standard-library/tuple-functions.md#swap)||
 |[tie](../standard-library/tuple-functions.md#tie)|Создает `tuple` из ссылок на элементы.|
 |[tuple_cat](../standard-library/tuple-functions.md#tuple_cat)|Конструирует объект кортежа с диапазоном элементов типа.|
 

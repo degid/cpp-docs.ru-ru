@@ -28,12 +28,12 @@ ms.locfileid: "88835666"
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](../standard-library/forward-list-operators.md#op_eq_eq)|Проверяет, равен ли объект Variant слева от оператора объекту Variant в правой части.|
-|[operator! =](../standard-library/forward-list-operators.md#op_neq)|Проверяет, не равен ли объект Variant слева от оператора объекту Variant в правой части.|
-|[Оператор<](../standard-library/forward-list-operators.md#op_lt)|Проверяет, меньше ли объект Variant слева от оператора, чем объект Variant в правой части.|
-|[Оператор<=](../standard-library/forward-list-operators.md#op_lt_eq)|Проверяет, что объект Variant слева от оператора меньше или равен объекту Variant в правой части.|
-|[Оператор>](../standard-library/forward-list-operators.md#op_gt)|Проверяет, больше ли объект Variant слева от оператора, чем объект Variant в правой части.|
-|[Оператор>=](../standard-library/forward-list-operators.md#op_lt_eq)|Проверяет, что объект Variant слева от оператора больше или равен объекту Variant в правой части.|
+|[operator==](../standard-library/forward-list-operators.md#op_eq_eq)|Проверяет, равен ли объект Variant слева от оператора объекту Variant в правой части.|
+|[operator!=](../standard-library/forward-list-operators.md#op_neq)|Проверяет, не равен ли объект Variant слева от оператора объекту Variant в правой части.|
+|[operator<](../standard-library/forward-list-operators.md#op_lt)|Проверяет, меньше ли объект Variant слева от оператора, чем объект Variant в правой части.|
+|[operator<=](../standard-library/forward-list-operators.md#op_lt_eq)|Проверяет, что объект Variant слева от оператора меньше или равен объекту Variant в правой части.|
+|[operator>](../standard-library/forward-list-operators.md#op_gt)|Проверяет, больше ли объект Variant слева от оператора, чем объект Variant в правой части.|
+|[operator>=](../standard-library/forward-list-operators.md#op_lt_eq)|Проверяет, что объект Variant слева от оператора больше или равен объекту Variant в правой части.|
 
 ### <a name="functions"></a>Функции
 
@@ -42,12 +42,12 @@ ms.locfileid: "88835666"
 |[get](../standard-library/variant-functions.md#get)|Возвращает вариант объекта.|
 |[get_if](../standard-library/variant-functions.md#get_if)|Возвращает вариант объекта, если он существует.|
 |[holds_alternative](../standard-library/variant-functions.md#holds_alternative)|Возвращает **`true`** , если существует вариант.|
-|[позиции](../standard-library/variant-functions.md#swap)|Меняет местами **вариант**.|
+|[swap](../standard-library/variant-functions.md#swap)|Меняет местами **вариант**.|
 |[перехода](../standard-library/variant-functions.md#visit)|Переходит к следующему **варианту**.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[bad_variant_access](../standard-library/bad-variant-access-class.md)|Объекты, выдаваемые для сообщения о недопустимых обращениях к значению объекта Variant.|
 |[variant](../standard-library/variant.md)|Объект для хранения значения одного из альтернативных типов или значение No.|

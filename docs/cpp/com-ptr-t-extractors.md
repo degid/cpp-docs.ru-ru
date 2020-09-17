@@ -45,7 +45,7 @@ Interface** operator&( ) throw( );
 operator bool( ) const throw( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 - **`operator Interface*`** Возвращает указатель инкапсулированного интерфейса, который может иметь значение NULL.
 

@@ -54,7 +54,7 @@ class IRunnableObjectImpl
 |[IRunnableObjectImpl::Run](#run)|Заставляет контроль бежать. Реализация ATL возвращает S_OK.|
 |[IRunnableObjectImpl::SetContainedПредмет](#setcontainedobject)|Означает, что элемент управления встроен. Реализация ATL возвращает S_OK.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IRunnableObject](/windows/win32/api/objidl/nn-objidl-irunnableobject) позволяет контейнеру определить, работает ли элемент управления, заставить его запуститься или заблокировать его в запущенном состоянии. Класс `IRunnableObjectImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -82,7 +82,7 @@ HRESULT GetRunningClass(LPCLSID lpClsid);
 
 Реализация ATL \* устанавливает *lpClsid* для GUID_NULL и возвращает E_UNEXPECTED.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IRunnableObject::GetRunningClass](/windows/win32/api/objidl/nf-objidl-irunnableobject-getrunningclass) в Windows SDK.
 
@@ -98,7 +98,7 @@ virtual BOOL IsRunning();
 
 Реализация ATL возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IRunnableObject::Бег в](/windows/win32/api/objidl/nf-objidl-irunnableobject-isrunning) Windows SDK.
 
@@ -114,7 +114,7 @@ HRESULT LockRunning(BOOL fLock, BOOL fLastUnlockCloses);
 
 Реализация ATL возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IRunnableObject::LockRunning](/windows/win32/api/objidl/nf-objidl-irunnableobject-lockrunning) в Windows SDK.
 
@@ -130,7 +130,7 @@ HRESULT Run(LPBINDCTX lpbc);
 
 Реализация ATL возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IRunnableObject::Запуск](/windows/win32/api/objidl/nf-objidl-irunnableobject-run) в Windows SDK.
 
@@ -146,7 +146,7 @@ HRESULT SetContainedObject(BOOL fContained);
 
 Реализация ATL возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IRunnableObject::SetContainedПредмет](/windows/win32/api/objidl/nf-objidl-irunnableobject-setcontainedobject) в Windows SDK.
 

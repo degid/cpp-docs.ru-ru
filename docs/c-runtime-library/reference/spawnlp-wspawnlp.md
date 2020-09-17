@@ -93,7 +93,7 @@ intptr_t _wspawnlp(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каждая из этих функций создает и выполняет новый процесс, передавая каждый аргумент командной строки как отдельный параметр и используя переменную среды **path** для поиска файла для выполнения.
 

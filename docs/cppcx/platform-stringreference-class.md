@@ -26,7 +26,7 @@ ms.locfileid: "81374664"
 class StringReference
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="members"></a>Участники
 
@@ -90,7 +90,7 @@ __abi_HSTRING GetHSTRING() const;
 
 Объект `__abi_HSTRING`, который содержит строковые данные.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="stringreferencegetstring-method"></a><a name="getstring"></a>StringReference::GetString Метод
 
@@ -121,7 +121,7 @@ unsigned int Length() const;
 
 Целое число без знака, указывающее число символов в строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="stringreferenceoperator-operator"></a><a name="operator-assign"></a>СтрокаСправка::Оператор» Оператор
 
@@ -146,7 +146,7 @@ StringReference& operator=(const ::default::char16* __strArg);
 
 Ссылка на объект типа `StringReference`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку `StringReference` это стандартный класс C, а не класс рефери, он не отображается в **браузере объектов**.
 
@@ -189,7 +189,7 @@ StringReference(const ::default::char16* __strArg, size_t __lenArg);
 *__lenArg*<br/>
 Число элементов в `__strArg`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая версия этого конструктора является конструктором по умолчанию. Вторая версия инициализирует новый экземпляра класса `StringReference` из объекта, заданного параметром `__fstrArg`. Третья и четвертая перегрузки инициализируют новый экземпляр класса `StringReference` из массива значений char16. char16 представляет 16-разрядный текстовый символ ЮНИКОДА.
 

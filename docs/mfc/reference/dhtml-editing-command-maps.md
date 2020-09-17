@@ -38,7 +38,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 *className*<br/>
 Имя класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в определении классов, производных от [CHtmlEditView](../../mfc/reference/chtmleditview-class.md).
 
@@ -50,7 +50,7 @@ DECLARE_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="begin_dhtmlediting_cmdmap"></a><a name="begin_dhtmlediting_cmdmap"></a> BEGIN_DHTMLEDITING_CMDMAP
 
@@ -65,7 +65,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 *className*<br/>
 Имя класса, содержащего карту команд редактирования DHTML. Этот класс должен прямо или косвенно наследовать от [CHtmlEditView](../../mfc/reference/chtmleditview-class.md) и включать макрос [DECLARE_DHTMLEDITING_CMDMAP](#declare_dhtmlediting_cmdmap) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавьте в класс карту команды редактирования DHTML, чтобы сопоставлять команды пользовательского интерфейса с командами редактирования HTML.
 
@@ -73,7 +73,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="end_dhtmlediting_cmdmap"></a><a name="end_dhtmlediting_cmdmap"></a> END_DHTMLEDITING_CMDMAP
 
@@ -83,7 +83,7 @@ BEGIN_DHTMLEDITING_CMDMAP(className)
 END_DHTMLEDITING_CMDMAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте в сочетании с [BEGIN_DHTMLEDITING_CMDMAP](#begin_dhtmlediting_cmdmap).
 
@@ -93,7 +93,7 @@ END_DHTMLEDITING_CMDMAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="dhtmlediting_cmd_entry"></a><a name="dhtmlediting_cmd_entry"></a> DHTMLEDITING_CMD_ENTRY
 
@@ -117,7 +117,7 @@ DHTMLEDITING_CMD_ENTRY(cmdID,  dhtmlcmdID)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="dhtmlediting_cmd_entry_func"></a><a name="dhtmlediting_cmd_entry_func"></a> DHTMLEDITING_CMD_ENTRY_FUNC
 
@@ -144,7 +144,7 @@ DHTMLEDITING_CMD_ENTRY_FUNC(cmdID, dhtmlcmdID,  member_func_name)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="dhtmlediting_cmd_entry_type"></a><a name="dhtmlediting_cmd_entry_type"></a> DHTMLEDITING_CMD_ENTRY_TYPE
 
@@ -171,7 +171,7 @@ DHTMLEDITING_CMD_ENTRY_TYPE(cmdID  ,   dhtmlcmdID  ,    elemType)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="dhtmlediting_cmd_entry_func_type"></a><a name="dhtmlediting_cmd_entry_func_type"></a> DHTMLEDITING_CMD_ENTRY_FUNC_TYPE
 
@@ -201,7 +201,7 @@ DHTMLEDITING_CMD_ENTRY_FUNC_TYPE(cmdID, dhtmlcmdID, member_func_name,  elemType)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxhtml. h
+  **Заголовок** afxhtml.h
 
 ## <a name="see-also"></a>См. также раздел
 

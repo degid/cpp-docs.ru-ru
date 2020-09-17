@@ -74,7 +74,7 @@ void allocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член ничего не делает. Эта функция-член вызывается после каждого успешного вызова `cache_freelist::allocate` оператором **`new`** . Аргумент *_Nx* — число блоков памяти в блоке, выделенном оператором **`new`** .
 
@@ -91,7 +91,7 @@ void deallocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член ничего не делает. Эта функция-член вызывается после каждого вызова `cache_freelist::deallocate` оператором **`delete`** . Аргумент *_Nx* — число блоков памяти в блоке, освобожденных оператором **`delete`** .
 
@@ -107,7 +107,7 @@ bool full();
 
 **`true`**`Max <= _Nblocks`в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член вызывается `cache_freelist::deallocate`. Если вызов возвращает **`true`** , `deallocate` помещает блок памяти в свободный список; если возвращается значение false, `deallocate` вызывает оператор **`delete`** для освобождения блока.
 
@@ -119,7 +119,7 @@ bool full();
 max_fixed_size();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор инициализирует сохраненное значение `_Nblocks` нулем.
 
@@ -131,7 +131,7 @@ max_fixed_size();
 void released();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Уменьшает хранимое значение `_Nblocks`. `released`Функция-член текущего [класса Max](../standard-library/allocators-header.md) вызывается при `cache_freelist::allocate` каждом удалении блока памяти из свободного списка.
 
@@ -143,7 +143,7 @@ void released();
 void saved();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член увеличивает хранимое значение `_Nblocks`. Она вызывается `cache_freelist::deallocate` каждый раз при помещении блока памяти в свободный список.
 

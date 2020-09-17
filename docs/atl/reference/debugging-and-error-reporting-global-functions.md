@@ -35,13 +35,13 @@ ms.locfileid: "88835472"
 HRESULT AtlHresultFromLastError();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlHresultFromLastError` вызывает метод `GetLastError` для получения последней ошибки и возвращает ошибку после ее преобразования в значение HRESULT с помощью макроса HRESULT_FROM_WIN32.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlcomcli. h
+**Заголовок:** atlcomcli.h
 
 ## <a name="atlhresultfromwin32"></a><a name="atlhresultfromwin32"></a> AtlHresultFromWin32
 
@@ -56,7 +56,7 @@ AtlHresultFromWin32(DWORD error);
 *error*<br/>
 Значение ошибки для преобразования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Преобразует код ошибки Win32 в значение HRESULT с помощью макроса HRESULT_FROM_WIN32.
 
@@ -65,7 +65,7 @@ AtlHresultFromWin32(DWORD error);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlcomcli. h
+**Заголовок:** atlcomcli.h
 
 ## <a name="atlreporterror"></a><a name="atlreporterror"></a> атлрепортеррор
 
@@ -147,7 +147,7 @@ HRESULT WINAPI AtlReportError(
 
 Если параметр *хрес* не равен нулю, возвращает значение *хрес*. Если *хрес* равен нулю, то первые четыре версии `AtlReportError` возвращают DISP_E_EXCEPTION. Последние две версии возвращают результат макроса **MAKE_HRESULT (1, FACILITY_ITF,** `nID` **)**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Строка *лпсздеск* используется в качестве текстового описания ошибки. Когда клиент получает *хрес* , возвращаемый из `AtlReportError` , клиент может получить доступ к `IErrorInfo` структуре для получения сведений об ошибке.
 
@@ -160,7 +160,7 @@ HRESULT WINAPI AtlReportError(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="atlthrow"></a><a name="atlthrow"></a> атлсров
 
@@ -175,7 +175,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 *ч*<br/>
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция используется в коде ATL и MFC в случае возникновения ошибки. Его также можно вызывать из собственного кода. Реализация по умолчанию этой функции зависит от определения символа _ATL_NO_EXCEPTIONS и от типа проекта, MFC или ATL.
 
@@ -189,7 +189,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 
 Если определено _ATL_NO_EXCEPTIONS, функция вызывает сбой утверждения, а не создает исключение.
 
-Для проектов ATL можно предоставить собственную реализацию этой функции, которая будет использоваться библиотекой ATL в случае сбоя. Для этого определите собственную функцию с той же сигнатурой, что `AtlThrow` и, #define `AtlThrow` в качестве имени функции. Это необходимо сделать перед включением атлексцепт. h (это означает, что перед включением всех заголовков ATL необходимо выполнить его, так как atlbase. h содержит атлексцепт. h). Атрибут функции `__declspec(noreturn)` , чтобы избежать ложных предупреждений SAL.
+Для проектов ATL можно предоставить собственную реализацию этой функции, которая будет использоваться библиотекой ATL в случае сбоя. Для этого определите собственную функцию с той же сигнатурой, что `AtlThrow` и, #define `AtlThrow` в качестве имени функции. Это необходимо сделать перед включением атлексцепт.h (это означает, что перед включением всех заголовков ATL необходимо выполнить его, так как atlbase.h содержит атлексцепт.h). Атрибут функции `__declspec(noreturn)` , чтобы избежать ложных предупреждений SAL.
 
 ### <a name="example"></a>Пример
 
@@ -197,7 +197,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлдеф. h
+**Заголовок:** атлдеф.h
 
 ## <a name="atlthrowlastwin32"></a><a name="atlthrowlastwin32"></a> AtlThrowLastWin32
 
@@ -207,7 +207,7 @@ __declspec(noreturn) inline void AtlThrow(HRESULT hr);
 inline void AtlThrowLastWin32();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция отслеживает результат `GetLastError` в отладчике.
 
@@ -219,7 +219,7 @@ inline void AtlThrowLastWin32();
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлдеф. h
+**Заголовок:** атлдеф.h
 
 ## <a name="see-also"></a>См. также
 

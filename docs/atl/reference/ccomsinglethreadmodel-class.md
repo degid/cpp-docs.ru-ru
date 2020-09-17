@@ -43,12 +43,12 @@ class CComSingleThreadModel
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомсинглесреадмодел::D екремент](#decrement)|Уменьшает значение указанной переменной. Эта реализация не является потокобезопасной.|
 |[Ккомсинглесреадмодел:: Increment](#increment)|Увеличивает значение указанной переменной. Эта реализация не является потокобезопасной.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComSingleThreadModel`предоставляет методы для увеличения и уменьшения значения переменной. В отличие от [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md) и [ккоммултисреадмоделнокс](../../atl/reference/ccommultithreadmodelnocs-class.md), эти методы не являются потокобезопасными.
 
@@ -65,7 +65,7 @@ S = `CComSingleThreadModel` ; M =`CComMultiThreadModel`
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccomsinglethreadmodelautocriticalsection"></a><a name="autocriticalsection"></a>Ккомсинглесреадмодел:: Аутокритикалсектион
 
@@ -75,7 +75,7 @@ S = `CComSingleThreadModel` ; M =`CComMultiThreadModel`
 typedef CComFakeCriticalSection AutoCriticalSection;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку не `CComFakeCriticalSection` предоставляет критическую секцию, его методы не выполняют никаких действий.
 
@@ -101,7 +101,7 @@ typedef CComFakeCriticalSection AutoCriticalSection;
 typedef CComFakeCriticalSection CriticalSection;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку не `CComFakeCriticalSection` предоставляет критическую секцию, его методы не выполняют никаких действий.
 
@@ -161,7 +161,7 @@ static ULONG WINAPI Increment(LPLONG p) throw();
 typedef CComSingleThreadModel ThreadModelNoCS;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md) и [ккоммултисреадмоделнокс](../../atl/reference/ccommultithreadmodelnocs-class.md) содержат определения для `ThreadModelNoCS` . В следующей таблице показана связь между классом потоковой модели и классом, на который ссылается `ThreadModelNoCS` :
 

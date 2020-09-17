@@ -55,7 +55,7 @@ int _heapmin( void );
 
 Дополнительные сведения об этом и других кодах возврата см. в статье [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_heapmin** свертывает кучу, освобождая неиспользуемую память кучи от операционной системы. Если операционная система не поддерживает **_heapmin**(например, Windows 98), функция **возвращает значение-1 и устанавливает для** **еносис**.
 

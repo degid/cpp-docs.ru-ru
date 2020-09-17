@@ -28,7 +28,7 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 ### <a name="structures"></a>Структуры
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Структура CriticalSectionTraits](criticalsectiontraits-structure.md)|Специализирует объект `CriticalSection` для поддержки недопустимого критического раздела или функции для освобождения критического раздела.|
 |[Структура EventTraits](eventtraits-structure.md)|Определяет характеристики `Event`ного обработчика класса.|
@@ -42,7 +42,7 @@ namespace Microsoft::WRL::Wrappers::HandleTraits;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 

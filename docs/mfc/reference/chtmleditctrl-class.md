@@ -48,7 +48,7 @@ class CHtmlEditCtrl: public CWnd,
 |[CHtmlEditCtrl:GetDHtmlDocument](#getdhtmldocument)|Извлекает интерфейс [IHTMLDocument2](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa752574\(v=vs.85\)) на документ, который в настоящее время загружен в элемент управления WebBrowser.|
 |[CHtmlEditCtrl:GetStartDocument](#getstartdocument)|Извлекает URL-адрес в документ по умолчанию для загрузки в элементе управления WebBrowser.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 После создания размещаемый элемент управления WebBrowser автоматически перекладывается в режим отодена.
 

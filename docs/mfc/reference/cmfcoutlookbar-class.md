@@ -87,7 +87,7 @@ class CMFCOutlookBar : public CBaseTabbedPane
 |[CMFCOutlookBar::SetButton](#setbuttonsfont)|Устанавливает шрифт текста на кнопках панели Outlook.|
 |[CMFCOutlookBar:SetMode2003](#setmode2003)|Уточняется, имитирует ли поведение бара Outlook поведение Outlook outlook 2003 (см. Замечания).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 На примере бара Outlook можно ознакомиться на [примере outlookDemo: приложение OutlookDemo.](../../overview/visual-cpp-samples.md)
 
@@ -197,7 +197,7 @@ virtual BOOL AllowDestroyEmptyTabbedPane() const;
 
 TRUE, если пустое табло панели могут быть уничтожены; в противном случае, FALSE. Реализация по умолчанию всегда возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если пустое табло не может быть уничтожено, фреймворк скрывает его.
 
@@ -218,7 +218,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ПРАВДА, если еще одно стекло может быть пристыковано к панели бара Outlook; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если панель Outlook находится в режиме Outlook 2003, стыковка не поддерживается, поэтому значение возврата FALSE.
 
@@ -238,7 +238,7 @@ virtual BOOL CanSetCaptionTextToTabName() const;
 
 TRUE, если подпись окна окна Outlook автоматически устанавливается на текст активной вкладки; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [CBaseTabbedPane::EnableSetCaptionTextToTabName,](../../mfc/reference/cbasetabbedpane-class.md#enablesetcaptiontexttotabname) чтобы включить или отключить эту функциональность.
 
@@ -286,7 +286,7 @@ virtual BOOL Create(
 
 Nonzero, если метод успешен; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CMFCOutlookBar` объект в два этапа. Сначала вызов конструктора, а `Create`затем вызов, который создает управление панелью outlook и прикрепляет его к объекту. `CMFCOutlookBar`
 
@@ -329,7 +329,7 @@ CMFCOutlookBarPane* CreateCustomPage(
 
 Указатель на вновь созданную страницу или NULL, если творение не удалось.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы позволить пользователям создавать пользовательские страницы панели Outlook. Вы можете создать до 100 страниц в приложении. Иди имитного представления управления страницами начинается с 0xF000. Создание завершается неудачей, если общее количество пользовательских страниц панели Outlook превышает 100.
 
@@ -347,7 +347,7 @@ DECLARE_MESSAGE_MAP virtual BOOL DoesAllowDynInsertBefore() const;
 
 Реализация по умолчанию возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм `DoesAllowDynInsertBefore` вызывает метод, когда он ищет место для стыковки динамического стекла. Если функция возвращает FALSE, фреймворк не позволяет стыковку динамического стекла на внешних краях панели.
 
@@ -386,7 +386,7 @@ virtual BOOL FloatTab(
 
 ПРАВДА, если панель плавали; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод похож на [CBaseTabbedPane::FloatTab,](../../mfc/reference/cbasetabbedpane-class.md#floattab) за исключением того, что он не позволяет последней оставшейся вкладке на панели Outlook для плавания.
 
@@ -402,7 +402,7 @@ CFont* GetButtonsFont() const;
 
 Указатель на объект шрифта, который используется для отображения текста на вкладке страницы страницы Outlook.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для извлечения шрифта, который используется для отображения текста на вкладке кнопки Outlook. Вы можете установить шрифт, позвонив по [ТЕЛЕФОНу CMFCOutlookBar::SetButtonsFont](#setbuttonsfont).
 
@@ -424,7 +424,7 @@ virtual void GetTabArea(
 *rectTabAreaBottom*<br/>
 (ваут) Содержит размер и положение (в координатах клиента) нижней области вкладки при возврате функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамка вызывает этот метод для определения типа стыковки с целевым стеклом. Когда фреймворк определяет, что пользователь перетаскивает панель для пристыкования к области вкладки целевого стекла, он пытается добавить первую панель в качестве новой вкладки целевого стекла. В противном случае он пытается пристыковать первое стекло на соответствующей стороне целевого стекла. Рамка создает новый контейнер с ползунок для размещения дополнительного пристыкованного стекла.
 
@@ -444,7 +444,7 @@ BOOL IsMode2003() const;
 
 Nonzero, если панель Outlook работает в режиме Microsoft Office 2003; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете включить этот режим с помощью [CMFCOutlookBar::SetMode2003](#setmode2003).
 
@@ -461,7 +461,7 @@ virtual void OnAfterAnimation(int nPage);
 *nСтраница*<br/>
 (в) Индекс на нулевой основе страницы вкладок, который был активен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Визуальный эффект настройки активной вкладки зависит от того, включили ли вы анимацию. Для получения дополнительной информации [см. CMFCOutlookBarTabCtrl::EnableAnimation](../../mfc/reference/cmfcoutlookbartabctrl-class.md#enableanimation).
 
@@ -482,7 +482,7 @@ virtual BOOL OnBeforeAnimation(int nPage);
 
 Возвращает TRUE, если анимация должна использоваться при настройке новой активной вкладки, или FALSE, если анимация должна быть отключена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcoutlookbaronscroll"></a><a name="onscroll"></a>CMFCOutlookBar::OnScroll
 
@@ -497,7 +497,7 @@ virtual void OnScroll(BOOL bDown);
 *bДаун*<br/>
 (в) ПРАВДА, если панель Outlook прокрутки вниз, или FALSE, если он прокрутки вверх.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcoutlookbarremovecustompage"></a><a name="removecustompage"></a>CMFCOutlookBar::RemoveCustomPage
 
@@ -521,7 +521,7 @@ BOOL RemoveCustomPage(
 
 Nonzero, если пользовательская страница была успешно удалена; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы удалить пользовательские страницы. Когда страница удалена, идентификатор управления возвращается в пул доступных идентификаторов.
 
@@ -547,7 +547,7 @@ void SetButtonsFont(
 *bRedraw*<br/>
 (в) Если true, панель Outlook будет перерисована.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для установки шрифта для текста, отображаемого на кнопках страницы вкладок Outlook.
 
@@ -564,7 +564,7 @@ void SetMode2003(BOOL bMode2003=TRUE);
 *bMode2003*<br/>
 (в) Если TRUE, режим Office 2003 включен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для включения или отключать режим Office 2003. В этом режиме панель Outlook имеет дополнительную панель инструментов с кнопкой настройки. Поведение бара Outlook соответствует поведению бара Outlook в Microsoft Office 2003.
 

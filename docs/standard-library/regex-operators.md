@@ -19,15 +19,15 @@ ms.locfileid: "88833235"
 ---
 # <a name="ltregexgt-operators"></a>Операторы &lt;regex&gt;
 
-[operator! =](#op_neq)\
-[станции&gt;](#op_gt)\
-[станции&gt;=](#op_gt_eq)\
-[станции&lt;](#op_lt)\
-[станции&lt;&lt;](#op_lt_lt)\
-[станции&lt;=](#op_lt_eq)\
-[Оператор = =](#op_eq_eq)
+[operator!=](#op_neq)\
+[operator&gt;](#op_gt)\
+[operator&gt;=](#op_gt_eq)\
+[operator&lt;](#op_lt)\
+[operator&lt;&lt;](#op_lt_lt)\
+[operator&lt;=](#op_lt_eq)\
+[operator==](#op_eq_eq)
 
-## <a name="operator"></a><a name="op_neq"></a> operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Сравнение различных объектов на неравенство.
 
@@ -68,22 +68,22 @@ bool operator!=(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон возвращает `!(left == right)`.
 
@@ -146,7 +146,7 @@ sub != "aab" == true
 sub != 'a' == true
 ```
 
-## <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Сравнение "меньше, чем" для различных объектов.
 
@@ -183,22 +183,22 @@ bool operator<(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон преобразует свои аргументы в строковый тип и возвращает значение true, только если преобразованное значение *Left* сравнивается со значением *right*.
 
@@ -256,7 +256,7 @@ sub < "aab" == true
 sub < 'a' == false
 ```
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a> станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> operator&lt;&lt;
 
 Вставляет в поток sub_match.
 
@@ -271,22 +271,22 @@ basic_ostream<Elem, IOtraits>& operator<<(basic_ostream<Elem, IOtraits>& os,
 *Elem*\
 Тип элемента.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*эквивалент*\
+*os*\
 Выходной поток.
 
-*Правильно*\
+*right*\
 Вставляемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор-шаблон возвращает `os << right.str()`.
 
@@ -316,7 +316,7 @@ int main()
 whole match: caaa
 ```
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a> станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> operator&lt;=
 
 Сравнение "меньше или равно" для различных объектов.
 
@@ -353,22 +353,22 @@ bool operator<=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон возвращает `!(right < left)`.
 
@@ -426,7 +426,7 @@ sub <= "aab" == true
 sub <= 'a' == false
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Сравнение различных объектов на равенство.
 
@@ -467,22 +467,22 @@ bool operator==(const match_results<BidIt, Alloc>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон преобразует каждый из своих аргументов в тип string и возвращает результат сравнения преобразованных объектов на равенство.
 
@@ -553,7 +553,7 @@ sub == "aab" == false
 sub == 'a' == false
 ```
 
-## <a name="operatorgt"></a><a name="op_gt"></a> станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> operator&gt;
 
 Сравнение "больше, чем" для различных объектов.
 
@@ -590,22 +590,22 @@ bool operator>(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон возвращает `right < left`.
 
@@ -663,7 +663,7 @@ sub > "aab" == false
 sub > 'a' == true
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a> станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> operator&gt;=
 
 Сравнение "больше или равно" для различных объектов.
 
@@ -700,22 +700,22 @@ bool operator>=(const sub_match<BidIt>& left,
 
 ### <a name="parameters"></a>Параметры
 
-*Двунаправленный*\
+*BidIt*\
 Тип итератора.
 
-*иотраитс*\
+*IOtraits*\
 Класс характеристик строки.
 
-*Идентификатор*\
+*Alloc*\
 Класс распределителя.
 
-*слева*\
+*left*\
 Левый из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Правый из сравниваемых объектов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый оператор-шаблон возвращает `!(left < right)`.
 

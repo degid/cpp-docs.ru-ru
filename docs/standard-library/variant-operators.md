@@ -33,7 +33,7 @@ template <class... Types>
     constexpr bool operator==(const variant<Types...>&, const variant<Types...>&);
 ```
 
-## <a name="op_neq"></a> оператор! =
+## <a name="op_neq"></a> operator!=
 
 Проверяет, не равен ли объект прямого списка слева от оператора объекту прямого списка справа от оператора.
 

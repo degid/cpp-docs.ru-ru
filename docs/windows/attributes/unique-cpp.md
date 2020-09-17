@@ -23,7 +23,7 @@ ms.locfileid: "88836160"
 [unique]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Уникальный** атрибут C++ имеет те же функциональные возможности, что и [уникальный](/windows/win32/Midl/unique) атрибут MIDL.
 

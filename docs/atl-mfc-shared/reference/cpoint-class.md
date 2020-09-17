@@ -53,7 +53,7 @@ class CPoint : public tagPOINT
 |[CPoint::оператор -](#operator_-_eq)|Смещения `CPoint` путем вычитания размера или точки.|
 |[CPoint::оператор](#operator_eq_eq)|Проверка на равенство между двумя пунктами.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Она также включает в `CPoint` себя функции членов для манипулирования и [POINT](/windows/win32/api/windef/ns-windef-point) структур.
 
@@ -104,7 +104,7 @@ CPoint(LPARAM dwPoint) throw();
 *dwPoint*<br/>
 Устанавливает `x` участника на слово низкого порядка *dwPoint* и `y` члена на слово высокого порядка *dwPoint*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если аргументы не указаны, для членов `x` и `y` задается значение 0.
 
@@ -222,7 +222,7 @@ void operator+=(POINT point) throw();
 *Точки*<br/>
 Содержит структуру [POINT](/windows/win32/api/windef/ns-windef-point) или объект [CPoint.](../../atl-mfc-shared/reference/cpoint-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вторая перегрузка добавляет `CPoint`точку в .
 
@@ -251,7 +251,7 @@ void operator-=(POINT point) throw();
 *Точки*<br/>
 Содержит структуру [POINT](/windows/win32/api/windef/ns-windef-point) или объект [CPoint.](../../atl-mfc-shared/reference/cpoint-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вторая перегрузка вычитает точку из `CPoint`.
 
@@ -288,7 +288,7 @@ CRect operator+(const RECT* lpRect) const throw();
 
 А, `CPoint` который компенсируется размером, `CPoint` то, что компенсируется точкой, или `CRect` смещением точкой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Например, использование одной из первых двух перегрузок для `CPoint(25, -19)` компенсации точки на точку `CPoint(15, 5)` или размер `CSize(15, 5)` возвращает значение. `CPoint(40, -14)`
 
@@ -324,7 +324,7 @@ CPoint operator-() const throw();
 
 А `CSize` это разница между двумя `CPoint` точками, которая компенсируется отрицанием `CRect` размера, которая компенсируется отрицанием точки, `CPoint` или отрицанием точки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Третья перегрузка компенсирует `CRect` отрицание `CPoint`. Наконец, используйте неопрягие оператора, чтобы свести на нет `CPoint`.
 

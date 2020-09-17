@@ -37,7 +37,7 @@ ms.locfileid: "88835718"
 typedef basic_filebuf<char, char_traits<char>> filebuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_filebuf](../standard-library/basic-filebuf-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -49,7 +49,7 @@ typedef basic_filebuf<char, char_traits<char>> filebuf;
 typedef basic_fstream<char, char_traits<char>> fstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_fstream](../standard-library/basic-fstream-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -63,7 +63,7 @@ typedef basic_fstream<char, char_traits<char>> fstream;
 typedef basic_ifstream<char, char_traits<char>> ifstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ifstream](../standard-library/basic-ifstream-class.md)шаблона класса, специализированного для элементов типа Char с признаками символа по умолчанию. Пример:
 
@@ -87,7 +87,7 @@ if (!infile.bad())
 typedef basic_ofstream<char, char_traits<char>> ofstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ofstream](../standard-library/basic-ofstream-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -99,7 +99,7 @@ typedef basic_ofstream<char, char_traits<char>> ofstream;
 typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_fstream](../standard-library/basic-fstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 
@@ -111,7 +111,7 @@ typedef basic_fstream<wchar_t, char_traits<wchar_t>> wfstream;
 typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ifstream](../standard-library/basic-ifstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 
@@ -123,7 +123,7 @@ typedef basic_ifstream<wchar_t, char_traits<wchar_t>> wifstream;
 typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ofstream](../standard-library/basic-ofstream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 
@@ -135,7 +135,7 @@ typedef basic_ofstream<wchar_t, char_traits<wchar_t>> wofstream;
 typedef basic_filebuf<wchar_t, char_traits<wchar_t>> wfilebuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_filebuf](../standard-library/basic-filebuf-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 

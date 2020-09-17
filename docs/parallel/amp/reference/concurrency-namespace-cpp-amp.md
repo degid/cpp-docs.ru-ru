@@ -27,16 +27,16 @@ namespace Concurrency;
 
 ### <a name="namespaces"></a>Пространства имен
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
-|[Пространство имен Concurrency::direct3d](concurrency-direct3d-namespace.md)|Предоставляет функции, поддерживающие возможность взаимодействия с D3D. Обеспечивает эффективное использование ресурсов D3D для вычислений в коде AMP и использование ресурсов, созданных в AMP в коде D3D, без создания избыточных промежуточных копий. AMP можно использовать C++ для постепенного ускорения ресурсоемких разделов приложений DirectX и использования API D3D на основе данных, полученных от вычислений amp.|
+|[Пространство имен concurrency::direct3d](concurrency-direct3d-namespace.md)|Предоставляет функции, поддерживающие возможность взаимодействия с D3D. Обеспечивает эффективное использование ресурсов D3D для вычислений в коде AMP и использование ресурсов, созданных в AMP в коде D3D, без создания избыточных промежуточных копий. AMP можно использовать C++ для постепенного ускорения ресурсоемких разделов приложений DirectX и использования API D3D на основе данных, полученных от вычислений amp.|
 |[Пространство имен Concurrency::fast_math](concurrency-fast-math-namespace.md)|Функции в пространстве имен `fast_math` не соответствуют C99. Предоставляются только версии с одиночной точностью каждой функции. Эти функции используют встроенные функции DirectX, которые выполняются быстрее, чем соответствующие функции в пространстве имен `precise_math` и не нуждаются в расширенной поддержке двойной точности в ускорителе, но они менее точны. Существует две версии каждой функции для совместимости на уровне источника с кодом C99. Обе версии принимают и возвращают значения с одиночной точностью.|
 |[Пространство имен Concurrency::graphics](concurrency-graphics-namespace.md)|Предоставляет типы и функции, предназначенные для программирования графики.|
 |[Пространство имен Concurrency::precise_math](concurrency-precise-math-namespace.md)|Функции в пространстве имен `precise_math` соответствуют C99. Включаются обе версии каждой функции: с одной точностью и с двойной точностью. Эти функции, в том числе функции с одной точностью, нуждаются в расширенной поддержке двойной точности в ускорителе.|
 
 ### <a name="classes"></a>Классы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Класс accelerator](accelerator-class.md)|Представляет абстракцию физического оптимизированного для DP кластерного узла.|
 |[Класс accelerator_view](accelerator-view-class.md)|Представляет абстракцию виртуального устройства в ускорителе C++ обработки данных amp.|
@@ -57,7 +57,7 @@ namespace Concurrency;
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Перечисление access_type](concurrency-namespace-enums-amp.md#access_type)|Указывает тип доступа к данным.|
 |[Перечисление queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode)|Указывает режимы работы в очереди, которые поддерживаются ускорителем.|
@@ -67,7 +67,7 @@ namespace Concurrency;
 |Оператор|Description|
 |--------------|-----------------|
 |[оператор operator = = (C++ amp)](concurrency-namespace-operators-amp.md#operator_eq_eq)|Определяет, равны ли указанные структуры данных.|
-|[оператор operator! = (C++ amp)](concurrency-namespace-operators-amp.md#operator_neq)|Определяет, являются ли указанные структуры данных неравными.|
+|[оператор operator!= (C++ amp)](concurrency-namespace-operators-amp.md#operator_neq)|Определяет, являются ли указанные структуры данных неравными.|
 |[оператор operator + (C++ amp)](concurrency-namespace-operators-amp.md#operator_add)|Вычисляет покомпонентную сумму указанных аргументов.|
 |[operator-оператор (C++ amp)](concurrency-namespace-operators-amp.md#operator-)|Выполняет покомпонентное различие между заданными аргументами.|
 |[оператор operator * (C++ amp)](concurrency-namespace-operators-amp.md#operator_star)|Выполняет покомпонентное произведение заданных аргументов.|
@@ -76,7 +76,7 @@ namespace Concurrency;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[all_memory_fence](concurrency-namespace-functions-amp.md#all_memory_fence)|Блокирует выполнение всех потоков в плитке до тех пор, пока не будут завершены все обращения к памяти.|
 |[amp_uninitialize](concurrency-namespace-functions-amp.md#amp_uninitialize)|Отменяет инициализацию среды выполнения C++ amp.|
@@ -102,7 +102,7 @@ namespace Concurrency;
 
 ## <a name="constants"></a>Константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа HLSL_MAX_NUM_BUFFERS](concurrency-namespace-constants-amp.md#hlsl_max_num_buffers)|Максимальное число буферов, разрешенных DirectX.|
 |[Константа MODULENAME_MAX_LENGTH](concurrency-namespace-constants-amp.md#modulename_max_length)|Сохраняет максимальную длину имени модуля. Это значение должно быть одинаковым для компилятора и среды выполнения.|

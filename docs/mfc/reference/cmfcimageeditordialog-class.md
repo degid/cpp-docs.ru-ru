@@ -33,7 +33,7 @@ class CMFCImageEditorDialog : public CDialogEx
 |----------|-----------------|
 |[CMFCImageEditorИсточникДиалог::CMFCImageEditorИсточникДиалог](#cmfcimageeditordialog)|Формирует объект `CMFCImageEditorDialog`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCImageEditorDialog` предоставляет диалоговый ящик, который включает в себя:
 
@@ -95,7 +95,7 @@ CMFCImageEditorDialog(
 
 Чтобы изменить изображение, передайте указатель `CMFCImageEditorDialog` изображения конструктору. Затем позвоните в `DoModal` метод, чтобы открыть модальный диалоговый ящик. Когда `DoModal` метод возвращается, битная карта содержит новое изображение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 

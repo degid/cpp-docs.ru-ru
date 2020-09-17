@@ -20,7 +20,7 @@ ms.locfileid: "87219746"
 
 ## <a name="all-runtimes"></a>Все среды выполнения
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ниже приведен список контекстно-зависимых ключевых слов:
 
@@ -52,7 +52,7 @@ ms.locfileid: "87219746"
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 
@@ -62,7 +62,7 @@ ms.locfileid: "87219746"
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 (Отсутствуют комментарии для данной возможности в рамках этой платформы).
 

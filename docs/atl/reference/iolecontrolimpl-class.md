@@ -48,7 +48,7 @@ class IOleControlImpl
 |[IOleControlImpl::OnAmbientPropertyChange](#onambientpropertychange)|Сообщает элемент управления о том, что изменилось одно или несколько свойств окружающего контейнера. Реализация ATL возвращает S_OK.|
 |[IOleControlImpl::OnMmonic](#onmnemonic)|Информирует элемент управления о том, что пользователь нажал указанный нажатие клавиши. Реализация ATL возвращает E_NOTIMPL.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `IOleControlImpl` обеспечивает реализацию интерфейса [IOleControl](/windows/win32/api/ocidl/nn-ocidl-iolecontrol) по `IUnknown` умолчанию и реализации путем отправки информации на устройство свалки в отладочных сборках.
 
@@ -72,7 +72,7 @@ class IOleControlImpl
 HRESULT FreezeEvents(BOOL bFreeze);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `FreezeEvents`затем возвращается S_OK.
 
@@ -86,7 +86,7 @@ HRESULT FreezeEvents(BOOL bFreeze);
 HRESULT GetControlInfo(LPCONTROLINFO pCI);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleControl:GetControlInfo](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-getcontrolinfo) в Windows SDK.
 
@@ -106,7 +106,7 @@ HRESULT OnAmbientPropertyChange(DISPID dispid);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleControl::OnAmbientPropertyChange](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onambientpropertychange) в Windows SDK.
 
@@ -122,7 +122,7 @@ HRESULT OnMnemonic(LPMSG pMsg);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IOleControl::OnMmonic](/windows/win32/api/ocidl/nf-ocidl-iolecontrol-onmnemonic) в Windows SDK.
 

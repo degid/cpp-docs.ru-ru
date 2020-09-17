@@ -35,13 +35,13 @@ WRL_NOTHROW inline void Swap(
 
 ## <a name="return-value"></a>Возвращаемое значение
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Меняет местами значения двух указанных аргументов.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

@@ -28,7 +28,7 @@ ms.locfileid: "88837116"
 *expression*<br/>
 Одно или несколько выражений языка C. Пустые слоты аргументов разрешены.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **max_is** C++ имеет те же функциональные возможности, что и атрибут [max_is](/windows/win32/Midl/max-is) MIDL.
 

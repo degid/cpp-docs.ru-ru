@@ -44,7 +44,7 @@ class COleIPFrameWnd : public CFrameWnd
 |[ColeIPFrameWnd::OnCreateControlBars](#oncreatecontrolbars)|Вызывается в рамках, когда элемент активирован для редактирования на месте.|
 |[ColeIPFrameWnd::RepositionFrame](#repositionframe)|Вызывается в рамках для перепозиционирования окна редактирования на месте.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс создает и позиционирует панели управления в окне документа приложения контейнера. Он также обрабатывает уведомления, генерируемые встроенным объектом [COleReSizeBar,](../../mfc/reference/coleresizebar-class.md) когда пользователь изменяет окно редактирования на месте.
 
@@ -74,7 +74,7 @@ class COleIPFrameWnd : public CFrameWnd
 COleIPFrameWnd();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см. OLEINPLACEFRAMEINFO](/windows/win32/api/oleidl/ns-oleidl-oleinplaceframeinfo) в Windows SDK.
 
@@ -104,7 +104,7 @@ virtual BOOL OnCreateControlBars(
 
 Nonzero на успех; в противном случае, 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию не выполняет никаких действий. Переопределить эту функцию для выполнения любой специальной обработки, необходимой при создании баров управления.
 
@@ -126,7 +126,7 @@ virtual void RepositionFrame(
 *lpClipRect*<br/>
 Указатель на `RECT` структуру `CRect` или объект, содержащий текущие координаты отсечения-прямоугольника окна в месте, в пикселях относительно области клиента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Расположение контрольных баров в окне контейнера отличается от того, что выполняется окном кадра, не относящееся к OLE. Окно кадра, не отчаиваемые для OLE, вычисляет положения баров управления и других объектов от данного размера окна кадра, как в вызове на [CFrameWnd::RecalcLayout](../../mfc/reference/cframewnd-class.md#recalclayout). Область клиента — это то, что остается после вычитания пространства для контрольных баров и других объектов. Окно, `COleIPFrameWnd` с другой стороны, позиционирует панели инструментов в соответствии с данной областью клиента. Другими словами, `CFrameWnd::RecalcLayout` работает "снаружи в", в то время как `COleIPFrameWnd::RepositionFrame` работает "изнутри".
 

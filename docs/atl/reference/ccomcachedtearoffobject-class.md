@@ -67,7 +67,7 @@ public CComObjectRootEx<contained
 |----------|-----------------|
 |[CComCachedTearOffObject::m_contained](#m_contained)|Объект, `CComContainedObject` полученный из класса отрыва `contained`(класс).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComCachedTearOffObject`реализует [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) для отрыва интерфейса. Этот класс `CComTearOffObject` отличается `CComCachedTearOffObject` тем, `IUnknown`что имеет свой собственный, отдельно от объекта владельца `IUnknown` (владелец является объектом, для которого создается разрыв). `CComCachedTearOffObject`поддерживает свой собственный подсчет `IUnknown` ссылок на его и удаляет себя, как только его количество ссылок равна нулю. Однако, если вы запросите любой из его отрывая интерфейсов, количество ссылок объекта владельца `IUnknown` будет приравнено.
 
@@ -114,7 +114,7 @@ CComCachedTearOffObject(void* pv);
 *Pv*<br/>
 (в) Указатель на `IUnknown` `CComCachedTearOffObject`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует `CComContainedObject` участника, [m_contained](#m_contained).
 
@@ -126,7 +126,7 @@ CComCachedTearOffObject(void* pv);
 ~CComCachedTearOffObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы и вызывает [FinalRelease](#finalrelease).
 
@@ -163,7 +163,7 @@ CcomContainedObject <contained> m_contained;
 *Содержащиеся*<br/>
 (в) Ваш класс отрыва, полученный из `CComTearOffObjectBase` интерфейсов, которые вы хотите, чтобы ваш объект отрыва в поддержку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `m_contained` Методы наследуют используются для доступа к интерфейсу отрыва в вашем отрыв-офф класса `QueryInterface` `FinalConstruct`через `FinalRelease`кэшированный слезоточивый объект, и .
 
@@ -187,7 +187,7 @@ STDMETHOD(QueryInterface)(REFIID iid, void** ppvObject);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если запрашиваемый `IUnknown`интерфейс, возвращает указатель `CComCachedTearOffObject`на `IUnknown` 's собственной и приращения ссылки кол. В противном случае запросы для интерфейса в классе отрыва с `CComObjectRootEx`использованием метода [Внутреннего КвейтиИнтерфейса,](ccomobjectrootex-class.md#internalqueryinterface) унаследованного от .
 

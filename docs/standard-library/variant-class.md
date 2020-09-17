@@ -43,14 +43,14 @@ template <class... Types>
 |-|-|
 |[emplace](#emplace)|Создает новое вложенное значение.|
 |[index](#index)|Возвращает индекс содержащегося значения.|
-|[позиции](#swap)||
+|[swap](#swap)||
 |[valueless_by_exception](#emplace)|Возвращает **`false`** , если вариант содержит значение.|
 
 ### <a name="operators"></a>Операторы
 
 |Имя|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Заменяет вариант копией другого варианта.|
+|[operator=](#op_eq)|Заменяет вариант копией другого варианта.|
 
 ## <a name="emplace"></a><a name="emplace"></a> emplace
 
@@ -67,7 +67,7 @@ template <size_t I, class U, class... Args>
     variant_alternative_t<I, variant<Types...>>& emplace(initializer_list<U>, Args&&...);
 ```
 
-## <a name="index"></a><a name="index"></a> номер
+## <a name="index"></a><a name="index"></a> index
 
 Возвращает индекс содержащегося значения.
 
@@ -75,7 +75,7 @@ template <size_t I, class U, class... Args>
 constexpr size_t index() const noexcept;
 ```
 
-## <a name="variant"></a><a name="variant"></a> значение
+## <a name="variant"></a><a name="variant"></a> variant
 
 Создает объект типа `variant`. Также включает деструктор.
 
@@ -119,7 +119,7 @@ template <class Alloc, size_t I, class U, class... Args>
 *Al*\
 Класс распределителя для использования с данным объектом.
 
-## <a name="operator"></a><a name="op_eq"></a> Оператор =
+## <a name="operator"></a><a name="op_eq"></a> operator=
 
 Заменяет вариант копией другого варианта.
 
@@ -130,7 +130,7 @@ template <class T>
     variant& operator=(T&&) noexcept(see below);
 ```
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 ```cpp
 void swap(variant&) noexcept(see below);

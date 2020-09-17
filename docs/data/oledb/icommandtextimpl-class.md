@@ -48,7 +48,7 @@ class ATL_NO_VTABLE ICommandTextImpl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** алтдб. h
+**Заголовок:** алтдб.h
 
 ## <a name="members"></a>Элементы
 
@@ -65,7 +65,7 @@ class ATL_NO_VTABLE ICommandTextImpl
 |-|-|
 |[m_strCommandText](#strcommandtext)|Сохраняет текст команды.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обязательный интерфейс для команд.
 

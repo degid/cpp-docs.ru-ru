@@ -41,7 +41,7 @@ template <class T>
 
 |Имя|Описание|
 |-|-|
-|[оператор ()](#op_paren)|Ссылочный оператор для доступа `default_delete` .|
+|[operator()](#op_paren)|Ссылочный оператор для доступа `default_delete` .|
 
 ## <a name="default_delete"></a><a name="default_delete"></a> default_delete
 
@@ -53,7 +53,7 @@ template <class U>
     default_delete(const default_delete<U>&) noexcept;
 ```
 
-## <a name="operator"></a><a name="op_paren"></a> оператор ()
+## <a name="operator"></a><a name="op_paren"></a> operator()
 
 Ссылочный оператор для доступа `default_delete` .
 

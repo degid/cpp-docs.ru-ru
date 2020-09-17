@@ -49,7 +49,7 @@ void _aligned_free_dbg(
 *memblock*<br/>
 Указатель на блок памяти, возвращенный функции [_aligned_malloc](aligned-malloc.md) или [_aligned_offset_malloc](aligned-offset-malloc.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_aligned_free_dbg** является отладочной версией функции [_aligned_free](aligned-free.md) . Если [_DEBUG](../../c-runtime-library/debug.md) не определен, каждый вызов **_aligned_free_dbg** сокращается до вызова `_aligned_free`. И `_aligned_free`, и **_aligned_free_dbg** освобождают блок памяти в базовой куче, но **_aligned_free_dbg** поддерживает функцию отладки: возможность сохранения освобожденных блоков в связанном списке кучи для имитации нехватки памяти.
 

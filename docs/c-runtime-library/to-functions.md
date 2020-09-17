@@ -38,7 +38,7 @@ ms.locfileid: "88836082"
 [ToLower, _tolower, товловер](../c-runtime-library/reference/tolower-tolower-towlower-tolower-l-towlower-l.md)\
 [toupper, _toupper, towupper](../c-runtime-library/reference/toupper-toupper-towupper-toupper-l-towupper-l.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **to** и макросы преобразования выглядят следующим образом.
 

@@ -101,7 +101,7 @@ Typedef для типа рабочего элемента, который мож
 typedef MyRequestType RequestType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип должен использоваться в `WorkerArchetype::Execute` качестве первого параметра и должен быть способен быть отлиты в и из ULONG_PTR.
 

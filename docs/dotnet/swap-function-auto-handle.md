@@ -63,7 +63,7 @@ s1 = 'string two', s2 = 'string one'
 
 ## <a name="requirements"></a>Требования
 
-**Файл заголовка** \<мсклр \ auto_handle. h >
+**Файл заголовка** \<мсклр \ auto_handle.h >
 
 Мсклр **пространства имен**
 

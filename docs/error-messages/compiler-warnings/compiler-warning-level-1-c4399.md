@@ -17,7 +17,7 @@ ms.locfileid: "80186807"
 
 > "*символ*": символ для каждого процесса не должен помечаться __declspec (dllimport) при компиляции с параметром/clr: pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр компилятора **/clr: pure** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017.
 

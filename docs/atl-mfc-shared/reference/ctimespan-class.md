@@ -1,5 +1,5 @@
 ---
-title: Класс Ктимеспан
+title: Класс CTimeSpan
 ms.date: 10/18/2018
 f1_keywords:
 - CTimeSpan
@@ -30,7 +30,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 08/25/2020
 ms.locfileid: "88832026"
 ---
-# <a name="ctimespan-class"></a>Класс Ктимеспан
+# <a name="ctimespan-class"></a>Класс CTimeSpan
 
 Количество времени, которое внутренне хранится как количество секунд в интервале времени.
 
@@ -44,24 +44,24 @@ class CTimeSpan
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[Ктимеспан:: Ктимеспан](#ctimespan)|Конструирует `CTimeSpan` объекты различными способами.|
+|[CTimeSpan:: CTimeSpan](#ctimespan)|Конструирует `CTimeSpan` объекты различными способами.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
-|[Ктимеспан:: Format](#format)|Преобразует `CTimeSpan` в отформатированную строку.|
-|[Ктимеспан:: @ Days](#getdays)|Возвращает значение, представляющее количество полных дней в этом `CTimeSpan` .|
-|[Ктимеспан:: ч](#gethours)|Возвращает значение, представляющее число часов в текущем дне (от-23 до 23).|
-|[Ктимеспан:: полчаса](#getminutes)|Возвращает значение, представляющее количество минут в текущем часе (от-59 до 59).|
-|[Ктимеспан:: в секунду](#getseconds)|Возвращает значение, представляющее количество секунд в текущей минуте (от-59 до 59).|
-|[Ктимеспан:: TimeSpan](#gettimespan)|Возвращает значение `CTimeSpan` объекта.|
-|[Ктимеспан:: Жеттоталхаурс](#gettotalhours)|Возвращает значение, представляющее общее количество полных часов в этом `CTimeSpan` .|
-|[Ктимеспан:: Жеттоталминутес](#gettotalminutes)|Возвращает значение, представляющее общее количество полных минут в этом `CTimeSpan` .|
-|[Ктимеспан:: Жеттоталсекондс](#gettotalseconds)|Возвращает значение, представляющее общее число полных секунд в этом `CTimeSpan` .|
-|[Ктимеспан:: Serialize64](#serialize64)|Сериализует данные в архив или из него.|
+|[CTimeSpan::Format](#format)|Преобразует `CTimeSpan` в отформатированную строку.|
+|[CTimeSpan:: @ Days](#getdays)|Возвращает значение, представляющее количество полных дней в этом `CTimeSpan` .|
+|[CTimeSpan:: ч](#gethours)|Возвращает значение, представляющее число часов в текущем дне (от-23 до 23).|
+|[CTimeSpan:: полчаса](#getminutes)|Возвращает значение, представляющее количество минут в текущем часе (от-59 до 59).|
+|[CTimeSpan:: в секунду](#getseconds)|Возвращает значение, представляющее количество секунд в текущей минуте (от-59 до 59).|
+|[CTimeSpan:: TimeSpan](#gettimespan)|Возвращает значение `CTimeSpan` объекта.|
+|[CTimeSpan:: Жеттоталхаурс](#gettotalhours)|Возвращает значение, представляющее общее количество полных часов в этом `CTimeSpan` .|
+|[CTimeSpan:: Жеттоталминутес](#gettotalminutes)|Возвращает значение, представляющее общее количество полных минут в этом `CTimeSpan` .|
+|[CTimeSpan:: Жеттоталсекондс](#gettotalseconds)|Возвращает значение, представляющее общее число полных секунд в этом `CTimeSpan` .|
+|[CTimeSpan:: Serialize64](#serialize64)|Сериализует данные в архив или из него.|
 
 ### <a name="operators"></a>Операторы
 
@@ -71,7 +71,7 @@ class CTimeSpan
 |[operator + =-=](#operator_add_eq_-_eq)|Добавляет и вычитает `CTimeSpan` объект из этого объекта `CTimeSpan` .|
 |[operator = = < и т. д.](#ctimespan_comparison_operators)|Сравнивает два значения относительного времени.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CTimeSpan` не имеет базового класса.
 
@@ -87,9 +87,9 @@ class CTimeSpan
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлтиме. h
+**Заголовок:** атлтиме.h
 
-## <a name="ctimespan-comparison-operators"></a><a name="ctimespan_comparison_operators"></a> Операторы сравнения Ктимеспан
+## <a name="ctimespan-comparison-operators"></a><a name="ctimespan_comparison_operators"></a> Операторы сравнения CTimeSpan
 
 Операторы сравнения.
 
@@ -115,7 +115,7 @@ bool operator>=(CTimeSpan span) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#169](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_1.cpp)]
 
-## <a name="ctimespanctimespan"></a><a name="ctimespan"></a> Ктимеспан:: Ктимеспан
+## <a name="ctimespanctimespan"></a><a name="ctimespan"></a> CTimeSpan:: CTimeSpan
 
 Конструирует `CTimeSpan` объекты различными способами.
 
@@ -141,7 +141,7 @@ CTimeSpan(
 *лдайс*, *нхаурс*, *нминс*, *нсекс*<br/>
 Дни, часы, минуты и секунды соответственно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все эти конструкторы создают новый `CTimeSpan` объект, инициализируемый с указанным относительное время. Каждый конструктор описан ниже.
 
@@ -166,7 +166,7 @@ CTimeSpan(
 
 [!code-cpp[NVC_ATLMFC_Utilities#162](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_2.cpp)]
 
-## <a name="ctimespanformat"></a><a name="format"></a> Ктимеспан:: Format
+## <a name="ctimespanformat"></a><a name="format"></a> CTimeSpan::Format
 
 Формирует отформатированную строку, соответствующую этому `CTimeSpan` .
 
@@ -198,7 +198,7 @@ CString Format(UINT nID) const;
 
 `CString`Объект, содержащий отформатированное время.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отладочная версия библиотеки проверяет коды форматирования и утверждает, если код отсутствует в списке выше.
 
@@ -206,7 +206,7 @@ CString Format(UINT nID) const;
 
 [!code-cpp[NVC_ATLMFC_Utilities#163](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_3.cpp)]
 
-## <a name="ctimespangetdays"></a><a name="getdays"></a> Ктимеспан:: @ Days
+## <a name="ctimespangetdays"></a><a name="getdays"></a> CTimeSpan:: @ Days
 
 Возвращает значение, представляющее количество полных дней в этом `CTimeSpan` .
 
@@ -218,7 +218,7 @@ LONGLONG GetDays() const throw();
 
 Возвращает число полных 24-часовых дней в интервале времени. Это значение может быть отрицательным, если временной диапазон является отрицательным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что переход на летнее время может привести `GetDays` к возврату потенциально неудивительного результата. Например, если действует ЛЕТНее время, `GetDays` выводится число дней между 1 апреля и 1 мая как 29, а не 30, поскольку один день в апреле сокращается на час и поэтому не считается полным днем.
 
@@ -226,7 +226,7 @@ LONGLONG GetDays() const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#164](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_4.cpp)]
 
-## <a name="ctimespangethours"></a><a name="gethours"></a> Ктимеспан:: ч
+## <a name="ctimespangethours"></a><a name="gethours"></a> CTimeSpan:: ч
 
 Возвращает значение, представляющее число часов в текущем дне (от-23 до 23).
 
@@ -242,7 +242,7 @@ LONG GetHours() const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#165](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_5.cpp)]
 
-## <a name="ctimespangetminutes"></a><a name="getminutes"></a> Ктимеспан:: полчаса
+## <a name="ctimespangetminutes"></a><a name="getminutes"></a> CTimeSpan:: полчаса
 
 Возвращает значение, представляющее количество минут в текущем часе (от-59 до 59).
 
@@ -258,7 +258,7 @@ LONG GetMinutes() const throw();
 
 См. пример для [работы с часами](#gethours).
 
-## <a name="ctimespangetseconds"></a><a name="getseconds"></a> Ктимеспан:: в секунду
+## <a name="ctimespangetseconds"></a><a name="getseconds"></a> CTimeSpan:: в секунду
 
 Возвращает значение, представляющее количество секунд в текущей минуте (от-59 до 59).
 
@@ -274,7 +274,7 @@ LONG GetSeconds() const throw();
 
 См. пример для [работы с часами](#gethours).
 
-## <a name="ctimespangettimespan"></a><a name="gettimespan"></a> Ктимеспан:: TimeSpan
+## <a name="ctimespangettimespan"></a><a name="gettimespan"></a> CTimeSpan:: TimeSpan
 
 Возвращает значение `CTimeSpan` объекта.
 
@@ -286,7 +286,7 @@ __ time64_t GetTimeSpan() const throw();
 
 Возвращает текущее значение `CTimeSpan` объекта.
 
-## <a name="ctimespangettotalhours"></a><a name="gettotalhours"></a> Ктимеспан:: Жеттоталхаурс
+## <a name="ctimespangettotalhours"></a><a name="gettotalhours"></a> CTimeSpan:: Жеттоталхаурс
 
 Возвращает значение, представляющее общее количество полных часов в этом `CTimeSpan` .
 
@@ -302,7 +302,7 @@ LONGLONG GetTotalHours() const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#166](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_6.cpp)]
 
-## <a name="ctimespangettotalminutes"></a><a name="gettotalminutes"></a> Ктимеспан:: Жеттоталминутес
+## <a name="ctimespangettotalminutes"></a><a name="gettotalminutes"></a> CTimeSpan:: Жеттоталминутес
 
 Возвращает значение, представляющее общее количество полных минут в этом `CTimeSpan` .
 
@@ -318,7 +318,7 @@ LONGLONG GetTotalMinutes() const throw();
 
 См. пример для [жеттоталхаурс](#gettotalhours).
 
-## <a name="ctimespangettotalseconds"></a><a name="gettotalseconds"></a> Ктимеспан:: Жеттоталсекондс
+## <a name="ctimespangettotalseconds"></a><a name="gettotalseconds"></a> CTimeSpan:: Жеттоталсекондс
 
 Возвращает значение, представляющее общее число полных секунд в этом `CTimeSpan` .
 
@@ -334,7 +334,7 @@ LONGLONG GetTotalSeconds() const throw();
 
 См. пример для [жеттоталхаурс](#gettotalhours).
 
-## <a name="ctimespanoperator---"></a><a name="operator_add_-"></a> Ктимеспан:: operator +,-
+## <a name="ctimespanoperator---"></a><a name="operator_add_-"></a> CTimeSpan::operator+,-
 
 Добавляет и вычитает `CTimeSpan` объекты.
 
@@ -352,7 +352,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 `CTimeSpan`Объект, представляющий результат операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти два оператора позволяют добавлять и вычитать `CTimeSpan` объекты друг за другом.
 
@@ -360,7 +360,7 @@ CTimeSpan operator-(CTimeSpan span) const throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#167](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_7.cpp)]
 
-## <a name="ctimespanoperator---"></a><a name="operator_add_eq_-_eq"></a> Ктимеспан:: operator + =,-=
+## <a name="ctimespanoperator---"></a><a name="operator_add_eq_-_eq"></a> CTimeSpan::operator+=,-=
 
 Добавляет и вычитает `CTimeSpan` объект из этого объекта `CTimeSpan` .
 
@@ -378,7 +378,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 Обновленный `CTimeSpan` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти операторы позволяют добавлять и вычитать `CTimeSpan` объект из этого объекта `CTimeSpan` .
 
@@ -386,7 +386,7 @@ CTimeSpan& operator-=(CTimeSpan span) throw();
 
 [!code-cpp[NVC_ATLMFC_Utilities#168](../../atl-mfc-shared/codesnippet/cpp/ctimespan-class_8.cpp)]
 
-## <a name="ctimespanserialize64"></a><a name="serialize64"></a> Ктимеспан:: Serialize64
+## <a name="ctimespanserialize64"></a><a name="serialize64"></a> CTimeSpan:: Serialize64
 
 > [!NOTE]
 > Этот метод доступен только в проектах MFC.

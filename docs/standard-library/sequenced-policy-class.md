@@ -20,6 +20,6 @@ ms.locfileid: "79444916"
 class execution::sequenced_policy;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При выполнении параллельного алгоритма с политикой `execution::sequenced_policy`, если вызов функции доступа к элементу завершается с помощью неперехваченного исключения, вызываемый `terminate()` должен быть вызван.

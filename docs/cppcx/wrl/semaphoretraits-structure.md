@@ -61,6 +61,6 @@ inline static void Unlock(
 *H*<br/>
 Обработка `Semaphore` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если операция разблокировки `Unlock()` не выполнена, испускают ошибку, указывают причину сбоя.

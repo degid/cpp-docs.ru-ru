@@ -43,7 +43,7 @@ wchar_t** ___lc_locale_name_func(void);
 
 Указатель на строку, которая содержит имя текущего языкового стандарта потока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `___lc_locale_name_func` — это внутренняя функция CRT, которая используется другими функциями CRT для получения текущего языкового стандарта из локального хранилища потока для данных CRT. Эти сведения можно также получить с помощью функции [_get_current_locale](../c-runtime-library/reference/get-current-locale.md) или функций [setlocale, _wsetlocale](../c-runtime-library/reference/setlocale-wsetlocale.md).
 

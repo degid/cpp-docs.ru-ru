@@ -39,9 +39,9 @@ class CAtlFileMapping : public CAtlFileMappingBase
 
 |Имя|Описание|
 |----------|-----------------|
-|[Катлфилемаппинг:: operator T *](#operator_t_star)|Разрешает неявное `CAtlFileMapping` преобразование объектов `T*`в.|
+|[Катлфилемаппинг::operator T *](#operator_t_star)|Разрешает неявное `CAtlFileMapping` преобразование объектов `T*`в.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс добавляет один оператор приведения, чтобы разрешить неявное `CAtlFileMapping` преобразование `T*`объектов в. Другие члены предоставляются базовым классом [катлфилемаппингбасе](../../atl/reference/catlfilemappingbase-class.md).
 
@@ -53,9 +53,9 @@ class CAtlFileMapping : public CAtlFileMappingBase
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлфиле. h
+**Заголовок:** атлфиле.h
 
-## <a name="catlfilemappingoperator-t"></a><a name="operator_t_star"></a>Катлфилемаппинг:: operator T *
+## <a name="catlfilemappingoperator-t"></a><a name="operator_t_star"></a>Катлфилемаппинг::operator T *
 
 Разрешает неявное `CAtlFileMapping` преобразование объектов `T*`в.
 
@@ -67,7 +67,7 @@ operator T*() const throw();
 
 Возвращает `T*` указатель на начало размещенного в памяти файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает метод [катлфилемаппингбасе:: GetData](../../atl/reference/catlfilemappingbase-class.md#getdata) и повторно интерпретирует возвращенный указатель как, `T*` где *T* — это тип, используемый в качестве параметра шаблона этого класса.
 

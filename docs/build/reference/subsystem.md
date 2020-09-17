@@ -25,7 +25,7 @@ ms.locfileid: "79438860"
         NATIVE|POSIX|WINDOWS|WINDOWSCE}[,major[.minor]]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот параметр изменяет образ, чтобы указать, какую подсистему необходимо использовать операционной системе для исполнения.
 

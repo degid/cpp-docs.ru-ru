@@ -23,7 +23,7 @@ ms.locfileid: "88839807"
 [readonly]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **readonly** языка C++ имеет ту же функциональность, что и атрибут [readonly](/windows/win32/Midl/readonly) языка MIDL.
 

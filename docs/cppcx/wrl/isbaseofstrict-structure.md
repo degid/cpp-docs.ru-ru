@@ -38,7 +38,7 @@ struct IsBaseOfStrict<Base, Base>;
 *Производный*<br/>
 Производный тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Проверяет, является ли один тип базовым для другого.
 
@@ -58,7 +58,7 @@ struct IsBaseOfStrict<Base, Base>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
@@ -70,7 +70,7 @@ struct IsBaseOfStrict<Base, Base>;
 static const bool value = __is_base_of(Base, Derived);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает, является ли один тип базовым для другого.
 

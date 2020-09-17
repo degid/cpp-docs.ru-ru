@@ -75,7 +75,7 @@ class IRowsetNotifyCP :
 |[Fire_OnRowChange](#onrowchange)|Уведомляет потребителя об изменении, влияющем на строки.|
 |[Fire_OnRowsetChange](#onrowsetchange)|Уведомляет потребителя об изменении, влияющем на весь набор строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IRowsetNotifyCP` реализует широковещательные функции для уведомления прослушивателей точки подключения об `IID_IRowsetNotify` изменениях содержимого набора строк.
 

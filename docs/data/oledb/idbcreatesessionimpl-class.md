@@ -51,7 +51,7 @@ class ATL_NO_VTABLE IDBCreateSessionImpl
 |-|-|
 |[CreateSession](#createsession)|Создает новый сеанс из объекта источника данных и возвращает запрошенный интерфейс во вновь созданном сеансе.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обязательный интерфейс для объектов источника данных.
 

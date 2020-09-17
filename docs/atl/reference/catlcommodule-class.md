@@ -47,7 +47,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 |[Катлкоммодуле:: Унрегистерсервер](#unregisterserver)|Вызовите этот метод, чтобы отменить регистрацию каждого объекта в сопоставлении объектов.|
 |[Катлкоммодуле:: Унрегистертипелиб](#unregistertypelib)|Вызовите этот метод, чтобы отменить регистрацию библиотеки типов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlComModule`реализует модуль COM-сервера, позволяющий клиенту обращаться к компонентам модуля.
 
@@ -61,7 +61,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlcommodulecatlcommodule"></a><a name="catlcommodule"></a>Катлкоммодуле:: Катлкоммодуле
 
@@ -71,7 +71,7 @@ class CAtlComModule : public _ATL_COM_MODULE
 CAtlComModule() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует модуль.
 
@@ -83,7 +83,7 @@ CAtlComModule() throw();
 ~CAtlComModule();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все фабрики классов.
 
@@ -107,7 +107,7 @@ HRESULT RegisterServer(BOOL bRegTypeLib = FALSE, const CLSID* pCLSID = NULL);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает глобальную функцию [атлкоммодулерегистерсервер](server-registration-global-functions.md#atlcommoduleregisterserver).
 
@@ -129,7 +129,7 @@ HRESULT RegisterTypeLib();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавляет сведения о библиотеке типов в системный реестр. Если экземпляр модуля содержит несколько библиотек типов, используйте первую версию этого метода, чтобы указать, какую библиотеку типов следует использовать.
 
@@ -155,7 +155,7 @@ HRESULT UnregisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает глобальную функцию [атлкоммодулеунрегистерсервер](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
@@ -173,7 +173,7 @@ HRESULT UnRegisterTypeLib();
 *лпсзиндекс*<br/>
 Строка в формате "\\\n", где N — это целочисленный индекс ресурса TypeLib.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет сведения о библиотеке типов из системного реестра. Если экземпляр модуля содержит несколько библиотек типов, используйте первую версию этого метода, чтобы указать, какую библиотеку типов следует использовать.
 

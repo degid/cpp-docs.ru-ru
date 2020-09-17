@@ -85,7 +85,7 @@ name                         | Описание
 
 Имя                                   | Описание
 -------------------------------------- | ----------------------------------------------------------------------------------
-[Handle:: operator =](#operator-assign) | Перемещает значение указанного `HandleT` объекта в текущий `HandleT` объект.
+[Handle::operator=](#operator-assign) | Перемещает значение указанного `HandleT` объекта в текущий `HandleT` объект.
 
 ### <a name="protected-data-members"></a>Защищенные члены данных
 
@@ -99,7 +99,7 @@ name                         | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Программы Microsoft:: WRL:: оболочки
 
@@ -134,7 +134,7 @@ void Attach(
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер, лежащий в данный момент, `HandleT` закрыт, а `HandleT` для задается недопустимое состояние.
 
@@ -152,7 +152,7 @@ typename HandleTraits::Type Detach();
 
 Базовый маркер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По завершении этой операции текущим `HandleT` задается недопустимое состояние.
 
@@ -196,7 +196,7 @@ HandleT(
 *h*<br/>
 Дескриптор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует `HandleT` объект, который не является допустимым маркером объекта. Второй конструктор создает новый `HandleT` объект на основе параметра *h*.
 
@@ -212,7 +212,7 @@ virtual bool InternalClose();
 
 **`true`**`HandleT`значение, если текущий закрытый успешно завершен; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `InternalClose()`имеет **`protected`** .
 
@@ -228,7 +228,7 @@ bool IsValid() const;
 
 **`true`** значение, если объект `HandleT` представляет обработчик; в противном случае — **`false`** .
 
-## <a name="handletoperator"></a><a name="operator-assign"></a>Handle:: operator =
+## <a name="handletoperator"></a><a name="operator-assign"></a>Handle::operator=
 
 Перемещает значение указанного `HandleT` объекта в текущий `HandleT` объект.
 
@@ -247,6 +247,6 @@ HandleT& operator=(
 
 Ссылка на текущий `HandleT` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта операция делает недействительным `HandleT` объект, указанный параметром *h*.

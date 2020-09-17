@@ -95,7 +95,7 @@ class CCmdTarget : public CObject
 |[CCmdTarget::OnFinalRelease](#onfinalrelease)|Очищает сятку после выхода последней ссылки OLE.|
 |[CCmdTarget:ВосстановлениеWaitCursor](#restorewaitcursor)|Восстанавливает курсор песочных часов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Маршруты карты сообщений — команды или сообщения к функциям-членам, которые вы пишете для их обработки. (Команда — это сообщение из элемента меню, кнопки команды или ключа акселератора.)
 
@@ -125,7 +125,7 @@ class CCmdTarget : public CObject
 void BeginWaitCursor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает эту функцию, чтобы показать пользователю, `CDocument` что он занят, например, когда объект загружается или сохраняет себя в файле.
 
@@ -175,7 +175,7 @@ BOOL DoOleVerb(
 
 ПРАВДА в случае успеха, в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена в основном является реализацией [IOleObject: :DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb). Возможные действия перечисляются [CCmdTarget::EnumOleVerbs](#enumoleverbs).
 
@@ -187,7 +187,7 @@ BOOL DoOleVerb(
 void EnableAutomation();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обычно вызывается от конструктора объекта и должна вызываться только в том случае, если для класса была объявлена диспетчерская карта. Для получения дополнительной информации об автоматизации смотрите статьи [Автоматизация Клиентов](../../mfc/automation-clients.md) и [Автоматизация серверов](../../mfc/automation-servers.md).
 
@@ -199,7 +199,7 @@ void EnableAutomation();
 void EnableConnections();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы включить точки соединения, позвоните в эту функцию члена в конструкторе вашего производного класса.
 
@@ -211,7 +211,7 @@ void EnableConnections();
 void EnableTypeLib();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию участника `CCmdTarget`в конструктор объекта, полученного из вашего объекта, если она предоставляет информацию о типе.
 
@@ -223,7 +223,7 @@ void EnableTypeLib();
 void EndWaitCursor();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа также вызывает эту функцию члена после того, как она назвала курсор песочных часов.
 
@@ -248,7 +248,7 @@ BOOL EnumOleVerbs(LPENUMOLEVERB* ppenumOleVerb);
 
 ПРАВДА, если объект поддерживает по крайней \* мере один глагол OLE `IEnumOLEVERB` (в этом случае *ppenumOleVerb* указывает на интерфейс перечисления), в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена в основном является реализацией [IOleObject::EnumVerbs](/windows/win32/api/oleidl/nf-oleidl-ioleobject-enumverbs).
 
@@ -269,7 +269,7 @@ static CCmdTarget* PASCAL FromIDispatch(LPDISPATCH lpDispatch);
 
 Указатель на `CCmdTarget` объект, связанный с *lpDispatch.* Эта функция возвращает `IDispatch` NULL, если объект не `IDispatch` признан объектом класса Microsoft Foundation.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Результатом этой функции является обратный вызов функции `GetIDispatch`участника.
 
@@ -290,7 +290,7 @@ virtual BOOL GetDispatchIID(IID* pIID);
 
 ПРАВДА в случае успеха, в противном случае FALSE. В случае \* *успеха, pIID* устанавливается на основной идентификатор интерфейса диспетчеризации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выведенные классы должны переопределить эту функцию `GetDispatchIID` члена (если не переопределить, возвращает FALSE). Смотрите [COleControl](../../mfc/reference/colecontrol-class.md).
 
@@ -311,7 +311,7 @@ LPDISPATCH GetIDispatch(BOOL bAddRef);
 
 Указатель, `IDispatch` связанный с объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для объектов, которые вызывают `EnableAutomation` в своих конструкторов, что делает их автоматизации `IDispatch` включен, эта функция возвращает `IDispatch` указатель на осуществление класса Фонда, который используется клиентами, которые общаются через интерфейс. Вызов этой функции автоматически добавляет ссылку на указатель, поэтому не нужно звонить в [IUnknown::AddRef](/windows/win32/api/unknwn/nf-unknwn-iunknown-addref).
 
@@ -327,7 +327,7 @@ virtual UINT GetTypeInfoCount();
 
 Количество типовых информационных интерфейсов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция участника в основном реализует [IDispatch::GetTypeInfoCount](/windows/win32/api/oaidl/nf-oaidl-idispatch-gettypeinfocount).
 
@@ -381,7 +381,7 @@ virtual HRESULT GetTypeLib(
 
 HRESULT, указывающий на успех или неудачу вызова. В случае \* успеха *ppTypeLib* указывает на интерфейс библиотеки типов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученные классы должны переопределить эту функцию `GetTypeLib` члена (если не переопределить, возвращает TYPE_E_CANTLOADLIBRARY). Используйте [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) макрос, `GetTypeInfoCount` который `GetTypeLibCache`также реализует и .
 
@@ -397,7 +397,7 @@ virtual CTypeLibCache* GetTypeLibCache();
 
 Указатель на объект `CTypeLibCache`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выведенные классы должны переопределить эту функцию `GetTypeLibCache` члена (если не переопределить, возвращает NULL). Используйте [IMPLEMENT_OLETYPELIB](../../mfc/reference/type-library-access.md#implement_oletypelib) макрос, `GetTypeInfoCount` который `GetTypeLib`также реализует и .
 
@@ -418,7 +418,7 @@ virtual BOOL IsInvokeAllowed(DISPID dispid);
 
 ПРАВДА, если метод может быть вызван, в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `IsInvokeAllowed` возвращается `Invoke` TRUE, переходит к вызову метода; в `Invoke` противном случае, потерпит неудачу, вернувшись E_UNEXPECTED.
 
@@ -436,7 +436,7 @@ BOOL IsResultExpected();
 
 Nonzero, если функция автоматизации должна вернуть значение; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Интерфейс OLE предоставляет информацию MFC о том, использует ли клиент или игнорирует результат вызова функции, а MFC, в свою очередь, использует эту информацию для определения результата `IsResultExpected`звонка. Если производство значения возврата является временной или ресурсоемкой, можно повысить эффективность, позвонив в эту функцию перед вычислением значения возврата.
 
@@ -474,7 +474,7 @@ virtual BOOL OnCmdMsg(
 
 Nonzero, если сообщение обработано; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это основная процедура реализации архитектуры командных систем.
 
@@ -506,7 +506,7 @@ Nonzero, если сообщение обработано; в противном
 virtual void OnFinalRelease();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы обеспечить специальное обращение для этой ситуации. Реализация по умолчанию удаляет объект.
 

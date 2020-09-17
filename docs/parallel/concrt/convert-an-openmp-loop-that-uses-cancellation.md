@@ -20,7 +20,7 @@ ms.locfileid: "77141826"
 
 ## <a name="example"></a>Пример
 
-В этом примере используются OpenMP и среда выполнения с параллелизмом для реализации параллельной версии алгоритма [std:: any_of](../../standard-library/algorithm-functions.md#any_of) . В версии OpenMP этого примера используется флаг для координации всех итераций параллельных циклов, которые были удовлетворены условием. Версия, использующая среда выполнения с параллелизмом, использует метод [Concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) , чтобы остановить общую операцию при выполнении условия.
+В этом примере используются OpenMP и среда выполнения с параллелизмом для реализации параллельной версии алгоритма [std:: any_of](../../standard-library/algorithm-functions.md#any_of) . В версии OpenMP этого примера используется флаг для координации всех итераций параллельных циклов, которые были удовлетворены условием. Версия, использующая среда выполнения с параллелизмом, использует метод [concurrency::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) , чтобы остановить общую операцию при выполнении условия.
 
 [!code-cpp[concrt-openmp#2](../../parallel/concrt/codesnippet/cpp/convert-an-openmp-loop-that-uses-cancellation_1.cpp)]
 

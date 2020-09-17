@@ -76,7 +76,7 @@ ms.locfileid: "81332056"
 #import "..\drawctl\drawctl.tlb" no_namespace raw_interfaces_only
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ### <a name="search-order-for-filename"></a><a name="_predir_the_23import_directive_searchorderforfilename"></a>Заказ на поиск имени файла
 

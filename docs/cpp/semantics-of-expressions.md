@@ -69,10 +69,10 @@ int main()
 
 |Требуется тип|Допускаются типы|
 |-------------------|-------------------|
-|*type*|**`const`***тип*<br /> **`volatile`***тип*<br /> *type*&<br /> **`const`***тип*&<br /> **`volatile`***тип*&<br /> `volatile const`*тип*<br /> `volatile const`*тип*&|
-|*тип*\*|*тип*\*<br /> **`const`***тип*\*<br /> **`volatile`***тип*\*<br /> `volatile const`*тип*\*|
-|**`const`***тип*|*type*<br /> **`const`***тип*<br />**`const`***тип*&|
-|**`volatile`***тип*|*type*<br /> **`volatile`***тип*<br /> **`volatile`***тип*&|
+|*type*|**`const`***type*<br /> **`volatile`***type*<br /> *type*&<br /> **`const`***type*&<br /> **`volatile`***type*&<br /> `volatile const`*type*<br /> `volatile const`*type*&|
+|*type*\*|*type*\*<br /> **`const`***type*\*<br /> **`volatile`***type*\*<br /> `volatile const`*type*\*|
+|**`const`***type*|*type*<br /> **`const`***type*<br />**`const`***type*&|
+|**`volatile`***type*|*type*<br /> **`volatile`***type*<br /> **`volatile`***type*&|
 
 Поскольку перечисленные выше правила всегда могут сочетаться друг с другом, то в тех операторах, в которых требуется указатель, можно задавать указатель с модификатором const на объект с модификатором volatile.
 

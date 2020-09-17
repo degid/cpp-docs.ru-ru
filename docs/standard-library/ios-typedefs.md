@@ -26,7 +26,7 @@ ms.locfileid: "87212284"
 typedef basic_ios<char, char_traits<char>> ios;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ios](../standard-library/basic-ios-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -42,7 +42,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип — целое число со знаком, описывающее объект, который может хранить смещение в байтах, участвующее в различных операциях размещения потока. Его представление имеет по крайней мере 32 бита значения. Оно не обязательно достаточно велико для представления произвольных позиций внутри потока. Значение `streamoff(-1)` обычно указывает на ошибочное смещение.
 
@@ -54,7 +54,7 @@ typedef basic_ios<char, char_traits<char>> ios;
 typedef fpos<mbstate_t> streampos;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом> [fpos](../standard-library/fpos-class.md) <  `mbstate_t` .
 
@@ -93,7 +93,7 @@ int main( )
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип — целое число со знаком, описывающее объект, который может хранить количество элементов, участвующих в различных операциях размещения потока. Его представление имеет по крайней мере 16 битов значения. Оно не обязательно достаточно велико для представления произвольных позиций внутри потока.
 
@@ -125,7 +125,7 @@ int main( )
 typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_ios](../standard-library/basic-ios-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 
@@ -137,7 +137,7 @@ typedef basic_ios<wchar_t, char_traits<wchar_t>> wios;
 typedef fpos<mbstate_t> wstreampos;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом> [fpos](../standard-library/fpos-class.md) <  `mbstate_t` .
 

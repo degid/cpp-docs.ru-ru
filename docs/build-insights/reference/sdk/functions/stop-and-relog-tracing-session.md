@@ -82,7 +82,7 @@ RESULT_CODE StopAndRelogTracingSession(
 
 Код результата из [RESULT_CODE](../other-types/result-code-enum.md) enum.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вхотовый след проходит через номер группы *анализатораOfAnalysisPasses* раз. Аналогичной опции для перезаписи пропусков нет. След передается корыта relogger группы только один раз, после того, как все анализ проходит завершены.
 

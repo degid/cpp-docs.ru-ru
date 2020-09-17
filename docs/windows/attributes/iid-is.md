@@ -28,7 +28,7 @@ ms.locfileid: "88832221"
 *expression*<br/>
 Выражение языка C, указывающее идентификатор IID COM-интерфейса, на который указывает указатель интерфейса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **iid_is** C++ имеет те же функциональные возможности, что и атрибут [iid_is](/windows/win32/Midl/iid-is) MIDL.
 

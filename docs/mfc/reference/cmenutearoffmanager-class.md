@@ -64,7 +64,7 @@ class CMenuTearOffManager : public CObject
 |[Cmenutearoffmanager::Setinuse](#setinuse)||
 |[CMenuTearOffManager::SetupTearOffMenus](#setuptearoffmenus)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для того, чтобы использовать в приложении отрывные `CMenuTearOffManager` меню, необходимо иметь объект. В большинстве случаев вы не будете `CMenuTearOffManager` создавать или инициализировать объект напрямую. Это обрабатывается для вас, когда вы звоните [cWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus) функции.
 
@@ -98,7 +98,7 @@ void Build(
 
 (в) *strText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagercmenutearoffmanager"></a><a name="cmenutearoffmanager"></a>CMenuTearOffManager::CMenuTearOffManager
 
@@ -108,7 +108,7 @@ void Build(
 CMenuTearOffManager();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В большинстве случаев не `CMenuTearOffManager` следует создавать вручную. Рамки приложения создают `CMenuTearOffManager` объект при вызове [CWinAppEx::EnableTearOffMenus](../../mfc/reference/cwinappex-class.md#enabletearoffmenus).
 
@@ -120,7 +120,7 @@ LPCTSTR GetRegPath() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagerinitialize"></a><a name="initialize"></a>CMenuTearOffManager::Первоначальнизировать
 
@@ -148,7 +148,7 @@ BOOL Initialize(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диапазон идотов меню от *uiTearOffMenuFirst* до *uiTearOffMenuLast* должен быть непрерывным интервалом. Интервал определяет количество отрывных меню, которые могут отображаться в то же время в приложении.
 
@@ -164,7 +164,7 @@ BOOL IsDynamicID(UINT uiID) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagerparse"></a><a name="parse"></a>CMenuTearOffManager::Parse
 
@@ -178,7 +178,7 @@ UINT Parse(CString& str);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagerreset"></a><a name="reset"></a>CMenuTearOffManager::Перезагрузка
 
@@ -190,7 +190,7 @@ void Reset(HMENU hmenu);
 
 (в) *мену*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagersetinuse"></a><a name="setinuse"></a>Cmenutearoffmanager::Setinuse
 
@@ -206,7 +206,7 @@ void SetInUse(
 
 (в) *bUse*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmenutearoffmanagersetuptearoffmenus"></a><a name="setuptearoffmenus"></a>CMenuTearOffManager::SetupTearOffMenus
 
@@ -218,7 +218,7 @@ void SetupTearOffMenus(HMENU hMenu);
 
 (в) *hMenu*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

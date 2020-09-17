@@ -25,28 +25,28 @@ namespace graphics;
 
 ### <a name="namespaces"></a>Пространства имен
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
-|[Concurrency:: Graphics::d пространство имен irect3d](concurrency-graphics-direct3d-namespace.md)|Предоставляет функции для взаимодействия Direct3D.|
+|[concurrency::Graphics::d пространство имен irect3d](concurrency-graphics-direct3d-namespace.md)|Предоставляет функции для взаимодействия Direct3D.|
 
 ### <a name="typedefs"></a>Определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`uint`|Тип элемента для [класса uint_2](uint-2-class.md), класса [uint_3](uint-3-class.md)и [класса uint_4](uint-4-class.md). Определен как `typedef unsigned int uint;`.|
 
 ### <a name="enumerations"></a>Перечисления
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Перечисление address_mode](concurrency-graphics-namespace-enums.md#address_mode).|Указывает режимы адресации, поддерживаемые для выборки текстур.|
 |[Перечисление filter_mode](concurrency-graphics-namespace-enums.md#filter_mode)|Задает режимы фильтрации, поддерживаемые для выборки текстур.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
-|[Класс текстуры](texture-class.md)|Текстура — это статистическое выражение данных для accelerator_view в домене экстента. Это коллекция переменных, по одному для каждого элемента в домене экстента. Каждая переменная содержит значение, соответствующее типу-примитиву C++ (без знака int, int, float, Double) или норме скалярного типа или unorm (определено в Concurrency:: Graphics) или допустимых коротких векторических типов, определенных в Concurrency:: Graphics.|
+|[Класс текстуры](texture-class.md)|Текстура — это статистическое выражение данных для accelerator_view в домене экстента. Это коллекция переменных, по одному для каждого элемента в домене экстента. Каждая переменная содержит значение, соответствующее типу-примитиву C++ (без знака int, int, float, Double) или норме скалярного типа или unorm (определено в concurrency::graphics) или допустимых коротких векторических типов, определенных в concurrency::graphics.|
 |[Класс writeonly_texture_view](writeonly-texture-view-class.md)|Writeonly_texture_view обеспечивает WriteOnly доступ к текстуре.|
 |[Класс double_2](double-2-class.md)|Представляет короткий вектор из двух **`double`** значений.|
 |[Класс double_3](double-3-class.md)|Представляет короткий вектор из 3 **`double`** значений.|
@@ -73,14 +73,14 @@ namespace graphics;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[copy](concurrency-graphics-namespace-functions.md#copy)|Перегружен. Копирует содержимое текстуры источника в целевой буфер узла.|
 |[copy_async](concurrency-graphics-namespace-functions.md#copy_async)|Перегружен. Асинхронно копирует содержимое текстуры источника в целевой буфер узла.|
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
 **Пространство имен** : Concurrency
 

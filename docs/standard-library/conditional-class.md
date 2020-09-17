@@ -39,7 +39,7 @@ using conditional_t = typename conditional<_Test, _T1, _T2>::type;
 *T2*\
 Результат типа, если B — false.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Typedef элемента шаблона `conditional<B, T1, T2>::type` принимает значение *T1* , если *b* принимает значение **`true`** , и при вычислении *b* принимает значение *T2* **`false`** .
 

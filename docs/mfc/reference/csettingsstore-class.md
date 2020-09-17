@@ -59,7 +59,7 @@ class CSettingsStore : public CObject
 |[CSettingsStore::Читать](#read)|Извлекает данные для заданного значения ключа.|
 |[CSettingsStore::Запись](#write)|Записывает значение в реестр под открытым ключом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Член `CreateKey` функции `Open` и очень похожи. Если ключ реестра уже `CreateKey` `Open` существует, и функционирует таким же образом. Однако, если ключ реестра `CreateKey` не существует, `Open` создаст его в то время как вернет значение ошибки.
 
@@ -87,7 +87,7 @@ class CSettingsStore : public CObject
 virtual void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод вызывается из деструктора [класса CSettingsStore.](../../mfc/reference/csettingsstore-class.md)
 
@@ -108,7 +108,7 @@ virtual BOOL CreateKey(LPCTSTR pszPath);
 
 0 в случае успеха; в противном случае ненулевое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CreateKey`использует `m_hKey` в качестве корня запросов реестра. Он ищет *pszPath* как подключьку `m_hKey`. Если ключ не существует, `CreateKey` создает его. В противном случае, он открывает ключ. `CreateKey`затем `m_hKey` устанавливается на созданный или открытый ключ.
 
@@ -130,7 +130,7 @@ CSettingsStore(
 *bReadOnly*<br/>
 (в) Параметр Boolean, который определяет, создается ли `CSettingsStore` объект в режиме только для чтения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bAdmin* установлен на `m_hKey` ИСТИНу, переменная члена установлена на **HKEY_LOCAL_MACHINE**. Если вы *установите bAdmin* на FALSE, `m_hKey` установлен на **HKEY_CURRENT_USER**.
 
@@ -160,7 +160,7 @@ virtual BOOL DeleteKey(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод выйдет `CSettingsStore` из строя, если объект находится в режиме только для чтения.
 
@@ -200,7 +200,7 @@ virtual BOOL Open(LPCTSTR pszPath);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После того, как этот метод `m_hKey` успешно открывает указанный ключ, он устанавливается на рукоятку этого ключа.
 
@@ -321,7 +321,7 @@ virtual BOOL Read(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Read`проверки для *pszKey* как `m_hKey`подключька .
 
@@ -442,7 +442,7 @@ virtual BOOL Write(
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для того, чтобы записать в реестр, при создании объекта [CSettingsStore](../../mfc/reference/csettingsstore-class.md) необходимо установить *bReadТолько* к ненулевому значению. Для получения дополнительной информации см. [CSettingsStore::CSettingsStore](#csettingsstore).
 

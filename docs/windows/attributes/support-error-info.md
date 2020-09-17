@@ -28,7 +28,7 @@ ms.locfileid: "88832182"
 *error_interface*<br/>
 Идентификатор интерфейса, реализующего интерфейс `IErrorInfo` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **support_error_info** языка C++ реализует поддержку для возвращения на клиент подробных контекстных ошибок, обнаруженных для целевого объекта. Чтобы объект поддерживал ошибки, методы `IErrorInfo` интерфейса должны быть реализованы объектом. Дополнительные сведения см. в разделе [Supporting IDispatch and IErrorInfo](../../atl/supporting-idispatch-and-ierrorinfo.md)(Поддержка IDispatch и IErrorInfo).
 

@@ -98,7 +98,7 @@ int _iswdigit_l(
 |**_istdigit**|**isdigit**|[_ismbcdigit](ismbcalnum-functions.md)|**исвдигит**|
 |**_istdigit_l**|**_isdigit_l**|[_ismbcdigit_l](ismbcalnum-functions.md)|**_iswdigit_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

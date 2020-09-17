@@ -29,7 +29,7 @@ ms.locfileid: "87224621"
 class strstream : public iostream
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект сохраняет объект класса `strstreambuf`.
 
@@ -70,7 +70,7 @@ void freeze(bool _Freezeit = true);
 *_Freezeit*\
 Значение типа **`bool`** , указывающее, нужно ли заморозить поток.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член вызывает [rdbuf](#rdbuf)  ->  [Freeze](../standard-library/strstreambuf-class.md#freeze)(_ *фризеит*).
 
@@ -90,7 +90,7 @@ streamsize pcount() const;
 
 Число элементов, записанных в управляемую последовательность.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает [rdbuf](#rdbuf)  ->  [pcount](../standard-library/strstreambuf-class.md#pcount).
 
@@ -110,7 +110,7 @@ strstreambuf *rdbuf() const
 
 Указатель на объект strstreambuf, связанный с потоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена возвращает адрес буфера сохраненного потока типа `pointer` в [strstreambuf](../standard-library/strstreambuf-class.md).
 
@@ -130,7 +130,7 @@ char *str();
 
 Указатель на начало управляемой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает [rdbuf](#rdbuf)  ->  [str](../standard-library/strstreambuf-class.md#str).
 
@@ -152,16 +152,16 @@ strstream(char* ptr,
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Размер буфера.
 
 *_Mode*\
 Режим ввода-вывода буфера. См. раздел [ios_base::openmode](../standard-library/ios-base-class.md#openmode) для получения дополнительной информации.
 
-*указатель*\
+*ptr*\
 Буфер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оба конструктора инициализируют базовый класс путем вызова [streambuf](../standard-library/streambuf-typedefs.md#streambuf)( **SB**), где `sb` — это хранимый объект класса [strstreambuf](../standard-library/strstreambuf-class.md). Первый конструктор также инициализируется `sb` путем вызова [strstreambuf](../standard-library/strstreambuf-class.md#strstreambuf). Второй конструктор инициализирует базовый класс одним из двух способов:
 

@@ -156,7 +156,7 @@ namespace precise_math;
 
 ### <a name="functions"></a>Функции
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[acos](concurrency-precise-math-namespace-functions.md#acos)|Перегружен. Вычисляет арккосинус аргумента|
 |[acosf](concurrency-precise-math-namespace-functions.md#acosf)|Вычисляет арккосинус аргумента|
@@ -292,7 +292,7 @@ namespace precise_math;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_math. h
+**Заголовок:** amp_math.h
 
 **Пространство имен** : Concurrency
 

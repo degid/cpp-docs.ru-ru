@@ -119,13 +119,13 @@ class CReBarCtrl : public CWnd
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CReBarCtrl:: CReBarCtrl](#crebarctrl)|Формирует объект `CReBarCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CReBarCtrl:: Бегиндраг](#begindrag)|Помещает элемент управления главной панели в режим перетаскивания.|
 |[CReBarCtrl:: Create](#create)|Создает элемент управления "Главная панель" и прикрепляет его к `CReBarCtrl` объекту.|
@@ -173,7 +173,7 @@ class CReBarCtrl : public CWnd
 |[CReBarCtrl:: Шовбанд](#showband)|Показывает или скрывает заданную полосу в элементе управления "Главная панель".|
 |[CReBarCtrl:: Сизеторект](#sizetorect)|Подмещает элемент управления "Главная панель" к указанному прямоугольнику.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Приложение, в котором находится элемент управления "Главная панель", назначает дочернее окно, содержащееся в элементе управления "Главная панель", в полосу главной панели. Дочернее окно обычно является еще одним распространенным элементом управления.
 
@@ -267,7 +267,7 @@ virtual BOOL Create(
 
 Ненулевое значение, если объект успешно создан; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создайте элемент управления "Главная панель" в два этапа:
 
@@ -315,7 +315,7 @@ virtual BOOL CreateEx(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте `CreateEx` вместо [CREATE](#create) , чтобы применить расширенные стили Windows, заданные **WS_EX_** в расширенном стиле Windows.
 
@@ -438,7 +438,7 @@ void GetBandMargins(PMARGINS pMargins);
 *пмаргинс*<br/>
 Указатель на структуру [полей](/windows/win32/api/uxtheme/ns-uxtheme-margins), которая будет принимать информацию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена эмулирует функциональность [RB_GETBANDMARGINS](/windows/win32/Controls/rb-getbandmargins) сообщения, как описано в Windows SDK.
 
@@ -500,7 +500,7 @@ BOOL GetColorScheme(COLORSCHEME* lpcs);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `COLORSCHEME`Структура включает цвет выделения кнопки и цвет тени для кнопки.
 
@@ -528,7 +528,7 @@ DWORD GetExtendedStyle() const;
 
 Побитовое сочетание (или) флагов, указывающих на расширенные стили. Возможные флаги: RBS_EX_SPLITTER и RBS_EX_TRANSPARENT. Дополнительные сведения см. в описании параметра *двмаск* метода [CReBarCtrl:: сетекстендедстиле](#setextendedstyle) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [RB_GETEXTENDEDSTYLE](/windows/win32/Controls/rb-dragmove) сообщение, описанное в Windows SDK.
 
@@ -544,7 +544,7 @@ CImageList* GetImageList() const;
 
 Указатель на объект [CImageList](../../mfc/reference/cimagelist-class.md) . Возвращает значение NULL, если для элемента управления не задан список изображений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена использует сведения о размере и маске, хранящиеся в структуре [ребаринфо](/windows/win32/api/commctrl/ns-commctrl-rebarinfo) , как описано в Windows SDK.
 
@@ -560,7 +560,7 @@ CPalette* GetPalette() const;
 
 Указатель на объект [кпалетте](../../mfc/reference/cpalette-class.md) , указывающий текущую палитру элемента управления главной панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что эта функция-член использует `CPalette` объект в качестве возвращаемого значения, а не хпалетте.
 
@@ -655,7 +655,7 @@ CToolTipCtrl* GetToolTips() const;
 
 Указатель на объект [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что реализация MFC `GetToolTips` возвращает указатель на `CToolTipCtrl` , а не на HWND.
 
@@ -732,7 +732,7 @@ void MaximizeBand(UINT uBand);
 *убанд*<br/>
 Отсчитываемый от нуля индекс диапазона, который необходимо развернуть.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализует поведение сообщения Win32 [RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband) с параметром, равным `fIdeal` 0, как описано в Windows SDK.
 
@@ -753,7 +753,7 @@ void MinimizeBand(UINT uBand);
 *убанд*<br/>
 Отсчитываемый от нуля индекс полосы, которая должна быть уменьшена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализует поведение [RB_MINIMIZEBAND](/windows/win32/Controls/rb-minimizeband)сообщения Win32, как описано в Windows SDK.
 
@@ -814,7 +814,7 @@ void RestoreBand(UINT uBand);
 *убанд*<br/>
 Отсчитываемый от нуля индекс диапазона, который необходимо развернуть.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализует поведение сообщения Win32 [RB_MAXIMIZEBAND](/windows/win32/Controls/rb-maximizeband) с параметром, равным `fIdeal` 1, как описано в Windows SDK.
 
@@ -870,7 +870,7 @@ BOOL SetBandWidth(
 
 Значение TRUE, если метод успешно выполнен; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [RB_SETBANDWIDTH](/windows/win32/Controls/rb-setbandwidth) сообщение, описанное в Windows SDK.
 
@@ -924,7 +924,7 @@ COLORREF SetBkColor(COLORREF clr);
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , представляющее предыдущий цвет фона по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о том, когда следует задавать цвет фона, и о том, как задать значение по умолчанию, см. в этом разделе.
 
@@ -941,7 +941,7 @@ void SetColorScheme(const COLORSCHEME* lpcs);
 *LPC*<br/>
 Указатель на структуру [колорсчеме](/windows/win32/api/commctrl/ns-commctrl-colorscheme) , как описано в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `COLORSCHEME`Структура включает как цвет выделения кнопки, так и цвет тени кнопки.
 
@@ -970,7 +970,7 @@ DWORD SetExtendedStyle(
 
 Предыдущий расширенный стиль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [RB_SETEXTENDEDSTYLE](/windows/win32/Controls/rb-setextendedstyle) сообщение, описанное в Windows SDK.
 
@@ -1008,7 +1008,7 @@ CWnd* SetOwner(CWnd* pWnd);
 
 Указатель на объект [CWnd](../../mfc/reference/cwnd-class.md) , который является текущим владельцем элемента управления "Главная панель".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что эта функция члена использует указатели на `CWnd` объекты как для текущего, так и для выбранного владельца элемента управления главной панели, а не для обработки в Windows.
 
@@ -1032,7 +1032,7 @@ CPalette* SetPalette(HPALETTE hPal);
 
 Указатель на объект [кпалетте](../../mfc/reference/cpalette-class.md) , указывающий предыдущую палитру элемента управления главной панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что эта функция-член использует `CPalette` объект в качестве возвращаемого значения, а не хпалетте.
 
@@ -1053,7 +1053,7 @@ COLORREF SetTextColor(COLORREF clr);
 
 Значение [COLORREF](/windows/win32/gdi/colorref) , представляющее предыдущий цвет текста, связанный с `CReBarCtrl` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он предоставляется для поддержки гибкости цвета текста в элементе управления "Главная панель".
 
@@ -1070,7 +1070,7 @@ void SetToolTips(CToolTipCtrl* pToolTip);
 *птултип*<br/>
 Указатель на объект [CToolTipCtrl](../../mfc/reference/ctooltipctrl-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После завершения этого действия `CToolTipCtrl` объект необходимо уничтожить.
 
@@ -1091,7 +1091,7 @@ HRESULT SetWindowTheme(LPCWSTR pszSubAppName);
 
 Возвращаемое значение не используется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена эмулирует функциональность [RB_SETWINDOWTHEME](/windows/win32/Controls/rb-setwindowtheme) сообщения, как описано в Windows SDK.
 
@@ -1134,7 +1134,7 @@ BOOL SizeToRect(CRect& rect);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что эта функция-член использует в `CRect` качестве параметра объект, а не `RECT` структуру.
 

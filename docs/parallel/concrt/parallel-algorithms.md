@@ -15,7 +15,7 @@ ms.locfileid: "87194502"
 
 Библиотека параллельных шаблонов (PPL) предоставляет алгоритмы, выполняющие параллельную работу с коллекциями данных. Эти алгоритмы похожи на те, что предоставляются стандартной библиотекой C++.
 
-Параллельные алгоритмы состоят из существующих функциональных возможностей в среда выполнения с параллелизмом. Например, алгоритм [параллелизма::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) использует объект [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) для выполнения итераций параллельного цикла. `parallel_for`Алгоритмные секции работают оптимальным образом при наличии доступного количества вычислительных ресурсов.
+Параллельные алгоритмы состоят из существующих функциональных возможностей в среда выполнения с параллелизмом. Например, алгоритм [параллелизма::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) использует объект [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) для выполнения итераций параллельного цикла. `parallel_for`Алгоритмные секции работают оптимальным образом при наличии доступного количества вычислительных ресурсов.
 
 ## <a name="sections"></a><a name="top"></a>Священ
 
@@ -179,7 +179,7 @@ ms.locfileid: "87194502"
 
 [!code-cpp[concrt-basic-parallel-reduce#1](../../parallel/concrt/codesnippet/cpp/parallel-algorithms_6.cpp)]
 
-Во многих случаях можно представить себе `parallel_reduce` сокращение использования `parallel_for_each` алгоритма вместе с классом [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) .
+Во многих случаях можно представить себе `parallel_reduce` сокращение использования `parallel_for_each` алгоритма вместе с классом [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) .
 
 ### <a name="example-performing-map-and-reduce-in-parallel"></a><a name="map_reduce_example"></a>Пример. Параллельное выполнение операций Map и reduce
 
@@ -231,7 +231,7 @@ ms.locfileid: "87194502"
 
 ## <a name="parallel-sorting"></a><a name="parallel_sorting"></a>Параллельная сортировка
 
-PPL предоставляет три алгоритма сортировки: [Concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [Concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Они эффективны при наличии набора данных, который выгоднее сортировать параллельно. В частности, параллельная сортировка эффективна при наличии большого набора данных и использовании операций сравнения, потребляющих много вычислительных ресурсов. Каждый из этих алгоритмов сортирует элементы на месте.
+PPL предоставляет три алгоритма сортировки: [concurrency::p arallel_sort](reference/concurrency-namespace-functions.md#parallel_sort), [concurrency::p arallel_buffered_sort](reference/concurrency-namespace-functions.md#parallel_buffered_sort)и [concurrency::p arallel_radixsort](reference/concurrency-namespace-functions.md#parallel_radixsort). Они эффективны при наличии набора данных, который выгоднее сортировать параллельно. В частности, параллельная сортировка эффективна при наличии большого набора данных и использовании операций сравнения, потребляющих много вычислительных ресурсов. Каждый из этих алгоритмов сортирует элементы на месте.
 
 Алгоритмы `parallel_sort` и `parallel_buffered_sort` основаны на сравнениях. То есть они сравнивают элементы по значению. Алгоритм `parallel_sort` не требует дополнительной памяти и подходит для сортировки в общем случае. `parallel_buffered_sort`Алгоритм может выполняться лучше, чем `parallel_sort` , но он требует O (N) пространства.
 

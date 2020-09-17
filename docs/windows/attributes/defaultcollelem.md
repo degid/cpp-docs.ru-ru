@@ -23,7 +23,7 @@ ms.locfileid: "88842368"
 [defaultcollelem]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **дефаултколлелем** C++ имеет те же функциональные возможности, что и атрибут [дефаултколлелем](/windows/win32/Midl/defaultcollelem) MIDL.
 

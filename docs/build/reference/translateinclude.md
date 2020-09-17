@@ -22,7 +22,7 @@ ms.locfileid: "90079163"
 
 > **`/translateInclude`**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для **`/translateInclude`** параметра компилятора требуется включить поддержку экспериментальных модулей с помощью [`/experimental:module`](experimental-module.md) параметра компилятора, а также параметр [/std: c + + Latest](std-specify-language-standard-version.md) . Этот параметр доступен начиная с Visual Studio 2019 версии 16,8.
 

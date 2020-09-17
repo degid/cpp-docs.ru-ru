@@ -33,7 +33,7 @@ class CMFCWindowsManagerDialog : public CDialog
 |----------|-----------------|
 |[CMFCWindowsManagerДиалог::CMFCWindowsManagerDialog](#cmfcwindowsmanagerdialog)|Формирует объект `CMFCWindowsManagerDialog`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В `CMFCWindowsManagerDialog` приложении содержится список детских окон MDI, которые в настоящее время открыты в приложении. Пользователь может вручную управлять состоянием детских окон MDI, используя этот диалоговый ящик.
 
@@ -79,7 +79,7 @@ CMFCWindowsManagerDialog(
 *bHelpButton*<br/>
 (в) Параметр Boolean, который определяет, отображает ли фреймворк кнопку **справки.**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о визуальных менеджеров, [см.](../../mfc/visualization-manager.md)
 

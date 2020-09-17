@@ -45,7 +45,7 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 *baseClass*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В файле реализации (. cpp), который определяет функции-члены для класса, запустите карту приемников событий с помощью макроса BEGIN_EVENTSINK_MAP, добавьте записи макросов для каждого события, которое должно получать уведомления, и завершите карту приемника событий с помощью макроса END_EVENTSINK_MAP.
 
@@ -53,7 +53,7 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="declare_eventsink_map"></a><a name="declare_eventsink_map"></a> DECLARE_EVENTSINK_MAP
 
@@ -63,7 +63,7 @@ BEGIN_EVENTSINK_MAP(theClass, baseClass)
 DECLARE_EVENTSINK_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте макрос DECLARE_EVENTSINK_MAP в конце объявления класса. Затем в. CPP, определяющий функции элементов для класса, использование макроса BEGIN_EVENTSINK_MAP, записей макросов для каждого события, о котором будет уведомлено, и макроса END_EVENTSINK_MAP для объявления конца списка приемников событий.
 
@@ -71,7 +71,7 @@ DECLARE_EVENTSINK_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="end_eventsink_map"></a><a name="end_eventsink_map"></a> END_EVENTSINK_MAP
 
@@ -83,7 +83,7 @@ END_EVENTSINK_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="on_event"></a><a name="on_event"></a> ON_EVENT
 
@@ -110,7 +110,7 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
 *втспарамс*<br/>
 Последовательность **VTS_** констант, указывающих типы параметров для события. Это те же константы, которые используются в записях карт диспетчеризации, таких как DISP_FUNCTION.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *втспарамс* представляет собой разделенный пробелами список значений из констант **VTS_** . Одно или несколько из этих значений, разделенных пробелами (а не запятыми), задает список параметров функции. Пример:
 
@@ -122,7 +122,7 @@ ON_EVENT(theClass, id, dispid, pfnHandler,  vtsParams)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="on_event_range"></a><a name="on_event_range"></a> ON_EVENT_RANGE
 
@@ -152,7 +152,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 *втспарамс*<br/>
 Последовательность **VTS_** констант, указывающих типы параметров для события. Первая константа должна иметь тип VTS_I4 для идентификатора элемента управления. Это те же константы, которые используются в записях карт диспетчеризации, таких как DISP_FUNCTION.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *втспарамс* представляет собой разделенный пробелами список значений из констант **VTS_** . Одно или несколько из этих значений, разделенных пробелами (а не запятыми), задает список параметров функции. Пример:
 
@@ -174,7 +174,7 @@ ON_EVENT_RANGE(theClass, idFirst, idLast, dispid, pfnHandler,  vtsParams)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="on_event_reflect"></a><a name="on_event_reflect"></a> ON_EVENT_REFLECT
 
@@ -198,7 +198,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
 *втспарамс*<br/>
 Последовательность **VTS_** констант, указывающих типы параметров для события. Это те же константы, которые используются в записях карт диспетчеризации, таких как DISP_FUNCTION.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *втспарамс* представляет собой разделенный пробелами список значений из констант **VTS_** .
 
@@ -212,7 +212,7 @@ ON_EVENT_REFLECT(theClass,  dispid, pfnHandler,  vtsParams)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="on_propnotify"></a><a name="on_propnotify"></a> ON_PROPNOTIFY
 
@@ -239,7 +239,7 @@ ON_PROPNOTIFY(theClass, id, dispid, pfnRequest, pfnChanged)
 *пфнчанжед*<br/>
 Указатель на функцию-член, которая обрабатывает `OnChanged` уведомление для этого свойства. Функция должна иметь тип возвращаемого значения BOOL и параметр UINT. Функция должна возвращать значение TRUE, чтобы указать, что уведомление было обработано; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *втспарамс* представляет собой разделенный пробелами список значений из констант **VTS_** . Одно или несколько из этих значений, разделенных пробелами (а не запятыми), задает список параметров функции. Пример:
 
@@ -280,7 +280,7 @@ ON_PROPNOTIFY_RANGE(theClass, idFirst, idLast, dispid, pfnRequest, pfnChanged)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="on_propnotify_reflect"></a><a name="on_propnotify_reflect"></a> ON_PROPNOTIFY_REFLECT
 
@@ -307,7 +307,7 @@ ON_PROPNOTIFY_REFLECT(theClass, dispid, pfnRequest, pfnChanged)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -42,7 +42,7 @@ class CGlobalHeap : public IAtlMemMgr
 |[CGlobal Heap::GetSize](#getsize)|Вызовите этот метод, чтобы получить выделенный размер блока памяти, выделенный этим менеджером памяти.|
 |[CGlobalHeap::Перераспределить](#reallocate)|Вызовите этот метод для перераспределения памяти, выделенной данным диспетчером памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CGlobalHeap`реализует функции распределения памяти с использованием функций глобальной кучи Win32.
 
@@ -80,7 +80,7 @@ virtual __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CGlobalHeap::Free](#free) или [CGlobalHeap::Перераспределить,](#reallocate) чтобы освободить память, выделенную этим методом.
 
@@ -99,7 +99,7 @@ virtual void Free(void* p) throw();
 *P*<br/>
 Указатель на область памяти, выделенную ранее данным диспетчером памяти. NULL является действительным значением и ничего не делает.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с помощью [GlobalFree](/windows/win32/api/winbase/nf-winbase-globalfree).
 
@@ -120,7 +120,7 @@ virtual size_t GetSize(void* p) throw();
 
 Возвращает размер выделенного блока памяти в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализовано с помощью [GlobalSize](/windows/win32/api/winbase/nf-winbase-globalsize).
 
@@ -144,7 +144,7 @@ virtual __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает указатель на начало выделенного блока памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов [CGlobalHeap::Бесплатно,](#free) чтобы освободить память, выделенную этим методом.
 

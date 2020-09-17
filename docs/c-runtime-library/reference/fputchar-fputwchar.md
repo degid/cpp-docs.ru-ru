@@ -71,7 +71,7 @@ wint_t _fputwchar(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist, and _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обе эти функции записывают один символ *c* в **stdout** и перемещает индикатор соответствующим образом. **_fputchar** эквивалентна `fputc( stdout )`. Она также эквивалентна **putchar**, но реализована только как функция, а не как функция и макрос. В отличие от **fputc** и **putchar**, эти функции несовместимы со стандартом ANSI.
 

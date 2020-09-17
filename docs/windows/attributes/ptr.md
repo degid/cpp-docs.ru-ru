@@ -23,7 +23,7 @@ ms.locfileid: "88839872"
 [ptr]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **ptr** C++ имеет те же функциональные возможности, что и атрибут [ptr](/windows/win32/Midl/ptr) MIDL.
 

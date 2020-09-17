@@ -307,9 +307,9 @@ MemoryBlock(MemoryBlock&& other) noexcept
 }
 ```
 
-Функция [std:: Move](../standard-library/utility-functions.md#move) преобразует lvalue `other` в rvalue.
+Функция [std::move](../standard-library/utility-functions.md#move) преобразует lvalue `other` в rvalue.
 
 ## <a name="see-also"></a>См. также раздел
 
 [Декларатор ссылки rvalue: &&](../cpp/rvalue-reference-declarator-amp-amp.md)<br/>
-[std:: Move](../standard-library/utility-functions.md#move)
+[std::move](../standard-library/utility-functions.md#move)

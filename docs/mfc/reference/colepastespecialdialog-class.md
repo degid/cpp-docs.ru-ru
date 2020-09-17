@@ -73,7 +73,7 @@ class COlePasteSpecialDialog : public COleDialog
 |----------|-----------------|
 |[COlePasteSpecialDialog::m_ps](#m_ps)|Структура типа OLEUIPASTESPECIAL, которая контролирует функцию диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создайте объект `COlePasteSpecialDialog` класса, когда вы хотите вызвать этот диалоговый ящик. После `COlePasteSpecialDialog` построения объекта можно использовать функции участника [AddFormat](#addformat) и [AddStandardFormats](#addstandardformats) для добавления форматов Clipboard в диалоговое окно. Можно также использовать [структуру m_ps](#m_ps) для инициализации значений или состояний элементов управления в диалоговом поле. Структура `m_ps` типа OLEUIPASTESPECIAL.
 
@@ -149,7 +149,7 @@ void AddFormat(
 *Мигать*<br/>
 Пометить, который определяет, включена ли радиокнопка Paste Link при выборе этого формата в поле списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту функцию можно назвать для добавления либо стандартных форматов, таких как CF_TEXT или CF_TIFF, либо пользовательских форматов, зарегистрированных в вашем приложении в системе. Для получения дополнительной информации о вставке [Data Objects and Data Sources: Manipulation](../../mfc/data-objects-and-data-sources-manipulation.md)объектов данных в приложение см.
 
@@ -187,7 +187,7 @@ void AddStandardFormats(BOOL bEnableLink = TRUE);
 *bEnableLink*<br/>
 Пометить, который определяет, следует ли добавлять CF_LINKSOURCE в список форматов, которые может вставить приложение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 - CF_BITMAP
 
@@ -231,7 +231,7 @@ COlePasteSpecialDialog(
 *pParentWnd*<br/>
 Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов устанавливается на основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция только `COlePasteSpecialDialog` строит объект. Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
 
@@ -254,7 +254,7 @@ BOOL CreateItem(COleClientItem* pNewItem);
 
 Nonzero, если элемент был создан успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться только после того, как [DoModal](#domodal) вернет IDOK.
 
@@ -276,7 +276,7 @@ virtual INT_PTR DoModal();
 
 - IDABORT, если произошла ошибка. Если IDABORT возвращается, `COleDialog::GetLastError` позвоните функции участника, чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIPasteSpecial](/windows/win32/api/oledlg/nf-oledlg-oleuipastespecialw) можно узнать в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [структуры m_ps,](#m_ps) вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
 
@@ -298,7 +298,7 @@ DVASPECT GetDrawAspect() const;
 
 - DVASPECT_ICON возвращен, если флажок Display As Icon был проверен при отклонении диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов этой функции только после того, как [DoModal](#domodal) возвращает IDOK.
 
@@ -328,7 +328,7 @@ int GetPasteIndex() const;
 
 Индекс в массив `OLEUIPASTEENTRY` структур, выбранный пользователем. Формат, соответствующий выбранного индексу, следует использовать при выполнении операции пасты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [OLEUIPASTEENTRY](/windows/win32/api/oledlg/ns-oledlg-oleuipasteentryw) структуры в Windows SDK.
 
@@ -344,7 +344,7 @@ UINT GetSelectionType() const;
 
 Возвращает тип выбора сделал.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значения типа возврата определяются `Selection` типом перечисления, `COlePasteSpecialDialog` объявленным в классе.
 
@@ -375,7 +375,7 @@ enum Selection {
 OLEUIPASTESPECIAL m_ps;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Члены этой структуры могут быть изменены непосредственно или через функции членов.
 

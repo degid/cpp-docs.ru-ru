@@ -41,7 +41,7 @@ class CFtpFileFind : public CFileFind
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кфтпфилефинд:: Финдфиле](#findfile)|Находит файл на FTP-сервере.|
 |[Кфтпфилефинд:: FindNextFile](#findnextfile)|Возобновляет Поиск файла из предыдущего вызова [финдфиле](#findfile).|
@@ -71,7 +71,7 @@ class CFtpFileFind : public CFileFind
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксинет. h
+**Заголовок:** афксинет.h
 
 ## <a name="cftpfilefindcftpfilefind"></a><a name="cftpfilefind"></a>Кфтпфилефинд:: Кфтпфилефинд
 

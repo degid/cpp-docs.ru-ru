@@ -67,9 +67,9 @@ class CDBPropSet : public tagDBPROPSET
 
 | Имя | Описание |
 |-|-|
-|[Оператор =](#op_equal)|Присваивает содержимому одного свойства значение другого.|
+|[operator=](#op_equal)|Присваивает содержимому одного свойства значение другого.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Поставщики OLE DB и потребители используют `DBPROPSET` структуры для передачи массивов `DBPROP` структур. Каждая `DBPROP` структура представляет одно свойство, которое можно задать.
 
@@ -161,11 +161,11 @@ void SetGUID(const GUID& guid) throw();
 *guid*<br/>
 окне Идентификатор GUID, используемый для задания `guidPropertySet` поля структуры [DBPROPSET](/previous-versions/windows/desktop/ms714367(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это поле также может быть задано [конструктором](../../data/oledb/cdbpropset-cdbpropset.md) .
 
-## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a> Кдбпропсет:: operator =
+## <a name="cdbpropsetoperator-"></a><a name="op_equal"></a> Кдбпропсет::operator=
 
 Присваивает содержимое одного свойства набору другому набору свойств.
 

@@ -64,7 +64,7 @@ template<class _InIt, class _Ty, class _Fn2> inline
     _Ty accumulate(_InIt _First, _InIt _Last, _Ty _Val, _Fn2 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как и C++ числовая функция стандартной библиотеки `accumulate`. Дополнительные сведения см. в разделе [накопление](../standard-library/numeric-functions.md#accumulate).
 
@@ -83,7 +83,7 @@ template<class _InIt, class _OutIt, class _Fn2> inline
         _OutIt _Dest, _Fn2 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как и C++ числовая функция стандартной библиотеки `adjacent_difference`. Дополнительные сведения см. в разделе [adjacent_difference](../standard-library/numeric-functions.md#adjacent_difference).
 
@@ -103,7 +103,7 @@ template<class _InIt1, class _InIt2, class _Ty, class _Fn21,
         _Ty _Val, _Fn21 _Func1, _Fn22 _Func2);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как и C++ числовая функция стандартной библиотеки `inner_product`. Дополнительные сведения см. в разделе [inner_product](../standard-library/numeric-functions.md#inner_product).
 
@@ -121,6 +121,6 @@ template<class _InIt, class _OutIt, class _Fn2> inline
         _OutIt _Dest, _Fn2 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как и C++ числовая функция стандартной библиотеки `partial_sum`. Дополнительные сведения см. в разделе [partial_sum](../standard-library/numeric-functions.md#partial_sum).

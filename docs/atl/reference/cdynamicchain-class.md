@@ -50,7 +50,7 @@ class CDynamicChain
 |[CDynamicChain::RemoveChainEntry](#removechainentry)|Удаляет запись карты сообщения из коллекции.|
 |[CDynamicChain::SetChainEntry](#setchainentry)|Добавляет запись на карту сообщений в коллекцию или изменяет существующую запись.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDynamicChain`управляет коллекцией карт сообщений, что позволяет направлять сообщение Windows во время выполнения на карту сообщений другого объекта.
 
@@ -116,7 +116,7 @@ BOOL CallChain(
 
 TRUE, если сообщение полностью обработано; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для того чтобы процедура `CallChain`окна была вызвать, необходимо указать [CHAIN_MSG_MAP_DYNAMIC](message-map-macros-atl.md#chain_msg_map_dynamic) макрос на карте сообщений. Например, [см.](../../atl/reference/cdynamicchain-class.md)
 
@@ -138,7 +138,7 @@ CDynamicChain();
 ~CDynamicChain();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -185,7 +185,7 @@ BOOL SetChainEntry(
 
 TRUE, если карта сообщений успешно добавлена в коллекцию. В противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение *dwChainID* уже существует в коллекции, связанный с ним объект и карта сообщений заменяются *pObject* и *dwMsgMapID*соответственно. В противном случае добавляется новая запись.
 

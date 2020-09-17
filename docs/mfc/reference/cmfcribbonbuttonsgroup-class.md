@@ -71,7 +71,7 @@ class CMFCRibbonButtonsGroup : public CMFCRibbonBaseElement
 |[CMFCRibbonButtonsGroup::SetImages](#setimages)|Присваивает изображения группе.|
 |[CMFCRibbonButtonsGroup::SetParentCategory](#setparentcategory)|Устанавливает родительский `CMFCRibbonCategory` `CMFCRibbonButtonsGroup` элемент объекта и все кнопки внутри него (переопределяет [CMFCRibbonBaseElement::SetParentCategory](../../mfc/reference/cmfcribbonbaseelement-class.md#setparentcategory).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Группа является производной от [CMFCBaseRibbonи](../../mfc/reference/cmfcribbonbaseelement-class.md) и может манипулировать как единое целое. Вы можете расположить группу на любой панели или всплывающем меню.
 
@@ -136,7 +136,7 @@ CMFCRibbonButtonsGroup(CMFCRibbonBaseElement* pButton);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupgetbutton"></a><a name="getbutton"></a>CMFCRibbonButtonsGroup:GetButton
 
@@ -155,7 +155,7 @@ CMFCRibbonBaseElement* GetButton(int i) const;
 
 Указатель на кнопку, расположенную в указанном индексе. NULL, если указанный индекс находится вне диапазона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupgetcount"></a><a name="getcount"></a>CMFCRibbonButtonsGroup::GetCount
 
@@ -181,7 +181,7 @@ const CSize GetImageSize() const;
 
 Возвращает размер исходного изображения изображений панели инструментов, `CSize` если таковые имеются, или нулевой, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupgetregularsize"></a><a name="getregularsize"></a>CMFCRibbonButtonsGroup::GetRegularSize
 
@@ -198,7 +198,7 @@ virtual CSize GetRegularSize(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgrouphasimages"></a><a name="hasimages"></a>CMFCRibbonButtonsGroup::HasImages
 
@@ -212,7 +212,7 @@ BOOL HasImages() const;
 
 Возвращает TRUE, `CMFCToolBarImages` если `m_Images` защищенный член содержит какие-либо изображения, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupondrawimage"></a><a name="ondrawimage"></a>CMFCRibbonButtonsGroup::OnDrawImage
 
@@ -240,7 +240,7 @@ virtual void OnDrawImage(
 *nImageIndex*<br/>
 (в) Индекс изображения нарисовать на кнопке (в одном из трех массивов изображений для обычных, выделенных или отключенных кнопок).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupremoveall"></a><a name="removeall"></a>CMFCRibbonButtonsGroup::RemoveAll
 
@@ -250,7 +250,7 @@ virtual void OnDrawImage(
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonbuttonsgroupsetimages"></a><a name="setimages"></a>CMFCRibbonButtonsGroup::SetImages
 
@@ -274,7 +274,7 @@ void SetImages(
 *pDisabledImages*<br/>
 (в) Изображения инвалидов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позвоните `SetImages` перед добавлением кнопок в группу. Количество изображений должно быть больше или равно количеству кнопок, которые будут добавлены в группу.
 
@@ -294,7 +294,7 @@ virtual void SetParentCategory(CMFCRibbonCategory* pCategory);
 *pКатегория*<br/>
 (в) Указатель на родительскую категорию для установки (группы вкладок в элементаре управления лентой называются категориями).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

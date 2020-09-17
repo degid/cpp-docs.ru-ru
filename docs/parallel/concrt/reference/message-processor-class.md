@@ -38,13 +38,13 @@ class message_processor;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`type`|Псевдоним типа для `T`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[async_send](#async_send)|При переопределении в производном классе помещает сообщения в блок асинхронно.|
 |[sync_send](#sync_send)|При переопределении в производном классе помещает сообщения в блок синхронно.|
@@ -52,7 +52,7 @@ class message_processor;
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[process_incoming_message](#process_incoming_message)|При переопределении в производном классе выполняет прямую обработку сообщений в блок. Вызывается каждый раз при добавлении нового сообщения, если очередь пуста.|
 
@@ -79,7 +79,7 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 *_Msg*<br/>
 Объект `message` для асинхронной отправки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация процессора должна переопределять этот метод.
 
@@ -91,7 +91,7 @@ virtual void async_send(_Inout_opt_ message<T>* _Msg) = 0;
 virtual void process_incoming_message() = 0;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализации блоков сообщений должны переопределять этот метод.
 
@@ -108,7 +108,7 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 *_Msg*<br/>
 Объект `message` для синхронной отправки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация процессора должна переопределять этот метод.
 
@@ -120,7 +120,7 @@ virtual void sync_send(_Inout_opt_ message<T>* _Msg) = 0;
 virtual void wait() = 0;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация процессора должна переопределять этот метод.
 

@@ -30,7 +30,7 @@ struct CloakedIid : T;
 *T*<br/>
 Скрытый (замаскированный) интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ниже приведен пример использования **клоакедиид** : `struct MyRuntimeClass : RuntimeClass<CloakedIid<IMyCloakedInterface>> {}`.
 
@@ -42,7 +42,7 @@ struct CloakedIid : T;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

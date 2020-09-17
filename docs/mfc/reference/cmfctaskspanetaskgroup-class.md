@@ -68,7 +68,7 @@ class CMFCTasksPaneTaskGroup : public CObject
 |[CMFCTasksPaneTaskGroup::m_rectGroup](#m_rectgroup)|Определяет ограничивающий прямоугольник группы.|
 |[CMFCTasksPaneTaskGroup::m_strName](#m_strname)|Задает имя группы.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 На следующей иллюстрации показана расширенная целевая группа:
 
@@ -130,7 +130,7 @@ CMFCTasksPaneTaskGroup(
 *hIcon*<br/>
 Упоняет значок, отображаемый в подписи к группе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetaskgroupm_bisbottom"></a><a name="m_bisbottom"></a>CMFCTasksPaneTaskGroup::m_bIsBottom
 
@@ -140,7 +140,7 @@ CMFCTasksPaneTaskGroup(
 BOOL m_bIsBottom;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только одна группа может быть выровнена в нижней части элемента управления панелью задач. Эта целевая группа должна быть добавлена последней. Для получения дополнительной информации [см. CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).
 
@@ -152,7 +152,7 @@ BOOL m_bIsBottom;
 BOOL m_bIsCollapsed;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете включить или отключить возможность коллапса групп на панели задач, [позвонив cmFCTasksPane::EnableGroupCollapse](../../mfc/reference/cmfctaskspane-class.md#enablegroupcollapse).
 
@@ -164,7 +164,7 @@ BOOL m_bIsCollapsed;
 BOOL m_bIsSpecial;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ваше приложение использует визуальную `m_bIsSpecial` тему Windows XP `DrawThemeBackground` и является FALSE, фреймворк вызывает сявок с EBP_NORMALGROUPBACKGROUND флагом. Если `m_bIsSpecial` это правда, `DrawThemeBackground` то фреймворк вызывает с флагом EBP_SPECIALGROUPBACKGROUND.
 
@@ -176,7 +176,7 @@ BOOL m_bIsSpecial;
 CObList m_lstTasks;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы заполнить этот список, позвоните [CMFCTasksPane::AddTask](../../mfc/reference/cmfctaskspane-class.md#addtask).
 
@@ -188,7 +188,7 @@ CObList m_lstTasks;
 CRect m_rect;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение автоматически рассчитывается по фреймворку.
 
@@ -200,7 +200,7 @@ CRect m_rect;
 CRect m_rectGroup;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение автоматически рассчитывается по фреймворку.
 
@@ -212,7 +212,7 @@ CRect m_rectGroup;
 CString m_strName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если это значение пусто, подпись группы не отображается и группа не может быть свернута.
 

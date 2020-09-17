@@ -118,7 +118,7 @@ class CRegKey
 |[CRegKey::m_hKey](#m_hkey)|Содержит ручку ключа реестра, `CRegKey` связанную с объектом.|
 |[CRegKey::m_pTM](#m_ptm)|Указатель `CAtlTransactionManager` на объект|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CRegKey`предоставляет методы создания и удаляния ключей и значений в системном реестре. Реестр содержит набор определений для компонентов системы, таких как номера версий программного обеспечения, логические к физическим отображениям установленного оборудования и объекты COM.
 
@@ -146,7 +146,7 @@ void Attach(HKEY hKey) throw();
 *hKey*<br/>
 Ручка ключа реестра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Attach`будет утверждать, если `m_hKey` не является NULL.
 
@@ -204,7 +204,7 @@ LONG Create(
 
 В случае успеха, возвращается ERROR_SUCCESS и открывает ключ. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Create`устанавливает [m_hKey](#m_hkey) членом к ручке этого ключа.
 
@@ -230,7 +230,7 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 *Ptm*<br/>
 Указатель на объект CAtlTransactionManager.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает новый объект `CRegKey`. Объект может быть создан `CRegKey` из существующего объекта или от ручки до ключа реестра.
 
@@ -242,7 +242,7 @@ CRegKey(CAtlTransactionManager* pTM) throw();
 ~CRegKey() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор высвобождает `m_hKey`.
 
@@ -263,7 +263,7 @@ LONG DeleteSubKey(LPCTSTR lpszSubKey) throw();
 
 В случае успеха, возвращается ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `DeleteSubKey`может только удалить ключ, который не имеет подключ. Если ключ имеет подключи, позвоните [RecurseDeleteKey](#recursedeletekey) вместо этого.
 
@@ -326,7 +326,7 @@ LONG EnumKey(
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы перечислить субки, `CRegKey::EnumKey` позвоните с нулевым индексом. Приравнь значение индекса и повторяйте до тех пор, пока метод не вернется ERROR_NO_MORE_ITEMS. Для получения дополнительной информации, см [RegEnumKeyEx](/windows/win32/api/winreg/nf-winreg-regenumkeyexw) в Windows SDK.
 
@@ -342,7 +342,7 @@ LONG Flush() throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной [RegEnumFlush](/windows/win32/api/winreg/nf-winreg-regflushkey) информации см.
 
@@ -372,7 +372,7 @@ LONG GetKeySecurity(
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не удается, значение возврата является кодом ошибки ненулевой определяется в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см [RegGetKeySecurity](/windows/win32/api/winreg/nf-winreg-reggetkeysecurity).
 
@@ -392,7 +392,7 @@ HKEY m_hKey;
 CAtlTransactionManager* m_pTM;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cregkeynotifychangekeyvalue"></a><a name="notifychangekeyvalue"></a>CRegKey::NotifyChangeKeyValue
 
@@ -431,7 +431,7 @@ LONG NotifyChangeKeyValue(
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Этот метод не уведомляет вызываемого абонента, если указанный ключ удален.
@@ -464,7 +464,7 @@ LONG Open(
 
 В случае успеха, возвращает ERROR_SUCCESS; в противном случае значение ненулевой ошибки, определяемое в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если параметр *lpszKeyName* является NULL или `Open` указывает на пустую строку, открывает сятвую ручку ключа, идентифицированную *hKeyParent,* но не закрывает ранее открывшуюся ручку.
 
@@ -495,7 +495,7 @@ CRegKey& operator= (CRegKey& key) throw();
 
 Возвращает ссылку на новый ключ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор отсоединяет *ключ* от текущего объекта и `CRegKey` вместо этого назначает его объекту.
 
@@ -525,7 +525,7 @@ LONG QueryBinaryValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если ссылки на данные не являются типами REG_BINARY, ERROR_INVALID_DATA возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `RegQueryValueEx` и подтверждает, что правильный тип данных возвращается. Более подробную информацию можно узнать [из-за реджиривалекса.](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw)
 
@@ -554,7 +554,7 @@ LONG QueryDWORDValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если ссылки на данные не являются типом REG_DWORD, ERROR_INVALID_DATA возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `RegQueryValueEx` и подтверждает, что правильный тип данных возвращается. Более подробную информацию можно узнать [из-за реджиривалекса.](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw)
 
@@ -583,7 +583,7 @@ LONG QueryGUIDValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если ссылки на данные не являются действительными GUID, ERROR_INVALID_DATA возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `CRegKey::QueryStringValue` и преобразует строку в GUID с помощью [CLSIDFromString.](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromstring)
 
@@ -616,7 +616,7 @@ LONG QueryMultiStringValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если упомянутые данные не являются типами REG_MULTI_SZ, ERROR_INVALID_DATA возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `RegQueryValueEx` и подтверждает, что правильный тип данных возвращается. Более подробную информацию можно узнать [из-за реджиривалекса.](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw)
 
@@ -645,7 +645,7 @@ LONG QueryQWORDValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если ссылки на данные не являются типами REG_QWORD, ERROR_INVALID_DATA возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `RegQueryValueEx` и подтверждает, что правильный тип данных возвращается. Более подробную информацию можно узнать [из-за реджиривалекса.](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw)
 
@@ -678,7 +678,7 @@ LONG QueryStringValue(
 
 Если метод удается, ERROR_SUCCESS возвращается. Если метод не считывает значение, он возвращает код ошибки без нуля, определенный в WINERROR. H. Если данные, на которые ссылаются, не являются типами REG_SZ, ERROR_INVALID_DATA возвращается. Если метод возвращается ERROR_MORE_DATA, *pnChars* равен нулю, а не требуемому размеру буфера в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `RegQueryValueEx` и подтверждает, что правильный тип данных возвращается. Более подробную информацию можно узнать [из-за реджиривалекса.](/windows/win32/api/winreg/nf-winreg-regqueryvalueexw)
 
@@ -736,7 +736,7 @@ ATL_DEPRECATED LONG QueryValue(
 
 В случае успеха, возвращает ERROR_SUCCESS; в противном случае, код ошибки nonzero определенный в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Две оригинальные `QueryValue` версии больше не поддерживаются и помечены как ATL_DEPRECATED. Компилятор выдаст предупреждение, если эти формы будут использованы.
 
@@ -762,7 +762,7 @@ LONG RecurseDeleteKey(LPCTSTR lpszKey) throw();
 
 В случае успеха, возвращает ERROR_SUCCESS; в противном случае значение ненулевой ошибки, определяемое в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ключ имеет подключи, необходимо вызвать этот метод, чтобы удалить ключ.
 
@@ -792,7 +792,7 @@ LONG SetBinaryValue(
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) для записи значения в реестр.
 
@@ -816,7 +816,7 @@ LONG SetDWORDValue(LPCTSTR pszValueName, DWORD dwValue) throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) для записи значения в реестр.
 
@@ -840,7 +840,7 @@ LONG SetGUIDValue(LPCTSTR pszValueName, REFGUID guidValue) throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует `CRegKey::SetStringValue` и преобразует GUID в строку с помощью [StringFromGUID2.](/windows/win32/api/combaseapi/nf-combaseapi-stringfromguid2)
 
@@ -870,7 +870,7 @@ LONG SetKeyValue(
 
 В случае успеха, возвращает ERROR_SUCCESS; в противном случае, код ошибки nonzero определенный в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы создать или открыть ключ *lpszKeyName* и хранить данные *lpszValue* в поле значения *lpszValueName.*
 
@@ -901,7 +901,7 @@ LONG SetKeySecurity(SECURITY_INFORMATION si, PSECURITY_DESCRIPTOR psd) throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает атрибуты безопасности ключа. Более подробную информацию можно узнать в [RegSetKeySecurity.](/windows/win32/api/winreg/nf-winreg-regsetkeysecurity)
 
@@ -925,7 +925,7 @@ LONG SetMultiStringValue(LPCTSTR pszValueName, LPCTSTR pszValue) throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) для записи значения в реестр.
 
@@ -949,7 +949,7 @@ LONG SetQWORDValue(LPCTSTR pszValueName, ULONGLONG qwValue) throw();
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) для записи значения в реестр.
 
@@ -979,7 +979,7 @@ LONG SetStringValue(
 
 Если метод удается, значение возврата ERROR_SUCCESS. Если метод не работает, значение возврата является кодом ошибки без нуля, определенным в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод использует [RegSetValueEx](/windows/win32/api/winreg/nf-winreg-regsetvalueexw) для записи значения в реестр.
 
@@ -1050,7 +1050,7 @@ ATL_DEPRECATED LONG SetValue(
 
 В случае успеха, возвращает ERROR_SUCCESS; в противном случае, код ошибки nonzero определенный в WINERROR. H.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Две оригинальные `SetValue` версии помечены как ATL_DEPRECATED и больше не должны использоваться. Компилятор выдаст предупреждение, если эти формы будут использованы.
 

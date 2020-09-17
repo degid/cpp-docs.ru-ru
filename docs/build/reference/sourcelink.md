@@ -27,7 +27,7 @@ ms.locfileid: "81336067"
 *Имени файла*<br/>
 Определяет файл конфигурации jSON, содержащий простое отображение локальных путей файлов к URL-адресам для исходных файлов для отображения в отладчике. Для получения дополнительной информации о формате этого [файла, см.](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md#source-link-json-schema)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Source Link — это агностик-система управления языком и исходным управлением для обеспечения отладки исходных файлов для бинарных файлов. Source Link поддерживается для местных бинарных файлов C е, начиная с визуальной студии 2017 версии 15.8. Для обзора Ссылка на источник, [см.](https://github.com/dotnet/designs/blob/master/accepted/2020/diagnostics/source-link.md) Для получения информации о том, как использовать Ссылку Наиное в проектах, и как создать файл SourceLink в рамках проекта, [см.](https://github.com/dotnet/sourcelink#using-source-link-in-c-projects)
 

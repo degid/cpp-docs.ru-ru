@@ -30,7 +30,7 @@ HRESULT Error( ) const throw( );
 
 Необработанный элемент HRESULT, переданный в конструктор.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Извлекает инкапсулированный элемент HRESULT в объект `_com_error`.
 

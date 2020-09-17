@@ -37,13 +37,13 @@ class CStringRefElementTraits : public CElementTraitsBase<T>
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Кстрингрефелементтраитс:: Компарилементс](#compareelements)|Вызовите эту статическую функцию, чтобы сравнить два строковых элемента на равенство.|
 |[Кстрингрефелементтраитс:: Компарилементсордеред](#compareelementsordered)|Вызовите эту статическую функцию, чтобы сравнить два строковых элемента.|
 |[Кстрингрефелементтраитс:: hash](#hash)|Вызовите эту статическую функцию, чтобы вычислить хэш-значение для заданного строкового элемента.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет статические функции для сравнения строк и создания хэш-значения. Эти функции полезны при использовании класса коллекции для хранения данных, основанных на строках. В отличие от [кстринжелементтраитс](../../atl/reference/cstringelementtraits-class.md) и [кстринжелементтраитси](../../atl/reference/cstringelementtraitsi-class.md), `CStringRefElementTraits` `CString` аргументы передаются как **`const`** `CString&` ссылки.
 
@@ -57,7 +57,7 @@ class CStringRefElementTraits : public CElementTraitsBase<T>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлколл. h
+**Заголовок:** атлколл.h
 
 ## <a name="cstringrefelementtraitscompareelements"></a><a name="compareelements"></a>Кстрингрефелементтраитс:: Компарилементс
 

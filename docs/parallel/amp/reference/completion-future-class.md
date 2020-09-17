@@ -34,14 +34,14 @@ class completion_future;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор completion_future](#ctor)|Инициализирует новый экземпляр класса `completion_future`.|
 |[Деструктор ~ completion_future](#dtor)|Уничтожает `completion_future` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[get](#get)|Ожидает завершения связанной асинхронной операции.|
 |[этого](#then)|Повязывает объект функции обратного вызова к `completion_future` объекту, который должен быть выполнен, когда связанная асинхронная операция завершает выполнение.|
@@ -53,10 +53,10 @@ class completion_future;
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Оператор std:: shared_future\<void>](#operator_shared_future)|Неявно преобразует `completion_future` объект в `std::shared_future` объект.|
-|[Оператор =](#operator_eq)|Копирует содержимое указанного `completion_future` объекта в этот объект.|
+|[operator=](#operator_eq)|Копирует содержимое указанного `completion_future` объекта в этот объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -64,9 +64,9 @@ class completion_future;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="completion_future"></a><a name="ctor"></a>completion_future
 
@@ -91,7 +91,7 @@ completion_future(
 
 ### <a name="overloads-list"></a>Список перегрузок
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`completion_future();`|Инициализирует новый экземпляр `completion_future` класса|
 |`completion_future(const completion_future& _Other);`|Инициализирует новый экземпляр `completion_future` класса путем копирования конструктора.|
@@ -143,7 +143,7 @@ completion_future&  operator= (completion_future&& _Other );
 
 ## <a name="overloads-list"></a>Список перегрузок
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`completion_future& operator=(const completion_future& _Other);`|Копирует содержимое указанного `completion_future` объекта в этот объект с помощью глубокого копирования.|
 |`completion_future& operator=(completion_future&& _Other);`|Копирует содержимое указанного `completion_future` объекта в этот объект с помощью назначения перемещения.|

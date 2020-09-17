@@ -41,7 +41,7 @@ ms.locfileid: "80170154"
 #define or ||
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор &#124;&#124;.
 
@@ -75,4 +75,4 @@ true
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

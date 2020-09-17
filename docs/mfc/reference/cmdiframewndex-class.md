@@ -177,7 +177,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CMDIFrameWndEx:: Активеитемрекалклайаут](#activeitemrecalclayout)|Повторно вычисляет макет активного элемента.|
 |`CMDIFrameWndEx::AddDockSite`|Этот метод не используется.|
@@ -259,7 +259,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ### <a name="data-members"></a>Элементы данных
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CMDIFrameWndEx:: m_bCanCovertControlBarToMDIChild](#m_bcancovertcontrolbartomdichild)|Определяет, можно ли преобразовать закрепляемые области в дочерние окна MDI.|
 |[CMDIFrameWndEx:: m_bDisableSetRedraw](#m_bdisablesetredraw)|Включает или отключает оптимизацию перерисовки для дочерних окон MDI.|
@@ -290,7 +290,7 @@ class CMDIFrameWndEx : public CMDIFrameWnd
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксмдифрамевндекс. h
+**Заголовок:** афксмдифрамевндекс.h
 
 ## <a name="cmdiframewndexactiveitemrecalclayout"></a><a name="activeitemrecalclayout"></a>CMDIFrameWndEx:: Активеитемрекалклайаут
 

@@ -67,7 +67,7 @@ class CComAggObject : public IUnknown,
 |----------|-----------------|
 |[CComAggObject::m_contained](#m_contained)|Делегаты `IUnknown` звонят к внешнему неизвестному.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComAggObject`реализует [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) для агрегированного объекта. `CComAggObject`имеет свой `IUnknown` собственный интерфейс, отдельно `IUnknown` от интерфейса внешнего объекта, и поддерживает свой собственный подсчет ссылок.
 
@@ -112,7 +112,7 @@ CComAggObject(void* pv);
 *Pv*<br/>
 (в) Внешнее неизвестное.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует элемент `CComContainedObject`[m_contained](#m_contained) и увеличивает счетчик блокировок модуля.
 
@@ -126,7 +126,7 @@ CComAggObject(void* pv);
 ~CComAggObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы, вызывает [FinalRelease](#finalrelease)и высчитывает количество блокировки модуля.
 
@@ -149,7 +149,7 @@ static HRESULT WINAPI CreateInstance(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращается объект имеет подсчет ссылок `AddRef` ноль, `Release` поэтому немедленно позвоните, а затем используйте для освобождения ссылки на указатель объекта, когда вы закончите.
 
@@ -188,7 +188,7 @@ CComContainedObject<contained> m_contained;
 *Содержащиеся*<br/>
 (в) Ваш класс, полученный из [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx,](../../atl/reference/ccomobjectrootex-class.md)а также из любых других интерфейсов, которые вы хотите поддерживать на объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все `IUnknown` вызовы через `m_contained` делегируются внешнему неизвестному.
 
@@ -217,7 +217,7 @@ HRESULT STDMETHODCALLTYPE QueryInterface(Q** pp);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если запрашиваемый `IUnknown` `QueryInterface` интерфейс, возвращает указатель на собственный `IUnknown` агрегированный объект и приращает значение отсчета ссылок. В противном случае этот метод `CComContainedObject` запрашивает интерфейс через члена, [m_contained](#m_contained).
 

@@ -36,6 +36,6 @@ SDK Build Insights совместим с Visual Studio 2017 и выше. Что�
 | `TEMPLATE_INSTANTIATION_KIND_CODE_VARIABLE` | 2 (0x00000002) | Переменное мгновенное воспроизведение constexpr. |
 | `TEMPLATE_INSTANTIATION_KIND_CODE_CONCEPT` | 3 (0x00000003) | Мгновенное представление шаблона концепции. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ::: moniker-end

@@ -59,7 +59,7 @@ _com_ptr_t& operator=( int null );
 _com_ptr_t& operator=( const _variant_t& varSrc );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Назначает этому объекту `_com_ptr_t` указатель на интерфейс.
 

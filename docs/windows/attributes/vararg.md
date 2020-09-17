@@ -23,7 +23,7 @@ ms.locfileid: "88832975"
 [vararg]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **vararg** C++ имеет те же функциональные возможности, что и атрибут [vararg](/windows/win32/Midl/vararg) в языке MIDL.
 

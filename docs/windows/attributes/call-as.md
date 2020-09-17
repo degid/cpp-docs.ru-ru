@@ -28,7 +28,7 @@ ms.locfileid: "88838924"
 *function*<br/>
 Локальная функция, которая должна вызываться при вызове удаленной функции.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **call_as** C++ имеет те же функциональные возможности, что и атрибут [call_as](/windows/win32/Midl/call-as) MIDL.
 

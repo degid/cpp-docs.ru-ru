@@ -32,7 +32,7 @@ template <class Ptr>
     struct pointer_traits;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ptr может быть необработанным указателем типа `Ty *` или классом со следующими свойствами.
 

@@ -13,9 +13,9 @@ ms.locfileid: "90039902"
 ---
 # <a name="ltsstreamgt-functions"></a>Функции &lt;sstream&gt;
 
-[позиции](#sstream_swap)
+[swap](#sstream_swap)
 
-## <a name="swap"></a><a name="sstream_swap"></a> позиции
+## <a name="swap"></a><a name="sstream_swap"></a> swap
 
 Меняет местами значения двух объектов `sstream`.
 
@@ -43,10 +43,10 @@ void swap(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Ссылка на объект `sstream`.
 
-*Правильно*\
+*right*\
 Ссылка на объект `sstream`.
 
 ### <a name="remarks"></a>Комментарии

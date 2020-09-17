@@ -67,7 +67,7 @@ STDMETHOD(IsSameRow )(HROW hThisRow,
 
 См. раздел [ировсетидентити:: IsSameRow](/previous-versions/windows/desktop/ms719629(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для сравнения дескрипторов строк этот метод приводит `HROW` дескрипторы к `RowClass` элементам и вызовам `memcmp` указателей.
 

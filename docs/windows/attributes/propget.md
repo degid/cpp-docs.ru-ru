@@ -23,7 +23,7 @@ ms.locfileid: "88839976"
 [propget]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **propget** C++ имеет те же функциональные возможности, что и атрибуту MIDL для [propget](/windows/win32/Midl/propget) .
 

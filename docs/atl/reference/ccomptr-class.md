@@ -46,7 +46,7 @@ class CComPtr
 |----------|-----------------|
 |[CComPtr::оператор](#operator_eq)|Назначает указатель указателю на указатель участника.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ATL `CComPtr` использует и [CCom-IPtr](../../atl/reference/ccomqiptr-class.md) для управления указателями интерфейсов COM. Оба являются производными от [CComPtrBase](../../atl/reference/ccomptrbase-class.md), и оба делают автоматический подсчет ссылок.
 
@@ -86,7 +86,7 @@ CComPtr (const CComPtr<T>& lp) throw ();
 *T*<br/>
 Интерфейс COM.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструкторы, которые принимают аргумент `AddRef` вызова на *lp,* если это не нулевой указатель. Объект, не являемый ненулевой, получает `Release` вызов на уничтожение объекта CComPtr или если новый объект приписан объекту CComPtr.
 
@@ -103,7 +103,7 @@ T* operator= (const CComPtr<T>& lp) throw ();
 
 Возвращает указатель на `CComPtr` обновленный объект
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта операция addRefs новый объект и выпускает существующий объект, если один существует.
 

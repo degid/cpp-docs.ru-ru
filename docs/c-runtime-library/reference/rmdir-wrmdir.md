@@ -78,7 +78,7 @@ int _wrmdir(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_rmdir** удаляет каталог, указанный параметром *dirname*. Каталог должен быть пустым и не должен являться текущим рабочим или корневым каталогом.
 

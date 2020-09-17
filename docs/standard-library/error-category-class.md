@@ -37,7 +37,7 @@ virtual ~error_category();
 error_category(const error_category&) = delete
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `error_category` реализуют два стандартных объекта: [generic_category](../standard-library/system-error-functions.md#generic_category) и [system_category](../standard-library/system-error-functions.md#system_category).
 
@@ -54,7 +54,7 @@ error_category(const error_category&) = delete
 |Имя|Описание|
 |-|-|
 |[default_error_condition](#default_error_condition)|Сохраняет значение кода ошибки для объекта условия ошибки.|
-|[друг](#equivalent)|Возвращает значение, указывающее, эквивалентны ли объекты ошибок.|
+|[equivalent](#equivalent)|Возвращает значение, указывающее, эквивалентны ли объекты ошибок.|
 |[generic_category](#generic)||
 |[message](#message)|Возвращает имя указанного кода ошибки.|
 |[name](#name)|Возвращает имя категории.|
@@ -64,10 +64,10 @@ error_category(const error_category&) = delete
 
 |Имя|Описание|
 |-|-|
-|[Оператор =](#op_as)|Оператор присвоения.|
-|[Оператор = =](#op_eq_eq)|Проверяет равенство между объектами `error_category`.|
-|[operator! =](#op_neq)|Проверяет неравенство между объектами `error_category`.|
-|[Оператор<](#op_lt)|Проверяет, меньше ли объект [error_category](../standard-library/error-category-class.md) переданного для сравнения объекта `error_category`.|
+|[operator=](#op_as)|Оператор присвоения.|
+|[operator==](#op_eq_eq)|Проверяет равенство между объектами `error_category`.|
+|[operator!=](#op_neq)|Проверяет неравенство между объектами `error_category`.|
+|[operator<](#op_lt)|Проверяет, меньше ли объект [error_category](../standard-library/error-category-class.md) переданного для сравнения объекта `error_category`.|
 
 ## <a name="default_error_condition"></a><a name="default_error_condition"></a> default_error_condition
 
@@ -86,9 +86,9 @@ virtual error_condition default_error_condition(int _Errval) const;
 
 Возвращает `error_condition(_Errval, *this)`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
-### <a name="equivalent"></a>Эквивалент <a name="equivalent"></a>
+### <a name="equivalent"></a><a name="equivalent"></a> equivalent
 
 Возвращает значение, указывающее, эквивалентны ли объекты ошибок.
 
@@ -115,7 +115,7 @@ virtual bool equivalent(const error_code& _Code,
 
 **`true`** , если категория и значение равны; в противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Первая функция-член возвращает значение `*this == _Cond.category() && _Cond.value() == _Errval`.
 
@@ -137,14 +137,14 @@ virtual string message(error_code::value_type val) const = 0;
 
 #### <a name="parameters"></a>Параметры
 
-*Val*\
+*val*\
 Значение кода ошибки для описания.
 
 #### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает описательное имя кода ошибки *Val* для категории. Если код ошибки не распознан, возвращает `"unknown error"` .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 ### <a name="name"></a>Имя в <a name="name"></a>
 
@@ -158,13 +158,13 @@ virtual const char *name() const = 0;
 
 Возвращает имя категории как строку байтов, заканчивающуюся нулем.
 
-### <a name="operator"></a><a name="op_as"></a> Оператор =
+### <a name="operator"></a><a name="op_as"></a> operator=
 
 ```cpp
 error_category& operator=(const error_category&) = delete;
 ```
 
-### <a name="operator"></a><a name="op_eq_eq"></a> Оператор = =
+### <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Проверяет равенство между объектами `error_category`.
 
@@ -174,18 +174,18 @@ bool operator==(const error_category& right) const;
 
 #### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект для проверки на равенство.
 
 #### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если объекты равны; **`false`** значение, если объекты не равны.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот оператор-член возвращает `this == &right`.
 
-### <a name="operator"></a><a name="op_neq"></a> operator! =
+### <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Проверяет неравенство между объектами `error_category`.
 
@@ -195,18 +195,18 @@ bool operator!=(const error_category& right) const;
 
 #### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект для проверки на неравенство.
 
 #### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если `error_category` объект не равен объекту, `error_category` переданному по *правому краю*; в противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Оператор-член возвращает `(!*this == right)`.
 
-### <a name="operatorlt"></a><a name="op_lt"></a> станции&lt;
+### <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Проверяет, меньше ли объект [error_category](../standard-library/error-category-class.md) переданного для сравнения объекта `error_category`.
 
@@ -216,14 +216,14 @@ bool operator<(const error_category& right) const;
 
 #### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Сравниваемый объект `error_category`.
 
 #### <a name="return-value"></a>Возвращаемое значение
 
 **`true`** значение, если `error_category` объект меньше, чем `error_category` объект, переданный для сравнения; В противном случае — **`false`** .
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Оператор-член возвращает `this < &right`.
 
@@ -241,6 +241,6 @@ const error_category& system_category();
 typedef int value_type;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Это определение типа является синонимом для **`int`** .

@@ -50,7 +50,7 @@ template<class T> class weak_ptr;
 *T*\
 Тип, управляемый слабым указателем.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, указывающий на ресурс, который управляется одним или несколькими [shared_ptrными](shared-ptr-class.md) объектами. `weak_ptr`Объекты, указывающие на ресурс, не влияют на счетчик ссылок ресурса. Когда `shared_ptr` удаляется последний объект, который управляет этим ресурсом, ресурс будет освобожден, даже если имеются `weak_ptr` объекты, указывающие на этот ресурс. Такое поведение важно для предотвращения циклов в структурах данных.
 
@@ -67,18 +67,18 @@ template<class T> class weak_ptr;
 | **Конструкторы** | |
 |[weak_ptr](#weak_ptr)|Создает документ `weak_ptr`.|
 | **Деструкторы** | |
-|[~ weak_ptr](#tilde-weak_ptr)|Создает документ `weak_ptr`.|
+|[~weak_ptr](#tilde-weak_ptr)|Создает документ `weak_ptr`.|
 | **Определения типов** | |
 |[element_type](#element_type)|Тип элемента.|
 | **Функции элементов** | |
-|[истек](#expired)|Проверяет, истек ли срок действия владения.|
+|[expired](#expired)|Проверяет, истек ли срок действия владения.|
 |[lock](#lock)|Получает эксклюзивные права владения ресурсом.|
 |[owner_before](#owner_before)|Возвращает **`true`** , если этот `weak_ptr` указатель упорядочен до (или меньше) указанного указателя.|
 |[reset](#reset)|Освобождает ресурс, которым владеет.|
-|[позиции](#swap)|Меняет местами два объекта `weak_ptr`.|
+|[swap](#swap)|Меняет местами два объекта `weak_ptr`.|
 |[use_count](#use_count)|Подсчитывает количество `shared_ptr` объектов.|
 | **Операторы** | |
-|[Оператор =](#op_eq)|Заменяет ресурс, которым владеет.|
+|[operator=](#op_eq)|Заменяет ресурс, которым владеет.|
 
 ## <a name="element_type"></a><a name="element_type"></a> element_type
 
@@ -89,7 +89,7 @@ typedef T element_type; // through C++17
 using element_type = remove_extent_t<T>; // C++20
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `T`.
 
@@ -117,7 +117,7 @@ int main()
 *wp0.lock() == 5
 ```
 
-## <a name="expired"></a><a name="expired"></a> истек
+## <a name="expired"></a><a name="expired"></a> expired
 
 Проверяет, истек ли срок владения, т. е. объект, на который указывает ссылка, удален.
 
@@ -125,7 +125,7 @@ int main()
 bool expired() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена возвращает **`true`** , если **`*this`** истек срок действия, в противном случае — **`false`** .
 
@@ -166,7 +166,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="lock"></a><a name="lock"></a> скрыть
+## <a name="lock"></a><a name="lock"></a> lock
 
 Получает объект `shared_ptr` , который предоставляет право владения ресурсом.
 
@@ -174,7 +174,7 @@ wp.expired() == true
 shared_ptr<T> lock() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает пустой объект [shared_ptr](shared-ptr-class.md) , если **`*this`** истек срок действия. в противном случае возвращается `shared_ptr<T>` объект, которому принадлежит ресурс, **`*this`** указывающий на. Возвращает значение, эквивалентное атомарному выполнению `expired() ? shared_ptr<T>() : shared_ptr<T>(*this)` .
 
@@ -215,7 +215,7 @@ wp.expired() == true
 (bool)wp.lock() == false
 ```
 
-## <a name="operator"></a><a name="op_eq"></a> Оператор =
+## <a name="operator"></a><a name="op_eq"></a> operator=
 
 Заменяет ресурс, которым владеет.
 
@@ -231,13 +231,13 @@ weak_ptr& operator=(const shared_ptr<Other>& ptr) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Иной*\
+*Other*\
 Тип, управляемый общим или слабым указателем аргумента.
 
-*указатель*\
+*ptr*\
 Слабый указатель или общий указатель для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все операторы освобождают ресурс, на который сейчас указывает, **`*this`** и присваивают ему владение ресурсом с именем *ptr* **`*this`** . Если оператор завершается с ошибкой, он остается **`*this`** неизменным. Каждый оператор имеет результат, эквивалентный `weak_ptr(ptr).swap(*this)` .
 
@@ -287,14 +287,14 @@ bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Ссылка lvalue на `shared_ptr` или `weak_ptr` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член шаблона возвращает **`true`** значение **`*this`** , если упорядочено до *ptr*.
 
-## <a name="reset"></a><a name="reset"></a> перезапуск
+## <a name="reset"></a><a name="reset"></a> reset
 
 Освобождает принадлежащий ресурс.
 
@@ -302,7 +302,7 @@ bool owner_before(const weak_ptr<Other>& ptr) const noexcept;
 void reset() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена освобождает ресурс, на который указывает, **`*this`** и преобразует **`*this`** его в пустой `weak_ptr` объект.
 
@@ -336,7 +336,7 @@ wp.expired() == false
 wp.expired() == true
 ```
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Меняет местами два объекта `weak_ptr`.
 
@@ -353,10 +353,10 @@ void swap(weak_ptr<T>& a, weak_ptr<T>& b) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*ВЧ*\
+*wp*\
 Слабый указатель, который будет заменен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После a `swap` ресурс, на который изначально указывает, указывает на **`*this`** *WP*, а ресурс, на который изначально указывает *WP* , указывает **`*this`** . Функция не изменяет счетчики ссылок для этих двух ресурсов и не создает никаких исключений. Результат специализации шаблона эквивалентен `a.swap(b)` .
 
@@ -413,7 +413,7 @@ int main()
 long use_count() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает количество `shared_ptr` объектов, владеющих ресурсом, на который указывает **`*this`** .
 
@@ -468,16 +468,16 @@ weak_ptr(const shared_ptr<Other>& sp) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Иной*\
+*Other*\
 Тип, которым управляет общий или слабый указатель на аргумент. Эти конструкторы не участвуют в разрешении перегрузки, если только _другие \* _ не совместимы с `element_type*` .
 
-*ВЧ*\
+*wp*\
 Слабый указатель для копирования.
 
-*портов*\
+*sp*\
 Общий указатель для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор по умолчанию конструирует пустой `weak_ptr` объект. Конструкторы, принимающие аргумент, каждый из них создают пустой `weak_ptr` объект, если указатель аргумента пуст. В противном случае они создают `weak_ptr` объект, указывающий на ресурс с именем, указанным в аргументе. Счетчик ссылок общего объекта не изменен.
 
@@ -514,7 +514,7 @@ wp0.expired() == true
 *wp2.lock() == 5
 ```
 
-## <a name="weak_ptr"></a><a name="tilde-weak_ptr"></a> ~ weak_ptr
+## <a name="weak_ptr"></a><a name="tilde-weak_ptr"></a> ~weak_ptr
 
 Удаляет `weak_ptr`.
 
@@ -522,7 +522,7 @@ wp0.expired() == true
 ~weak_ptr();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор уничтожает это, `weak_ptr` но не влияет на счетчик ссылок объекта, на который его хранятся точки указателя.
 

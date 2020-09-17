@@ -67,7 +67,7 @@ class ATL_NO_VTABLE CAxDialogImpl : public CDialogImplBaseT<TBase>
 |----------|-----------------|
 |[CAxDialogImpl::m_bModal](#m_bmodal)|Переменная, которая существует только в отладке сборки и устанавливается в верной, если диалоговая коробка является модальной.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAxDialogImpl`позволяет создать модальный или бесрежимный диалоговый ящик. `CAxDialogImpl`обеспечивает процедуру диалогового окна, которая использует карту сообщений по умолчанию для направления сообщений соответствующим обработчикам.
 
@@ -142,7 +142,7 @@ HWND Create(HWND hWndParent, RECT&, LPARAM dwInitParam = NULL);
 
 Ручка к недавно созданному диалоговому ящику.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это диалоговое окно автоматически `CAxDialogImpl` прикрепляется к объекту. Чтобы создать модальный диалоговый ящик, позвоните [doModal](#domodal).
 
@@ -160,7 +160,7 @@ BOOL DestroyWindow();
 
 TRUE, если окно успешно разрушено; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не звоните, `DestroyWindow` чтобы уничтожить модальный диалоговый ящик. Вместо этого позвоните [в EndDialog.](#enddialog)
 
@@ -186,7 +186,7 @@ INT_PTR DoModal(
 
 В случае успеха значение параметра *nRetCode,* указанное в вызове [к EndDialog;](#enddialog) в противном случае, -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это диалоговое окно автоматически `CAxDialogImpl` прикрепляется к объекту.
 
@@ -209,7 +209,7 @@ BOOL EndDialog(int nRetCode);
 
 TRUE, если диалоговая будка уничтожена; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `EndDialog`должны быть вызваны через процедуру диалогового окна. После того, как диалоговое окно уничтожено, Windows использует значение `DoModal` *nRetCode* в качестве значения возврата для , который создал диалоговое окно.
 
@@ -228,7 +228,7 @@ virtual DLGPROC GetDialogProc();
 
 Возвращает указатель на `DialogProc` функцию обратного вызова.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция `DialogProc` является функцией обратного вызова, определяемой приложением.
 
@@ -261,7 +261,7 @@ BOOL IsDialogMessage(LPMSG pMsg);
 
 Возвращает TRUE, если сообщение было обработано, FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод предназначен для вызова из цикла сообщений.
 

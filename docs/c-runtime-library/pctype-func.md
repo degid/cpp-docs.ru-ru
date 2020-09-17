@@ -44,7 +44,7 @@ const unsigned short *__pctype_func(
 
 Указатель на массив данных о классификации символов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Сведения в таблице классификации символов предназначены только для внутреннего использования и используются различными функциями, которые классифицируют символы типа **`char`** . Дополнительные сведения см. в подразделе `Remarks` раздела [_pctype, _pwctype, _wctype, _mbctype, _mbcasemap](../c-runtime-library/pctype-pwctype-wctype-mbctype-mbcasemap.md).
 

@@ -28,7 +28,7 @@ ms.locfileid: "88839495"
 *interface*<br/>
 Указанный интерфейс, для которого требуется использовать vtable по умолчанию для COM-объекта.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **defaultvtable** C++ имеет те же функциональные возможности, что и атрибут [defaultvtable](/windows/win32/Midl/defaultvtable) MIDL.
 

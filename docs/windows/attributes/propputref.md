@@ -23,7 +23,7 @@ ms.locfileid: "88839911"
 [propputref]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **propputref** C++ имеет те же функциональные возможности, что и атрибут [propputref](/windows/win32/Midl/propputref) MIDL.
 

@@ -57,7 +57,7 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
 |----------|-----------------|
 |[Катлбасемодуле:: m_bInitFailed](#m_binitfailed)|Переменная, указывающая, завершилась ли инициализация модуля неудачей.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляр `CAtlBaseModule` с именем _AtlBaseModule содержится в каждом проекте ATL, который содержит дескриптор для экземпляра модуля, дескриптор модуля, содержащего ресурсы (которые по умолчанию являются одним и тем же), и массив дескрипторов для модулей, предоставляющих первичные ресурсы. `CAtlBaseModule`можно безопасно получить из нескольких потоков.
 
@@ -71,7 +71,7 @@ class CAtlBaseModule : public _ATL_BASE_MODULE
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="catlbasemoduleaddresourceinstance"></a><a name="addresourceinstance"></a>Катлбасемодуле:: Аддресаурцеинстанце
 
@@ -98,7 +98,7 @@ bool AddResourceInstance(HINSTANCE hInst) throw();
 CAtlBaseModule() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает объект `CAtlBaseModule`.
 
@@ -151,7 +151,7 @@ HINSTANCE GetResourceInstance() throw();
 static bool m_bInitFailed;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение true, если модуль инициализирован, и значение false, если не удалось выполнить инициализацию.
 

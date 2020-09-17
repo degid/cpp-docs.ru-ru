@@ -79,10 +79,10 @@ class CAcl
 
 |Имя|Описание|
 |----------|-----------------|
-|[Список ACL Какл:: operator const *](#operator_const_acl__star)|Приводит `CAcl` объект к `ACL` структуре.|
-|[Какл:: operator =](#operator_eq)|Оператор присвоения.|
+|[Список ACL Какл::operator const *](#operator_const_acl__star)|Приводит `CAcl` объект к `ACL` структуре.|
+|[Какл::operator=](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `ACL` Структура представляет собой заголовок списка ACL (список управления доступом). В список ACL входит последовательный список из нуля или более записей [ACE](/windows/win32/SecAuthZ/access-control-entries) (записи управления доступом). Отдельные элементы ACE в списке ACL нумеруются от 0 до *n – 1*, где *n* — число записей ACE в списке ACL. При редактировании списка управления доступом приложение ссылается на запись управления доступом (ACE) в списке управления доступом по индексу.
 
@@ -102,7 +102,7 @@ class CAcl
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлсекурити. h
+**Заголовок:** атлсекурити.h
 
 ## <a name="caclcaccessmaskarray"></a><a name="caccessmaskarray"></a>Какл:: Какцессмаскаррай
 
@@ -112,7 +112,7 @@ class CAcl
 typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это определение типа указывает тип массива, который можно использовать для хранения прав доступа, используемых в записях управления доступом (ACE).
 
@@ -124,7 +124,7 @@ typedef CAtlArray<ACCESS_MASK> CAccessMaskArray;
 typedef CAtlArray<BYTE> CAceFlagArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это определение типа определяет тип массива, используемый для определения управляющих флагов, относящихся к типу элемента управления доступом (ACE). Полный список возможных флагов см. в определении [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
@@ -136,7 +136,7 @@ typedef CAtlArray<BYTE> CAceFlagArray;
 typedef CAtlArray<BYTE> CAceTypeArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это определение типа определяет тип массива, используемый для определения природы объектов записи управления доступом (ACE), таких как ACCESS_ALLOWED_ACE_TYPE или ACCESS_DENIED_ACE_TYPE. Полный список возможных типов см. в определении [ACE_HEADER](/windows/win32/api/winnt/ns-winnt-ace_header) .
 
@@ -154,7 +154,7 @@ CAcl(const CAcl& rhs) throw(...);
 *rhs*<br/>
 Существующий объект `CAcl`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При `CAcl` необходимости можно создать объект с помощью существующего `CAcl` объекта.
 
@@ -166,7 +166,7 @@ CAcl(const CAcl& rhs) throw(...);
 virtual ~CAcl() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор освобождает все ресурсы, полученные объектом.
 
@@ -208,7 +208,7 @@ void GetAclEntries(
 *пацефлагс*<br/>
 Флаги ACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод заполняет параметры массива сведениями о каждом объекте ACE, `CAcl` содержащемся в объекте. Если сведения для определенного массива не требуются, используйте значение NULL.
 
@@ -254,7 +254,7 @@ void GetAclEntry(
 *пинхеритедобжекттипе*<br/>
 Тип наследуемого объекта. Будет установлено значение GUID_NULL, если наследуемый тип объекта не указан в элементе управления доступом или элемент управления доступом не является элементом ACE объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод извлечет все сведения об отдельном элементе управления доступом, предоставляя больше информации, чем [какл:: жетаклентриес](#getaclentries) .
 
@@ -292,7 +292,7 @@ const ACL* GetPACL() const throw(...);
 bool IsEmpty() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение TRUE, `CAcl` если объект не имеет значение null, и не содержит записей. Возвращает значение FALSE, `CAcl` если объект либо имеет значение null, либо содержит хотя бы одну запись.
 
@@ -308,7 +308,7 @@ bool IsNull() const throw();
 
 Возвращает значение TRUE, `CAcl` если объект имеет значение null, в противном случае — значение false.
 
-## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a>Список ACL Какл:: operator const *
+## <a name="cacloperator-const-acl-"></a><a name="operator_const_acl__star"></a>Список ACL Какл::operator const *
 
 Приводит `CAcl` объект к структуре `ACL` (список управления доступом).
 
@@ -316,11 +316,11 @@ bool IsNull() const throw();
 operator const ACL *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает адрес `ACL` структуры.
 
-## <a name="cacloperator-"></a><a name="operator_eq"></a>Какл:: operator =
+## <a name="cacloperator-"></a><a name="operator_eq"></a>Какл::operator=
 
 Оператор присвоения.
 
@@ -350,7 +350,7 @@ void RemoveAce(UINT nIndex) throw();
 *ниндекс*<br/>
 Индекс удаляемой записи ACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод является производным от [CAtlArray:: RemoveAt](../../atl/reference/catlarray-class.md#removeat).
 
@@ -375,7 +375,7 @@ bool RemoveAces(const CSid& rSid) throw(...)
 void SetEmpty() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CAcl` Можно задать значение Empty или значение NULL: два состояния различаются.
 
@@ -387,7 +387,7 @@ void SetEmpty() throw();
 void SetNull() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CAcl` Можно задать значение Empty или значение NULL: два состояния различаются.
 

@@ -36,7 +36,7 @@ struct RemoveReference<T&&>;
 *T*<br/>
 Класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Отделяет ссылку или признак rvalue-reference от указанного параметра шаблона класса.
 
@@ -44,7 +44,7 @@ struct RemoveReference<T&&>;
 
 ### <a name="public-typedefs"></a>Открытые определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`Type`|Синоним для параметра шаблона класса.|
 
@@ -54,7 +54,7 @@ struct RemoveReference<T&&>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

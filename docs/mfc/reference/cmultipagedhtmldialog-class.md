@@ -34,7 +34,7 @@ class CMultiPageDHtmlDialog : public CDHtmlDialog
 |[CmultipagedHtmlDialog::CmultipagedHtmlDialog](#cmultipagedhtmldialog)|Строит многостраничный (волшебник-стиль) диалоговый объект DHTML.|
 |[CmultipagedHtmlDialog:::»CmultipagedHtmlDialog](#_dtorcmultipagedhtmldialog)|Уничтожает многостраничный диалоговой объект DHTML.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Механизмом для этого является [карта событий DHTML и URL,](dhtml-event-maps.md)которая содержит встроенные карты событий для каждой страницы.
 

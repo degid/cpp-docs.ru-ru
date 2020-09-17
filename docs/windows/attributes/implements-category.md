@@ -28,7 +28,7 @@ ms.locfileid: "88846125"
 *implements_category*<br/>
 Идентификатор реализованной категории.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **implements_category** C++ задает категории компонентов, реализуемых целевым классом. Это можно сделать, создав карту категорий и добавив отдельные записи, заданные атрибутом **implements_category** . Дополнительные сведения см. в разделах [категории компонентов и принципы их работы](/windows/win32/com/component-categories-and-how-they-work).
 

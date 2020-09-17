@@ -26,7 +26,7 @@ ms.locfileid: "87214247"
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При `/clr` компиляции **`new`** указывает, что виртуальный член получит новый слот в таблице vtable; эта функция не переопределяет метод базового класса.
 

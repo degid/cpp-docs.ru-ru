@@ -81,7 +81,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 |[Катлпревиевктрлимпл:: m_clrBack](#m_clrback)|Цвет фона окна предварительного просмотра.|
 |[Катлпревиевктрлимпл:: m_clrText](#m_clrtext)|Цвет текста окна предварительного просмотра.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -101,7 +101,7 @@ class CAtlPreviewCtrlImpl : public CWindowImpl<CAtlPreviewCtrlImpl>, public IPre
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлпревиевктрлимпл. h
+**Заголовок:** атлпревиевктрлимпл.h
 
 ## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="catlpreviewctrlimpl"></a>Катлпревиевктрлимпл:: Катлпревиевктрлимпл
 
@@ -112,7 +112,7 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
    m_clrBack(RGB(255, 255, 255)), m_plf(NULL);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplcatlpreviewctrlimpl"></a><a name="dtor"></a>Катлпревиевктрлимпл:: ~ Катлпревиевктрлимпл
 
@@ -122,7 +122,7 @@ CAtlPreviewCtrlImpl(void) : m_clrText(0),
 virtual ~CAtlPreviewCtrlImpl(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplcreate"></a><a name="create"></a>Катлпревиевктрлимпл:: Create
 
@@ -144,7 +144,7 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimpldestroy"></a><a name="destroy"></a>Катлпревиевктрлимпл::D естрой
 
@@ -154,7 +154,7 @@ virtual BOOL Create(HWND hWndParent, const RECT* prc);
 virtual void Destroy();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimpldopaint"></a><a name="dopaint"></a>Катлпревиевктрлимпл::D Опаинт
 
@@ -169,7 +169,7 @@ virtual void DoPaint(HDC hdc);
 *HDC*<br/>
 Маркер контекста устройства для рисования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplfocus"></a><a name="focus"></a>Катлпревиевктрлимпл:: Focus
 
@@ -179,7 +179,7 @@ virtual void DoPaint(HDC hdc);
 virtual void Focus();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplm_clrback"></a><a name="m_clrback"></a>Катлпревиевктрлимпл:: m_clrBack
 
@@ -189,7 +189,7 @@ virtual void Focus();
 COLORREF m_clrBack;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplm_clrtext"></a><a name="m_clrtext"></a>Катлпревиевктрлимпл:: m_clrText
 
@@ -199,7 +199,7 @@ COLORREF m_clrBack;
 COLORREF m_clrText;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplm_plf"></a><a name="m_plf"></a>Катлпревиевктрлимпл:: m_plf
 
@@ -209,7 +209,7 @@ COLORREF m_clrText;
 const LOGFONTW* m_plf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplonpaint"></a><a name="onpaint"></a>Катлпревиевктрлимпл:: onpain
 
@@ -241,7 +241,7 @@ LRESULT OnPaint(
 
 Всегда возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplredraw"></a><a name="redraw"></a>Катлпревиевктрлимпл:: перерисовка
 
@@ -251,7 +251,7 @@ LRESULT OnPaint(
 virtual void Redraw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplsethost"></a><a name="sethost"></a>Катлпревиевктрлимпл:: Сесост
 
@@ -266,7 +266,7 @@ virtual void SetHost(HWND hWndParent);
 *хвндпарент*<br/>
 Дескриптор нового родительского окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplsetpreviewvisuals"></a><a name="setpreviewvisuals"></a>Катлпревиевктрлимпл:: Сетпревиеввисуалс
 
@@ -290,7 +290,7 @@ virtual void SetPreviewVisuals(
 *плф*<br/>
 Шрифт, используемый для вывода текста в окне предварительного просмотра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlpreviewctrlimplsetrect"></a><a name="setrect"></a>Катлпревиевктрлимпл:: SetRect
 
@@ -308,7 +308,7 @@ virtual void SetRect(const RECT* prc, BOOL bRedraw);
 *bRedraw*<br/>
 Указывает, следует ли перерисовать элемент управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также
 

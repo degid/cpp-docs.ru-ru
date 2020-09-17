@@ -47,7 +47,7 @@ void __setusermatherr(
 
 Тип параметра *pf* объявляется как `typedef int (__cdecl * _HANDLE_MATH_ERROR)(struct _exception *)`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
 

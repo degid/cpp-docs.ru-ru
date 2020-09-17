@@ -33,7 +33,7 @@ class-body
 } [declarators] [;]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В приведенном синтаксисе используются следующие элементы.
 

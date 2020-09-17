@@ -55,7 +55,7 @@ class CComClassFactory2 : public IClassFactory2,
 |[CComClassFactory2:LockServer](#lockserver)|Запирает фабрику классов в памяти.|
 |[CComClassFactory2:RequestLicKey](#requestlickey)|Создает и возвращает ключ лицензии.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComClassFactory2`реализует интерфейс [IClassFactory2,](/windows/win32/api/ocidl/nn-ocidl-iclassfactory2) который является продолжением [IClassFactory](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory). `IClassFactory2`контролирует создание объекта через лицензию. Фабрика класса, исполняющая на лицензионной машине, может обеспечить ключ лицензии времени выполнения. Этот ключ лицензии позволяет приложению мгновенно использовать объекты, когда полной лицензии машины не существует.
 
@@ -108,7 +108,7 @@ STDMETHOD(CreateInstance)(LPUNKNOWN pUnkOuter, REFIID riid, void** ppvObj);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Требует, чтобы машина была полностью лицензирована. Если полной лицензии машины не существует, позвоните [CreateInstanceLic](#createinstancelic).
 
@@ -147,7 +147,7 @@ STDMETHOD(CreateInstanceLic)(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете получить ключ лицензии с помощью [RequestLicKey](#requestlickey). Для того, чтобы создать объект на нелицензированной `CreateInstanceLic`машине, необходимо позвонить.
 
@@ -168,7 +168,7 @@ STDMETHOD(GetLicInfo)(LICINFO* pLicInfo);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Член `fRuntimeKeyAvail` этой структуры указывает, позволяет ли фабрика класса создавать объекты на нелицензированной машине, учитывая, что у нас есть ключ лицензии. Участник *fLicVerified* указывает, существует ли полная лицензия машины.
 
@@ -189,7 +189,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `_Module`относится к глобальному экземпляру [CComModule](../../atl/reference/ccommodule-class.md) или класса, полученного из него.
 
@@ -215,7 +215,7 @@ STDMETHOD(RequestLicKey)(DWORD dwReserved, BSTR* pbstrKey);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ключ лицензии необходим для вызова [CreateInstanceLic](#createinstancelic) для создания объекта на нелицензированной машине. Если `fRuntimeKeyAvail` FALSE, то объекты могут быть созданы только на полностью лицензированной машине.
 

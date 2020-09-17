@@ -60,7 +60,7 @@ void __incgsqword(
 |`__incgsdword`|X64|
 |`__incgsqword`|X64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

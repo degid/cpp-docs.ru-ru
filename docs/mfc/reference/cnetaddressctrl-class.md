@@ -41,13 +41,13 @@ class CNetAddressCtrl : public CEdit
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CNetAddressCtrl:: CNetAddressCtrl](#cnetaddressctrl)|Формирует объект `CNetAddressCtrl`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CNetAddressCtrl:: Create](#create)|Создает элемент управления "сетевой адрес" с указанными стилями и прикрепляет его к текущему `CNetAddressCtrl` объекту.|
 |[CNetAddressCtrl:: Креатикс](#createex)|Создает элемент управления "сетевой адрес" с указанными расширенными стилями и прикрепляет его к текущему `CNetAddressCtrl` объекту.|
@@ -56,7 +56,7 @@ class CNetAddressCtrl : public CEdit
 |[CNetAddressCtrl:: Жеталловтипе](#getallowtype)|Возвращает тип сетевого адреса, который может поддерживать текущий элемент управления "Сетевая адресация".|
 |[CNetAddressCtrl:: Сеталловтипе](#setallowtype)|Задает тип сетевого адреса, который может поддерживать текущий элемент управления сетью.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Элемент управления "сетевой адрес" проверяет правильность формата адреса, вводимого пользователем. Элемент управления фактически не подключается к сетевому адресу. Метод [CNetAddressCtrl:: сеталловтипе](#setallowtype) указывает один или несколько типов адресов, которые могут проанализировать и проверить метод [CNetAddressCtrl::](#getaddress) . Адрес может быть в формате IPv4, IPv6 или именованного адреса для сервера, сети, узла или назначения широковещательного сообщения. Если формат адреса неверен, можно использовать метод [CNetAddressCtrl::D исплайеррортип](#displayerrortip) для отображения окна сообщения подсказки, которое графически указывает на текстовое поле элемента управления "сетевые адреса", и отображает предопределенное сообщение об ошибке.
 
@@ -106,7 +106,7 @@ class CNetAddressCtrl : public CEdit
 CNetAddressCtrl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CNetAddressCtrl:: Create](#create) или [CNetAddressCtrl:: креатикс](#createex) , чтобы создать сетевой элемент управления и присоединить его к `CNetAddressCtrl` объекту.
 
@@ -186,7 +186,7 @@ HRESULT DisplayErrorTip();
 
 Значение `S_OK` , если этот метод выполнен успешно; в противном случае — код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CNetAddressCtrl:: сеталловтипе](#setallowtype) , чтобы указать типы адресов, которые может поддерживать текущий элемент управления сетевого адреса. Используйте метод [CNetAddressCtrl::](#getaddress) Method для проверки и анализа сетевого адреса, вводимого пользователем. Используйте метод [CNetAddressCtrl::D исплайеррортип](#displayerrortip) , чтобы отобразить всплывающую подсказку сообщения об ошибке, если метод [CNetAddressCtrl::-Address](#getaddress) завершился неудачно.
 
@@ -209,7 +209,7 @@ HRESULT GetAddress(PNC_ADDRESS pAddress) const;
 
 Значение, S_OK, если этот метод выполнен успешно; в противном случае — код ошибки COM. Дополнительные сведения о возможных кодах ошибок см. в разделе возвращаемое значение макроса [NetAddr_GetAddress](/windows/win32/api/shellapi/nf-shellapi-netaddr_getaddress) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если этот метод успешно выполнен, структура [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) содержит дополнительные сведения о сетевом адресе.
 
@@ -229,7 +229,7 @@ DWORD GetAllowType() const;
 
 Побитовое сочетание (или) флагов, указывающих типы адресов, которые может поддерживать элемент управления "сетевой адрес". Дополнительные сведения см. в разделе [NET_STRING](/windows/win32/shell/net-string).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это сообщение вызывает макрос [NetAddr_GetAllowType](/windows/win32/api/shellapi/nf-shellapi-netaddr_getallowtype) , который описан в Windows SDK. Этот макрос отправляет NCM_GETALLOWTYPE сообщение.
 
@@ -250,7 +250,7 @@ HRESULT SetAllowType(DWORD dwAddrMask);
 
 S_OK, если этот метод успешно выполнен; в противном случае — код ошибки COM.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CNetAddressCtrl:: сеталловтипе](#setallowtype) , чтобы указать типы адресов, которые может поддерживать текущий элемент управления сетевого адреса. Используйте метод [CNetAddressCtrl::](#getaddress) Method для проверки и анализа сетевого адреса, вводимого пользователем. Используйте метод [CNetAddressCtrl::D исплайеррортип](#displayerrortip) , чтобы отобразить всплывающую подсказку сообщения об ошибке, если метод [CNetAddressCtrl::-Address](#getaddress) завершился неудачно.
 

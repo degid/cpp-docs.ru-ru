@@ -44,7 +44,7 @@ class CInterfaceList
 |----------|-----------------|
 |[CInterfaceList::CInterfaceList](#cinterfacelist)|Конструктор для списка интерфейсов.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет конструктор и выведенные методы для создания списка указателей интерфейса COM. Используйте [CInterfaceArray,](../../atl/reference/cinterfacearray-class.md) когда требуется массив.
 
@@ -73,7 +73,7 @@ CInterfaceList(UINT nBlockSize = 10) throw();
 *nBlockSize*<br/>
 Размер блока, с значением по умолчанию 10.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер блока — это мера объема памяти, выделенного при необходимости нового элемента. Большие размеры блоков уменьшают вызовы для процедур распределения памяти, но используют больше ресурсов.
 

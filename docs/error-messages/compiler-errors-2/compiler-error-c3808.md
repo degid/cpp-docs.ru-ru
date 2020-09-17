@@ -17,7 +17,7 @@ ms.locfileid: "80165630"
 
 > "*тип*": класс с атрибутом ComImport не может определять член "*член*", разрешены только абстрактные функции или возможности dllimport
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Тип, производный от <xref:System.Runtime.InteropServices.ComImportAttribute>, не может определить *член*.
 

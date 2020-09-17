@@ -41,7 +41,7 @@ ms.locfileid: "80168763"
 #define not_eq !=
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор !=.
 
@@ -73,4 +73,4 @@ a is not equal to b
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

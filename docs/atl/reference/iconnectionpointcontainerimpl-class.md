@@ -44,7 +44,7 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 |[IConnectionPointContainerImpl::EnumConnectionPoints](#enumconnectionpoints)|Создает регистратор для итерата через точки соединения, поддерживаемые в подключаемом объекте.|
 |[IConnectionPointContainerImpl::FindConnectionPoint](#findconnectionpoint)|Извлекает указатель интерфейса в точку соединения, поддерживающую указанное IID.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IConnectionPointContainerImpl`реализует контейнер точки соединения для управления коллекцией объектов [IConnectionPointImpl.](../../atl/reference/iconnectionpointimpl-class.md) `IConnectionPointContainerImpl`предоставляет два метода, которые клиент может вызвать для получения дополнительной информации о подключаемых объекта:
 
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE IConnectionPointContainerImpl
 STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPointContainer::EnumConnectionPoints](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-enumconnectionpoints) в Windows SDK.
 
@@ -84,7 +84,7 @@ STDMETHOD(EnumConnectionPoints)(IEnumConnectionPoints** ppEnum);
 STDMETHOD(FindConnectionPoint)(REFIID riid, IConnectionPoint** ppCP);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IConnectionPointContainer::FindConnectionPoint](/windows/win32/api/ocidl/nf-ocidl-iconnectionpointcontainer-findconnectionpoint) в Windows SDK.
 

@@ -117,7 +117,7 @@ virtual BOOL Create(
 *pContext*<br/>
 Указатель на [CCreateContext](../../mfc/reference/ccreatecontext-structure.md). NULL по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод также вызовет `Navigate` содержащийся метод WebBrowser для загрузки документа по умолчанию (см. [CHtmlEditView::GetStartDocument).](#getstartdocument)
 

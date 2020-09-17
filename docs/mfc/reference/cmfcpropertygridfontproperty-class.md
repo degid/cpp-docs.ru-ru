@@ -48,7 +48,7 @@ class CMFCPropertyGridFontProperty : public CMFCPropertyGridProperty
 |`CMFCPropertyGridFontProperty::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 |`CMFCPropertyGridFontProperty::OnClickButton`|Вызывается платформой, когда пользователь нажимает кнопку, содержащуюся в свойстве. (Переопределяет [CMFCPropertyGridProperty::OnClickButton](../../mfc/reference/cmfcpropertygridproperty-class.md#onclickbutton).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -96,7 +96,7 @@ CMFCPropertyGridFontProperty(
 *Цвет*<br/>
 (в) Цвет шрифта. Значением по умолчанию является цвет по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CMFCPropertyGridFontProperty` представляет свойство шрифта в управлении шрифтом сетки свойств.
 
@@ -118,7 +118,7 @@ COLORREF GetColor() const;
 
 Значение цвета RGB, представляющее выбранный цвет шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcpropertygridfontpropertygetlogfont"></a><a name="getlogfont"></a>CMFCPropertyGridFontProperty::GetLogFont
 
@@ -132,7 +132,7 @@ LPLOGFONT GetLogFont();
 
 Указатель на структуру [LOGFONT,](/windows/win32/api/wingdi/ns-wingdi-logfontw) описывающий выбранный шрифт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

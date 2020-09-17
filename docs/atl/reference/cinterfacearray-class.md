@@ -44,7 +44,7 @@ class CInterfaceArray :
 |----------|-----------------|
 |[CInterfaceArray::CInterfaceArray](#cinterfacearray)|Конструктор для массива интерфейса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет конструктор и производные методы для создания массива указателей интерфейса COM. Используйте [CInterfaceList,](../../atl/reference/cinterfacelist-class.md) когда требуется список.
 
@@ -68,7 +68,7 @@ class CInterfaceArray :
 CInterfaceArray() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует интеллектуальный массив указателей.
 

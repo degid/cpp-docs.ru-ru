@@ -196,7 +196,7 @@ _variant_t(
 *ui8Src*<br/>
 Значение **__int64 без знака** , которое необходимо скопировать в новый `_variant_t` объект.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 - **_variant_t ()** Конструирует пустой `_variant_t` объект `VT_EMPTY` .
 

@@ -86,7 +86,7 @@ int _iswblank_l(
 |**_istblank**|**ISBLANK**|[_ismbcblank](ismbcgraph-functions.md)|**iswblank**|
 |**_istblank_l**|**_isblank_l**|[_ismbcblank_l](ismbcgraph-functions.md)|**_iswblank_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

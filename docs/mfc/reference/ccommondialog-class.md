@@ -33,7 +33,7 @@ class CCommonDialog : public CDialog
 |----------|-----------------|
 |[CCommonДиалог::CCommonДиалог](#ccommondialog)|Формирует объект `CCommonDialog`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Следующие классы инкапсулируют функциональность общих диалогов Windows:
 
@@ -82,7 +82,7 @@ explicit CCommonDialog(CWnd* pParentWnd);
 *pParentWnd*<br/>
 Указывает на объект окна родителя или владельца (типа [CWnd),](../../mfc/reference/cwnd-class.md)к которому принадлежит объект диалога. Если это NULL, родительское окно объекта диалога устанавливается на основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [CDialog::CDialog](../../mfc/reference/cdialog-class.md#cdialog) для получения полной информации.
 

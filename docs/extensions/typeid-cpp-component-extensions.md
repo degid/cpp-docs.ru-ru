@@ -45,7 +45,7 @@ Platform::Type^ type = T::typeid;
 *T*<br/>
 Имя типа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В C++/CX typeid возвращает значение [Platform::Type](../cppcx/platform-type-class.md), создаваемое из данных типа во время выполнения.
 
@@ -66,7 +66,7 @@ type::typeid
 *type*<br/>
 Имя типа (абстрактный декларатор), для которого требуется объект `System::Type`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 **`typeid`** используется для получения <xref:System.Type> для типа во время компиляции.
 

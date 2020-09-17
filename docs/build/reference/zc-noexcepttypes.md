@@ -23,7 +23,7 @@ ms.locfileid: "87218953"
 
 > **`/Zc:noexceptTypes`**\[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если **`/Zc:noexceptTypes`** указан параметр, компилятор соответствует стандарту c++ 17 и обрабатывает его [**`throw()`**](../../cpp/exception-specifications-throw-cpp.md) как псевдоним для [**`noexcept`**](../../cpp/noexcept-cpp.md) , удаляет `throw(` *`type-list`* `)` и `throw(...)` , а также позволяет включать определенные типы **`noexcept`** . **`/Zc:noexceptTypes`** Параметр доступен, только если [**`/std:c++17`**](std-specify-language-standard-version.md) включен или [**`/std:c++latest`**](std-specify-language-standard-version.md) . **`/Zc:noexceptTypes`** по умолчанию включено в соответствие стандарту ISO C++ 17. [**`/permissive-`**](permissive-standards-conformance.md)Параметр не влияет на **`/Zc:noexceptTypes`** . Отключите этот параметр, указав **`/Zc:noexceptTypes-`** для возврата к поведению c++ 14 **`noexcept`** при **`/std:c++17`** указании аргумента или **`/std:c++latest`** .
 

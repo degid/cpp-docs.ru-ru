@@ -29,7 +29,7 @@ DWORD HelpContext( ) const throw( );
 
 Возвращает результат `IErrorInfo::GetHelpContext` для объекта `IErrorInfo`, записанного в объекте `_com_error`. Если объект `IErrorInfo` не записан, возвращается ноль.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Любой сбой при вызове метода `IErrorInfo::GetHelpContext` игнорируется.
 

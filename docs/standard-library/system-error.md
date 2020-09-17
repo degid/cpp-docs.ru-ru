@@ -46,10 +46,10 @@ ms.locfileid: "88841887"
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](../standard-library/system-error-operators.md#op_eq_eq)|Проверяет равенство объекта слева от оператора объекту справа от оператора.|
-|[operator! =](../standard-library/system-error-operators.md#op_neq)|Проверяет неравенство объекта слева от оператора объекту справа от оператора.|
-|[Оператор<](../standard-library/system-error-operators.md#op_lt)|Проверяет, меньше ли какой-либо объект переданного для сравнения объекта.|
-|[Оператор<<](../standard-library/system-error-operators.md#op_ostream)||
+|[operator==](../standard-library/system-error-operators.md#op_eq_eq)|Проверяет равенство объекта слева от оператора объекту справа от оператора.|
+|[operator!=](../standard-library/system-error-operators.md#op_neq)|Проверяет неравенство объекта слева от оператора объекту справа от оператора.|
+|[operator<](../standard-library/system-error-operators.md#op_lt)|Проверяет, меньше ли какой-либо объект переданного для сравнения объекта.|
+|[operator<<](../standard-library/system-error-operators.md#op_ostream)||
 
 ### <a name="enums"></a>Перечисления
 

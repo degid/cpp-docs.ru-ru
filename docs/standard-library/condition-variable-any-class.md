@@ -61,7 +61,7 @@ class condition_variable_any;
 condition_variable_any();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При недостатке памяти этот конструктор вызывает объект [system_error](../standard-library/system-error-class.md), имеющий код ошибки `not_enough_memory`. Если объект не может быть создан из-за недоступности некоторых других ресурсов, конструктор создает объект `system_error`, имеющий код ошибки `resource_unavailable_try_again`.
 
@@ -98,10 +98,10 @@ void wait(Lock& Lck, Predicate Pred);
 *лкк*\
 Объект `mutex` любого типа.
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до оповещения объекта `condition_variable_any` путем вызова [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all). Он может также ложно активироваться.
 
@@ -132,7 +132,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 *Rel_time*\
 Объект `chrono::duration`, указывающий количество времени до активации потока.
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -141,7 +141,7 @@ bool wait_for(Lock& Lck, const chrono::duration<Rep, Period>& Rel_time, Predicat
 
 Второй метод возвращает значение *пред*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до `condition_variable_any` сигнализации объекта вызовом [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all)или до истечения интервала времени *Rel_time* . Он может также ложно активироваться.
 
@@ -187,7 +187,7 @@ void wait_until(
 *Abs_time*\
 Объект [chrono::time_point](../standard-library/time-point-class.md).
 
-*Возможен*\
+*pred*\
 Любое выражение, возвращающее значение **`true`** или **`false`** .
 
 ### <a name="return-value"></a>Возвращаемое значение
@@ -196,7 +196,7 @@ void wait_until(
 
 Методы, возвращающие, **`bool`** возвращают значение " *пред*".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод блокируется до `condition_variable` сигнализации объекта вызовом [notify_one](../standard-library/condition-variable-class.md#notify_one) или [notify_all](../standard-library/condition-variable-class.md#notify_all)или до *Abs_time*. Он может также ложно активироваться.
 

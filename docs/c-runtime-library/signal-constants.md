@@ -32,7 +32,7 @@ ms.locfileid: "88841146"
 #include <signal.h>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Аргумент `sig` должен представлять собой одну из констант манифеста, определенных в SIGNAL.H (перечислены ниже).
 

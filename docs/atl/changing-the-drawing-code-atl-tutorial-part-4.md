@@ -30,11 +30,11 @@ ms.locfileid: "82167647"
 
 ### <a name="to-modify-the-header-file"></a>Изменение файла заголовка
 
-1. Добавьте строку `#include <math.h>` в начало поликтл. h. Начало файла должно выглядеть следующим образом:
+1. Добавьте строку `#include <math.h>` в начало поликтл.h. Начало файла должно выглядеть следующим образом:
 
     [!code-cpp[NVC_ATL_Windowing#47](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_1.cpp)]
 
-1. Реализуйте `IProvideClassInfo` интерфейс, чтобы предоставить сведения о методе для элемента управления, добавив следующий код в поликтл. h. В `CPolyCtl` классе замените Line:
+1. Реализуйте `IProvideClassInfo` интерфейс, чтобы предоставить сведения о методе для элемента управления, добавив следующий код в поликтл.h. В `CPolyCtl` классе замените Line:
 
     ```cpp
     public CComControl<CPolyCtl>
@@ -54,17 +54,17 @@ ms.locfileid: "82167647"
     COM_INTERFACE_ENTRY(IProvideClassInfo2)
     ```
 
-1. После вычисления точек многоугольников они будут храниться в массиве типа `POINT`, поэтому добавьте массив после оператора `short m_nSides;` определения в поликтл. h:
+1. После вычисления точек многоугольников они будут храниться в массиве типа `POINT`, поэтому добавьте массив после оператора `short m_nSides;` определения в поликтл.h:
 
     [!code-cpp[NVC_ATL_Windowing#48](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_2.h)]
 
 ## <a name="modifying-the-ondraw-method"></a>Изменение метода OnDraw
 
-Теперь необходимо изменить `OnDraw` метод в поликтл. h. Код, который вы добавите, создает новое перо и кисть для рисования многоугольника, а затем вызывает функции `Ellipse` и `Polygon` API Win32 для выполнения фактического рисования.
+Теперь необходимо изменить `OnDraw` метод в поликтл.h. Код, который вы добавите, создает новое перо и кисть для рисования многоугольника, а затем вызывает функции `Ellipse` и `Polygon` API Win32 для выполнения фактического рисования.
 
 ### <a name="to-modify-the-ondraw-function"></a>Изменение функции OnDraw
 
-1. Замените существующий `OnDraw` метод в поликтл. h следующим кодом:
+1. Замените существующий `OnDraw` метод в поликтл.h следующим кодом:
 
     [!code-cpp[NVC_ATL_Windowing#49](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_3.cpp)]
 
@@ -74,7 +74,7 @@ ms.locfileid: "82167647"
 
 ### <a name="to-add-the-calcpoints-method"></a>Добавление метода Калкпоинтс
 
-1. Добавьте объявление `CalcPoints` в `IPolyCtl` общедоступный раздел `CPolyCtl` класса в поликтл. h:
+1. Добавьте объявление `CalcPoints` в `IPolyCtl` общедоступный раздел `CPolyCtl` класса в поликтл.h:
 
     [!code-cpp[NVC_ATL_Windowing#50](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_4.h)]
 
@@ -92,7 +92,7 @@ ms.locfileid: "82167647"
 
 ### <a name="to-initialize-the-fill-color"></a>Инициализация цвета заливки
 
-1. Используйте зеленый как цвет по умолчанию, добавив следующую строку `CPolyCtl` в конструктор в поликтл. h:
+1. Используйте зеленый как цвет по умолчанию, добавив следующую строку `CPolyCtl` в конструктор в поликтл.h:
 
     [!code-cpp[NVC_ATL_Windowing#53](../atl/codesnippet/cpp/changing-the-drawing-code-atl-tutorial-part-4_7.h)]
 
@@ -102,7 +102,7 @@ ms.locfileid: "82167647"
 
 ## <a name="building-and-testing-the-control"></a>Сборка и тестирование элемента управления
 
-Перестройте элемент управления. Убедитесь, что файл Поликтл. htm закрыт, если он все еще открыт, а затем нажмите кнопку **построить многоугольник** в меню **Сборка** . Вы можете снова просмотреть элемент управления на странице Поликтл. htm, но на этот раз используйте тестовый контейнер элемента управления ActiveX.
+Перестройте элемент управления. Убедитесь, что файл Поликтл.htm закрыт, если он все еще открыт, а затем нажмите кнопку **построить многоугольник** в меню **Сборка** . Вы можете снова просмотреть элемент управления на странице Поликтл.htm, но на этот раз используйте тестовый контейнер элемента управления ActiveX.
 
 ### <a name="to-use-the-activex-control-test-container"></a>Использование тестового контейнера элемента управления ActiveX
 
@@ -110,7 +110,7 @@ ms.locfileid: "82167647"
 
     > [!NOTE]
     > `ATL::CW2AEX`Для ошибок, содержащихся в скрипте script. cpp, `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT );` замените `TRACE( "XActiveScriptSite::GetItemInfo( %s )\n", pszNameT.m_psz );`строку на, `TRACE( "Source Text: %s\n", COLE2CT( bstrSourceLineText ) );` а `TRACE( "Source Text: %s\n", bstrSourceLineText );`строку на.<br/>
-    > При возникновении ошибок `HMONITOR`откройте файл stdafx. h в `TCProps` проекте и замените:
+    > При возникновении ошибок `HMONITOR`откройте файл stdafx.h в `TCProps` проекте и замените:
     >
     > ```cpp
     > #ifndef WINVER

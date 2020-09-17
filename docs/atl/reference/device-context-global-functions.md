@@ -39,7 +39,7 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 Возвращает маркер для контекста устройства для устройства, указанного в `DVTARGETDEVICE` . Если устройство не указано, возвращает маркер в устройство дисплея по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если структура имеет значение NULL и *HDC* имеет значение null, создает контекст устройства для устройства вывода по умолчанию.
 
@@ -47,7 +47,7 @@ HDC AtlCreateTargetDC(HDC hdc, DVTARGETDEVICE* ptd);
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="see-also"></a>См. также
 

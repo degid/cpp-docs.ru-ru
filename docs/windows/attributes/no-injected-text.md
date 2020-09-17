@@ -28,7 +28,7 @@ ms.locfileid: "88844084"
 *boolean*<br/>
 (Необязательно) **`true`** Если вы не хотите внедрять код, **`false`** чтобы разрешить внедрение кода. **`true`** значение по умолчанию —.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Наиболее распространенным применением атрибута **no_injected_text** C++ является параметр компилятора [/FX](../../build/reference/fx-merge-injected-code.md) , который вставляет атрибут **no_injected_text** в MRG-файл.
 

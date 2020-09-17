@@ -32,7 +32,7 @@ ms.locfileid: "88835224"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlcommoduleregisterserver"></a><a name="atlcommoduleregisterserver"></a> атлкоммодулерегистерсервер
 
@@ -60,7 +60,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlComModuleRegisterServer` просматривает автоматически сформированную карту объектов ATL и регистрирует каждый объект на карте. Если *пклсид* не равен null, регистрируется только объект, на который ссылается *пклсид* . в противном случае регистрируются все объекты.
 
@@ -92,7 +92,7 @@ ATLINLINE ATLAPI AtlComModuleUnregisterServer(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlComModuleUnregisterServer` проходит по карте объектов ATL и отменяет регистрацию каждого объекта в сопоставлении. Если *пклсид* не равно null, то отменяется только объект, на который ссылается *пклсид* . в противном случае отменяется регистрация всех объектов.
 
@@ -124,7 +124,7 @@ ATLINLINE ATLAPI AtlComModuleRegisterClassObjects(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [CComModule:: регистерклассобжектс](ccommodule-class.md#registerclassobjects) (устарела в ATL 7,0) и [CAtlExeModuleT:: регистерклассобжектс](catlexemodulet-class.md#registerclassobjects).
 
@@ -145,7 +145,7 @@ ATLINLINE ATLAPI AtlComModuleRevokeClassObjects(_ATL_COM_MODULE* pComModule);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [CComModule:: ревокеклассобжектс](ccommodule-class.md#revokeclassobjects) (устарела в ATL 7,0) и [CAtlExeModuleT:: ревокеклассобжектс](catlexemodulet-class.md#revokeclassobjects).
 
@@ -179,7 +179,7 @@ IID запрашиваемого интерфейса.
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [CComModule:: жетклассобжект](ccommodule-class.md#getclassobject) (устарела в ATL 7,0) и [CAtlDllModuleT:: жетклассобжект](catldllmodulet-class.md#getclassobject).
 

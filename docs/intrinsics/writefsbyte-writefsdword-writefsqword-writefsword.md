@@ -67,7 +67,7 @@ void __writefsqword(
 |`__writefsdword`|x86|
 |`__writefsqword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

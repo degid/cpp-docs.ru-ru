@@ -44,7 +44,7 @@ class IPropertyPage2Impl : public IPropertyPageImpl<T>
 |----------|-----------------|
 |[IPropertyPage2Impl::EditProperty](#editproperty)|Определяет, какой элемент управления свойствами будет получать фокус при активации страницы свойств. Реализация ATL возвращает E_NOTIMPL.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IPropertyPage2](/windows/win32/api/ocidl/nn-ocidl-ipropertypage2) расширяет [IPropertyPage,](/windows/win32/api/ocidl/nn-ocidl-ipropertypage) `EditProperty` добавляя метод. Этот метод позволяет клиенту выбрать определенное свойство в объекте страницы свойства.
 
@@ -78,7 +78,7 @@ HRESULT EditProperty(DISPID dispID);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPropertyPage2:: EditProperty](/windows/win32/api/ocidl/nf-ocidl-ipropertypage2-editproperty) в Windows SDK.
 

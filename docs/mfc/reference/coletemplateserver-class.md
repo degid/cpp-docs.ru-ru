@@ -47,7 +47,7 @@ class COleTemplateServer : public COleObjectFactory
 |[ColeTemplateServer::Unregister](#unregister)|Отменить регистрацию связанного шаблона документа.|
 |[ColeTemplateServer::UpdateRegistry](#updateregistry)|Регистрирует тип документа в реестре системы OLE.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс происходит от класса [COleObjectFactory](../../mfc/reference/coleobjectfactory-class.md); как правило, `COleTemplateServer` вы можете использовать непосредственно, а не производные свой собственный класс. `COleTemplateServer`использует объект [CDocTemplate](../../mfc/reference/cdoctemplate-class.md) для управления серверными документами. Используйте `COleTemplateServer` при реализации полного сервера, то есть сервера, который можно запускать как отдельное приложение. Полные серверы, как правило, несколько документов интерфейс (MDI) приложений, хотя единый интерфейс документа (SDI) приложения поддерживаются. Для `COleTemplateServer` каждого типа серверного документа, который поддерживает приложение, необходим один объект; то есть, если приложение сервера поддерживает как листы, `COleTemplateServer` так и диаграммы, вы должны иметь два объекта.
 
@@ -77,7 +77,7 @@ class COleTemplateServer : public COleObjectFactory
 COleTemplateServer();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Краткое описание использования `COleTemplateServer` класса можно ознакомьтесь с обзором класса [COleLinkingDoc.](../../mfc/reference/colelinkingdoc-class.md)
 
@@ -103,7 +103,7 @@ void ConnectTemplate(
 *bMultiInstance*<br/>
 Указывает, может ли один экземпляр приложения поддерживать несколько моментций. Если true, несколько экземпляров приложения запускаются для каждого запроса на создание объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [см. ключ CLSID](/windows/win32/com/clsid-key-hklm) в SDK Windows.
 
@@ -119,7 +119,7 @@ BOOL Unregister();
 
 Значение TRUE, если успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 EnterRemarks
 
@@ -159,7 +159,7 @@ void UpdateRegistry(
 *bРегистрация*<br/>
 Определяет, должен ли класс быть зарегистрированным. Если *bRegister* является правдой, класс зарегистрирован в реестре системы. В противном случае он отменяет класс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Регистрационная информация загружается с помощью вызова в [CDocTemplate::GetDocString](../../mfc/reference/cdoctemplate-class.md#getdocstring). Полученные подстроки идентифицируются индексами `regFileTypeId` `regFileTypeName`и, `fileNewName`как описано `GetDocString` на справочных страницах.
 

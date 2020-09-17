@@ -22,7 +22,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 07/31/2020
 ms.locfileid: "87470788"
 ---
-# <a name="ccomcurrency-class"></a>Класс Ккомкурренци
+# <a name="ccomcurrency-class"></a>Класс CComCurrency
 
 `CComCurrency` содержит методы и операторы для создания объекта CURRENCY и управления им.
 
@@ -42,7 +42,7 @@ class CComCurrency
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CComCurrency::GetCurrencyPtr](#getcurrencyptr)|Возвращает адрес элемента данных `m_currency`.|
 |[CComCurrency::GetFraction](#getfraction)|Вызовите этот метод для возврата дробной части объекта `CComCurrency`.|
@@ -55,22 +55,22 @@ class CComCurrency
 
 |Имя|Описание|
 |----------|-----------------|
-|[Ккомкурренци:: operator —](#operator_-)|Этот оператор используется для вычитания объекта `CComCurrency`.|
-|[Ккомкурренци:: operator! =](#operator_neq)|Проверяет неравенство двух объектов `CComCurrency`.|
-|[Ккомкурренци:: operator *](#operator_star)|Этот оператор используется для умножения объекта `CComCurrency`.|
-|[Ккомкурренци:: operator * =](#operator_star_eq)|Этот оператор используется для умножения объекта `CComCurrency` и назначения ему результата.|
-|[Ккомкурренци:: operator/](#operator_div)|Этот оператор используется для деления объекта `CComCurrency`.|
-|[Ккомкурренци:: operator/=](#operator_div_eq)|Этот оператор используется для деления объекта `CComCurrency` и назначения ему результата.|
-|[Ккомкурренци:: operator +](#operator_add)|Этот оператор используется для сложения объекта `CComCurrency`.|
-|[CComCurrency::operator +=](#operator_add_eq)|Этот оператор используется для сложения объекта `CComCurrency` и назначения ему результата.|
-|[Ккомкурренци:: operator <](#operator_lt)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить меньший из них.|
-|[Ккомкурренци:: operator <=](#operator_lt_eq)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или меньший из них.|
-|[Ккомкурренци:: operator =](#operator_eq)|Этот оператор присваивает объекту `CComCurrency` новое значение.|
-|[Ккомкурренци:: operator-=](#operator_-_eq)|Этот оператор используется для вычитания объекта `CComCurrency` и назначения ему результата.|
-|[Ккомкурренци:: operator = =](#operator_eq_eq)|Этот оператор сравнивает два объекта `CComCurrency` на равенство.|
-|[Ккомкурренци:: operator >](#operator_gt)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить больший из них.|
-|[Ккомкурренци:: operator >=](#operator_gt_eq)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или больший из них.|
-|[Ккомкурренци:: оператор CURRENCY](#operator_currency)|Приводит объект CURRENCY.|
+|[CComCurrency::operator-](#operator_-)|Этот оператор используется для вычитания объекта `CComCurrency`.|
+|[CComCurrency::operator!=](#operator_neq)|Проверяет неравенство двух объектов `CComCurrency`.|
+|[CComCurrency::operator*](#operator_star)|Этот оператор используется для умножения объекта `CComCurrency`.|
+|[CComCurrency::operator*=](#operator_star_eq)|Этот оператор используется для умножения объекта `CComCurrency` и назначения ему результата.|
+|[CComCurrency::operator/](#operator_div)|Этот оператор используется для деления объекта `CComCurrency`.|
+|[CComCurrency::operator/=](#operator_div_eq)|Этот оператор используется для деления объекта `CComCurrency` и назначения ему результата.|
+|[CComCurrency::operator+](#operator_add)|Этот оператор используется для сложения объекта `CComCurrency`.|
+|[CComCurrency::operator+=](#operator_add_eq)|Этот оператор используется для сложения объекта `CComCurrency` и назначения ему результата.|
+|[CComCurrency::operator<](#operator_lt)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить меньший из них.|
+|[CComCurrency::operator<=](#operator_lt_eq)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или меньший из них.|
+|[CComCurrency::operator=](#operator_eq)|Этот оператор присваивает объекту `CComCurrency` новое значение.|
+|[CComCurrency::operator-=](#operator_-_eq)|Этот оператор используется для вычитания объекта `CComCurrency` и назначения ему результата.|
+|[CComCurrency::operator==](#operator_eq_eq)|Этот оператор сравнивает два объекта `CComCurrency` на равенство.|
+|[CComCurrency::operator>](#operator_gt)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить больший из них.|
+|[CComCurrency::operator>=](#operator_gt_eq)|Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или больший из них.|
+|[CComCurrency:: оператор CURRENCY](#operator_currency)|Приводит объект CURRENCY.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -90,16 +90,16 @@ class CComCurrency
 
 |Значение|Возможные значения CComCurrency|
 |-----------|---------------------------------------|
-|$10.50|Ккомкурренци (10, 5000) *или* ккомкурренци (10.50)|
-|$10.05|Ккомкурренци (10500) *или* ккомкурренци (10.05)|
+|$10.50|CComCurrency(10,5000) *или* CComCurrency(10.50)|
+|$10.05|CComCurrency(10,500) *или* CComCurrency(10.05)|
 
 Значения CY_MIN_FRACTION, CY_MAX_FRACTION и  CY_SCALE определены в файле atlcur.h.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкур. h
+**Заголовок:** атлкур.h
 
-## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a>Ккомкурренци:: Ккомкурренци
+## <a name="ccomcurrencyccomcurrency"></a><a name="ccomcurrency"></a>CComCurrency:: CComCurrency
 
 Конструктор.
 
@@ -157,7 +157,7 @@ explicit CComCurrency(LPCSTR szSrc);
 
 При использовании значений с плавающей запятой или двойной точности для присваивания значения Обратите внимание, что `CComCurrency(10.50)` эквивалентно `CComCurrency(10,5000)` и Not `CComCurrency(10,50)` .
 
-## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a>Ккомкурренци:: Жеткурренциптр
+## <a name="ccomcurrencygetcurrencyptr"></a><a name="getcurrencyptr"></a>CComCurrency:: Жеткурренциптр
 
 Возвращает адрес элемента данных `m_currency`.
 
@@ -169,7 +169,7 @@ CURRENCY* GetCurrencyPtr() throw();
 
 Возвращает адрес `m_currency` элемента данных
 
-## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a>Ккомкурренци:: дробь
+## <a name="ccomcurrencygetfraction"></a><a name="getfraction"></a>CComCurrency:: дробь
 
 Вызовите этот метод, чтобы вернуть дробный компонент `CComCurrency` объекта.
 
@@ -183,13 +183,13 @@ SHORT GetFraction() const;
 
 ### <a name="remarks"></a>Комментарии
 
-Компонент дробной части представляет собой 4-значное целочисленное значение в диапазоне от-9999 (CY_MIN_FRACTION) до + 9999 (CY_MAX_FRACTION). `GetFraction`Возвращает это значение, масштабированное на 10000 (CY_SCALE). Значения CY_MIN_FRACTION, CY_MAX_FRACTION и CY_SCALE определены в атлкур. h.
+Компонент дробной части представляет собой 4-значное целочисленное значение в диапазоне от-9999 (CY_MIN_FRACTION) до + 9999 (CY_MAX_FRACTION). `GetFraction`Возвращает это значение, масштабированное на 10000 (CY_SCALE). Значения CY_MIN_FRACTION, CY_MAX_FRACTION и CY_SCALE определены в атлкур.h.
 
 ### <a name="example"></a>Пример
 
 [!code-cpp[NVC_ATL_Utilities#50](../../atl/codesnippet/cpp/ccomcurrency-class_1.cpp)]
 
-## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a>Ккомкурренци:: integer
+## <a name="ccomcurrencygetinteger"></a><a name="getinteger"></a>CComCurrency:: integer
 
 Вызовите этот метод, чтобы получить целочисленный компонент `CComCurrency` объекта.
 
@@ -205,7 +205,7 @@ LONGLONG GetInteger() const;
 
 [!code-cpp[NVC_ATL_Utilities#51](../../atl/codesnippet/cpp/ccomcurrency-class_2.cpp)]
 
-## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a>Ккомкурренци:: m_currency
+## <a name="ccomcurrencym_currency"></a><a name="m_currency"></a>CComCurrency:: m_currency
 
 Элемент данных валюты.
 
@@ -217,7 +217,7 @@ CURRENCY m_currency;
 
 Этот элемент содержит валюту, к которой обращаются и которыми манипулируют методы этого класса.
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a>Ккомкурренци:: operator —
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-"></a>CComCurrency::operator-
 
 Этот оператор используется для вычитания объекта `CComCurrency`.
 
@@ -239,7 +239,7 @@ CComCurrency operator-(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#55](../../atl/codesnippet/cpp/ccomcurrency-class_3.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a>Ккомкурренци:: operator! =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_neq"></a>CComCurrency::operator!=
 
 Этот оператор сравнивает два объекта на неравенство.
 
@@ -260,7 +260,7 @@ bool operator!= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#56](../../atl/codesnippet/cpp/ccomcurrency-class_4.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a>Ккомкурренци:: operator *
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star"></a>CComCurrency::operator*
 
 Этот оператор используется для умножения объекта `CComCurrency`.
 
@@ -285,7 +285,7 @@ CComCurrency operator*(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#57](../../atl/codesnippet/cpp/ccomcurrency-class_5.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a>Ккомкурренци:: operator\*=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_star_eq"></a>CComCurrency::operator\*=
 
 Этот оператор используется для умножения объекта `CComCurrency` и назначения ему результата.
 
@@ -310,7 +310,7 @@ const CComCurrency& operator*= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#58](../../atl/codesnippet/cpp/ccomcurrency-class_6.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a>Ккомкурренци:: operator/
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div"></a>CComCurrency::operator/
 
 Этот оператор используется для деления объекта `CComCurrency`.
 
@@ -331,7 +331,7 @@ CComCurrency operator/(long nOperand) const;
 
 [!code-cpp[NVC_ATL_Utilities#59](../../atl/codesnippet/cpp/ccomcurrency-class_7.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a>Ккомкурренци:: operator/=
+## <a name="ccomcurrencyoperator-"></a><a name="operator_div_eq"></a>CComCurrency::operator/=
 
 Этот оператор используется для деления объекта `CComCurrency` и назначения ему результата.
 
@@ -352,7 +352,7 @@ const CComCurrency& operator/= (long nOperand);
 
 [!code-cpp[NVC_ATL_Utilities#60](../../atl/codesnippet/cpp/ccomcurrency-class_8.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a>Ккомкурренци:: operator +
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add"></a>CComCurrency::operator+
 
 Этот оператор используется для сложения объекта `CComCurrency`.
 
@@ -373,7 +373,7 @@ CComCurrency operator+(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#61](../../atl/codesnippet/cpp/ccomcurrency-class_9.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a>Ккомкурренци:: operator + =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_add_eq"></a>CComCurrency::operator+=
 
 Этот оператор используется для сложения объекта `CComCurrency` и назначения ему результата.
 
@@ -394,7 +394,7 @@ const CComCurrency& operator+= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#62](../../atl/codesnippet/cpp/ccomcurrency-class_10.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a>Ккомкурренци:: operator&lt;
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt"></a>CComCurrency::operator&lt;
 
 Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить меньший из них.
 
@@ -415,7 +415,7 @@ bool operator<(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#63](../../atl/codesnippet/cpp/ccomcurrency-class_11.cpp)]
 
-## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a>Ккомкурренци:: operator&lt;=
+## <a name="ccomcurrencyoperator-lt"></a><a name="operator_lt_eq"></a>CComCurrency::operator&lt;=
 
 Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или меньший из них.
 
@@ -436,7 +436,7 @@ bool operator<= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#64](../../atl/codesnippet/cpp/ccomcurrency-class_12.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a>Ккомкурренци:: operator =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq"></a>CComCurrency::operator=
 
 Этот оператор присваивает объекту `CComCurrency` новое значение.
 
@@ -473,7 +473,7 @@ const CComCurrency& operator= (DECIMAL dSrc);
 
 [!code-cpp[NVC_ATL_Utilities#65](../../atl/codesnippet/cpp/ccomcurrency-class_13.cpp)]
 
-## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a>Ккомкурренци:: operator-=
+## <a name="ccomcurrencyoperator--"></a><a name="operator_-_eq"></a>CComCurrency::operator-=
 
 Этот оператор используется для вычитания объекта `CComCurrency` и назначения ему результата.
 
@@ -494,7 +494,7 @@ const CComCurrency& operator-= (const CComCurrency& cur);
 
 [!code-cpp[NVC_ATL_Utilities#66](../../atl/codesnippet/cpp/ccomcurrency-class_14.cpp)]
 
-## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a>Ккомкурренци:: operator = =
+## <a name="ccomcurrencyoperator-"></a><a name="operator_eq_eq"></a>CComCurrency::operator==
 
 Этот оператор сравнивает два объекта `CComCurrency` на равенство.
 
@@ -515,7 +515,7 @@ bool operator== (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#67](../../atl/codesnippet/cpp/ccomcurrency-class_15.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a>Ккомкурренци:: operator&gt;
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt"></a>CComCurrency::operator&gt;
 
 Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить больший из них.
 
@@ -536,7 +536,7 @@ bool operator>(const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#68](../../atl/codesnippet/cpp/ccomcurrency-class_16.cpp)]
 
-## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a>Ккомкурренци:: operator&gt;=
+## <a name="ccomcurrencyoperator-gt"></a><a name="operator_gt_eq"></a>CComCurrency::operator&gt;=
 
 Этот оператор сравнивает два объекта `CComCurrency`, чтобы определить равенство или больший из них.
 
@@ -557,7 +557,7 @@ bool operator>= (const CComCurrency& cur) const;
 
 [!code-cpp[NVC_ATL_Utilities#69](../../atl/codesnippet/cpp/ccomcurrency-class_17.cpp)]
 
-## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a>Ккомкурренци:: оператор CURRENCY
+## <a name="ccomcurrencyoperator-currency"></a><a name="operator_currency"></a>CComCurrency:: оператор CURRENCY
 
 Эти операторы используются для приведения `CComCurrency` объекта к типу данных Currency.
 
@@ -574,7 +574,7 @@ operator const CURRENCY&() const throw();
 
 [!code-cpp[NVC_ATL_Utilities#70](../../atl/codesnippet/cpp/ccomcurrency-class_18.cpp)]
 
-## <a name="ccomcurrencyround"></a><a name="round"></a>Ккомкурренци:: Round
+## <a name="ccomcurrencyround"></a><a name="round"></a>CComCurrency:: Round
 
 Вызовите этот метод, чтобы округлить валюту до указанного числа десятичных разрядов.
 
@@ -595,7 +595,7 @@ HRESULT Roundint nDecimals);
 
 [!code-cpp[NVC_ATL_Utilities#52](../../atl/codesnippet/cpp/ccomcurrency-class_19.cpp)]
 
-## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a>Ккомкурренци:: Сетфрактион
+## <a name="ccomcurrencysetfraction"></a><a name="setfraction"></a>CComCurrency:: Сетфрактион
 
 Вызовите этот метод для установки дробной части объекта `CComCurrency`.
 
@@ -616,7 +616,7 @@ HRESULT SetFraction(SHORT nFraction);
 
 [!code-cpp[NVC_ATL_Utilities#53](../../atl/codesnippet/cpp/ccomcurrency-class_20.cpp)]
 
-## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a>Ккомкурренци:: Сетинтежер
+## <a name="ccomcurrencysetinteger"></a><a name="setinteger"></a>CComCurrency:: Сетинтежер
 
 Вызовите этот метод для установки целой части объекта `CComCurrency`.
 
@@ -629,7 +629,7 @@ HRESULT SetInteger(LONGLONG nInteger);
 *нинтежер*<br/>
 Значение, присваиваемое целочисленному компоненту `m_currency` элемента данных. Знак целочисленного компонента должен соответствовать знаку существующего дробного компонента.
 
-*нинтежер* должен находиться в диапазоне CY_MIN_INTEGER для CY_MAX_INTEGER включительно. Эти значения определены в атлкур. h.
+*нинтежер* должен находиться в диапазоне CY_MIN_INTEGER для CY_MAX_INTEGER включительно. Эти значения определены в атлкур.h.
 
 ### <a name="return-value"></a>Возвращаемое значение
 

@@ -73,7 +73,7 @@ class CRecentDockSiteInfo : public CObject
 |[CRecentDockSiteInfo::SetInfo](#setinfo)||
 |[CRecentDockSiteInfo::StoreDockInfo](#storedockinfo)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CRecentDockSiteInfo` предназначен для управления данными. Он отслеживает последнее состояние объекта `CPane` при переходе от закрепленного режима к плавающему. Когда пользователь дважды щелкает плавающую закрепляемую панель, она становится закрепленной. Дважды щелкнув закрепленную панель, можно вернуть ее на прежнее место, с прежним размером и состоянием. Аналогичным образом повторное закрепление возвращает панель на предыдущее место закрепления. Именно этот класс данных открывает эту возможность. Поскольку члены этого класса хранят сведения о состоянии закрепленной панели, они не должны напрямую изменяться вашим приложением.
 
@@ -95,7 +95,7 @@ class CRecentDockSiteInfo : public CObject
 void CleanUp();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfocrecentdocksiteinfo"></a><a name="crecentdocksiteinfo"></a>CRecentDockSiteInfo::CRecentDockSiteInfo
 
@@ -107,7 +107,7 @@ CRecentDockSiteInfo(CPane* pBar);
 
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecentdefaultpanedivider"></a><a name="getrecentdefaultpanedivider"></a>CRecentDockSiteInfo::GetRecentDefaultPaneDivider
 
@@ -117,7 +117,7 @@ CPaneDivider* GetRecentDefaultPaneDivider();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecentdockedpercent"></a><a name="getrecentdockedpercent"></a>CRecentDockSiteInfo:GetRecentDockedPercent
 
@@ -131,7 +131,7 @@ int GetRecentDockedPercent(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecentdockedrect"></a><a name="getrecentdockedrect"></a>CRecentDockSiteInfo:GetRecentDockedRect
 
@@ -145,7 +145,7 @@ CRect& GetRecentDockedRect(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecentlistofpanes"></a><a name="getrecentlistofpanes"></a>CRecentdockSiteinfo:GetRecentListOfPanes
 
@@ -159,7 +159,7 @@ CList<HWND, HWND>& GetRecentListOfPanes(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecentpanecontainer"></a><a name="getrecentpanecontainer"></a>CRecentDockSiteInfo:GetRecentPaneContainer
 
@@ -173,7 +173,7 @@ CPaneContainer* GetRecentPaneContainer(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfogetrecenttabcontainer"></a><a name="getrecenttabcontainer"></a>CRecentDockSiteInfo::GetRecentTabContainer
 
@@ -187,7 +187,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfoinit"></a><a name="init"></a>CRecentdockSiteinfo::Init
 
@@ -195,7 +195,7 @@ CPaneContainer* GetRecentTabContainer(BOOL bForSlider);
 void Init();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfoisrecentleftpane"></a><a name="isrecentleftpane"></a>CRecentDockSiteInfo::IsrecentLeftPane
 
@@ -209,7 +209,7 @@ BOOL IsRecentLeftPane(BOOL bForSlider);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfooperator-"></a><a name="operator_eq"></a>CRecentDockSiteInfo::оператор
 
@@ -223,7 +223,7 @@ CRecentDockSiteInfo& operator=(CRecentDockSiteInfo& src);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfosavelistofrecentpanes"></a><a name="savelistofrecentpanes"></a>CRecentdockSiteinfo:SaveListOfRecentPanes
 
@@ -239,7 +239,7 @@ void SaveListOfRecentPanes(CList<HWND,
 (в) *lstOrg*<br/>
 (в) *bForSlider*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfosetinfo"></a><a name="setinfo"></a>CRecentDockSiteInfo::SetInfo
 
@@ -254,7 +254,7 @@ virtual void SetInfo(
 (в) *bForSlider*<br/>
 (в) *srcInfo*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="crecentdocksiteinfostoredockinfo"></a><a name="storedockinfo"></a>CRecentDockSiteInfo::StoreDockInfo
 
@@ -269,7 +269,7 @@ virtual void StoreDockInfo(
 (в) *pRecentContainer*<br/>
 (в) *pTabbedBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

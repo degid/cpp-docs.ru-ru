@@ -62,7 +62,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 Класс набора строк или командного объекта.
 
 *биндтипе*<br/>
-Единица хранения сведений о привязке. По умолчанию используется `ATLBINDINGS` Структура (см. ATLDB. h).
+Единица хранения сведений о привязке. По умолчанию используется `ATLBINDINGS` Структура (см. ATLDB.h).
 
 *биндингвектор*<br/>
 Единица хранения сведений о столбце. Значение по умолчанию — [CAtlMap](../../atl/reference/catlmap-class.md) , где элемент key является значением HACCESSOR, а элемент value — указателем на `BindType` структуру.
@@ -88,7 +88,7 @@ class ATL_NO_VTABLE IAccessorImpl : public IAccessorImplBase<BindType>
 |[Привязок](#getbindings)|Возвращает привязки из метода доступа.|
 |[релеасеакцессор](#releaseaccessor)|Освобождает метод доступа.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это обязательно для наборов строк и команд. OLE DB требует, чтобы поставщики реализовали HACCESSOR, который является тегом массива структур [DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) . Хакцессорс, предоставляемые, `IAccessorImpl` являются адресами `BindType` структур. По умолчанию определяется `BindType` как `ATLBINDINGS` `IAccessorImpl` Определение шаблона в. `BindType` предоставляет механизм, используемый `IAccessorImpl` для трассировки количества элементов в его `DBBINDING` массиве, а также для счетчика ссылок и флагов доступа.
 

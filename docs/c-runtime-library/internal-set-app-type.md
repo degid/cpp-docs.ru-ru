@@ -52,7 +52,7 @@ void __set_app_type (
 |_CONSOLE_APP|Приложение консоли (командной строки).|
 |_GUI_APP|Приложение с графическим интерфейсом (Windows).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ## <a name="requirements"></a>Требования
 

@@ -103,12 +103,12 @@ unsigned char _interlockedbittestandset64_HLERelease(
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`_interlockedbittestandset`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM, ARM64|\<> Intrin. h|
-|`_interlockedbittestandset64_acq`, `_interlockedbittestandset64_nf`, `_interlockedbittestandset64_rel`|ARM64|\<> Intrin. h|
-|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, x64|\<> использованием immintrin. h|
-|`_interlockedbittestandset64`|x64, ARM64|\<> Intrin. h|
-|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|X64|\<> использованием immintrin. h|
+|`_interlockedbittestandset`|x86, ARM, x64, ARM64|\<> Intrin.h|
+|`_interlockedbittestandset_acq`, `_interlockedbittestandset_nf`, `_interlockedbittestandset_rel`|ARM, ARM64|\<> Intrin.h|
+|`_interlockedbittestandset64_acq`, `_interlockedbittestandset64_nf`, `_interlockedbittestandset64_rel`|ARM64|\<> Intrin.h|
+|`_interlockedbittestandset_HLEAcquire`, `_interlockedbittestandset_HLERelease`|x86, x64|\<> использованием immintrin.h|
+|`_interlockedbittestandset64`|x64, ARM64|\<> Intrin.h|
+|`_interlockedbittestandset64_HLEAcquire`, `_interlockedbittestandset64_HLERelease`|X64|\<> использованием immintrin.h|
 
 ## <a name="remarks"></a>Примечания
 

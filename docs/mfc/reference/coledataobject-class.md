@@ -55,7 +55,7 @@ class COleDataObject
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Коледатаобжект:: Attach](#attach)|Присоединяет указанный объект данных OLE к `COleDataObject` .|
 |[Коледатаобжект:: Аттачклипбоард](#attachclipboard)|Присоединяет объект данных, расположенный в буфере обмена.|
@@ -86,7 +86,7 @@ class COleDataObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксоле. h
+**Заголовок:** афксоле.h
 
 ## <a name="coledataobjectattach"></a><a name="attach"></a>Коледатаобжект:: Attach
 

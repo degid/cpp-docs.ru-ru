@@ -60,7 +60,7 @@ class CHeapPtr : public CHeapPtrBase<T, Allocator>
 |----------|-----------------|
 |[CHeapPtr::оператор](#operator_eq)|Оператор назначения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CHeapPtr`происходит от [CHeapPtrBase](../../atl/reference/cheapptrbase-class.md) и по умолчанию использует режимы CRT (в [CCRTAllocator)](../../atl/reference/ccrtallocator-class.md)для выделения и свободной памяти. Класс [CHeapPtrList](../../atl/reference/cheapptrlist-class.md) может быть использован для построения списка указателей кучи. Смотрите также [CComHeapPtr](../../atl/reference/ccomheapptr-class.md), который использует процедуры распределения памяти COM.
 
@@ -91,7 +91,7 @@ bool Allocate(size_t nElements = 1) throw();
 
 Возвращает верно, если память была успешно распределена, ложно йода на сбой.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Процедуры разлестьиспользуются для резервирования достаточного количества памяти на куче для хранения объектов *nElement* типа, определенного в конструкторе.
 
@@ -114,7 +114,7 @@ CHeapPtr(CHeapPtr<T, Allocator>& p) throw();
 *P*<br/>
 Существующий указатель кучи или `CHeapPtr`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указатель кучи может быть дополнительно создан с помощью `CHeapPtr` существующего указателя или объекта. Если это так, новый `CHeapPtr` объект берет на себя ответственность за управление новым указателем и ресурсами.
 

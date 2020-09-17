@@ -54,7 +54,7 @@ class CMFCRibbonMiniToolBar : public CMFCRibbonPanelMenu
 |[CMFCRibbonMiniToolBar::Show](#show)|Отображает мини-панель инструментов по указанным координатам экрана.|
 |[CMFCRibbonMiniToolBar::ShowWithContextMenu](#showwithcontextmenu)|Отображает мини-панель инструментов вместе с контекстным меню.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Мини-панель инструментов обычно отображается, когда пользователь выделяет объект в документе. Например, после выделения блока текста в текстовом редакторе отображается мини-панель инструментов с командами форматирования текста.
 
@@ -100,7 +100,7 @@ void SetCommands(
 *lstCommands*<br/>
 (в) Список команд, которые будут отображаться на панели инструментов мини. Все категории лент ы ищут, чтобы найти связанные кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы установить список команд, которые будут отображаться в панели мини-инструментов.
 
@@ -162,7 +162,7 @@ BOOL ShowWithContextMenu(
 
 TRUE, если контекстное меню было отображено успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для отображения мини-панели инструментов с контекстным меню. Контекстное меню расположено на 15 пикселей ниже панели мини-инструментов.
 
@@ -176,7 +176,7 @@ BOOL IsContextMenuMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonminitoolbarisribbonminitoolbar"></a><a name="isribbonminitoolbar"></a>CMFCRibbonMinitoolБар::IsRibbonMinitoolБар
 
@@ -188,7 +188,7 @@ virtual BOOL IsRibbonMiniToolBar() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -21,7 +21,7 @@ ms.locfileid: "87227677"
 using identifier = type;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 *identifier*<br/>
 Имя псевдонима.

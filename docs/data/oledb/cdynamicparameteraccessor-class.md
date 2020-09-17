@@ -109,7 +109,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**: Atldbcli. h
+**Заголовок**: Atldbcli.h
 
 ## <a name="members"></a>Элементы
 
@@ -131,7 +131,7 @@ class CDynamicParameterAccessor : public CDynamicAccessor
 |[SetParamStatus](#setparamstatus)|Задает состояние указанного параметра, сохраненного в буфере.|
 |[SetParamString](#setparamstring)|Задает строковые данные указанного параметра, сохраненного в буфере.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для использования этого класса поставщик должен поддерживать интерфейс `ICommandWithParameters` для потребителя.
 
@@ -161,7 +161,7 @@ CDynamicParameterAccessor(
 *нблобсизе*<br/>
 Максимальный размер большого двоичного объекта в байтах; данные столбца по этому значению рассматриваются как большой двоичный объект. Значение по умолчанию — 8 000. Дополнительные сведения см. в разделе [CDynamicAccessor:: сетблобсизелимит](../../data/oledb/cdynamicaccessor-setblobsizelimit.md) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об обработке больших двоичных объектов см. в описании конструктора [CDynamicAccessor:: CDynamicAccessor](../../data/oledb/cdynamicaccessor-cdynamicaccessor.md) .
 
@@ -271,7 +271,7 @@ DBLENGTH* GetParamLength(DBORDINAL nParam) const throw();
 *пленгс*<br/>
 заполняет Указатель на переменную, содержащую длину указанного параметра в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первое переопределение возвращает значение **`true`** On Success или **`false`** On failure. Второе переопределение указывает на память, содержащую длину параметра.
 
@@ -313,9 +313,9 @@ DBSTATUS* GetParamStatus(DBORDINAL nParam) const throw();
 окне Номер параметра (смещение от 1). Параметр 0 зарезервирован для возвращаемых значений. Номер параметра — это индекс параметра в зависимости от его порядка в SQL или вызове хранимой процедуры. Пример см. в разделе [сетпарам](../../data/oledb/cdynamicparameteraccessor-setparam.md) .
 
 *пстатус*<br/>
-заполняет Указатель на переменную, содержащую состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+заполняет Указатель на переменную, содержащую состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB.h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первое переопределение возвращает значение **`true`** On Success или **`false`** On failure. Второе переопределение указывает на память, содержащую состояние указанного параметра.
 
@@ -357,7 +357,7 @@ bool GetParamString(DBORDINAL nParam,
 *пмакслен*<br/>
 заполняет Указатель на размер буфера, на который указывает *pBuffer* (в символах, включая ЗАВЕРШАЮЩЕЕ значение null).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -425,7 +425,7 @@ bool SetParam(TCHAR* pParamName,
 окне Указатель на память, содержащую данные, записываемые в буфер.
 
 *status*<br/>
-окне Состояние столбца ДБСТАТУС. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние столбца ДБСТАТУС. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB.h.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
@@ -452,7 +452,7 @@ bool SetParamLength(DBORDINAL nParam,
 *length*<br/>
 окне Длина указанного параметра в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -473,9 +473,9 @@ bool SetParamStatus(DBORDINAL nParam,
 окне Номер параметра (смещение от 1). Параметр 0 зарезервирован для возвращаемых значений. Номер параметра — это индекс параметра в зависимости от его порядка в SQL или вызове хранимой процедуры. Пример см. в разделе [сетпарам](../../data/oledb/cdynamicparameteraccessor-setparam.md) .
 
 *status*<br/>
-окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB.h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 
@@ -499,12 +499,12 @@ bool SetParamString(DBORDINAL nParam,
 окне Номер параметра (смещение от 1). Параметр 0 зарезервирован для возвращаемых значений. Номер параметра — это индекс параметра в зависимости от его порядка в SQL или вызове хранимой процедуры. Пример см. в разделе [сетпарам](../../data/oledb/cdynamicparameteraccessor-setparam.md) .
 
 *пстринг*<br/>
-окне Указатель на строковое значение ANSI (**char**) или Unicode (**WCHAR**) указанного параметра. См. раздел ДБСТАТУС в OLEDB. h.
+окне Указатель на строковое значение ANSI (**char**) или Unicode (**WCHAR**) указанного параметра. См. раздел ДБСТАТУС в OLEDB.h.
 
 *status*<br/>
-окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB. h.
+окне Состояние ДБСТАТУС указанного параметра. Сведения о значениях ДБСТАТУС см. в разделе [состояние](/previous-versions/windows/desktop/ms722617(v=vs.85)) в *справочнике программиста OLE DB*или выполните поиск дбстатус в OLEDB.h.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение **`true`** On Success или **`false`** On failure.
 

@@ -29,10 +29,10 @@ class allocator_newdel;
 
 ### <a name="parameters"></a>Параметры
 
-*Тип*\
+*Type*\
 Тип элементов, распределяемых распределителем.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос [ALLOCATOR_DECL](allocators-functions.md#allocator_decl) передает этот класс в качестве параметра *Name* в следующей инструкции: `ALLOCATOR_DECL(CACHE_FREELIST stdext::allocators::max_none), SYNC_DEFAULT, allocator_newdel);`
 

@@ -38,7 +38,7 @@ ms.locfileid: "87213467"
 
 - [_strtoui64, _wcstoui64, _strtoui64_l, _wcstoui64_l](../c-runtime-library/reference/strtoui64-wcstoui64-strtoui64-l-wcstoui64-l.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каждая функция в семействе **strtod** преобразует строку, завершающуюся нуль-символом, в числовое значение. Доступные функции перечислены в следующей таблице.
 

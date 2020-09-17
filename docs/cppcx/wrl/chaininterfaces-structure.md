@@ -134,7 +134,7 @@ struct ChainInterfaces<
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 
@@ -204,7 +204,7 @@ static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + D
 
 Общее число идентификаторов интерфейсов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметры шаблона *I0* и *I1* являются обязательными, а параметры *I2* – *i9* являются необязательными. Число IID каждого интерфейса обычно равно 1.
 
@@ -216,7 +216,7 @@ static const unsigned long IidCount = Details::InterfaceTraits<I0>::IidCount + D
 WRL_NOTHROW __forceinline static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если операция проверки завершается неудачно, **`static_assert`** выдает сообщение об ошибке с описанием сбоя.
 

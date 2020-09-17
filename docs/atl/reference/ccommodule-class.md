@@ -86,7 +86,7 @@ class CComModule : public _ATL_MODULE
 |[CComModule::m_hInstTypeLib](#m_hinsttypelib)|По умолчанию содержит ручку в экземпляр модуля.|
 |[CComModule::m_pObjMap](#m_pobjmap)|Указывает на карту объекта, поддерживаемую экземпляром модуля.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Этот класс является амортизированным, и мастера генерации кода ATL теперь используют классы [cAtlAutoThreadModule](../../atl/reference/catlautothreadmodule-class.md) и [CAtlModule.](../../atl/reference/catlmodule-class.md) Для получения дополнительной информации смотрите [классы модулей ATL.](../../atl/atl-module-classes.md) Информация, которая следует для использования с приложениями, созданными с более старыми релизами ATL. `CComModule`по-прежнему является частью ATL для обратных возможностей.
@@ -147,7 +147,7 @@ HRESULT GetClassObject(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает объект указанного CLSID и получает указатель интерфейса к этому объекту.
 
@@ -165,7 +165,7 @@ HINSTANCE GetModuleInstance() throw();
 
 HINSTANCE идентифицирует этот модуль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает m_hInst [данных.](#m_hinst)
 
@@ -181,7 +181,7 @@ HINSTANCE GetResourceInstance() throw();
 
 An HINSTANCE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает m_hInstResource [участнике](#m_hinstresource) данных.
 
@@ -197,7 +197,7 @@ HINSTANCE GetTypeLibInstance() const throw();
 
 An HINSTANCE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает m_hInstTypeLib [данных.](#m_hinsttypelib)
 
@@ -227,7 +227,7 @@ HRESULT Init(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует всех участников данных.
 
@@ -239,7 +239,7 @@ HRESULT Init(
 CRITICAL_SECTION m_csObjMap;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обеспечивает синхронизированный доступ к карте объекта.
 
@@ -251,7 +251,7 @@ CRITICAL_SECTION m_csObjMap;
 CRITICAL_SECTION m_csTypeInfoHolder;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обеспечивает синхронизированный доступ к библиотеке типов.
 
@@ -263,7 +263,7 @@ CRITICAL_SECTION m_csTypeInfoHolder;
 CRITICAL_SECTION m_csWindowCreate;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обеспечивает синхронизированный доступ к информации о классе окон и статическим данным, используемым при создании окна.
 
@@ -275,7 +275,7 @@ CRITICAL_SECTION m_csWindowCreate;
 HINSTANCE m_hInst;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит ручку экземпляра модуля.
 
@@ -289,7 +289,7 @@ HINSTANCE m_hInst;
 HINSTANCE m_hInstResource;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию содержит ручку в экземпляр модуля.
 
@@ -305,7 +305,7 @@ HINSTANCE m_hInstResource;
 HINSTANCE m_hInstTypeLib;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию содержит ручку в экземпляр модуля.
 
@@ -321,7 +321,7 @@ HINSTANCE m_hInstTypeLib;
 _ATL_OBJMAP_ENTRY* m_pObjMap;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает на карту объекта, поддерживаемую экземпляром модуля.
 
@@ -359,7 +359,7 @@ ATL_DEPRECATED HRESULT RegisterClassHelper(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вводит регистрацию стандартного класса объекта в системном реестре.
 
@@ -385,7 +385,7 @@ HRESULT RegisterClassObjects(DWORD dwClsContext, DWORD dwFlags) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Регистрирует объект класса EXE с помощью OLE, чтобы другие приложения могли подключиться к нему. Этот метод доступен только для EXEs.
 
@@ -411,7 +411,7 @@ HRESULT RegisterServer(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от параметра *pCLSID* обновляется системный реестр для одного объекта класса или для всех объектов на карте объекта.
 
@@ -439,7 +439,7 @@ HRESULT RegisterTypeLib(LPCTSTR lpszIndex) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавляет информацию о библиотеке типа в системный реестр.
 
@@ -457,7 +457,7 @@ HRESULT RevokeClassObjects() throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет объект класса. Этот метод доступен только для EXEs.
 
@@ -469,7 +469,7 @@ HRESULT RevokeClassObjects() throw();
 void Term() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выпускает всех участников данных.
 
@@ -499,7 +499,7 @@ ATL_DEPRECATED HRESULT UnregisterClassHelper(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет регистрацию стандартного класса объекта из системного реестра.
 
@@ -526,7 +526,7 @@ inline HRESULT UnregisterServer(BOOL bUnRegTypeLib, const CLSID* pCLSID = NULL) 
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от параметра *pCLSID,* отменяемые либо один объект класса, либо все объекты на карте объекта.
 
@@ -583,7 +583,7 @@ ProgID, связанный с объектом.
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bRegister* является правдой, этот метод входит в стандартную регистрацию класса объекта в реестре системы.
 
@@ -627,7 +627,7 @@ virtual HRESULT UpdateRegistryFromResourceD(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запускает скрипт, содержащийся в ресурсе, указанном *lpszRes* или *nResID.*
 
@@ -677,7 +677,7 @@ virtual HRESULT UpdateRegistryFromResourceS(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Как и [UpdateRegistryFromResourceD,](#updateregistryfromresourced) за исключением `UpdateRegistryFromResourceS` создает статическую ссылку на компонент реестра ATL (регистратор).
 

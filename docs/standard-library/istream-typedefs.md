@@ -29,7 +29,7 @@ ms.locfileid: "88846476"
 typedef basic_iostream<char, char_traits<char>> iostream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_iostream](../standard-library/basic-iostream-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -41,7 +41,7 @@ typedef basic_iostream<char, char_traits<char>> iostream;
 typedef basic_istream<char, char_traits<char>> istream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_istream](../standard-library/basic-istream-class.md)шаблона класса, специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -53,7 +53,7 @@ typedef basic_istream<char, char_traits<char>> istream;
 typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_iostream](../standard-library/basic-iostream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 
@@ -65,7 +65,7 @@ typedef basic_iostream<wchar_t, char_traits<wchar_t>> wiostream;
 typedef basic_istream<wchar_t, char_traits<wchar_t>> wistream;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом [basic_istream](../standard-library/basic-istream-class.md)шаблона класса, специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 

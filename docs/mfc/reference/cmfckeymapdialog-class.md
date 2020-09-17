@@ -70,7 +70,7 @@ class CMFCKeyMapDialog : public CDialogEx
 |[CMFCKeyMapDialog::PrintKeyMap](#printkeymap)|Вызывается по системе, когда пользователь нажимает кнопку **Печати.**|
 |[CMFCKeyMapДиалог::SetColumnsШирин](#setcolumnswidth)|Вызывается фреймворк, чтобы установить ширину столбцов во внутреннем управлении списком, который поддерживает элемент управления отображением клавиатуры.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте `CMFCKeyMapDialog` класс для реализации многоразового клавиатурного картографируного диалогового окна. В диалоговом поле используется элемент управления представлением списка для отображения ярлыков клавиш и связанных с ними команд.
 
@@ -112,7 +112,7 @@ CMFCKeyMapDialog(
 *bEnablePrint*<br/>
 (в) ПРАВДА, если список клавиш акселератора могут быть напечатаны; в противном случае, FALSE. Значение по умолчанию — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ### <a name="example"></a>Пример
 
@@ -132,7 +132,7 @@ virtual INT_PTR DoModal();
 
 Подписанный целый ряд, такой как IDOK или IDCANCEL, который передается методу [CDialog::EndDialog.](../../mfc/reference/cdialog-class.md#enddialog) Метод, в свою очередь, закрывает диалоговую будку. Для получения дополнительной информации, [см. CDialog: :DoModal](../../mfc/reference/cdialog-class.md#domodal).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Клавиатура отображение диалоговая коробка позволяет выбрать и назначить клавиши ускорителя для различных категорий команд. Кроме того, вы можете скопировать выбранные клавиши ускорителя и их описание на буфер обмена.
 
@@ -153,7 +153,7 @@ virtual CString FormatItem(int nItem) const;
 
 Объект, `CString` содержащий отформатированный текст элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfckeymapdialoggetcommandkeys"></a><a name="getcommandkeys"></a>CMFCKeyMapДиалого::GetCommandKeys
 
@@ -172,7 +172,7 @@ virtual CString GetCommandKeys(UINT uiCmdID) const;
 
 Список ключей с коротким срезом, связанный с указанной командой, имеет список ключей с коротким срезом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfckeymapdialogoninsertitem"></a><a name="oninsertitem"></a>CMFCKeyMapDialog::OninsertItem
 
@@ -192,7 +192,7 @@ virtual void OnInsertItem(
 *nItem*<br/>
 (в) Индекс с нулевым уровнем, который определяет, где вставить новый элемент карты ключа во внутренний элемент управления списком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfckeymapdialogonprintheader"></a><a name="onprintheader"></a>CMFCKeyMapДиалог::OnPrintHeader
 
@@ -220,7 +220,7 @@ virtual int OnPrintHeader(
 
 В случае успеха, высота печатного текста. Для получения дополнительной информации [:D](../../mfc/reference/cdc-class.md#drawtext)см.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует этот метод для печати клавиатурной карты. По умолчанию этот метод печатает номер страницы, имя приложения и название диалогового окна.
 
@@ -258,7 +258,7 @@ virtual int OnPrintItem(
 
 Высота печатного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа называет этот метод для печати элемента ключа карты диалогового окна. По умолчанию этот метод печатает имя команды элемента, клавиши ярлыка и описание команды.
 
@@ -270,7 +270,7 @@ virtual int OnPrintItem(
 virtual void OnSetColumns();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод получает подписи для столбцов из трех ресурсов. Подпись к заголовку «Команда» — от IDS_AFXBARRES_COMMAND, подпись ключевой колонки — от IDS_AFXBARRES_KEYS, а подпись столбца описания — от IDS_AFXBARRES_DESCRIPTION.
 
@@ -282,7 +282,7 @@ virtual void OnSetColumns();
 virtual void PrintKeyMap();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод `PrintKeyMap` печатает карту ключа. Он инициирует новое задание печати, а затем неоднократно вызывает [CMFCKeyMapDialog::OnPrintHeader](#onprintheader) и [CMFCKeyMapDialog::OnPrintItem](#onprintitem) методы до тех пор, пока все ключевые отображения не будут напечатаны.
 
@@ -294,7 +294,7 @@ virtual void PrintKeyMap();
 virtual void SetColumnsWidth();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод устанавливает столбцы управления внутреннего списка на ширину по умолчанию. Сначала рассчитывается ширина столбца клавиш ярлыка. Затем одна треть оставшейся ширины выделяется на столбец команды, а остальные две трети — в столбец описания.
 

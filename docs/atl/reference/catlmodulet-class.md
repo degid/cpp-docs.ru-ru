@@ -56,7 +56,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 |[Катлмодулет:: Унрегистерсервер](#unregisterserver)|Удаляет службу из реестра.|
 |[Катлмодулет:: Упдатерегистряппид](#updateregistryappid)|Обновляет сведения о EXE в реестре.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlModuleT`, производный от [катлмодуле](../../atl/reference/catlmodule-class.md), реализует исполняемый (exe) или сервисный (exe) модуль ATL. Исполняемый модуль — это локальный сервер вне процесса, в то время как модуль службы — это приложение Windows, которое запускается в фоновом режиме при запуске Windows.
 
@@ -72,7 +72,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlmoduletcatlmodulet"></a><a name="catlmodulet"></a>Катлмодулет:: Катлмодулет
 
@@ -82,7 +82,7 @@ class ATL_NO_VTABLE CAtlModuleT : public CAtlModule
 CAtlModuleT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [катлмодулет:: инитлибид](#initlibid).
 
@@ -94,7 +94,7 @@ CAtlModuleT() throw();
 static void InitLibId() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывается конструктором [катлмодулет:: катлмодулет](#catlmodulet).
 

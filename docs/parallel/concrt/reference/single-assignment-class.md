@@ -53,7 +53,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[has_value](#has_value)|Проверяет `single_assignment` , инициализирован ли этот блок обмена сообщениями со значением.|
 |[value](#value)|Возвращает ссылку на текущие полезные данные сообщения, хранящегося в `single_assignment` блоке обмена сообщениями.|
@@ -72,7 +72,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 |[resume_propagation](#resume_propagation)|Возобновляет распространение после освобождения резервирования. (Переопределяет [source_block:: resume_propagation](source-block-class.md#resume_propagation).)|
 |[send_message](#send_message)|Синхронно передает сообщение из `ISource` блока в этот `single_assignment` блок обмена сообщениями. Он вызывается `send` методом при вызове из исходного блока.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `single_assignment`Блок обмена сообщениями распространяет копии своего сообщения на каждый целевой объект.
 
@@ -94,7 +94,7 @@ class single_assignment : public propagator_block<multi_link_registry<ITarget<T>
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -113,7 +113,7 @@ virtual message<T>* accept_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `single_assignment`Блок обмена сообщениями возвращает копии сообщения в целевые объекты, а не передает владение текущим сообщением.
 
@@ -134,7 +134,7 @@ virtual message<T>* consume_message(runtime_object_identity _MsgId);
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -228,7 +228,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId);
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -298,7 +298,7 @@ single_assignment(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `single_assignment` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 
@@ -324,7 +324,7 @@ T const& value();
 
 Полезная нагрузка хранимого сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод будет ожидать появления сообщения, если в данный момент в блоке обмена сообщениями не хранится ни одного сообщения `single_assignment` .
 

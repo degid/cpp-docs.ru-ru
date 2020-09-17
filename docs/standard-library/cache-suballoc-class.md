@@ -33,7 +33,7 @@ class cache_suballoc
 *SZ*\
 Число выделяемых элементов в массиве.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса cache_suballoc сохраняет свободные блоки памяти в свободном списке с неограниченной длиной, используя `freelist<sizeof(Type), max_unbounded>` и подраспределяет блоки памяти из большего блока, выделенного с помощью **оператора New** , если свободный список пуст.
 
@@ -68,14 +68,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Число выделяемых элементов в массиве.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_suballoccache_suballoc"></a><a name="cache_suballoc"></a> cache_suballoc:: cache_suballoc
 
@@ -85,7 +85,7 @@ void *allocate(std::size_t count);
 cache_suballoc();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_suballocdeallocate"></a><a name="deallocate"></a> cache_suballoc::d еаллокате
 
@@ -97,13 +97,13 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на первый объект, который должен быть освобожден из хранилища.
 
-*расчета*\
+*count*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

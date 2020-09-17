@@ -23,7 +23,7 @@ ms.locfileid: "88844162"
 [control]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **Control** подразумевает атрибут [coclass](coclass.md) . Атрибут **элемента управления** C++ имеет те же функциональные возможности, что и атрибут MIDL [элемента управления](/windows/win32/Midl/control) .
 

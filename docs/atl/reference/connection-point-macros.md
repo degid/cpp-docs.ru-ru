@@ -27,7 +27,7 @@ ms.locfileid: "88833521"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="begin_connection_point_map"></a><a name="begin_connection_point_map"></a> BEGIN_CONNECTION_POINT_MAP
 
@@ -42,7 +42,7 @@ BEGIN_CONNECTION_POINT_MAP(x)
 *x*<br/>
 окне Имя класса, содержащего точки соединения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запустите карту точек подключения с помощью макроса BEGIN_CONNECTION_POINT_MAP, добавьте записи для каждой точки подключения с помощью макроса [CONNECTION_POINT_ENTRY](#connection_point_entry) и завершите карту с помощью макроса [END_CONNECTION_POINT_MAP](#end_connection_point_map) .
 
@@ -69,7 +69,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 *пиид*<br/>
 окне Указатель на идентификатор GUID Адде интерфейса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Записи точек подключения в карте используются [иконнектионпоинтконтаинеримпл](../../atl/reference/iconnectionpointcontainerimpl-class.md). Класс, содержащий карту точек подключения, должен наследовать от `IConnectionPointContainerImpl` .
 
@@ -89,7 +89,7 @@ CONNECTION_POINT_ENTRY_P(piid) // (Visual Studio 2017)
 END_CONNECTION_POINT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запустите карту точек подключения с помощью макроса [BEGIN_CONNECTION_POINT_MAP](#begin_connection_point_map) , добавьте записи для каждой точки подключения с помощью макроса [CONNECTION_POINT_ENTRY](#connection_point_entry) и завершите карту с помощью макроса END_CONNECTION_POINT_MAP.
 

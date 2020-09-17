@@ -22,7 +22,7 @@ ms.locfileid: "80190161"
 unary-expression ( type-name ) cast-expression
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Любое унарное выражение считается выражением приведения.
 

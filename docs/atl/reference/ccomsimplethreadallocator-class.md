@@ -36,7 +36,7 @@ class CComSimpleThreadAllocator
 |----------|-----------------|
 |[CComSimpleThreadAllocator::GetThread](#getthread)|Выбирает поток.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComSimpleThreadAllocator`управляет выбором потоков для [CComAutoThreadModule](../../atl/reference/ccomautothreadmodule-class.md). `CComSimpleThreadAllocator::GetThread`просто циклы через каждый поток и возвращает следующий в последовательности.
 
@@ -64,7 +64,7 @@ int GetThread(CComApartment* /* pApt */, int nThreads);
 
 Многокомнатная между нулем и *(nThreads* - 1). Идентифицирует одну из потоков в модуле EXE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете `GetThread` переопределить, чтобы обеспечить другой метод отбора или использовать параметр *pApt.*
 

@@ -31,7 +31,7 @@ class CMultiDocTemplate : public CDocTemplate
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кмултидоктемплате:: Кмултидоктемплате](#cmultidoctemplate)|Формирует объект `CMultiDocTemplate`.|
 

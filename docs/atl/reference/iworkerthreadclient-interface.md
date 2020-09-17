@@ -38,13 +38,13 @@ __interface IWorkerThreadClient
 |[CloseHandle](#closehandle)|Реализуйте этот метод, чтобы закрыть маркер, связанный с этим объектом.|
 |[Execute](#execute)|Реализуйте этот метод для выполнения кода, когда дескриптор, связанный с этим объектом, получает сигнал.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Реализуйте этот интерфейс, если у вас есть код, который должен выполняться в рабочем потоке в ответ на то, что дескриптор становится сигнальным.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="iworkerthreadclientclosehandle"></a><a name="closehandle"></a> Иворкерсреадклиент:: CloseHandle
 
@@ -63,7 +63,7 @@ HRESULT CloseHandle(HANDLE  hHandle);
 
 Возвращает S_OK об успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер, переданный этому методу, был ранее связан с этим объектом посредством вызова [кворкерсреад:: аддхандле](../../atl/reference/cworkerthread-class.md#addhandle).
 
@@ -93,7 +93,7 @@ HRESULT Execute(DWORD_PTR dwParam, HANDLE hObject);
 
 Возвращает S_OK об успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маркер и DWORD или указатель, переданный этому методу, ранее были связаны с этим объектом посредством вызова [кворкерсреад:: аддхандле](../../atl/reference/cworkerthread-class.md#addhandle).
 

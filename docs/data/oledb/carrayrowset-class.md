@@ -117,7 +117,7 @@ CArrayRowset(int nMax = 100000);
 HRESULT Snapshot() throw();
 ```
 
-## <a name="carrayrowsetoperator"></a><a name="operator"></a> CArrayRowset:: operator
+## <a name="carrayrowsetoperator"></a><a name="operator"></a> CArrayRowset::operator
 
 Предоставляет синтаксис, подобный массиву, для доступа к строке в наборе строк.
 
@@ -139,7 +139,7 @@ TAccessor & operator[](int nrow);
 
 Содержимое запрошенной строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *нров* превышает количество строк в наборе строк, возникает исключение.
 

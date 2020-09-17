@@ -21,7 +21,7 @@ ms.locfileid: "79440861"
 > *инструкции*\
 > **ENDM**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 То же, что и [IRP](irp.md).
 

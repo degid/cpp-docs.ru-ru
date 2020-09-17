@@ -93,7 +93,7 @@ class CMFCVisualManagerWindows7 : public CMFCVisualManagerWindows;
 |`CMFCVisualManagerWindows7::SetResourceHandle`|Устанавливает ручку ресурса, описывая атрибуты визуального менеджера.|
 |`CMFCVisualManagerWindows7::SetStyle`|Устанавливает цветовую гамму графического интерфейса. `CMFCVisualManagerWindows7`|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте `CMFCVisualManagerWindows7` класс, чтобы изменить внешний вид приложения, чтобы имитировать приложение Windows 7 по умолчанию. Этот класс может оказаться недействительным, если приложение работает на версии Windows раньше, чем Windows 7. В этом сценарии приложение использует визуальный менеджер по умолчанию, определенный в [CMFCVisualManager.](../../mfc/reference/cmfcvisualmanager-class.md)
 
@@ -163,7 +163,7 @@ virtual COLORREF GetRibbonEditBackgroundColor (
 
 Фоновый цвет коробки для отсечения *pEdit*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagerwindows7onfillmenuimagerect"></a><a name="onfillmenuimagerect"></a>CMFCVisualManagerWindows7::OnFillMenuImageRect
 
@@ -191,7 +191,7 @@ virtual void OnFillMenuImageRect(
 *Государства*<br/>
 (в) Состояние кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

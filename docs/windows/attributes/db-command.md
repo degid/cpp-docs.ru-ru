@@ -113,7 +113,7 @@ TCHAR m_state[3] = 'CA';
 
 Если *bulk_fetch* меньше единицы, `SetRows` возвращает нуль.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **db_command** создает объект [CCommand](../../data/oledb/ccommand-class.md) , который используется потребителем OLE DB для выполнения команды.
 

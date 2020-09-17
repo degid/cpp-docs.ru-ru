@@ -37,7 +37,7 @@ class CComClassFactory
 |[CComClassFactory::СозданиеInstance](#createinstance)|Создает объект указанного CLSID.|
 |[CComClassFactory::LockServer](#lockserver)|Запирает фабрику классов в памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComClassFactory`реализует интерфейс [IClassFactory,](/windows/win32/api/unknwnbase/nn-unknwnbase-iclassfactory) который содержит методы создания объекта конкретного CLSID, а также блокировку фабрики класса в памяти, чтобы позволить создавать новые объекты быстрее. `IClassFactory`должны быть реализованы для каждого класса, который вы регистрируетесь в системном реестре и которому вы назначаете CLSID.
 
@@ -99,7 +99,7 @@ STDMETHOD(LockServer)(BOOL fLock);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `_Module`относится к глобальному экземпляру [CComModule](../../atl/reference/ccommodule-class.md) или класса, полученного из него.
 

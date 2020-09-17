@@ -42,10 +42,10 @@ void swap(
 *left*\
 Первый контейнер для замены.
 
-*справа*\
+*right*\
 Второй контейнер для замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона выполняет `left.`[unordered_set::swap](../standard-library/unordered-set-class.md#swap)`(right)`.
 
@@ -130,10 +130,10 @@ void swap(
 *left*\
 Первый контейнер для замены.
 
-*справа*\
+*right*\
 Второй контейнер для замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона выполняет `left.`[unordered_multiset::swap](../standard-library/unordered-multiset-class.md#swap)`(right)`.
 

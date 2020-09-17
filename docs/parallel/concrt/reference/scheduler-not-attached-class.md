@@ -29,7 +29,7 @@ class scheduler_not_attached : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[scheduler_not_attached](#ctor)|Перегружен. Формирует объект `scheduler_not_attached`.|
 
@@ -41,7 +41,7 @@ class scheduler_not_attached : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

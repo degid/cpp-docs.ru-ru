@@ -49,14 +49,14 @@ class any
 |[emplace](#emplace)|Задает любое значение.|
 |[has_value](#has_value)|Возвращает **`true`** , если any имеет значение.|
 |[reset](#reset)|Сбрасывает объект.|
-|[позиции](#swap)|Меняет местами два объекта.|
+|[swap](#swap)|Меняет местами два объекта.|
 |[type](#type)|Возвращает любой тип.|
 
 ### <a name="operators"></a>Операторы
 
 |Имя|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Заменяет объект на копию другого объекта.|
+|[operator=](#op_eq)|Заменяет объект на копию другого объекта.|
 
 ## <a name="any"></a><a name="any"></a> всеми
 
@@ -95,7 +95,7 @@ template <class T, class U, class... Args>
 bool has_value() const noexcept;
 ```
 
-## <a name="operator"></a><a name="op_eq"></a> Оператор =
+## <a name="operator"></a><a name="op_eq"></a> operator=
 
 Заменяет объект на копию другого объекта.
 
@@ -108,10 +108,10 @@ template <class T>
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект, который копируется в Any.
 
-## <a name="reset"></a><a name="reset"></a> перезапуск
+## <a name="reset"></a><a name="reset"></a> reset
 
 Сбрасывает объект.
 
@@ -119,7 +119,7 @@ template <class T>
 void reset() noexcept;
 ```
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Меняет местами два объекта.
 

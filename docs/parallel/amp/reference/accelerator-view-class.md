@@ -49,7 +49,7 @@ class accelerator_view;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[create_marker](#create_marker)|Возвращает будущее, чтобы отследить завершение всех команд, отправленных на данный момент в этот `accelerator_view` объект.|
 |[flush](#flush)|Отправляет все ожидающие команды, поставленные в очередь на объект, в `accelerator_view` ускоритель для выполнения.|
@@ -64,9 +64,9 @@ class accelerator_view;
 
 |Имя|Описание|
 |----------|-----------------|
-|[operator! =](#operator_neq)|Сравнивает этот `accelerator_view` объект с другим и возвращает, **`false`** если они одинаковы; в противном случае возвращает **`true`** .|
-|[Оператор =](#operator_eq)|Копирует содержимое указанного `accelerator_view` объекта в этот объект.|
-|[Оператор = =](#operator_eq_eq)|Сравнивает этот `accelerator_view` объект с другим и возвращает, **`true`** если они одинаковы; в противном случае возвращает **`false`** .|
+|[operator!=](#operator_neq)|Сравнивает этот `accelerator_view` объект с другим и возвращает, **`false`** если они одинаковы; в противном случае возвращает **`true`** .|
+|[operator=](#operator_eq)|Копирует содержимое указанного `accelerator_view` объекта в этот объект.|
+|[operator==](#operator_eq_eq)|Сравнивает этот `accelerator_view` объект с другим и возвращает, **`true`** если они одинаковы; в противном случае возвращает **`false`** .|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -82,7 +82,7 @@ class accelerator_view;
 
 `accelerator_view`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `accelerator_view`Объект представляет логическое изолированное представление ускорителя. Одно физическое устройство вычислений может иметь много логических изолированных `accelerator_view` объектов. Каждый ускоритель имеет объект по умолчанию `accelerator_view` . `accelerator_view`Можно создать дополнительные объекты.
 
@@ -92,7 +92,7 @@ class accelerator_view;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
 **Пространство имен** : Concurrency
 
@@ -239,7 +239,7 @@ __declspec(property(get= get_is_auto_selection)) bool is_auto_selection;
 __declspec(property(get= get_is_debug)) bool is_debug;
 ```
 
-## <a name="operator"></a><a name="operator_neq"></a>operator! =
+## <a name="operator"></a><a name="operator_neq"></a>operator!=
 
 Сравнивает этот объект accelerator_view с другим и возвращает, **`false`** если они одинаковы; в противном случае возвращает **`true`** .
 
@@ -330,7 +330,7 @@ void wait();
 
 Возвращает **`void`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если [queuing_mode](concurrency-namespace-enums-amp.md#queuing_mode) имеет значение `immediate` , этот метод возвращает значение немедленно без блокировки.
 

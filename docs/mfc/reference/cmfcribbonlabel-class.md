@@ -44,7 +44,7 @@ class CMFCRibbonLabel : public CMFCRibbonButton
 |`CMFCRibbonLabel::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 |[CMFCRibbonLabel::SetACCData](#setaccdata)|Определяет данные доступности для текущего элемента ленточной метки. (Переопределяет [CMFCRibbonButton::SetACCData](../../mfc/reference/cmfcribbonbutton-class.md#setaccdata).)|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После создания ленты этикетки, добавить его в панель, позвонив [CMFCRibbonPanel::Добавить](../../mfc/reference/cmfcribbonpanel-class.md#add).
 

@@ -40,7 +40,7 @@ struct CDaoParameterInfo
 *m_varValue*<br/>
 Значение параметра, хранящегося в объекте [COleVariant.](../../mfc/reference/colevariant-class.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ссылки на Начальную и Вторичную выше указывают, как информация `CDaoQueryDef`возвращается функцией участника [GetParameterInfo](../../mfc/reference/cdaoquerydef-class.md#getparameterinfo) в классе.
 

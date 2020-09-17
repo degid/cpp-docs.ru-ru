@@ -81,13 +81,13 @@ class CFile : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кфиле:: Кфиле](#cfile)|Конструирует `CFile` объект на основе пути или файла.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кфиле:: Abort](#abort)|Закрывает файл, игнорируя все предупреждения и ошибки.|
 |[Кфиле:: Close](#close)|Закрывает файл и удаляет объект.|
@@ -117,7 +117,7 @@ class CFile : public CObject
 
 |Имя|Описание|
 |----------|-----------------|
-|[ОБРАБОТЧИК Кфиле:: operator](#operator_handle)|Маркер `CFile` объекта.|
+|[ОБРАБОТЧИК Кфиле::operator](#operator_handle)|Маркер `CFile` объекта.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -152,7 +152,7 @@ class CFile : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="cfileabort"></a><a name="abort"></a> Кфиле:: Abort
 
@@ -611,7 +611,7 @@ virtual BOOL Open(
 
 [!code-cpp[NVC_MFCFiles#14](../../atl-mfc-shared/reference/codesnippet/cpp/cfile-class_10.cpp)]
 
-## <a name="cfileoperator-handle"></a><a name="operator_handle"></a> ОБРАБОТЧИК Кфиле:: operator
+## <a name="cfileoperator-handle"></a><a name="operator_handle"></a> ОБРАБОТЧИК Кфиле::operator
 
 Этот оператор используется для передачи в объект обработчика `CFile` таких функций, как [Реадфиликс](/windows/win32/api/fileapi/nf-fileapi-readfileex) и [функции getFileTime](/windows/win32/api/fileapi/nf-fileapi-getfiletime) , для которых требуется `HANDLE` .
 

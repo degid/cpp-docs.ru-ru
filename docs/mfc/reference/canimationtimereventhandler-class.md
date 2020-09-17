@@ -45,7 +45,7 @@ class CAnimationTimerEventHandler : public CUIAnimationTimerEventHandlerBase<CAn
 |[CAnimationTimerEventHandler::OnRenderingTooSlow](#onrenderingtooslow)|Обрабатывает события, возникающие при частоте рендеринга кадров для анимации, ниже минимальножелаемой частоты кадров. (Переопределяет `CUIAnimationTimerEventHandlerBase::OnRenderingTooSlow`.)|
 |[CAnimationTimerEventHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обработчик событий создается и передается iUIAnimationTimer::SetTimerEventHandler при вызове CAnimationController::EnableAnimationTimerEventHandler.
 

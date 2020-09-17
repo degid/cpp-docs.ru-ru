@@ -27,7 +27,7 @@ ms.locfileid: "88845488"
 > [!NOTE]
 > \<ios>Библиотека использует `#include <iosfwd>` инструкцию.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Существует большая группа функций — манипуляторы. Манипулятор, объявленный в, \<ios> изменяет значения, хранящиеся в объекте аргумента класса [ios_base](../standard-library/ios-base-class.md). Другие манипуляторы выполняют действия с потоками, управляемыми объектами типа, производного от этого класса, например специализацией одного из шаблонов классов [basic_istream](../standard-library/basic-istream-class.md) или [basic_ostream](../standard-library/basic-ostream-class.md). Например, [noskipws](../standard-library/ios-functions.md#noskipws)(**str**) очищает флаг формата `ios_base::skipws` в объекте `str` , который может иметь один из этих типов.
 
@@ -93,7 +93,7 @@ istr>> noskipws;
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[basic_ios](../standard-library/basic-ios-class.md)|Шаблон класса описывает хранилище и функции-члены, общие для входных потоков (класса Template [basic_istream](../standard-library/basic-istream-class.md)) и потоков вывода (шаблона класса [basic_ostream](../standard-library/basic-ostream-class.md)), которые зависят от параметров шаблона.|
 |[fpos](../standard-library/fpos-class.md)|Шаблон класса описывает объект, который может хранить всю информацию, необходимую для восстановления произвольного индикатора положения файла в любом потоке.|

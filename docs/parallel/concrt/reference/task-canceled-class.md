@@ -29,7 +29,7 @@ class task_canceled : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[task_canceled](#ctor)|Перегружен. Формирует объект `task_canceled`.|
 
@@ -41,7 +41,7 @@ class task_canceled : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

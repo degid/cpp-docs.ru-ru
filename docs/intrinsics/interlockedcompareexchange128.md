@@ -88,7 +88,7 @@ unsigned char _InterlockedCompareExchange128_rel(
 |`_InterlockedCompareExchange128_acq`, `_InterlockedCompareExchange128_nf`, `_InterlockedCompareExchange128_rel`|ARM64|
 |`_InterlockedCompareExchange128_np`|x64|
 
-**Файл заголовка** \<Intrin. h >
+**Файл заголовка** \<Intrin.h >
 
 ## <a name="remarks"></a>Примечания
 

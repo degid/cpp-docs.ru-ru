@@ -70,7 +70,7 @@ class linear_congruential_engine{
 
 Дополнительные сведения о членах подсистемы см [\<random>](../standard-library/random.md) . в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `linear_congruential_engine`Шаблон класса является простейшим механизмом генератора, но не самым быстрым или самым высоким качеством. Улучшением этого механизма является [substract_with_carry_engine](../standard-library/subtract-with-carry-engine-class.md). Ни один из этих механизмов не обеспечивает такую же скорость и качество результатов, как [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 

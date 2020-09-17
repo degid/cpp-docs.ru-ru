@@ -39,7 +39,7 @@ virtual return-type identifier() sealed {...};
 *return-type*<br/>
 Тип, который возвращается функцией.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В первом примере синтаксиса запечатан (sealed) класс. Во втором примере запечатана виртуальная функция.
 

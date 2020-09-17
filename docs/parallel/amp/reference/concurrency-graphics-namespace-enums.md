@@ -36,7 +36,7 @@ enum filter_mode;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** **пространство имен** amp_graphics. h: Concurrency:: Graphics
+**Заголовок:** **пространство имен** amp_graphics.h: concurrency::graphics
 
 ## <a name="see-also"></a>См. также раздел
 

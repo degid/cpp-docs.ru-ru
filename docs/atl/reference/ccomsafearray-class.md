@@ -98,7 +98,7 @@ class CComSafeArray
 |----------|-----------------|
 |[CComSafeArray::m_psa](#m_psa)|Этот член данных содержит `SAFEARRAY` адрес структуры.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComSafeArray` предоставляет оболочку для класса [SAFEARRAY Data Type](/windows/win32/api/oaidl/ns-oaidl-safearray) , упрощая создание одно- и многомерных массивов практически любого поддерживаемого типа VARIANT и управление ими.
 
@@ -167,7 +167,7 @@ HRESULT Add(const T& t, BOOL bCopy = TRUE);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Новые объекты придатились к `SAFEARRAY` концу существующего объекта. Добавление объекта к многомерной `SAFEARRAY` объекту не поддерживается. При добавлении существующего массива объектов оба массива должны содержать элементы одного и того же типа.
 
@@ -190,7 +190,7 @@ HRESULT Attach(const SAFEARRAY* psaSrc);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Прикрепляет `SAFEARRAY` структуру `CComSafeArray` к объекту, делая существующие `CComSafeArray` методы доступными.
 
@@ -231,7 +231,7 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 *psaSrc*<br/>
 Указатель на `SAFEARRAY` структуру. Конструктор использует этот адрес, чтобы сделать копию массива, поэтому массив не упоминается после строительства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает объект `CComSafeArray`.
 
@@ -243,7 +243,7 @@ CComSafeArray(const SAFEARRAY* psaSrc);
 ~CComSafeArray() throw()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -264,7 +264,7 @@ HRESULT CopyFrom(LPSAFEARRAY* ppArray);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод копирует содержимое `SAFEARRAY` объекта `CComSafeArray` в текущем объекте. Существующее содержимое массива заменено.
 
@@ -285,7 +285,7 @@ HRESULT CopyTo(LPSAFEARRAY* ppArray);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод копирует содержимое `CComSafeArray` объекта `SAFEARRAY` в структуру.
 
@@ -316,7 +316,7 @@ HRESULT Create(ULONG ulCount = 0, LONG lLBound = 0);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CComSafeArray` может быть создан `SAFEARRAYBOUND` из существующей структуры и количества измерений, или путем указания количества элементов в массиве и нижней границе. Если к массиву можно получить доступ с c,, нижняя граница должна быть 0. Другие языки могут допускать другие значения для нижней границы (например, Visual Basic поддерживает массивы с элементами с диапазоном, например -10 до 10).
 
@@ -332,7 +332,7 @@ HRESULT Destroy();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Уничтожает `CComSafeArray` существующий объект и все данные, которые он содержит.
 
@@ -348,7 +348,7 @@ LPSAFEARRAY Detach();
 
 Возвращает указатель объекту. `SAFEARRAY`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отделяет `SAFEARRAY` объект `CComSafeArray` от объекта.
 
@@ -386,7 +386,7 @@ ULONG GetCount(UINT uDim = 0) const;
 
 Возвращает число элементов в массиве.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При использовании многомерного массива этот метод возвращает количество элементов только в определенном измерении.
 
@@ -419,7 +419,7 @@ LONG GetLowerBound(UINT uDim = 0) const;
 
 Возвращает нижнюю границу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если нижняя граница растрачивается 0, это указывает на C-подобный массив, первым элементом которого является элемент номер 0. В случае ошибки, например, недействительного аргумента `AtlThrow` измерения, этот метод вызывается с помощью HRESULT, описывающего ошибку.
 
@@ -482,7 +482,7 @@ LONG GetUpperBound(UINT uDim = 0) const;
 
 Возвращает верхнюю границу. Это значение является инклюзивным, максимально действительным индексом для этого измерения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В случае ошибки, например, недействительного аргумента `AtlThrow` измерения, этот метод вызывается с помощью HRESULT, описывающего ошибку.
 
@@ -546,7 +546,7 @@ HRESULT MultiDimSetAt(const LONG* alIndex, const T& t);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это многомерная версия [CComSafeArray::SetAt](#setat).
 
@@ -568,7 +568,7 @@ T& operator[]int nindex) const;
 
 Возвращает соответствующий элемент массива.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выполняет аналогичную функцию [CComSafeArray::GetAt](#getat), однако этот оператор работает только с одномерными массивами.
 
@@ -629,7 +629,7 @@ HRESULT Resize(ULONG ulCount, LONG lLBound = 0);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод изменяет только самое правильное измерение. Он не будет изменять `IsResizable` массивы, которые возвращаются как FALSE.
 
@@ -656,7 +656,7 @@ HRESULT SetAt(LONG lIndex, const T& t, BOOL bCopy = TRUE);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Флаг *bCopy* учитывается при добавлении элементов типа BSTR или VARIANT в массив. Значение TRUE по умолчанию гарантирует, что новая копия состоит из данных при добавлении элемента в массив.
 

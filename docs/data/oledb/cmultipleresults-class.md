@@ -25,7 +25,7 @@ ms.locfileid: "80211835"
 class CMultipleResults
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для работы с несколькими результирующими наборами класс [CCommand](../../data/oledb/ccommand-class.md) должен наследовать от этого класса.
 

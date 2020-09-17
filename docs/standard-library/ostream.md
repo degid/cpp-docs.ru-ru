@@ -39,13 +39,13 @@ ms.locfileid: "88846398"
 |[endl](../standard-library/ostream-functions.md#endl)|Завершает строку и очищает буфер.|
 |[начинает](../standard-library/ostream-functions.md#ends)|Завершает строку.|
 |[flush](../standard-library/ostream-functions.md#flush)|Очищает буфер.|
-|[позиции](../standard-library/ostream-functions.md#swap)|Меняет местами значения левого параметра объекта `basic_ostream` со значениями правого параметра объекта `basic_ostream`.|
+|[swap](../standard-library/ostream-functions.md#swap)|Меняет местами значения левого параметра объекта `basic_ostream` со значениями правого параметра объекта `basic_ostream`.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор<<](../standard-library/ostream-operators.md#op_lt_lt)|Записывает в поток различные типы.|
+|[operator<<](../standard-library/ostream-operators.md#op_lt_lt)|Записывает в поток различные типы.|
 
 ### <a name="classes"></a>Классы
 

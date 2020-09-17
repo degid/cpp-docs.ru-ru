@@ -24,7 +24,7 @@ return [expression];
 goto identifier;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. описание операторов перехода C++ в следующих разделах.
 

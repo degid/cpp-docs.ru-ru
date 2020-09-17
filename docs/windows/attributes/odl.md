@@ -23,7 +23,7 @@ ms.locfileid: "88842823"
 [odl]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **ODL** C++ имеет те же функциональные возможности, что и атрибут [ODL](/windows/win32/Midl/odl) MIDL.
 

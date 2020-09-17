@@ -27,15 +27,15 @@ ms.locfileid: "87220981"
 
 - Отмена выполняется совместно и обеспечивает координацию между кодом, запрашивающим отмену запросов, и задачей, которая отвечает за отмену.
 
-- Если возможно, используйте токены отмены, чтобы отменить работу. Класс [Concurrency:: cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) определяет токен отмены.
+- Если возможно, используйте токены отмены, чтобы отменить работу. Класс [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) определяет токен отмены.
 
-- При использовании токенов отмены используйте метод [Concurrency:: cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) , чтобы инициировать отмену, и функцию [concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) для реагирования на отмену. Используйте метод [Concurrency:: cancellation_token:: is_canceled](reference/cancellation-token-class.md#is_canceled) , чтобы проверить, была ли другая задача запросила отмену.
+- При использовании токенов отмены используйте метод [concurrency::cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) , чтобы инициировать отмену, и функцию [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) для реагирования на отмену. Используйте метод [concurrency::cancellation_token:: is_canceled](reference/cancellation-token-class.md#is_canceled) , чтобы проверить, была ли другая задача запросила отмену.
 
 - Отмена не происходит немедленно. Хотя новая работа не запускается при отмене задачи или группы задач, активная работа должна проверять и отвечать на отмену.
 
 - Продолжение, основанное на значении, наследует токен отмены своей предшествующей задачи. Продолжение на основе задачи никогда не наследует токен своей предшествующей задачи.
 
-- Используйте метод [Concurrency:: cancellation_token:: None](reference/cancellation-token-class.md#none) при вызове конструктора или функции, принимающей `cancellation_token` объект, но не требующей отмены операции. Кроме того, если не передать токен отмены в конструктор [Concurrency:: Task](../../parallel/concrt/reference/task-class.md) или функцию [concurrency:: create_task](reference/concurrency-namespace-functions.md#create_task) , эта задача не может быть отменена.
+- Используйте метод [concurrency::cancellation_token:: None](reference/cancellation-token-class.md#none) при вызове конструктора или функции, принимающей `cancellation_token` объект, но не требующей отмены операции. Кроме того, если не передать токен отмены в конструктор [concurrency::Task](../../parallel/concrt/reference/task-class.md) или функцию [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) , эта задача не может быть отменена.
 
 ## <a name="in-this-document"></a><a name="top"></a>В этом документе
 
@@ -59,29 +59,29 @@ ms.locfileid: "87220981"
 
 ![Дерево параллельной работы](../../parallel/concrt/media/parallelwork_trees.png "Дерево параллельной работы")
 
-В следующем примере показан код, который необходим для создания дерева на рисунке. В этом примере `tg1` и `tg2` являются объектами [Concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) ,,, `t1` и `t2` , `t3` `t4` `t5` являются объектами [Concurrency:: task_handle](../../parallel/concrt/reference/task-handle-class.md) .
+В следующем примере показан код, который необходим для создания дерева на рисунке. В этом примере `tg1` и `tg2` являются объектами [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) ,,, `t1` и `t2` , `t3` `t4` `t5` являются объектами [concurrency::task_handle](../../parallel/concrt/reference/task-handle-class.md) .
 
 [!code-cpp[concrt-task-tree#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_1.cpp)]
 
-Для создания подобного дерева работы можно также использовать класс [Concurrency:: task_group](reference/task-group-class.md) . Класс [Concurrency:: Task](../../parallel/concrt/reference/task-class.md) также поддерживает понятие дерева работы. Однако дерево `task` является деревом зависимостей. В дереве `task` следующие задания выполняются после текущих. В дереве группы задач внутренняя работа завершается до внешней работы. Дополнительные сведения о различиях между задачами и группами задач см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+Для создания подобного дерева работы можно также использовать класс [concurrency::task_group](reference/task-group-class.md) . Класс [concurrency::Task](../../parallel/concrt/reference/task-class.md) также поддерживает понятие дерева работы. Однако дерево `task` является деревом зависимостей. В дереве `task` следующие задания выполняются после текущих. В дереве группы задач внутренняя работа завершается до внешней работы. Дополнительные сведения о различиях между задачами и группами задач см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
 [[Top](#top)]
 
 ## <a name="canceling-parallel-tasks"></a><a name="tasks"></a>Отмена параллельных задач
 
-Существует несколько способов отмены параллельной работы. Предпочтительный способ — использование токена отмены. Группы задач также поддерживают метод [Concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) и метод [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) . Еще один способ — создать исключение в теле рабочей функции задачи. Какой бы метод вы ни выбрали, нужно понимать, что отмена не происходит немедленно. Хотя новая работа не запускается при отмене задачи или группы задач, активная работа должна проверять и отвечать на отмену.
+Существует несколько способов отмены параллельной работы. Предпочтительный способ — использование токена отмены. Группы задач также поддерживают метод [concurrency::task_group:: Cancel](reference/task-group-class.md#cancel) и метод [concurrency::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) . Еще один способ — создать исключение в теле рабочей функции задачи. Какой бы метод вы ни выбрали, нужно понимать, что отмена не происходит немедленно. Хотя новая работа не запускается при отмене задачи или группы задач, активная работа должна проверять и отвечать на отмену.
 
 Дополнительные примеры отмены параллельных задач см. в статьях [Пошаговое руководство. подключение с помощью задач и HTTP-запросов XML](../../parallel/concrt/walkthrough-connecting-using-tasks-and-xml-http-requests.md), [Практическое руководство. использование отмены для разбиения из параллельного цикла](../../parallel/concrt/how-to-use-cancellation-to-break-from-a-parallel-loop.md)и [Практическое руководство. Использование обработки исключений для прерывания работы параллельного цикла](../../parallel/concrt/how-to-use-exception-handling-to-break-from-a-parallel-loop.md).
 
 ### <a name="using-a-cancellation-token-to-cancel-parallel-work"></a><a name="tokens"></a>Использование токена отмены для отмены параллельной работы
 
-Классы `task`, `task_group` и `structured_task_group` поддерживают отмену посредством использования токенов отмены. PPL определяет классы [Concurrency:: cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) и [concurrency:: cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) для этой цели. При использовании токена отмены, чтобы отменить работу, среда выполнения не запускает новую работу, которая подписывается на этот токен. Работа, которая уже активна, может использовать функцию-член [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) , чтобы отслеживать токен отмены и останавливаться, когда это возможно.
+Классы `task`, `task_group` и `structured_task_group` поддерживают отмену посредством использования токенов отмены. PPL определяет классы [concurrency::cancellation_token_source](../../parallel/concrt/reference/cancellation-token-source-class.md) и [concurrency::cancellation_token](../../parallel/concrt/reference/cancellation-token-class.md) для этой цели. При использовании токена отмены, чтобы отменить работу, среда выполнения не запускает новую работу, которая подписывается на этот токен. Работа, которая уже активна, может использовать функцию-член [is_canceled](../../parallel/concrt/reference/cancellation-token-class.md#is_canceled) , чтобы отслеживать токен отмены и останавливаться, когда это возможно.
 
-Чтобы инициировать отмену, вызовите метод [Concurrency:: cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) . Можно реагировать на отмену следующими способами.
+Чтобы инициировать отмену, вызовите метод [concurrency::cancellation_token_source:: Cancel](reference/cancellation-token-source-class.md#cancel) . Можно реагировать на отмену следующими способами.
 
-- Для `task` объектов используйте функцию [Concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) . `cancel_current_task` отменяет текущую задачу и любое ее продолжение, основанное на значении. (Он не отменяет *токен* отмены, связанный с задачей или ее продолжениями.)
+- Для `task` объектов используйте функцию [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) . `cancel_current_task` отменяет текущую задачу и любое ее продолжение, основанное на значении. (Он не отменяет *токен* отмены, связанный с задачей или ее продолжениями.)
 
-- Для групп задач и параллельных алгоритмов используйте функцию [Concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) для обнаружения отмены и возврата как можно быстрее из тела задачи, когда эта функция возвращает значение **`true`** . (Не вызывайте `cancel_current_task` из группы задач.)
+- Для групп задач и параллельных алгоритмов используйте функцию [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) для обнаружения отмены и возврата как можно быстрее из тела задачи, когда эта функция возвращает значение **`true`** . (Не вызывайте `cancel_current_task` из группы задач.)
 
 В следующем примере показан первый базовый шаблон для отмены задачи. Тело задачи время от времени проверяет, нет ли отмены внутри цикла.
 
@@ -90,14 +90,14 @@ ms.locfileid: "87220981"
 Функция `cancel_current_task` создает исключение, поэтому нет необходимости явно возвращаться из текущего цикла или функции.
 
 > [!TIP]
-> Кроме того, можно вызвать функцию [Concurrency:: interruption_point](reference/concurrency-namespace-functions.md#interruption_point) , а не `cancel_current_task` .
+> Кроме того, можно вызвать функцию [concurrency::interruption_point](reference/concurrency-namespace-functions.md#interruption_point) , а не `cancel_current_task` .
 
 Необходимо вызвать `cancel_current_task` при реагировании на отмену, поскольку она переводит задачу в отмененное состояние. Если вы вернулись раньше вместо вызова `cancel_current_task`, операция переходит в состояние завершения, и все продолжения, основанные на значении, выполняются.
 
 > [!CAUTION]
 > Никогда не вызывайте исключение `task_canceled` из своего кода. Вместо него вызовите метод `cancel_current_task`.
 
-Когда задача завершается в состоянии Canceled, метод [Concurrency:: Task:: Get](reference/task-class.md#get) вызывает [concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (С другой стороны, [Concurrency:: Task:: wait](reference/task-class.md#wait) возвращает [task_status:: Canceled](reference/concurrency-namespace-enums.md#task_group_status) и не создает исключение.) В следующем примере показано это поведение для продолжения на основе задачи. Продолжение на основе задачи вызывается всегда, даже если предшествующая задача отменяется.
+Когда задача завершается в состоянии Canceled, метод [concurrency::Task:: Get](reference/task-class.md#get) вызывает [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md). (С другой стороны, [concurrency::Task:: wait](reference/task-class.md#wait) возвращает [task_status:: Canceled](reference/concurrency-namespace-enums.md#task_group_status) и не создает исключение.) В следующем примере показано это поведение для продолжения на основе задачи. Продолжение на основе задачи вызывается всегда, даже если предшествующая задача отменяется.
 
 [!code-cpp[concrt-task-canceled#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_3.cpp)]
 
@@ -106,9 +106,9 @@ ms.locfileid: "87220981"
 [!code-cpp[concrt-task-canceled#2](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_4.cpp)]
 
 > [!CAUTION]
-> Если токен отмены не передается `task` конструктору или функции [Concurrency:: create_task](reference/concurrency-namespace-functions.md#create_task) , эта задача не может быть отменена. Кроме того необходимо передать один и тот же токен отмены конструктору всех вложенных задач (т. е. задач, которые создаются в теле другой задачи), чтобы отменить все задачи одновременно.
+> Если токен отмены не передается `task` конструктору или функции [concurrency::create_task](reference/concurrency-namespace-functions.md#create_task) , эта задача не может быть отменена. Кроме того необходимо передать один и тот же токен отмены конструктору всех вложенных задач (т. е. задач, которые создаются в теле другой задачи), чтобы отменить все задачи одновременно.
 
-Может понадобиться выполнить собственный код, когда токен отмены отменен. Например, если пользователь нажимает кнопку **Отмена** в пользовательском интерфейсе для отмены операции, эту кнопку можно отключить, пока пользователь не запустит другую операцию. В следующем примере показано, как использовать метод [Concurrency:: cancellation_token:: register_callback](reference/cancellation-token-class.md#register_callback) для регистрации функции обратного вызова, которая выполняется при отмене токена отмены.
+Может понадобиться выполнить собственный код, когда токен отмены отменен. Например, если пользователь нажимает кнопку **Отмена** в пользовательском интерфейсе для отмены операции, эту кнопку можно отключить, пока пользователь не запустит другую операцию. В следующем примере показано, как использовать метод [concurrency::cancellation_token:: register_callback](reference/cancellation-token-class.md#register_callback) для регистрации функции обратного вызова, которая выполняется при отмене токена отмены.
 
 [!code-cpp[concrt-task-cancellation-callback#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_5.cpp)]
 
@@ -124,15 +124,15 @@ ms.locfileid: "87220981"
 > Задача, которая создается внутри другой задачи (вложенная задача), не наследует токен отмены от родительской задачи. Только продолжение, основанное на значении, наследует токен отмены своей предшествующей задачи.
 
 > [!TIP]
-> Используйте метод [Concurrency:: cancellation_token:: None](reference/cancellation-token-class.md#none) при вызове конструктора или функции, которая принимает `cancellation_token` объект, и вы не хотите, чтобы операция была отменена.
+> Используйте метод [concurrency::cancellation_token:: None](reference/cancellation-token-class.md#none) при вызове конструктора или функции, которая принимает `cancellation_token` объект, и вы не хотите, чтобы операция была отменена.
 
-Также можно предоставить токен отмены конструктору объекта `task_group` или `structured_task_group`. Важным аспектом является то, что дочерние группы задач наследуют этот токен отмены. Пример, демонстрирующий эту концепцию с помощью функции [Concurrency:: run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) , выполняемой для вызова `parallel_for` , см. в разделе [Отмена параллельных алгоритмов](#algorithms) далее в этом документе.
+Также можно предоставить токен отмены конструктору объекта `task_group` или `structured_task_group`. Важным аспектом является то, что дочерние группы задач наследуют этот токен отмены. Пример, демонстрирующий эту концепцию с помощью функции [concurrency::run_with_cancellation_token](reference/concurrency-namespace-functions.md#run_with_cancellation_token) , выполняемой для вызова `parallel_for` , см. в разделе [Отмена параллельных алгоритмов](#algorithms) далее в этом документе.
 
 [[Top](#top)]
 
 #### <a name="cancellation-tokens-and-task-composition"></a>Токены отмены и композиция задач
 
-Функции [Concurrency:: when_all](reference/concurrency-namespace-functions.md#when_all) и [concurrency:: when_any](reference/concurrency-namespace-functions.md#when_all) могут помочь составить несколько задач для реализации общих шаблонов. В этом разделе описывается, как эти функции работают с токенами отмены.
+Функции [concurrency::when_all](reference/concurrency-namespace-functions.md#when_all) и [concurrency::when_any](reference/concurrency-namespace-functions.md#when_all) могут помочь составить несколько задач для реализации общих шаблонов. В этом разделе описывается, как эти функции работают с токенами отмены.
 
 Если вы предоставляете токен отмены для `when_all` `when_any` функции и, эта функция отменяется только при отмене маркера отмены или когда одна из задач-участников завершается в отмененном состоянии или вызывает исключение.
 
@@ -144,7 +144,7 @@ ms.locfileid: "87220981"
 
 ### <a name="using-the-cancel-method-to-cancel-parallel-work"></a><a name="cancel"></a>Использование метода Cancel для отмены параллельной работы
 
-Методы [Concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) и [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) устанавливают для группы задач отмененное состояние. После вызова метода `cancel` группа задач не начинает выполнение следующих задач. Методы `cancel` могут вызываться несколькими дочерними задачами. Отмененная задача приводит к тому, что методы [Concurrency:: task_group:: wait](reference/task-group-class.md#wait) и [concurrency:: structured_task_group:: wait](reference/structured-task-group-class.md#wait) возвращают [Concurrency:: Canceled](reference/concurrency-namespace-enums.md#task_group_status).
+Методы [concurrency::task_group:: Cancel](reference/task-group-class.md#cancel) и [concurrency::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) устанавливают для группы задач отмененное состояние. После вызова метода `cancel` группа задач не начинает выполнение следующих задач. Методы `cancel` могут вызываться несколькими дочерними задачами. Отмененная задача приводит к тому, что методы [concurrency::task_group:: wait](reference/task-group-class.md#wait) и [concurrency::structured_task_group:: wait](reference/structured-task-group-class.md#wait) возвращают [concurrency::Canceled](reference/concurrency-namespace-enums.md#task_group_status).
 
 Если группа задач отменена, вызовы из каждой дочерней задачи в среду выполнения могут вызвать *точку прерывания*, которая заставляет среду выполнения создавать и перехватывать внутренние типы исключений для отмены активных задач. Среда выполнения с параллелизмом не определяет конкретные точки прерывания; они могут возникать в любом вызове среды выполнения. Среда выполнения должна обрабатывать исключения, которые она вызывает, чтобы выполнить отмену. Таким образом, не следует обрабатывать неизвестные исключения в теле задачи.
 
@@ -154,7 +154,7 @@ ms.locfileid: "87220981"
 
 В этом примере выполняется проверка на отмену каждых 100-<sup>го</sup> прохода цикла задач. Частота, с которой выполняется проверка отмены, зависит от объема работы, выполняемой задачей, и того, как быстро задачи должны реагировать на отмену.
 
-Если у вас нет доступа к объекту родительской группы задач, вызовите функцию [Concurrency:: is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) , чтобы определить, отменена ли родительская группа задач.
+Если у вас нет доступа к объекту родительской группы задач, вызовите функцию [concurrency::is_current_task_group_canceling](reference/concurrency-namespace-functions.md#is_current_task_group_canceling) , чтобы определить, отменена ли родительская группа задач.
 
 Метод `cancel` влияет только на дочерние задачи. Например, если отменить группу задач `tg1`, показанную на рисунке дерева параллельной работы, будут затронуты все задачи в дереве (`t1`, `t2`, `t3`, `t4` и `t5`). Если отменить вложенную группу задач `tg2`, будут затронуты только задачи `t4` и `t5`.
 
@@ -168,7 +168,7 @@ ms.locfileid: "87220981"
 
 [!code-cpp[concrt-task-tree#3](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_8.cpp)]
 
-Класс `structured_task_group` не является потокобезопасным. Таким образом, дочерняя задача, которая вызывает метод своего родительского объекта `structured_task_group`, приводит к непредсказуемому поведению. Исключениями из этого правила являются `structured_task_group::cancel` методы и [Concurrency:: structured_task_group:: is_canceling](reference/structured-task-group-class.md#is_canceling) . Дочерняя задача может вызывать эти методы для отмены родительской группы задач и проверки на предмет отмены.
+Класс `structured_task_group` не является потокобезопасным. Таким образом, дочерняя задача, которая вызывает метод своего родительского объекта `structured_task_group`, приводит к непредсказуемому поведению. Исключениями из этого правила являются `structured_task_group::cancel` методы и [concurrency::structured_task_group:: is_canceling](reference/structured-task-group-class.md#is_canceling) . Дочерняя задача может вызывать эти методы для отмены родительской группы задач и проверки на предмет отмены.
 
 > [!CAUTION]
 > Хотя можно использовать токен отмены, чтобы отменить работу, выполняемую группой задач, которая выполняется как дочерний элемент объекта `task`, невозможно использовать методы `task_group::cancel` или `structured_task_group::cancel`, чтобы отменить объекты `task`, выполняемые в группе задач.
@@ -206,7 +206,7 @@ ms.locfileid: "87220981"
 
 [!code-cpp[concrt-cancel-parallel-for#1](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_11.cpp)]
 
-В следующем примере используется метод [Concurrency:: structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait) для вызова `parallel_for` алгоритма. Метод `structured_task_group::run_and_wait` ожидает завершения предоставленной задачи. Объект `structured_task_group` позволяет рабочей функции отменить задачу.
+В следующем примере используется метод [concurrency::structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait) для вызова `parallel_for` алгоритма. Метод `structured_task_group::run_and_wait` ожидает завершения предоставленной задачи. Объект `structured_task_group` позволяет рабочей функции отменить задачу.
 
 [!code-cpp[concrt-task-tree#7](../../parallel/concrt/codesnippet/cpp/cancellation-in-the-ppl_12.cpp)]
 

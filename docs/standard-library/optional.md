@@ -28,12 +28,12 @@ ms.locfileid: "88842680"
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](../standard-library/optional-operators.md#op_eq_eq)|Проверяет, равен ли объект другому объекту.|
-|[operator! =](../standard-library/optional-operators.md#op_neq)|Проверяет, не равен ли объект другому объекту.|
-|[Оператор<](../standard-library/optional-operators.md#op_lt)|Проверяет, что объект слева меньше объекта справа.|
-|[Оператор<=](../standard-library/optional-operators.md#op_lt_eq)|Проверяет, что объект слева меньше или равен объекту справа.|
-|[Оператор>](../standard-library/optional-operators.md#op_gt)|Проверяет, что объект слева больше объекта справа.|
-|[Оператор>=](../standard-library/optional-operators.md#op_lt_eq)|Проверяет, что объект слева больше или равен объекту справа.|
+|[operator==](../standard-library/optional-operators.md#op_eq_eq)|Проверяет, равен ли объект другому объекту.|
+|[operator!=](../standard-library/optional-operators.md#op_neq)|Проверяет, не равен ли объект другому объекту.|
+|[operator<](../standard-library/optional-operators.md#op_lt)|Проверяет, что объект слева меньше объекта справа.|
+|[operator<=](../standard-library/optional-operators.md#op_lt_eq)|Проверяет, что объект слева меньше или равен объекту справа.|
+|[operator>](../standard-library/optional-operators.md#op_gt)|Проверяет, что объект слева больше объекта справа.|
+|[operator>=](../standard-library/optional-operators.md#op_lt_eq)|Проверяет, что объект слева больше или равен объекту справа.|
 
 > [!NOTE]
 > Помимо реляционных сравнений, \<optional> операторы также поддерживают сравнение с **нуллопт** и `T` .
@@ -43,7 +43,7 @@ ms.locfileid: "88842680"
 |Имя|Описание|
 |-|-|
 |[make_optional](../standard-library/optional-functions.md#make_optional)|Делает объект необязательным.|
-|[позиции](../standard-library/optional-functions.md#swap)|Меняет местами содержащиеся значения двух `optional` объектов.|
+|[swap](../standard-library/optional-functions.md#swap)|Меняет местами содержащиеся значения двух `optional` объектов.|
 
 ### <a name="classes-and-structs"></a>Классы и структуры
 

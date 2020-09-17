@@ -53,7 +53,7 @@ unsigned short _rotl16(
 |`_rotl8`|x86, ARM, x64, ARM64|
 |`_rotl16`|x86, ARM, x64, ARM64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

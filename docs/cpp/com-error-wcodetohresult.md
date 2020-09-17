@@ -36,7 +36,7 @@ static HRESULT WCodeToHRESULT(
 
 32-разрядный HRESULT, сопоставленный из 16-разрядного *wCode*.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. функцию члена [wCode](../cpp/com-error-wcode.md) .
 

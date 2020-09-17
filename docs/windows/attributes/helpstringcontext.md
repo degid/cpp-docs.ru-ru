@@ -15,7 +15,7 @@ ms.locfileid: "88830986"
 ---
 # <a name="helpstringcontext"></a>helpstringcontext
 
-Указывает идентификатор раздела справки в файле. hlp или. chm.
+Указывает идентификатор раздела справки в файле.hlp или. chm.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -28,7 +28,7 @@ ms.locfileid: "88830986"
 *contextID*<br/>
 32-разрядный идентификатор контекста справки в файле **справки** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **хелпстрингконтекст** C++ имеет те же функциональные возможности, что и атрибут [хелпстрингконтекст](/windows/win32/Midl/helpstringcontext) ODL.
 

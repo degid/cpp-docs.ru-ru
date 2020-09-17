@@ -27,7 +27,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[invalid_scheduler_policy_thread_specification] (недопустимый-Scheduler-Policy-значение-Class. md # ctor|Перегружен. Создает объект `invalid_scheduler_policy_value`.|
 
@@ -39,7 +39,7 @@ class invalid_scheduler_policy_thread_specification : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

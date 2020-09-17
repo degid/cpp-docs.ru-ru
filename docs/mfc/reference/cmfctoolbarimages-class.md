@@ -247,7 +247,7 @@ class CMFCToolBarImages : public CObject
 |----------|-----------------|
 |[CMFCToolBarImages::m_bDisableTrueColorAlpha](#m_bdisabletruecoloralpha)|ПРАВДА, если truecolor альфа смешивания (32-битный цвет) отключен.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Полная бит-карта изображений `CMFCToolbarImages` панели инструментов, управляемых одним или более небольшими изображениями панели инструментов (кнопки) фиксированного размера.
 
@@ -281,7 +281,7 @@ void AdaptColors(
 (в) *clrBase*<br/>
 (в) *clrTone*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesaddicon"></a><a name="addicon"></a>CMFCToolBarImages::AddIcon
 
@@ -343,7 +343,7 @@ int AddImage(
 static void __stdcall CleanUp();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesclear"></a><a name="clear"></a>CMFCToolBarImages::Clear
 
@@ -361,7 +361,7 @@ void Clear();
 CMFCToolBarImages();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Строит `CMFCToolBarImages` объект, инициализирует его движок рендеринга и устанавливает размер изображения до его значения по умолчанию 16x15 пикселей. Используйте [CMFCToolBarImages::SetImageSize,](#setimagesize) чтобы изменить размер изображения, прежде чем добавлять изображения.
 
@@ -377,7 +377,7 @@ BOOL CopyImageToClipboard(int iImage);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagescopyto"></a><a name="copyto"></a>CMFCToolBarImages::CopyTo
 
@@ -391,7 +391,7 @@ BOOL CopyTo(CMFCToolBarImages& imageList);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagescreatefromimagelist"></a><a name="createfromimagelist"></a>CMFCToolBarImages::CreateFromImageList
 
@@ -410,7 +410,7 @@ BOOL CreateFromImageList(const CImageList& imageList);
 
 Всегда возвращается TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы быстро инициализировать список изображений панели инструментов из внешнего списка изображений.
 
@@ -429,7 +429,7 @@ static HRGN __stdcall CreateRegionFromImage(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesdeleteimage"></a><a name="deleteimage"></a>CMFCToolBarImages::DeleteImage
 
@@ -527,7 +527,7 @@ BOOL DrawEx(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesenablertl"></a><a name="enablertl"></a>CMFCToolBarImages:EnableRTL
 
@@ -539,7 +539,7 @@ static void __stdcall EnableRTL(BOOL bIsRTL = TRUE);
 
 (в) *bIsRTL*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesenddrawimage"></a><a name="enddrawimage"></a>CMFCToolBarImages::EndDrawImage
 
@@ -589,7 +589,7 @@ static void FillDitheredRect(
 *rect*<br/>
 (в) Координаты прямоугольника для заполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы заполнить прямоугольник с цветом, который является средним цвета системы COLOR_BTNFACE и COLOR_BTNHIGHLIGHT. Если система использует 256 или меньше цветов, прямоугольник будет заполнен с смягчаемым узором этих двух цветов вместо.
 
@@ -601,7 +601,7 @@ BOOL GetAlwaysLight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetcount"></a><a name="getcount"></a>CMFCToolBarImages::GetCount
 
@@ -627,7 +627,7 @@ static BYTE GetDisabledImageAlpha();
 
 Текущее значение альфа-канала.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете позвонить [в CMFCToolBarImages::SetDisabledImageAlpha,](#setdisabledimagealpha) чтобы изменить значение альфа-канала.
 
@@ -639,7 +639,7 @@ static BYTE __stdcall GetFadedImageAlpha();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetimagesize"></a><a name="getimagesize"></a>CMFCToolBarImages::GetImageSize
 
@@ -658,7 +658,7 @@ SIZE GetImageSize(BOOL bDest=FALSE) const;
 
 Структура, `SIZE` которая определяет размер изображения в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Размер исходного изображения — это размер изображений, хранящихся в объекте [CMFCToolbarImages.](../../mfc/reference/cmfctoolbarimages-class.md) Вы можете позвонить [в CMFCToolBarImages::SetImageSize,](#setimagesize) чтобы установить размер источника. Значение по умолчанию составляет 16x15 пикселей.
 
@@ -676,7 +676,7 @@ HBITMAP GetImageWell() const;
 
 Ручка к битной карте, содержащей изображения панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Изображения панели инструментов хранятся в строке в одной битовой карте, которая хорошо известна как *изображение.* Чтобы найти изображение панели инструментов на изображении хорошо, умножить индекс изображения на ширину изображения панели инструментов [(см. CMFCToolBarImages::GetImageSize](#getimagesize)), чтобы получить горизонтальное смещение изображения внутри изображения хорошо.
 
@@ -688,7 +688,7 @@ HBITMAP GetImageWellLight() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetlastimagerect"></a><a name="getlastimagerect"></a>CMFCToolBarImages::GetLastImageRect
 
@@ -698,7 +698,7 @@ CRect GetLastImageRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetlightpercentage"></a><a name="getlightpercentage"></a>CMFCToolBarImages::GetLightPercentage
 
@@ -708,7 +708,7 @@ int GetLightPercentage() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetmapto3dcolors"></a><a name="getmapto3dcolors"></a>CMFCToolbarImages::Getmapto3DColors
 
@@ -718,7 +718,7 @@ BOOL GetMapTo3DColors() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetmask"></a><a name="getmask"></a>CMFCToolBarImages::GetMask
 
@@ -732,7 +732,7 @@ HBITMAP GetMask(int iImage);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetresourceoffset"></a><a name="getresourceoffset"></a>CMFCToolBarImages::GetResourceOffset
 
@@ -759,7 +759,7 @@ COLORREF GetTransparentColor() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgrayimages"></a><a name="grayimages"></a>CMFCToolBarImages::GrayImages
 
@@ -778,7 +778,7 @@ BOOL GrayImages(int nGrayImageLuminancePercentage);
 
 ПРАВДА, если изображения в коллекции были серые успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод изменяет изображения панели инструментов, усредняя красные, зеленые и синие компоненты каждого пикселя и умножая результат на *nGrayImageLuminancePercentage,* разделенный на 100. Если *nGrayImageLuminancePercentage* равен нулю или отрицательно, вместо него используется значение 130 по умолчанию.
 
@@ -797,7 +797,7 @@ static BOOL Is32BitTransparencySupported();
 
 TRUE, если 32-битное альфа-смешивание поддерживается; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот статический метод, чтобы определить во время выполнения, поддерживает ли операционная система 32-битное альфа-смешивание. Эта функция поддерживается на Windows 2000 и более поздних версиях.
 
@@ -809,7 +809,7 @@ BOOL IsPreMultiplyAutoCheck() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesisreadonly"></a><a name="isreadonly"></a>CMFCToolBarImages::IsReadOnly
 
@@ -823,7 +823,7 @@ BOOL IsReadOnly() const;
 
 ПРАВДА, если изображения панели инструментов читаются только читать, в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CMFCToolbarImages` читается только тогда, когда битовая карта с изображениями панели инструментов была загружена из `CMFCToolBarImages::CopyTemp` файла только для чтения или когда битная карта была скопирована при использовании метода.
 
@@ -839,7 +839,7 @@ static BOOL IsRTL();
 
 TRUE, если поддержка RTL включена; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поддержка RTL используется, когда приложение локализовано на языке, который читается справа налево, например, на арабском, иврите, персидском или урду.
 
@@ -867,7 +867,7 @@ BOOL IsValid() const;
 
 TRUE, `CMFCToolBarImages` если объект действителен; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CMFCToolBarImages` не действителен, когда его ручка к битовой карте с изображениями панели инструментов является NULL.
 
@@ -907,7 +907,7 @@ BOOL Load(
 
 ПРАВДА, если биткарта была загружена успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если файл имеет атрибут только для чтения, список изображений помечается как только для чтения.
 
@@ -928,7 +928,7 @@ BOOL LoadStr(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmapfromsyscolor"></a><a name="mapfromsyscolor"></a>CMFCToolBarImages::MapFromSysColor
 
@@ -945,7 +945,7 @@ static COLORREF __stdcall MapFromSysColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmapto3dcolors"></a><a name="mapto3dcolors"></a>CMFCToolBarImages::MapTo3dColors
 
@@ -964,7 +964,7 @@ BOOL MapTo3dColors(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmaptosyscolor"></a><a name="maptosyscolor"></a>CMFCToolBarImages::MapToSysColor
 
@@ -981,7 +981,7 @@ static COLORREF __stdcall MapToSysColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmaptosyscoloralpha"></a><a name="maptosyscoloralpha"></a>CMFCToolBarImages::MapToSysColorAlpha
 
@@ -995,7 +995,7 @@ static COLORREF __stdcall MapToSysColorAlpha(COLORREF color);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmirror"></a><a name="mirror"></a>CMFCToolBarImages::Зеркало
 
@@ -1009,7 +1009,7 @@ BOOL Mirror();
 
 ПРАВДА, если изображения были успешно отражены; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод используется для поддержки систем письма справа к левой.
 
@@ -1035,7 +1035,7 @@ static BOOL MirrorBitmap(
 
 ПРАВДА, если изображение было успешно отражено; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция используется для поддержки систем письма справа к левой.
 
@@ -1054,7 +1054,7 @@ static BOOL __stdcall MirrorBitmapVert(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesmirrorvert"></a><a name="mirrorvert"></a>CMFCToolBarImages::MirrorVert
 
@@ -1064,7 +1064,7 @@ BOOL MirrorVert();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesonsyscolorchange"></a><a name="onsyscolorchange"></a>CMFCToolBarImages::OnSysColorChange
 
@@ -1072,7 +1072,7 @@ BOOL MirrorVert();
 void OnSysColorChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagespremultiplyalpha"></a><a name="premultiplyalpha"></a>CMFCToolBarImages::PreMultiplyAlpha
 
@@ -1091,7 +1091,7 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesm_bdisabletruecoloralpha"></a><a name="m_bdisabletruecoloralpha"></a>CMFCToolBarImages::m_bDisableTrueColorAlpha
 
@@ -1101,7 +1101,7 @@ BOOL PreMultiplyAlpha(HBITMAP hbmp);
 static BOOL m_bDisableTrueColorAlpha;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите эту переменную члена на FALSE, чтобы включить truecolor альфа-смешивания для изображений панели инструментов.
 
@@ -1134,7 +1134,7 @@ BOOL PrepareDrawImage(
 
 ПРАВДА, если ресурсы, необходимые для рисования изображения панели инструментов были распределены успешно, в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После вызова этого метода можно позвонить [в CMFCToolBarImages: :Dроу](#draw) любое количество раз. После завершения рисования необходимо позвонить [в CMFCToolBarImages::EndDrawImage,](#enddrawimage) чтобы освободить выделенные `PrepareDrawImage`ресурсы.
 
@@ -1155,7 +1155,7 @@ BOOL Save(LPCTSTR lpszBmpFileName=NULL);
 
 TRUE, если изображения панели инструментов были сохранены успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для хранения изображений, определяемых пользователем, в дисковом файле. Если *lpszBmpFileName* является NULL, метод хранит биткарту в файл, из которого биткарта была загружена [CMFCToolBarImages::Load](#load) method.
 
@@ -1169,7 +1169,7 @@ void SetAlwaysLight(BOOL bAlwaysLight = TRUE);
 
 (в) *bAlwaysLight*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessetdisabledimagealpha"></a><a name="setdisabledimagealpha"></a>CMFCToolBarImages::SetDisabledImageAlpha
 
@@ -1184,7 +1184,7 @@ static void SetDisabledImageAlpha(BYTE nValue);
 *nValue*<br/>
 (в) Новое значение альфа-канала.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы установить пользовательское альфа-значение для отключенных изображений. Значение по умолчанию составляет 127, что приводит к полупрозрачным изображениям отключенных кнопок. Если вы установите значение 0, изображения с ограниченными возможностями будут полностью прозрачными. Если вы установите значение 255, отключенные изображения будут полностью непрозрачными.
 
@@ -1198,7 +1198,7 @@ static void __stdcall SetFadedImageAlpha(BYTE nValue);
 
 (в) *nValue*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessetimagesize"></a><a name="setimagesize"></a>CMFCToolBarImages::SetImageSize
 
@@ -1215,7 +1215,7 @@ void SetImageSize(
 *размерИзображение*<br/>
 (в) Новый размер изображений панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию размер изображения панели инструментов составляет 16x15 пикселей. Вызовите этот метод, если вы хотите использовать изображения панели инструментов другого размера.
 
@@ -1229,7 +1229,7 @@ void SetLightPercentage(int nValue);
 
 (в) *nValue*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessetmapto3dcolors"></a><a name="setmapto3dcolors"></a>CMFCToolbarImages::Setmapto3DColors
 
@@ -1241,7 +1241,7 @@ void SetMapTo3DColors(BOOL bMapTo3DColors);
 
 (в) *bmapto3DЦвета*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessetpremultiplyautocheck"></a><a name="setpremultiplyautocheck"></a>CMFCToolBarImages::SetPreMultiplyAutoCheck
 
@@ -1253,7 +1253,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 
 (в) *bAuto*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessetsingleimage"></a><a name="setsingleimage"></a>CMFCToolBarImages::SetSingleImage
 
@@ -1261,7 +1261,7 @@ void SetPreMultiplyAutoCheck(BOOL bAuto = TRUE);
 void SetSingleImage();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessettransparentcolor"></a><a name="settransparentcolor"></a>CMFCToolBarImages::SetTransparentColor
 
@@ -1280,7 +1280,7 @@ COLORREF SetTransparentColor(COLORREF clrTransparent);
 
 Предыдущий прозрачный цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда вы или фреймворк вызываетcm [CMFCToolBarImages::Draw,](#draw)метод не рисует какой-либо пиксель, который соответствует цвету, указанному *clrTransparent.*
 
@@ -1319,7 +1319,7 @@ BOOL ConvertTo32Bits(COLORREF clrTransparent = (COLORREF)-1);
 *clrПрозрачный*<br/>
 Определяет прозрачный цвет подчеркнутых битовых карт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetbitsperpixel"></a><a name="getbitsperpixel"></a>CMFCToolBarImages::GetBitsPerPixel
 
@@ -1333,7 +1333,7 @@ int GetBitsPerPixel() const;
 
 Значение, представляющее текущее разрешение подчеркнутых изображений, в битах на пиксель (bpp).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesgetscale"></a><a name="getscale"></a>CMFCToolBarImages::GetScale
 
@@ -1347,7 +1347,7 @@ double GetScale() const;
 
 Значение, представляющее текущее соотношение шкалы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagesisscaled"></a><a name="isscaled"></a>CMFCToolBarImages::IsScaled
 
@@ -1361,7 +1361,7 @@ BOOL IsScaled () const;
 
 TRUE, если подчеркнутые изображения масштабируются; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarimagessmoothresize"></a><a name="smoothresize"></a>CMFCToolbarImages::SmoothResize
 
@@ -1380,7 +1380,7 @@ BOOL SmoothResize(double dblImageScale);
 
 TRUE, если изменить размер удается; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

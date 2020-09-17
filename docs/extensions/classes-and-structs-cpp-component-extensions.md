@@ -54,7 +54,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 Дополнительные сведения см. в описаниях этого параметра для конкретного языка в разделах "Среда выполнения Windows" и "Среда CLR".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Доступность по умолчанию для объекта, объявленного с **классом ref** или **классом значений** , — **`private`** . И доступность по умолчанию для объекта, объявленного с **структурой ref** или **структурой значений** , — **`public`** .
 
@@ -82,7 +82,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 ## <a name="windows-runtime"></a>Среда выполнения Windows
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. разделы [Классы и структуры ссылки (C++/CX)](../cppcx/ref-classes-and-structs-c-cx.md) и [Классы и структуры значений (C++/CX)](../cppcx/value-classes-and-structs-c-cx.md).
 
@@ -101,7 +101,7 @@ class_access value struct name modifier : inherit_access base_type {};
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В следующей таблице перечислены отличия от синтаксиса, показанного в разделе **Все среды выполнения**, которые характерны для C++/CLI.
 

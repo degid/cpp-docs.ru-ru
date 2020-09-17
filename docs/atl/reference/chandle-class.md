@@ -59,7 +59,7 @@ class CHandle
 |----------|-----------------|
 |[CHandle::m_h](#m_h)|Переменная участника, которая хранит ручку.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект `CHandle` может использоваться всякий раз, когда требуется `CHandle` ручка: основное отличие состоит в том, что объект будет автоматически удален.
 
@@ -83,7 +83,7 @@ void Attach(HANDLE h) throw();
 *H*<br/>
 `CHandle`возьмет на себя ответственность за ручку *h*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Присваивает `CHandle` объект ручке *h,* а затем вызывает **h.Detach ()**. В сборках отладок, ATLASSERT будет поднят, если *ч* является NULL. Никакой другой проверки достоверности ручки не производится.
 
@@ -102,7 +102,7 @@ explicit CHandle(HANDLE h) throw();
 *H*<br/>
 Существующая ручка или `CHandle`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает новый `CHandle` объект, по желанию `CHandle` используя существующую ручку или объект.
 
@@ -114,7 +114,7 @@ explicit CHandle(HANDLE h) throw();
 ~CHandle() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает `CHandle` объект, позвонив [CHandle::Закрыть](#close).
 
@@ -126,7 +126,7 @@ explicit CHandle(HANDLE h) throw();
 void Close() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Закрывает открытую ручку объекта. Если ручка NULL, что будет `Close` в случае, если уже вызвано, ATLASSERT будет поднят в отладке сборки.
 
@@ -142,7 +142,7 @@ HANDLE Detach() throw();
 
 Возвращает отсоединиваемую ручку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выпускает право собственности на рукоятку.
 
@@ -171,7 +171,7 @@ CHandle& operator=(CHandle& h) throw();
 
 Возвращает ссылку на `CHandle` новый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CHandle` объект в настоящее время содержит ручку, он будет закрыт. Объект, `CHandle` передаваемый в будет иметь свою ручку ссылки на NULL. Это гарантирует, `CHandle` что два объекта никогда не будут содержать одну и ту же активную ручку.
 
@@ -183,7 +183,7 @@ CHandle& operator=(CHandle& h) throw();
 operator HANDLE() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значение, хранящееся в [CHandle::m_h](#m_h).
 

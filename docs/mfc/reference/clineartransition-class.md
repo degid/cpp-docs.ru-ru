@@ -52,7 +52,7 @@ class CLinearTransition : public CBaseTransition;
 |[CLinearTransition::m_dblFinalValue](#m_dblfinalvalue)|Значение переменной анимации в конце перехода.|
 |[CLinearTransition::m_duration](#m_duration)|Продолжительность перехода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Во время линейного перехода значение переменной анимации линейно переходит от исходного значения к определенному конечному значению. Поскольку все переходы очищаются автоматически, рекомендуется выделять их с помощью нового оператора. Инкапсулированный объект IUIAnimationTransition COM создается CAnimationController::AnimateGroup, до тех пор это NULL. Изменение переменных членов после создания этого объекта COM не имеет эффекта.
 

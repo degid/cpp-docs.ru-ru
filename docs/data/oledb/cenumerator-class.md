@@ -54,7 +54,7 @@ class CEnumerator :
 |[Моникер](#getmoniker)|Извлекает `IMoniker` интерфейс для текущей записи.|
 |[Открыть](#open)|Открывает перечислитель.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Данные можно извлекать `ISourcesRowset` косвенно из этого класса.
 
@@ -77,7 +77,7 @@ bool Find(TCHAR* szSearchName) throw();
 
 **`true`** значение, если имя было найдено. В противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это имя сопоставляется с `SOURCES_NAME` членом интерфейса [ISourcesRowset](/previous-versions/windows/desktop/ms715969(v=vs.85)) .
 

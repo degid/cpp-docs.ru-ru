@@ -34,7 +34,7 @@ SDK Build Insights совместим с Visual Studio 2017 и выше. Что�
 | `MSVC_TOOL_CODE_CL` | 0 (0x0000000000) | Компилятор (cl.exe). |
 | `MSVC_TOOL_CODE_LINK` | 1 (0x00000001) | Связующее звено (link.exe). |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используется функциями C SDK.
 

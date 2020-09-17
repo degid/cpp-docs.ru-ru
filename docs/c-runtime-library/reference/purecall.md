@@ -45,7 +45,7 @@ ms.locfileid: "82913339"
 extern "C" int __cdecl _purecall();
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_purecall** является подробным описанием реализации компилятора Microsoft C++. Эта функция не предназначена для вызова непосредственно из кода и не содержит объявление открытого заголовка. Она описана здесь, так как это общий экспорт библиотеки времени выполнения C.
 
@@ -55,7 +55,7 @@ extern "C" int __cdecl _purecall();
 
 ## <a name="requirements"></a>Требования
 
-Функция **_purecall** не имеет объявления заголовка. **_Purecall_handler** typedef определен в \<> stdlib. h.
+Функция **_purecall** не имеет объявления заголовка. **_Purecall_handler** typedef определен в \<> stdlib.h.
 
 ## <a name="see-also"></a>См. также раздел
 

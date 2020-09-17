@@ -28,8 +28,8 @@ ms.locfileid: "88831051"
 
 |Имя|Описание|
 |-|-|
-|[operator! =](../standard-library/memory-resource-operators.md#op_neq)|Проверяет, не равен ли объект memory_resource в левой части оператора memory_resource объекту справа.|
-|[Оператор = =](../standard-library/memory-resource-operators.md#op_eq_eq)|Проверяет, равен ли объект memory_resource слева от оператора объекту memory_resource в правой части.|
+|[operator!=](../standard-library/memory-resource-operators.md#op_neq)|Проверяет, не равен ли объект memory_resource в левой части оператора memory_resource объекту справа.|
+|[operator==](../standard-library/memory-resource-operators.md#op_eq_eq)|Проверяет, равен ли объект memory_resource слева от оператора объекту memory_resource в правой части.|
 
 ### <a name="specialized-template-functions"></a>Специализированные функции шаблонов
 

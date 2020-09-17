@@ -33,7 +33,7 @@ expression <= expression
 expression >= expression
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Бинарные операторы отношения определяют следующие отношения:
 

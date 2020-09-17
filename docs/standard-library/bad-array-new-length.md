@@ -26,7 +26,7 @@ class bad_array_new_length : public bad_alloc {
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Значение, возвращаемое `what`, является строкой C, определяемой реализацией. Ни одна из функций-членов не создает исключение.
 

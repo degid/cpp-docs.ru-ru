@@ -29,10 +29,10 @@ class basic_regex
 *Elem*\
 Тип элементов для обеспечения соответствия.
 
-*ркстраитс*\
+*RXtraits*\
 Класс характеристик для элементов.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса описывает объект, содержащий регулярное выражение. Объекты этого шаблона класса могут передаваться в функции шаблонов [regex_match](../standard-library/regex-functions.md#regex_match), [regex_search](../standard-library/regex-functions.md#regex_search)и [regex_replace](../standard-library/regex-functions.md#regex_replace), а также подходящие аргументы текстовой строки для поиска текста, соответствующего регулярному выражению. Существует две специализации этого шаблона класса с [регулярным выражением](../standard-library/regex-typedefs.md#regex) определений типов для элементов типа **`char`** и [wregex](../standard-library/regex-typedefs.md#wregex) для элементов типа **`wchar_t`** .
 
@@ -91,13 +91,13 @@ class basic_regex
 |[getloc](#getloc)|Возвращает сохраненный объект языкового стандарта.|
 |[imbue](#imbue)|Изменяет сохраненный объект языкового стандарта.|
 |[mark_count](#mark_count)|Возвращает число сопоставленных частей выражения.|
-|[позиции](#swap)|Меняет местами два объекта регулярного выражения.|
+|[swap](#swap)|Меняет местами два объекта регулярного выражения.|
 
 ### <a name="operators"></a>Операторы
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Присваивает значение объекту регулярного выражения.|
+|[operator=](#op_eq)|Присваивает значение объекту регулярного выражения.|
 
 ## <a name="requirements"></a>Требования
 
@@ -239,10 +239,10 @@ basic_regex& assign(
 *Ini*\
 Тип итератора ввода для источника диапазона.
 
-*Правильно*\
+*right*\
 Копируемый источник регулярного выражения.
 
-*указатель*\
+*ptr*\
 Копируемый указатель на начало последовательности.
 
 *Метки*\
@@ -254,16 +254,16 @@ basic_regex& assign(
 *str*\
 Копируемая строка.
 
-*началь*\
+*first*\
 Копируемое начало последовательности.
 
-*Последняя*\
+*last*\
 Копируемый конец последовательности.
 
 *Интерфейс*\
 Копируемый initializer_list.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все функции элементов заменяют регулярное выражение, содержащееся в, на **`*this`** регулярное выражение, описываемое последовательностью операндов, а затем возвращает **`*this`** .
 
@@ -313,10 +313,10 @@ explicit basic_regex(
 *Ini*\
 Тип итератора ввода для источника диапазона.
 
-*Правильно*\
+*right*\
 Копируемый источник регулярного выражения.
 
-*указатель*\
+*ptr*\
 Копируемый указатель на начало последовательности.
 
 *Метки*\
@@ -328,16 +328,16 @@ explicit basic_regex(
 *str*\
 Копируемая строка.
 
-*началь*\
+*first*\
 Копируемое начало последовательности.
 
-*Последняя*\
+*last*\
 Копируемый конец последовательности.
 
 *Интерфейс*\
 Копируемый initializer_list.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все последовательности хранят объект типа `RXtraits`, сконструированный по умолчанию.
 
@@ -353,7 +353,7 @@ explicit basic_regex(
 typedef regex_constants::syntax_option_type flag_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом [regex_constants::syntax_option_type](../standard-library/regex-constants-class.md#syntax_option_type).
 
@@ -365,7 +365,7 @@ typedef regex_constants::syntax_option_type flag_type;
 flag_type flags() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член возвращает значение аргумента `flag_type`, переданного в последний вызов одной из функций-членов [basic_regex::assign](#assign), или, если вызовы не выполнялись, возвращает значение, переданное в конструктор.
 
@@ -377,7 +377,7 @@ flag_type flags() const;
 locale_type getloc() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает `traits.` [regex_traits:: getloc](../standard-library/regex-traits-class.md#getloc) `()` .
 
@@ -394,7 +394,7 @@ locale_type imbue(locale_type loc);
 *Loc*\
 Объект языкового стандарта, который необходимо сохранить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена удаляет **`*this`** и возвращает `traits.` [regex_traits:: imbue](../standard-library/regex-traits-class.md#imbue) `(loc)` .
 
@@ -406,7 +406,7 @@ locale_type imbue(locale_type loc);
 typedef typename RXtraits::locale_type locale_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом [regex_traits::locale_type](../standard-library/regex-traits-class.md#locale_type).
 
@@ -418,11 +418,11 @@ typedef typename RXtraits::locale_type locale_type;
 unsigned mark_count() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает число групп записи в регулярном выражении.
 
-## <a name="basic_regexoperator"></a><a name="op_eq"></a>basic_regex:: operator =
+## <a name="basic_regexoperator"></a><a name="op_eq"></a>basic_regex::operator=
 
 Присваивает значение объекту регулярного выражения.
 
@@ -443,13 +443,13 @@ basic_regex& operator=(const basic_string<Elem, STtraits, STalloc>& str);
 *сталлок*\
 Класс распределителя для источника строки.
 
-*Правильно*\
+*right*\
 Копируемый источник регулярного выражения.
 
 *str*\
 Копируемая строка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы каждый заменяют регулярное выражение, содержащееся в, на **`*this`** регулярное выражение, описываемое последовательностью операндов, а затем возвращает **`*this`** .
 
@@ -463,10 +463,10 @@ void swap(basic_regex& right) throw();
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Объект регулярного выражения для замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член меняет местами регулярные выражения между **`*this`** и *right*. Она делает это в константном времени и не создает исключений.
 
@@ -478,7 +478,7 @@ void swap(basic_regex& right) throw();
 typedef Elem value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для параметра-шаблона *elem*.
 

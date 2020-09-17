@@ -71,7 +71,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 [[noreturn]] void _Exit(int status) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Программа завершается без выполнения деструкторов для объектов автоматической, потоковой или статической длительности хранения и без вызова функций, переданных в `atexit()` . Функция `_Exit` является сигнальной.
 
@@ -81,7 +81,7 @@ extern "C++" using compare-pred = int(const void*, const void*);
 [[noreturn]] void abort() noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Программа завершается без выполнения деструкторов для объектов автоматической, потоковой или статической длительности хранения и без вызова функций, переданных в `atexit()` . Функция `abort` является сигнальной.
 
@@ -96,7 +96,7 @@ int at_quick_exit(atexit-handler * func) noexcept;
 
 Нуль, если регистрация завершается успешно, а не равна нулю в случае сбоя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 `at_quick_exit()`Функции регистрируют функцию *Func*, которая вызывается без аргументов при `quick_exit` вызове метода. Вызов этого метода `at_quick_exit()` не происходит до тех пор, пока `quick_exit` не будут выполнены все вызовы. `at_quick_exit()`Функции не представляют состязание за данные. Порядок регистрации может быть неопределенным, если `at_quick_exit` был вызван из более чем одного потока. Поскольку `at_quick_exit` регистрации отличаются от `atexit` регистраций, приложениям может потребоваться вызывать обе функции регистрации, используя один и тот же аргумент. КОМПИЛЯТОРОМ MSVC поддерживает регистрацию по крайней мере 32 функций.
 
@@ -107,7 +107,7 @@ int atexit(c-atexit-handler * func) noexcept;
 int atexit(atexit-handler * func) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 `atexit()`Функции регистрируют функцию, на которую указывает функция *Func* для вызова без аргументов при нормальном завершении программы. Вызов `atexit()` , который не происходит перед вызовом метода, может быть невозможен `exit()` . `atexit()`Функции не представляют состязание за данные.
 
@@ -121,7 +121,7 @@ int atexit(atexit-handler * func) noexcept;
 [[noreturn]] void exit(int status);
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сначала уничтожаются объекты с длительностью хранилища потоков и связанные с текущим потоком.
 
@@ -143,7 +143,7 @@ char* getenv(const char* name);
 [[noreturn]] void quick_exit(int status) noexcept;
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Как правило, функции, регистрируемые с помощью вызовов `at_quick_exit` , вызываются в порядке их регистрации в обратную. Этот порядок не применяется к функциям, зарегистрированным после того, как уже вызваны другие зарегистрированные функции. При вызове объекты не уничтожаются `quick_exit` . Если элемент управления оставляет зарегистрированную функцию с именем, `quick_exit` поскольку она не предоставляет обработчик для вызываемого исключения, `std::terminate()` вызывается. Функция, зарегистрированная `at_quick_exit` с помощью, вызывается потоком, который вызывает метод `quick_exit` , который может отличаться от потока, который его зарегистрировал. Это означает, что зарегистрированные функции не должны полагаться на удостоверение объектов с длительностью хранения потока. После вызова зарегистрированных функций `quick_exit` вызывает `_Exit(status)` . Стандартные буферы файлов не сбрасываются. Функция `quick_exit` является сигнальной, если функции, зарегистрированные в `at_quick_exit` , имеют значение.
 
@@ -163,7 +163,7 @@ void* malloc(size_t size);
 void* realloc(void* ptr, size_t size);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C. КОМПИЛЯТОРОМ MSVC не поддерживает `aligned_alloc` функцию. C11 задается `aligned_alloc()` способом, который несовместим с реализацией Майкрософт `free()` , а именно, которая `free()` должна иметь возможность обрабатывать строго согласованные выделения.
 
@@ -183,7 +183,7 @@ unsigned long int strtoul(const char* nptr, char** endptr, int base);
 unsigned long long int strtoull(const char* nptr, char** endptr, int base);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -197,7 +197,7 @@ size_t mbstowcs(wchar_t* pwcs, const char* s, size_t n);
 size_t wcstombs(char* s, const wchar_t* pwcs, size_t n);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -210,7 +210,7 @@ void qsort(void* base, size_t nmemb, size_t size, c-compare-pred * compar);
 void qsort(void* base, size_t nmemb, size_t size, compare-pred * compar);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -221,7 +221,7 @@ int rand();
 void srand(unsigned int seed);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -238,7 +238,7 @@ long int labs(long int j);
 long long int llabs(long long int j);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 
@@ -252,7 +252,7 @@ ldiv_t ldiv(long int numer, long int denom);
 lldiv_t lldiv(long long int numer, long long int denom);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти функции имеют семантику, указанную в стандартной библиотеке C.
 

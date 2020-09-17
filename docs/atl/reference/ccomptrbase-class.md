@@ -80,7 +80,7 @@ class CComPtrBase
 |----------|-----------------|
 |[CComPtrBase::p](#p)|Переменная данных указателя.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс обеспечивает основу для других интеллектуальных указателей, которые используют процедуры управления памятью COM, такие как [CCom-IPtr](../../atl/reference/ccomqiptr-class.md) и [CComPtr.](../../atl/reference/ccomptr-class.md) Полученные классы добавляют свои собственные конструкторы и операторов, `CComPtrBase`но полагаются на методы, предоставляемые .
 
@@ -114,7 +114,7 @@ GUID точки соединения. Как правило, это то же с
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительную информацию можно узнать в [AtlAdvise.](connection-point-global-functions.md#atladvise)
 
@@ -131,7 +131,7 @@ void Attach(T* p2) throw();
 *p2*<br/>
 Объект `CComPtrBase` будет владеть этим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Attach`вызывает [CComPtrBase::Освобождение](#release) на существующей переменной [CComPtrBase::p](#p) член, а затем назначает *p2* . `CComPtrBase::p` Когда `CComPtrBase` объект берет на себя право собственности `Release` на указатель, он автоматически вызывает указатель, который удалит указатель и любые выделенные данные, если подсчет ссылок на объект идет до 0.
 
@@ -143,7 +143,7 @@ void Attach(T* p2) throw();
 ~CComPtrBase() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выпускает интерфейс, на `CComPtrBase`который указывает .
 
@@ -181,7 +181,7 @@ CLSID, связанный с данными и кодом, которые буд
 
 Возвращает S_OK на успех, или REGDB_E_CLASSNOTREG, CLASS_E_NOAGGREGATION, CO_E_CLASSSTRING или E_NOINTERFACE на неудачу. Ознакомьтесь с описанием этих ошибок [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance) и [CLSIDFromProgID.](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если первая форма метода называется, [CLSIDFromProgID](/windows/win32/api/combaseapi/nf-combaseapi-clsidfromprogid) используется для восстановления CLSID. Обе формы затем вызова [CoCreateClassInstance](/windows/win32/api/combaseapi/nf-combaseapi-cocreateinstance).
 
@@ -204,7 +204,7 @@ HRESULT CopyTo(T** ppT) throw();
 
 Возвращает S_OK на успех, E_POINTER на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Копирует `CComPtrBase` указатель на *ppT*. Количество ссылок на [cComPtrBase::p](#p) переменной участника приращено.
 
@@ -222,7 +222,7 @@ T* Detach() throw();
 
 Возвращает копию указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выпускает право собственности на указатель, устанавливает переменную [cComPtrBase::p](#p) данных в NULL и возвращает копию указателя.
 
@@ -310,7 +310,7 @@ _NoAddRefReleaseOnCComPtr<T>* operator->() const throw();
 
 Возвращает значение переменной [CComPtrBase::p](#p) данных.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот оператор для вызова метода `CComPtrBase` в классе, на который указывает объект. В сборках отладок произойдет сбой утверждения, если участник `CComPtrBase` данных указывает на NULL.
 
@@ -339,7 +339,7 @@ bool operator<(T* pT) const throw();
 operator T*() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает указатель на тип данных объекта, определенный в шаблоне класса.
 
@@ -351,7 +351,7 @@ operator T*() const throw();
 T* p;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта переменная члена содержит информацию указателя.
 
@@ -376,7 +376,7 @@ template <class Q> HRESULT QueryInterface(Q
 
 Возвращает S_OK на успех, или E_NOINTERFACE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает [IUnknown::QueryInterface](/windows/win32/api/unknwn/nf-unknwn-iunknown-queryinterface(q)).
 
@@ -390,7 +390,7 @@ template <class Q> HRESULT QueryInterface(Q
 void Release() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Интерфейс выпущен, и [CComPtrBase::p](#p) установлен на NULL.
 
@@ -411,7 +411,7 @@ HRESULT SetSite(IUnknown* punkParent) throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод называется [AtlSetChildSite](composite-control-global-functions.md#atlsetchildsite).
 

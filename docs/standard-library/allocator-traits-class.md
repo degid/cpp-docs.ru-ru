@@ -105,7 +105,7 @@ static pointer allocate(Alloc& al, size_type count,
 *Al*\
 Объект распределителя.
 
-*расчета*\
+*count*\
 Число элементов для распределения.
 
 *хинтинга*\
@@ -133,13 +133,13 @@ static void construct(Alloc& al, Uty* ptr, Types&&... args);
 *Al*\
 Объект распределителя.
 
-*указатель*\
+*ptr*\
 Указатель места, в котором должен создаваться объект.
 
 *args*\
 Список аргументов, передаваемый в конструктор объекта.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Эта статическая функция-член вызывает `al.construct(ptr, args...)`, если выражение правильно сформировано; в противном случае оно оценивается как `::new (static_cast<void *>(ptr)) Uty(std::forward<Types>(args)...)`.
 
@@ -158,13 +158,13 @@ static void deallocate(Alloc al,
 *Al*\
 Объект распределителя.
 
-*указатель*\
+*ptr*\
 Указатель на начальное расположение освобождаемых объектов.
 
-*расчета*\
+*count*\
 Количество освобождаемых объектов.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот метод вызывает `al.deallocate(ptr, count)`.
 
@@ -184,10 +184,10 @@ template <class Uty>
 *Al*\
 Объект распределителя.
 
-*указатель*\
+*ptr*\
 Указатель на расположение объекта.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот метод вызывает `al.destroy(ptr)`, если выражение правильно сформировано; в противном случае оно оценивается как `ptr->~Uty()`.
 
@@ -204,7 +204,7 @@ static size_type max_size(const Alloc& al);
 *Al*\
 Объект распределителя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот метод возвращает `al.max_size()`, если это выражение правильно сформировано; в противном случае возвращается `numeric_limits<size_type>::max()`.
 
@@ -225,6 +225,6 @@ static Alloc select_on_container_copy_construction(const Alloc& al);
 
 Этот метод возвращает `al.select_on_container_copy_construction()` , если этот тип имеет правильный формат; в противном случае возвращается значение *Al*.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот метод используется для указания распределителя при создании копии связанного контейнера.

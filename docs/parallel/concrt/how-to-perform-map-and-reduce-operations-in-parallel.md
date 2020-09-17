@@ -15,7 +15,7 @@ ms.locfileid: "77141711"
 ---
 # <a name="how-to-perform-map-and-reduce-operations-in-parallel"></a>Практическое руководство. Параллельное выполнение операций сопоставления и сокращения числа элементов
 
-В этом примере показано, как использовать алгоритмы [Concurrency::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) и [concurrency::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) и класс [Concurrency:: concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) для подсчета вхождений слов в файлах.
+В этом примере показано, как использовать алгоритмы [concurrency::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform) и [concurrency::p arallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce) и класс [concurrency::concurrent_unordered_map](../../parallel/concrt/reference/concurrent-unordered-map-class.md) для подсчета вхождений слов в файлах.
 
 Операция *Map* применяет функцию к каждому значению в последовательности. Операция *сокращения* объединяет элементы последовательности в одно значение. Для выполнения операций Map C++ и reduce можно использовать стандартные библиотеки [std:: Transform](../../standard-library/algorithm-functions.md#transform) и [std:: accumulate](../../standard-library/numeric-functions.md#accumulate) . Однако для повышения производительности при многих проблемах можно использовать алгоритм `parallel_transform` для параллельного выполнения операции сопоставления и алгоритм `parallel_reduce` для параллельного выполнения операции редукции. В некоторых случаях можно использовать `concurrent_unordered_map` для выполнения сопоставления и операции редукции в одной операции.
 

@@ -23,7 +23,7 @@ ms.locfileid: "88832494"
 [licensed]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Лицензированный** атрибут C++ имеет те же функциональные возможности, что и [лицензированный](/windows/win32/Midl/licensed) атрибут MIDL.
 

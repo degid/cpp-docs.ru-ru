@@ -164,7 +164,7 @@ class CPaneDivider : public CBasePane
 |[CPaneDivider::m_nDefaultWidth](#m_ndefaultwidth)|Определяет ширину по умолчанию в пикселях всех разделителей панели в приложении.|
 |[CPaneDivider::m_pSliderRTC](#m_psliderrtc)|Удерживает указатель на информацию класса `CPaneDivider`времени выполнения об объекте, полученном.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Фрейм `CPaneDivider` создает объекты автоматически при стыковке панели.
 
@@ -202,7 +202,7 @@ void SetAutoHideMode(BOOL bMode);
 
 (в) *bMode*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividersetpanecontainermanager"></a><a name="setpanecontainermanager"></a>CPaneDivider::SetPaneContainerManager
 
@@ -214,7 +214,7 @@ void SetPaneContainerManager(CPaneContainerManager* p);
 
 (в) *р*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedivideraddpane"></a><a name="addpane"></a>CPaneDivider::AddPane
 
@@ -226,7 +226,7 @@ virtual void AddPane(CDockablePane* pBar);
 
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedivideraddpanecontainer"></a><a name="addpanecontainer"></a>CPaneDivider::AddPaneContainer
 
@@ -250,7 +250,7 @@ virtual BOOL AddPaneContainer(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedivideraddrecentpane"></a><a name="addrecentpane"></a>CPaneDivider::AddRecentPane
 
@@ -264,7 +264,7 @@ virtual CDockablePane* AddRecentPane(CDockablePane* pBar);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividercalcexpecteddockedrect"></a><a name="calcexpecteddockedrect"></a>CPaneDivider::CalcExpectedDockedRect
 
@@ -285,7 +285,7 @@ virtual void CalcExpectedDockedRect(
 (в) *bDrawTab*<br/>
 (в) *ppTargetBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividercalcfixedlayout"></a><a name="calcfixedlayout"></a>CPaneDivider::CalcFixedLayout
 
@@ -302,7 +302,7 @@ virtual CSize CalcFixedLayout(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividercheckvisibility"></a><a name="checkvisibility"></a>CPaneDivider::CheckВидимость
 
@@ -312,7 +312,7 @@ virtual BOOL CheckVisibility();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividercpanedivider"></a><a name="cpanedivider"></a>CPaneDivider::CPaneDivider
 
@@ -331,7 +331,7 @@ CPaneDivider(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividercreateex"></a><a name="createex"></a>CPaneDivider::CreateEx
 
@@ -356,7 +356,7 @@ virtual BOOL CreateEx(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerdoesallowdyninsertbefore"></a><a name="doesallowdyninsertbefore"></a>CPaneDivider::DoesAllowDynInsertBefore
 
@@ -366,7 +366,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerdoescontainfloatingpane"></a><a name="doescontainfloatingpane"></a>CPaneDivider::DoesContainFloatingPane
 
@@ -376,7 +376,7 @@ virtual BOOL DoesContainFloatingPane();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerfindpanecontainer"></a><a name="findpanecontainer"></a>CPaneDivider::FindPaneContainer
 
@@ -393,7 +393,7 @@ CPaneContainer* FindPaneContainer(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerfindtabbedpane"></a><a name="findtabbedpane"></a>CPaneDivider::FindTabbedPane
 
@@ -407,7 +407,7 @@ CDockablePane* FindTabbedPane(UINT nID);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividergetdefaultwidth"></a><a name="getdefaultwidth"></a>CPaneDivider::GetDefaultWidth
 
@@ -417,7 +417,7 @@ static int __stdcall GetDefaultWidth();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividergetfirstpane"></a><a name="getfirstpane"></a>CPaneDivider::GetFirstPane
 
@@ -427,7 +427,7 @@ const CBasePane* GetFirstPane() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividergetpanedividers"></a><a name="getpanedividers"></a>CPaneDivider:GetPaneDividers
 
@@ -442,7 +442,7 @@ void GetPaneDividers(CObList& lstSliders);
 *lstSliders*<br/>
 (ваут) Содержит список разделителей спачтом, которые находятся в контейнере с стеклом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод следует вызывать только для разделителей панели по умолчанию. Разделитель панели по умолчанию является разделителем, который изменяет весь контейнер панели.
 
@@ -454,7 +454,7 @@ DWORD GetPaneDividerStyle() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividergetpanes"></a><a name="getpanes"></a>CPaneDivider:GetPanes
 
@@ -469,7 +469,7 @@ void GetPanes(CObList& lstBars);
 *lstBars*<br/>
 (ваут) Содержит список стекол, которые находятся в контейнере стежка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод следует вызывать только для разделителей панели по умолчанию. Разделитель панели по умолчанию является разделителем, который изменяет весь контейнер панели.
 
@@ -481,7 +481,7 @@ CRect GetRootContainerRect();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividergetwidth"></a><a name="getwidth"></a>CPaneDivider::GetWidth
 
@@ -491,7 +491,7 @@ int GetWidth() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerinit"></a><a name="init"></a>CPaneDivider::Init
 
@@ -506,7 +506,7 @@ void Init(
 (в) *bDefaultSlider*<br/>
 (в) *pРодитель*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerinsertpane"></a><a name="insertpane"></a>CPaneDivider::InsertPane
 
@@ -527,7 +527,7 @@ virtual BOOL InsertPane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerisautohidemode"></a><a name="isautohidemode"></a>CPaneDivider::IsAutoHideMode
 
@@ -537,7 +537,7 @@ BOOL IsAutoHideMode() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerisdefault"></a><a name="isdefault"></a>CPaneDivider::IsDefault
 
@@ -547,7 +547,7 @@ BOOL IsDefault() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerishorizontal"></a><a name="ishorizontal"></a>CPaneDivider::IsHorizontal
 
@@ -557,7 +557,7 @@ BOOL IsHorizontal() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerm_ndefaultwidth"></a><a name="m_ndefaultwidth"></a>CPaneDivider::m_nDefaultWidth
 
@@ -580,7 +580,7 @@ virtual void Move(
 (в) *ptOffset*<br/>
 (в) *bAdjustLayout*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerm_psliderrtc"></a><a name="m_psliderrtc"></a>CPaneDivider::m_pSliderRTC
 
@@ -590,7 +590,7 @@ virtual void Move(
 AFX_IMPORT_DATA static CRuntimeClass* m_pSliderRTC;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите эту переменную участника, если вы создаете пользовательский разделитель панели. Это позволяет фреймворку создать разделитель стекол при нарисованном стене.
 
@@ -613,7 +613,7 @@ CPaneDivider::m_pSliderRTC = RUNTIME_CLASS(CMySpliter);
 virtual void NotifyAboutRelease();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedivideronshowpane"></a><a name="onshowpane"></a>CPaneDivider::OnShowPane
 
@@ -628,7 +628,7 @@ virtual void OnShowPane(
 (в) *pBar*<br/>
 (в) *bShow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerreleaseemptypanecontainers"></a><a name="releaseemptypanecontainers"></a>CPaneDivider::ReleaseEmptyPaneContainers
 
@@ -636,7 +636,7 @@ virtual void OnShowPane(
 void ReleaseEmptyPaneContainers();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerremovepane"></a><a name="removepane"></a>CPaneDivider::RemovePane
 
@@ -648,7 +648,7 @@ virtual void RemovePane(CDockablePane* pBar);
 
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerreplacepane"></a><a name="replacepane"></a>CPaneDivider::ReplacePane
 
@@ -665,7 +665,7 @@ virtual BOOL ReplacePane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerrepositionpanes"></a><a name="repositionpanes"></a>CPaneDivider::RepositionPanes
 
@@ -680,7 +680,7 @@ virtual void RepositionPanes(
 (в) *rectNew*<br/>
 (в) *hdwp*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerserialize"></a><a name="serialize"></a>CPaneDivider::Serialize
 
@@ -692,7 +692,7 @@ void Serialize(CArchive& ar);
 
 [in] *ar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividershowwindow"></a><a name="showwindow"></a>CPaneDivider::ShowWindow
 
@@ -704,7 +704,7 @@ void ShowWindow(int nCmdShow);
 
 (в) *nCmdShow*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerstorerecentdocksiteinfo"></a><a name="storerecentdocksiteinfo"></a>CPaneDivider::StoreRecentDockSiteInfo
 
@@ -716,7 +716,7 @@ void StoreRecentDockSiteInfo(CDockablePane* pBar);
 
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cpanedividerstorerecenttabrelatedinfo"></a><a name="storerecenttabrelatedinfo"></a>CPaneDivider::StoreRecentTabRelatedInfo
 
@@ -731,7 +731,7 @@ void StoreRecentTabRelatedInfo(
 (в) *pDockingBar*<br/>
 (в) *pTabbedBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

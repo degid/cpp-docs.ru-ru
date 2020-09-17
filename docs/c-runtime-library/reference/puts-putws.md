@@ -69,7 +69,7 @@ int _putws(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **Put** записывает *str* в стандартный выходной поток **stdout**, заменяя завершающий нуль-символ строки ("\ 0") символом новой строки ("\n") в выходном потоке.
 

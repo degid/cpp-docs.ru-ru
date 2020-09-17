@@ -43,7 +43,7 @@ UINT ___lc_codepage_func(void);
 
 Текущая кодовая страница сортировки потока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `___lc_collate_cp_func` — это внутренняя функция CRT, которая используется другими функциями CRT для получения текущей кодовой страницы сортировки из локального хранилища потока для данных CRT. Эти сведения также доступны при использовании функции [_get_current_locale](../c-runtime-library/reference/get-current-locale.md).
 

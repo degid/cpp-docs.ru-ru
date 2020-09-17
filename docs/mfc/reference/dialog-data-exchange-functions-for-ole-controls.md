@@ -72,7 +72,7 @@ void AFXAPI DDX_OCBool(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
@@ -106,13 +106,13 @@ void AFXAPI DDX_OCBoolRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_occolor"></a><a name="ddx_occolor"></a> DDX_OCColor
 
@@ -140,13 +140,13 @@ void AFXAPI DDX_OCColor(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_occolorro"></a><a name="ddx_occolorro"></a> DDX_OCColorRO
 
@@ -174,13 +174,13 @@ void AFXAPI DDX_OCColorRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocfloat"></a><a name="ddx_ocfloat"></a> DDX_OCFloat
 
@@ -214,13 +214,13 @@ void AFXAPI DDX_OCFloat(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocfloatro"></a><a name="ddx_ocfloatro"></a> DDX_OCFloatRO
 
@@ -254,13 +254,13 @@ void AFXAPI DDX_OCFloatRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocint"></a><a name="ddx_ocint"></a> DDX_OCInt
 
@@ -294,13 +294,13 @@ void AFXAPI DDX_OCInt(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocintro"></a><a name="ddx_ocintro"></a> DDX_OCIntRO
 
@@ -334,13 +334,13 @@ void AFXAPI DDX_OCIntRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocshort"></a><a name="ddx_ocshort"></a> DDX_OCShort
 
@@ -368,13 +368,13 @@ void AFXAPI DDX_OCShort(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_ocshortro"></a><a name="ddx_ocshortro"></a> DDX_OCShortRO
 
@@ -402,13 +402,13 @@ void AFXAPI DDX_OCShortRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_octext"></a><a name="ddx_octext"></a> DDX_OCText
 
@@ -436,13 +436,13 @@ void AFXAPI DDX_OCText(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="ddx_octextro"></a><a name="ddx_octextro"></a> DDX_OCTextRO
 
@@ -470,13 +470,13 @@ void AFXAPI DDX_OCTextRO(
 *value*<br/>
 Ссылка на переменную-член диалогового окна, представления формы или объекта представления элемента управления, с которой осуществляется обмен данными.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения об DDX см [обмен данными окон и проверка](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="see-also"></a>См. также раздел
 

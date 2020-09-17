@@ -29,7 +29,7 @@ ms.locfileid: "87194632"
 
 ## <a name="send-and-asend"></a><a name="send"></a>Send и asend
 
-Функция [Concurrency:: send](reference/concurrency-namespace-functions.md#send) отправляет сообщение указанному целевому объекту синхронно, а функция [Concurrency:: asend](reference/concurrency-namespace-functions.md#asend) отправляет сообщение указанному целевому объекту асинхронно. Обе `send` функции и `asend` ожидают, пока целевой объект не обозначает, что в конечном итоге будет принимать или отклонять сообщение.
+Функция [concurrency::send](reference/concurrency-namespace-functions.md#send) отправляет сообщение указанному целевому объекту синхронно, а функция [concurrency::asend](reference/concurrency-namespace-functions.md#asend) отправляет сообщение указанному целевому объекту асинхронно. Обе `send` функции и `asend` ожидают, пока целевой объект не обозначает, что в конечном итоге будет принимать или отклонять сообщение.
 
 `send`Функция ожидает, пока целевой объект не примет или не отклонит сообщение перед возвратом. `send`Функция возвращает значение, **`true`** Если сообщение было доставлено, и **`false`** в противном случае. Так как `send` функция работает синхронно, она `send` ожидает получения сообщения целевым объектом перед возвратом.
 
@@ -39,7 +39,7 @@ ms.locfileid: "87194632"
 
 ## <a name="receive-and-try_receive"></a><a name="receive"></a>получение и try_receive
 
-Функции [Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) и [concurrency:: try_receive](reference/concurrency-namespace-functions.md#try_receive) считывают данные из заданного источника. `receive`Функция ожидает, пока данные станут доступными, в то время как `try_receive` функция возвращает значение немедленно.
+Функции [concurrency::Receive](reference/concurrency-namespace-functions.md#receive) и [concurrency::try_receive](reference/concurrency-namespace-functions.md#try_receive) считывают данные из заданного источника. `receive`Функция ожидает, пока данные станут доступными, в то время как `try_receive` функция возвращает значение немедленно.
 
 Используйте `receive` функцию, если для продолжения работы требуются данные. Используйте `try_receive` функцию, если не следует блокировать текущий контекст или нет необходимости для продолжения работы с данными.
 

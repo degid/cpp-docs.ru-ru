@@ -39,7 +39,7 @@ class IPropertyNotifySinkCP
 *Cdv*<br/>
 Класс, управляющий соединениями между точкой соединения и ее поглотителями. Значение по умолчанию [CComDynamicUnkArray](../../atl/reference/ccomdynamicunkarray-class.md), что позволяет неограниченное количество подключений. Вы также можете использовать [CComUnkArray](../../atl/reference/ccomunkarray-class.md), который определяет фиксированное количество соединений.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IPropertyNotifySinkCP`наследует все методы через свой базовый класс, [IConnectionPointImpl](../../atl/reference/iconnectionpointimpl-class.md).
 

@@ -225,13 +225,13 @@ ComPtr<T> Make();
 
 `ComPtr<T>`Объект в случае успеха; в противном случае — значение **`nullptr`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. статью [как создать экземпляры компонентов WRL напрямую](how-to-instantiate-wrl-components-directly.md) , чтобы узнать о различиях между этой функцией и [Microsoft:: WRL::D состояния:: MakeAndInitialize](makeandinitialize-function.md), а также в качестве примера.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

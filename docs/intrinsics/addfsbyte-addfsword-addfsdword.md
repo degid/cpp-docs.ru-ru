@@ -59,7 +59,7 @@ void __addfsdword(
 |`__addfsword`|x86|
 |`__addfsdword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

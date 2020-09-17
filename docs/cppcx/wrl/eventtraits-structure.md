@@ -34,7 +34,7 @@ struct EventTraits : HANDLENullTraits;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Microsoft:: WRL:: оболочки:: метод HandleTraits
 

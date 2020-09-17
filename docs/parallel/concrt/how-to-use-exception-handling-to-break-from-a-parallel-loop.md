@@ -16,7 +16,7 @@ ms.locfileid: "87213922"
 
 В этом разделе показано, как написать алгоритм поиска для простой древовидной структуры.
 
-В разделе [Отмена](cancellation-in-the-ppl.md) статьи объясняется роль отмены в библиотеке параллельных шаблонов. Использование обработки исключений является менее эффективным способом отмены параллельной работы, чем использование методов [Concurrency:: task_group:: Cancel](reference/task-group-class.md#cancel) и [concurrency:: structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) . Однако одним из сценариев, в которых используется обработка исключений для отмены работы, является ситуация, когда вы вызываете библиотеку стороннего производителя, которая использует задачи или параллельные алгоритмы, но не `task_group` предоставляет `structured_task_group` объект или для отмены.
+В разделе [Отмена](cancellation-in-the-ppl.md) статьи объясняется роль отмены в библиотеке параллельных шаблонов. Использование обработки исключений является менее эффективным способом отмены параллельной работы, чем использование методов [concurrency::task_group:: Cancel](reference/task-group-class.md#cancel) и [concurrency::structured_task_group:: Cancel](reference/structured-task-group-class.md#cancel) . Однако одним из сценариев, в которых используется обработка исключений для отмены работы, является ситуация, когда вы вызываете библиотеку стороннего производителя, которая использует задачи или параллельные алгоритмы, но не `task_group` предоставляет `structured_task_group` объект или для отмены.
 
 ## <a name="example"></a>Пример
 
@@ -26,7 +26,7 @@ ms.locfileid: "87213922"
 
 ## <a name="example"></a>Пример
 
-В следующем примере показан `for_all` метод. В нем используется алгоритм [параллелизма::p arallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) для выполнения рабочей функции на каждом узле дерева параллельно.
+В следующем примере показан `for_all` метод. В нем используется алгоритм [параллелизма::parallel_for_each](reference/concurrency-namespace-functions.md#parallel_for_each) для выполнения рабочей функции на каждом узле дерева параллельно.
 
 [!code-cpp[concrt-task-tree-search#1](../../parallel/concrt/codesnippet/cpp/how-to-use-exception-handling-to-break-from-a-parallel-loop_2.cpp)]
 

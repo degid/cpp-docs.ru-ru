@@ -25,7 +25,7 @@ class pointer_safety {
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Область **`enum`** определяет значения, которые могут быть возвращены `get_pointer_safety()` :
 

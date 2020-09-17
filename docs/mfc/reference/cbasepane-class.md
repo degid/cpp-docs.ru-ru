@@ -306,7 +306,7 @@ class CBasePane : public CWnd
 |----------|-----------------|
 |[CBasePane::DoPaint](#dopaint)|Заполняет фон стека.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если вы хотите создать класс панели, который поддерживает расширенные функции стыковки, доступные в MFC, вы должны получить его из `CBasePane` или из класса [CPane.](../../mfc/reference/cpane-class.md)
 
@@ -386,7 +386,7 @@ void AddPane(CBasePane* pBar);
 *pBar*<br/>
 (в) Указатель на панель для добавления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это удобный метод, который добавляет панель к менеджеру стыковки. Используя этот метод, вам не нужно писать код, который анализирует тип родительского кадра.
 
@@ -405,7 +405,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 *hdwp*<br/>
 (ваут) Ручка к структуре, содержащей несколько позиций окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это удобный метод, который регулирует макет стыковки. Используя этот метод, вам не нужно писать код, который анализирует тип родительского кадра.
 
@@ -419,7 +419,7 @@ virtual void AdjustDockingLayout(HDWP hdwp=NULL);
 virtual void AdjustLayout();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамка вызывает этот метод, когда панель должна настроить внутреннюю компоновку. Базовая реализация ничего не делает.
 
@@ -445,7 +445,7 @@ virtual CSize CalcFixedLayout(
 
 Размер панели управления в пикселях `CSize` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите раздел замечаний в [CControlBar::CalcFixedLayout](../../mfc/reference/ccontrolbar-class.md#calcfixedlayout)
 
@@ -466,7 +466,7 @@ virtual BOOL CanAcceptPane(const CBasePane* pBar) const;
 
 ПРАВДА, если еще одно стекло может быть принято; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамки вызывает этот метод прежде чем он стыковки панели, указанной *pBar* к текущей панели.
 
@@ -486,7 +486,7 @@ virtual BOOL CanAutoHide() const;
 
 ПРАВДА, если это стекло поддерживает режим автоматической скрытия; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм вызывает эту функцию, чтобы определить, поддерживает ли панель режим автоматического скрытия.
 
@@ -506,7 +506,7 @@ virtual BOOL CanBeAttached() const;
 
 ПРАВДА, если панель может быть пристыкована к другому сну или окне рамы; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию возвращает FALSE. Переопределить этот метод в производном классе, чтобы включить или отключить возможность стыковки без вызова [CBasePane::EnableDocking.](#enabledocking)
 
@@ -522,7 +522,7 @@ virtual BOOL CanBeClosed() const;
 
 ПРАВДА, если панель может быть закрыта; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, чтобы определить, можно ли закрыть панель. Если метод возвращает TRUE, кнопка **«Закрыть»** добавляется в заглавный бар панели панели панели или, если панель плавает, в заглавный бар окна миникадра панели.
 
@@ -547,7 +547,7 @@ virtual BOOL CanBeDocked(CBasePane* pDockBar) const;
 
 ПРАВДА, если это сращивается с другой панели; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамки вызывает этот метод прежде чем он стыковки панели, указанной *pDockBar* к текущей панели.
 
@@ -567,7 +567,7 @@ virtual BOOL CanBeResized() const;
 
 ПРАВДА, если панель может быть уменьшена; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод проверяет AFX_CBRS_RESIZE флаг, который указан `CBasePane::OnCreate`по умолчанию в . Если этот флаг не указан, менеджер стыковки помечает панель внутри как неподвижную, а не стыковку.
 
@@ -583,7 +583,7 @@ virtual BOOL CanBeTabbedDocument() const;
 
 TRUE, если панель может быть преобразована в вкладку документа; в противном случае, FALSE. `CBasePane::CanBeTabbedDocument`всегда возвращает FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только объекты `CBasePane`определенных типов, таких как [класс CDockablePane,](../../mfc/reference/cdockablepane-class.md)могут быть преобразованы в документы, выложенный вкладками.
 
@@ -599,7 +599,7 @@ virtual BOOL CanFloat() const;
 
 ПРАВДА, если панель может плавать; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, чтобы определить, может ли панель плавать.
 
@@ -622,7 +622,7 @@ virtual BOOL CanFocus() const;
 
 ПРАВДА, если панель может получить фокус; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе для управления фокусом. Например, поскольку панели инструментов не могут получить фокус, этот метод возвращает FALSE, когда он вызывается на объекты панели инструментов.
 
@@ -641,7 +641,7 @@ virtual void CopyState(CBasePane* pOrgBar);
 *pOrgBar*<br/>
 (в) Указатель на другую панель.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод копирует состояние от *pOrgBar* до этого панели.
 
@@ -662,7 +662,7 @@ virtual CPaneFrameWnd* CreateDefaultMiniframe(CRect rectInitial);
 
 Указатель на новое окно мини-кадра или NULL, если творение не удалось.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм называет этот метод, когда панель переключается в плавающее состояние. Метод создает окно мини-рамки и прикрепляет стекло к этому окну.
 
@@ -718,7 +718,7 @@ virtual BOOL CreateEx(
 
 TRUE, если панель создана успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает окно класса. `lpszClassName` Если указать WS_CAPTION, этот метод очищает WS_CAPTION `CBasePane::m_bHasCaption` бит стиля и устанавливает в TRUE, потому что библиотека не поддерживает панели с подписями.
 
@@ -764,7 +764,7 @@ virtual BOOL DockPane(
 
 TRUE, если панель управления была успешно пристыкована; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов эту функцию, чтобы пристыковать панель к другой панели или док-бар [(CDockSite класса](../../mfc/reference/cdocksite-class.md)), который указан *pDockBar*, или в основной кадр, если *pDockBar* является NULL.
 
@@ -821,7 +821,7 @@ virtual BOOL DockToFrameWindow(
 
 ПРАВДА, если метод был успешным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод не удается, если стекло делитель ( [CPaneDivider класса](../../mfc/reference/cpanedivider-class.md)) не может быть создан. В противном случае, он всегда возвращает сярухи.
 
@@ -837,7 +837,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 TRUE, если пользователь может вставить еще одно стекло; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, чтобы определить, может ли пользователь динамически вставить панель перед этим стеклом.
 
@@ -860,7 +860,7 @@ virtual void DoPaint(CDC* pDC);
 *pDC*<br/>
 (в) Указатель на контекст устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию вызывает текущий визуальный менеджер, чтобы заполнить фон [(CMFCVisualManager::OnFillBarBackground](../../mfc/reference/cmfcvisualmanager-class.md#onfillbarbackground)).
 
@@ -877,7 +877,7 @@ virtual void EnableDocking(DWORD dwAlignment);
 *dwAlignment*<br/>
 (в) Определяет выравнивание стыковки для включения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы включить выравнивание стыковки с основной рамой. Вы можете передать комбинацию CBRS_ALIGN_ флагов (для получения дополнительной информации [см. CControlBar::EnableDocking).](../../mfc/reference/ccontrolbar-class.md#enabledocking)
 
@@ -898,7 +898,7 @@ virtual void EnableGripper(BOOL bEnable);
 *bEnable*<br/>
 (в) TRUE для включения захвата; FALSE отключить его.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует этот метод для включения захвата вместо использования WS_CAPTION стиля.
 
@@ -928,7 +928,7 @@ virtual BOOL FloatPane(
 
 ПРАВДА, если панель плавалуспешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы плавать панель на экране положение, указанное *rectFloat*.
 
@@ -958,7 +958,7 @@ virtual HRESULT get_accHelpTopic(
 
 `CBasePane`не реализует этот метод. Поэтому `CBasePane::get_accHelpTopic` всегда возвращается S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция является частью поддержки активной доступности в MFC. Переопределить эту функцию в производном классе, чтобы предоставить справочную информацию о вашем объекте.
 
@@ -979,7 +979,7 @@ virtual HRESULT get_accSelection(VARIANT* pvarChildren);
 
 `CBasePane`не реализует этот метод. Если *pvarChildren* является NULL, этот метод возвращает E_INVALIDARG. В противном случае этот метод возвращается DISP_E_MEMBERNOTFOUND.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция является частью поддержки активной доступности в MFC. Переопределить эту функцию в производном классе, если у вас есть элементы пользовательского интерфейса без окон, кроме элементов без окон ActiveX.
 
@@ -1007,7 +1007,7 @@ virtual DWORD GetControlBarStyle() const
 
 Бит-или сочетание AFX_CBRS_ флагов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение возврата представляет собой комбинацию следующих возможных значений.
 
@@ -1049,7 +1049,7 @@ virtual AFX_DOCK_TYPE GetDockingMode() const;
 
 DT_STANDARD если перетаскивание стекла указывается на экране прямоугольником сопротивления. DT_IMMEDIATE если содержимое стека перетаскивается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод для определения текущего режима стыковки панели.
 
@@ -1069,7 +1069,7 @@ virtual CWnd* GetDockSiteFrameWnd() const;
 
 Указатель на место дока панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить указатель на место док-станции панели. Сайт дока может быть либо основным окном кадра, если панель пристыкована к основной раме, либо окном мини-рамки, если панель плавает.
 
@@ -1093,7 +1093,7 @@ virtual DWORD GetEnabledAlignment() const;
 |CBRS_ALIGN_BOTTOM|Нижней.|
 |CBRS_ALIGN_ANY|Комбинация всех флагов.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы определить включенное выравнивание для панели. Выравнивание включено означает стороны окна основной рамы, к которому можно пристыковаться к стыковке.
 
@@ -1128,7 +1128,7 @@ virtual HICON GetPaneIcon(BOOL bBigIcon);
 
 Ручка к значку панели. В случае неудачи возвращает NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию вызывает [CWnd::GetIcon](../../mfc/reference/cwnd-class.md#geticon).
 
@@ -1144,7 +1144,7 @@ CDockingPanesRow* GetPaneRow();
 
 Указатель на `CDockingPanesRow` то, если стыковка пристыкована, или NULL, если она плавает.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы получить доступ к строке, где стекло пристыковано. Например, чтобы расположить стекла в определенном ряду, позвоните, `GetPaneRow` а затем позвоните [cDockingPanesRow::ArrangePanes](../../mfc/reference/cdockingpanesrow-class.md#arrangepanes).
 
@@ -1189,7 +1189,7 @@ virtual CPaneFrameWnd* GetParentMiniFrame(BOOL bNoAssert=FALSE) const;
 
 Действительный указатель на родительское окно мини-рамки, если панель плавает; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов исправьте эту функцию, чтобы получить указатель на родительское окно мини-рамки. Этот метод итерирует все родители и проверяет объект, полученный из [класса CPaneFrameWnd.](../../mfc/reference/cpaneframewnd-class.md)
 
@@ -1224,7 +1224,7 @@ CMFCBaseTabCtrl* GetParentTabWnd(HWND& hWndTab) const;
 
 Действительный указатель на родительское окно вкладок или NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для извлечения указателя в окно родительского вкладок. Иногда это не достаточно, чтобы позвонить, `GetParent`потому что панель может быть внутри стыковки обертка [(CDockablePaneAdapter класса](../../mfc/reference/cdockablepaneadapter-class.md)) или внутри адаптера панели ( [CDockablePaneAdapter класса](../../mfc/reference/cdockablepaneadapter-class.md)). С `GetParentTabWnd` помощью вы сможете получить действительный указатель в тех случаях (при условии, что родитель является вкладкой окно).
 
@@ -1252,7 +1252,7 @@ virtual BOOL HideInPrintPreviewMode() const;
 
 TRUE, если панель не отображается в предварительном просмотре печати; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Базовые панели не отображаются в предварительном просмотре. Таким образом, этот метод всегда возвращает TRUE.
 
@@ -1306,7 +1306,7 @@ virtual BOOL IsAutoHideMode() const;
 
 ПРАВДА, если панель находится в режиме автоматической скрыть; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Базовые стекла не могут автоматически скрываться. Этот метод всегда возвращает FALSE.
 
@@ -1322,7 +1322,7 @@ BOOL IsDialogControl() const;
 
 ПРАВДА, если панель является управление диалоговой коробкой; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа использует этот метод для обеспечения согласованности макета для всех стекол.
 
@@ -1350,7 +1350,7 @@ virtual BOOL IsFloating() const;
 
 ПРАВДА, если панель плавает; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает противоположное значение [CBasePane::IsDocked](#isdocked).
 
@@ -1366,7 +1366,7 @@ virtual BOOL IsHorizontal() const;
 
 TRUE, если стекло пристыковано горизонтально; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию проверяет текущее выравнивание стыковки для CBRS_ORIENT_HORZ.
 
@@ -1382,7 +1382,7 @@ virtual BOOL IsInFloatingMultiPaneFrameWnd() const;
 
 ПРАВДА, если панель находится в многопанельном окне кадра; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Только док-панели могут плавать в многопанельном окне рамы. Таким `CBasePane::IsInFloatingMultiPaneFrameWnd` образом, всегда возвращает FALSE.
 
@@ -1410,7 +1410,7 @@ BOOL IsPaneVisible() const;
 
 TRUE, если WS_VISIBLE установлен; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [CBasePane::Видимо для](#isvisible) определения видимости панели.
 
@@ -1440,7 +1440,7 @@ BOOL IsPointNearDockSite(
 
 ПРАВДА, если точка находится рядом с док-станции; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Точка находится рядом с местом дока, когда она находится в пределах чувствительности, установленной в диспетчере стыковки. Чувствительность по умолчанию составляет 15 пикселей.
 
@@ -1456,7 +1456,7 @@ virtual BOOL IsResizable() const;
 
 TRUE, если панель может быть уменьшена пользователем; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Панели [класса CDockablePane](../../mfc/reference/cdockablepane-class.md) можно переобезолетно.
 
@@ -1486,7 +1486,7 @@ virtual BOOL IsTabbed() const;
 
 TRUE, если панель управления вставлена в вкладку окна вкладки; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод получает указатель для непосредственного родителя и определяет, если класс времени выполнения родителя является [CMFCBaseTabCtrl класса.](../../mfc/reference/cmfcbasetabctrl-class.md)
 
@@ -1502,7 +1502,7 @@ virtual BOOL IsVisible() const;
 
 ПРАВДА, если панель видна; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для определения видимости панели. Не используйте `::IsWindowVisible`.
 
@@ -1534,7 +1534,7 @@ virtual BOOL LoadState(
 
 TRUE, если состояние панели было загружено успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает этот метод для загрузки состояния панели из реестра. Переопределить его в производной классе для загрузки дополнительной информации, сохраненной [CBasePane::SaveState](#savestate).
 
@@ -1564,7 +1564,7 @@ virtual HDWP MoveWindow(
 
 Ручка к отложенной структуре положения окна, или NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы передаете NULL в качестве параметра *HDwp,* этот метод перемещает окно нормально. Если вы проходите ручку, этот метод выполняет отложенное перемещение окна. Ручку можно получить, позвонив [по телефону BeginDeferWindowPos](/windows/win32/api/winuser/nf-winuser-begindeferwindowpos) или хитом ещдь, притаком значение возврата предыдущего вызова к этому методу.
 
@@ -1581,7 +1581,7 @@ virtual void OnAfterChangeParent(CWnd* pWndOldParent);
 *pWndOldParent*<br/>
 (в) Указатель на предыдущего родителя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм вызывает этот метод после родительских изменений панели, как правило, из-за стыковки или плавающей операции.
 
@@ -1605,7 +1605,7 @@ virtual void OnBeforeChangeParent(
 *bDelay*<br/>
 (в) Уточняется, следует ли отсрочить корректировку макета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фреймов вызывает этот метод непосредственно перед сменой родительского панели, как правило, из-за стыковки, плавания или автоматической операции по сокрытию.
 
@@ -1619,7 +1619,7 @@ virtual void OnBeforeChangeParent(
 virtual void OnDrawCaption();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод не имеет `CBasePane` функциональности для класса.
 
@@ -1654,7 +1654,7 @@ virtual void OnPaneContextMenu(
 *Точки*<br/>
 (в) Определяет расположение меню ярлыков.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OnPaneContextMenu`вызывает менеджера стыковки, который поддерживает список стекол, которые принадлежат к текущему окну кадра. Этот метод добавляет названия стекол в меню ярлыка и отображает его. Команды в меню показывают или скрывают отдельные панели.
 
@@ -1673,7 +1673,7 @@ virtual void OnRemoveFromMiniFrame(CPaneFrameWnd* pMiniFrame);
 *pMiniFrame*<br/>
 (в) Указатель на окно мини-рамки, из которого удаляется стекло.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, когда панель удаляется из родительского окна мини-кадра (например, в результате стыковки).
 
@@ -1696,7 +1696,7 @@ virtual BOOL OnSetAccData(long lVal);
 
 Этот метод всегда возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cbasepanepanefrompoint"></a><a name="panefrompoint"></a>CBasePane: :PaneFromPoint
 
@@ -1792,7 +1792,7 @@ virtual BOOL SaveState(
 
 ПРАВДА, если государство было сохранено успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа вызывает этот метод, когда он сохраняет состояние панели в реестр. Переопределение `SaveState` в производной классе для хранения дополнительной информации.
 
@@ -1846,7 +1846,7 @@ void SetDockingMode(AFX_DOCK_TYPE dockModeNew);
 *dockModeNew*<br/>
 (в) Определяет новый режим стыковки для панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм поддерживает два режима стыковки: стандартный и немедленный.
 
@@ -1867,7 +1867,7 @@ virtual void SetPaneAlignment(DWORD dwAlignment);
 *dwAlignment*<br/>
 (в) Определяет новое выравнивание.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно фреймворк вызывает этот метод, когда панель пристыкована с одной стороны главного кадра к другой.
 
@@ -1893,7 +1893,7 @@ virtual void SetPaneStyle(DWORD dwNewStyle);
 *dwNewStyle*<br/>
 (в) Определяет новый стиль для установки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод можно использовать для установки любого из CBRS_ стилей, которые определены в afxres.h. Поскольку стиль панели и выравнивание панели хранятся вместе, установите новый стиль, объединив его с текущим выравниванием следующим образом.
 
@@ -1941,7 +1941,7 @@ virtual HDWP SetWindowPos(
 
 Ручка к обновленной структуре положения окна отложенного окна, или NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *pWndInsertAfter* является NULL, этот метод вызывает [CWnd::SetWindowPos](../../mfc/reference/cwnd-class.md#setwindowpos). Если *pWndInsertAfter* не является NULL, `DeferWindowPos`этот метод вызывает .
 
@@ -1967,7 +1967,7 @@ virtual void ShowPane(
 *bActivate*<br/>
 (в) Если true, панель активна, когда показано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод показывает или скрывает панель. Используйте этот `ShowWindow` метод вместо того, что этот метод уведомляет соответствующих менеджеров стыковки об изменениях в видимости панели.
 
@@ -2008,7 +2008,7 @@ virtual void UndockPane(BOOL bDelay=FALSE);
 *bDelay*<br/>
 Если true, макет стыковки не пересчитывается сразу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы манипулировать состоянием панели или исключить панель из макета стыковки.
 

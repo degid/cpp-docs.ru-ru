@@ -225,7 +225,7 @@ virtual void OnDrawBorder(CDC*);
 
 (в) *CDC&#42;*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarpaneonfillbackground"></a><a name="onfillbackground"></a>CMFCRibbonStatusBarPane::OnFillBackground
 
@@ -241,7 +241,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonstatusbarpaneonfinishanimation"></a><a name="onfinishanimation"></a>CMFCRibbonStatusBarPane::OnFinishAnimation
 
@@ -251,7 +251,7 @@ virtual COLORREF OnFillBackground(CDC* pDC);
 virtual void OnFinishAnimation();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `StopAnimation`метод вызывает `OnFinishAnimation` метод, который можно использовать для очистки данных по окончании анимации.
 
@@ -268,7 +268,7 @@ void SetAlmostLargeText(LPCTSTR lpszAlmostLargeText);
 *lpszAlmostLargeText*<br/>
 (в) Определяет самую длинную строку, которая может отображаться на панели строки состояния без усечения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Библиотека вычисляет размер текста, который *lpszAlmostLargeText* определяет и изменяет панель соответственно. Текст будет усечен, если он все еще не помещается в стекол.
 
@@ -319,7 +319,7 @@ void SetTextAlign(int nAlign);
 *nAlign*<br/>
 (в) Определяет выравнивание текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *nAlign* может иметь одно из следующих значений:
 
@@ -347,7 +347,7 @@ void StartAnimation(
 *nDuration*<br/>
 (в) Определяет, как долго играть анимацию, в миллисекундах. Используйте -1 для бесконечного цикла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перед вызовом `StartAnimation` `SetAnimationList`необходимо указать ручку в списке изображений.
 

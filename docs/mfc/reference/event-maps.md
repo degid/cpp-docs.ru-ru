@@ -57,7 +57,7 @@ ms.locfileid: "88837350"
 DECLARE_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте макрос DECLARE_EVENT_MAP в конце объявления класса. Затем в CPP файл, определяющий функции элементов для класса, используйте макрос BEGIN_EVENT_MAP, записи макросов для каждого события элемента управления и макрос END_EVENT_MAP, чтобы объявить конец списка событий.
 
@@ -65,7 +65,7 @@ DECLARE_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** afxctl. h
+**Заголовок** afxctl.h
 
 ## <a name="begin_event_map"></a><a name="begin_event_map"></a> BEGIN_EVENT_MAP
 
@@ -83,7 +83,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 *baseClass*<br/>
 Задает имя базового класса *секласс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В файле реализации (. cpp), который определяет функции-члены для класса, запустите схему событий с помощью макроса BEGIN_EVENT_MAP, добавьте записи макросов для каждого события и завершите схему событий с помощью макроса END_EVENT_MAP.
 
@@ -91,7 +91,7 @@ BEGIN_EVENT_MAP(theClass,  baseClass)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** afxctl. h
+**Заголовок** afxctl.h
 
 ## <a name="end_event_map"></a><a name="end_event_map"></a> END_EVENT_MAP
 
@@ -103,7 +103,7 @@ END_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** afxctl. h
+**Заголовок** afxctl.h
 
 ## <a name="event_custom"></a><a name="event_custom"></a> EVENT_CUSTOM
 
@@ -124,7 +124,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 *втспарамс*<br/>
 Список с разделителями-пробелами одной или нескольких констант, указывающих список параметров функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *втспарамс* представляет собой разделенный пробелами список значений `VTS_` констант. Одно или несколько из этих значений, разделенных пробелами (а не запятыми), задает список параметров функции. Пример:
 
@@ -169,7 +169,7 @@ EVENT_CUSTOM(pszName, pfnFire,  vtsParams)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** afxctl. h
+**Заголовок** afxctl.h
 
 ## <a name="event_custom_id"></a><a name="event_custom_id"></a> EVENT_CUSTOM_ID
 
@@ -197,7 +197,7 @@ EVENT_CUSTOM_ID(
 *втспарамс*<br/>
 Список переменных параметров, передаваемых в контейнер элемента управления при срабатывании события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аргумент *втспарамс* представляет собой разделенный пробелами список значений `VTS_` констант. Одно или несколько из этих значений, разделенных пробелами, а не запятыми, указывает список параметров функции. Пример:
 
@@ -209,7 +209,7 @@ EVENT_CUSTOM_ID(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** afxctl. h
+**Заголовок** afxctl.h
 
 ## <a name="on_oleverb"></a><a name="on_oleverb"></a> ON_OLEVERB
 
@@ -227,7 +227,7 @@ ON_OLEVERB(idsVerbName,  memberFxn)
 *мемберфксн*<br/>
 Функция, вызываемая платформой при вызове команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Редактор ресурсов можно использовать для создания настраиваемых имен глаголов, добавляемых в таблицу строк.
 
@@ -244,7 +244,7 @@ BOOL memberFxn(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** афксоле. h
+**Заголовок** афксоле.h
 
 ## <a name="on_stdoleverb"></a><a name="on_stdoleverb"></a> ON_STDOLEVERB
 
@@ -262,7 +262,7 @@ ON_STDOLEVERB(iVerb, memberFxn)
 *мемберфксн*<br/>
 Функция, вызываемая платформой при вызове команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Стандартный индекс команды имеет форму `OLEIVERB_` , за которой следует действие. OLEIVERB_SHOW, OLEIVERB_HIDE и OLEIVERB_UIACTIVATE являются примерами стандартных глаголов.
 
@@ -270,7 +270,7 @@ ON_STDOLEVERB(iVerb, memberFxn)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок** афксоле. h
+**Заголовок** афксоле.h
 
 ## <a name="see-also"></a>См. также раздел
 

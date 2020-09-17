@@ -22,7 +22,7 @@ ms.locfileid: "77141849"
 
 Для большинства задач рекомендуется использовать более надежные функции, такие как группы задач и параллельные алгоритмы, так как они позволяют более легко разбивать сложные задачи на более простые. Дополнительные сведения о группах задач см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Дополнительные сведения о параллельных алгоритмах см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
 
-Чтобы создать упрощенную задачу, вызовите метод [Concurrency:: ScheduleGroup:: ScheduleTask](reference/schedulegroup-class.md#scheduletask), [Concurrency:: CurrentScheduler:: ScheduleTask](reference/currentscheduler-class.md#scheduletask)или [Concurrency:: Scheduler:: ScheduleTask](reference/scheduler-class.md#scheduletask) . Чтобы дождаться завершения упрощенной задачи, дождитесь завершения работы родительского планировщика или используйте механизм синхронизации, например объект [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) .
+Чтобы создать упрощенную задачу, вызовите метод [concurrency::ScheduleGroup:: ScheduleTask](reference/schedulegroup-class.md#scheduletask), [concurrency::CurrentScheduler:: ScheduleTask](reference/currentscheduler-class.md#scheduletask)или [concurrency::Scheduler:: ScheduleTask](reference/scheduler-class.md#scheduletask) . Чтобы дождаться завершения упрощенной задачи, дождитесь завершения работы родительского планировщика или используйте механизм синхронизации, например объект [concurrency::Event](../../parallel/concrt/reference/event-class.md) .
 
 ## <a name="example"></a>Пример
 

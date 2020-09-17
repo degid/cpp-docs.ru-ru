@@ -53,7 +53,7 @@ class CMFCAcceleratorKeyAssignCtrl : public CEdit
 |[CMFCAcceleratorKeyAssignCtrl::PreTranslateMessage](#pretranslatemessage)|Используется классом [CWinApp](../../mfc/reference/cwinapp-class.md) для преобразования сообщений окна перед их передачей функциям Windows [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) . (Переопределяет [CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage).)|
 |[CMFCAcceleratorKeyAssignCtrl::ResetKey](#resetkey)|Сбрасывает сочетание клавиш.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс расширяет функциональность класса `CEdit` благодаря поддержке сочетаний клавиш. Класс `CMFCAcceleratorKeyAssignCtrl` функционирует как [класс CEdit,](../../mfc/reference/cedit-class.md) и он также может распознавать системные кнопки.
 
@@ -101,7 +101,7 @@ ACCEL const* GetAccel() const;
 
 Структура, `ACCEL` описывающая ключ ярлыка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию `ACCEL` для получения структуры для ключа ярлыка, который пользователь ввел в объект. `CMFCAcceleratorKeyAssignCtrl`
 
@@ -115,7 +115,7 @@ BOOL IsFocused() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcacceleratorkeyassignctrliskeydefined"></a><a name="iskeydefined"></a>CMFCAcceleratorKeyAssignCtrl::IsKeyDefined
 
@@ -129,7 +129,7 @@ BOOL IsKeyDefined() const;
 
 Nonzero, если пользователь уже нажал действительную комбинацию ключей, которые определяют ключ ярлыка; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы определить, ввел `CMFCAcceleratorKeyAssignCtrl` ли пользователь действительноключный ключ в объекте. Если ключ ярлыка существует, вы можете использовать [cmFCAcceleratorKeyAssignCtrl::GetAccel](#getaccel) метод для получения `ACCEL` структуры, связанной с этим ключом ярлыка.
 
@@ -147,7 +147,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcacceleratorkeyassignctrlresetkey"></a><a name="resetkey"></a>CMFCAcceleratorKeyAssignCtrl::ResetKey
 
@@ -157,7 +157,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 void ResetKey();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция очищает текст управления редактированием. Это включает в себя любые клавиши ярлыка, которые пользователь нажал.
 

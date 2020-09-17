@@ -23,7 +23,7 @@ ms.locfileid: "88833053"
 [immediatebind]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **иммедиатебинд** C++ имеет те же функциональные возможности, что и атрибут [иммедиатебинд](/windows/win32/Midl/immediatebind) MIDL.
 

@@ -186,7 +186,7 @@ class CRichEditView : public CCtrlView
 |[CrichEditView::m_nBulletIndent](#m_nbulletindent)|Указывает количество отступа для списков пуль.|
 |[CrichEditView::m_nWordWrap](#m_nwordwrap)|Указывает на ограничения обертывания слова.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 "Богатый элемент управления редактированием" — это окно, в котором пользователь может вводить и отстранять текст. Текст может быть назначен символ и форматирование абзацев, и может включать встроенные объекты OLE. Управление богатым редактированием обеспечивает интерфейс программирования для форматирования текста. Однако приложение должно реализовать все компоненты пользовательского интерфейса, необходимые для того, чтобы операции форматирования были доступны пользователю.
 
@@ -269,7 +269,7 @@ void DoPaste(
 *hMetaPict*<br/>
 Метафайл, представляющий элемент, который будет вставлен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа называет эту функцию частью реализации [queryAcceptData](#queryacceptdata)по умолчанию.
 
@@ -305,7 +305,7 @@ BOOL FindText(
 
 Nonzero, если *lpszFind* текст найден; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция отображает курсора ожидания во время операции поиска.
 
@@ -359,7 +359,7 @@ CHARFORMAT2& GetCharFormatSelection();
 
 Структура [CHARFORMAT2,](/windows/win32/api/richedit/ns-richedit-charformat2w) содержащая атрибуты форматирования символов текущего выбора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации смотрите [сообщение EM_GETCHARFORMAT](/windows/win32/Controls/em-getcharformat) и структуру [CHARFORMAT2](/windows/win32/api/richedit/ns-richedit-charformat2w) в Windows SDK.
 
@@ -407,7 +407,7 @@ virtual HRESULT GetClipboardData(
 
 Значение HRESULT, сообщая об успехе операции. Для получения дополнительной информации о HRESULT, [см. Структура кодов ошибки COM](/windows/win32/com/structure-of-com-error-codes) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение возврата указывает `IRichEditOleCallback::GetClipboardData` на `IDataObject` успех, возвращает доступ *lplpdataobj;* в противном случае, он возвращает тот, доступ к *lpRichDataObj*. Переизобить эту функцию, чтобы предоставить свои собственные данные Clipboard. Реализация этой функции по умолчанию возвращается E_NOTIMPL.
 
@@ -441,7 +441,7 @@ virtual HMENU GetContextMenu(
 
 Обработка контекстного меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция является типичной частью правильной мыши кнопки вниз обработки.
 
@@ -509,7 +509,7 @@ CRect GetPageRect() const;
 
 Границы страницы, используемой в печати, измеряются в MM_TWIPS.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение основано на размере бумаги.
 
@@ -541,7 +541,7 @@ PARAFORMAT2& GetParaFormatSelection();
 
 Структура [PARAFORMAT2,](/windows/win32/api/richedit/ns-richedit-paraformat2) содержащая параграф, форматирующий атрибуты текущего выбора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации смотрите [EM_GETPARAFORMAT](/windows/win32/Controls/em-getparaformat) сообщение и [структуру PARAFORMAT2](/windows/win32/api/richedit/ns-richedit-paraformat2) в Windows SDK.
 
@@ -635,7 +635,7 @@ long GetTextLengthEx(
 
 Количество символов или байтов в элементе управления редактированием. Если несовместимые флаги были установлены в *dwFlags,* эта функция участника возвращается E_INVALIDARG.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `GetTextLengthEx`дополнительные способы определения длины текста. Он поддерживает функциональность Rich Edit 2.0. Для получения дополнительной информации [см.](/windows/win32/Controls/about-rich-edit-controls)
 
@@ -669,7 +669,7 @@ HRESULT InsertItem(CRichEditCntrItem* pItem);
 
 Значение HRESULT, указывающее на успешность вставки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о HRESULT, [см. Структура кодов ошибки COM](/windows/win32/com/structure-of-com-error-codes) в Windows SDK.
 
@@ -707,7 +707,7 @@ virtual BOOL IsSelected(const CObject* pDocItem) const;
 
 Nonzero, если объект выбран; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переизбь эту функцию, если ваш производный класс представления имеет другой метод обработки выбора элементов OLE.
 
@@ -727,7 +727,7 @@ int m_nBulletIndent;
 int m_nWordWrap;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Одно из следующих значений:
 
@@ -759,7 +759,7 @@ void OnCharEffect(
 *dwEffect*<br/>
 Нужный список эффектов форматирования символов для переключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый вызов этой функции переключает указанные эффекты форматирования для текущего выбора.
 
@@ -795,7 +795,7 @@ virtual void OnFindNext(
 *bWord*<br/>
 Указывает, соответствует ли поиск только целым словам или нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы найти текст в пределах `CRichEditView`. Переизвейдите эту функцию, чтобы изменить характеристики поиска для производного класса представления.
 
@@ -807,7 +807,7 @@ virtual void OnFindNext(
 virtual void OnInitialUpdate();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию вызывает функцию [cView::OnUpdate](../../mfc/reference/cview-class.md#onupdate) без информации о подсказке (т.е. используя значения по умолчанию 0 для параметра *lHint* и NULL для параметра *pHint).* Переопределить эту функцию для выполнения любой одноразовой инициализации, которая требует информации о документе. Например, если в приложении есть документы фиксированного размера, эту функцию можно использовать для инициализации ограничений прокрутки представления на основе размера документа. Если приложение поддерживает документы переменного размера, используйте `OnUpdate` для обновления ограничений прокрутки при каждом изменении документа.
 
@@ -832,7 +832,7 @@ virtual BOOL OnPasteNativeObject(LPSTORAGE lpStg);
 
 Nonzero, если успешно; в противном случае, 0;
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Как правило, вы сделали бы это, создавая [COleStreamFile](../../mfc/reference/colestreamfile-class.md) вокруг `IStorage`. Можно `COleStreamFile` прикрепить к архиву и [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) вызванный для того чтобы нагрузить данные.
 
@@ -876,7 +876,7 @@ virtual void OnPrinterChanged(const CDC& dcPrinter);
 *dcPrinter*<br/>
 Объект [CDC](../../mfc/reference/cdc-class.md) для нового принтера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию устанавливает размер бумаги на физическую высоту и ширину для выходного устройства (принтера). Если нет контекста устройства, связанного с *dcPrinter,* реализация по умолчанию устанавливает размер бумаги до 8,5 на 11 дюймов.
 
@@ -906,7 +906,7 @@ virtual void OnReplaceAll(
 *bWord*<br/>
 Указывает, должен ли поиск выбрать целые слова или нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы заменить все случаи определенного текста другой строкой. Переизвеймите эту функцию, чтобы изменить характеристики поиска для этого представления.
 
@@ -944,7 +944,7 @@ virtual void OnReplaceSel(
 *lpszReplace*<br/>
 Текст замены.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы заменить одно появление определенного текста другой строкой. Переизвеймите эту функцию, чтобы изменить характеристики поиска для этого представления.
 
@@ -961,7 +961,7 @@ virtual void OnTextNotFound(LPCTSTR lpszFind);
 *lpszFind*<br/>
 Текст, который не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переизобить эту функцию, чтобы изменить уведомление вывода из [MessageBeep.](/windows/win32/api/winuser/nf-winuser-messagebeep)
 
@@ -993,7 +993,7 @@ void OnUpdateCharEffect(
 *dwEffect*<br/>
 Указывает эффект форматирования символов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Маска *dwMask* определяет, какие атрибуты форматирования символов для проверки. Флаги *dwEffect* перечислять атрибуты форматирования символов для установки/ясности.
 
@@ -1065,7 +1065,7 @@ long PrintInsideRect(
 
 Индекс последнего символа, который помещается в область вывода плюс один.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Как правило, за этим вызовом следует вызов [cRichEditCtrl::DisplayBand,](../../mfc/reference/cricheditctrl-class.md#displayband) который генерирует выход.
 
@@ -1099,7 +1099,7 @@ long PrintPage(
 
 Индекс последнего символа, который помещается на странице плюс один.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макет каждой страницы контролируется [GetPageRect](#getpagerect) и [GetPrintRect.](#getprintrect) Как правило, за этим вызовом следует вызов [cRichEditCtrl::DisplayBand,](../../mfc/reference/cricheditctrl-class.md#displayband) который генерирует выход.
 
@@ -1139,7 +1139,7 @@ virtual HRESULT QueryAcceptData(
 
 Значение HRESULT, сообщая об успехе операции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию для обработки различных элементов COM в классе производных документов. Это передовой overridable.
 
@@ -1162,7 +1162,7 @@ void SetCharFormat(CHARFORMAT2 cf);
 *CF*<br/>
 Структура [CHARFORMAT2,](/windows/win32/api/richedit/ns-richedit-charformat2w) содержащая новые атрибуты форматирования символов по умолчанию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция меняет только `dwMask` атрибуты, указанные членом *cf.*
 
@@ -1185,7 +1185,7 @@ void SetMargins(const CRect& rectMargin);
 *rectMargin*<br/>
 Новые значения маржи для печати, измеренные в MM_TWIPS.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если [m_nWordWrap](#m_nwordwrap) m_nWordWrap `WrapToTargetDevice`есть, следует позвонить [в WrapChanged](#wrapchanged) после использования этой функции для настройки характеристик печати.
 
@@ -1208,7 +1208,7 @@ void SetPaperSize(CSize sizePaper);
 *размербумаги*<br/>
 Значения нового размера бумаги для печати, измеренные в MM_TWIPS.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если [m_nWordWrap](#m_nwordwrap) m_nWordWrap `WrapToTargetDevice`есть, следует позвонить [в WrapChanged](#wrapchanged) после использования этой функции для настройки характеристик печати.
 
@@ -1233,7 +1233,7 @@ BOOL SetParaFormat(PARAFORMAT2& pf);
 
 Nonzero, если успешно; в противном случае, 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция меняет только `dwMask` атрибуты, указанные членом *pf.*
 
@@ -1256,7 +1256,7 @@ void TextNotFound(LPCTSTR lpszFind);
 *lpszFind*<br/>
 Содержит строку текста, которая не была найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод рекомендуется вызывать сразу после неудачных вызовов [FindText,](#findtext) чтобы внутреннее состояние поиска элемента управления было правильно сбрано.
 
@@ -1274,7 +1274,7 @@ void TextNotFound(LPCTSTR lpszFind);
 virtual void WrapChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы изменить способ, которым богатое представление отсеивательь отреагирует на изменения в [m_nWordWrap](#m_nwordwrap) или характеристики печати [(OnPrinterChanged](#onprinterchanged)).
 

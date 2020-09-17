@@ -41,7 +41,7 @@ class time_put : public locale::facet;
 *OutputIterator*\
 Тип итератора, в который функции записи времени записывают свои выходные данные.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Как и в случае любого другого аспекта языкового стандарта, начальное сохраненное значение статического идентификатора объекта равно нулю. Первая попытка получить доступ к сохраненному значению сохранит уникальное положительное значение в **id.**
 
@@ -79,7 +79,7 @@ class time_put : public locale::facet;
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `CharType`.
 
@@ -117,7 +117,7 @@ virtual iter_type do_put(
 
 Итератор для первой позиции после последнего вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Виртуальная Защищенная функция Member создает последовательные элементы `next` , начиная с значений времени, хранящихся в объекте \* `_Pt` , типа `tm` . Функция возвращает итератор, обозначающий следующую позицию для вставки элемента после сформированного вывода.
 
@@ -135,7 +135,7 @@ virtual iter_type do_put(
 typedef OutputIterator iter_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `OutputIterator`.
 
@@ -179,17 +179,17 @@ iter_type put(iter_type next,
 *_Mod*\
 Модификатор для формата. См. допустимые значения в разделе [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md).
 
-*началь*\
+*first*\
 Начало строки форматирования для выходных данных. См. допустимые значения в разделе [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md).
 
-*Последняя*\
+*last*\
 Конец строки форматирования для выходных данных. См. допустимые значения в разделе [strftime, wcsftime, _strftime_l, _wcsftime_l](../c-runtime-library/reference/strftime-wcsftime-strftime-l-wcsftime-l.md).
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Итератор для первой позиции после последнего вставленного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция-член возвращает [do_put](#do_put)( `next` , `_Iosbase` , `_Fill` , `_Pt` , `_Fmt` , `_Mod` ). Вторая функция-член копирует в \* `next` + + любой элемент в интервале [ `first` , `last` ), отличный от процента (%). Для процента, за которым следует символ *C* в интервале [ `first` , `last` ), функция вместо этого вычисляет `next`  =  `do_put` ( `next` , `_Iosbase` ,, `_Fill` `_Pt` , *C*, 0) и пропускается за знаком *c*. Однако, если *C* является символом-квалификатором из набора EOQ #, за которым следует символ `C2` в интервале [ `first` , `last` ), то функция вместо этого вычисляет `next`  =  `do_put` ( `next` , `_Iosbase` ,,, `_Fill` `_Pt` `C2` , *C*) и пропускается назад `C2` .
 
@@ -250,7 +250,7 @@ explicit time_put(size_t _Refs = 0);
 *_Refs*\
 Целочисленное значение, используемое для указания типа управления памятью для объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возможные значения параметра *_Refs* и их значимость:
 

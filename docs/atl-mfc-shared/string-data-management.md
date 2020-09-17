@@ -60,12 +60,12 @@ Visual C++ предоставляет несколько способов упр
 
 ## <a name="cstrings-and-const-char-pointers"></a><a name="_core_cstrings_and_const_char_pointers"></a>Указатели CString и const char
 
-`CString`Объект также может действовать как литеральная строка в стиле C ( `PCXSTR` , которая аналогична **константе char** , <strong>\*</strong> если не используется Юникод). Оператор преобразования [ксимплестрингт:: operator пкксстр](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) позволяет `CString` свободно подставлять объекты для указателей символов в вызовах функций. Конструктор **CString (лпквстр** `pszSrc` **)** позволяет подставлять указатели символов для `CString` объектов.
+`CString`Объект также может действовать как литеральная строка в стиле C ( `PCXSTR` , которая аналогична **константе char** , <strong>\*</strong> если не используется Юникод). Оператор преобразования [ксимплестрингт::operator пкксстр](../atl-mfc-shared/reference/csimplestringt-class.md#operator_pcxstr) позволяет `CString` свободно подставлять объекты для указателей символов в вызовах функций. Конструктор **CString (лпквстр** `pszSrc` **)** позволяет подставлять указатели символов для `CString` объектов.
 
 Не предпринимается попытка выполнить свертывание `CString` объектов. Если вы представите два `CString` объекта `Chicago` , содержащие, например, символы в хранятся `Chicago` в двух местах. (Это может быть не так для будущих версий MFC, поэтому не следует зависеть от нее.)
 
 > [!NOTE]
-> Используйте функции-члены [ксимплестрингт::](../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) Ксимплестрингт и [:: релеасебуффер](../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) , если требуется прямой доступ к `CString` как неконстантному указателю на символ.
+> Используйте функции-члены [ксимплестрингт::](../atl-mfc-shared/reference/csimplestringt-class.md#getbuffer) CSimpleStringT и [:: релеасебуффер](../atl-mfc-shared/reference/csimplestringt-class.md#releasebuffer) , если требуется прямой доступ к `CString` как неконстантному указателю на символ.
 
 > [!NOTE]
 > Используйте функции-члены [CStringT:: аллоксисстринг](../atl-mfc-shared/reference/cstringt-class.md#allocsysstring) и [CStringT:: сетсисстринг](../atl-mfc-shared/reference/cstringt-class.md#setsysstring) для выделения и установки объектов BSTR, используемых в службе автоматизации (прежнее название — OLE Automation).

@@ -38,10 +38,10 @@ template <class CharType = char class Traits = char_traits <CharType>>
 *CharType*\
 Тип, представляющий тип символа для ostreambuf_iterator. Этот аргумент является необязательным, и значение по умолчанию — **`char`** .
 
-*Признаки*\
+*Traits*\
 Тип, представляющий тип символа для ostreambuf_iterator. Этот аргумент является необязательным, и значение по умолчанию — `char_traits` \< *CharType> . *
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс ostreambuf_iterator должен удовлетворять требованиям для итератора вывода. Алгоритмы можно записывать непосредственно в потоки вывода с помощью `ostreambuf_iterator`. Данный класс предоставляет итератор потока низкого уровня, обеспечивающий доступ к необработанному (неотформатированному) потоку ввода-вывода в форме символов, а также возможность обхода буферизации и преобразования символов, связанных с итераторами потоков высокого уровня.
 
@@ -70,9 +70,9 @@ template <class CharType = char class Traits = char_traits <CharType>>
 
 |Оператор|Описание|
 |-|-|
-|[станции](#op_star)|Оператор разыменования, используемый для реализации выражения итератора вывода \* `i`  =  `x` .|
-|[operator + +](#op_add_add)|Нефункциональный оператор инкремента, возвращающий `ostreambuf_iterator`, обращающийся к тому же объекту, к которому он обращался до вызова операции.|
-|[Оператор =](#op_eq)|Данный оператор вставляет символ в соответствующий буфер потока.|
+|[operator*](#op_star)|Оператор разыменования, используемый для реализации выражения итератора вывода \* `i`  =  `x` .|
+|[operator++](#op_add_add)|Нефункциональный оператор инкремента, возвращающий `ostreambuf_iterator`, обращающийся к тому же объекту, к которому он обращался до вызова операции.|
+|[operator=](#op_eq)|Данный оператор вставляет символ в соответствующий буфер потока.|
 
 ## <a name="requirements"></a>Требования
 
@@ -88,7 +88,7 @@ template <class CharType = char class Traits = char_traits <CharType>>
 typedef CharType char_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `CharType`.
 
@@ -142,7 +142,7 @@ bool failed() const throw();
 
 **`true`** значение, если вставка в буфер потока вывода не была выполнена ранее. в противном случае — значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает значение **`true`** , если при любом предыдущем использовании члена `operator=` вызов функции регистр _ **subf**-> `sputc` вернул **EOF**.
 
@@ -181,7 +181,7 @@ No insertions failed.
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_star"></a>ostreambuf_iterator:: operator\*
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_star"></a>ostreambuf_iterator::operator\*
 
 Нефункциональный оператор разыменования, используемый для реализации выражения итератора вывода \* *i*  =  *x*.
 
@@ -193,7 +193,7 @@ ostreambuf_iterator<CharType, Traits>& operator*();
 
 Объект-итератор ostreambuf.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор работает только в выражении итератора вывода \* *i*  =  *x* для вывода символов в буфер потока. Применено к итератору ostreambuf, он возвращает итератор; ** \* iter** возвращает **iter**,
 
@@ -228,7 +228,7 @@ OUT
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_add_add"></a>ostreambuf_iterator:: operator + +
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_add_add"></a>ostreambuf_iterator::operator++
 
 Нефункциональный оператор приращения, который возвращает итератор ostream, обращающийся к тому же символу, к которому он обращался до вызова операции.
 
@@ -241,7 +241,7 @@ ostreambuf_iterator<CharType, Traits>& operator++(int);
 
 Ссылка на изначально адресованный символ или на объект, определенный реализацией, который можно преобразовать в `ostreambuf_iterator` \< **CharType**, **Traits**> .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор используется для реализации выражения итератора вывода \* *i*  =  *x*.
 
@@ -276,7 +276,7 @@ OUT
 */
 ```
 
-## <a name="ostreambuf_iteratoroperator"></a><a name="op_eq"></a>ostreambuf_iterator:: operator =
+## <a name="ostreambuf_iteratoroperator"></a><a name="op_eq"></a>ostreambuf_iterator::operator=
 
 Данный оператор вставляет символ в соответствующий буфер потока.
 
@@ -293,7 +293,7 @@ ostreambuf_iterator<CharType, Traits>& operator=(CharType _Char);
 
 Ссылка на символ, вставленный в буфер потока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор присваивания, используемый для реализации выражения итератора вывода \* *i*  =  *x* для записи в поток вывода.
 
@@ -345,7 +345,7 @@ ostreambuf_iterator(ostream_type& Ostr) throw();
 *OSTR*\
 Выходной объект stream, используемый для инициализации указателя буфера потока вывода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует указатель буфера потока вывода с *strBuf*.
 
@@ -392,7 +392,7 @@ These characters are being written to the output stream.
 typedef basicOstream<CharType, Traits> ostream_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для`basicOstream`\< **CharType**, **Traits**>
 
@@ -408,7 +408,7 @@ typedef basicOstream<CharType, Traits> ostream_type;
 typedef basic_streambuf<CharType, Traits> streambuf_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом `basic_streambuf` \< **CharType**, **Traits**> , классом потока для буферов ввода-вывода, которые становятся `streambuf` неспециализированными для символьного типа **`char`** .
 
@@ -424,7 +424,7 @@ typedef basic_streambuf<CharType, Traits> streambuf_type;
 typedef Traits traits_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра шаблона `Traits`.
 

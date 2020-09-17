@@ -26,7 +26,7 @@ ms.locfileid: "81745060"
 void Release( );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызовы `IUnknown::Release` на инкапсулированный указатель `E_POINTER` интерфейса, поднимая ошибку, если этот указатель интерфейса NULL.
 

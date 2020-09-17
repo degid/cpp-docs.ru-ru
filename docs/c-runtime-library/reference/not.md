@@ -41,7 +41,7 @@ ms.locfileid: "80168737"
 #define not !
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор !.
 
@@ -73,4 +73,4 @@ a is zero
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

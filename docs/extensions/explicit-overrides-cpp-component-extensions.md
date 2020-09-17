@@ -39,7 +39,7 @@ overriding-function-declarator = function { overriding-function-definition }
 *overriding-function-definition*<br/>
 Операторы тела функции, которые определяют функцию переопределения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте явные переопределения для создания псевдонима для сигнатуры метода или для предоставления различных реализаций для методов с одинаковой сигнатурой.
 
@@ -53,7 +53,7 @@ overriding-function-declarator = function { overriding-function-definition }
 
 ## <a name="common-language-runtime"></a>Среда CLR
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сведения о явных переопределениях в машинном или скомпилированном коде с `/clr:oldSyntax` см. в разделе [Явные переопределения](../cpp/explicit-overrides-cpp.md).
 

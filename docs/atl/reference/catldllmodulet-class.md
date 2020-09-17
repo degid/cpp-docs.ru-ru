@@ -57,7 +57,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 |[CAtlDllModuleT::D Ллунрегистерсервер](#dllunregisterserver)|Удаляет записи в системном реестре для объектов в библиотеке DLL.|
 |[CAtlDllModuleT:: Жетклассобжект](#getclassobject)|Возвращает фабрику класса. Вызывается методом [DllGetClassObject](#dllgetclassobject).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlDllModuleT`представляет модуль для библиотеки динамической компоновки (DLL) и предоставляет функции, используемые всеми проектами DLL. Эта специализация класса [катлмодулет](../../atl/reference/catlmodulet-class.md) включает поддержку регистрации.
 
@@ -75,7 +75,7 @@ class ATL_NO_VTABLE CAtlDllModuleT : public CAtlModuleT<T>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catldllmoduletcatldllmodulet"></a><a name="catldllmodulet"></a>CAtlDllModuleT:: CAtlDllModuleT
 
@@ -151,7 +151,7 @@ BOOL WINAPI DllMain(DWORD dwReason, LPVOID /* lpReserved*/) throw();
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отключение вызовов уведомлений DLL_THREAD_ATTACH и DLL_THREAD_DETACH может быть полезной оптимизацией для многопоточных приложений, которые имеют много библиотек DLL, часто создают и удаляют потоки, а библиотеки DLL не нуждаются в таких уведомлениях на уровне потока, как вложение или отсоединение.
 
@@ -215,7 +215,7 @@ IID запрашиваемого интерфейса.
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается методом [CAtlDllModuleT::D ллжетклассобжект](#dllgetclassobject) и включен для обеспечения обратной совместимости.
 

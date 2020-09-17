@@ -16,7 +16,7 @@ ms.locfileid: "88844487"
 В этом разделе перечислены стандартные подпрограммы проверки данных диалогового окна (DDV), используемые для распространенных элементов управления диалогового окна MFC.
 
 > [!NOTE]
-> Стандартные подпрограммы обмена данными в диалоговом окне определяются в файле заголовка afxdd_. h. Однако приложения должны включать AFXWIN. h.
+> Стандартные подпрограммы обмена данными в диалоговом окне определяются в файле заголовка afxdd_.h. Однако приложения должны включать AFXWIN.h.
 
 ### <a name="ddv-functions"></a>Функции DDV
 
@@ -60,13 +60,13 @@ void AFXAPI DDV_MaxChars(
 *типы nChar*<br/>
 Максимально допустимое число символов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxbyte"></a><a name="ddv_minmaxbyte"></a> DDV_MinMaxByte
 
@@ -94,13 +94,13 @@ void AFXAPI DDV_MinMaxByte(
 *максвал*<br/>
 Разрешено максимальное значение (типа BYTE).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxdatetime"></a><a name="ddv_minmaxdatetime"></a> DDV_MinMaxDateTime
 
@@ -134,13 +134,13 @@ void AFXAPI DDV_MinMaxDateTime(
 *рефмаксранже*<br/>
 Максимальное допустимое значение даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxdouble"></a><a name="ddv_minmaxdouble"></a> DDV_MinMaxDouble
 
@@ -168,13 +168,13 @@ void AFXAPI DDV_MinMaxDouble(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`double`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxdword"></a><a name="ddv_minmaxdword"></a> DDV_MinMaxDWord
 
@@ -202,13 +202,13 @@ void AFXAPI DDV_MinMaxDWord(
 *максвал*<br/>
 Разрешено максимальное значение (типа DWORD).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxfloat"></a><a name="ddv_minmaxfloat"></a> DDV_MinMaxFloat
 
@@ -236,13 +236,13 @@ void AFXAPI DDV_MinMaxFloat(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`float`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxint"></a><a name="ddv_minmaxint"></a> DDV_MinMaxInt
 
@@ -270,13 +270,13 @@ void AFXAPI DDV_MinMaxInt(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`int`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxlong"></a><a name="ddv_minmaxlong"></a> DDV_MinMaxLong
 
@@ -304,13 +304,13 @@ void AFXAPI DDV_MinMaxLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`long`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxlonglong"></a><a name="ddv_minmaxlonglong"></a> DDV_MinMaxLongLong
 
@@ -338,13 +338,13 @@ void AFXAPI DDV_MinMaxLongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа ЛОНГЛОНГ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxmonth"></a><a name="ddv_minmaxmonth"></a> DDV_MinMaxMonth
 
@@ -378,13 +378,13 @@ void AFXAPI DDV_MinMaxMonth(
 *рефмаксранже*<br/>
 Максимальное допустимое значение даты и времени.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxshort"></a><a name="ddv_minmaxshort"></a> DDV_MinMaxShort
 
@@ -412,13 +412,13 @@ void AFXAPI DDV_MinMaxShort(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`short`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxslider"></a><a name="ddv_minmaxslider"></a> DDV_MinMaxSlider
 
@@ -446,13 +446,13 @@ void AFXAPI DDV_MinMaxSlider(
 *максвал*<br/>
 Максимально допустимое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md). Дополнительные сведения об элементах управления "ползунок" см. [в разделе using CSliderCtrl](../../mfc/using-csliderctrl.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxuint"></a><a name="ddv_minmaxuint"></a> DDV_MinMaxUInt
 
@@ -480,13 +480,13 @@ void AFXAPI DDV_MinMaxUInt(
 *максвал*<br/>
 Разрешено максимальное значение (типа UINT).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxulonglong"></a><a name="ddv_minmaxulonglong"></a> DDV_MinMaxULongLong
 
@@ -514,13 +514,13 @@ void AFXAPI DDV_MinMaxULongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа УЛОНГЛОНГ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../../mfc/dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxdd_. h
+  **Заголовок** afxdd_.h
 
 ## <a name="ddv_minmaxunsigned"></a>DDV_MinMaxUnsigned
 
@@ -550,13 +550,13 @@ void AFXAPI DDV_MinMaxULongLong(
 *максвал*<br/>
 Разрешено максимальное значение (типа **`unsigned`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о DDV см. в разделе [Обмен данными и проверка диалоговых окон](../dialog-data-exchange-and-validation.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxdd_. h
+**Заголовок:** afxdd_.h
 
 ## <a name="see-also"></a>См. также раздел
 

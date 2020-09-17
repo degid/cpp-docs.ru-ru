@@ -48,7 +48,7 @@ class CHeapPtrElementTraits :
 |[CHeapPtrElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
 |[CHeapPtrElementTraits::OUTARGTYPE](#outargtype)|Тип данных для извлечения элементов из объекта класса сбора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет методы, статические функции и типы для сособничания созданию объектов класса коллекции, содержащих кучи указателей. Класс `CHeapPtrList` происходит от `CHeapPtrElementTraits`.
 

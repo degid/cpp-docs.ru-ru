@@ -86,7 +86,7 @@ class CMFCRibbonComboBox : public CMFCRibbonEdit
 |[CMFCRibbonComboBox::SelectItem](#selectitem)|Выбирает элемент в поле списка.|
 |[CMFCRibbonComboBox::SetDropDownHeight](#setdropdownheight)|Устанавливает высоту окна списка, когда он упал.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Коробка ленты состоит из ящика списка в сочетании со статической этикеткой или этикеткой, которую может отредактировать пользователь. Вы должны указать, какой тип вы хотите, когда вы создаете ленту комбо-бокс.
 
@@ -168,7 +168,7 @@ CMFCRibbonComboBox();
 *nИзображение*<br/>
 (в) Небольшой индекс изображения комбо-коробки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ширина по умолчанию составляет 108 пикселей.
 
@@ -198,7 +198,7 @@ BOOL DeleteItem(LPCTSTR lpszText);
 
 TRUE, если указанный элемент был удален; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxenabledropdownlistresize"></a><a name="enabledropdownlistresize"></a>CMFCRibbonComboBox:EnableDropDownlistresize
 
@@ -213,7 +213,7 @@ void EnableDropDownListResize(BOOL bEnable=FALSE);
 *bEnable*<br/>
 (в) TRUE для включения в размер размера; FALSE для оттоговать из размеров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При включении изменения размера поле списка будет изменяться размер, чтобы соответствовать элементам, которые он отображает.
 
@@ -234,7 +234,7 @@ int FindItem(LPCTSTR lpszText) const;
 
 Индекс элемента с нулевым уровнем; или -1, если элемент не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxgetcount"></a><a name="getcount"></a>CMFCRibbonComboBox::GetCount
 
@@ -248,7 +248,7 @@ INT_PTR GetCount() const;
 
 Количество элементов в поле списка, или 0, если поле списка не содержит элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxgetcursel"></a><a name="getcursel"></a>CMFCRibbonComboBox::GetCurSel
 
@@ -274,7 +274,7 @@ int GetDropDownHeight();
 
 Высота, в пикселях, из списка поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxgetintermediatesize"></a><a name="getintermediatesize"></a>CMFCRibbonComboBox::GetIntermediateSize
 
@@ -293,7 +293,7 @@ virtual CSize GetIntermediateSize(CDC* pDC);
 
 Размер комбо-коробки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращается размер основан на размере комбо-коробки, когда он отображает небольшие изображения.
 
@@ -314,7 +314,7 @@ LPCTSTR GetItem(int iIndex) const;
 
 Указатель на строку, связанную с элементом; в противном случае, NULL, если параметр индекса является недействительным, или если параметр индекса -1 и нет пункта, выбранного в комбо-коробке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxgetitemdata"></a><a name="getitemdata"></a>CMFCRibbonComboBox::GetItemData
 
@@ -345,7 +345,7 @@ BOOL HasEditBox() const;
 
 TRUE, если элемент управления содержит коробку для отодвитых; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxisresizedropdownlist"></a><a name="isresizedropdownlist"></a>CMFCRibbonComboBox:IsResizedropdownlist
 
@@ -359,7 +359,7 @@ BOOL IsResizeDropDownList() const;
 
 ПРАВДА, если список поле может быть уменьшена; в противном случае FALSE. [CMFCRibbonComboBox:EnableDropDownlistresize](#enabledropdownlistresize)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете включить изменить размер окна списка с помощью метода [CMFCRibbonComboBox::EnableDropDropListReSize.](#enabledropdownlistresize)
 
@@ -376,7 +376,7 @@ virtual void OnSelectItem(int nItem);
 *nItem*<br/>
 (в) Индекс выбранного элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, если вы хотите обработать выбор ввода пользователя.
 
@@ -388,7 +388,7 @@ virtual void OnSelectItem(int nItem);
 void RemoveAllItems();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxselectitem"></a><a name="selectitem"></a>CMFCRibbonComboBox::SelectItem
 
@@ -416,7 +416,7 @@ BOOL SelectItem(LPCTSTR lpszText);
 
 ПРАВДА, если метод был успешным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribboncomboboxsetdropdownheight"></a><a name="setdropdownheight"></a>CMFCRibbonComboBox::SetDropDownHeight
 
@@ -431,7 +431,7 @@ void SetDropDownHeight(int nHeight);
 *nВысота*<br/>
 (в) Высота, в пикселях, из списка поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Высота по умолчанию составляет 150 пикселей.
 

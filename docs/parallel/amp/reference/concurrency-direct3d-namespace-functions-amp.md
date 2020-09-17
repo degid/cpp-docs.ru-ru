@@ -28,7 +28,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 08/25/2020
 ms.locfileid: "88831116"
 ---
-# <a name="concurrencydirect3d-namespace-functions-amp"></a>Функции пространства имен Concurrency::direct3d (AMP)
+# <a name="concurrencydirect3d-namespace-functions-amp"></a>Функции пространства имен concurrency::direct3d (AMP)
 
 :::row:::
    :::column span="":::
@@ -69,7 +69,7 @@ ms.locfileid: "88831116"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** **пространство имен** amp. h: Concurrency
+**Заголовок:** **пространство имен** amp.h: Concurrency
 
 ## <a name="abs"></a><a name="abs"></a> просто
 
@@ -171,7 +171,7 @@ accelerator_view create_accelerator_view(
 
 `accelerator_view`Объект, созданный из переданного интерфейса устройства Direct3D.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта функция создает новый `accelerator_view` объект на основе существующего указателя на интерфейс устройства Direct3D. Если вызов функции завершился с ошибкой, счетчик ссылок параметра увеличивается на единицу с помощью `AddRef` вызова интерфейса. Вы можете безопасно освободить объект, если он больше не требуется в коде DirectX. При сбое вызова метода выдается [runtime_exception](runtime-exception-class.md) .
 
@@ -637,4 +637,4 @@ inline unsigned int umin(
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Concurrency::direct3d](concurrency-direct3d-namespace.md)
+[Пространство имен concurrency::direct3d](concurrency-direct3d-namespace.md)

@@ -78,7 +78,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 |[CAtlExeModuleT:: m_dwPause](#m_dwpause)|Значение паузы, используемое для обеспечения освобождения всех объектов до завершения работы.|
 |[CAtlExeModuleT:: m_dwTimeOut](#m_dwtimeout)|Значение времени ожидания, используемое для задержки выгрузки модуля.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlExeModuleT`представляет модуль для приложения (EXE) и содержит код, который поддерживает создание EXE-файла, обработку командной строки, регистрацию объектов класса, выполнение цикла обработки сообщений и очистку при выходе.
 
@@ -100,7 +100,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlexemoduletcatlexemodulet"></a><a name="catlexemodulet"></a>CAtlExeModuleT:: CAtlExeModuleT
 
@@ -110,7 +110,7 @@ class ATL_NO_VTABLE CAtlExeModuleT : public CAtlModuleT<T>
 CAtlExeModuleT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если не удалось инициализировать модуль EXE, то WinMain немедленно вернется без дальнейшей обработки.
 
@@ -122,7 +122,7 @@ CAtlExeModuleT() throw();
 ~CAtlExeModuleT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -138,7 +138,7 @@ static HRESULT InitializeCom() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается из конструктора и может быть переопределен для инициализации COM способом, отличным от реализации по умолчанию. Реализация по умолчанию либо `CoInitializeEx(NULL, COINIT_MULTITHREADED)` вызывает `CoInitialize(NULL)` , либо в зависимости от конфигурации проекта.
 
@@ -152,7 +152,7 @@ static HRESULT InitializeCom() throw();
 bool m_bDelayShutdown;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в [обзоре CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) .
 
@@ -164,7 +164,7 @@ bool m_bDelayShutdown;
 DWORD m_dwPause;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Измените это значение после вызова [CAtlExeModuleT:: инитиализеком](#initializecom) , чтобы задать количество миллисекунд, используемых в качестве значения приостановки для завершения работы сервера. Значение по умолчанию — 1000 миллисекунд.
 
@@ -176,7 +176,7 @@ DWORD m_dwPause;
 DWORD m_dwTimeOut;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Измените это значение после вызова [CAtlExeModuleT:: инитиализеком](#initializecom) , чтобы определить количество миллисекунд, использованных в качестве значения времени ожидания при завершении работы сервера. Значение по умолчанию — 5000 миллисекунд. Дополнительные сведения см. в [обзоре CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md) .
 
@@ -200,7 +200,7 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 Возвращает значение true, если приложение должно продолжать работу; в противном случае — значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается из [CAtlExeModuleT:: WinMain](#winmain) и может быть переопределен для управления параметрами командной строки. Реализация по умолчанию проверяет аргументы командной строки **/regserver** и **/UnRegServer** и выполняет регистрацию или отмену регистрации.
 
@@ -216,7 +216,7 @@ HRESULT PostMessageLoop() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод для выполнения пользовательской очистки приложения. Реализация по умолчанию вызывает [CAtlExeModuleT:: ревокеклассобжектс](#revokeclassobjects).
 
@@ -237,7 +237,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, чтобы добавить пользовательский код инициализации для приложения. Реализация по умолчанию регистрирует объекты класса.
 
@@ -290,7 +290,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод можно переопределить. Однако на практике лучше переопределить [CAtlExeModuleT::P ремессажелуп](#premessageloop), [CAtlExeModuleT:: рунмессажелуп](#runmessageloop)или [CAtlExeModuleT::P остмессажелуп](#postmessageloop) .
 
@@ -302,7 +302,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 void RunMessageLoop() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод можно переопределить, чтобы изменить поведение цикла обработки сообщений.
 
@@ -314,7 +314,7 @@ void RunMessageLoop() throw();
 static void UninitializeCom() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод просто вызывает метод [CoUninitialize](/windows/win32/api/combaseapi/nf-combaseapi-couninitialize) и вызывается из деструктора. Переопределите этот метод при переопределении [CAtlExeModuleT:: инитиализеком](#initializecom).
 
@@ -347,7 +347,7 @@ int WinMain(int nShowCmd) throw();
 
 Возвращает возвращаемое значение исполняемого объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод можно переопределить. Если переопределение [CAtlExeModuleT::P ремессажелуп](#premessageloop), [CAtlExeModuleT::P остмессажелуп](#postmessageloop)или [CAtlExeModuleT:: рунмессажелуп](#runmessageloop) не предоставляет достаточно гибкости, можно переопределить `WinMain` функцию с помощью этого метода.
 

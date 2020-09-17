@@ -33,7 +33,7 @@ ms.locfileid: "81336197"
 
 ::: moniker-end
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `#pragma omp`используется для указания [Директив и](../../parallel/openmp/reference/openmp-directives.md) [оговорок.](../../parallel/openmp/reference/openmp-clauses.md) Если **/openmp** не указан в компиляции, компилятор игнорирует положения и директивы OpenMP. Звонки [OpenMP Function](../../parallel/openmp/reference/openmp-functions.md) обрабатываются компилятором, даже если **/openmp** не указан.
 

@@ -17,7 +17,7 @@ ms.locfileid: "87231966"
 
 > пустой блок атрибута не допускается
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Компилятор интерпретировал квадратные скобки как блок [атрибутов](../../windows/attributes-alphabetical-reference.md) , но атрибуты не найдены.
 

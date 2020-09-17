@@ -66,7 +66,7 @@ class COccManager : public CNoTrackObject
 |[COccManager::SetDefaultButton](#setdefaultbutton)|Переключает состояние по умолчанию указанного элемента управления.|
 |[COccManager::SplitDialogTemplate](#splitdialogtemplate)|Отделяет любые существующие элементы управления ActiveX от общих элементов управления в указанном шаблоне диалога.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Базовый класс, `CNoTrackObject`является незарегистрированным базовым классом (расположен в AFXTLS. H). Классы, полученные из `CNoTrackObject` класса, освобождаются от обнаружения утечки памяти. Не рекомендуется, чтобы вы `CNoTrackObject`получаете непосредственно от .
 
@@ -97,7 +97,7 @@ virtual COleControlContainer* CreateContainer(CWnd* pWnd);
 
 Указатель на вновь созданный контейнер; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о создании пользовательских сайтов, [см. COleControlContainer::AttachControlSite](../../mfc/reference/colecontrolcontainer-class.md#attachcontrolsite).
 
@@ -152,7 +152,7 @@ virtual COleControlSite* CreateSite(COleControlContainer* pCtrlCont);
 
 Указатель на недавно созданный сайт управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переизвейдите эту функцию для создания пользовательского сайта управления, используя ваш класс [COleControlSite.](../../mfc/reference/colecontrolsite-class.md)
 
@@ -203,7 +203,7 @@ virtual BOOL IsDialogMessage(
 
 Nonzero, если сообщение обработано; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поведение по `IsDialogMessage` умолчанию состоит в том, чтобы проверить сообщения клавиатуры и преобразовать их в выбор для соответствующего диалогового окна. Например, ключ TAB при нажатии выбирает следующий элемент управления или группу элементов управления.
 
@@ -227,7 +227,7 @@ static BOOL AFX_CDECL IsLabelControl(COleControlSiteOrWnd* pWnd);
 
 Nonzero, если элемент управления является меткой; в противном случае ноль
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Контроль метки — это элемент, который действует как метка для любого элемента управления, следующего в порядке.
 
@@ -257,7 +257,7 @@ static BOOL AFX_CDECL IsMatchingMnemonic(
 
 Nonzero, если мнемоническая соответствует контролю; в противном случае ноль
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coccmanageronevent"></a><a name="onevent"></a>COccManager::Onevent
 
@@ -289,7 +289,7 @@ virtual BOOL OnEvent(
 
 Nonzero, если событие было обработано, в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы настроить процесс обработки событий по умолчанию.
 
@@ -315,7 +315,7 @@ virtual const DLGTEMPLATE* PreCreateDialog(
 
 Указатель на структуру шаблона диалогов, используемую для создания диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поведение по умолчанию `SplitDialogTemplate`делает вызов, определяющий, есть ли какие-либо элементы управления ActiveX настоящее время, а затем возвращает резонирующее шаблон диалога.
 
@@ -334,7 +334,7 @@ virtual void PostCreateDialog(_AFX_OCC_DIALOG_INFO* pOccDialogInfo);
 *pOccDialogInfo*<br/>
 Структура, `_AFX_OCC_DIALOG_INFO` содержащая информацию о шаблоне диалога и любых элементах управления ActiveX, размещенных в диалоге.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта память была выделена `SplitDialogTemplate`путем вызова, и использовалась для любых размещенных элементов управления ActiveX в диалоговом поле.
 
@@ -362,7 +362,7 @@ Nonzero, если элемент управления должен стать к
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Элемент управления должен иметь набор бита OLEMISC_ACTSLIKEBUTTON статуса. Для получения дополнительной информации о [OLEMISC](/windows/win32/api/oleidl/ne-oleidl-olemisc) флагах OLEMISC, см.
@@ -389,7 +389,7 @@ virtual DLGTEMPLATE* SplitDialogTemplate(
 
 Указатель на структуру шаблона диалогов, содержащую только элементы управления ActiveX. Если элементов управления ActiveX нет, NULL возвращается.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При обнаружении каких-либо элементов управления ActiveX анализируется шаблон и создается новый шаблон, содержащий только элементы управления ActiveX. Любые элементы управления ActiveX, найденные в ходе этого процесса, добавляются *в ppOleDlgItems.*
 

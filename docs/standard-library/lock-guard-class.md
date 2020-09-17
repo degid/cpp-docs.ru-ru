@@ -23,7 +23,7 @@ template <class Mutex>
 class lock_guard;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В аргументе шаблона `Mutex` должно быть указано имя *типа мьютекс*.
 
@@ -63,7 +63,7 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 *Mtx*\
 Объект *типа мьютекс*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор строит объект типа `lock_guard` и блокирует *Mtx.* Если *Mtx* не является рекурсивным mutex, он должен быть разблокирован, когда этот конструктор называется.
 
@@ -77,7 +77,7 @@ lock_guard(mutex_type& Mtx, adopt_lock_t);
 ~lock_guard() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `mutex` не существует при выполнении деструктора, поведение не определено.
 

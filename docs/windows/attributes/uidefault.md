@@ -23,7 +23,7 @@ ms.locfileid: "88843070"
 [uidefault]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **уидефаулт** C++ имеет те же функциональные возможности, что и атрибут [уидефаулт](/windows/win32/Midl/uidefault) MIDL.
 

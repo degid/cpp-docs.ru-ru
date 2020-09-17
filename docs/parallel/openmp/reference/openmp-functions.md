@@ -120,7 +120,7 @@ void omp_destroy_lock(
 *lock*<br/>
 Переменная типа, `omp_lock_t` которая была инициализирована с [omp_init_lock](#omp-init-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_destroy_nest_lock omp_destroy_lock.](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md)
 
@@ -143,7 +143,7 @@ void omp_destroy_nest_lock(
 *lock*<br/>
 Переменная типа, `omp_nest_lock_t` которая была инициализирована с [omp_init_nest_lock](#omp-init-nest-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_destroy_nest_lock omp_destroy_lock.](../../../parallel/openmp/3-2-2-omp-destroy-lock-and-omp-destroy-nest-lock-functions.md)
 
@@ -163,7 +163,7 @@ int omp_get_dynamic();
 
 Ненулевое значение означает, что потоки будут динамически скорректированы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Динамическая регулировка потоков указана [с omp_set_dynamic](#omp-set-dynamic) и [OMP_DYNAMIC.](openmp-environment-variables.md#omp-dynamic)
 
@@ -181,7 +181,7 @@ int omp_get_dynamic();
 int omp_get_max_threads( )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_get_max_threads.](../../../parallel/openmp/3-1-3-omp-get-max-threads-function.md)
 
@@ -235,7 +235,7 @@ int omp_get_nested( );
 
 Ненулевое значение означает включен овложение параллелизма.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вложенный параллелизм указан [с omp_set_nested](#omp-set-nested) и [OMP_NESTED.](openmp-environment-variables.md#omp-nested)
 
@@ -253,7 +253,7 @@ int omp_get_nested( );
 int omp_get_num_procs();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_get_num_procs.](../../../parallel/openmp/3-1-5-omp-get-num-procs-function.md)
 
@@ -290,7 +290,7 @@ int main( )
 int omp_get_num_threads( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_get_num_threads.](../../../parallel/openmp/3-1-2-omp-get-num-threads-function.md)
 
@@ -340,7 +340,7 @@ int main()
 int omp_get_thread_num( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_get_thread_num.](../../../parallel/openmp/3-1-4-omp-get-thread-num-function.md)
 
@@ -356,7 +356,7 @@ int omp_get_thread_num( );
 double omp_get_wtick( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_get_wtick.](../../../parallel/openmp/3-3-2-omp-get-wtick-function.md)
 
@@ -376,7 +376,7 @@ double omp_get_wtime( );
 
 Возвращает значение в течение нескольких секунд, прошедшее из какой-то произвольной, но последовательной точки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот момент будет оставаться последовательным во время выполнения программы, что делает предстоящие сравнения возможными.
 
@@ -421,7 +421,7 @@ wtick = 2.793651148400146e-007
 int omp_in_parallel( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_in_parallel.](../../../parallel/openmp/3-1-6-omp-in-parallel-function.md)
 
@@ -466,7 +466,7 @@ void omp_init_lock(
 *lock*<br/>
 Переменная типа `omp_lock_t`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_init_nest_lock omp_init_lock.](../../../parallel/openmp/3-2-1-omp-init-lock-and-omp-init-nest-lock-functions.md)
 
@@ -558,7 +558,7 @@ void omp_init_nest_lock(
 *lock*<br/>
 Переменная типа `omp_nest_lock_t`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первоначальный отсчет гнездования равен нулю.
 
@@ -643,7 +643,7 @@ void omp_set_dynamic(
 *Валь*<br/>
 Значение, указывающее, можно ли скорректировать количество потоков, доступных в предстоящих параллельных регионах, с помощью времени выполнения. Если ненулевое время выполнения может регулировать число потоков, если ноль, время выполнения не будет динамически регулировать количество потоков.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Количество потоков никогда не превысит значения, установленного [omp_set_num_threads](#omp-set-num-threads) или [OMP_NUM_THREADS.](openmp-environment-variables.md#omp-num-threads)
 
@@ -694,7 +694,7 @@ void omp_set_lock(
 *lock*<br/>
 Переменная типа, `omp_lock_t` которая была инициализирована с [omp_init_lock](#omp-init-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_set_nest_lock omp_set_lock.](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md)
 
@@ -717,7 +717,7 @@ void omp_set_nest_lock(
 *lock*<br/>
 Переменная типа, `omp_nest_lock_t` которая была инициализирована с [omp_init_nest_lock](#omp-init-nest-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_set_nest_lock omp_set_lock.](../../../parallel/openmp/3-2-3-omp-set-lock-and-omp-set-nest-lock-functions.md)
 
@@ -740,7 +740,7 @@ void omp_set_nested(
 *Валь*<br/>
 Ненулевое значение позволяет вложенный параллелизм, в то время как ноль отлиний вложенных параллелизм.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вложенный параллелизм OMP `omp_set_nested`можно завернуть с помощью или путем установки переменной [OMP_NESTED](openmp-environment-variables.md#omp-nested) среды.
 
@@ -793,7 +793,7 @@ void omp_set_num_threads(
 *num_threads*<br/>
 Количество потоков в параллельной области.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_set_num_threads.](../../../parallel/openmp/3-1-1-omp-set-num-threads-function.md)
 
@@ -816,7 +816,7 @@ int omp_test_lock(
 *lock*<br/>
 Переменная типа, `omp_lock_t` которая была инициализирована с [omp_init_lock](#omp-init-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_test_nest_lock omp_test_lock.](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md)
 
@@ -889,7 +889,7 @@ int omp_test_nest_lock(
 *lock*<br/>
 Переменная типа, `omp_nest_lock_t` которая была инициализирована с [omp_init_nest_lock](#omp-init-nest-lock).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_test_nest_lock omp_test_lock.](../../../parallel/openmp/3-2-5-omp-test-lock-and-omp-test-nest-lock-functions.md)
 
@@ -980,7 +980,7 @@ void omp_unset_lock(
 *lock*<br/>
 Переменная типа, `omp_lock_t` которая была инициализирована с [omp_init_lock,](#omp-init-lock)принадлежащих потоку и выполнения в функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_unset_nest_lock omp_unset_lock.](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md)
 
@@ -1003,7 +1003,7 @@ void omp_unset_nest_lock(
 *lock*<br/>
 Переменная типа, `omp_nest_lock_t` которая была инициализирована с [omp_init_nest_lock,](#omp-init-nest-lock)принадлежащих потоку и выполнения в функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [omp_unset_nest_lock omp_unset_lock.](../../../parallel/openmp/3-2-4-omp-unset-lock-and-omp-unset-nest-lock-functions.md)
 

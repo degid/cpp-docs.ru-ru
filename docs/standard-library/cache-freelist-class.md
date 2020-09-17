@@ -36,7 +36,7 @@ class cache_freelist
 *Максимальной*\
 Класс max, представляющий максимальный размер списка свободных блоков. Это может быть класс [max_fixed_size](../standard-library/max-fixed-size-class.md), [max_none](../standard-library/max-none-class.md), [max_unbounded](../standard-library/max-unbounded-class.md) или [max_variable_size](../standard-library/max-variable-size-class.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса cache_freelist поддерживает свободный список блоков памяти размером *SZ*. Когда список свободных ресурсов заполнен, для освобождения блоков памяти используется **оператор DELETE** . Если список свободных пуст, для выделения новых блоков памяти используется **оператор New** . Максимальный размер списка свободных элементов определяется классом max класса, переданным в параметре *Max* .
 
@@ -71,14 +71,14 @@ void *allocate(std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Число выделяемых элементов в массиве.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Указатель на выделяемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_freelistcache_freelist"></a><a name="cache_freelist"></a> cache_freelist:: cache_freelist
 
@@ -88,7 +88,7 @@ void *allocate(std::size_t count);
 cache_freelist();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_freelistdeallocate"></a><a name="deallocate"></a> cache_freelist::d еаллокате
 
@@ -100,13 +100,13 @@ void deallocate(void* ptr, std::size_t count);
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Указатель на первый объект, который должен быть освобожден из хранилища.
 
-*расчета*\
+*count*\
 Количество объектов для освобождения из хранилища.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

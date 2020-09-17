@@ -67,7 +67,7 @@ class CMFCRibbonFontComboBox : public CMFCRibbonComboBox
 |[CMFCRibbonFontComboBox::RebuildFonts](#rebuildfonts)|Заполняет поле со списком шрифтов на ленте на основе таких ранее заданных параметров, как тип и семейство шрифтов, а также кодировка и шаг.|
 |[CMFCRibbonFontComboBox::SetFont](#setfont)|Выбирает указанный шрифт в поле со списком.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 После создания `CMFCRibbonFontComboBox` объекта добавьте его в ленточной панели, позвонив [по CMFCRibbonPanel::Add](../../mfc/reference/cmfcribbonpanel-class.md#add).
 
@@ -141,7 +141,7 @@ CMFCRibbonFontComboBox(
 *nWidth*<br/>
 (в) Определяет ширину, в пикселях, комбо-коробки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о возможных [EnumFontFamProc](/previous-versions/dd162621\(v=vs.85\)) значениях параметров *nFontType* см.
 
@@ -161,7 +161,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonfontcomboboxrebuildfonts"></a><a name="rebuildfonts"></a>CMFCRibbonFontComboBox::RebuildФоны
 
@@ -171,7 +171,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex = -1) const;
 void RebuildFonts();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете указать тип шрифта, набор символов, а также шаг и семейство шрифтов, чтобы включить в ленту купюра комбо поле в [конструктор](#cmfcribbonfontcombobox) е-класса, или позвонив [cmfcRibbonFontComboBox::BuildFonts](#buildfonts).
 
@@ -200,7 +200,7 @@ TRUE указать, что набор символов должен соотв�
 
 Nonzero, если указанный шрифт был найден и выбран; в противном случае, ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonfontcomboboxgetcharset"></a><a name="getcharset"></a>CMFCRibbonFontComboBox::GetCharset
 
@@ -214,7 +214,7 @@ BYTE GetCharSet() const;
 
 Набор символов (см. LOGFONT в документации Windows SDK).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonfontcomboboxgetfonttype"></a><a name="getfonttype"></a>CMFCRibbonFontComboBox::GetFontType
 
@@ -228,7 +228,7 @@ int GetFontType() const;
 
 Типы шрифтов (см. EnumFontFamProc в документации Windows SDK).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcribbonfontcomboboxgetpitchandfamily"></a><a name="getpitchandfamily"></a>CMFCRibbonFontComboBox:GetPitchandFamily
 
@@ -242,7 +242,7 @@ BYTE GetPitchAndFamily() const;
 
 Шаг и семейство (см. LOGFONT в документации Windows SDK).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

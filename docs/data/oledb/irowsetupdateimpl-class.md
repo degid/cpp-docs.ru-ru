@@ -130,7 +130,7 @@ class IRowsetUpdateImpl : public IRowsetChangeImpl<
 |-|-|
 |[m_mapCachedData](#mapcacheddata)|Содержит исходные данные для отложенной операции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Сначала следует прочитать и разобраться в документации по [IRowsetChange](/previous-versions/windows/desktop/ms715790(v=vs.85)), так как все описанное здесь также применимо. Также следует ознакомиться с главой 6 *справочника по OLE DB программиста* по настройке данных.
 
@@ -161,7 +161,7 @@ STDMETHOD (SetData )(HROW hRow,
 
 См. раздел [IRowsetChange:: SetData](/previous-versions/windows/desktop/ms721232(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод переопределяет метод [ировсетчанжеимпл:: SetData](../../data/oledb/irowsetchangeimpl-setdata.md) , но включает кэширование исходных данных, чтобы позволить немедленно или отложенную обработку операции.
 
@@ -202,7 +202,7 @@ STDMETHOD (GetPendingRows )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetUpdate:: жетпендингровс](/previous-versions/windows/desktop/ms719626(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [IRowsetUpdate:: жетпендингровс](/previous-versions/windows/desktop/ms719626(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -276,7 +276,7 @@ STDMETHOD (Update )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetUpdate:: Update](/previous-versions/windows/desktop/ms719709(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Изменения передаются путем вызова [ировсетчанжеимпл:: FlushData](../../data/oledb/irowsetchangeimpl-flushdata.md). Чтобы изменения вступили в силу, потребитель должен вызвать метод [CRowset:: Update](../../data/oledb/crowset-update.md) . Задайте для *пргровстатус* соответствующее значение, как описано в разделе [состояния строк](/previous-versions/windows/desktop/ms722752(v=vs.85)) в *справочнике по OLE DB программиста*.
 
@@ -303,7 +303,7 @@ HRESULT IsUpdateAllowed(DBPENDINGSTATUS /* [in] */ /* status */,
 *провстатус*<br/>
 заполняет Состояние, возвращенное пользователю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы определили, что обновление должно быть разрешено, возвращает S_OK; в противном случае возвращает E_FAIL. Если вы разрешаете обновление, необходимо также установить `DBROWSTATUS` в [IRowsetUpdateImpl:: Update](../../data/oledb/irowsetupdateimpl-update.md) в соответствующее [состояние строки](/previous-versions/windows/desktop/ms722752(v=vs.85)).
 

@@ -29,7 +29,7 @@ _bstr_t HelpFile() const;
 
 Возвращает результат `IErrorInfo::GetHelpFile` для объекта `IErrorInfo`, записанного в объекте `_com_error`. Результирующая строка BSTR инкапсулируется в объект `_bstr_t`. Если `IErrorInfo` не записано, возвращается пустая `_bstr_t`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Любой сбой при вызове метода `IErrorInfo::GetHelpFile` игнорируется.
 

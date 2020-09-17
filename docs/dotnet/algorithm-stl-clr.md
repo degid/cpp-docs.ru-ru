@@ -250,7 +250,7 @@ template<class _FwdIt, class _Pr> inline
     _FwdIt adjacent_find(_FwdIt _First, _FwdIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `adjacent_find`. Дополнительные сведения см. в разделе [adjacent_find](../standard-library/algorithm-functions.md#adjacent_find).
 
@@ -268,7 +268,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
         const _Ty% _Val, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `binary_search`. Дополнительные сведения см. в разделе [binary_search](../standard-library/algorithm-functions.md#binary_search).
 
@@ -283,7 +283,7 @@ template<class _InIt, class _OutIt> inline
     _OutIt copy(_InIt _First, _InIt _Last, _OutIt _Dest);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `copy`. Дополнительные сведения см. в разделе [Copy](../standard-library/algorithm-functions.md#copy).
 
@@ -299,7 +299,7 @@ template<class _BidIt1, class _BidIt2> inline
         _BidIt2 _Dest);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `copy_backward`. Дополнительные сведения см. в разделе [copy_backward](../standard-library/algorithm-functions.md#copy_backward).
 
@@ -315,7 +315,7 @@ template<class _InIt, class _Ty> inline
         count(_InIt _First, _InIt _Last, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `count`. Дополнительные сведения см. в разделе [Count](../standard-library/algorithm-functions.md#count).
 
@@ -331,7 +331,7 @@ template<class _InIt, class _Pr> inline
         count_if(_InIt _First, _InIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `count_if`. Дополнительные сведения см. в разделе [count_if](../standard-library/algorithm-functions.md#count_if).
 
@@ -349,7 +349,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `equal`. Дополнительные сведения см. в разделе [EQUAL](../standard-library/algorithm-functions.md#equal).
 
@@ -368,7 +368,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
         const _Ty% _Val, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `equal_range`. Дополнительные сведения см. в разделе [equal_range](../standard-library/algorithm-functions.md#equal_range).
 
@@ -383,7 +383,7 @@ template<class _FwdIt, class _Ty> inline
     void fill(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `fill`. Дополнительные сведения см. в разделе [Fill](../standard-library/algorithm-functions.md#fill).
 
@@ -398,7 +398,7 @@ template<class _OutIt, class _Diff, class _Ty> inline
     void fill_n(_OutIt _First, _Diff _Count, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `fill_n`. Дополнительные сведения см. в разделе [fill_n](../standard-library/algorithm-functions.md#fill_n).
 
@@ -413,7 +413,7 @@ template<class _InIt, class _Ty> inline
     _InIt find(_InIt _First, _InIt _Last, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `find`. Дополнительные сведения см. в разделе [Find](../standard-library/algorithm-functions.md#find).
 
@@ -432,7 +432,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
         _FwdIt2 _First2, _FwdIt2 _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `find_end`. Дополнительные сведения см. в разделе [find_end](../standard-library/algorithm-functions.md#find_end).
 
@@ -451,7 +451,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
         _FwdIt2 _First2, _FwdIt2 _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `find_first_of`. Дополнительные сведения см. в разделе [find_first_of](../standard-library/algorithm-functions.md#find_first_of).
 
@@ -466,7 +466,7 @@ template<class _InIt, class _Pr> inline
     _InIt find_if(_InIt _First, _InIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `find_if`. Дополнительные сведения см. в разделе [find_if](../standard-library/algorithm-functions.md#find_if).
 
@@ -481,7 +481,7 @@ template<class _InIt, class _Fn1> inline
     _Fn1 for_each(_InIt _First, _InIt _Last, _Fn1 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `for_each`. Дополнительные сведения см. в разделе [for_each](../standard-library/algorithm-functions.md#for_each).
 
@@ -496,7 +496,7 @@ template<class _FwdIt, class _Fn0> inline
     void generate(_FwdIt _First, _FwdIt _Last, _Fn0 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `generate`. Дополнительные сведения см. в разделе [Generate](../standard-library/algorithm-functions.md#generate).
 
@@ -511,7 +511,7 @@ template<class _OutIt, class _Diff, class _Fn0> inline
     void generate_n(_OutIt _Dest, _Diff _Count, _Fn0 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `generate_n`. Дополнительные сведения см. в разделе [generate_n](../standard-library/algorithm-functions.md#generate_n).
 
@@ -530,7 +530,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `includes`. Дополнительные сведения см. в разделе [включения](../standard-library/algorithm-functions.md#includes).
 
@@ -548,7 +548,7 @@ template<class _BidIt, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `inplace_merge` дополнительные сведения см. в разделе [inplace_merge](../standard-library/algorithm-functions.md#inplace_merge).
 
@@ -563,7 +563,7 @@ template<class _FwdIt1, class _FwdIt2> inline
     void iter_swap(_FwdIt1 _Left, _FwdIt2 _Right);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `iter_swap`. Дополнительные сведения см. в разделе [iter_swap](../standard-library/algorithm-functions.md#iter_swap).
 
@@ -582,7 +582,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `lexicographical_compare`. Дополнительные сведения см. в разделе [lexicographical_compare](../standard-library/algorithm-functions.md#lexicographical_compare).
 
@@ -600,7 +600,7 @@ template<class _FwdIt, class _Ty, class _Pr> inline
         const _Ty% _Val, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `lower_bound`. Дополнительные сведения см. в разделе [lower_bound](../standard-library/algorithm-functions.md#lower_bound).
 
@@ -617,7 +617,7 @@ template<class _RanIt, class _Pr> inline
     void make_heap(_RanIt _First, _RanIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `make_heap`. Дополнительные сведения см. в разделе [make_heap](../standard-library/algorithm-functions.md#make_heap).
 
@@ -634,7 +634,7 @@ template<class _Ty, class _Pr> inline
     const _Ty max(const _Ty% _Left, const _Ty% _Right, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `max`. Дополнительные сведения см. в разделе [Max](../standard-library/algorithm-functions.md#max).
 
@@ -651,7 +651,7 @@ template<class _FwdIt, class _Pr> inline
     _FwdIt max_element(_FwdIt _First, _FwdIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `max_element`. Дополнительные сведения см. в разделе [max_element](../standard-library/algorithm-functions.md#max_element).
 
@@ -670,7 +670,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `merge`. Дополнительные сведения см. в разделе [Merge](../standard-library/algorithm-functions.md#merge).
 
@@ -687,7 +687,7 @@ template<class _Ty, class _Pr> inline
     const _Ty min(const _Ty% _Left, const _Ty% _Right, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `min`. Дополнительные сведения см. в разделе [min](../standard-library/algorithm-functions.md#min).
 
@@ -704,7 +704,7 @@ template<class _FwdIt, class _Pr> inline
     _FwdIt min_element(_FwdIt _First, _FwdIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `min_element`. Дополнительные сведения см. в разделе [min_element](../standard-library/algorithm-functions.md#min_element).
 
@@ -724,7 +724,7 @@ template<class _InIt1, class _InIt2, class _Pr> inline
             _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `mismatch`. Дополнительные сведения см. в разделе [несоответствие](../standard-library/algorithm-functions.md#mismatch).
 
@@ -741,7 +741,7 @@ template<class _BidIt, class _Pr> inline
     bool next_permutation(_BidIt _First, _BidIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `next_permutation`. Дополнительные сведения см. в разделе [next_permutation](../standard-library/algorithm-functions.md#next_permutation).
 
@@ -759,7 +759,7 @@ template<class _RanIt, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `nth_element`. Дополнительные сведения см. в разделе [nth_element](../standard-library/algorithm-functions.md#nth_element).
 
@@ -777,7 +777,7 @@ template<class _RanIt, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `partial_sort`. Дополнительные сведения см. в разделе [partial_sort](../standard-library/algorithm-functions.md#partial_sort).
 
@@ -796,7 +796,7 @@ template<class _InIt, class _RanIt, class _Pr> inline
         _RanIt _First2, _RanIt _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `partial_sort_copy`. Дополнительные сведения см. в разделе [partial_sort_copy](../standard-library/algorithm-functions.md#partial_sort_copy).
 
@@ -811,7 +811,7 @@ template<class _BidIt, class _Pr> inline
     _BidIt partition(_BidIt _First, _BidIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `partition`. Дополнительные сведения см. в разделе [Partition](../standard-library/algorithm-functions.md#partition).
 
@@ -828,7 +828,7 @@ template<class _RanIt, class _Pr> inline
     void pop_heap(_RanIt _First, _RanIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `pop_heap`. Дополнительные сведения см. в разделе [pop_heap](../standard-library/algorithm-functions.md#pop_heap).
 
@@ -845,7 +845,7 @@ template<class _BidIt, class _Pr> inline
     bool prev_permutation(_BidIt _First, _BidIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `prev_permutation`. Дополнительные сведения см. в разделе [prev_permutation](../standard-library/algorithm-functions.md#prev_permutation).
 
@@ -862,7 +862,7 @@ template<class _RanIt, class _Pr> inline
     void push_heap(_RanIt _First, _RanIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `push_heap`. Дополнительные сведения см. в разделе [push_heap](../standard-library/algorithm-functions.md#push_heap).
 
@@ -879,7 +879,7 @@ template<class _RanIt, class _Fn1> inline
     void random_shuffle(_RanIt _First, _RanIt _Last, _Fn1% _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `random_shuffle`. Дополнительные сведения см. в разделе [random_shuffle](../standard-library/algorithm-functions.md#random_shuffle).
 
@@ -894,7 +894,7 @@ template<class _FwdIt, class _Ty> inline
     _FwdIt remove(_FwdIt _First, _FwdIt _Last, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `remove`. Дополнительные сведения см. в разделе [Remove](../standard-library/algorithm-functions.md#remove).
 
@@ -910,7 +910,7 @@ template<class _InIt, class _OutIt, class _Ty> inline
         _OutIt _Dest, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `remove_copy`. Дополнительные сведения см. в разделе [remove_copy](../standard-library/algorithm-functions.md#remove_copy).
 
@@ -926,7 +926,7 @@ template<class _InIt, class _OutIt, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `remove_copy_if`. Дополнительные сведения см. в разделе [remove_copy_if](../standard-library/algorithm-functions.md#remove_copy_if).
 
@@ -941,7 +941,7 @@ template<class _FwdIt, class _Pr> inline
     _FwdIt remove_if(_FwdIt _First, _FwdIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `remove_if`. Дополнительные сведения см. в разделе [remove_if](../standard-library/algorithm-functions.md#remove_if).
 
@@ -957,7 +957,7 @@ template<class _FwdIt, class _Ty> inline
         const _Ty% _Oldval, const _Ty% _Newval);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `replace`. Дополнительные сведения см. в разделе [Replace](../standard-library/algorithm-functions.md#replace).
 
@@ -973,7 +973,7 @@ template<class _InIt, class _OutIt, class _Ty> inline
         const _Ty% _Oldval, const _Ty% _Newval);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `replace_copy`. Дополнительные сведения см. в разделе [replace_copy](../standard-library/algorithm-functions.md#replace_copy).
 
@@ -989,7 +989,7 @@ template<class _InIt, class _OutIt, class _Pr, class _Ty> inline
         _Pr _Pred, const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `replace_copy_if`. Дополнительные сведения см. в разделе [replace_copy_if](../standard-library/algorithm-functions.md#replace_copy_if).
 
@@ -1005,7 +1005,7 @@ template<class _FwdIt, class _Pr, class _Ty> inline
         const _Ty% _Val);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `replace_if`. Дополнительные сведения см. в разделе [replace_if](../standard-library/algorithm-functions.md#replace_if).
 
@@ -1020,7 +1020,7 @@ template<class _BidIt> inline
     void reverse(_BidIt _First, _BidIt _Last);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `reverse`. Дополнительные сведения см. в разделе [обратная](../standard-library/algorithm-functions.md#reverse).
 
@@ -1035,7 +1035,7 @@ template<class _BidIt, class _OutIt> inline
     _OutIt reverse_copy(_BidIt _First, _BidIt _Last, _OutIt _Dest);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `reverse_copy`. Дополнительные сведения см. в разделе [reverse_copy](../standard-library/algorithm-functions.md#reverse_copy).
 
@@ -1050,7 +1050,7 @@ template<class _FwdIt> inline
     void rotate(_FwdIt _First, _FwdIt _Mid, _FwdIt _Last);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `rotate`. Дополнительные сведения см. в разделе [вращение](../standard-library/algorithm-functions.md#rotate).
 
@@ -1066,7 +1066,7 @@ template<class _FwdIt, class _OutIt> inline
         _OutIt _Dest);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `rotate_copy`. Дополнительные сведения см. в разделе [rotate_copy](../standard-library/algorithm-functions.md#rotate_copy).
 
@@ -1085,7 +1085,7 @@ template<class _FwdIt1, class _FwdIt2, class _Pr> inline
         _FwdIt2 _First2, _FwdIt2 _Last2, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `search`. Дополнительные сведения см. в разделе [Поиск](../standard-library/algorithm-functions.md#search).
 
@@ -1104,7 +1104,7 @@ template<class _FwdIt1, class _Diff2, class _Ty, class _Pr> inline
         _Diff2 _Count, const _Ty& _Val, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `search_n`. Дополнительные сведения см. в разделе [search_n](../standard-library/algorithm-functions.md#search_n).
 
@@ -1123,7 +1123,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `set_difference`. Дополнительные сведения см. в разделе [set_difference](../standard-library/algorithm-functions.md#set_difference).
 
@@ -1142,7 +1142,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `set_intersection`. Дополнительные сведения см. в разделе [set_intersection](../standard-library/algorithm-functions.md#set_intersection).
 
@@ -1161,7 +1161,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `set_symmetric_difference`. Дополнительные сведения см. в разделе [set_symmetric_difference](../standard-library/algorithm-functions.md#set_symmetric_difference).
 
@@ -1180,7 +1180,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Pr> inline
         _InIt2 _First2, _InIt2 _Last2, _OutIt _Dest, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `set_union`. Дополнительные сведения см. в разделе [set_union](../standard-library/algorithm-functions.md#set_union).
 
@@ -1197,7 +1197,7 @@ template<class _RanIt, class _Pr> inline
     void sort(_RanIt _First, _RanIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `sort`. Дополнительные сведения см. в разделе [Sort](../mfc/reference/cmfclistctrl-class.md#sort).
 
@@ -1214,7 +1214,7 @@ template<class _RanIt, class _Pr> inline
     void sort_heap(_RanIt _First, _RanIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `sort_heap`. Дополнительные сведения см. в разделе [sort_heap](../standard-library/algorithm-functions.md#sort_heap).
 
@@ -1229,7 +1229,7 @@ template<class _BidIt, class _Pr> inline
     _BidIt stable_partition(_BidIt _First, _BidIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `stable_partition`. Дополнительные сведения см. в разделе [stable_partition](../standard-library/algorithm-functions.md#stable_partition).
 
@@ -1246,7 +1246,7 @@ template<class _BidIt, class _Pr> inline
     void stable_sort(_BidIt _First, _BidIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `stable_sort`. Дополнительные сведения см. в разделе [stable_sort](../standard-library/algorithm-functions.md#stable_sort).
 
@@ -1261,7 +1261,7 @@ template<class _BidIt, class _Pr> inline
     void swap(_Ty% _Left, _Ty% _Right);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `swap`. Дополнительные сведения см. в разделе [Swap](../standard-library/algorithm-functions.md#swap).
 
@@ -1277,7 +1277,7 @@ template<class _FwdIt1, class _FwdIt2> inline
         _FwdIt2 _First2);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `swap_ranges`. Дополнительные сведения см. в разделе [swap_ranges](../standard-library/algorithm-functions.md#swap_ranges).
 
@@ -1296,7 +1296,7 @@ template<class _InIt1, class _InIt2, class _OutIt, class _Fn2> inline
         _OutIt _Dest, _Fn2 _Func);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `transform`. Дополнительные сведения см. в разделе [Transform](../standard-library/algorithm-functions.md#transform).
 
@@ -1313,7 +1313,7 @@ template<class _FwdIt, class _Pr> inline
     _FwdIt unique(_FwdIt _First, _FwdIt _Last, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `unique`. Дополнительные сведения см. в разделе [UNIQUE](../standard-library/algorithm-functions.md#unique).
 
@@ -1331,7 +1331,7 @@ template<class _InIt, class _OutIt, class _Pr> inline
         _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `unique_copy`. Дополнительные сведения см. в разделе [unique_copy](../standard-library/algorithm-functions.md#unique_copy).
 
@@ -1349,6 +1349,6 @@ template<class _FwdIt, class _Ty, class _Pr> inline
         const _Ty% _Val, _Pr _Pred);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция ведет себя так же, как C++ Стандартная функция библиотеки `upper_bound`. Дополнительные сведения см. в разделе [upper_bound](../standard-library/algorithm-functions.md#upper_bound).

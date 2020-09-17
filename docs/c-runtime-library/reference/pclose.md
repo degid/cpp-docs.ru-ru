@@ -62,7 +62,7 @@ FILE *stream
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_pclose** ищет идентификатор процесса командного процессора (cmd. exe), запущенный связанным **_popenным** вызовом, выполняет [_cwait](cwait.md) вызов в новом обработчике команд и закрывает поток в соответствующем канале.
 

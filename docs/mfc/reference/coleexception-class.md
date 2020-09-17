@@ -31,17 +31,17 @@ class COleException : public CException
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[COleException::P шаблоны](#process)|Преобразует Перехваченное исключение в код возврата OLE.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[COleException:: m_sc](#m_sc)|Содержит код состояния, указывающий причину исключения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `COleException`Класс включает открытый элемент данных, содержащий код состояния, указывающий причину исключения.
 
@@ -69,7 +69,7 @@ class COleException : public CException
 SCODE m_sc;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение этой переменной задается параметром [афкссроволиксцептион](exception-processing.md#afxthrowoleexception).
 
@@ -96,7 +96,7 @@ static SCODE PASCAL Process(const CException* pAnyException);
 
 Код состояния OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > Эта функция — **`static`** .

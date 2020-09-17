@@ -94,7 +94,7 @@ int _iswcntrl_l(
 |**_istcntrl**|**iscntrl**|**iscntrl**|**исвкнтрл**|
 |**_istcntrl_l**|**_iscntrl_l**|**_iscntrl_l**|**_iswcntrl_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

@@ -49,7 +49,7 @@ class CMFCToolBarFontComboBox : public CMFCToolBarComboBoxButton
 [CMFCToolBarFontComboBox::m_nFontHeight](#m_nfontheight)<br/>
 Высота символов в купели комбо-коробке.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы добавить кнопку комбо-коробки шрифта в панель инструментов, выполните следующие действия:
 
@@ -136,7 +136,7 @@ TRUETYPE_FONTTYPE
 *pLstФоныВнешний*<br/>
 (ваут) Указатель на объект [класса CObList,](../../mfc/reference/coblist-class.md) который хранит доступные шрифты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно `CMFCToolBarFontComboBox` объекты хранят список доступных шрифтов в одном общем `CObList` объекте. Если вы используете вторую перегрузку конструктора и предоставляете действительный указатель *для pLstFontsExternal,* этот `CMFCToolBarFontComboBox` объект вместо этого заполнит `CObList` то, что *pLstFontsExternal* указывает на доступные шрифты.
 
@@ -171,7 +171,7 @@ const CMFCFontInfo* GetFontDesc(int iIndex=-1) const;
 static int m_nFontHeight
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `m_nFontHeight` переменная равна 0, высота рассчитывается автоматически в соответствии с шрифтом комбо-бокса по умолчанию. Высота включает в себя как восхождение символов выше базовой линии, так и спуск символов под базовой линией.
 
@@ -201,7 +201,7 @@ BOOL SetFont(
 
 Nonzero, если шрифт был выбран успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bExact* является правдой, этот метод выбирает шрифт, который точно соответствует имени, которое вы указали как *lpszName*. Если *bExact* false, этот метод выбирает шрифт, который начинается с текста, указанного как *lpszName* и который использует набор символов, который вы указали как *nCharSet.* Если *nCharSet* настроен на DEFAULT_CHARSET, набор символов будет проигнорирован, и только *lpszName* будет использоваться для выбора шрифта.
 

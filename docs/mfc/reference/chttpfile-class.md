@@ -65,7 +65,7 @@ class CHttpFile : public CInternetFile
 |[CHttpFile::SendRequest](#sendrequest)|Отправляет запрос на сервер HTTP.|
 |[CHttpFile::SendRequestEx](#sendrequestex)|Отправляет запрос на сервер HTTP с помощью методов `CInternetFile` [Write](../../mfc/reference/cinternetfile-class.md#write) или [WriteString.](../../mfc/reference/cinternetfile-class.md#writestring)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если сеанс Интернета считывает данные с сервера `CHttpFile`HTTP, необходимо создать экземпляр:
 
@@ -128,7 +128,7 @@ BOOL AddRequestHeaders(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, функция Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) может быть вызвана для определения причины ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AddRequestHeaders`прикладывает дополнительные заголовки свободного формата к ручке запроса HTTP. Он предназначен для использования сложными клиентами, которые нуждаются в детальном контроле над точным запросом, отправленным на сервер HTTP.
 
@@ -178,7 +178,7 @@ CHttpFile(
 *pConnection*<br/>
 Указатель на объект [CHttpConnection.](../../mfc/reference/chttpconnection-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда `CHttpFile` не строите объект напрямую; скорее позвоните [cInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) или [CHttpConnection::OpenRequest](../../mfc/reference/chttpconnection-class.md#openrequest) вместо.
 
@@ -210,7 +210,7 @@ BOOL EndRequest(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение по умолчанию для *dwContext* отправляется MFC `CHttpFile` объекту с объекта [CInternetSession,](../../mfc/reference/cinternetsession-class.md) создавого `CHttpFile` объект. При вызове [CInternetSession::OpenURL](../../mfc/reference/cinternetsession-class.md#openurl) или [CHttpConnection](../../mfc/reference/chttpconnection-class.md) для построения `CHttpFile` объекта можно переопределить значение по умолчанию, чтобы установить идентификатор контекста на значение по вашему выбору. Идентификатор контекста возвращается [в CInternetSession::OnStatusCallback](../../mfc/reference/cinternetsession-class.md#onstatuscallback) для предоставления статуса объекта, с помощью которого он идентифицируется. Для получения дополнительной информации об идентификаторе контекста смотрите статью [Internet First Steps: WinInet.](../../mfc/wininet-basics.md)
 
@@ -226,7 +226,7 @@ virtual CString GetFileURL() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий URL-адрес, ссылающийся на ресурс, связанный с этим файлом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию участника только после успешного вызова [в SendRequest](#sendrequest) или на объекте, успешно созданном `CHttpFile` [OpenURL.](../../mfc/reference/cinternetsession-class.md#openurl)
 
@@ -242,7 +242,7 @@ CString GetObject() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий название объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию участника только после успешного вызова [в SendRequest](#sendrequest) или на объекте, успешно созданном `CHttpFile` [OpenURL.](../../mfc/reference/cinternetsession-class.md#openurl)
 
@@ -258,7 +258,7 @@ CString GetVerb() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий название глагола HTTP (или метода).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию участника только после успешного вызова [в SendRequest](#sendrequest) или на объекте, успешно созданном `CHttpFile` [OpenURL.](../../mfc/reference/cinternetsession-class.md#openurl)
 
@@ -321,7 +321,7 @@ BOOL QueryInfo(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, функция Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) может быть вызвана для определения причины ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию участника только после успешного вызова [в SendRequest](#sendrequest) или на объекте, успешно созданном `CHttpFile` [OpenURL.](../../mfc/reference/cinternetsession-class.md#openurl)
 
@@ -400,7 +400,7 @@ BOOL QueryInfoStatusCode(DWORD& dwStatusCode) const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Если вызов не удается, функция Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror) может быть вызвана для определения причины ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию участника только после успешного вызова [в SendRequest](#sendrequest) или на объекте, успешно созданном `CHttpFile` [OpenURL.](../../mfc/reference/cinternetsession-class.md#openurl)
 
@@ -500,7 +500,7 @@ BOOL SendRequestEx(
 
 Nonzero, если успешно. Если вызов не удается, определить причину сбоя, изучив брошенный объект [CInternetException.](../../mfc/reference/cinternetexception-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция позволяет приложению отправлять данные с помощью методов `CInternetFile` [Write](../../mfc/reference/cinternetfile-class.md#write) and [WriteString.](../../mfc/reference/cinternetfile-class.md#writestring) Вы должны знать длину данных для отправки, прежде чем вызывать либо переопределение этой функции. Первый переопределение позволяет указать длину данных, которые вы хотели бы отправить. Второй переопределение принимает указатели на INTERNET_BUFFERS структуры, которые могут быть использованы для описания буфера в мельчайших деталях.
 

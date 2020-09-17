@@ -28,7 +28,7 @@ ms.locfileid: "88845241"
 *filename*<br/>
 Имя файла, содержащего разделы справки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **HelpFile** C++ имеет те же функциональные возможности, что и атрибут [HelpFile](/windows/win32/Midl/helpfile) MIDL.
 

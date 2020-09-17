@@ -39,13 +39,13 @@ class allocator<void> {
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс явно специализирует [распределителя](allocator-class.md) шаблонов классов для типа **`void`** . Его конструкторы и оператор присваивания ведут себя так же, как и для шаблона класса, но он определяет только следующие типы:
 
 - [const_pointer](allocator-class.md#const_pointer);
 
-- [указатель](allocator-class.md#pointer).
+- [pointer](allocator-class.md#pointer).
 
 - [value_type](allocator-class.md#value_type).
 

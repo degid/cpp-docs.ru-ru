@@ -22,7 +22,7 @@ ms.locfileid: "87211909"
 
 > **`/Zc:externConstexpr`**[**`-`**]
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`/Zc:externConstexpr`** Параметр компилятора заставляет компилятор применить внешнюю компоновку к переменным, объявленным с помощью `extern constexpr` . В более ранних версиях Visual Studio и по умолчанию или при **`/Zc:externConstexpr-`** указании Visual Studio применяет внутреннюю компоновку к **`constexpr`** переменным, даже если **`extern`** используется ключевое слово. **`/Zc:externConstexpr`** Параметр доступен начиная с Visual Studio 2017 с обновлением 15,6. и по умолчанию отключен. [`/permissive-`](permissive-standards-conformance.md)Параметр не включается **`/Zc:externConstexpr`** .
 

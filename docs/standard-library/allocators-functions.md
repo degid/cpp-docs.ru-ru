@@ -47,7 +47,7 @@ ms.locfileid: "88834977"
 #define ALLOCATOR_DECL(cache, sync, name) <alloc_template>
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макрос создает определение шаблона `template <class Type> class name {.....}` и специализацию, `template <> class name<void> {.....}` которая вместе определяет шаблон класса распределителя, использующий фильтр синхронизации `sync` и кэш типа `cache` .
 
@@ -87,7 +87,7 @@ public:
 #define CACHE_CHUNKLIST <cache_class>
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_freelist"></a><a name="cache_freelist"></a> CACHE_FREELIST
 
@@ -97,7 +97,7 @@ public:
 #define CACHE_FREELIST(max) <cache_class>
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cache_suballoc"></a><a name="cache_suballoc"></a> CACHE_SUBALLOC
 
@@ -107,7 +107,7 @@ public:
 #define CACHE_SUBALLOC <cache_class>
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="sync_default"></a><a name="sync_default"></a> SYNC_DEFAULT
 
@@ -117,7 +117,7 @@ public:
 #define SYNC_DEFAULT <sync_template>
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если компилятор поддерживает компиляцию как однопоточных, так и многопоточных приложений, для однопоточных приложений макрос создает `stdext::allocators::sync_none`; для всех остальных случаев он создает `stdext::allocators::sync_shared`.
 

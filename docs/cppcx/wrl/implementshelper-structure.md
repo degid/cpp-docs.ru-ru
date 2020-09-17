@@ -44,7 +44,7 @@ friend struct Details::ImplementsHelper;
 *исделегатетокласс*<br/>
 Укажите **`true`** , является ли текущий экземпляр `Implements` базовым классом первого идентификатора интерфейса в *илст*; в противном случае — значение **`false`** .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помогает реализовать структуру [Implements](implements-structure.md) .
 
@@ -67,7 +67,7 @@ friend struct Details::ImplementsHelper;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
@@ -102,7 +102,7 @@ HRESULT CanCastTo(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает указатель на указанный идентификатор интерфейса.
 
@@ -118,7 +118,7 @@ IUnknown* CastToUnknown();
 
 Указатель на базовый `IUnknown` интерфейс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает указатель на базовый `IUnknown` интерфейс для текущей `Implements` структуры.
 
@@ -140,7 +140,7 @@ void FillArrayWithIid(
 *идентификаторов IID*<br/>
 Массив типа идентификаторов IID.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вставляет идентификатор интерфейса, указанный текущим параметром шаблона начальном, в указанный элемент массива.
 
@@ -152,6 +152,6 @@ void FillArrayWithIid(
 static const unsigned long IidCount;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит число реализованных идентификаторов интерфейсов в текущем `Implements` объекте.

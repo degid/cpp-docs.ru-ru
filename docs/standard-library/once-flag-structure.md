@@ -19,7 +19,7 @@ ms.locfileid: "87202731"
 
 Структура once_flag {constexpr once_flag () не except;};
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `once_flag` **`struct`** Имеет только конструктор по умолчанию.
 

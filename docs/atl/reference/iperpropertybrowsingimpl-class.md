@@ -52,7 +52,7 @@ class ATL_NO_VTABLE IPerPropertyBrowsingImpl :
 |[IPerPropertyBrowsingImpl::GetPredefinedValue](#getpredefinedvalue)|Извлекает VARIANT, содержащий значение свойства, идентифицированного данной DISPID. DISPID связан с именем строки, извлеченным из `GetPredefinedStrings`. Реализация ATL возвращает E_NOTIMPL.|
 |[IPerPropertyBrowsingImpl::MapPropertyToPage](#mappropertytopage)|Извлекает CLSID страницы свойств, связанных с данным свойством.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IPerPropertyBrowsing](/windows/win32/api/ocidl/nn-ocidl-iperpropertybrowsing) позволяет клиенту получить доступ к информации на страницах свойств объекта. Класс `IPerPropertyBrowsingImpl` обеспечивает реализацию этого интерфейса `IUnknown` по умолчанию и реализует, отправляя информацию на устройство свалки в отладочных сборках.
 
@@ -81,7 +81,7 @@ STDMETHOD(GetDisplayString)(
     BSTR* pBstr);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPerPropertyBrowsing::GetDisplayString](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getdisplaystring) в Windows SDK.
 
@@ -100,7 +100,7 @@ STDMETHOD(GetPredefinedStrings)(
 
 Реализация ATL [GetPredefinedValue](#getpredefinedvalue) возвращается E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPerPropertyBrowsing::GetPredefinedStrings](/windows/win32/api/ocidl/nf-ocidl-iperpropertybrowsing-getpredefinedstrings) в Windows SDK.
 
@@ -119,7 +119,7 @@ STDMETHOD(GetPredefinedValue)(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация [ATL GetPredefinedStrings](#getpredefinedstrings) не получает соответствующих строк.
 
@@ -135,7 +135,7 @@ STDMETHOD(MapPropertyToPage)(
     CLSID* pClsid);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ATL использует карту свойств объекта для получения этой информации.
 

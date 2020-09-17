@@ -17,7 +17,7 @@ ms.locfileid: "87228106"
 
 `vector<bool>::reference`Класс является прокси-классом, предоставляемым [ \<bool> классом Vector](../standard-library/vector-bool-class.md) для имитации `bool&` .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Необходима смоделированная ссылка, поскольку C++ изначально не допускает прямых ссылок на биты. `vector<bool>` использует только один бит на элемент, ссылку на который можно создать с помощью данного класса прокси. Однако моделирование ссылки является незавершенным, поскольку определенные назначения не являются допустимыми. Например, поскольку адрес `vector<bool>::reference` объекта не может быть получен, следующий код, который пытается использовать, `vector<bool>::operator&` является неправильным:
 
@@ -33,8 +33,8 @@ bool& refb = vb[1];   // conversion error - do not use
 |Функция-член|Описание|
 |-|-|
 |[flip](../standard-library/vector-bool-reference-flip.md)|Инвертирует логическое значение элемента вектора.|
-|[bool, оператор](../standard-library/vector-bool-reference-operator-bool.md)|Обеспечивает неявное преобразование из `vector<bool>::reference` в **`bool`** .|
-|[Оператор =](../standard-library/vector-bool-reference-operator-assign.md)|Присваивает биту логическое значение или значение, которое содержит элемент со ссылкой.|
+|[operator bool](../standard-library/vector-bool-reference-operator-bool.md)|Обеспечивает неявное преобразование из `vector<bool>::reference` в **`bool`** .|
+|[operator=](../standard-library/vector-bool-reference-operator-assign.md)|Присваивает биту логическое значение или значение, которое содержит элемент со ссылкой.|
 
 ## <a name="requirements"></a>Требования
 

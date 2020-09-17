@@ -29,10 +29,10 @@ struct adopt_d3d_access_lock_t;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
-**Пространство имен:** concurrency::d irect3d
+**Пространство имен:** concurrency::direct3d
 
 ## <a name="see-also"></a>См. также раздел
 
-[Пространство имен Concurrency::direct3d](concurrency-direct3d-namespace.md)
+[Пространство имен concurrency::direct3d](concurrency-direct3d-namespace.md)

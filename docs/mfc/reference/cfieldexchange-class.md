@@ -31,12 +31,12 @@ class CFieldExchange
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кфиелдексчанже:: Исфиелдтипе](#isfieldtype)|Возвращает ненулевое значение, если текущая операция подходит для типа обновляемого поля.|
 |[Кфиелдексчанже:: Сетфиелдтипе](#setfieldtype)|Указывает тип элемента данных набора записей (столбец или параметр), представленный всеми вызовами функций RFX до следующего вызова `SetFieldType` .|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CFieldExchange`не имеет базового класса.
 
@@ -63,7 +63,7 @@ class CFieldExchange
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдб. h
+**Заголовок:** афксдб.h
 
 ## <a name="cfieldexchangeisfieldtype"></a><a name="isfieldtype"></a>Кфиелдексчанже:: Исфиелдтипе
 
@@ -82,7 +82,7 @@ BOOL IsFieldType(UINT* pnField);
 
 Ненулевое значение, если текущая операция может быть выполнена с текущим полем или типом параметра.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте модель существующих функций RFX.
 
@@ -109,7 +109,7 @@ void SetFieldType(UINT nFieldType);
 
 - `CFieldExchange::inoutParam`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для элементов данных поля необходимо вызвать `SetFieldType` с параметром `CFieldExchange::outputColumn` , а затем с помощью вызовов функций RFX или массовы. Если вы не реализовали многострочную выборку строк, ClassWizard помещает этот `SetFieldType` вызов в раздел "Таблица соответствия полей" `DoFieldExchange` .
 

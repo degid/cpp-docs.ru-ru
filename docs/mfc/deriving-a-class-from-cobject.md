@@ -42,7 +42,7 @@ ms.locfileid: "84621940"
 
 ### <a name="macros-used-for-serialization-and-run-time-information"></a>Макросы, используемые для сериализации и сведения о времени выполнения
 
-|Используемый макрос|CObject:: IsKindOf|Крунтимекласс::<br /><br /> CreateObject|CArchive:: operator>><br /><br /> CArchive:: operator<<|
+|Используемый макрос|CObject:: IsKindOf|Крунтимекласс::<br /><br /> CreateObject|CArchive::operator>><br /><br /> CArchive::operator<<|
 |----------------|-----------------------|--------------------------------------|-------------------------------------------------------|
 |Основные `CObject` функциональные возможности|Нет|Нет|Нет|
 |`DECLARE_DYNAMIC`|Да|Нет|Нет|

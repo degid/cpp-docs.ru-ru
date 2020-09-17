@@ -49,7 +49,7 @@ class ATL_NO_VTABLE IGetDataSourceImpl : public IGetDataSource
 |-|-|
 |[GetDataSource](#getdatasource)|Возвращает указатель интерфейса на объекте источника данных, который создал сеанс.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это обязательный интерфейс в сеансе для получения указателя интерфейса на объект источника данных.
 
@@ -68,7 +68,7 @@ STDMETHOD(GetDataSource)(REFIID riid,
 
 См. раздел [ижетдатасаурце:: DataSource](/previous-versions/windows/desktop/ms725443(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полезно, если необходимо получить доступ к свойствам в объекте источника данных.
 

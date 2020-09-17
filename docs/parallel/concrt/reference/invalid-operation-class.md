@@ -29,11 +29,11 @@ class invalid_operation : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[invalid_operation](#ctor)|Перегружен. Создает объект `invalid_operation`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Различные методы, создающие это исключение, обычно документируют, в каких обстоятельствах они создают его.
 
@@ -45,7 +45,7 @@ class invalid_operation : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

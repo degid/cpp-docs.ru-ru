@@ -18,7 +18,7 @@ ms.locfileid: "77142464"
 
 ## <a name="example"></a>Пример
 
-В следующем примере объект `timer` используется для сообщения о ходе выполнения во время длительной операции. В этом примере объект `timer` связывается с объектом [Concurrency:: Call](../../parallel/concrt/reference/call-class.md) . Объект `call` выводит индикатор хода выполнения на консоль с постоянным интервалом. Метод [Concurrency:: Timer:: Start](reference/timer-class.md#start) запускает таймер в отдельном контексте. Функция `perform_lengthy_operation` вызывает функцию [Concurrency:: wait](reference/concurrency-namespace-functions.md#wait) в основном контексте для имитации длительной операции.
+В следующем примере объект `timer` используется для сообщения о ходе выполнения во время длительной операции. В этом примере объект `timer` связывается с объектом [concurrency::Call](../../parallel/concrt/reference/call-class.md) . Объект `call` выводит индикатор хода выполнения на консоль с постоянным интервалом. Метод [concurrency::Timer:: Start](reference/timer-class.md#start) запускает таймер в отдельном контексте. Функция `perform_lengthy_operation` вызывает функцию [concurrency::wait](reference/concurrency-namespace-functions.md#wait) в основном контексте для имитации длительной операции.
 
 [!code-cpp[concrt-report-progress#1](../../parallel/concrt/codesnippet/cpp/how-to-send-a-message-at-a-regular-interval_1.cpp)]
 

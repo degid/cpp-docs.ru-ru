@@ -50,7 +50,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 |----------|-----------------|
 |[Катлаутосреадмодулет:: Жетдефаултсреадс](#getdefaultthreads)|Эта статическая функция динамически вычисляет и возвращает максимальное количество потоков для модуля EXE в зависимости от числа процессоров.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс [катлаутосреадмодуле](../../atl/reference/catlautothreadmodule-class.md) является производным от `CAtlAutoThreadModuleT` , чтобы реализовать COM-сервер модели подразделения в пуле потоков. Он заменяет устаревший класс [ккомаутосреадмодуле](../../atl/reference/ccomautothreadmodule-class.md).
 
@@ -65,7 +65,7 @@ class ATL_NO_VTABLE CAtlAutoThreadModuleT : public IAtlAutoThreadModule
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlautothreadmoduletgetdefaultthreads"></a><a name="getdefaultthreads"></a>Катлаутосреадмодулет:: Жетдефаултсреадс
 
@@ -79,7 +79,7 @@ static int GetDefaultThreads();
 
 Число потоков, создаваемых в модуле EXE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, если вы хотите использовать другой метод для вычисления числа потоков. По умолчанию количество потоков зависит от количества процессоров.
 

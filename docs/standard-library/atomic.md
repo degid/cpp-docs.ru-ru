@@ -66,7 +66,7 @@ ms.locfileid: "87203907"
 #include <atomic>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 > [!NOTE]
 > В коде, компилируемом с помощью [/clr: pure](../build/reference/clr-common-language-runtime-compilation.md), этот заголовок блокируется. В Visual Studio 2017 и более поздних версиях не рекомендуется использовать **/clr: pure** и **/clr: Сейф** .

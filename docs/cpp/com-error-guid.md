@@ -29,7 +29,7 @@ GUID GUID( ) const throw( );
 
 Возвращает результат `IErrorInfo::GetGUID` для объекта `IErrorInfo`, записанного в объекте `_com_error`. Если `IErrorInfo` объект не записан, он возвращает `GUID_NULL`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Любой сбой при вызове метода `IErrorInfo::GetGUID` игнорируется.
 

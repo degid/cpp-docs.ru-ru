@@ -47,7 +47,7 @@ class CColorDialog : public CCommonDialog
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Кколордиалог::D Омодал](#domodal)|Отображает диалоговое окно цвета, позволяющее пользователю сделать выбор.|
 |[Кколордиалог:: "Color"](#getcolor)|Возвращает `COLORREF` структуру, содержащую значения выбранного цвета.|
@@ -107,7 +107,7 @@ class CColorDialog : public CCommonDialog
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдлгс. h
+**Заголовок:** афксдлгс.h
 
 ## <a name="ccolordialogccolordialog"></a><a name="ccolordialog"></a>Кколордиалог:: Кколордиалог
 

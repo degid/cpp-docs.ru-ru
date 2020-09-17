@@ -28,7 +28,7 @@ struct hash<basic_string_view<CharType, Traits>>
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хэш string_view равен хэшу базового строкового объекта.
 

@@ -74,7 +74,7 @@ class CSession
 |[Открыть](#open)|Открывает новый сеанс для объекта источника данных.|
 |[StartTransaction](#starttransaction)|Начинает новую транзакцию для этого сеанса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Один или несколько сеансов могут быть связаны с каждым соединением с поставщиком (источником данных), представленным объектом [CDataSource](../../data/oledb/cdatasource-class.md) . Чтобы создать новый объект `CSession` для `CDataSource` , вызовите [CSession:: Open](../../data/oledb/csession-open.md). Для начала транзакции базы данных `CSession` предоставляет `StartTransaction` метод. После запуска транзакции ее можно зафиксировать с помощью `Commit` метода или отменить с помощью `Abort` метода.
 
@@ -108,7 +108,7 @@ HRESULT Abort(BOID* pboidReason = NULL,
 void Close() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает `m_spOpenRowset` указатель.
 
@@ -132,7 +132,7 @@ HRESULT Commit(BOOL bRetaining = FALSE,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ITransaction:: Commit](/previous-versions/windows/desktop/ms713008(v=vs.85)).
 
@@ -154,7 +154,7 @@ HRESULT GetTransactionInfo(XACTTRANSINFO* pInfo) const throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ITransaction:: жеттрансактионинфо](/previous-versions/windows/desktop/ms714975(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -185,7 +185,7 @@ HRESULT Open(const CDataSource& ds,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Необходимо открыть объект источника данных с помощью [CDataSource:: Open](../../data/oledb/cdatasource-open.md) перед его передачей в `CSession::Open` .
 
@@ -210,7 +210,7 @@ HRESULT StartTransaction(ISOLEVEL isoLevel = ISOLATIONLEVEL_READCOMMITTED,
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [ITransactionLocal:: StartTransaction](/previous-versions/windows/desktop/ms709786(v=vs.85)) в *справочнике программиста OLE DB*.
 

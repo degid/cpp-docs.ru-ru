@@ -15,7 +15,7 @@ ms.locfileid: "79545303"
 ---
 # <a name="how-to-convert-systemstring-to-standard-string"></a>Практическое руководство. Преобразование строки System::String в стандартную строку
 
-<xref:System.String> можно преобразовать в `std::string` или `std::wstring`без использования `PtrToStringChars` в Вкклр. h.
+<xref:System.String> можно преобразовать в `std::string` или `std::wstring`без использования `PtrToStringChars` в Вкклр.h.
 
 ## <a name="example"></a>Пример
 

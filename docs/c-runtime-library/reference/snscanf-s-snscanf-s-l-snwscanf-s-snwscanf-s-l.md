@@ -115,7 +115,7 @@ int __cdecl _snwscanf_s_l(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта функция похожа на **sscanf_s** за исключением того, что она предоставляет возможность указать фиксированное число символов для проверки из входной строки. Дополнительные сведения см. в разделе [sscanf_s, _sscanf_s_l, swscanf_s, _swscanf_s_l](sscanf-s-sscanf-s-l-swscanf-s-swscanf-s-l.md).
 

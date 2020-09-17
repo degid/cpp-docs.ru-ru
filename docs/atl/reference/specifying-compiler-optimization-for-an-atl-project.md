@@ -49,7 +49,7 @@ class ATL_NO_VTABLE CProjName
 #define _ATL_DISABLE_NO_VTABLE
 ```
 
-в файле *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях) перед включением всех остальных файлов заголовков ATL.
+в файле *PCH.h* (*stdafx.h* в Visual Studio 2017 и более ранних версиях) перед включением всех остальных файлов заголовков ATL.
 
 ## <a name="see-also"></a>См. также
 

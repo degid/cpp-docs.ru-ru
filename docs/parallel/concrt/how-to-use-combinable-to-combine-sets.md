@@ -14,13 +14,13 @@ ms.locfileid: "77142119"
 ---
 # <a name="how-to-use-combinable-to-combine-sets"></a>Практическое руководство. Использование класса combinable для комбинирования наборов
 
-В этом разделе показано, как использовать класс [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) для расчета набора простых чисел.
+В этом разделе показано, как использовать класс [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) для расчета набора простых чисел.
 
 ## <a name="example"></a>Пример
 
 В следующем примере набор простых чисел вычисляются два раза. Каждое вычисление сохраняет результат в объекте [std:: битовом массиве](../../standard-library/bitset-class.md) . В примере сначала выполняется последовательное вычисление набора, а затем набор рассчитывается параллельно. В этом примере в консоль также выводится время, необходимое на выполнение обоих вычислений.
 
-В этом примере используется алгоритм [arallel_for Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for) и объект `combinable` для создания локальных наборов потока. Затем он использует метод [Concurrency:: combinable:: combine_each](reference/combinable-class.md#combine_each) для объединения локальных наборов потоков в окончательный набор.
+В этом примере используется алгоритм [arallel_for Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for) и объект `combinable` для создания локальных наборов потока. Затем он использует метод [concurrency::combinable:: combine_each](reference/combinable-class.md#combine_each) для объединения локальных наборов потоков в окончательный набор.
 
 [!code-cpp[concrt-parallel-combine-primes#1](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-combine-sets_1.cpp)]
 

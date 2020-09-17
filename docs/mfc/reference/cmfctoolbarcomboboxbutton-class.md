@@ -122,7 +122,7 @@ class CMFCToolBarComboBoxButton : public CMFCToolBarButton
 |[CMFCToolBarComboBoxButton::SetDropDownHeight](#setdropdownheight)|Устанавливает высоту выпадающих вниз поле списка.|
 |[CMFCToolBarComboBoxButton::SetFlatMode](#setflatmode)|Определяет, имеют ли кнопки комбо-коробки в приложении плоский вид.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы добавить кнопку комбо-коробки в панель инструментов, выполните следующие действия:
 
@@ -175,7 +175,7 @@ virtual INT_PTR AddItem(
 
 Индекс последнего элемента в поле списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не используйте этот метод при сортировке стиля коробки списка.
 
@@ -203,7 +203,7 @@ virtual INT_PTR AddSortedItem(
 
 Индекс элемента, который был добавлен в поле списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы добавить элементы в поле списка в определенном порядке.
 
@@ -245,7 +245,7 @@ CMFCToolBarComboBoxButton(
 *iWidth*<br/>
 (в) Ширина, в пикселях, новой кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ширина по умолчанию составляет 150 пикселей.
 
@@ -259,7 +259,7 @@ CMFCToolBarComboBoxButton(
 virtual void ClearData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод ничего не делает. Переопределить этот метод в производном классе, если вы хотите удалить любые данные, определяемые пользователем.
 
@@ -291,7 +291,7 @@ virtual int Compare(
 |0|Первая строка равна второй.|
 |> 0|Первая строка больше второй.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, чтобы изменить способ сортировки элементов в поле списка.
 
@@ -360,7 +360,7 @@ virtual CMFCToolBarComboBoxEdit* CreateEdit(
 
 Указатель на новую коробку для отогвечения, если метод был успешным; в противном случае, NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамочная система вызывает этот метод, когда создает новую коробку для комбо-бокса. Переопределить этот метод, чтобы изменить способ создания [CMFCToolBarComboBoxEdit.](../../mfc/reference/cmfctoolbarcomboboxedit-class.md)
 
@@ -389,7 +389,7 @@ BOOL DeleteItem(LPCTSTR lpszText);
 
 TRUE, если элемент был обнаружен и успешно удален; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttonduplicatedata"></a><a name="duplicatedata"></a>CMFCToolBarComboButton::DuplicateData
 
@@ -399,7 +399,7 @@ TRUE, если элемент был обнаружен и успешно уда
 virtual void DuplicateData();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод ничего не делает. Переопределить этот метод в производном классе, если вы хотите скопировать любые данные, определяемые пользователем.
 
@@ -416,7 +416,7 @@ virtual void EnableWindow(BOOL bEnable = TRUE);
 *bEnable*<br/>
 (в) TRUE для включения в него и комбо-коробок; FALSE отключить отодевать и комбо-боксы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При отключении элементы управления не могут стать активными и не могут принимать пользовательский ввод.
 
@@ -454,7 +454,7 @@ int FindItem(LPCTSTR lpszText) const;
 
 Индекс товара; или CB_ERR, если элемент не найден.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetbycmd"></a><a name="getbycmd"></a>CMFCToolBarComboButton::GetByCmd
 
@@ -478,7 +478,7 @@ static CMFCToolBarComboBoxButton* GetByCmd(
 
 Указатель на кнопку комбо-бокс; или NULL, если кнопка не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetcombobox"></a><a name="getcombobox"></a>CMFCToolBarComboButtonButton::GetComboBox
 
@@ -492,7 +492,7 @@ CComboBox* GetComboBox() const;
 
 Указатель на объект [класса CComboBox,](../../mfc/reference/ccombobox-class.md) если метод был успешным; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetcontextmenuid"></a><a name="getcontextmenuid"></a>CMFCToolBarComboBoxButton::GetContextMenuID
 
@@ -518,7 +518,7 @@ INT_PTR GetCount() const;
 
 Количество элементов в поле списка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetcountall"></a><a name="getcountall"></a>CMFCToolBarComboButtonButton::GetCountAll
 
@@ -537,7 +537,7 @@ static int GetCountAll(UINT uiCmd);
 
 Количество элементов в поле списка; в противном случае, CB_ERR, если кнопка комбо-бокс не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetcursel"></a><a name="getcursel"></a>CMFCToolBarComboButton::GetCurSel
 
@@ -551,7 +551,7 @@ int GetCurSel() const;
 
 Индекс выбранного в настоящее время элемента в поле списка; или CB_ERR, если нет элемента выбран.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс коробки списка обнуляется с нулевым уровнем.
 
@@ -572,7 +572,7 @@ static int GetCurSelAll(UINT uiCmd);
 
 Индекс выбранного в настоящее время элемента в поле списка; в противном случае, CB_ERR, если нет пункта выбран или кнопка комбо-бокс не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс коробки списка обнуляется с нулевым уровнем.
 
@@ -588,7 +588,7 @@ virtual CEdit* GetEditCtrl();
 
 Указатель на отославательную к коробке для отосващения, если метод был успешным; в противном случае, NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongethwnd"></a><a name="gethwnd"></a>CMFCToolBarComboButton::GetHwnd
 
@@ -619,7 +619,7 @@ LPCTSTR GetItem(int iIndex=-1) const;
 
 Указатель на строку, связанную с элементом; в противном случае, NULL, если параметр индекса является недействительным, или если параметр индекса -1 и нет выбранного элемента в комбо-коробке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр индекса -1 возвращает строку выбранного в настоящее время элемента.
 
@@ -645,7 +645,7 @@ static LPCTSTR GetItemAll(
 
 Указатель на строку элемента, если метод был успешным; в противном случае, NULL, если индекс недействителен, кнопка комбо-бокса не найдена, или если индекс -1 и нет выбранного элемента в комбо-коробке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение индекса -1 возвращает строку выбранного в настоящее время элемента.
 
@@ -666,7 +666,7 @@ DWORD_PTR GetItemData(int iIndex=-1) const;
 
 Данные, связанные с элементом; или 0, если элемент не существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр индекса -1 возвращает данные, связанные с выбранным в настоящее время элементом.
 
@@ -692,7 +692,7 @@ static DWORD_PTR GetItemDataAll(
 
 Данные, связанные с элементом, если метод был успешным; в противном случае 0, если указанный индекс не действителен, или CB_ERR, если кнопка комбо-бокса не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр индекса -1 возвращает данные, связанные с выбранным в настоящее время элементом.
 
@@ -718,7 +718,7 @@ static void* GetItemDataPtrAll(
 
 Указатель, связанный с элементом, если метод был успешным; в противном случае, -1, если ошибка происходит, или NULL, если кнопка комбо-бокс не найдена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongetprompt"></a><a name="getprompt"></a>CMFCToolBarComboButton::GetPrompt
 
@@ -732,7 +732,7 @@ virtual CString GetPrompt() const;
 
 Строка запроса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод в настоящее время не реализован.
 
@@ -748,7 +748,7 @@ LPCTSTR GetText() const;
 
 Текст в коробке редактирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttongettextall"></a><a name="gettextall"></a>CMFCToolBarComboButton::GetTextAll
 
@@ -767,7 +767,7 @@ static LPCTSTR GetTextAll(UINT uiCmd);
 
 Текст в коробке редактирования, если метод был успешным; в противном случае, NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttonhasfocus"></a><a name="hasfocus"></a>CMFCToolBarComboButton::HasFocus
 
@@ -781,7 +781,7 @@ virtual BOOL HasFocus() const;
 
 ПРАВДА, если комбо-бокс в настоящее время находится в центре внимания; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод также возвращает TRUE, если любое окно ребенка комбо-бокс в настоящее время находится в центре внимания.
 
@@ -797,7 +797,7 @@ static BOOL IsCenterVert();
 
 TRUE, если кнопки по центру; FALSE, если кнопки выровнены в верхней части.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttonisflatmode"></a><a name="isflatmode"></a>CMFCToolBarComboButton::IsFlatMode
 
@@ -811,7 +811,7 @@ static BOOL IsFlatMode();
 
 ПРАВДА, если кнопки имеют плоский стиль; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Плоский стиль по умолчанию для кнопок комбо-бокса FALSE.
 
@@ -844,7 +844,7 @@ BOOL IsRibbonButton() const;
 
 Всегда значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот метод всегда возвращает FALSE, что означает, что кнопка комбо-бокса никогда не отображается на ленточной панели.
 
@@ -968,7 +968,7 @@ virtual HBRUSH OnCtlColor(
 
 Ручка к кисти, что фреймворк использует для рисования фона кнопки комбо окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод также устанавливает цвет текста текста кнопки комбо коробки.
 
@@ -1120,7 +1120,7 @@ TRUE, если метод обрабатывает событие; в проти
 void RemoveAllItems();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет все элементы из коробки списка и отодевать управление комбо-коробкой.
 
@@ -1155,7 +1155,7 @@ BOOL SelectItem(LPCTSTR lpszText);
 
 ПРАВДА, если метод был успешным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttonselectitemall"></a><a name="selectitemall"></a>CMFCToolBarComboButton::SelectItemAll
 
@@ -1193,7 +1193,7 @@ static BOOL SelectItemAll(
 
 ПРАВДА, если метод был успешным; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctoolbarcomboboxbuttonserialize"></a><a name="serialize"></a>CMFCToolBarComboBoxButton::Serialize
 
@@ -1208,7 +1208,7 @@ virtual void Serialize(CArchive& ar);
 *ar*<br/>
 (в, вне) Объект `CArchive` для сериализации.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Настройки объекта `CArchive` определяют, читает ли этот метод или записывает в архив.
 
@@ -1247,7 +1247,7 @@ static void SetCenterVert(BOOL bCenterVert=TRUE);
 *bCenterVert*<br/>
 (в) TRUE для центра кнопки комбо-бокс в панели инструментов; FALSE выровнять кнопку комбо-бокс ажиотажа к верхней части панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию кнопки комбо-коробки выровнены к верху.
 
@@ -1277,7 +1277,7 @@ void SetDropDownHeight(int nHeight);
 *nВысота*<br/>
 (в) Высота, в пикселях, из списка поле.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Высота по умолчанию составляет 150 пикселей.
 
@@ -1294,7 +1294,7 @@ static void SetFlatMode(BOOL bFlat=TRUE);
 *bFlat*<br/>
 (в) TRUE для плоского стиля внешний вид; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Плоский стиль по умолчанию для кнопок комбо-бокса FALSE.
 
@@ -1311,7 +1311,7 @@ virtual void SetStyle(UINT nStyle);
 *nStyle*<br/>
 (в) Битовая комбинация (OR) стилей панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для списка стилей кнопок панели инструментов смотрите [стили управления панели инструментов](../../mfc/reference/toolbar-control-styles.md)
 

@@ -60,7 +60,7 @@ class basic_stringbuf : public basic_streambuf<Elem, Tr>
 *Tr*\
 Признаки символа, соответствующие основному элементу строки.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект размещается, расширяется и освобождается при необходимости для обеспечения соответствия изменениям в последовательности.
 
@@ -131,10 +131,10 @@ basic_stringbuf(
 *_mode*\
 Одно из перечислений в [ios_base::openmode](../standard-library/ios-base-class.md#openmode).
 
-*Ул*\
+*str*\
 Объект типа [basic_string](../standard-library/basic-string-class.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор сохраняет пустой указатель во всех указателях, управляющих входным и выходным буферами. Дополнительные сведения см. в разделе "Примечания" для [класса basic_streambuf](../standard-library/basic-streambuf-class.md). Он также хранит *_Mode* как режим stringbuf. Дополнительные сведения см. в разделе "Примечания" для [класса basic_stringbuf](../standard-library/basic-stringbuf-class.md).
 
@@ -181,7 +181,7 @@ virtual int_type overflow(int_type _Meta = traits_type::eof());
 
 Если функции не удалось выполниться успешно, возвращается значение `traits_type::eof`. В противном случае она возвращает **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если * \_Meta* не сравнивается с **traits_type::**[eof](../standard-library/char-traits-struct.md#eof), защищенная функция виртуального члена пытается вставить элемент **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type)*\_(Мета)* в буфер вывода. Это можно сделать разными способами.
 
@@ -206,7 +206,7 @@ virtual int_type pbackfail(int_type _Meta = traits_type::eof());
 
 Если функции не удалось выполниться успешно, возвращается значение `traits_type::eof`. В противном случае она возвращает **traits_type::**[not_eof](../standard-library/char-traits-struct.md#not_eof)(_ *Meta*).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *_Meta* сравнивает с **traits_type:**[eof](../standard-library/char-traits-struct.md#eof), элемент для отодвига на себя фактически тот, который уже находится в потоке перед текущим элементом. В противном случае этот элемент заменяется **байтом** = **traits_type::**[to_char_type](../standard-library/char-traits-struct.md#to_char_type) *(Мета*). Функция может передать элемент обратно различными способами.
 
@@ -248,7 +248,7 @@ virtual pos_type seekoff(
 
 Возвращает новую позицию или недопустимую позицию потока.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для объекта класса `basic_stringbuf<Elem, Tr, Alloc>` позиция потока состоит исключительно из смещения потока. Нулевое смещение обозначает первый элемент управляемой последовательности.
 
@@ -284,7 +284,7 @@ virtual pos_type seekpos(pos_type _Sp, ios_base::openmode _Mode = ios_base::in |
 
 Если функция успешно изменила одну или обе позиции потока, то она возвращает итоговую позицию потока. В противном случае она завершается неудачно и возвращает недопустимую позицию потока. Чтобы определить, является ли позиция в потоке недопустимой, сравните возвращаемое значение с `pos_type(off_type(-1))`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для объекта класса basic_stringbuf< **Elem**, **Tr**, `Alloc`> позиция потока состоит исключительно из смещения потока. Нулевое смещение обозначает первый элемент управляемой последовательности. Новая позиция определяется объектом *Sp*.
 
@@ -309,7 +309,7 @@ void str(
 
 Возвращает объект класса [basic_string](../standard-library/basic-string-class.md)\< **Elem**, **Tr**, Alloc **>,**, управляемая последовательность которого является копией последовательности, управляемой **\*this**.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция-член возвращает объект класса basic_string< **Elem**, **Tr**, `Alloc`>, управляемая последовательность которого является копией последовательности, управляемой **\*this**. Скопированная последовательность зависит от сохраненного режима stringbuf:
 
@@ -361,7 +361,7 @@ be
 typedef Tr traits_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для параметра-шаблона *Tr*.
 
@@ -377,7 +377,7 @@ virtual int_type underflow();
 
 Если функция не может быть успешной, она **возвращается traits_type::**[eof](../standard-library/char-traits-struct.md#eof). В противном случае она возвращает текущий элемент во входном потоке, который был преобразован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Защищенная функция виртуального члена пытается `byte` извлечь текущий элемент из буфера ввода, продвинуть текущее положение потока и вернуть элемент в виде **traits_type::**[to_int_type](../standard-library/char-traits-struct.md#to_int_type) **(байт).** Он может сделать это одним способом: если `byte` позиция чтения доступна, он принимает как элемент, хранящийся в положении чтения и продвигает следующий указатель для буфера ввода.
 
@@ -394,14 +394,14 @@ void basic_stringbuf<T>::swap(basic_stringbuf& other)
 *Других*\
 Буфер basic_stringbuf, содержимое которого будет заменено содержимым этого буфера basic_stringbuf.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="basic_stringbufoperator"></a><a name="op_eq"></a>basic_stringbuf:оператор
 
 Назначает содержимое basic_stringbuf справа от оператора функции basic_stringbuf слева.
 
 ```cpp
-basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
+basic_stringbuf& basic_stringbuf::operator=(const basic_stringbuf& other)
 ```
 
 ### <a name="parameters"></a>Параметры
@@ -409,7 +409,7 @@ basic_stringbuf& basic_stringbuf:: operator=(const basic_stringbuf& other)
 *Других*\
 basic_stringbuf, содержимое которого, включая признаки языкового стандарта, будут назначены функции stringbuf слева от оператора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

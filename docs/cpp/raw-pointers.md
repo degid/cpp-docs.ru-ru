@@ -102,7 +102,7 @@ int main()
     MyClass* pmc = :::no-loc(new)::: MyClass{ 108, "Nick" };
 
     // Prints the memory address. Usually not what you want.
-    std:: cout << pmc << std::endl;
+    std::cout << pmc << std::endl;
 
     // Copy the pointed-to object by dereferencing the pointer
     // to access the contents of the memory location.

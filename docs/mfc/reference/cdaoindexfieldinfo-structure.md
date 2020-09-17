@@ -48,7 +48,7 @@ struct CDaoIndexFieldInfo
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдао. h
+**Заголовок:** афксдао.h
 
 ## <a name="see-also"></a>См. также:
 

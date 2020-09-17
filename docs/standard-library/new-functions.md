@@ -21,7 +21,7 @@ ms.locfileid: "87212180"
 new_handler get_new_handler() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает текущий `new_handler`.
 
@@ -34,14 +34,14 @@ template <class T>
 
 ### <a name="parameters"></a>Параметры
 
-*указатель*\
+*ptr*\
 Адрес байта в памяти, в котором содержится объект, тип которого аналогичен *T*.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Значение типа *T \* * , указывающее на X.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Также называется барьером оптимизации указателя.
 
@@ -67,7 +67,7 @@ const int c = std::launder(p)->n; // OK
 extern const std::nothrow_t nothrow;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект используется в качестве аргумента функции для соответствия типу параметра [std::nothrow_t](../standard-library/nothrow-t-structure.md).
 
@@ -92,7 +92,7 @@ new_handler set_new_handler(new_handler Pnew) throw();
 
 0 для первого вызова и предыдущее `new_handler` при последующих вызовах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция сохраняет *Пнев* в статическом новом указателе [обработчика](../standard-library/new-typedefs.md#new_handler) , который он обслуживает, а затем возвращает значение, сохраненное ранее в указателе. Новый обработчик используется [оператором new](../standard-library/new-operators.md#op_new)(**size_t**).
 

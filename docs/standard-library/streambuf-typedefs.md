@@ -25,7 +25,7 @@ ms.locfileid: "88843200"
 typedef basic_streambuf<char, char_traits<char>> streambuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для шаблона класса [basic_streambuf](../standard-library/basic-streambuf-class.md), специализированного для элементов типа **`char`** с признаками символа по умолчанию.
 
@@ -37,7 +37,7 @@ typedef basic_streambuf<char, char_traits<char>> streambuf;
 typedef basic_streambuf<wchar_t, char_traits<wchar_t>> wstreambuf;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот тип является синонимом для шаблона класса [basic_streambuf](../standard-library/basic-streambuf-class.md), специализированного для элементов типа **`wchar_t`** с признаками символа по умолчанию.
 

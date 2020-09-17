@@ -35,7 +35,7 @@ ms.locfileid: "80171402"
 #include <stdlib.h>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эти константы определяют максимальную длину пути и отдельных полей в пути.
 

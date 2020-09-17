@@ -130,7 +130,7 @@ class CMFCCaptionBar : public CPane
 |[CMFCCaptionBar::m_clrBarBorder](#m_clrbarborder)|Цвет границы панели подписи.|
 |[CMFCCaptionBar::m_clrBarText](#m_clrbartext)|Цвет текста заголовка бара.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы создать панель подписей, выполните следующие действия:
 
@@ -205,7 +205,7 @@ TRUE, если панель подписей находится в режиме 
 
 TRUE, если контроль подписи бар создан успешно; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы строите `CMFCCaptionBar` объект в два этапа. Сначала вы вызываете конструктор, а `Create` затем вызываете метод, который создает управление `CMFCCaptionBar` Windows и прикрепляет его к объекту.
 
@@ -221,7 +221,7 @@ virtual BOOL DoesAllowDynInsertBefore() const;
 
 Возвращает FALSE, если не переопределена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccaptionbarenablebutton"></a><a name="enablebutton"></a>CMFCCaptionBar::EnableButton
 
@@ -253,7 +253,7 @@ BarElementAlignment GetAlignment(BarElement elem);
 
 Выравнивание элемента, например кнопки, битовой карты, текста или значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выравнивание элемента может быть одним из следующих значений:
 
@@ -313,7 +313,7 @@ BOOL IsMessageBarMode() const;
 
 TRUE, если панель подписей находится в режиме панели сообщений; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В режиме панели сообщений панель подписей отображает изображение с набором инструментов, текстом сообщения и кнопкой.
 
@@ -359,7 +359,7 @@ virtual void OnDrawBackground(
 *rect*<br/>
 (в) Ограничивающий прямоугольник для заполнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод `OnDrawBackground` вызывается, когда фон панели подписей вот-вот будет заполнен. Реализация по умолчанию заполняет фон с помощью [CMFCCaptionBar::m_clrBarBackground](#m_clrbarbackground) цвет.
 
@@ -383,7 +383,7 @@ virtual void OnDrawBorder(
 *rect*<br/>
 (в) Ограничивающий прямоугольник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию границы имеют плоский стиль.
 
@@ -415,7 +415,7 @@ virtual void OnDrawButton(
 *bВСтои*<br/>
 (в) TRUE, если кнопка включена; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид кнопки заголовка.
 
@@ -437,7 +437,7 @@ virtual void OnDrawImage(
 *rect*<br/>
 (в) Определяет ограничивающий прямоугольник изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод `CMFCCaptionBar` в производном классе, чтобы настроить внешний вид изображения.
 
@@ -463,7 +463,7 @@ virtual void OnDrawText(
 *strText*<br/>
 (в) Текстовая строка для отображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию отображает `CDC::DrawText` текст с помощью и [CMFCCaptionBar::m_clrBarText](#m_clrbartext) цвет.
 
@@ -485,7 +485,7 @@ void RemoveBitmap();
 void RemoveButton();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Расположение элементов панели подписей корректируется автоматически.
 
@@ -537,7 +537,7 @@ void SetBitmap(
 *bmpВыравнива*<br/>
 (в) Выравнивание бит-карты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы установить битную карту на панели заголовков.
 
@@ -654,7 +654,7 @@ void SetIcon(
 *iconAlignment*<br/>
 (в) Выравнивание значка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Подписи бары могут отображать либо значки или bitmaps. Смотрите [CMFCCaptionBar::SetBitmap,](#setbitmap) чтобы узнать, как отобразить бит-карту. Если вы установите иконку и битную карту, значок всегда отображается. Позвоните [CMFCCaptionBar::RemoveIcon,](#removeicon) чтобы удалить значок из панели подписей.
 
@@ -717,7 +717,7 @@ void SetText(
 *textAlignment*<br/>
 (в) Выравнивание текста.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Текстовая метка выравнивается по параметру *textAlignment.* Это может быть одно `BarElementAlignment` из следующих значений:
 

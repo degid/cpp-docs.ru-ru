@@ -50,13 +50,13 @@ ms.locfileid: "88840262"
 
 1. В Scribble. cpp убедитесь, что `CScribbleApp::InitInstance` включает вызов [афксолеинит](../mfc/reference/ole-initialization.md#afxoleinit).
 
-1. Добавьте следующий код в файл *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях):
+1. Добавьте следующий код в файл *PCH.h* (*stdafx.h* в Visual Studio 2017 и более ранних версиях):
 
     ```cpp
     #include <afxcontrolbars.h>
     ```
 
-1. В Scribble. h измените определение `CScribbleApp` класса таким образом, чтобы оно было производным от [класса CWinAppEx](../mfc/reference/cwinappex-class.md).
+1. В Scribble.h измените определение `CScribbleApp` класса таким образом, чтобы оно было производным от [класса CWinAppEx](../mfc/reference/cwinappex-class.md).
 
     ```cpp
     class CScribbleApp: public CWinAppEx
@@ -71,15 +71,15 @@ ms.locfileid: "88840262"
 
 1. Основной фрейм для приложения с многодокументным интерфейсом (MDI) больше не является производным от `CMDIFrameWnd` класса. Вместо этого он является производным от класса [CMDIFrameWndEx](../mfc/reference/cmdiframewndex-class.md) .
 
-    В файлах маинфрм. h и маинфрм. cpp замените все ссылки на `CMDIFrameWnd` `CMDIFrameWndEx` .
+    В файлах маинфрм.h и маинфрм. cpp замените все ссылки на `CMDIFrameWnd` `CMDIFrameWndEx` .
 
-1. В файлах чилдфрм. h и чилдфрм. cpp замените `CMDIChildWnd` на `CMDIChildWndEx` .
+1. В файлах чилдфрм.h и чилдфрм. cpp замените `CMDIChildWnd` на `CMDIChildWndEx` .
 
-    В чилдфрм. h файл, замените `CSplitterWnd` на `CSplitterWndEx` .
+    В чилдфрм.h файл, замените `CSplitterWnd` на `CSplitterWndEx` .
 
 1. Измените панели инструментов и строки состояния, чтобы они использовали новые классы MFC.
 
-    В файле маинфрм. h:
+    В файле маинфрм.h:
 
     1. Замените `CToolBar` на `CMFCToolBar`.
 
@@ -208,11 +208,11 @@ ms.locfileid: "88840262"
 
 ## <a name="creating-an-instance-of-the-ribbon-bar"></a><a name="createinstance"></a> Создание экземпляра панели ленты
 
-В следующих шагах показано, как создать экземпляр панели ленты при запуске приложения. Чтобы добавить в приложение ленту, объявите панель ленты в файле маинфрм. h. Затем в файле маинфрм. cpp напишите код для загрузки ресурса ленты.
+В следующих шагах показано, как создать экземпляр панели ленты при запуске приложения. Чтобы добавить в приложение ленту, объявите панель ленты в файле маинфрм.h. Затем в файле маинфрм. cpp напишите код для загрузки ресурса ленты.
 
 ### <a name="to-create-an-instance-of-the-ribbon-bar"></a>Создание экземпляра панели ленты
 
-1. В файле маинфрм. h добавьте член данных в защищенный раздел `CMainFrame` определения класса для основного фрейма. Этот элемент относится к панели ленты.
+1. В файле маинфрм.h добавьте член данных в защищенный раздел `CMainFrame` определения класса для основного фрейма. Этот элемент относится к панели ленты.
 
     ```cpp
     // Ribbon bar for the application

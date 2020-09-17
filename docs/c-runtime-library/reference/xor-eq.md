@@ -41,7 +41,7 @@ ms.locfileid: "80170115"
 #define xor_eq ^=
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор ^=.
 
@@ -76,4 +76,4 @@ int main( )
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

@@ -40,4 +40,4 @@ public enum BufferCommand
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксвинформс. h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
+**Заголовок:** афксвинформс.h (определяется в atlmfc\lib\mfcmifc80.dll сборки)

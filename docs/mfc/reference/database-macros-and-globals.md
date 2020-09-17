@@ -51,7 +51,7 @@ ms.locfileid: "88837531"
 void AFXAPI AfxDbInitModule( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Убедитесь, что этот вызов происходит до любого вызова базового класса или любого добавленного кода, который обращается к библиотеке DLL базы данных MFC. Библиотека DLL базы данных MFC является библиотекой DLL расширения MFC. чтобы библиотека DLL расширения MFC была подключена к `CDynLinkLibrary` цепочке, она должна создать `CDynLinkLibrary` объект в контексте каждого модуля, который будет его использовать. `AfxDbInitModule` создает `CDynLinkLibrary` объект в контексте обычной библиотеки DLL MFC, чтобы он был подключен в `CDynLinkLibrary` цепочке объектов обычной библиотеки DLL MFC.
 
@@ -72,7 +72,7 @@ AFX_ODBC_CALL(SQLFunc)
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения о функциях API ODBC см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AFX_ODBC_CALL` многократно вызывает функцию, пока она больше не возвращает значение `SQL_STILL_EXECUTING` .
 
@@ -88,7 +88,7 @@ AFX_ODBC_CALL(SQLFunc)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксдб. h
+**Заголовок:** афксдб.h
 
 ## <a name="afx_sql_async"></a><a name="afx_sql_async"></a> AFX_SQL_ASYNC
 
@@ -106,7 +106,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения о функциях API ODBC см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AFX_SQL_ASYNC` просто вызывает макрос [AFX_ODBC_CALL](#afx_odbc_call) и игнорирует параметр *вытягивание* . В версиях MFC до 4,2 использовался `AFX_SQL_ASYNC` для вызова функций API ODBC, которые могут возвращать `SQL_STILL_EXECUTING` . Если функция API ODBC возвращала `SQL_STILL_EXECUTING` , `AFX_SQL_ASYNC` вызовите `prs->OnWaitForDataSource` .
 
@@ -115,7 +115,7 @@ AFX_SQL_ASYNC(prs, SQLFunc)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдб. h
+  **Заголовок** афксдб.h
 
 ## <a name="afx_sql_sync"></a><a name="afx_sql_sync"></a> AFX_SQL_SYNC
 
@@ -130,7 +130,7 @@ AFX_SQL_SYNC(SQLFunc)
 *склфунк*<br/>
 Функция API ODBC. Дополнительные сведения об этих функциях см. в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос для вызова функций ODBC API, которые не будут возвращать `SQL_STILL_EXECUTING` .
 
@@ -146,7 +146,7 @@ AFX_SQL_SYNC(SQLFunc)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдб. h
+  **Заголовок** афксдб.h
 
 ## <a name="afxgethenv"></a><a name="afxgethenv"></a> афксжесенв
 
@@ -162,7 +162,7 @@ HENV AFXAPI AfxGetHENV();
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдб. h
+  **Заголовок** афксдб.h
 
 ## <a name="see-also"></a>См. также раздел
 

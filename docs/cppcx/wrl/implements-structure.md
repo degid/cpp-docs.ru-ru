@@ -109,7 +109,7 @@ struct __declspec(novtable) Implements<
 *Флаги*<br/>
 Конфигурация флагов для класса. Один или несколько [перечислений RuntimeClassType,](runtimeclasstype-enumeration.md) указанные в структуре [RuntimeClassFlags.](runtimeclassflags-structure.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Выводится из списка указанных интерфейсов и реализует `QueryInterface` `GetIid`шаблоны помощников для и .
 
@@ -180,7 +180,7 @@ __forceinline HRESULT CanCastTo(
 
 S_OK в случае успеха; в противном случае, HRESULT, который указывает на ошибку, такие как E_NOINTERFACE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это внутренняя функция помощника, выполняющего операцию QueryInterface.
 
@@ -196,7 +196,7 @@ __forceinline IUnknown* CastToUnknown();
 
 Эта операция всегда удается `IUnknown` и возвращает указатель.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Внутренняя вспомогательная функция.
 
@@ -219,7 +219,7 @@ __forceinline static void FillArrayWithIid(
 *iids*<br/>
 Массив типа IID.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Внутренняя вспомогательная функция.
 

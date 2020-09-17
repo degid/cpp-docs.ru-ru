@@ -312,7 +312,7 @@ class CHtmlView : public CFormView
 |[CHtmlView::SetWidth](#setwidth)|Задает ширину главного окна Internet Explorer.|
 |[CHtmlView::Стоп](#stop)|Останавливает открытие файла.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Элемент управления WebBrowser — это окно, в котором пользователь может просматривать сайты в Интернете, а также папки в локальной файловой системе и в сети. Элемент управления WebBrowser поддерживает гиперссылки и переход по URL-адресам. Кроме того, в нем ведется список журнала.
 
@@ -431,7 +431,7 @@ CLSID управления, который будет размещен
 
 Возвращает TRUE на успех, FALSE на неудачу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете переопределить эту функцию участника, чтобы вернуть экземпляр вашего собственного класса сайта управления.
 
@@ -461,7 +461,7 @@ HRESULT ExecFormsCommand(
 
 Стандартное значение HRESULT. Полный список возможных значений можно узнать в комплекте с [IOleCommandTarget::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec) в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `ExecFormsCommand`реализует поведение метода [IOleCommandTarget::Exec.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec)
 
@@ -491,7 +491,7 @@ void ExecWB(
 *pvaOut*<br/>
 Вариант, используемый для указания аргументов вывода команд.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IWebBrowser2::ExecWB](/previous-versions//aa752117\(v=vs.85\)) в SDK Windows.
 
@@ -507,7 +507,7 @@ BOOL GetAddressBar() const;
 
 Nonzero, если адресная панель видна; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -523,7 +523,7 @@ LPDISPATCH GetApplication() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа. Дополнительные сведения см. в разделе [Implementing the IDispatch Interface](/previous-versions/windows/desktop/automat/implementing-the-idispatch-interface).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -539,7 +539,7 @@ BOOL GetBusy() const;
 
 Nonzero, если веб-браузер занят; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -555,7 +555,7 @@ LPDISPATCH GetContainer() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -571,7 +571,7 @@ CString GetFullName() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий путь и имя отображаемого файла. Если пути и имя `GetFullName` файла `CString`не существует, возвращаетпустое .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -587,7 +587,7 @@ BOOL GetFullScreen() const;
 
 Nonzero, если WebBrowser работает в полноэкранном режиме; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В полноэкранном режиме, Основное окно Internet Explorer максимизируется и статус бар, панель инструментов, меню бар, и название бар скрыты.
 
@@ -617,7 +617,7 @@ LPDISPATCH GetHtmlDocument() const;
 
 Указатель на `IDispatch` интерфейс объекта активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -633,7 +633,7 @@ long GetLeft() const;
 
 Расстояние с левым краем, в пикселях.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -649,7 +649,7 @@ CString GetLocationName() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий имя ресурса, в настоящее время отображаемый в WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ресурс является HTML-страницей во Всемирной паутине, название — это название этой страницы. Если ресурс представляет собой папку или файл в сети или локальном компьютере, то имя — ЭТО КООН или полный путь папки или файла.
 
@@ -667,7 +667,7 @@ CString GetLocationURL() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий URL ресурса, в настоящее время отображаемый в WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если ресурс представляет собой папку или файл в сети или локальном компьютере, то имя — ЭТО КООН или полный путь папки или файла.
 
@@ -685,7 +685,7 @@ BOOL GetMenuBar() const;
 
 Nonzero, если панель меню видна; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -701,7 +701,7 @@ BOOL GetOffline() const;
 
 Nonzero, если веб-браузер в настоящее время в автономном режиме; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -717,7 +717,7 @@ LPDISPATCH GetParentBrowser() const;
 
 Указатель на `IDispatch` интерфейс объекта, который является родителем управления WebBrowser.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -745,7 +745,7 @@ COleVariant GetProperty(LPCTSTR lpszProperty);
 
 В первой версии, ненулевой, если завершен успешно; в противном случае ноль. Во второй версии объект [COleVariant.](../../mfc/reference/colevariant-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -761,7 +761,7 @@ READYSTATE GetReadyState() const;
 
 Значение [READYSTATE,](/previous-versions//aa768362\(v=vs.85\)) описанное в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -777,7 +777,7 @@ BOOL GetRegisterAsBrowser() const;
 
 Nonzero, если браузер зарегистрирован как браузер верхнего уровня; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -793,7 +793,7 @@ BOOL GetRegisterAsDropTarget() const;
 
 Nonzero, если браузер зарегистрирован в качестве целевой капли; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -809,7 +809,7 @@ BOOL GetSilent() const;
 
 Nonzero, если диалоговые коробки не могут отображаться из управления WebBrowser; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -830,7 +830,7 @@ BOOL GetSource(CString& strRef);
 *refString*<br/>
 [CString,](../../atl-mfc-shared/reference/cstringt-class.md) который будет держать исходный код.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция эквивалентна команде "Источник просмотра" в Internet Explorer, за `CString`исключением того, что исходный код возвращается в .
 
@@ -846,7 +846,7 @@ BOOL GetStatusBar() const;
 
 Nonzero, если может отображаться панель статуса; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -862,7 +862,7 @@ BOOL GetTheaterMode() const;
 
 Nonzero, если веб-браузер находится в режиме театра; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда веб-браузер находится в режиме театра, основное окно браузера заполняет весь экран, появляется панель инструментов с минимальным набором навигационных инструментов, а в правом верхнем углу экрана появляется строка статуса.
 
@@ -892,7 +892,7 @@ long GetTop() const;
 
 Адрес переменной, которая получает координаты экрана верхнего края основного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -908,7 +908,7 @@ BOOL GetTopLevelContainer() const;
 
 Nonzero контейнер верхнего уровня контейнера; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -924,7 +924,7 @@ CString GetType() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий имя типа содержащегося активного документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -940,7 +940,7 @@ BOOL GetVisible() const;
 
 Nonzero, если объект виден; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -964,7 +964,7 @@ long GetWidth() const;
 void GoBack();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -984,7 +984,7 @@ void GoForward();
 void GoHome();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -996,7 +996,7 @@ void GoHome();
 void GoSearch();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -1021,7 +1021,7 @@ BOOL LoadFromResource(UINT nRes);
 
 Ненулевое значение в случае успеха, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -1059,7 +1059,7 @@ void Navigate(
 *dwPostDataLen*<br/>
 Данные для отправки с транзакцией HTTP POST. Например, транзакция POST используется для отправки данных, собранных в форме HTML. Если этот параметр не указывает `Navigate` какие-либо данные о публикации, выдает транзакцию HTTP GET. Этот параметр игнорируется, если *URL* не является URL HTTP.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -1115,7 +1115,7 @@ void Navigate2(
 *baPostedData*<br/>
 Ссылка на объект [CByteArray.](../../mfc/reference/cbytearray-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена `Navigate` расширяет функцию участника, поддерживая просмотр специальных папок, таких как Desktop и My Computer, которые представлены параметром *pIDL.*
 
@@ -1190,7 +1190,7 @@ virtual void OnDocumentComplete(LPCTSTR lpszURL);
 *lpszURL*<br/>
 Указатель на строку, которая оценивает URL, имя файла КООН или PIDL (указатель на список идентификаторов элементов), который был переориентирован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не каждый кадр будет заготавливать это событие, но `OnDocumentComplete` каждый кадр, который запускает событие [OnDownloadBegin,](#ondownloadbegin) будет заготавливать соответствующее событие.
 
@@ -1213,7 +1213,7 @@ virtual HRESULT OnDocWindowActivate(BOOL fActivate);
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnDocWindowActivate` `OnDocWindowActivate` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [данных IDocHostUIHandler::OnDocWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753261\(v=vs.85\)) в SDK Windows.
 
@@ -1225,7 +1225,7 @@ S_OK в случае успеха или в противном случае ко
 virtual void OnDownloadBegin();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это событие будет запущено вскоре после события [OnBeforeNavigate2,](#onbeforenavigate2) если только навигация не отменена. Любая анимация или "занят" указание на то, что контейнер должен отображаться, должна быть подключена к этому событию.
 
@@ -1254,7 +1254,7 @@ virtual HRESULT OnEnableModeless(BOOL fEnable);
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Включает или отсваивает бесрежимные диалоговые ящики, когда контейнер создает или разрушает модальный диалоговый ящик. Переутомляйте `OnEnableModeless` `EnableModeless` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::EnableModeless](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753253\(v=vs.85\)) в SDK Windows.
 
@@ -1280,7 +1280,7 @@ virtual HRESULT OnFilterDataObject(
 
 S_OK, если объект данных заменен, S_FALSE, если объект данных не будет заменен, или код ошибки, определяемый OLE, если произошла ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnFilterDataObject` `FilterDataObject` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::FilterDataObject](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753254\(v=vs.85\)) в SDK Windows.
 
@@ -1301,7 +1301,7 @@ virtual HRESULT OnFrameWindowActivate(BOOL fActivate);
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnFrameWindowActivate` `OnFrameWindowActivate` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [сообщении IDocHostUIHandler::OnFrameWindowActivate](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753262\(v=vs.85\)) в SDK Windows.
 
@@ -1340,7 +1340,7 @@ virtual HRESULT OnGetDropTarget(
 
 Смотрите [IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в SDK Windows для списка кодов возврата.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnGetDropTarget` `GetDropTarget` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как получить дополнительную информацию, читайте в [сообщении IDocHostUIHandler::GetDropTarget](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753255\(v=vs.85\)) в SDK Windows.
 
@@ -1361,7 +1361,7 @@ virtual HRESULT OnGetExternal(LPDISPATCH* lppDispatch);
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnGetExternal` `GetExternal` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::GetExternal](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753256\(v=vs.85\)) в Windows SDK.
 
@@ -1382,7 +1382,7 @@ virtual HRESULT OnGetHostInfo(DOCHOSTUIINFO* pInfo);
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnGetHostInfo` `GetHostInfo` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о [компании IDocHostUIHandler::GetHostInfo](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753257\(v=vs.85\)) в SDK Windows.
 
@@ -1408,7 +1408,7 @@ virtual HRESULT OnGetOptionKeyPath(
 
 S_OK, если успешно, или S_FALSE иным образом. Если S_FALSE, Internet Explorer или MSHTML будет по умолчанию для своих собственных вариантов пользователя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnGetOptionKeyPath` `GetOptionKeyPath` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как получить информацию, читайте в [фото: GetOptionKeyPath](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753258\(v=vs.85\)) в SDK Windows.
 
@@ -1424,7 +1424,7 @@ virtual HRESULT OnHideUI();
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnHideUI` `HideUI` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::HideUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753259\(v=vs.85\)) в SDK Windows.
 
@@ -1454,7 +1454,7 @@ virtual void OnNavigateComplete2(LPCTSTR strURL);
 *strURL*<br/>
 Выражение строки, которое оценивает URL, имя файла КООН или PIDL (указатель на список идентификаторов элементов), по которым было переориентируется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр URL может быть PIDL в случае объекта пространства имени оболочки, для которого нет представления URL.
 
@@ -1486,7 +1486,7 @@ URL-адрес, для которого навигация не удалась.
 *pbОтмен*<br/>
 Уточняется, следует ли отменить навигацию на странице ошибки или на любой дальнейший автопоиск. Если TRUE (по умолчанию), продолжить навигацию на страницу ошибки или автопоиска; если FALSE, отменить навигацию на странице ошибки или автопоиска.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, чтобы обеспечить обработку ошибок на пользовательской навигации.
 
@@ -1510,7 +1510,7 @@ virtual void OnNewWindow2(
 *Отмена*<br/>
 Указатель на флаг отмены. Приложение может установить этот параметр на ненулевой, чтобы отменить навигационную операцию, или до нуля, чтобы позволить ей продолжить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это событие предшествует созданию нового окна из WebBrowser.
 
@@ -1532,7 +1532,7 @@ virtual void OnProgressChange(
 *nProgressMax*<br/>
 Максимальное значение прогресса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Контейнер может использовать информацию, предоставленную этим событием, для отображения количества байтов, загруженных до сих пор, или для обновления индикатора прогресса.
 
@@ -1583,7 +1583,7 @@ virtual HRESULT OnResizeBorder(
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnResizeBorder` `ResizeBorder` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о том, как ознакомиться с информацией, читайте в [сообщении IDocHostUIHandler::ResizeBorder](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753263\(v=vs.85\)) в SDK Windows.
 
@@ -1617,7 +1617,7 @@ virtual HRESULT OnShowContextMenu(
 
 Смотрите [IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в SDK Windows для списка значений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnShowContextMenu` `ShowContextMenu` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::ShowContextMenu](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753264\(v=vs.85\)) в SDK Windows.
 
@@ -1655,7 +1655,7 @@ virtual HRESULT OnShowUI(
 
 Смотрите [IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в SDK Windows для списка значений.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnShowUI` `ShowUI` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::ShowUI](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753265\(v=vs.85\)) в SDK Windows.
 
@@ -1711,7 +1711,7 @@ virtual void OnTitleChange(LPCTSTR lpszText);
 *lpszText*<br/>
 Новое название документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для HTML название может измениться; в то время как HTML все еще загружается, URL документа устанавливается как заголовок. После того, как реальное название (если он есть) будет разогнано из HTML, название изменяется, чтобы отразить фактическое название.
 
@@ -1754,7 +1754,7 @@ virtual HRESULT OnTranslateAccelerator(
 
 S_OK, если успешно, или S_FALSE иным образом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnTranslateAccelerator` `TranslateAccelerator` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в фотоэлектронном фото [iDocHostUIHandler::TranslateAccelerator](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753266\(v=vs.85\)) в SDK Windows.
 
@@ -1784,7 +1784,7 @@ virtual HRESULT OnTranslateUrl(
 
 `S_OK`если URL был переведен, S_FALSE если URL не был переведен, или код ошибки, определяемый OLE, если произошла ошибка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переутомляйте `OnTranslateUrl` `TranslateUrl` реагировать на уведомление от управления веб-браузера Майкрософт. Подробнее о ней читайте в [сообщении IDocHostUIHandler::TranslateUrl](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753267\(v=vs.85\)) в SDK Windows.
 
@@ -1800,7 +1800,7 @@ virtual HRESULT OnUpdateUI();
 
 S_OK в случае успеха или в противном случае код ошибки, определяемый OLE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Хост должен обновить состояние кнопок панели инструментов. Этот метод вызывается независимо от `ShowUI`значения возврата от . Переутомляйте `OnUpdateUI` `UpdateUI` реагировать на уведомление от управления веб-браузера Майкрософт.
 
@@ -1817,7 +1817,7 @@ virtual void OnVisible(BOOL bVisible);
 *bVisible*<br/>
 Nonzero, если объект виден или ноль в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это позволяет окну управления объектом вести себя так же, как и окно Internet Explorer.
 
@@ -1870,7 +1870,7 @@ void PutProperty(
 *nValue*<br/>
 Новое значение свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -1904,7 +1904,7 @@ HRESULT QueryFormsCommand(
 
 Стандартное значение HRESULT. Полный список возможных значений можно узнать на примере [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `QueryFormsCommand`реализует поведение метода [IOleCommandTarget::QueryStatus.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus)
 
@@ -1925,7 +1925,7 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 
 Адрес значения [OLECMDF,](/windows/win32/api/docobj/ne-docobj-olecmdf) который получает статус команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `QueryStatusWB`реализует поведение метода [IOleCommandTarget::QueryStatus.](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus)
 
@@ -1939,7 +1939,7 @@ OLECMDF QueryStatusWB(OLECMDID cmdID) const;
 void Refresh();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Refresh`не содержит параметров для установки уровня обновления.
 
@@ -1958,7 +1958,7 @@ void Refresh2(int nLevel);
 *nУровень*<br/>
 Адрес переменной, определяющей уровень обновления. Возможные переменные определяются в [RefreshConstants,](/previous-versions/aa768363\(v=vs.85\))в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отличие `Refresh2` от [Refresh,](#refresh)содержит параметр, который определяет уровень обновления.
 
@@ -1977,7 +1977,7 @@ void SetAddressBar(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero, чтобы показать адресную панель; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -1994,7 +1994,7 @@ void SetFullScreen(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero для полноэкранного режима; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В полноэкранном режиме, Основное окно Internet Explorer максимизируется и статус бар, панель инструментов, меню бар, и название бар скрыты.
 
@@ -2013,7 +2013,7 @@ void SetHeight(long nNewValue);
 *nNewValue*<br/>
 Высота, в пикселях, главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2043,7 +2043,7 @@ void SetMenuBar(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero, чтобы показать меню бар; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -2060,7 +2060,7 @@ void SetOffline(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero для чтения из локального кэша; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В автономном режиме браузер читает HTML-страницы из локального кэша, а не из исходного документа.
 
@@ -2079,7 +2079,7 @@ void SetRegisterAsBrowser(BOOL bNewValue);
 *bNewValue*<br/>
 Определяет, зарегистрирован ли Internet Explorer как браузер верхнего уровня. Если ненулевой, веб-браузер зарегистрирован как браузер верхнего уровня; если ноль, это не браузер верхнего уровня. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Браузер верхнего уровня — это браузер, установленный в реестре в качестве браузера по умолчанию.
 
@@ -2098,7 +2098,7 @@ void SetRegisterAsDropTarget(BOOL bNewValue);
 *bNewValue*<br/>
 Определяет, зарегистрирован ли элемент управления WebBrowser в качестве цели падения для навигации. Если ненулевой, объект регистрируется как цель падения; если ноль, это не цель падения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2115,7 +2115,7 @@ void SetSilent(BOOL bNewValue);
 *bNewValue*<br/>
 Если ненулевой, диалоговые коробки не будут отображаться; если ноль, диалоговые коробки будут отображаться. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2132,7 +2132,7 @@ void SetStatusBar(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero, если видимая планка состояния; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -2149,7 +2149,7 @@ void SetTheaterMode(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero для установки управления WebBrowser в режим театра; в противном случае ноль. Значение по умолчанию равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда веб-браузер находится в режиме театра, основное окно браузера заполняет весь экран, появляется панель инструментов с минимальным набором навигационных инструментов, а в правом верхнем углу экрана появляется строка статуса.
 
@@ -2168,7 +2168,7 @@ void SetToolBar(int nNewValue);
 *nNewValue*<br/>
 Указывает, следует ли отображать панель инструментов. Nonzero, если панель инструментов должна быть отображана; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется к Internet Explorer. Если вы используете этот вызов с помощью управления WebBrowser, он не вернет ошибку, но он будет игнорировать этот вызов.
 
@@ -2185,7 +2185,7 @@ void SetTop(long nNewValue);
 *nNewValue*<br/>
 Координат экрана верхнего края главного окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2202,7 +2202,7 @@ void SetVisible(BOOL bNewValue);
 *bNewValue*<br/>
 Nonzero, если элемент управления виден; в противном случае ноль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 
@@ -2227,7 +2227,7 @@ void SetWidth(long nNewValue);
 void Stop();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Применяется в Internet Explorer и WebBrowser.
 

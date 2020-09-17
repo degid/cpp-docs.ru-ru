@@ -56,14 +56,14 @@ bool equals(const sync_per_container<Cache>& Other) const;
 *Мбайта*\
 Объект кэша фильтра синхронизации.
 
-*Иной*\
+*Other*\
 Объект кэша для сравнения на равенство.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Функция – член всегда возвращает значение **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также
 

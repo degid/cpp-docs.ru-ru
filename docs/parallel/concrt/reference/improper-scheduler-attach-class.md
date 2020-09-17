@@ -29,7 +29,7 @@ class improper_scheduler_attach : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[improper_scheduler_attach](#ctor)|Перегружен. Создает объект `improper_scheduler_attach`.|
 
@@ -41,7 +41,7 @@ class improper_scheduler_attach : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

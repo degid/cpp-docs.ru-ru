@@ -25,7 +25,7 @@ ms.locfileid: "87233708"
 __declspec(jitintrinsic)
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`jitintrinsic`** Добавляет MODOPT ( <xref:System.Runtime.CompilerServices.IsJitIntrinsic> ) в сигнатуру функции.
 

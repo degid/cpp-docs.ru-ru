@@ -41,7 +41,7 @@ template <class Outer, class... Inner>
 class scoped_allocator_adaptor;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса инкапсулирует гнездо одного или нескольких разлесть. Каждый из этих классов имеет внешний распределитель типа `outer_allocator_type`, синоним `Outer`, который представляет собой общедоступную базу объекта `scoped_allocator_adaptor`. `Outer` используется для выделения памяти, которая будет использоваться контейнером. Можно получить ссылку на этот базовый объект распределителя, вызвав метод `outer_allocator`.
 
@@ -174,16 +174,16 @@ void construct(pair<Ty1, Ty2>* ptr, pair<Uy1, Uy2>&& right);
 *Args*\
 Список аргументов.
 
-*Первый*\
+*first*\
 Объект первого типа в паре.
 
 *Второй*\
 Объект второго типа в паре.
 
-*Правильно*\
+*right*\
 Существующий объект, который необходимо переместить или копировать.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый метод строит объект на *ptr,* позвонив, `Outermost_traits::construct(OUTERMOST(*this), ptr, xargs...)`где `xargs...` находится один из следующих.
 
@@ -269,7 +269,7 @@ scoped_allocator_adaptor& operator=(const scoped_allocator_adaptor&) = default;
 scoped_allocator_adaptor& operator=(scoped_allocator_adaptor&&) = default;
 ```
 
-## <a name="a-nameop_eq_eq--scoped_allocator_adaptoroperator"></a><a name="op_eq_eq">scoped_allocator_adaptor::оператор
+## <a name="a-nameop_eq_eq--scoped_allocator_adaptoroperator"></a><a name="op_eq_eq">scoped_allocator_adaptor::operator
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -277,7 +277,7 @@ bool operator==(const scoped_allocator_adaptor<OuterA1, InnerAllocs...>& a,
 const scoped_allocator_adaptor<OuterA2, InnerAllocs...>& b) noexcept;
 ```
 
-## <a name="a-nameop_noeq--scoped_allocator_adaptoroperator"></a><a name="op_noeq">scoped_allocator_adaptor::оператор!
+## <a name="a-nameop_noeq--scoped_allocator_adaptoroperator"></a><a name="op_noeq">scoped_allocator_adaptor::operator!
 
 ```cpp
 template <class OuterA1, class OuterA2, class... InnerAllocs>
@@ -327,7 +327,7 @@ scoped_allocator_adaptor(Outer2&& al,
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Существующий `scoped_allocator_adaptor`.
 
 *Аль*\
@@ -336,7 +336,7 @@ scoped_allocator_adaptor(Outer2&& al,
 *Остальные*\
 Список распределителей, которые следует использовать как внутренние распределители.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор по умолчанию создает сохраненные объекты распределителя. Каждый из следующих трех конструкторов строит свои сохраненные объекты-разлктора из соответствующих объектов в *правой.* Последний конструктор создает сохраненные объекты распределителя из соответствующих аргументов в списке.
 

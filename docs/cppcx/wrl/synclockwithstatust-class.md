@@ -38,7 +38,7 @@ class SyncLockWithStatusT : public SyncLockT<SyncTraits>;
 *синктраитс*<br/>
 Тип, который может принимать монопольное или совместное владение ресурсом.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Представляет тип, который может принимать монопольное или совместное владение ресурсом.
 
@@ -79,7 +79,7 @@ name                                         | Описание
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** кореврапперс. h
+**Заголовок:** кореврапперс.h
 
 **Пространство имен:** Microsoft:: WRL:: оболочки::D состояния
 
@@ -95,7 +95,7 @@ DWORD GetStatus() const;
 
 Результат операции ожидания для объекта, основанного на `SyncLockWithStatusT` классе, например [мьютекса](mutex-class.md) или [семафора](semaphore-class.md). Ноль (0) указывает, что операция ожидания вернула сигнальное состояние; в противном случае произошло другое состояние, например прошло значение времени ожидания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает состояние ожидания текущего `SyncLockWithStatusT` объекта.
 
@@ -109,7 +109,7 @@ DWORD GetStatus() const;
 bool IsLocked() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает `SyncLockWithStatusT` , владеет ли текущий объект ресурсом, т `SyncLockWithStatusT` . е. объект *заблокирован*.
 
@@ -125,7 +125,7 @@ bool IsLocked() const;
 DWORD status_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит результат базовой операции ожидания после операции блокировки объекта на основе текущего `SyncLockWithStatusT` объекта.
 
@@ -155,7 +155,7 @@ explicit SyncLockWithStatusT(
 *status*<br/>
 Значение элемента данных [status_](#status) *другого* параметра или параметра *синхронизации* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует новый экземпляр класса `SyncLockWithStatusT`.
 

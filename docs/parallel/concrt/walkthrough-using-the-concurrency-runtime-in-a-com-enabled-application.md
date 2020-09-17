@@ -46,7 +46,7 @@ ms.locfileid: "77140627"
 
 ### <a name="using-com-with-the-parallel-patterns-library"></a>Использование COM с библиотекой параллельных шаблонов
 
-При использовании COM с компонентом в библиотеке параллельных шаблонов (PPL), например в группе задач или параллельном алгоритме, вызывайте `CoInitializeEx` перед использованием библиотеки COM во время каждой задачи или итерации и вызовите `CoUninitialize` до завершения каждой задачи или итерации. В следующем примере показано, как управлять временем существования библиотеки COM с помощью объекта [Concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) .
+При использовании COM с компонентом в библиотеке параллельных шаблонов (PPL), например в группе задач или параллельном алгоритме, вызывайте `CoInitializeEx` перед использованием библиотеки COM во время каждой задачи или итерации и вызовите `CoUninitialize` до завершения каждой задачи или итерации. В следующем примере показано, как управлять временем существования библиотеки COM с помощью объекта [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) .
 
 [!code-cpp[concrt-parallel-scripts#1](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_1.cpp)]
 
@@ -66,7 +66,7 @@ ms.locfileid: "77140627"
 
 ### <a name="using-com-with-asynchronous-agents"></a>Использование COM с асинхронными агентами
 
-При использовании COM с асинхронными агентами вызывайте `CoInitializeEx` перед использованием библиотеки COM в методе [Concurrency:: Agent:: Run](reference/agent-class.md#run) для агента. Затем вызовите `CoUninitialize` перед возвратом метода `run`. Не используйте подпрограммы управления COM в конструкторе или деструкторе агента и не переопределяйте [Concurrency:: Agent:: Start](reference/agent-class.md#start) или [Concurrency:: Agent::d один](reference/agent-class.md#done) метод, так как эти методы вызываются из другого потока, чем метод `run`.
+При использовании COM с асинхронными агентами вызывайте `CoInitializeEx` перед использованием библиотеки COM в методе [concurrency::Agent:: Run](reference/agent-class.md#run) для агента. Затем вызовите `CoUninitialize` перед возвратом метода `run`. Не используйте подпрограммы управления COM в конструкторе или деструкторе агента и не переопределяйте [concurrency::Agent:: Start](reference/agent-class.md#start) или [concurrency::Agent::d один](reference/agent-class.md#done) метод, так как эти методы вызываются из другого потока, чем метод `run`.
 
 В следующем примере показан базовый класс агента с именем `CCoAgent`, который управляет библиотекой COM в методе `run`.
 
@@ -94,7 +94,7 @@ ms.locfileid: "77140627"
 
 ### <a name="calling-the-script-from-the-ppl"></a>Вызов скрипта из PPL
 
-Следующая функция, `ParallelFibonacci`, использует алгоритм [параллелизма::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельного вызова скрипта. Эта функция использует класс `CCoInitializer` для управления временем существования библиотеки COM во время каждой итерации задачи.
+Следующая функция, `ParallelFibonacci`, использует алгоритм [параллелизма::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельного вызова скрипта. Эта функция использует класс `CCoInitializer` для управления временем существования библиотеки COM во время каждой итерации задачи.
 
 [!code-cpp[concrt-parallel-scripts#9](../../parallel/concrt/codesnippet/cpp/walkthrough-using-the-concurrency-runtime-in-a-com-enabled-application_9.cpp)]
 

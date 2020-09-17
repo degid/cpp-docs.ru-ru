@@ -51,14 +51,14 @@ class CSid
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Код CSid:: CSid](#csid)|Конструктор.|
 |[Код CSid:: ~ CSid](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Код CSid:: AccountName](#accountname)|Возвращает имя учетной записи, связанной с `CSid` объектом.|
 |[CSid::D омаин](#domain)|Возвращает имя домена, связанного с `CSid` объектом.|
@@ -77,21 +77,21 @@ class CSid
 
 |Имя|Описание|
 |-|-|
-|[Оператор =](#operator_eq)|Оператор присвоения.|
+|[operator=](#operator_eq)|Оператор присвоения.|
 |[Идентификатор безопасности оператора const *](#operator_const_sid__star)|Приводит `CSid` объект к указателю на `SID` структуру.|
 
 ### <a name="global-operators"></a>Глобальные операторы
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](#operator_eq_eq)|Проверяет два объекта дескриптора безопасности на равенство|
-|[operator! =](#operator_neq)|Проверяет два объекта дескриптора безопасности на неравенство|
+|[operator==](#operator_eq_eq)|Проверяет два объекта дескриптора безопасности на равенство|
+|[operator!=](#operator_neq)|Проверяет два объекта дескриптора безопасности на неравенство|
 |[станции \<](#operator_lt)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 |[Оператор >](#operator_gt)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 |[станции \<=](#operator_lt__eq)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 |[Оператор >=](#operator_gt__eq)|Сравнивает относительное значение двух объектов дескрипторов безопасности.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `SID`Структура — это структура переменной длины, используемая для уникальной идентификации пользователей или групп.
 
@@ -101,7 +101,7 @@ class CSid
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлсекурити. h
+**Заголовок:** атлсекурити.h
 
 ## <a name="csidaccountname"></a><a name="accountname"></a> Код CSid:: AccountName
 
@@ -115,7 +115,7 @@ LPCTSTR AccountName() const throw(...);
 
 Возвращает LPCTSTR, указывающий на имя учетной записи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод пытается найти имя для указанного `SID` (идентификатора безопасности). Полные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
@@ -164,7 +164,7 @@ explicit CSid(
 *Пустой pSid*<br/>
 Указатель на `SID` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор инициализирует `CSid` объект, настроив внутренний элемент данных на *сидтипеинвалид*или копируя параметры из существующей `CSid` или существующей `SID` учетной записи.
 
@@ -178,7 +178,7 @@ explicit CSid(
 virtual ~CSid() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор освобождает все ресурсы, полученные объектом.
 
@@ -190,7 +190,7 @@ virtual ~CSid() throw();
 typedef CAtlArray<CSid> CSidArray;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это определение типа определяет тип массива, который можно использовать для получения идентификаторов безопасности из списка ACL (список управления доступом). См. раздел [какл:: жетаклентриес](../../atl/reference/cacl-class.md#getaclentries).
 
@@ -206,7 +206,7 @@ LPCTSTR Domain() const throw(...);
 
 Возвращает объект, `LPCTSTR` указывающий на домен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод пытается найти имя для указанного `SID` (идентификатора безопасности). Полные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw).
 
@@ -230,7 +230,7 @@ bool EqualPrefix(const CSid& rhs) const throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [екуалпрефикссид](/windows/win32/api/securitybaseapi/nf-securitybaseapi-equalprefixsid) в Windows SDK.
 
@@ -246,7 +246,7 @@ UINT GetLength() const throw();
 
 Возвращает длину объекта в байтах `CSid` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если структура недопустима `CSid` , возвращаемое значение не определено. Перед вызовом метода `GetLength` используйте функцию-член [CSid:: IsValid](#isvalid) , чтобы убедиться, что `CSid` является допустимым.
 
@@ -297,7 +297,7 @@ DWORD GetSubAuthority(DWORD nSubAuthority) const throw();
 
 Возвращает подавтор, на который ссылается *нсубаусорити.* Значение подавтора — это относительный идентификатор (RID).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *нсубаусорити* задает значение индекса, определяющее элемент массива подавторов, который будет возвращен методом. Метод не выполняет проверочные тесты для этого значения. Приложение может вызвать код [CSid:: жетсубаусоритикаунт](#getsubauthoritycount) , чтобы определить диапазон допустимых значений.
 
@@ -333,7 +333,7 @@ bool IsValid() const throw();
 
 Возвращает значение TRUE `CSid` , если объект является допустимым, в противном случае — значение false. Расширенные сведения об ошибке для этого метода отсутствуют. не вызывайте `GetLastError` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IsValid`Метод проверяет `CSid` объект, проверяя, что номер редакции находится в известном диапазоне, а число вложений меньше максимального.
 
@@ -366,11 +366,11 @@ bool LoadAccount(
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя. Чтобы получить расширенные сведения об ошибке, вызовите функцию `GetLastError`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `LoadAccount` пытается найти идентификатор безопасности для указанного имени. Дополнительные сведения см. в разделе [LookupAccountSid](/windows/win32/api/winbase/nf-winbase-lookupaccountsidw) .
 
-## <a name="csidoperator-"></a><a name="operator_eq"></a> CSid:: operator =
+## <a name="csidoperator-"></a><a name="operator_eq"></a> CSid::operator=
 
 Оператор присвоения.
 
@@ -388,7 +388,7 @@ CSid& operator= (const SID& rhs) throw(...);
 
 Возвращает ссылку на обновленный `CSid` объект.
 
-## <a name="csidoperator-"></a><a name="operator_eq_eq"></a> CSid:: operator = =
+## <a name="csidoperator-"></a><a name="operator_eq_eq"></a> CSid::operator==
 
 Проверяет два объекта дескриптора безопасности на равенство.
 
@@ -410,7 +410,7 @@ bool operator==(
 
 Значение TRUE, если дескрипторы безопасности равны; в противном случае — значение FALSE.
 
-## <a name="csidoperator-"></a><a name="operator_neq"></a> CSid:: operator! =
+## <a name="csidoperator-"></a><a name="operator_neq"></a> CSid::operator!=
 
 Проверяет два объекта дескриптора безопасности на неравенство.
 
@@ -432,7 +432,7 @@ bool operator!=(
 
 Значение TRUE, если дескрипторы безопасности не равны; в противном случае — значение FALSE.
 
-## <a name="csidoperator-lt"></a><a name="operator_lt"></a> CSid:: operator &lt;
+## <a name="csidoperator-lt"></a><a name="operator_lt"></a> CSid::operator &lt;
 
 Сравнивает относительное значение двух объектов дескрипторов безопасности.
 
@@ -454,7 +454,7 @@ bool operator<(
 
 Значение TRUE, если *LHS* меньше *RHS*; в противном случае — значение false.
 
-## <a name="csidoperator-lt"></a><a name="operator_lt__eq"></a> CSid:: operator &lt;=
+## <a name="csidoperator-lt"></a><a name="operator_lt__eq"></a> CSid::operator &lt;=
 
 Сравнивает относительное значение двух объектов дескрипторов безопасности.
 
@@ -476,7 +476,7 @@ bool operator<=(
 
 Значение TRUE, если *LHS* меньше или равен *RHS*; в противном случае — значение false.
 
-## <a name="csidoperator-gt"></a><a name="operator_gt"></a> CSid:: operator &gt;
+## <a name="csidoperator-gt"></a><a name="operator_gt"></a> CSid::operator &gt;
 
 Сравнивает относительное значение двух объектов дескрипторов безопасности.
 
@@ -498,7 +498,7 @@ bool operator>(
 
 Значение TRUE, если *LHS* больше *RHS*; в противном случае — значение false.
 
-## <a name="csidoperator-gt"></a><a name="operator_gt__eq"></a> CSid:: operator &gt;=
+## <a name="csidoperator-gt"></a><a name="operator_gt__eq"></a> CSid::operator &gt;=
 
 Сравнивает относительное значение двух объектов дескрипторов безопасности.
 
@@ -520,7 +520,7 @@ bool operator>=(
 
 Значение TRUE, если *LHS* больше или равен *RHS*; в противном случае — значение false.
 
-## <a name="csidoperator-const-sid-"></a><a name="operator_const_sid__star"></a> Идентификатор CSid:: operator const \*
+## <a name="csidoperator-const-sid-"></a><a name="operator_const_sid__star"></a> Идентификатор CSid::operator const \*
 
 Приводит `CSid` объект к указателю на `SID` структуру (идентификатор безопасности).
 
@@ -528,7 +528,7 @@ bool operator>=(
 operator const SID *() const throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает адрес `SID` структуры.
 
@@ -568,7 +568,7 @@ SID_NAME_USE SidNameUse() const throw();
 |сидтипеункновн|Указывает на неизвестный `SID` тип.|
 |сидтипекомпутер|Указывает на `SID` компьютер.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите код [CSid:: лоадаккаунт](#loadaccount) , чтобы обновить `CSid` объект перед вызовом метода `SidNameUse` , чтобы вернуть его состояние. `SidNameUse` не изменяет состояние объекта (путем вызова метода `LookupAccountName` или `LookupAccountSid` ), но возвращает только текущее состояние.
 

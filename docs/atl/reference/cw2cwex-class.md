@@ -56,7 +56,7 @@ class CW2CWEX
 |----------|-----------------|
 |[CW2CWEX::m_psz](#m_psz)|Член данных, который хранит строку исходного кода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительная функциональность, используйте CW2CTEX, CT2CWEX или CW2W в коде.
 
@@ -99,7 +99,7 @@ CW2CWEX(LPCWSTR psz) throw(...);
 *nCodePage*<br/>
 Кодовая страница. Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет буфер, используемый в процессе перевода.
 
@@ -111,7 +111,7 @@ CW2CWEX(LPCWSTR psz) throw(...);
 ~CW2CWEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 

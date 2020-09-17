@@ -49,13 +49,13 @@ class CMDITabInfo
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |`CMDITabInfo::CMDITabInfo`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[CMDITabInfo:: Serialize](#serialize)|Считывает этот объект из архива или записывает в него.|
 
@@ -75,7 +75,7 @@ class CMDITabInfo
 |[CMDITabInfo:: m_style](#m_style)|Задает стиль меток вкладки.|
 |[CMDITabInfo:: m_tabLocation](#m_tablocation)|Указывает, расположены ли метки вкладок в верхней или нижней части страницы.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс задает параметры групп вкладок MDI, создаваемых платформой.
 
@@ -91,7 +91,7 @@ class CMDITabInfo
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксмдиклиентареавнд. h
+**Заголовок:** афксмдиклиентареавнд.h
 
 ## <a name="cmditabinfom_bactivetabclosebutton"></a><a name="m_bactivetabclosebutton_"></a> CMDITabInfo:: m_bActiveTabCloseButton;
 
@@ -101,7 +101,7 @@ class CMDITabInfo
 BOOL m_bActiveTabCloseButton;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, в метке активной вкладки будет отображаться кнопка **Закрыть** . Кнопка **Закрыть** будет удалена из правого верхнего угла области вкладки. В противном случае в метке активной вкладки не будет отображаться кнопка **Закрыть** . В правом верхнем углу области вкладки появится кнопка **Закрыть** .
 
@@ -113,7 +113,7 @@ BOOL m_bActiveTabCloseButton;
 BOOL m_bAutoColor;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение равно TRUE, каждая вкладка будет иметь собственный цвет. Набор цветов управляется библиотекой MFC. В противном случае вкладки отображаются белым цветом. Значение по умолчанию — FALSE.
 
@@ -125,7 +125,7 @@ BOOL m_bAutoColor;
 BOOL m_bDocumentMenu;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, в каждой из окон вкладок отображается всплывающее меню, в котором отображается список открытых документов с правой стороны области вкладки. В противном случае в окне вкладки отображаются кнопки прокрутки на правой границе области вкладки. Значение по умолчанию — FALSE.
 
@@ -137,7 +137,7 @@ BOOL m_bDocumentMenu;
 BOOL m_bEnableTabSwap;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, пользователь может изменять позиции вкладок путем перетаскивания вкладок. В противном случае пользователь не сможет изменять позиции вкладок. Значение по умолчанию — TRUE.
 
@@ -157,7 +157,7 @@ BOOL m_bFlatFrame;
 BOOL m_bTabCloseButton;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, в каждом окне вкладки отображается кнопка **Закрыть** на правом крае вкладки. в противном случае кнопка **Закрыть** не отображается. Значение по умолчанию — TRUE.
 
@@ -169,7 +169,7 @@ BOOL m_bTabCloseButton;
 BOOL m_bTabCustomTooltips;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, приложение отправляет в основной фрейм сообщение AFX_WM_ON_GET_TAB_TOOLTIP. Это сообщение можно обработать с помощью макроса ON_REGISTERED_MESSAGE.
 
@@ -181,7 +181,7 @@ BOOL m_bTabCustomTooltips;
 BOOL m_bTabIcons;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если значение — TRUE, значки отображаются на каждой вкладке MDI. в противном случае значки не отображаются на вкладках. Значение по умолчанию — FALSE.
 
@@ -193,7 +193,7 @@ BOOL m_bTabIcons;
 int m_nTabBorderSize;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [CMFCVisualManager:: жетмдитабсбордерссизе](../../mfc/reference/cmfcvisualmanager-class.md#getmditabsborderssize) возвращает значение по умолчанию.
 
@@ -205,7 +205,7 @@ int m_nTabBorderSize;
 CMFCTabCtrl::Style m_style
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Укажите один из следующих стилей для меток вкладки:
 
@@ -226,7 +226,7 @@ CMFCTabCtrl::Style m_style
 CMFCTabCtrl::Location m_tabLocation;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Примените к вкладкам один из следующих флагов расположения:
 

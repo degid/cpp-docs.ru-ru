@@ -53,7 +53,7 @@ class CInternetConnection : public CObject
 |----------|-----------------|
 |[CInternetConnection::оператор HINTERNET](#operator_hinternet)|Ручка для сеанса Интернета.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это базовый класс для классов MFC [CFtpConnection](../../mfc/reference/cftpconnection-class.md), [CHttpConnection](../../mfc/reference/chttpconnection-class.md)и [CGopherConnection.](../../mfc/reference/cgopherconnection-class.md) Каждый из этих классов предоставляет дополнительную функциональность для общения с соответствующим сервером FTP, HTTP или суслик.
 
@@ -97,7 +97,7 @@ CInternetConnection(
 *Dwcontext*<br/>
 Идентификатор `CInternetConnection` контекста для объекта. Смотрите **Замечания** для получения дополнительной информации о *dwContext*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда не называете `CInternetConnection` себя; вместо этого позвоните в функцию участника [CInternetSession](../../mfc/reference/cinternetsession-class.md) для типа соединения, который вы хотите установить:
 
@@ -121,7 +121,7 @@ DWORD_PTR GetContext() const;
 
 Идентификатор контекста, назначенный приложением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Идентификатор контекста первоначально указан в `CInternetConnection` [CInternetSession](../../mfc/reference/cinternetsession-class.md) и распространяется на - и [CInternetFile](../../mfc/reference/cinternetfile-class.md)- производные классы, если не указано по-разному в вызове к функции, которая открывает соединение. Идентификатор контекста связан с любой операцией данного объекта и идентифицирует информацию о состоянии операции, возвращенную [CInternetSession:OnStatusCallback.](../../mfc/reference/cinternetsession-class.md#onstatuscallback)
 

@@ -62,7 +62,7 @@ __m128i _mm_inserti_si64(
 |`_mm_insert_si64`|SSE4a|
 |`_mm_inserti_si64`|SSE4a|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

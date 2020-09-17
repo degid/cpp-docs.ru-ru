@@ -53,7 +53,7 @@ void __incfsdword(
 |`__incfsword`|x86|
 |`__incfsdword`|x86|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="remarks"></a>Примечания
 

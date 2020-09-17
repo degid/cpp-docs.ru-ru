@@ -29,7 +29,7 @@ ms.locfileid: "87231771"
 
 Текущая реализация не `CRuntimeClass` поддерживает сведения о типе среды выполнения MI. Это не означает, что в приложении MFC нельзя использовать MI. Однако при работе с объектами, имеющими более одного базового класса, у вас будут определенные обязанности.
 
-Метод [CObject:: IsKindOf](../mfc/reference/cobject-class.md#iskindof) не будет правильно определять тип объекта, если он имеет несколько базовых классов. Таким образом, нельзя использовать [CObject](../mfc/reference/cobject-class.md) в качестве виртуального базового класса, и все вызовы `CObject` функций-членов, таких как [CObject:: Serialize](../mfc/reference/cobject-class.md#serialize) и [CObject:: operator new](../mfc/reference/cobject-class.md#operator_new) , должны иметь квалификаторы области, чтобы C++ мог устранить неоднозначность соответствующего вызова функции. Когда программа использует MI в MFC, класс, содержащий `CObject` базовый класс, должен быть самым левым классом в списке базовых классов.
+Метод [CObject:: IsKindOf](../mfc/reference/cobject-class.md#iskindof) не будет правильно определять тип объекта, если он имеет несколько базовых классов. Таким образом, нельзя использовать [CObject](../mfc/reference/cobject-class.md) в качестве виртуального базового класса, и все вызовы `CObject` функций-членов, таких как [CObject:: Serialize](../mfc/reference/cobject-class.md#serialize) и [CObject::operator new](../mfc/reference/cobject-class.md#operator_new) , должны иметь квалификаторы области, чтобы C++ мог устранить неоднозначность соответствующего вызова функции. Когда программа использует MI в MFC, класс, содержащий `CObject` базовый класс, должен быть самым левым классом в списке базовых классов.
 
 Альтернативой является использование **`dynamic_cast`** оператора. Приведение объекта с MI к одному из его базовых классов приведет к принудительному использованию компилятором функций в предоставляемом базовом классе. Дополнительные сведения см. в разделе [оператор dynamic_cast](../cpp/dynamic-cast-operator.md).
 
@@ -61,11 +61,11 @@ class CListWnd : public CFrameWnd, public CObList
 public:
     void* operator new(size_t nSize)
     {
-        return CFrameWnd:: operator new(nSize);
+        return CFrameWnd::operator new(nSize);
     }
     void operator delete(void* p)
     {
-        CFrameWnd:: operator delete(p);
+        CFrameWnd::operator delete(p);
     }
     void Dump(CDumpContent& dc)
     {

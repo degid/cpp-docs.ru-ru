@@ -142,7 +142,7 @@ struct AFX_GLOBAL_DATA
 |[AFX_GLOBAL_DATA::m_nDragFrameThicknessDock](#m_ndragframethicknessdock)|Указывает толщину кадра перетаскивания, который используется для взаимодействия в закрепленном состоянии.|
 |[AFX_GLOBAL_DATA::m_nDragFrameThicknessFloat](#m_ndragframethicknessfloat)|Указывает толщину кадра перетаскивания, который используется для взаимодействия в плавающем состоянии.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Большинство данных в структуре `AFX_GLOBAL_DATA` инициализируется при запуске приложения.
 
@@ -162,7 +162,7 @@ struct AFX_GLOBAL_DATA
 BOOL  bIsOSAlphaBlendingSupport;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 TRUE указывает на альфа-смешивание поддерживается; в противном случае, FALSE.
 
@@ -280,7 +280,7 @@ BOOL DrawTextOnGlass(
 
 TRUE, если тема используется для рисования указанного текста; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тема определяет визуальный стиль приложения. Тема не используется для рисования текста, если параметр *hTheme* является NULL, или если метод [DrawThemeTextEx](/windows/win32/api/uxtheme/nf-uxtheme-drawthemetextex) не поддерживается, или если композиция [Desktop Window Manager](/windows/win32/dwm/dwm-overview) (DWM) отключена.
 
@@ -297,7 +297,7 @@ void EnableAccessibilitySupport(BOOL bEnable=TRUE);
 *bEnable*<br/>
 (в) TRUE для обеспечения поддержки доступности; FALSE для отторжать поддержку доступности. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Active Accessibility — это технология, основанная на COM, которая улучшает работу программ и операционной системы Windows вместе с вспомогательными технологическими продуктами. Он предоставляет надежные методы для раскрытия информации об элементах пользовательского интерфейса. Однако теперь доступна новая модель доступности под названием Microsoft UI Automation. Для сравнения двух технологий см. [UI Automation и Microsoft Active Accessibility](/dotnet/framework/ui-automation/ui-automation-and-microsoft-active-accessibility).
 
@@ -333,7 +333,7 @@ BOOL ExcludeTag(
 
 ПРАВДА, если этот метод является успешным; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пара тегов XML состоит из именованных тегов открытия и закрытия, указывающих начало и конец запуска текста в указанном буфере. Параметр *strBuffer* определяет буфер, а параметр *lpszTag* определяет название меток XML.
 
@@ -366,7 +366,7 @@ COLORREF GetColor(int nColor);
 
 Значение цвета RGB указанного элемента пользовательского интерфейса. Дополнительные сведения см. в подразделе "Примечания".
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если параметр *nColor* находится вне диапазона, значение возврата равно нулю. Поскольку ноль также является допустимое значениеR, вы не можете использовать этот метод, чтобы определить, поддерживается ли цвет системы текущей операционной системой. Вместо этого используйте метод [GetSysColorBrush,](/windows/win32/api/winuser/nf-winuser-getsyscolorbrush) который возвращает NULL, если цвет не поддерживается.
 
@@ -486,7 +486,7 @@ BOOL Is32BitIcons() const;
 
 TRUE, если поддерживаются предопределенные 32-битные значки; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод возвращает TRUE, если фреймворк поддерживает 32-разрядные встроенные значки, и если операционная система поддерживает 16 битов на пиксель или более, и если изображения не отображаются с высоким контрастом.
 
@@ -502,7 +502,7 @@ BOOL IsAccessibilitySupport() const;
 
 TRUE, если поддержка доступности включена; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Microsoft Active Accessibility была более ранним решением для обеспечения доступности приложений. Microsoft UI Automation — это новая модель доступности для Microsoft Windows, предназначенная для удовлетворения потребностей вспомогательных технологических продуктов и автоматизированных инструментов тестирования.
 
@@ -544,7 +544,7 @@ BOOL IsHighContrastMode() const;
 
 TRUE, если изображения в настоящее время отображаются в черном или белом режиме высокой контрастности; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В режиме черного высокого контраста края, обращенные к свету, белые, а фон черный. В белом режиме высокой контрастности края, обращенные к свету, черные, а фон белый.
 
@@ -560,7 +560,7 @@ BOOL IsWindowsLayerSupportAvailable() const;
 
 TRUE, если слоистые окна поддерживаются; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если слоистые окна поддерживаются, умные маркеры *стыковки* используют многослойные окна.
 
@@ -572,7 +572,7 @@ TRUE, если слоистые окна поддерживаются; в про
 BOOL  m_bUseBuiltIn32BitIcons;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 TRUE указывает, что в фреймворке используются 32-битные цветные иконки; FALSE указывает значки с более низким разрешением. Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член к TRUE.
 
@@ -586,7 +586,7 @@ TRUE указывает, что в фреймворке используются
 BOOL m_bUseSystemFont;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 TRUE указывает на использование системного шрифта; в противном случае, FALSE. Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член на FALSE.
 
@@ -632,7 +632,7 @@ HICON m_hiconTool;
 int  m_nAutoHideToolBarMargin;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член до 4 пикселей.
 
@@ -644,7 +644,7 @@ int  m_nAutoHideToolBarMargin;
 int   m_nAutoHideToolBarSpacing;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член до 14 пикселей.
 
@@ -656,7 +656,7 @@ int   m_nAutoHideToolBarSpacing;
 int  m_nDragFrameThicknessDock;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член до 3 пикселей.
 
@@ -668,7 +668,7 @@ int  m_nDragFrameThicknessDock;
 int  m_nDragFrameThicknessFloat;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор `AFX_GLOBAL_DATA::AFX_GLOBAL_DATA` инициализирует этот член до 4 пикселей.
 
@@ -680,7 +680,7 @@ int  m_nDragFrameThicknessFloat;
 void OnSettingChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод устанавливает переменные фреймворка в состояние определенных атрибутов рабочего стола пользователя. Этот метод определяет текущее состояние анимации меню, увядания меню и функции автохидов панели задач.
 
@@ -701,7 +701,7 @@ CString RegisterWindowClass(LPCTSTR lpszClassNamePrefix);
 
 Квалифицированное название зарегистрированного класса, если этот метод удается; в противном случае [исключение ресурса](exception-processing.md#afxthrowresourceexception).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение возврата представляет собой список параметра *lpszClassNamePrefix* и гексадецимного текстовых представления дейков текущего экземпляра приложения; курсор приложения, который является курсором стрелки, идентификатор которого является IDC_ARROW; и фоновая кисть. Для получения дополнительной информации о регистрации классов окон MFC [см.](../../mfc/reference/application-information-and-management.md#afxregisterclass)
 
@@ -717,7 +717,7 @@ BOOL Resume();
 
 ПРАВДА, если этот метод удается; в противном случае, FALSE. В режиме отладки этот метод утверждает, что этот метод не удался.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается, когда фреймворк получает [WM_POWERBROADCAST](/windows/win32/Power/wm-powerbroadcast) сообщение.
 
@@ -773,7 +773,7 @@ BOOL SetMenuFont(
 
 ПРАВДА, если этот метод удается; в противном случае, FALSE. В режиме отладки этот метод утверждает, что этот метод не удался.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает горизонтальный обычный шрифт, подчеркнутый шрифт и жирный шрифт, который используется в элементах меню по умолчанию. Этот метод дополнительно создает обычный вертикальный шрифт. Для получения дополнительной информации о логических шрифтов, [см. CFont::CreateFontIndirect](../../mfc/reference/cfont-class.md#createfontindirect).
 
@@ -785,7 +785,7 @@ BOOL SetMenuFont(
 void UpdateFonts();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации `CFont::CreateFontIndirect`о логических шрифтов, см.
 

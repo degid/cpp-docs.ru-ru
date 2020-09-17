@@ -49,7 +49,7 @@ typedef struct TRACING_SESSION_STATISTICS_TAG
 | `SystemEventsLost` | Количество системных событий, которые были удалены. |
 | `SystemBuffersLost` | Количество буферов событий системы, которые были удалены. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта структура заполняется при вызове следующих функций:
 

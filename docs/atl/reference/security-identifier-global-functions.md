@@ -88,7 +88,7 @@ ms.locfileid: "88834483"
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** атлсекурити. h
+**Заголовок:** атлсекурити.h
 
 ## <a name="sidsaccountops"></a><a name="accountops"></a> SID:: Аккаунтопс
 
@@ -218,7 +218,7 @@ CSid Network() throw(...);
 CSid NetworkService() throw(...);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте сетевую учетную запись, чтобы разрешить пользователю NT AUTHORITY\NetworkService чтение объекта безопасности Кперфмон. NetworkService добавляет SecurityAttribute в код Атлсервер, который позволяет библиотеке DLL входить в систему под учетной записью NetworkService в Windows XP Home Edition, Windows XP Professional, Windows Server 2003 и более поздних операционных системах.
 

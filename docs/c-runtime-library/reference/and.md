@@ -41,7 +41,7 @@ ms.locfileid: "80170908"
 #define and &&
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос создает оператор &&.
 
@@ -75,4 +75,4 @@ false
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** \<iso646. h >
+**Заголовок:** \<iso646.h >

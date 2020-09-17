@@ -44,7 +44,7 @@ ms.locfileid: "82912224"
 void terminate( void );
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **Terminate** используется при обработке исключений C++ и вызывается в следующих случаях:
 

@@ -7,7 +7,7 @@ helpviewer_keywords:
 - scope, scope resolution operator
 - operators [C++], scope resolution
 - scope resolution operator
-- ':: operator'
+- '::operator'
 ms.assetid: fd5de9d3-c716-4e12-bae9-03a16fd79a50
 ms.openlocfilehash: 07c2884ed0ba114c22a0c71bbaf7268d6f6931a4
 ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
@@ -30,7 +30,7 @@ enum class :: identifier
 enum struct :: identifier
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `identifier` может быть переменной, функцией или значением перечисления.
 

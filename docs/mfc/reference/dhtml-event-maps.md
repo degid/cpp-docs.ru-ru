@@ -81,7 +81,7 @@ ms.locfileid: "88837428"
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="begin_dhtml_event_map"></a><a name="begin_dhtml_event_map"></a> BEGIN_DHTML_EVENT_MAP
 
@@ -96,7 +96,7 @@ BEGIN_DHTML_EVENT_MAP(className)
 *className*<br/>
 Имя класса, содержащего таблицу событий DHTML. Этот класс должен прямо или косвенно наследовать от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) и включать макрос [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавьте в класс таблицу сопоставлений DHTML, чтобы предоставить сведения `CDHtmlDialog` , которые можно использовать для маршрутизации событий, инициированных ЭЛЕМЕНТАМИ HTML или элементами управления ActiveX на веб-странице, в функции обработчика в классе.
 
@@ -106,7 +106,7 @@ BEGIN_DHTML_EVENT_MAP(className)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="begin_dhtml_event_map_inline"></a><a name="begin_dhtml_event_map_inline"></a> BEGIN_DHTML_EVENT_MAP_INLINE
 
@@ -121,17 +121,17 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 *className*<br/>
 Имя класса, содержащего таблицу событий DHTML. Этот класс должен прямо или косвенно наследовать от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md) и включать макрос [DECLARE_DHTML_EVENT_MAP](#declare_dhtml_event_map) в его определение класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Добавьте в класс таблицу сопоставлений DHTML, чтобы предоставить сведения `CDHtmlDialog` , которые можно использовать для маршрутизации событий, инициированных ЭЛЕМЕНТАМИ HTML или элементами управления ActiveX на веб-странице, в функции обработчика в классе.
 
-Поместите макрос BEGIN_DHTML_EVENT_MAP в файл определения класса (. h), а затем DHTML_EVENT макросы для событий, которые класс обрабатывает (например, DHTML_EVENT_ONMOUSEOVER для событий onmouseover). Используйте макрос [END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline) , чтобы отметить окончание схемы событий. Эти макросы реализуют следующую функцию:
+Поместите макрос BEGIN_DHTML_EVENT_MAP в файл определения класса (.h), а затем DHTML_EVENT макросы для событий, которые класс обрабатывает (например, DHTML_EVENT_ONMOUSEOVER для событий onmouseover). Используйте макрос [END_DHTML_EVENT_MAP_INLINE](#end_dhtml_event_map_inline) , чтобы отметить окончание схемы событий. Эти макросы реализуют следующую функцию:
 
 `virtual const DHtmlEventMapEntry* GetDHtmlEventMap();`
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="declare_dhtml_event_map"></a><a name="declare_dhtml_event_map"></a> DECLARE_DHTML_EVENT_MAP
 
@@ -141,7 +141,7 @@ BEGIN_DHTML_EVENT_MAP_INLINE(className)
 DECLARE_DHTML_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в определении классов, производных от [CDHtmlDialog](../../mfc/reference/cdhtmldialog-class.md).
 
@@ -153,7 +153,7 @@ DECLARE_DHTML_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event"></a><a name="dhtml_event"></a> DHTML_EVENT
 
@@ -174,13 +174,13 @@ DHTML_EVENT(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_axcontrol"></a><a name="dhtml_event_axcontrol"></a> DHTML_EVENT_AXCONTROL
 
@@ -201,13 +201,13 @@ DHTML_EVENT_AXCONTROL(dispid, controlName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_class"></a><a name="dhtml_event_class"></a> DHTML_EVENT_CLASS
 
@@ -228,13 +228,13 @@ DHTML_EVENT_CLASS(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_element"></a><a name="dhtml_event_element"></a> DHTML_EVENT_ELEMENT
 
@@ -255,7 +255,7 @@ DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
@@ -265,7 +265,7 @@ DHTML_EVENT_ELEMENT(dispid, elemName,  memberFxn)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onafterupdate"></a><a name="dhtml_event_onafterupdate"></a> DHTML_EVENT_ONAFTERUPDATE
 
@@ -283,13 +283,13 @@ DHTML_EVENT_ONAFTERUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onbeforeupdate"></a><a name="dhtml_event_onbeforeupdate"></a> DHTML_EVENT_ONBEFOREUPDATE
 
@@ -307,13 +307,13 @@ DHTML_EVENT_ONBEFOREUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onblur"></a><a name="dhtml_event_onblur"></a> DHTML_EVENT_ONBLUR
 
@@ -331,13 +331,13 @@ DHTML_EVENT_ONBLUR(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onchange"></a><a name="dhtml_event_onchange"></a> DHTML_EVENT_ONCHANGE
 
@@ -355,13 +355,13 @@ DHTML_EVENT_ONCHANGE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onclick"></a><a name="dhtml_event_onclick"></a> DHTML_EVENT_ONCLICK
 
@@ -379,13 +379,13 @@ DHTML_EVENT_ONCLICK(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_ondataavailable"></a><a name="dhtml_event_ondataavailable"></a> DHTML_EVENT_ONDATAAVAILABLE
 
@@ -403,13 +403,13 @@ DHTML_EVENT_ONDATAAVAILABLE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_ondatasetchanged"></a><a name="dhtml_event_ondatasetchanged"></a> DHTML_EVENT_ONDATASETCHANGED
 
@@ -427,13 +427,13 @@ DHTML_EVENT_ONDATASETCHANGED(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_ondatasetcomplete"></a><a name="dhtml_event_ondatasetcomplete"></a> DHTML_EVENT_ONDATASETCOMPLETE
 
@@ -451,13 +451,13 @@ DHTML_EVENT_ONDATASETCOMPLETE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_ondblclick"></a><a name="dhtml_event_ondblclick"></a> DHTML_EVENT_ONDBLCLICK
 
@@ -475,13 +475,13 @@ DHTML_EVENT_ONDBLCLICK(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_ondragstart"></a><a name="dhtml_event_ondragstart"></a> DHTML_EVENT_ONDRAGSTART
 
@@ -499,13 +499,13 @@ DHTML_EVENT_ONDRAGSTART(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onerrorupdate"></a><a name="dhtml_event_onerrorupdate"></a> DHTML_EVENT_ONERRORUPDATE
 
@@ -523,13 +523,13 @@ DHTML_EVENT_ONERRORUPDATE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onfilterchange"></a><a name="dhtml_event_onfilterchange"></a> DHTML_EVENT_ONFILTERCHANGE
 
@@ -547,13 +547,13 @@ DHTML_EVENT_ONFILTERCHANGE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onfocus"></a><a name="dhtml_event_onfocus"></a> DHTML_EVENT_ONFOCUS
 
@@ -571,13 +571,13 @@ DHTML_EVENT_ONFOCUS(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onhelp"></a><a name="dhtml_event_onhelp"></a> DHTML_EVENT_ONHELP
 
@@ -595,13 +595,13 @@ DHTML_EVENT_ONHELP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onkeydown"></a><a name="dhtml_event_onkeydown"></a> DHTML_EVENT_ONKEYDOWN
 
@@ -619,13 +619,13 @@ DHTML_EVENT_ONKEYDOWN(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onkeypress"></a><a name="dhtml_event_onkeypress"></a> DHTML_EVENT_ONKEYPRESS
 
@@ -643,13 +643,13 @@ DHTML_EVENT_ONKEYPRESS(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onkeyup"></a><a name="dhtml_event_onkeyup"></a> DHTML_EVENT_ONKEYUP
 
@@ -667,13 +667,13 @@ DHTML_EVENT_ONKEYUP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onmousedown"></a><a name="dhtml_event_onmousedown"></a> DHTML_EVENT_ONMOUSEDOWN
 
@@ -691,13 +691,13 @@ DHTML_EVENT_ONMOUSEDOWN(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onmousemove"></a><a name="dhtml_event_onmousemove"></a> DHTML_EVENT_ONMOUSEMOVE
 
@@ -715,13 +715,13 @@ DHTML_EVENT_ONMOUSEMOVE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onmouseout"></a><a name="dhtml_event_onmouseout"></a> DHTML_EVENT_ONMOUSEOUT
 
@@ -739,13 +739,13 @@ DHTML_EVENT_ONMOUSEOUT(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onmouseover"></a><a name="dhtml_event_onmouseover"></a> DHTML_EVENT_ONMOUSEOVER
 
@@ -763,13 +763,13 @@ DHTML_EVENT_ONMOUSEOVER(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onmouseup"></a><a name="dhtml_event_onmouseup"></a> DHTML_EVENT_ONMOUSEUP
 
@@ -787,13 +787,13 @@ DHTML_EVENT_ONMOUSEUP(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onresize"></a><a name="dhtml_event_onresize"></a> DHTML_EVENT_ONRESIZE
 
@@ -811,13 +811,13 @@ DHTML_EVENT_ONRESIZE(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onrowenter"></a><a name="dhtml_event_onrowenter"></a> DHTML_EVENT_ONROWENTER
 
@@ -835,13 +835,13 @@ DHTML_EVENT_ONROWENTER(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onrowexit"></a><a name="dhtml_event_onrowexit"></a> DHTML_EVENT_ONROWEXIT
 
@@ -859,13 +859,13 @@ DHTML_EVENT_ONROWEXIT(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_onselectstart"></a><a name="dhtml_event_onselectstart"></a> DHTML_EVENT_ONSELECTSTART
 
@@ -883,13 +883,13 @@ DHTML_EVENT_ONSELECTSTART(elemName, memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="dhtml_event_tag"></a><a name="dhtml_event_tag"></a> DHTML_EVENT_TAG
 
@@ -910,13 +910,13 @@ DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 *мемберфксн*<br/>
 Функция обработчика для события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, чтобы добавить запись в [таблицу событий DHTML](#begin_dhtml_event_map_inline) в своем классе.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="end_dhtml_event_map"></a><a name="end_dhtml_event_map"></a> END_DHTML_EVENT_MAP
 
@@ -926,13 +926,13 @@ DHTML_EVENT_TAG(dispid, elemName,  memberFxn)
 END_DHTML_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Должен использоваться в сочетании с [BEGIN_DHTML_EVENT_MAP](#begin_dhtml_event_map).
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="begin_dhtml_url_event_map"></a><a name="begin_dhtml_url_event_map"></a> BEGIN_DHTML_URL_EVENT_MAP
 
@@ -942,7 +942,7 @@ END_DHTML_EVENT_MAP()
 BEGIN_DHTML_URL_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поставьте BEGIN_DHTML_URL_EVENT_MAP в файл реализации класса, производного от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md). Используйте [встроенные сопоставления событий DHTML](#begin_embed_dhtml_event_map) и [записи URL-адресов](#begin_url_entries), а затем закройте его с помощью [END_DHTML_URL_EVENT_MAP](#end_dhtml_url_event_map). Включите макрос [DECLARE_DHTML_URL_EVENT_MAP](#declare_dhtml_url_event_map) в определение класса.
 
@@ -952,7 +952,7 @@ BEGIN_DHTML_URL_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="begin_embed_dhtml_event_map"></a><a name="begin_embed_dhtml_event_map"></a> BEGIN_EMBED_DHTML_EVENT_MAP
 
@@ -970,7 +970,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 *мапнаме*<br/>
 Указывает страницу, в которой сопоставлены события. Это соответствует *мапнаме* в макросе [URL_EVENT_ENTRY](#url_event_entry) , который фактически определяет URL-адрес или HTML-ресурс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку многостраничное диалоговое окно DHTML состоит из нескольких HTML-страниц, каждая из которых может вызывать события DHTML, встроенные карты событий используются для сопоставления событий с обработчиками на каждой странице.
 
@@ -984,7 +984,7 @@ BEGIN_EMBED_DHTML_EVENT_MAP(className, mapName)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="begin_url_entries"></a><a name="begin_url_entries"></a> BEGIN_URL_ENTRIES
 
@@ -999,7 +999,7 @@ BEGIN_URL_ENTRIES(className)
 *className*<br/>
 Имя класса, содержащего карту входа события URL-адреса. Этот класс должен быть прямо или косвенно производным от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md). Схема записи события URL-адреса должна находиться в [таблице событий DHTML и URL-адреса](#begin_dhtml_url_event_map).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку многостраничное диалоговое окно DHTML состоит из нескольких страниц HTML, для сопоставления URL-адресов или ресурсов HTML с соответствующими [внедренными картами событий DHTML](#begin_embed_dhtml_event_map)используются записи событий URL-адресов. Помещайте URL_EVENT_ENTRY макросы между BEGIN_URL_ENTRIES и [END_URL_ENTRIES](#end_url_entries) макросами.
 
@@ -1009,7 +1009,7 @@ BEGIN_URL_ENTRIES(className)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="declare_dhtml_url_event_map"></a><a name="declare_dhtml_url_event_map"></a> DECLARE_DHTML_URL_EVENT_MAP
 
@@ -1019,7 +1019,7 @@ BEGIN_URL_ENTRIES(className)
 DECLARE_DHTML_URL_EVENT_MAP()
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос используется в определении классов, производных от [кмултипажедхтмлдиалог](../../mfc/reference/cmultipagedhtmldialog-class.md).
 
@@ -1027,7 +1027,7 @@ DECLARE_DHTML_URL_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="end_dhtml_url_event_map"></a><a name="end_dhtml_url_event_map"></a> END_DHTML_URL_EVENT_MAP
 
@@ -1048,7 +1048,7 @@ END_DHTML_URL_EVENT_MAP(className)
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="end_embed_dhtml_event_map"></a><a name="end_embed_dhtml_event_map"></a> END_EMBED_DHTML_EVENT_MAP
 
@@ -1064,7 +1064,7 @@ END_EMBED_DHTML_EVENT_MAP()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="end_url_entries"></a><a name="end_url_entries"></a> END_URL_ENTRIES
 
@@ -1080,7 +1080,7 @@ END_URL_ENTRIES()
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="url_event_entry"></a><a name="url_event_entry"></a> URL_EVENT_ENTRY
 
@@ -1101,7 +1101,7 @@ URL-адрес или ресурс HTML для страницы.
 *мапнаме*<br/>
 Указывает страницу, URL-адрес которой является *URL*. Это соответствует *мапнаме* в макросе [BEGIN_EMBED_DHTML_EVENT_MAP](#begin_embed_dhtml_event_map) , который сопоставляет события на этой странице.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если страница является ресурсом HTML, *URL-адрес* должен представлять собой строковое представление идентификационного номера ресурса (то есть "123", а не 123 или ID_HTMLRES1).
 
@@ -1113,7 +1113,7 @@ URL-адрес или ресурс HTML для страницы.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдхтмл. h
+  **Заголовок** афксдхтмл.h
 
 ## <a name="end_dhtml_event_map_inline"></a><a name="end_dhtml_event_map_inline"></a> END_DHTML_EVENT_MAP_INLINE
 
@@ -1125,13 +1125,13 @@ URL-адрес или ресурс HTML для страницы.
 END_DHTML_EVENT_MAP_INLINE( )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Должен использоваться в сочетании с [BEGIN_DHTML_EVENT_MAP_INLINE](#begin_dhtml_event_map_inline).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксдхтмл. h
+**Заголовок:** афксдхтмл.h
 
 ## <a name="see-also"></a>См. также раздел
 

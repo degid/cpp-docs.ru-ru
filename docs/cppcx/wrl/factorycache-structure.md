@@ -28,7 +28,7 @@ ms.locfileid: "81371488"
 struct FactoryCache;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Содержит местоположение фабрики класса и значение, которое идентифицирует зарегистрированный объект класса Среды выполнения Windows или модели COM.
 
@@ -62,7 +62,7 @@ union {
 } cookie;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Содержит значение, которое идентифицирует зарегистрированный объект класса Windows Runtime или COM, а затем используется для отстранителя объекта.
 
@@ -74,6 +74,6 @@ union {
 IUnknown* factory;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает на фабрику Windows Runtime или COM класса.

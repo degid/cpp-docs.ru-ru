@@ -67,7 +67,7 @@ class COleChangeSourceDialog : public COleDialog
 |----------|-----------------|
 |[ColeChangeИсточникДиалог::m_cs](#m_cs)|Структура, контролирующая поведение диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создайте объект `COleChangeSourceDialog` класса, когда вы хотите вызвать этот диалоговый ящик. После `COleChangeSourceDialog` построения объекта можно использовать [структуру m_cs](#m_cs) для инициализации значений или состояний элементов управления в диалоговом поле. Структура `m_cs` типа [OLEUICHANGESOURCE.](/windows/win32/api/oledlg/ns-oledlg-oleuichangesourcew) Для получения дополнительной информации об [использовании](#domodal) этого класса диалогов см.
 
@@ -113,7 +113,7 @@ explicit COleChangeSourceDialog(
 *pParentWnd*<br/>
 Указывает на объект окна родителя `CWnd`или владельца (типа), к которому принадлежит объект диалога. Если это NULL, родительское окно окна диалогов будет установлено на основное окно приложения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы отобразить диалоговую будку, позвоните в функцию [DoModal.](#domodal)
 
@@ -137,7 +137,7 @@ virtual INT_PTR DoModal();
 
 - IDABORT, если произошла ошибка. Если IDABORT возвращается, позвоните в функцию [COleDialog::GetLastError,](../../mfc/reference/coledialog-class.md#getlasterror) чтобы получить больше информации о типе ошибки, которая произошла. Список возможных ошибок [OleUIChangeSource](/windows/win32/api/oledlg/nf-oledlg-oleuichangesourcew) можно найти в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные элементы управления диалоговой коробкой, установив элементы [структуры m_cs,](#m_cs) вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
 
@@ -173,7 +173,7 @@ CString GetFileName();
 
 Файл моникер часть исходного дисплея имя для [COleClientItem](../../mfc/reference/coleclientitem-class.md) указано в конструкторе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Кличка файла вместе с псевдонимом элемента дает полное имя дисплея.
 
@@ -189,7 +189,7 @@ CString GetFromPrefix();
 
 Предыдущая строка префикса источника.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
 
@@ -209,7 +209,7 @@ CString GetItemName();
 
 Элемент прозвище часть исходного дисплея имя для [COleClientItem](../../mfc/reference/coleclientitem-class.md) указано в конструкторе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Кличка файла вместе с псевдонимом элемента дает полное имя дисплея.
 
@@ -225,7 +225,7 @@ CString GetToPrefix();
 
 Новая строка префикса источника.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
 
@@ -241,7 +241,7 @@ CString GetToPrefix();
 OLEUICHANGESOURCE m_cs;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OLEUICHANGESOURCE`используется для управления поведением диалогового окна источника изменений OLE. Члены этой структуры могут быть изменены непосредственно.
 
@@ -259,7 +259,7 @@ BOOL IsValidSource();
 
 Nonzero, если новый источник действителен, в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию только после того, как [DoModal](#domodal) вернет IDOK.
 

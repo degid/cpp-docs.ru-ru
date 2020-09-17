@@ -56,7 +56,7 @@ errno_t _set_doserrno( int error_value );
 
 Возвращает нуль при успешном завершении.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Возможные значения макроса определяются в Errno.h.
 

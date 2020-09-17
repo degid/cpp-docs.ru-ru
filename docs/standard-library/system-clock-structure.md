@@ -26,7 +26,7 @@ ms.locfileid: "87224582"
 struct system_clock;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 *Тип clock* используется для получения текущего времени в формате UTC. Этот тип реализует экземпляр класса [duration](../standard-library/duration-class.md) и шаблон класса [time_point](../standard-library/time-point-class.md), а также определяет статическую функцию-член `now()`, которая возвращает время.
 
@@ -38,7 +38,7 @@ struct system_clock;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`system_clock::duration`|Синоним для `duration<rep, period>`.|
 |`system_clock::period`|Синоним для типа, который используется для представления тактового периода при автономном создании экземпляра `duration`.|
@@ -47,7 +47,7 @@ struct system_clock;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[from_time_t](#from_time_t)|Статический. Возвращает объект `time_point`, наиболее точно соответствующий указанному времени.|
 |[сжать](#now)|Статический. Возвращает текущее время.|
@@ -55,7 +55,7 @@ struct system_clock;
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа system_clock::is_monotonic](#is_monotonic_constant)|Указывает, являются ли часы монотонными.|
 |[Константа system_clock::is_steady](#is_steady_constant)|Указывает, являются ли часы постоянными.|
@@ -91,7 +91,7 @@ static const bool is_monotonic = false;
 
 В этой реализации `system_clock::is_monotonic` всегда возвращает **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Часы считаются *монотонными*, если значение, возвращаемое при первом вызове `now()`, всегда не больше значений, возвращаемых при последующих вызовах `now()`.
 
@@ -107,7 +107,7 @@ static const bool is_steady = false;
 
 В этой реализации `system_clock::is_steady` всегда возвращает **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Часы считаются *постоянными*, если они [монотонны](#is_monotonic_constant) и интервал времени между соседними тактами является постоянной величиной.
 

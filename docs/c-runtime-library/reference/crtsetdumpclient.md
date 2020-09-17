@@ -51,7 +51,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 
 Возвращает определенную ранее функцию дампа клиентских блоков.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_CrtSetDumpClient** позволяет приложению подключать собственную функцию для дампа объектов, хранящихся в **_CLIENT_BLOCK** блоках памяти, в процесс дампа памяти отладки среды выполнения C. В результате каждый раз, когда функция дампа отладки, например [_CrtMemDumpAllObjectsSince](crtmemdumpallobjectssince.md) или [_CrtDumpMemoryLeaks](crtdumpmemoryleaks.md) , выводит дамп **_CLIENT_BLOCK** блока памяти, также вызывается функция дампа приложения. **_CrtSetDumpClient** предоставляет приложению простой способ обнаружения утечек памяти и проверки или сообщения содержимого данных, хранящихся в блоках **_CLIENT_BLOCK** . Если [_DEBUG](../../c-runtime-library/debug.md) не определено, вызовы **_CrtSetDumpClient** удаляются во время предварительной обработки.
 
@@ -61,7 +61,7 @@ _CRT_DUMP_CLIENT _CrtSetDumpClient( _CRT_DUMP_CLIENT dumpClient );
 void DumpClientFunction( void *userPortion, size_t blockSize );
 ```
 
-Аргумент *усерпортион* — это указатель на начало части данных в блоке памяти, а размер выделяемого блока *памяти — в* байтах. Функция дампа клиентского блока должна возвращать значение **`void`** . Указатель на функцию дампа клиента, которая передается в **_CrtSetDumpClient** , имеет тип **_CRT_DUMP_CLIENT**, как определено в Crtdbg. h:
+Аргумент *усерпортион* — это указатель на начало части данных в блоке памяти, а размер выделяемого блока *памяти — в* байтах. Функция дампа клиентского блока должна возвращать значение **`void`** . Указатель на функцию дампа клиента, которая передается в **_CrtSetDumpClient** , имеет тип **_CRT_DUMP_CLIENT**, как определено в Crtdbg.h:
 
 ```C
 typedef void (__cdecl *_CRT_DUMP_CLIENT)( void *, size_t );

@@ -54,7 +54,7 @@ ms.locfileid: "88834622"
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlgetperuserregistration"></a><a name="atlgetperuserregistration"></a> атлжетперусеррегистратион
 
@@ -75,7 +75,7 @@ ATLINLINE ATLAPI AtlGetPerUserRegistration(bool* pEnabled);
 
 S_OK, если метод выполнен успешно, в противном случае — код ошибки HRESULT при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER \софтваре\классес**.
 
@@ -83,7 +83,7 @@ S_OK, если метод выполнен успешно, в противном
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="afxregcreatekey"></a><a name="afxregcreatekey"></a> афксрегкреатекэй
 
@@ -111,7 +111,7 @@ LONG AFXAPI AfxRegCreateKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTr
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
+Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror.h.
 
 ### <a name="requirements"></a>Требования
 
@@ -140,7 +140,7 @@ LONG AFXAPI AfxRegDeleteKey(HKEY hKey, LPCTSTR lpSubKey, CAtlTransactionManager*
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
+Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror.h.
 
 ### <a name="requirements"></a>Требования
 
@@ -191,13 +191,13 @@ ATLAPI AtlRegisterTypeLib(HINSTANCE hInstTypeLib, LPCOLESTR lpszIndex);
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [атлкоммодулеунрегистерсервер](server-registration-global-functions.md#atlcommoduleunregisterserver) и [Катлкоммодуле:: регистертипелиб](../../atl/reference/catlcommodule-class.md#registertypelib).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="afxregopenkey"></a><a name="afxregopenkey"></a> афксрегопенкэй
 
@@ -225,7 +225,7 @@ LONG AFXAPI AfxRegOpenKey(HKEY hKey, LPCTSTR lpSubKey, PHKEY phkResult, CAtlTran
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
+Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror.h.
 
 ### <a name="requirements"></a>Требования
 
@@ -263,7 +263,7 @@ LONG AFXAPI AfxRegOpenKeyEx(HKEY hKey, LPCTSTR lpSubKey, DWORD ulOptions, REGSAM
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror. h.
+Если функция выполнена, возвращаемое значение будет ERROR_SUCCESS. Если функция завершается ошибкой, возвращаемое значение является ненулевым кодом ошибки, определенным в файле Winerror.h.
 
 ### <a name="requirements"></a>Требования
 
@@ -307,7 +307,7 @@ ATLINLINE ATLAPI AtlSetPerUserRegistration(bool bEnable);
 
 S_OK, если метод выполнен успешно, в противном случае — код ошибки HRESULT при возникновении ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию перенаправление реестра отключено. Если этот параметр включен, доступ к реестру перенаправляется в **HKEY_CURRENT_USER \софтваре\классес**.
 
@@ -315,7 +315,7 @@ S_OK, если метод выполнен успешно, в противном
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlunregistertypelib"></a><a name="atlunregistertypelib"></a> атлунрегистертипелиб
 
@@ -341,13 +341,13 @@ ATLAPI AtlUnRegisterTypeLib(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [катлкоммодуле:: унрегистертипелиб](../../atl/reference/catlcommodule-class.md#unregistertypelib) и [атлкоммодулеунрегистерсервер](server-registration-global-functions.md#atlcommoduleunregisterserver).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atlloadtypelib"></a><a name="atlloadtypelib"></a> атллоадтипелиб
 
@@ -381,7 +381,7 @@ ATLINLINE ATLAPI AtlLoadTypeLib(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта вспомогательная функция используется [атлрегистертипелиб](#atlregistertypelib) и [атлунрегистертипелиб](#atlunregistertypelib).
 
@@ -421,7 +421,7 @@ HRESULT RegistryDataExchange(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Макросы [BEGIN_RDX_MAP](registry-data-exchange-macros.md#begin_rdx_map) и [END_RDX_MAP](registry-data-exchange-macros.md#end_rdx_map) расширяются до функции, которая вызывает `RegistryDataExchange` .
 
@@ -435,7 +435,7 @@ HRESULT RegistryDataExchange(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

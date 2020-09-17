@@ -60,7 +60,7 @@ unsigned char _BitScanForward64(
 |`_BitScanForward`|x86, ARM, x64, ARM64|
 |`_BitScanForward64`|ARM64, x64|
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="example"></a>Пример
 

@@ -43,7 +43,7 @@ class CComQIPtrElementTraits :
 |----------|-----------------|
 |[CCom-IPtrElementTraits::INARGTYPE](#inargtype)|Тип данных для добавления элементов в объект класса сбора.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс получает методы и обеспечивает полезную типографпри равен при создании класса коллекции объектов указатель интерфейса [CCom-IPtr](../../atl/reference/ccomqiptr-class.md) COM. Этот класс используется как [классами CInterfaceArray,](../../atl/reference/cinterfacearray-class.md) так и [CInterfaceList.](../../atl/reference/cinterfacelist-class.md)
 

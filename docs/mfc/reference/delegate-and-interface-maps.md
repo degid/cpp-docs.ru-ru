@@ -43,7 +43,7 @@ BEGIN_DELEGATE_MAP(  CLASS );
 *СМ*<br/>
 Класс, в котором размещается управляемый элемент управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос отмечает начало списка записей делегатов, образующих карту делегатов. Пример использования этого макроса см. в разделе [EVENT_DELEGATE_ENTRY](#event_delegate_entry).
 
@@ -69,7 +69,7 @@ BEGIN_INTERFACE_MAP( theClass, baseClass )
 *baseClass*<br/>
 Класс, от которого наследуется *секласс* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для каждого реализуемого интерфейса существует один или несколько INTERFACE_PART вызовов макросов. Для каждого статистического выражения, используемого классом, существует один INTERFACE_AGGREGATE вызов макроса.
 
@@ -94,7 +94,7 @@ delegate void CommandHandler(  UINT^ cmdID  );
 *cmdID*<br/>
 Идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот делегат регистрирует методы обратного вызова с источником команды. При добавлении делегата в исходный объект команды метод обратного вызова превращается в обработчик команд, поступающих из указанного источника.
 
@@ -104,7 +104,7 @@ delegate void CommandHandler(  UINT^ cmdID  );
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксвинформс. h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
+**Заголовок:** афксвинформс.h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
 
 ## <a name="commanduihandler"></a><a name="commanduihandler"></a> коммандуихандлер
 
@@ -124,7 +124,7 @@ delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 *кмдуи*<br/>
 Идентификатор сообщения команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот делегат регистрирует методы обратного вызова с помощью сообщения команды обновления пользовательского интерфейса. `CommandUIHandler` аналогичен [коммандхандлер](#commandhandler) , за исключением того, что этот делегат используется с командами обновления объекта пользовательского интерфейса. Команды обновления пользовательского интерфейса должны сопоставляться один к одному с помощью методов обработчика сообщений.
 
@@ -132,7 +132,7 @@ delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксвинформс. h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
+**Заголовок:** афксвинформс.h (определяется в atlmfc\lib\mfcmifc80.dll сборки)
 
 ## <a name="end_delegate_map"></a><a name="end_delegate_map"></a> END_DELEGATE_MAP
 
@@ -144,7 +144,7 @@ delegate void CommandUIHandler(  unsigned int cmdID, ICommandUI^ cmdUI);
 END_DELEGATE_MAP();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос отмечает конец списка записей делегатов, образующих карту делегатов. Пример использования этого макроса см. в разделе [EVENT_DELEGATE_ENTRY](#event_delegate_entry).
 
@@ -162,7 +162,7 @@ END_DELEGATE_MAP();
 END_INTERFACE_MAP( )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения о картах интерфейсов см. в [техническом примечании 38](../tn038-mfc-ole-iunknown-implementation.md).
 
@@ -191,7 +191,7 @@ EVENT_DELEGATE_ENTRY(MEMBER, ARG0, ARG1);
 *ARG1*<br/>
 Второй аргумент метода обработчика управляемых событий, например `EventArgs^` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждая запись в сопоставлении делегата соответствует делегату управляемого обработчика событий, созданному [MAKE_DELEGATE](#make_delegate).
 
@@ -228,7 +228,7 @@ IID, который должен быть сопоставлен с внедре
 *локалкласс*<br/>
 Имя локального класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он позволяет сопоставлять IID с членом класса, указанного в *секласс* и *локалкласс*.
 
@@ -256,7 +256,7 @@ MAKE_DELEGATE( DELEGATE,  MEMBER) ;
 *УЧАСТНИКАМИ*<br/>
 Имя метода обработчика событий, который должен быть присоединен к элементу управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот макрос создает управляемый делегат обработчика событий типа *Delegate* и *члена*Name. Делегат управляемого обработчика событий позволяет собственному классу управлять управляемыми событиями.
 

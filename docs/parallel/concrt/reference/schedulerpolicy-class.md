@@ -39,7 +39,7 @@ class SchedulerPolicy;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[жетполицивалуе](#getpolicyvalue)|Возвращает значение ключа политики, предоставляемое в качестве `key` параметра.|
 |[сетконкурренцилимитс](#setconcurrencylimits)|Одновременно задает `MinConcurrency` политики и `MaxConcurrency` для `SchedulerPolicy` объекта.|
@@ -49,11 +49,11 @@ class SchedulerPolicy;
 
 |Имя|Описание|
 |----------|-----------------|
-|[Оператор =](#operator_eq)|Назначает политику планировщика из другой политики планировщика.|
+|[operator=](#operator_eq)|Назначает политику планировщика из другой политики планировщика.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
-Дополнительные сведения о политиках, которые можно контролировать с помощью `SchedulerPolicy` класса, см. в разделе [полициелементкэй](concurrency-namespace-enums.md).
+Дополнительные сведения о политиках, которые можно контролировать с помощью `SchedulerPolicy` класса, см. в разделе [PolicyElementKey](concurrency-namespace-enums.md).
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -61,9 +61,9 @@ class SchedulerPolicy;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h, concrtrm. h
+**Заголовок:** ConcRT.h, concrtrm.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="getpolicyvalue"></a><a name="getpolicyvalue"></a>жетполицивалуе
 
@@ -82,7 +82,7 @@ unsigned int GetPolicyValue(PolicyElementKey key) const;
 
 Если ключ, заданный `key` параметром, поддерживается, значение политики для приведения ключа к **`unsigned int`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызовет исключение [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) для недопустимого ключа политики.
 
@@ -103,7 +103,7 @@ SchedulerPolicy& operator= (const SchedulerPolicy& _RhsPolicy);
 
 Ссылка на политику планировщика.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Часто наиболее удобным способом для определения новой политики планировщика является копирование существующей политики и изменение ее методами `SetPolicyValue` или `SetConcurrencyLimits`.
 
@@ -130,7 +130,7 @@ SchedulerPolicy(
 *_SrcPolicy*<br/>
 Исходная политика для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор создает новую политику планировщика, где все политики будут инициализированы значениями по умолчанию.
 
@@ -164,7 +164,7 @@ void SetConcurrencyLimits(
 *_MaxConcurrency*<br/>
 Значение для `MaxConcurrency` ключа политики.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызовет исключение [invalid_scheduler_policy_thread_specification](invalid-scheduler-policy-thread-specification-class.md) , если значение, указанное для `MinConcurrency` политики, больше, чем указано для `MaxConcurrency` политики.
 
@@ -192,7 +192,7 @@ unsigned int SetPolicyValue(
 
 Если ключ, заданный `key` параметром, поддерживается, старое значение политики для приведения ключа к **`unsigned int`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызовет исключение [invalid_scheduler_policy_key](invalid-scheduler-policy-key-class.md) для недопустимого ключа политики или любого ключа политики, значение которого не может быть задано `SetPolicyValue` методом.
 
@@ -203,7 +203,7 @@ unsigned int SetPolicyValue(
 ## <a name="see-also"></a>См. также раздел
 
 [Пространство имен Concurrency](concurrency-namespace.md)<br/>
-[полициелементкэй](concurrency-namespace-enums.md)<br/>
+[PolicyElementKey](concurrency-namespace-enums.md)<br/>
 [Класс CurrentScheduler](currentscheduler-class.md)<br/>
 [Класс Scheduler](scheduler-class.md)<br/>
 [планировщик задач](../../../parallel/concrt/task-scheduler-concurrency-runtime.md)

@@ -32,7 +32,7 @@ ms.locfileid: "81371260"
 class ModuleBase;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Представляет базовый класс классов [модуля.](module-class.md)
 
@@ -70,7 +70,7 @@ class ModuleBase;
 virtual ~ModuleBase();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деприиратизирует текущий `ModuleBase` экземпляр класса.
 
@@ -86,7 +86,7 @@ virtual long DecrementObjectCount() = 0;
 
 Подсчет перед операцией по декретуму.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При реализации уменьшает число объектов, отслеживаемых модулем.
 
@@ -102,7 +102,7 @@ virtual long IncrementObjectCount() = 0;
 
 Подсчет перед операцией приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При реализации увеличивает число объектов, отслеживаемых модулем.
 
@@ -114,6 +114,6 @@ virtual long IncrementObjectCount() = 0;
 ModuleBase();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует экземпляр класса `Module`.

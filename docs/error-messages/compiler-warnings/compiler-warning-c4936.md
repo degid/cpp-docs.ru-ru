@@ -17,7 +17,7 @@ ms.locfileid: "87220123"
 
 > Данный __declspec поддерживается только при компиляции с параметрами /clr или /clr:pure
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр компилятора **/clr: pure** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017.
 

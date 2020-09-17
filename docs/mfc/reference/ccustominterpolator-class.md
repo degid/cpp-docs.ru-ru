@@ -85,7 +85,7 @@ class CCustomInterpolator;
 |[CCustomИнтерполатор::m_initialValue](#m_initialvalue)|Значение переменной в начале перехода.|
 |[CCustomИнтерполатор::m_initialVelocity](#m_initialvelocity)|Скорость переменной в начале перехода.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вывести класс из CCustomInterpolator и переопределить все необходимые методы для реализации пользовательского алгоритма интерполяции. Указатель к этому классу должен быть передан в качестве параметра CCustomTransition.
 
@@ -116,7 +116,7 @@ CCustomInterpolator(
 
 *finalValue*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте CCustomInterpolator::Init для инициализации продолжительности и окончательного значения позже в коде.
 

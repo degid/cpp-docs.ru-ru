@@ -28,7 +28,7 @@ void swap(
 *left*\
 Объект типа `deque`.
 
-*справа*\
+*right*\
 Объект типа `deque`.
 
 ### <a name="example"></a>Пример

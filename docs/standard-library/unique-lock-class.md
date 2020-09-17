@@ -22,7 +22,7 @@ template <class Mutex>
 class unique_lock;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В аргументе шаблона `Mutex` должно быть указано имя *типа мьютекс*.
 
@@ -38,20 +38,20 @@ class unique_lock;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[unique_lock](#unique_lock)|Формирует объект `unique_lock`.|
 |[Деструктор ~ unique_lock](#dtorunique_lock_destructor)|Освобождает все ресурсы, связанные с объектом `unique_lock`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[lock](#lock)|Блокирует вызывающий поток до тех пор, пока этот поток не получит права владельца соответствующего объекта `mutex`.|
 |[мьютекс](#mutex)|Извлекает сохраненный указатель на соответствующий объект `mutex`.|
 |[owns_lock](#owns_lock)|Указывает, является ли вызывающий поток владельцем соответствующего объекта `mutex`.|
 |[отпускании](#release)|Отменяет связь объекта `unique_lock` с объектом `mutex`.|
-|[позиции](#swap)|Меняет местами соответствующий `mutex` и статус владения с аналогичными свойствами указанного объекта.|
+|[swap](#swap)|Меняет местами соответствующий `mutex` и статус владения с аналогичными свойствами указанного объекта.|
 |[try_lock](#try_lock)|Попытки получить права владельца связанного объекта `mutex` без блокировки.|
 |[try_lock_for](#try_lock_for)|Попытки получить права владельца связанного объекта `mutex` без блокировки.|
 |[try_lock_until](#try_lock_until)|Попытки получить права владельца связанного объекта `mutex` без блокировки.|
@@ -61,8 +61,8 @@ class unique_lock;
 
 |Имя|Описание|
 |----------|-----------------|
-|[bool, оператор](#op_bool)|Указывает, является ли вызывающий поток владельцем соответствующего объекта `mutex`.|
-|[Оператор =](#op_eq)|Копирует сохраненный указатель `mutex` и соответствующее состояние владения из указанного объекта.|
+|[operator bool](#op_bool)|Указывает, является ли вызывающий поток владельцем соответствующего объекта `mutex`.|
+|[operator=](#op_eq)|Копирует сохраненный указатель `mutex` и соответствующее состояние владения из указанного объекта.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -82,7 +82,7 @@ class unique_lock;
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если сохраненный `mutex` указатель имеет значение null, этот метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -98,7 +98,7 @@ void lock();
 mutex_type *mutex() const noexcept;
 ```
 
-## <a name="operator-bool"></a><a name="op_bool"></a> bool, оператор
+## <a name="operator-bool"></a><a name="op_bool"></a> operator bool
 
 Указывает, является ли вызывающий поток владельцем соответствующего мьютекса.
 
@@ -110,7 +110,7 @@ explicit operator bool() noexcept
 
 **`true`** значение, если поток владеет мьютексом; в противном случае — значение **`false`** .
 
-## <a name="operator"></a><a name="op_eq"></a> Оператор =
+## <a name="operator"></a><a name="op_eq"></a> operator=
 
 Копирует сохраненный указатель `mutex` и соответствующее состояние владения из указанного объекта.
 
@@ -120,14 +120,14 @@ unique_lock& operator=(unique_lock&& Other) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Иной*\
+*Other*\
 Объект `unique_lock`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 `*this`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток является владельцем ранее назначенного объекта `mutex`, то перед вызовом `unlock` на `mutex` этот метод назначает новые значения.
 
@@ -157,11 +157,11 @@ mutex_type *release() noexcept;
 
 Предыдущее значение сохраненного указателя `mutex`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод задает значение сохраненного `mutex` указателя равным 0 и устанавливает `mutex` для внутреннего флага владения **`false`** .
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Меняет местами соответствующий `mutex` и статус владения с аналогичными свойствами указанного объекта.
 
@@ -171,7 +171,7 @@ void swap(unique_lock& Other) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Иной*\
+*Other*\
 Объект `unique_lock`.
 
 ## <a name="try_lock"></a><a name="try_lock"></a> try_lock
@@ -186,7 +186,7 @@ bool try_lock() noexcept;
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -211,7 +211,7 @@ bool try_lock_for(
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -237,7 +237,7 @@ bool try_lock_until(const xtime* Abs_time);
 
 **`true`** значение, если метод успешно получает владение `mutex` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если сохраненный `mutex` указатель имеет значение null, метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted` .
 
@@ -282,10 +282,10 @@ unique_lock(mutex_type& Mtx,
 *Abs_time*\
 Момент времени, определяющий порог, после которого метод больше не пытается получить права владельца объекта `mutex`.
 
-*Иной*\
+*Other*\
 Объект `unique_lock`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор создает объект, у которого значение соответствующего указателя мьютекса равно 0.
 
@@ -310,7 +310,7 @@ unique_lock(mutex_type& Mtx,
 ~unique_lock() noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток является владельцем соответствующего объекта `mutex`, деструктор освобождает права владения, вызывая метод unlock для объекта `mutex`.
 
@@ -322,7 +322,7 @@ unique_lock(mutex_type& Mtx,
 void unlock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вызывающий поток не является владельцем соответствующего объекта `mutex`, этот метод создает исключение [system_error](../standard-library/system-error-class.md) с кодом ошибки `operation_not_permitted`.
 

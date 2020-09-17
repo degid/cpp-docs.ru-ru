@@ -76,7 +76,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 |----------|-----------------|
 |[IProvideClassInfo2Impl::_tih](#_tih)|Управляет информацией типа для coclass.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс [IProvideClassInfo2](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo2) расширяет [IProvideClassInfo,](/windows/win32/api/ocidl/nn-ocidl-iprovideclassinfo) `GetGUID` добавляя метод. Этот метод позволяет клиенту получить исходящий IID интерфейса объекта для набора событий по умолчанию. Класс `IProvideClassInfo2Impl` обеспечивает реализацию `IProvideClassInfo` и `IProvideClassInfo2` методы по умолчанию.
 
@@ -100,7 +100,7 @@ class ATL_NO_VTABLE IProvideClassInfo2Impl : public IProvideClassInfo2
 STDMETHOD(GetClassInfo)(ITypeInfo** pptinfo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IProvideClassInfo::GetClassInfo](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo-getclassinfo) в Windows SDK.
 
@@ -114,7 +114,7 @@ STDMETHOD(GetGUID)(
     GUID* pGUID);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IProvideClassInfo2::GetGUID](/windows/win32/api/ocidl/nf-ocidl-iprovideclassinfo2-getguid) в Windows SDK.
 
@@ -126,7 +126,7 @@ STDMETHOD(GetGUID)(
 IProvideClassInfo2Impl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает `AddRef` [_tih](#_tih) члена. Деструктор вызывает `Release`.
 
@@ -139,7 +139,7 @@ static  tihclass
     _tih;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `_tih`управляет информацией типа для coclass.
 

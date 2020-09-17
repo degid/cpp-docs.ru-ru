@@ -29,19 +29,19 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCCustomColorsPropertyPage::CMFCCustomColorsPropertyPage`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCCustomColorsPropertyPage::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
 |`CMFCCustomColorsPropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 |[Кмфккустомколорспропертипаже:: Setup](#setup)|Задает компоненты цвета страницы свойств.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CMFCColorDialog`Класс использует этот класс для вывода страницы свойств пользовательского цвета. Дополнительные сведения о см `CMFCColorDialog` . в разделе [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md).
 
@@ -67,7 +67,7 @@ class CMFCCustomColorsPropertyPage : public CPropertyPage
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афкскустомколорспропертипаже. h
+**Заголовок:** афкскустомколорспропертипаже.h
 
 ## <a name="cmfccustomcolorspropertypagesetup"></a><a name="setup"></a> Кмфккустомколорспропертипаже:: Setup
 
@@ -91,7 +91,7 @@ void Setup(
 *&*\
 окне Синий компонент значения RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод обновляет текущие значения цвета RGB и связанные HLS (оттенок, освещение и насыщенность) на странице свойств. Метод [кмфкколордиалог:: сетпажетво](../../mfc/reference/cmfccolordialog-class.md#setpagetwo) вызывает этот метод, когда платформа Инициализирует диалоговое окно цвета или пользователь нажимает левую кнопку мыши. Дополнительные сведения о см `CMFCColorDialog` . в разделе [класс кмфкколордиалог](../../mfc/reference/cmfccolordialog-class.md).
 

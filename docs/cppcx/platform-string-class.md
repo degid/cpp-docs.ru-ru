@@ -85,12 +85,12 @@ public ref class String sealed : Object,
 
 |Член|Описание|
 |------------|-----------------|
-|[Оператор string:: operator = =](#operator-equality)|Указывает, совпадают ли значения двух указанных строковых объектов.|
+|[Оператор string::operator==](#operator-equality)|Указывает, совпадают ли значения двух указанных строковых объектов.|
 |[Оператор operator+](#operator-plus)|Сцепляет два объекта String в новый объект String.|
-|[Оператор string:: operator>](#operator-greater-than)|Указывает, является ли значение одного объекта String большим, чем значение второго объекта String.|
-|[Оператор string:: operator>=](#operator-greater-than-or-equals)|Указывает, является ли значение одного объекта String больше или равным значению второго объекта String.|
-|[Оператор string:: operator! =](#operator-inequality)|Указывает, различаются ли значения двух указанных строковых объектов.|
-|[Оператор string:: operator<](#operator-less-than)|Указывает, является ли значение одного объекта String меньшим, чем значение второго объекта String.|
+|[Оператор string::operator>](#operator-greater-than)|Указывает, является ли значение одного объекта String большим, чем значение второго объекта String.|
+|[Оператор string::operator>=](#operator-greater-than-or-equals)|Указывает, является ли значение одного объекта String больше или равным значению второго объекта String.|
+|[Оператор string::operator!=](#operator-inequality)|Указывает, различаются ли значения двух указанных строковых объектов.|
+|[Оператор string::operator<](#operator-less-than)|Указывает, является ли значение одного объекта String меньшим, чем значение второго объекта String.|
 
 ### <a name="requirements"></a>Требования
 
@@ -182,7 +182,7 @@ const char16* Data();
 
 Указатель на начало `const char16` массива символов Юникода ( `char16` является typedef для **`wchar_t`** ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для преобразования из `Platform::String^` в `wchar_t*`. Когда объект `String` выходит за пределы области, указатель Data больше не является гарантированно допустимым. Чтобы сохранить данные за пределами времени существования исходного `String` объекта, используйте [wcscpy_s](../c-runtime-library/reference/strcpy-s-wcscpy-s-mbscpy-s.md) , чтобы скопировать массив в память, выделенную самому себе.
 
@@ -210,7 +210,7 @@ char16* End();
 
 Указатель на позицию после конца текущей строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 End () возвращает значение начала () + length.
 
@@ -234,7 +234,7 @@ bool String::Equals(String^ str);
 
 **`true`**`str`значение, если значение равно текущему объекту; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод эквивалентен статической строке: [: CompareOrdinal](#compareordinal). В первой перегрузке предполагается, что параметр `str` может быть приведен к объекту String^.
 
@@ -280,7 +280,7 @@ bool IsFastPass();
 
 **`true`**`String`значение, если текущий объект является быстрым, в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При вызове функции, где в качестве параметра используется объект с подсчетом ссылок и вызываемая функция обращается к этому объекту только для чтения, компилятор может безопасно приостановить подсчет ссылок, чтобы повысить производительность вызова. Это свойство не дает никакой дополнительной пользы для вашего кода. Система обрабатывает все сведения.
 
@@ -298,7 +298,7 @@ unsigned int Length();
 
 Количество символов в текущем `String` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Длина объекта String без символов равна нулю. Длина следующего объекта String равна 5.
 
@@ -309,7 +309,7 @@ int len = str->Length(); //len = 5
 
 Массив символов, возвращаемый [строкой::D ATA](#data) имеет один дополнительный символ, который является завершающим нулем или "\ 0". Этот символ также имеет длину 2 байта.
 
-## <a name="stringoperator-operator"></a><a name="operator-plus"></a>Оператор string:: operator +
+## <a name="stringoperator-operator"></a><a name="operator-plus"></a>Оператор string::operator+
 
 Сцепляет два [строковых](../cppcx/platform-string-class.md) объекта в новый [строковый](../cppcx/platform-string-class.md) объект.
 
@@ -331,11 +331,11 @@ bool String::operator+( String^ str1, String^ str2);
 
 **`true`** Если *str1* равен *str2*; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор создает объект `String^`, содержащий данные из двух операндов. Используйте его для удобства, если производительность не играет решающей роли. Несколько вызовов "`+`" в функции, скорее всего, не будут иметь последствий, но если вы имеете дело с большими объектами или текстовыми данными в сложном цикле, используйте стандартные механизмы и типы C++.
 
-## <a name="stringoperator-operator"></a><a name="operator-equality"></a>Оператор string:: operator = =
+## <a name="stringoperator-operator"></a><a name="operator-equality"></a>Оператор string::operator==
 
 Указывает, равны ли текстовые значения двух указанных объектов String.
 
@@ -357,7 +357,7 @@ bool String::operator==( String^ str1, String^ str2);
 
 **`true`** значение, если содержимое `str1` равно `str2` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор эквивалентен [String:: CompareOrdinal](#compareordinal).
 
@@ -383,7 +383,7 @@ bool String::operator>( String^ str1, String^ str2);
 
 **`true`**, если значение `str1` больше значения `str2` ; в противном случае — **`false`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот оператор эквивалентен явному вызову [String:: CompareOrdinal](#compareordinal) и получению результата больше нуля.
 
@@ -409,7 +409,7 @@ bool String::operator>=( String^ str1, String^ str2);
 
 **`true`**, если значение `str1` больше или равно значению `str2` ; в противном случае — **`false`** .
 
-## <a name="stringoperator"></a><a name="operator-inequality"></a>String:: operator! =
+## <a name="stringoperator"></a><a name="operator-inequality"></a>String::operator!=
 
 Указывает, имеют ли два указанных `String` объекта разные значения.
 
@@ -473,7 +473,7 @@ String(char16* s, unsigned int n);
 *n*<br/>
 Число, указывающее длину строки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если важна производительность и вы управляете временем существования исходной строки, можно использовать [Platform:: StringReference](../cppcx/platform-stringreference-class.md) вместо String.
 

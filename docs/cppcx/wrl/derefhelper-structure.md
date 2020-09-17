@@ -33,7 +33,7 @@ struct DerefHelper<T*>;
 *T*<br/>
 Параметр шаблона.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Представляет разыменованный указатель на параметр шаблона `T*`.
 
@@ -43,7 +43,7 @@ struct DerefHelper<T*>;
 
 ### <a name="public-typedefs"></a>Открытые определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`DerefType`|Идентификатор для разыменованного параметра шаблона `T*`.|
 
@@ -53,7 +53,7 @@ struct DerefHelper<T*>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Async. h
+**Заголовок:** Async.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

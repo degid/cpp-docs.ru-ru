@@ -49,7 +49,7 @@ class CA2AEX
 
 |Имя|Описание|
 |----------|-----------------|
-|[CA2AEX:: operator LPSTR](#operator_lpstr)|Оператор преобразования.|
+|[CA2AEX::operator LPSTR](#operator_lpstr)|Оператор преобразования.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -58,7 +58,7 @@ class CA2AEX
 |[CA2AEX:: m_psz](#m_psz)|Элемент данных, в котором хранится исходная строка.|
 |[CA2AEX:: m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительных функций, используйте CA2TEX, CT2AEX или CA2A в своем коде.
 
@@ -86,7 +86,7 @@ class CA2AEX
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлконв. h
+**Заголовок:** атлконв.h
 
 ## <a name="ca2aexca2aex"></a><a name="ca2aex"></a>CA2AEX::CA2AEX
 
@@ -105,7 +105,7 @@ CA2AEX(LPCSTR psz) throw(...);
 *нкодепаже*<br/>
 Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает буфер, необходимый для перевода.
 
@@ -117,7 +117,7 @@ CA2AEX(LPCSTR psz) throw(...);
 ~CA2AEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 
@@ -137,7 +137,7 @@ LPSTR m_psz;
 char m_szBuffer[ t_nBufferLength];
 ```
 
-## <a name="ca2aexoperator-lpstr"></a><a name="operator_lpstr"></a>CA2AEX:: operator LPSTR
+## <a name="ca2aexoperator-lpstr"></a><a name="operator_lpstr"></a>CA2AEX::operator LPSTR
 
 Оператор преобразования.
 

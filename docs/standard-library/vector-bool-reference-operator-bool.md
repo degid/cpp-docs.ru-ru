@@ -31,7 +31,7 @@ operator bool() const;
 
 Логическое значение элемента объекта [vector \<bool> ](../standard-library/vector-bool-class.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект `vector<bool>` невозможно изменить при помощи данного оператора.
 

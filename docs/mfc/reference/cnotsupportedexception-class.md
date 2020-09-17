@@ -33,7 +33,7 @@ class CNotSupportedException : public CSimpleException
 |----------|-----------------|
 |[CNotSupportedИсключение::CNotSupportedИсключение](#cnotsupportedexception)|Формирует объект `CNotSupportedException`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Никакая дальнейшая квалификация не требуется или невозможна.
 
@@ -61,7 +61,7 @@ class CNotSupportedException : public CSimpleException
 CNotSupportedException();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не используйте этот конструктор напрямую, а скорее позвоните в глобальную функцию [AfxThrowNotSupported.](exception-processing.md#afxthrownotsupportedexception) для получения дополнительной информации об [Exception Handling in MFC](../exception-handling-in-mfc.md)обработке исключений см.
 

@@ -29,7 +29,7 @@ class context_self_unblock : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[context_self_unblock](#ctor)|Перегружен. Формирует объект `context_self_unblock`.|
 
@@ -41,7 +41,7 @@ class context_self_unblock : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

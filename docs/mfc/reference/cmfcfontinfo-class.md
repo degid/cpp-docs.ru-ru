@@ -59,7 +59,7 @@ class CMFCFontInfo : public CObject
 |[CMFCФонФоФо::m_strName](#m_strname)|Название шрифта; например, **Arial**.|
 |[CMFCФонФоФо::m_strScript](#m_strscript)|Имя набора символов (скрипта), связанного с шрифтом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект можно `CMFCFontInfo` прикрепить к элементу класса [CMFCToolBarFontComboBox.](../../mfc/reference/cmfctoolbarfontcombobox-class.md) Позвоните в [CMFCToolBarFontComboBox::GetFontDesc](../../mfc/reference/cmfctoolbarfontcombobox-class.md#getfontdesc) метод для извлечения указателя на `CMFCFontInfo` объект.
 
@@ -110,7 +110,7 @@ CMFCFontInfo(const CMFCFontInfo& src);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта документация использует *набор символов* терминов и *сценарий* взаимозаменяемо. *Сценарий*, который также известен как система письма, представляет собой набор символов и правил для написания этих символов на одном или нескольких языках. Коллекция символов включает алфавит и пунктуацию, используемые в этом скрипте. Например, латинская скрипт используется для английского языка, как это говорят в Соединенных Штатах, и его алфавит включает в себя символы от А до Я. Член `lfCharSet` структуры [LOGFONT](/windows/win32/api/wingdi/ns-wingdi-logfontw) определяет набор символов. Например, значение ANSI_CHARSET определяет набор символов ANSI, который включает алфавит латинского скрипта.
 
@@ -126,7 +126,7 @@ CString GetFullName() const;
 
 Строка, содержащая имя шрифта и сценарий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы получить полное имя шрифта. Например, если имя шрифта Является **Arial,** а шрифт - **кириллическим,** этот метод возвращает "Arial (кириллический)".
 
@@ -138,7 +138,7 @@ CString GetFullName() const;
 const BYTE m_nCharSet;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см. *nCharSet* параметр [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) конструктор.
 
@@ -150,7 +150,7 @@ const BYTE m_nCharSet;
 const BYTE m_nPitchAndFamily;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см *nPitchAndFamily* параметр [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) конструктор.
 
@@ -162,7 +162,7 @@ const BYTE m_nPitchAndFamily;
 const int m_nType;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной *информации* см. [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo)
 
@@ -174,7 +174,7 @@ const int m_nType;
 const CString m_strName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, см *lpszName* параметр [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) конструктор.
 
@@ -186,7 +186,7 @@ const CString m_strName;
 const CString m_strScript;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации, *см. lpszScript* параметр [CMFCFontInfo::CMFCFontInfo](#cmfcfontinfo) конструктор.
 

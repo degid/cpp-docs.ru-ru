@@ -45,7 +45,7 @@ public:
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `StartTimestamp` Вычтите `StopTimestamp` из, чтобы получить количество клещей, прошедших в течение всего следа. Используйте `TickFrequency` для преобразования полученного значения в единицу времени. Пример преобразования тиков во время можно [EVENT_DATA.](../c-event-data-types/event-data-struct.md)
 

@@ -22,9 +22,9 @@ ms.locfileid: "88844708"
 \<array>Заголовок содержит две функции, не являющиеся членами, `get` и `swap` , которые работают с объектами **Array** .
 
 [Получить](#get)\
-[позиции](#swap)
+[swap](#swap)
 
-## <a name="get"></a><a name="get"></a> Получить
+## <a name="get"></a><a name="get"></a> get
 
 Возвращает ссылку на указанный элемент массива.
 
@@ -41,7 +41,7 @@ constexpr T&& get(array<T, N>&& arr) noexcept;
 
 ### <a name="parameters"></a>Параметры
 
-*Номер*\
+*Index*\
 Смещение элемента.
 
 *T*\
@@ -85,7 +85,7 @@ int main()
 1 3
 ```
 
-## <a name="swap"></a><a name="swap"></a> позиции
+## <a name="swap"></a><a name="swap"></a> swap
 
 Специализация шаблона, не относящаяся к элементу `std::swap` , которая меняет местами два объекта **массива** .
 
@@ -102,13 +102,13 @@ void swap(array<Ty, N>& left, array<Ty, N>& right);
 *\N*\
 Размер массива.
 
-*слева*\
+*left*\
 Первый массив для обмена.
 
-*Правильно*\
+*right*\
 Второй массив для обмена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция шаблона выполняет `left.swap(right)`.
 

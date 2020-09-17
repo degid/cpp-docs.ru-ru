@@ -31,17 +31,17 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Ксимпликсцептион:: Ксимпликсцептион](#csimpleexception)|Конструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Ксимпликсцептион:: Жетеррормессаже](#geterrormessage)|Содержит текст о произошедшей ошибке.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CSimpleException` является базовым классом для критически важных для ресурса исключений MFC и обрабатывает владение и инициализацию сообщения об ошибке. Следующие классы используют `CSimpleException` в качестве базового класса:
 
@@ -67,7 +67,7 @@ class AFX_NOVTABLE CSimpleException : public CException
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="csimpleexceptioncsimpleexception"></a><a name="csimpleexception"></a> Ксимпликсцептион:: Ксимпликсцептион
 
@@ -83,7 +83,7 @@ explicit CSimpleException(BOOL bAutoDelete);
 *баутоделете*<br/>
 Укажите значение TRUE, если память для `CSimpleException` объекта была выделена в куче. Это приведет к `CSimpleException` удалению объекта при `Delete` вызове функции-члена для удаления исключения. Укажите значение FALSE, если `CSimpleException` объект находится в стеке или является глобальным объектом. В этом случае `CSimpleException` объект не будет удален при `Delete` вызове функции-члена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно вызывать этот конструктор напрямую не требуется. Функция, вызывающая исключение, должна создать экземпляр `CException` производного класса и вызвать его конструктор или использовать одну из функций Throw MFC, например [афкссровфиликсцептион](exception-processing.md#afxthrowfileexception), для создания предопределенного типа.
 
@@ -113,7 +113,7 @@ virtual BOOL GetErrorMessage(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0, если текст сообщения об ошибке недоступен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [CException:: жетеррормессаже](../../mfc/reference/cfileexception-class.md#geterrormessage).
 

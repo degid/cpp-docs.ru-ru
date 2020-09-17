@@ -27,9 +27,9 @@ ms.locfileid: "77143010"
 
 ## <a name="example"></a>Пример
 
-В следующем примере используются функции `is_prime` и `is_carmichael` для расчета наборов простых и Кармичаел чисел. В примере используются алгоритмы [параллелизма::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) и [concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельного расчета каждого набора. Дополнительные сведения о параллельных алгоритмах см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
+В следующем примере используются функции `is_prime` и `is_carmichael` для расчета наборов простых и Кармичаел чисел. В примере используются алгоритмы [параллелизма::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) и [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for) для параллельного расчета каждого набора. Дополнительные сведения о параллельных алгоритмах см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
 
-В этом примере используется объект [Concurrency:: concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) для хранения набора чисел кармичаел, так как он впоследствии будет использовать этот объект в качестве рабочей очереди. Он использует объект [Concurrency:: concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) для хранения набора простых чисел, так как впоследствии он будет выполнять итерацию по этому набору для поиска простых факторов.
+В этом примере используется объект [concurrency::concurrent_queue](../../parallel/concrt/reference/concurrent-queue-class.md) для хранения набора чисел кармичаел, так как он впоследствии будет использовать этот объект в качестве рабочей очереди. Он использует объект [concurrency::concurrent_vector](../../parallel/concrt/reference/concurrent-vector-class.md) для хранения набора простых чисел, так как впоследствии он будет выполнять итерацию по этому набору для поиска простых факторов.
 
 [!code-cpp[concrt-carmichael-primes#2](../../parallel/concrt/codesnippet/cpp/how-to-use-parallel-containers-to-increase-efficiency_2.cpp)]
 

@@ -54,7 +54,7 @@ class ATL_NO_VTABLE ICommandPropertiesImpl
 |[GetProperties](#getproperties)|Возвращает список свойств в группе свойств набора строк, запрашиваемых в данный момент для набора строк.|
 |[SetProperties](#setproperties)|Задает свойства в группе свойств набора строк.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это обязательно для команд. Реализация обеспечивается статической функцией, определенной [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md) макросом.
 
@@ -75,7 +75,7 @@ STDMETHOD(GetProperties)(const ULONG cPropertyIDSets,
 
 См. раздел [ICommandProperties:: Properties](/previous-versions/windows/desktop/ms723119(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [BEGIN_PROPSET_MAP](../../data/oledb/begin-propset-map.md).
 

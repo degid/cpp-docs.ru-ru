@@ -58,7 +58,7 @@ class CComContainedObject : public Base
 |[CComContainedПредмет::QueryInterface](#queryinterface)|Извлекает указатель на запрашиваемый интерфейс на объекте владельца.|
 |[CComContainedObject::Release](#release)|Декреты эталона рассчитывают на объект владельца.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ATL `CComContainedObject` использует в классах [CComAggObject](../../atl/reference/ccomaggobject-class.md), [CComPolyObject](../../atl/reference/ccompolyobject-class.md), и [CComCachedTearOffObject](../../atl/reference/ccomcachedtearoffobject-class.md). `CComContainedObject`реализует [IUnknown,](/windows/win32/api/unknwn/nn-unknwn-iunknown) делегируя объекту `IUnknown`владельца. (Владелец является либо внешним объектом агрегации, либо объектом, для которого создается интерфейс отрыва.) `CComContainedObject` звонки `CComObjectRootEx` `OuterQueryInterface`'s `OuterAddRef`, `OuterRelease`, и `Base`, все унаследованные через .
 
@@ -97,7 +97,7 @@ CComContainedObject(void* pv);
 *Pv*<br/>
 (в) Объект `IUnknown`владельца.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает `m_pOuterUnknown` указатель участника (наследуемый `Base` через класс) на *pv*.
 
@@ -109,7 +109,7 @@ CComContainedObject(void* pv);
 ~CComContainedObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -125,7 +125,7 @@ IUnknown* GetControllingUnknown();
 
 Объект `IUnknown`владельца.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод может `Base` быть виртуальным, если объявлен [DECLARE_GET_CONTROLLING_UNKNOWN](aggregation-and-class-factory-macros.md#declare_get_controlling_unknown) макрос.
 

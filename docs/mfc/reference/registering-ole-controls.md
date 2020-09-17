@@ -133,7 +133,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
 
 Ненулевое значение, если класс элемента управления был зарегистрирован; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это позволяет использовать элемент управления в контейнерах, поддерживающих технологию OLE-управления. `AfxOleRegisterControlClass` обновляет реестр, используя имя и расположение элемента управления в системе, а также задает модель потоков, которую элемент управления поддерживает в реестре. Дополнительные сведения см. в [техническом примечании 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), «потоковая модель потоков в элементах управления OLE» и [о процессах и потоках](/windows/win32/ProcThread/about-processes-and-threads) в Windows SDK.
 
@@ -149,7 +149,7 @@ BOOL AFXAPI AfxOleRegisterControlClass(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="afxoleregisterpropertypageclass"></a><a name="afxoleregisterpropertypageclass"></a> афксолерегистерпропертипажекласс
 
@@ -186,13 +186,13 @@ BOOL AFXAPI AfxOleRegisterPropertyPageClass(
 
 Ненулевое значение, если класс элемента управления был зарегистрирован; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это позволяет использовать страницу свойств в контейнерах, поддерживающих технологию OLE-управления. `AfxOleRegisterPropertyPageClass` обновляет реестр, используя имя страницы свойств и ее расположение в системе, а также задает модель потоков, которую элемент управления поддерживает в реестре. Дополнительные сведения см. в [техническом примечании 64](../../mfc/tn064-apartment-model-threading-in-activex-controls.md), «потоковая модель потоков в элементах управления OLE» и [о процессах и потоках](/windows/win32/ProcThread/about-processes-and-threads) в Windows SDK.
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="afxoleregistertypelib"></a><a name="afxoleregistertypelib"></a> афксолерегистертипелиб
 
@@ -224,7 +224,7 @@ BOOL AfxOleRegisterTypeLib(
 
 Ненулевое значение, если библиотека типов была зарегистрирована; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обновляет реестр, используя имя библиотеки типов и ее расположение в системе.
 
@@ -236,7 +236,7 @@ BOOL AfxOleRegisterTypeLib(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="afxoleunregisterclass"></a><a name="afxoleunregisterclass"></a> афксолеунрегистеркласс
 
@@ -260,7 +260,7 @@ BOOL AFXAPI AfxOleUnregisterClass(REFCLSID clsID, LPCSTR pszProgID);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** afxctl. h
+  **Заголовок** afxctl.h
 
 ## <a name="afxoleunregistertypelib"></a><a name="afxoleunregistertypelib"></a> афксолеунрегистертипелиб
 
@@ -285,7 +285,7 @@ BOOL AFXAPI AfxOleUnregisterTypeLib(REFGUID tlID);
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксдисп. h
+  **Заголовок** афксдисп.h
 
 ## <a name="see-also"></a>См. также раздел
 

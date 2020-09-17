@@ -58,7 +58,7 @@ class CW2WEX
 |[CW2WEX::m_psz](#m_psz)|Член данных, который хранит строку исходного кода.|
 |[CW2WEX::m_szBuffer](#m_szbuffer)|Статический буфер, используемый для хранения преобразованной строки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если не требуется дополнительная функциональность, используйте CW2TEX, CT2WEX или CW2W в коде.
 
@@ -105,7 +105,7 @@ CW2WEX( LPCWSTR  psz) throw(...);
 *nCodePage*<br/>
 Кодовая страница. Не используется в этом классе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает буфер, необходимый для перевода.
 
@@ -117,7 +117,7 @@ CW2WEX( LPCWSTR  psz) throw(...);
 ~CW2WEX() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенный буфер.
 

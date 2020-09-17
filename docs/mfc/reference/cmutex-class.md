@@ -33,7 +33,7 @@ class CMutex : public CSyncObject
 |----------|-----------------|
 |[CMutex::CMutex](#cmutex)|Формирует объект `CMutex`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Mutexes полезны, когда только один поток в то время может быть разрешено изменять данные или другой контролируемый ресурс. Например, добавление узлов в связанный список — это процесс, который должен быть разрешен только одним потоком за раз. С помощью `CMutex` объекта для управления связанным списком доступ к списку может получить только один поток.
 
@@ -79,7 +79,7 @@ CMutex(
 *lpsaAttribute*<br/>
 Атрибуты безопасности для объекта mutex. Полное описание этой структуры [можно](/previous-versions/windows/desktop/legacy/aa379560\(v=vs.85\)) SECURITY_ATTRIBUTES в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить доступ `CMutex` к объекту или освободить объект, создайте объект [CMultiLock](../../mfc/reference/cmultilock-class.md) или [CSingleLock](../../mfc/reference/csinglelock-class.md) и позвоните [в](../../mfc/reference/csinglelock-class.md#lock) его функции lock and [Unlock.](../../mfc/reference/csinglelock-class.md#unlock) Если `CMutex` объект используется автономно, позвоните `Unlock` его функции-члена, чтобы освободить его.
 

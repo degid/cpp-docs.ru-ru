@@ -2844,4 +2844,4 @@ inline float truncf(float _X) restrict(amp);
 
 ## <a name="see-also"></a>См. также раздел
 
-[Concurrency::p recise_math пространство имен](concurrency-precise-math-namespace.md)
+[concurrency::p recise_math пространство имен](concurrency-precise-math-namespace.md)

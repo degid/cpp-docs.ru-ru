@@ -55,7 +55,7 @@ public:
 [энтропии](#entropy)\
 [random_device::operator()](#op_call)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс описывает источник случайных чисел и, согласно стандарту ISO C++, может быть недетерминистическим или криптостойким (но это необязательно). В реализации в Visual Studio полученные значения являются недетерминистическими и криптостойкими, но производительность ниже, чем у генераторов, созданных на основе механизмов и адаптеров механизмов (таких как [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md), быстрого и качественного механизма для большинства приложений).
 
@@ -115,7 +115,7 @@ a random value == 213725214
 random_device(const std::string& = "");
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор инициализирует генератор, как требуется, игнорируя строковый параметр. Возвращает значение определенного в реализации типа, производного из [exception](../standard-library/exception-class.md), если не удалось инициализировать `random_device`.
 
@@ -127,11 +127,11 @@ random_device(const std::string& = "");
 double entropy() const noexcept;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член возвращает оценку стохастичности источника в битах.
 
-## <a name="random_deviceoperator"></a><a name="op_call"></a> random_device:: operator ()
+## <a name="random_deviceoperator"></a><a name="op_call"></a> random_device::operator ()
 
 Возвращает случайное значение.
 
@@ -139,7 +139,7 @@ double entropy() const noexcept;
 result_type operator()();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает значения с равномерным распределением в замкнутом интервале [`min, max`] в соответствии с функциями-членами `min()` и `max()`. Если случайное число не удалось получить, возвращается значение определенного в реализации типа, производного от [exception](../standard-library/exception-class.md).
 

@@ -120,7 +120,7 @@ class CFileFind : public CObject
 |----------|-----------------|
 |[CFileFind::m_pTM](#m_ptm)|Указатель на `CAtlTransactionManager` объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CFileFind`включает функции участника, которые начинают поиск, находят файл и возвращают заголовок, имя или путь файла. Для поиска в Интернете функция участника [GetFileURL](#getfileurl) возвращает URL-адрес файла.
 
@@ -170,7 +170,7 @@ CFileFind(CAtlTransactionManager* pTM);
 void Close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `Close`вызова вам не нужно создавать `CFileFind` новый экземпляр перед вызовом [FindFile,](#findfile) чтобы начать новый поиск.
 
@@ -186,7 +186,7 @@ void Close();
 virtual void CloseContext();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Закрывает файл, указанный текущим значением ручки поиска. Переизбь эту функцию для изменения поведения по умолчанию.
 
@@ -214,7 +214,7 @@ virtual BOOL FindFile(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Чтобы получить расширенную информацию об ошибке, позвоните в функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `FindFile` вызова для начала поиска файлов, позвоните [FindNextFile](#findnextfile) для получения последующих файлов. Вы должны `FindNextFile` позвонить по крайней мере один раз, прежде чем позвонить любой из следующих функций члена атрибута:
 
@@ -272,7 +272,7 @@ virtual BOOL FindNextFile();
 
 Nonzero, если есть больше файлов; ноль, если найденный файл является последним в каталоге или если произошла ошибка. Чтобы получить расширенную информацию об ошибке, позвоните в функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror). Если найденный файл является последним файлом в каталоге, или если `GetLastError` не может быть найдено соответствие файлов, функция возвращается ERROR_NO_MORE_FILES.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны `FindNextFile` позвонить по крайней мере один раз, прежде чем позвонить любой из следующих функций члена атрибута:
 
@@ -341,7 +341,7 @@ virtual BOOL GetCreationTime(CTime& refTime) const;
 
 Nonzero, если успешно; 0, если не удается. `GetCreationTime`возвращает 0 только в том случае, `CFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetCreationTime`по крайней мере один раз, прежде чем звонить .
 
@@ -364,7 +364,7 @@ virtual CString GetFileName() const;
 
 Имя самого недавно найденного файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) по крайней мере один раз, прежде чем звонить GetFileName.
 
@@ -392,7 +392,7 @@ virtual CString GetFilePath() const;
 
 Путь указанного файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetFilePath`по крайней мере один раз, прежде чем звонить .
 
@@ -420,7 +420,7 @@ virtual CString GetFileTitle() const;
 
 Название файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetFileTitle`по крайней мере один раз, прежде чем звонить .
 
@@ -448,7 +448,7 @@ virtual CString GetFileURL() const;
 
 Полный URL- АДРЕС.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetFileURL`по крайней мере один раз, прежде чем звонить .
 
@@ -479,7 +479,7 @@ virtual BOOL GetLastAccessTime(FILETIME* pTimeStamp) const;
 
 Nonzero, если успешно; 0, если не удается. `GetLastAccessTime`возвращает 0 только в том случае, `CFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetLastAccessTime`по крайней мере один раз, прежде чем звонить .
 
@@ -511,7 +511,7 @@ virtual BOOL GetLastWriteTime(CTime& refTime) const;
 
 Nonzero, если успешно; 0, если не удается. `GetLastWriteTime`возвращает 0 только в том случае, `CFileFind` если [FindNextFile](#findnextfile) никогда не был вызван на этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetLastWriteTime`по крайней мере один раз, прежде чем звонить .
 
@@ -534,7 +534,7 @@ ULONGLONG GetLength() const;
 
 Длина найденного файла, в байтах.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetLength`по крайней мере один раз, прежде чем звонить .
 
@@ -559,7 +559,7 @@ virtual CString GetRoot() const;
 
 Корень активного поиска.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `GetRoot`по крайней мере один раз, прежде чем звонить .
 
@@ -581,7 +581,7 @@ BOOL IsArchived() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приложения отмечают архивный файл, который должен быть резервного копирования или удален, с FILE_ATTRIBUTE_ARCHIVE, атрибут файла, определенный в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw)
 
@@ -605,7 +605,7 @@ BOOL IsCompressed() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сжатый файл помечен FILE_ATTRIBUTE_COMPRESSED, атрибутом файла, указанным в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Для файла этот атрибут указывает на то, что все данные в файле сжаты. Для каталога этот атрибут указывает на то, что сжатие является значением по умолчанию для вновь созданных файлов и субдиректоров.
 
@@ -629,7 +629,7 @@ BOOL IsDirectory() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файл, являющиеся каталогом, помечается FILE_ATTRIBUTE_DIRECTORY атрибутом файла, указанным в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw)
 
@@ -655,7 +655,7 @@ virtual BOOL IsDots() const;
 
 Nonzero, если найденный файл имеет имя "." или "..," указывает на то, что найденный файл на самом деле является каталогом. В противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `IsDots`по крайней мере один раз, прежде чем звонить .
 
@@ -675,7 +675,7 @@ BOOL IsHidden() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Скрытые файлы, которые помечены FILE_ATTRIBUTE_HIDDEN, атрибут файла, указанный в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Скрытый файл не включен в обычное перечисление каталога.
 
@@ -699,7 +699,7 @@ BOOL IsNormal() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файлы, отмеченные FILE_ATTRIBUTE_NORMAL, атрибут файла, указанный в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Обычный файл не имеет другого набора атрибутов. Все остальные атрибуты файла переопределяют этот атрибут.
 
@@ -723,7 +723,7 @@ BOOL IsReadOnly() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Файл только для чтения помечен FILE_ATTRIBUTE_READONLY, атрибутом файла, указанным в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Приложения могут читать такой файл, но они не могут написать ему или удалить его.
 
@@ -747,7 +747,7 @@ BOOL IsSystem() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Системный файл помечен FILE_ATTRIBUTE_SYSTEM, атрибутом файла, указанным в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Системный файл является частью операционной системы или используется исключительно операционной системой.
 
@@ -771,7 +771,7 @@ BOOL IsTemporary() const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Временный файл помечен FILE_ATTRIBUTE_TEMPORARY, атрибутом файла, определенным в структуре [WIN32_FIND_DATA.](/windows/win32/api/minwinbase/ns-minwinbase-win32_find_dataw) Временный файл используется для временного хранения. Заявки должны писать в файл только в случае крайней необходимости. Большая часть данных файла остается в памяти, не будучи смыты к средствам массовой информации, потому что файл скоро будет удален.
 
@@ -791,7 +791,7 @@ BOOL IsTemporary() const;
 CAtlTransactionManager* m_pTM;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfilefindmatchesmask"></a><a name="matchesmask"></a>CFileFind::MatchesMask
 
@@ -826,7 +826,7 @@ virtual BOOL MatchesMask(DWORD dwMask) const;
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0. Чтобы получить расширенную информацию об ошибке, позвоните в функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [FindNextFile](#findnextfile) `MatchesMask`по крайней мере один раз, прежде чем звонить .
 

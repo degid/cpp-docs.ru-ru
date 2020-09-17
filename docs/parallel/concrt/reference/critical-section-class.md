@@ -54,7 +54,7 @@ class critical_section;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[lock](#lock)|Получает этот критический раздел.|
 |[native_handle](#native_handle)|Возвращает собственный машинный код, зависящий от платформы, если он существует.|
@@ -62,7 +62,7 @@ class critical_section;
 |[try_lock_for](#try_lock_for)|Пытается получить блокировку без блокировки в течение указанного числа миллисекунд.|
 |[блокирован](#unlock)|Разблокирует критическую секцию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [структуры данных синхронизации](../../../parallel/concrt/synchronization-data-structures.md).
 
@@ -72,9 +72,9 @@ class critical_section;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="critical_section"></a><a name="ctor"></a>critical_section
 
@@ -92,7 +92,7 @@ critical_section();
 ~critical_section();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ожидается, что блокировка больше не удерживается при выполнении деструктора. Разрешение критической секции, уничтожения с блокировкой, по-прежнему приводит к неопределенному поведению.
 
@@ -104,7 +104,7 @@ critical_section();
 void lock();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Часто безопаснее использовать конструкцию [scoped_lock](#critical_section__scoped_lock_class) для получения и освобождения `critical_section` объекта в безопасном для исключения виде.
 
@@ -122,7 +122,7 @@ native_handle_type native_handle();
 
 Ссылка на критическую секцию.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `critical_section`Объект не связан с платформой машинного кода, зависящей от платформы, для операционной системы Windows. Метод просто возвращает ссылку на сам объект.
 

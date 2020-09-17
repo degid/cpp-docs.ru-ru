@@ -70,11 +70,11 @@ ms.locfileid: "87219486"
 
 ::: moniker-end
 
-1. В файле *PCH. h* (*stdafx. h* в Visual Studio 2017 и более ранних версиях) добавьте следующий код:
+1. В файле *PCH.h* (*stdafx.h* в Visual Studio 2017 и более ранних версиях) добавьте следующий код:
 
 [!code-cpp[concrt-basic-agent#1](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_1.h)]
 
-   Файл заголовка agents. h содержит функциональные возможности класса [Concurrency:: Agent](../../parallel/concrt/reference/agent-class.md) .
+   Файл заголовка agents.h содержит функциональные возможности класса [concurrency::Agent](../../parallel/concrt/reference/agent-class.md) .
 
 1. Убедитесь, что приложение успешно создано путем его сборки и запуска. Чтобы выполнить сборку приложения, в меню **Сборка** выберите пункт **построить решение**. Если приложение успешно строится, запустите его, выбрав команду **начать отладку** в меню **Отладка** .
 
@@ -86,13 +86,13 @@ ms.locfileid: "87219486"
 
 #### <a name="to-create-the-file_reader-class"></a>Создание класса file_reader
 
-1. Добавьте в проект новый файл заголовка C++. Для этого щелкните правой кнопкой мыши узел **файлы заголовков** в **Обозреватель решений**, выберите команду **Добавить**, а затем щелкните **новый элемент**. В области **шаблоны** выберите **заголовочный файл (. h)**. В диалоговом окне **Добавление нового элемента** введите `file_reader.h` в поле **имя** и нажмите кнопку **Добавить**.
+1. Добавьте в проект новый файл заголовка C++. Для этого щелкните правой кнопкой мыши узел **файлы заголовков** в **Обозреватель решений**, выберите команду **Добавить**, а затем щелкните **новый элемент**. В области **шаблоны** выберите **заголовочный файл (.h)**. В диалоговом окне **Добавление нового элемента** введите `file_reader.h` в поле **имя** и нажмите кнопку **Добавить**.
 
-1. В file_reader. h добавьте следующий код.
+1. В file_reader.h добавьте следующий код.
 
 [!code-cpp[concrt-basic-agent#17](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_2.h)]
 
-1. В file_reader. h создайте класс с именем `file_reader` , производным от `agent` .
+1. В file_reader.h создайте класс с именем `file_reader` , производным от `agent` .
 
 [!code-cpp[concrt-basic-agent#2](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_3.h)]
 
@@ -100,7 +100,7 @@ ms.locfileid: "87219486"
 
 [!code-cpp[concrt-basic-agent#3](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_4.h)]
 
-   `_file_name`Элемент — это имя файла, из которого агент считывает данные. `_target`Элемент является объектом [Concurrency:: ITarget](../../parallel/concrt/reference/itarget-class.md) , в который агент записывает содержимое файла. `_error`Элемент содержит все ошибки, происходящие во время существования агента.
+   `_file_name`Элемент — это имя файла, из которого агент считывает данные. `_target`Элемент является объектом [concurrency::ITarget](../../parallel/concrt/reference/itarget-class.md) , в который агент записывает содержимое файла. `_error`Элемент содержит все ошибки, происходящие во время существования агента.
 
 1. Добавьте следующий код для `file_reader` конструкторов в **`public`** раздел `file_reader` класса.
 
@@ -114,15 +114,15 @@ ms.locfileid: "87219486"
 
    `get_error`Метод извлекает все ошибки, происходящие в течение жизненного цикла агента.
 
-1. Реализуйте метод [Concurrency:: Agent:: Run](reference/agent-class.md#run) в **`protected`** разделе класса.
+1. Реализуйте метод [concurrency::Agent:: Run](reference/agent-class.md#run) в **`protected`** разделе класса.
 
 [!code-cpp[concrt-basic-agent#6](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_7.h)]
 
 `run`Метод открывает файл и считывает из него данные. `run`Метод использует обработку исключений для захвата всех ошибок, происходящих во время обработки файла.
 
-   Каждый раз, когда этот метод считывает данные из файла, он вызывает функцию [Concurrency:: asend](reference/concurrency-namespace-functions.md#asend) для отправки этих данных в целевой буфер. Он отправляет пустую строку в целевой буфер для указания на окончание обработки.
+   Каждый раз, когда этот метод считывает данные из файла, он вызывает функцию [concurrency::asend](reference/concurrency-namespace-functions.md#asend) для отправки этих данных в целевой буфер. Он отправляет пустую строку в целевой буфер для указания на окончание обработки.
 
-В следующем примере показано полное содержимое файла file_reader. h.
+В следующем примере показано полное содержимое файла file_reader.h.
 
 [!code-cpp[concrt-basic-agent#7](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_8.h)]
 
@@ -130,7 +130,7 @@ ms.locfileid: "87219486"
 
 ## <a name="using-the-file_reader-class-in-the-application"></a><a name="useagentclass"></a>Использование класса file_reader в приложении
 
-В этом разделе показано, как использовать `file_reader` класс для чтения содержимого текстового файла. Также показано, как создать объект [Concurrency:: Call](../../parallel/concrt/reference/call-class.md) , который получает данные файла и вычисляет свою контрольную сумму адлер-32.
+В этом разделе показано, как использовать `file_reader` класс для чтения содержимого текстового файла. Также показано, как создать объект [concurrency::Call](../../parallel/concrt/reference/call-class.md) , который получает данные файла и вычисляет свою контрольную сумму адлер-32.
 
 #### <a name="to-use-the-file_reader-class-in-your-application"></a>Использование класса file_reader в приложении
 
@@ -142,7 +142,7 @@ ms.locfileid: "87219486"
 
 [!code-cpp[concrt-basic-agent#9](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_10.cpp)]
 
-1. В `_tmain` функции создайте объект [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) , который сигнализирует об окончании обработки.
+1. В `_tmain` функции создайте объект [concurrency::Event](../../parallel/concrt/reference/event-class.md) , который сигнализирует об окончании обработки.
 
 [!code-cpp[concrt-basic-agent#10](../../parallel/concrt/codesnippet/cpp/walkthrough-creating-an-agent-based-application_11.cpp)]
 
@@ -196,7 +196,7 @@ Adler-32 sum is fefb0d75
 
 Чтобы предотвратить одновременный доступ к элементам данных, рекомендуется добавить методы, выполняющие работу, в **`protected`** раздел или **`private`** класса. Добавляйте только методы, которые отправляют или получают сообщения от агента в **`public`** раздел класса.
 
-Всегда вызывайте [Concurrency:: Agent::d один](reference/agent-class.md#done) метод для перемещения агента в состояние завершения. Этот метод обычно вызывается перед возвратом из `run` метода.
+Всегда вызывайте [concurrency::Agent::d один](reference/agent-class.md#done) метод для перемещения агента в состояние завершения. Этот метод обычно вызывается перед возвратом из `run` метода.
 
 ## <a name="next-steps"></a>Next Steps
 

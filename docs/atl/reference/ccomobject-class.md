@@ -39,21 +39,21 @@ class CComObject : public Base
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CComObject:: CComObject](#ccomobject)|Конструктор.|
 |[CComObject:: ~ CComObject](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[CComObject:: AddRef](#addref)|Увеличивает значение счетчика ссылок на объект.|
 |[CComObject:: CreateInstance](#createinstance)|Статически Создает новый `CComObject` объект.|
 |[CComObject:: QueryInterface](#queryinterface)|Извлекает указатель на запрошенный интерфейс.|
 |[CComObject:: Release](#release)|Уменьшает значение счетчика ссылок на объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComObject`реализует [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) для неагрегированного объекта. Однако вызовы `QueryInterface` , `AddRef` и `Release` делегируются в `CComObjectRootEx` .
 
@@ -67,7 +67,7 @@ class CComObject : public Base
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлком. h
+**Заголовок:** атлком.h
 
 ## <a name="ccomobjectaddref"></a><a name="addref"></a>CComObject:: AddRef
 
@@ -94,7 +94,7 @@ CComObject(void* = NULL);
 <em>void\*</em><br/>
 окне Этот неименованный параметр не используется. Он существует для симметрии с другими `CComXXXObjectXXX` конструкторами.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Деструктор уменьшает его.
 
@@ -108,7 +108,7 @@ CComObject(void* = NULL);
 CComObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы, вызывает [финалрелеасе](ccomobjectrootex-class.md#finalrelease)и уменьшает число блокировок модуля.
 
@@ -129,7 +129,7 @@ static HRESULT WINAPI CreateInstance(CComObject<Base>** pp);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращаемый объект имеет нулевое значение счетчика ссылок, поэтому вызовите `AddRef` его немедленно, а затем используйте `Release` для освобождения ссылки на указатель объекта по завершении.
 

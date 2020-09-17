@@ -26,13 +26,13 @@ class CMFCPrintPreviewToolBar : public CMFCToolBar
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCPrintPreviewToolBar::~CMFCPrintPreviewToolBar`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |`CMFCPrintPreviewToolBar::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 
@@ -56,7 +56,7 @@ class CMFCPrintPreviewToolBar : public CMFCToolBar
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афкспревиеввиевекс. h
+**Заголовок:** афкспревиеввиевекс.h
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -28,7 +28,7 @@ ms.locfileid: "79427815"
 template <class F, class Tuple> constexpr decltype(auto) apply(F&& f, Tuple&& t);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает функцию *F* с кортежем *t*.
 
@@ -43,7 +43,7 @@ template <class... TTypes>
 
 Возвращает `tuple<TTypes&&...>(std::forward<TTypes>(t)...)`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструирует кортеж ссылок на аргументы в *t* , подходящие для пересылки в качестве аргументов в функцию.
 
@@ -81,7 +81,7 @@ template <class T, class... Types>
 
 ### <a name="parameters"></a>Параметры
 
-*Индекс*\
+*index*\
 Индекс элемента, который нужно получить.
 
 *Типы*\
@@ -93,7 +93,7 @@ template <class T, class... Types>
 \ *кортежа*
 `std::tuple`, содержащий любое количество элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функции-шаблоны возвращают ссылку на значение *по индексу индекса или*типа *T* в объекте `tuple`.
 
@@ -134,7 +134,7 @@ int main() {
 template <class T, class Tuple> constexpr T make_from_tuple(Tuple&& t);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эквивалентно `return make_from_tuple_impl<T>(forward<Tuple>(t), make_index_sequence<tuple_size_v<decay_t<Tuple>>>{})`.
 
@@ -155,7 +155,7 @@ template <class T1, class T2, ..., class TN>
 \ *тн*
 Значение N-ного параметра функции.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-шаблон возвращает `tuple<V1, V2, ..., VN>(t1, t2, ..., tN)`, где каждый тип `Vi` `X&`, когда `Ti` соответствующего типа `cv` `reference_wrapper<X>`; в противном случае это `Ti`.
 
@@ -217,7 +217,7 @@ tuple<T1&, T2&, ..., TN&> tie(T1& t1, T2& t2, ..., TN& tN);
 \ *тн*
 Базовый тип N-го элемента кортежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-шаблон возвращает `tuple<T1&, T2&, ..., TN&>(t1, t2, ..., tN)`.
 

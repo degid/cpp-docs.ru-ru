@@ -33,7 +33,7 @@ using add_pointer_t = typename add_pointer<T>::type;
 *T*\
 Тип для изменения.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Имя элемента имеет тот **`typedef`** `type` же тип, что и `remove_reference<T>::type*` . Псевдоним `add_pointer_t` является ярлыком для доступа к элементу **`typedef`** `type` .
 

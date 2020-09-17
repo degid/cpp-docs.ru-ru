@@ -71,7 +71,7 @@ class ATL_NO_VTABLE IEnumOnSTLImpl : public Base
 |[IenumOnSTLImpl::m_pcollection](#m_pcollection)|Указатель на контейнер Стандартной библиотеки СЗ, вмещающих перечисленные элементы.|
 |[IenumOnSTLImpl::m_spUnk](#m_spunk)|Указатель `IUnknown` объекта, поставляющего коллекцию.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IEnumOnSTLImpl`обеспечивает реализацию интерфейса com enumerator, в котором перечисленные элементы хранятся в контейнере, совместимом со стандартной библиотекой. Этот класс аналогис [cComEnumImpl,](../../atl/reference/ccomenumimpl-class.md) который обеспечивает реализацию интерфейса enumerator на основе массива.
 
@@ -114,7 +114,7 @@ HRESULT Init(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы `Init` передаете ссылку на коллекцию, хранящуюся в другом объекте, можно использовать параметр *pUnkForRelease,* чтобы гарантировать, что объект и его коллекция доступны до тех пор, пока он нужен регистратору.
 
@@ -145,7 +145,7 @@ STDMETHOD(Clone)(Base** ppEnum);
 CComPtr<IUnknown> m_spUnk;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот умный указатель поддерживает ссылку на объект, передаваемый [IEnumOnSTLImpl::Init](#init), гарантируя, что он остается живым в течение всего срока службы регистратора.
 
@@ -157,7 +157,7 @@ CComPtr<IUnknown> m_spUnk;
 CollType* m_pcollection;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот участник инициализирован вызовом в [IEnumOnSTLImpl::Init](#init).
 

@@ -38,7 +38,7 @@ class CAtlException
 
 |Имя|Описание|
 |----------|-----------------|
-|[Катлексцептион:: operator HRESULT](#operator_hresult)|Приводит текущий объект к значению HRESULT.|
+|[Катлексцептион::operator HRESULT](#operator_hresult)|Приводит текущий объект к значению HRESULT.|
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
@@ -46,7 +46,7 @@ class CAtlException
 |----------|-----------------|
 |[Катлексцептион:: m_hr](#m_hr)|Переменная типа HRESULT, созданная объектом и используемая для хранения условия ошибки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlException` Объект представляет условие исключения, связанное с операцией ATL. `CAtlException` Класс включает открытый элемент данных, в котором хранится код состояния, указывающий причину исключения, и оператор приведения, позволяющий обрабатывать исключение так, как если бы это был HRESULT.
 
@@ -54,7 +54,7 @@ class CAtlException
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлексцепт. h
+**Заголовок:** атлексцепт.h
 
 ## <a name="catlexceptioncatlexception"></a><a name="catlexception"></a>Катлексцептион:: Катлексцептион
 
@@ -70,7 +70,7 @@ CAtlException() throw();
 *hr*<br/>
 Код ошибки HRESULT.
 
-## <a name="catlexceptionoperator-hresult"></a><a name="operator_hresult"></a>Катлексцептион:: operator HRESULT
+## <a name="catlexceptionoperator-hresult"></a><a name="operator_hresult"></a>Катлексцептион::operator HRESULT
 
 Приводит текущий объект к значению HRESULT.
 
@@ -86,7 +86,7 @@ operator HRESULT() const throw ();
 HRESULT m_hr;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Элемент данных, в котором хранится условие ошибки. Значение HRESULT задается конструктором [катлексцептион:: катлексцептион](#catlexception).
 

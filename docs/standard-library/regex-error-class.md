@@ -25,7 +25,7 @@ class regex_error
 : public std::runtime_error
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс описывает объект исключения, создаваемый для уведомления об ошибке в построении или использовании объекта `basic_regex` .
 
@@ -90,7 +90,7 @@ regex error: unbalanced parentheses
 regex_constants::error_code code() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает значение, которое было передано в конструктор объекта.
 
@@ -107,7 +107,7 @@ regex_error(regex_constants::error_code error);
 *Ошибка*\
 Код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор строит объект, который удерживает *ошибку*значения.
 

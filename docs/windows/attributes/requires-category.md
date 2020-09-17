@@ -29,7 +29,7 @@ ms.locfileid: "88846008"
 *requires_category*<br/>
 ИДЕНТИФИКАТОР требуемой категории.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **requires_category** C++ задает категории компонентов, необходимые для целевого класса. Дополнительные сведения см. в разделе [REQUIRED_CATEGORY](../../atl/reference/category-macros.md#required_category).
 

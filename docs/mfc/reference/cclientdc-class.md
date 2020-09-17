@@ -41,7 +41,7 @@ class CClientDC : public CDC
 |----------|-----------------|
 |[CClientDC::m_hWnd](#m_hwnd)|HWND окна, для которого это `CClientDC` действительно.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это означает, что контекст `CClientDC` устройства, связанный с объектом, является областью клиента окна.
 
@@ -72,7 +72,7 @@ explicit CClientDC(CWnd* pWnd);
 *pWnd*<br/>
 Окно, к которой будет доступ клиентский объект контекста устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор вызывает функцию Windows [GetDC.](/windows/win32/api/winuser/nf-winuser-getdc)
 
@@ -90,7 +90,7 @@ explicit CClientDC(CWnd* pWnd);
 HWND m_hWnd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *m_hWnd* является защищенной переменной.
 

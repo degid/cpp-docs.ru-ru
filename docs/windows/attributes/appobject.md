@@ -23,7 +23,7 @@ ms.locfileid: "88836352"
 [appobject]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **аппобжект** C++ имеет те же функциональные возможности, что и атрибут [аппобжект](/windows/win32/Midl/appobject) MIDL.
 

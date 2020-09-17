@@ -23,7 +23,7 @@ ms.locfileid: "88832885"
 [wire_marshal]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **wire_marshal** C++ имеет те же функциональные возможности, что и атрибут [wire_marshal](/windows/win32/Midl/wire-marshal) MIDL.
 

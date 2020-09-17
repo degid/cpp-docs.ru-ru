@@ -23,7 +23,7 @@ ms.locfileid: "88838884"
 [coclass]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **coclass** C++ помещает конструкцию coclass в созданный IDL-файл.
 

@@ -95,7 +95,7 @@ int _wsopen(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **_sopen** открывает файл, указанный в параметре *filename* , и готовит файл для общего чтения или записи, как определено в *офлаг* и *шфлаг*. **_wsopen** — это версия **_sopen**для расширенных символов; Аргумент *filename* для **_wsopen** является строкой расширенных символов. в противном случае **_wsopen** и **_sopen** ведут себя одинаково.
 

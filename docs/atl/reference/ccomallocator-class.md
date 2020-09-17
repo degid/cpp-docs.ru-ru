@@ -37,7 +37,7 @@ class CComAllocator
 |[CComAllocator::Бесплатно](#free)|Вызовите этот статический метод, чтобы освободить выделенную память.|
 |[CComAllocator:Перераспределить](#reallocate)|Вызовите этот статический метод для перераспределения памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс используется [CComHeapPtr](../../atl/reference/ccomheapptr-class.md) для обеспечения процедур распределения памяти COM. Класс аналогов, [CCRTAllocator,](../../atl/reference/ccrtallocator-class.md)предоставляет те же методы, используя процедуры CRT.
 
@@ -62,7 +62,7 @@ static void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель void на выделенное пространство или значение NULL, если памяти недостаточно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет память. Более подробную информацию можно узнать [в CoTaskMemAlloc.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemalloc)
 
@@ -79,7 +79,7 @@ static void Free(void* p) throw();
 *P*<br/>
 Указатель на выделенную область памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенную память. Более подробную информацию можно узнать [в CoTaskMemFree.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemfree)
 
@@ -103,7 +103,7 @@ static void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает пустоту указателя в выделенное пространство или NULL, если не хватает памяти
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Изменяет объем выделенной памяти. Более подробную информацию можно узнать [в CoTaskMemRealloc.](/windows/win32/api/combaseapi/nf-combaseapi-cotaskmemrealloc)
 

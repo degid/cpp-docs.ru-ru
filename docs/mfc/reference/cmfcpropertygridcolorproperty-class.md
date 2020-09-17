@@ -63,7 +63,7 @@ class CMFCPropertyGridColorProperty : public CMFCPropertyGridProperty
 |[CMFCPropertyGridColorProperty::SetColumnsNumber](#setcolumnsnumber)|Задает число столбцов в текущей таблице свойств цвета.|
 |[CMFCPropertyGridColorProperty::SetOriginalValue](#setoriginalvalue)|Задает изменяемому свойству изначальное значение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCPropertyGridColorProperty` поддерживает свойство цвета, которое можно добавить в элемент управления "список свойств". Для получения дополнительной [информации](../../mfc/reference/cmfcpropertygridctrl-class.md)см.
 
@@ -137,7 +137,7 @@ void EnableAutomaticButton(
 *bEnable*<br/>
 (в) TRUE для включения автоматической кнопки; в противном случае, FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcpropertygridcolorpropertyenableotherbutton"></a><a name="enableotherbutton"></a>CMFCPropertyGridColorProperty::EnableOtherButton
 
@@ -161,7 +161,7 @@ void EnableOtherButton(
 *bEnable*<br/>
 (в) TRUE для отображения другой кнопки; в противном случае, FALSE.  Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcpropertygridcolorpropertygetcolor"></a><a name="getcolor"></a>CMFCPropertyGridColorProperty::GetColor
 
@@ -175,7 +175,7 @@ COLORREF GetColor() const;
 
 Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcpropertygridcolorpropertysetcolor"></a><a name="setcolor"></a>CMFCPropertyGridColorProperty::SetColor
 
@@ -190,7 +190,7 @@ void SetColor(COLORREF color);
 *Цвет*<br/>
 (в) Значение цвета RGB.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcpropertygridcolorpropertysetcolumnsnumber"></a><a name="setcolumnsnumber"></a>CMFCPropertyGridColorProperty::SetColumnsNumber
 
@@ -205,7 +205,7 @@ void SetColumnsNumber(int nColumnsNumber);
 *nКолонкиНомер*<br/>
 (в) Предпочтительное количество столбцов в сетке цветного свойства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод устанавливает значение `m_nColumnsNumber` защищенного члена данных.
 
@@ -222,7 +222,7 @@ virtual void SetOriginalValue(const COleVariant& varValue);
 *varValue*<br/>
 (в) Значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CMFCPropertyGridProperty::ResetOriginalValue](../../mfc/reference/cmfcpropertygridproperty-class.md#resetoriginalvalue) для сброса исходного значения отредактированного свойства.
 

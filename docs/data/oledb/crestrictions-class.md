@@ -45,7 +45,7 @@ class CRestrictions :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлдбсч. h
+**Заголовок:** атлдбсч.h
 
 ## <a name="members"></a>Элементы
 
@@ -88,7 +88,7 @@ HRESULT Open(const CSession& session,
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В наборе строк схемы можно указать не более семи ограничений.
 

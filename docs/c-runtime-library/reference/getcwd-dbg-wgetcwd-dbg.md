@@ -87,7 +87,7 @@ wchar_t *_wgetcwd_dbg(
 
 Дополнительные сведения см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **_getcwd_dbg** и **_wgetcwd_dbg** идентичны **_getcwd** и **_wgetcwd** за исключением того, что при определении **_DEBUG** эти функции используют отладочную версию **malloc** и **_malloc_dbg** для выделения памяти, если **значение NULL** передается как первый параметр. Дополнительные сведения см. в разделе [_malloc_dbg](malloc-dbg.md).
 

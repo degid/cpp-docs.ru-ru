@@ -42,13 +42,13 @@ class CWinFormsDialog :
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Квинформсдиалог:: Квинформсдиалог](#cwinformsdialog)|Формирует объект `CWinFormsDialog`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Квинформсдиалог:: oncontrol](#getcontrol)|Извлекает ссылку на Windows Forms пользовательский элемент управления.|
 |[Квинформсдиалог:: Жетконтролхандле](#getcontrolhandle)|Извлекает маркер окна для Windows Forms пользовательского элемента управления.|
@@ -58,8 +58,8 @@ class CWinFormsDialog :
 
 |Имя|Описание|
 |----------|-|
-|[Квинформсдиалог:: operator —&gt;](#operator_-_gt)|Заменяет [квинформсдиалог:: oncontrol](#getcontrol) в выражениях.|
-|[Квинформсдиалог:: operator Тманажедконтрол ^](#operator-tmanagedcontrol-hat)|Приводит тип в качестве ссылки на Windows Forms пользовательский элемент управления.|
+|[Квинформсдиалог::operator-&gt;](#operator_-_gt)|Заменяет [квинформсдиалог:: oncontrol](#getcontrol) в выражениях.|
+|[Квинформсдиалог::operator Тманажедконтрол ^](#operator-tmanagedcontrol-hat)|Приводит тип в качестве ссылки на Windows Forms пользовательский элемент управления.|
 
 ## <a name="remarks"></a>Комментарии
 
@@ -69,7 +69,7 @@ class CWinFormsDialog :
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксвинформс. h
+**Заголовок:** афксвинформс.h
 
 ## <a name="cwinformsdialogcwinformsdialog"></a><a name="cwinformsdialog"></a> Квинформсдиалог:: Квинформсдиалог
 
@@ -126,7 +126,7 @@ virtual BOOL OnInitDialog();
 
 Переопределите эту функцию-член, если необходимо выполнить специальную обработку при инициализации диалогового окна. Дополнительные сведения об использовании этого метода см. в разделе [CDialog:: онинитдиалог](../../mfc/reference/cdialog-class.md#oninitdialog).
 
-## <a name="cwinformsdialogoperator--gt"></a><a name="operator_-_gt"></a> Квинформсдиалог:: operator —&gt;
+## <a name="cwinformsdialogoperator--gt"></a><a name="operator_-_gt"></a> Квинформсдиалог::operator-&gt;
 
 Заменяет [квинформсдиалог:: oncontrol](#getcontrol) в выражениях.
 
@@ -140,7 +140,7 @@ inline TManagedControl^  operator->() const throw();
 
 Сведения об использовании Windows Forms см. в разделе [Использование пользовательского элемента управления формы Windows в MFC](../../dotnet/using-a-windows-form-user-control-in-mfc.md).
 
-## <a name="cwinformsdialogoperator-tmanagedcontrol"></a><a name="operator-tmanagedcontrol-hat"></a> Квинформсдиалог:: operator Тманажедконтрол ^
+## <a name="cwinformsdialogoperator-tmanagedcontrol"></a><a name="operator-tmanagedcontrol-hat"></a> Квинформсдиалог::operator Тманажедконтрол ^
 
 Приводит тип в качестве ссылки на Windows Forms пользовательский элемент управления.
 

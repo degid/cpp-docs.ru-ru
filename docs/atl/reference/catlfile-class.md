@@ -70,7 +70,7 @@ class CAtlFile : public CHandle
 |----------|-----------------|
 |[Катлфиле:: m_pTM](#m_ptm)|Указатель на `CAtlTransactionManager` объект|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте этот класс, если потребности в обработке файлов относительно просты, но требуется более абстракция, чем Windows API, без включения зависимостей MFC.
 
@@ -82,7 +82,7 @@ class CAtlFile : public CHandle
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлфиле. h
+**Заголовок:** атлфиле.h
 
 ## <a name="catlfilecatlfile"></a><a name="catlfile"></a>Катлфиле:: Катлфиле
 
@@ -106,7 +106,7 @@ explicit CAtlFile(HANDLE hFile) throw();
 *pTM*<br/>
 Указатель на объект CAtlTransactionManager.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор копий передает владение маркером файла из исходного `CAtlFile` объекта в вновь сконструированный объект.
 
@@ -152,7 +152,7 @@ HRESULT Create(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [CreateFile](/windows/win32/api/fileapi/nf-fileapi-createfilew) для создания или открытия файла.
 
@@ -168,7 +168,7 @@ HRESULT Flush() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [FlushFileBuffers](/windows/win32/api/fileapi/nf-fileapi-flushfilebuffers) для сброса буферизованных данных в файл.
 
@@ -198,7 +198,7 @@ HRESULT GetOverlappedResult(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [GetOverlappedResult](/windows/win32/api/ioapiset/nf-ioapiset-getoverlappedresult) для получения результатов операции перекрытия файла.
 
@@ -219,7 +219,7 @@ HRESULT GetPosition(ULONGLONG& nPos) const throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) , чтобы получить текущую позиции указателя файла.
 
@@ -240,7 +240,7 @@ HRESULT GetSize(ULONGLONG& nLen) const throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [GetFileSize](/windows/win32/api/fileapi/nf-fileapi-getfilesize) для получения размера файла в байтах.
 
@@ -264,7 +264,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [локкфиле](/windows/win32/api/fileapi/nf-fileapi-lockfile) для блокировки области в файле. Блокировка байтов в файле предотвращает доступ других процессов к этим байтам. Можно заблокировать несколько регионов файла, но перекрывающиеся области не допускаются. При разблокировании области с помощью [катлфиле:: унлоккранже](#unlockrange)диапазон байтов должен точно соответствовать региону, который был ранее заблокирован. `LockRange`не выполняет слияние смежных областей; Если два заблокированных региона являются смежными, каждый из них необходимо разблокировать отдельно.
 
@@ -276,7 +276,7 @@ HRESULT LockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 CAtlTransactionManager* m_pTM;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="catlfileread"></a><a name="read"></a>Катлфиле:: Read
 
@@ -325,7 +325,7 @@ HRESULT Read(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первые три формы вызывают [ReadFile](/windows/win32/api/fileapi/nf-fileapi-readfile), последнюю [реадфиликс](/windows/win32/api/fileapi/nf-fileapi-readfileex) чтение данных из файла. Используйте [катлфиле:: Seek](#seek) для перемещения указателя файла.
 
@@ -351,7 +351,7 @@ HRESULT Seek(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) для перемещения указателя файла.
 
@@ -372,7 +372,7 @@ HRESULT SetSize(ULONGLONG nNewLen) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [SetFilePointer](/windows/win32/api/fileapi/nf-fileapi-setfilepointer) и [SetEndOfFile](/windows/win32/api/fileapi/nf-fileapi-setendoffile) , чтобы задать размер файла. При возврате указатель файла размещается в конце файла.
 
@@ -396,7 +396,7 @@ HRESULT UnlockRange(ULONGLONG nPos, ULONGLONG nCount) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает [унлоккфиле](/windows/win32/api/fileapi/nf-fileapi-unlockfile) , чтобы разблокировать регион файла.
 
@@ -443,7 +443,7 @@ HRESULT Write(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первые три формы вызывают [WriteFile](/windows/win32/api/fileapi/nf-fileapi-writefile), последний вызывает [вритефиликс](/windows/win32/api/fileapi/nf-fileapi-writefileex) для записи данных в файл. Используйте [катлфиле:: Seek](#seek) для перемещения указателя файла.
 

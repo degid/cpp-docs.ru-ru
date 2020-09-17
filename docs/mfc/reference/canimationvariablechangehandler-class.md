@@ -43,7 +43,7 @@ class CAnimationVariableChangeHandler : public CUIAnimationVariableChangeHandler
 |[CanimationvariablevariableChangehandler::OnvalueChanged](#onvaluechanged)|Вызывается при изменении значения переменной анимации. (Переопределяет `CUIAnimationVariableChangeHandlerBase::OnValueChanged`.)|
 |[CAnimationVariableChangeChangeHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обработчик событий создается `IUIAnimationVariable::SetVariableChangeHandler` и передается `CAnimationVariable::EnableValueChangedEvent` `CAnimationBaseObject::EnableValueChangedEvent` методу, когда вы вызываете или (что позволяет этому событию для всех переменных анимации, инкапсулированных в объекте анимации).
 

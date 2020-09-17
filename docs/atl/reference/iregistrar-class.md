@@ -32,7 +32,7 @@ ms.locfileid: "81329464"
 typedef interface IRegistrar IRegistrar;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Более подробная информация приводиткся в [теме «Использование сменных параметров » (Препроцессор регистратора).](../../atl/using-replaceable-parameters-the-registrar-s-preprocessor.md)
 

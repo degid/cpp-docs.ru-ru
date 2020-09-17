@@ -98,7 +98,7 @@ class CMFCAutoHideButton : public CObject
 |[CMFCAutoHideButton::ShowButton](#showbutton)|Показывает или скрывает кнопку автоматического скрытия.|
 |[CMFCAutoHideButton::UnSetAutoHideMode](#unsetautohidemode)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При создании `CMFCAutoHideButton` объект прикрепляется к [классу CDockablePane.](../../mfc/reference/cdockablepane-class.md) В результате взаимодействия пользователя с объектом `CMFCAutoHideButton` показывается или скрывается объект `CDockablePane`.
 
@@ -126,7 +126,7 @@ class CMFCAutoHideButton : public CObject
 void BringToTop();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttoncreate"></a><a name="create"></a>CMFCAutoHideButton::Создание
 
@@ -154,7 +154,7 @@ virtual BOOL Create(
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При создании `CMFCAutoHideButton` объекта необходимо связать кнопку автоматического скрытия с определенной `CDockablePane`кнопкой . Пользователь может использовать кнопку автоматического сокрытия, `CDockablePane`чтобы скрыть и показать связанные .
 
@@ -180,7 +180,7 @@ DWORD GetAlignment() const;
 
 Значение DWORD, содержащее текущее выравнивание кнопки автоматического скрытия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выравнивание кнопки автоматического скрытия указывает, где находится кнопка в приложении. Это может быть любое из следующих значений:
 
@@ -204,7 +204,7 @@ CDockablePane* GetAutoHideWindow() const;
 
 Указатель на связанный `CDockablePane` объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы связать кнопку автоматического `CDockablePane`сокрытия `CDockablePane` с, передайте в качестве параметра [CMFCAutoHideButton::Create](#create) метод.
 
@@ -216,7 +216,7 @@ CMFCAutoHideBar* GetParentToolBar();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttongetrect"></a><a name="getrect"></a>CMFCAutoHideButton::GetRect
 
@@ -226,7 +226,7 @@ CRect GetRect() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttongetsize"></a><a name="getsize"></a>CMFCAutoHideButton::GetSize
 
@@ -240,7 +240,7 @@ CSize GetSize() const;
 
 Объект, `CSize` содержащий размер кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Расчетный размер включает в себя размер границы кнопки автоматического скрытия.
 
@@ -268,7 +268,7 @@ BOOL IsActive() const;
 
 TRUE, если кнопка автоматического укрытия активна; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Кнопка автоматической скрытия активна при отображевом окне [сопутствуемого класса CDockablePane.](../../mfc/reference/cdockablepane-class.md)
 
@@ -284,7 +284,7 @@ BOOL IsHorizontal() const;
 
 Nonzero, если кнопка горизонтальная; 0 в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При его создании фреймворк определяет ориентацию объекта [CMFCAutoHideButton.](../../mfc/reference/cmfcautohidebutton-class.md)  Вы можете контролировать ориентацию с помощью параметра *dwAlignment* в [cmFCAutoHideButton::Create](#create) метод.
 
@@ -296,7 +296,7 @@ BOOL IsTop() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttonisvisible"></a><a name="isvisible"></a>CMFCAutoHideButton::Видимо
 
@@ -323,7 +323,7 @@ virtual void OnDraw(CDC* pDC);
 *pDC*<br/>
 (в) Указатель на контекст устройства.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите настроить внешний вид автоматических кнопок в приложении, создайте новый класс, полученный из. `CMFCAutoHideButton` В вашем производном классе переопределить этот метод.
 
@@ -349,7 +349,7 @@ virtual void OnDrawBorder(
 *rectBorderSize*<br/>
 (в) Толщина границы для каждой стороны кнопки автоматической скрытности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите настроить границу каждой кнопки автоматической скрытности в `CMFCAutoHideButton`приложении, создайте новый класс, полученный из . В вашем производном классе переопределить этот метод.
 
@@ -371,7 +371,7 @@ virtual void OnFillBackground(
 *rect*<br/>
 (в) Ограничивающий прямоугольник кнопки автоматической скрытности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите настроить фон для автоматических кнопок в приложении, `CMFCAutoHideButton`создайте новый класс, полученный из . В вашем производном классе переопределить этот метод.
 
@@ -411,7 +411,7 @@ void Move(int nOffset);
 
 (в) *nOffset*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttonreplacepane"></a><a name="replacepane"></a>CMFCAutoHideButton::ReplacePane
 
@@ -423,7 +423,7 @@ void ReplacePane(CDockablePane* pNewBar);
 
 (в) *pNewBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttonunsetautohidemode"></a><a name="unsetautohidemode"></a>CMFCAutoHideButton::UnsetAutoHideMode
 
@@ -438,7 +438,7 @@ virtual void UnSetAutoHideMode(CDockablePane* pFirstBarInGroup);
 *pFirstBarinGroup*<br/>
 (в) Указатель на первый бар в группе.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttonhighlightbutton"></a><a name="highlightbutton"></a>CMFCAutoHideButton::HighlightButton
 
@@ -453,7 +453,7 @@ virtual void HighlightButton(BOOL bHighlight);
 *bHighlight*<br/>
 Определяет новое состояние кнопки автоматического укрытия. TRUE указывает на то, что кнопка выделена, FALSE указывает, что кнопка не выделена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcautohidebuttonishighlighted"></a><a name="ishighlighted"></a>CMFCAutoHideButton::Ishighlight
 
@@ -467,7 +467,7 @@ virtual BOOL IsHighlighted() const;
 
 Возвращает TRUE, если кнопка автоматического укрытия выделена; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

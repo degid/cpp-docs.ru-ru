@@ -51,7 +51,7 @@ intptr_t _get_heap_handle( void );
 
 Возвращает дескриптор кучи Win32, используемый системой времени выполнения C.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы вызвать [HeapSetInformation](/windows/win32/api/heapapi/nf-heapapi-heapsetinformation) и включить кучу низкой фрагментации в куче CRT.
 

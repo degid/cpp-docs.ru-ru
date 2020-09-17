@@ -68,7 +68,7 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 |[Катлмодуле:: m_libid](#m_libid)|Содержит идентификатор GUID текущего модуля.|
 |[Катлмодуле:: m_pGIT](#m_pgit)|Указатель на глобальную таблицу интерфейса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс используется классом [CAtlDllModuleT](../../atl/reference/catldllmodulet-class.md), классом [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md)и [классом функция CAtlServiceModuleT](../../atl/reference/catlservicemodulet-class.md) для обеспечения поддержки DLL-приложений, приложений exe и служб Windows соответственно.
 
@@ -84,7 +84,7 @@ class ATL_NO_VTABLE CAtlModule : public _ATL_MODULE
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlmoduleaddcommonrgsreplacements"></a><a name="addcommonrgsreplacements"></a>Катлмодуле:: Аддкоммонргсреплацементс
 
@@ -103,7 +103,7 @@ virtual HRESULT AddCommonRGSReplacements(IRegistrarBase* /* pRegistrar*/) throw(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Заменяемые параметры позволяют клиенту регистратора указывать данные времени выполнения. Для этого Регистратор сохраняет карту замены, в которую он вводит значения, связанные с заменяемыми параметрами в скрипте. Регистратор делает эти записи во время выполнения.
 
@@ -137,7 +137,7 @@ HRESULT AddTermFunc(_ATL_TERMFUNC* pFunc, DWORD_PTR dw) throw();
 CAtlModule() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует элементы данных и инициирует критическую секцию вокруг потока модуля.
 
@@ -149,7 +149,7 @@ CAtlModule() throw();
 ~CAtlModule() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все элементы данных.
 
@@ -170,7 +170,7 @@ virtual HRESULT GetGITPtr(IGlobalInterfaceTable** ppGIT) throw();
 
 Возвращает S_OK при успешном выполнении или код ошибки в случае сбоя. E_POINTER возвращается, если *ппгит* равен null.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект таблицы глобальных интерфейсов не существует, он создается, а его адрес сохраняется в переменной-члене [катлмодуле:: m_pGIT](#m_pgit).
 
@@ -226,7 +226,7 @@ IGlobalInterfaceTable* m_pGIT;
 void Term() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все элементы данных. Этот метод вызывается деструктором.
 
@@ -276,7 +276,7 @@ HRESULT WINAPI UpdateRegistryFromResourceD(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Запускает скрипт, содержащийся в ресурсе, указанном параметром *лпсзрес или нресид*. Если *брегистер* имеет значение true, этот метод регистрирует объект в системном реестре; в противном случае объект удаляется из реестра.
 
@@ -310,7 +310,7 @@ inline HRESULT WINAPI UpdateRegistryFromResourceDHelper(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод обеспечивает реализацию [катлмодуле:: упдатерегистрифромресаурцед](#updateregistryfromresourced).
 
@@ -348,7 +348,7 @@ HRESULT WINAPI UpdateRegistryFromResourceS(
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично [катлмодуле:: упдатерегистрифромресаурцед](#updateregistryfromresourced) , `CAtlModule::UpdateRegistryFromResourceS` за исключением, создает статическую ссылку на компонент реестра ATL (регистратор).
 

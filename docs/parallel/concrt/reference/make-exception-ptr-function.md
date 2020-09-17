@@ -32,7 +32,7 @@ exception_ptr make_exception_ptr(_E _Except);
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** из ppltasks. h
+**Заголовок:** из ppltasks.h
 
 **Пространство имен:** std
 

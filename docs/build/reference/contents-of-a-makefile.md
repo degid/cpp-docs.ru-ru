@@ -28,7 +28,7 @@ ms.locfileid: "80169920"
 
 - [Директивы предварительной обработки](makefile-preprocessing.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 К другим функциям, которые можно использовать в файле makefile, относятся [подстановочные знаки](wildcards-and-nmake.md), [длинные имена файлов](long-filenames-in-a-makefile.md), [Комментарии](comments-in-a-makefile.md)и [специальные символы](special-characters-in-a-makefile.md).
 

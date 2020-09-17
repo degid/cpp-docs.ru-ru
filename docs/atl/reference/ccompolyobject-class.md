@@ -67,7 +67,7 @@ class CComPolyObject : public IUnknown,
 |----------|-----------------|
 |[CComPolyObject::m_contained](#m_contained)|Делегаты `IUnknown` звонят внешнему неизвестному, если `IUnknown` объект агрегирован, или к объекту, если объект не агрегирован.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComPolyObject`реализует [IUnknown](/windows/win32/api/unknwn/nn-unknwn-iunknown) для агрегированного или неагрегированного объекта.
 
@@ -120,7 +120,7 @@ CComPolyObject(void* pv);
 *Pv*<br/>
 (в) Указатель на внешний неизвестный, если объект должен быть агрегирован, или NULL, если объект не агрегирован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует `CComContainedObject`[элемент данных](#m_contained),m_containedиувеличиваетсчетчикблокировок модуля.
 
@@ -134,7 +134,7 @@ CComPolyObject(void* pv);
 ~CComPolyObject();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы, вызывает [FinalRelease](#finalrelease)и высчитывает количество блокировки модуля.
 
@@ -157,7 +157,7 @@ static HRESULT WINAPI CreateInstance(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращается объект имеет подсчет ссылок `AddRef` ноль, `Release` поэтому немедленно позвоните, а затем используйте для освобождения ссылки на указатель объекта, когда вы закончите.
 
@@ -196,7 +196,7 @@ CComContainedObject<contained> m_contained;
 *Содержащиеся*<br/>
 (в) Ваш класс, полученный из [CComObjectRoot](../../atl/reference/ccomobjectroot-class.md) или [CComObjectRootEx,](../../atl/reference/ccomobjectrootex-class.md)а также из любых других интерфейсов, которые вы хотите поддерживать на объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `IUnknown`звонки `m_contained` делегируются внешнему неизвестному, если объект агрегирован, или к объекту, `IUnknown` если объект не агрегирован.
 
@@ -228,7 +228,7 @@ HRESULT QueryInterface(Q** pp);
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для агрегированного объекта, если `IUnknown`запрашиваемый интерфейс, `QueryInterface` возвращает указатель `IUnknown` к агрегированному объекту, и приравняет значение отсчета ссылки. В противном случае этот метод `CComContainedObject` запрашивает интерфейс через члена данных, [m_contained](#m_contained).
 

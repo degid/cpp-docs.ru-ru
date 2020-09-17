@@ -38,7 +38,7 @@ struct IsSame<T1, T1>;
 *T2*<br/>
 Другой тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Определяет, совпадают ли указанные типы друг с другом.
 
@@ -56,7 +56,7 @@ struct IsSame<T1, T1>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 
@@ -78,7 +78,7 @@ struct IsSame<T1, T1>
 };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает, совпадают ли заданные типы друг с другом.
 

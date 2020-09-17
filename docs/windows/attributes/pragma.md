@@ -28,7 +28,7 @@ ms.locfileid: "88836173"
 *pragma_statement*<br/>
 Директива pragma, которую необходимо поместить в созданный IDL-файл.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **pragma** C++ имеет те же функциональные возможности, что и атрибут [pragma](/windows/win32/Midl/pragma) MIDL.
 

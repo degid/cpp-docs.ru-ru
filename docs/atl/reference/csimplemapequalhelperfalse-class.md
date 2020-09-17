@@ -36,7 +36,7 @@ class CSimpleMapEqualHelperFalse
 |[CSimpleMapEqualHelperFalse::IsEqualKey](#isequalkey)|(Статик) Тесты два ключа для равенства.|
 |[CSimpleMapEqualHelperFalse::IsEqualValue](#isequalvalue)|(Статик) Возвращает ложно.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс черт является дополнением к классу. `CSimpleMap` Он предоставляет метод сравнения двух элементов, содержащихся в объекте, `CSimpleMap` в частности двух элементов значения или двух ключевых элементов.
 
@@ -66,7 +66,7 @@ static bool IsEqualKey(const TKey& k1, const TKey& k2);
 
 Возвращает верно, если ключи равны, ложные в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывает [CSimpleArrayEqualHelper](../../atl/reference/csimplearrayequalhelper-class.md).
 
@@ -82,7 +82,7 @@ static bool IsEqualValue(const TVal&, const TVal&);
 
 Возвращает значение false.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод всегда возвращается `ATLASSERT` ложным, и будет звонить с аргументом ложного, если он когда-либо упоминается. Цель состоит `CSimpleMapEqualHelperFalse::IsEqualValue` в том, чтобы заставить методы, использующие сопоставления, потерпеть неудачу в четко определенной форме, когда тесты на равенство не были должным образом определены.
 

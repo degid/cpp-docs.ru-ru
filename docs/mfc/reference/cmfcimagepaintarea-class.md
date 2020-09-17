@@ -37,21 +37,21 @@ class CMFCImagePaintArea : public CButton
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Перечисление CMFCImagePaintArea:: перечисление CMFCImagePaintArea](#cmfcimagepaintarea)|Формирует объект `CMFCImagePaintArea`.|
 |`CMFCImagePaintArea::~CMFCImagePaintArea`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Перечисление CMFCImagePaintArea:: Мода](#getmode)|Извлекает текущий режим рисования.|
 |[Перечисление CMFCImagePaintArea:: Сетбитмап](#setbitmap)|Задает точечный рисунок для области изображения.|
 |[Перечисление CMFCImagePaintArea:: Сетколор](#setcolor)|Задает текущий цвет рисования.|
 |[Перечисление CMFCImagePaintArea:: SetMode](#setmode)|Задает текущий режим рисования.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Данный класс не предназначен для непосредственного использования в коде.
 
@@ -77,7 +77,7 @@ class CMFCImagePaintArea : public CButton
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксимажепаинтареа. h
+**Заголовок:** афксимажепаинтареа.h
 
 ## <a name="cmfcimagepaintareacmfcimagepaintarea"></a><a name="cmfcimagepaintarea"></a> Перечисление CMFCImagePaintArea:: перечисление CMFCImagePaintArea
 
@@ -117,7 +117,7 @@ void SetBitmap(CBitmap* pBitmap);
 *пбитмап*\
 окне Новое растровое изображение для вывода.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *пбитмап* имеет значение null, этот метод устанавливает размер изменяемой области рисования равным нулю. В противном случае размер изменяемой области заливки устанавливается равным размеру указанного растрового изображения.
 
@@ -134,7 +134,7 @@ void SetColor(COLORREF color);
 *Цвет*\
 окне Новый цвет рисования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При выборе цвета на панели палитры редактора изображений или палитре цветов платформа вызывает этот метод для обновления текущего цвета рисования. Исходный цвет рисования — черный (значение COLORREF 0).
 

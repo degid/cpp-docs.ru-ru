@@ -43,7 +43,7 @@ class CMFCPropertyPage : public CPropertyPage
 |`CMFCPropertyPage::OnSetActive`|Эта функция участника вызывается инфраструктурой, когда страница выбрана пользователем и становится активной страницей. (Переопределяет [CPropertyPage:OnsetActive](../../mfc/reference/cpropertypage-class.md#onsetactive).)|
 |`CMFCPropertyPage::PreTranslateMessage`|Переводит оконные сообщения перед отправкой на функции [TranslateMessage](/windows/win32/api/winuser/nf-winuser-translatemessage) и [DispatchMessage](/windows/win32/api/winuser/nf-winuser-dispatchmessage) Windows. Для получения дополнительной информации и метода синтаксиса, [см. CWnd::PreTranslateMessage](../../mfc/reference/cwnd-class.md#pretranslatemessage). (Переопределяет `CPropertyPage::PreTranslateMessage`.)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCPropertyPage` представляет отдельные страницы листа свойств, иначе известный как диалоговый ящик вкладок.
 
@@ -94,7 +94,7 @@ CMFCPropertyPage(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о параметрах конструктора см. [CPropertyPage::CPropertyPage](../../mfc/reference/cpropertypage-class.md#cpropertypage).
 

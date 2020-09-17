@@ -26,7 +26,7 @@ ms.locfileid: "87213103"
 volatile declarator ;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы изменить способ, которым компилятор интерпретирует это ключевое слово, можно использовать параметр компилятора [/volatile](../build/reference/volatile-volatile-keyword-interpretation.md) .
 

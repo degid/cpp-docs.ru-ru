@@ -24,7 +24,7 @@ ms.locfileid: "87228236"
 class istrstream : public istream
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект сохраняет объект класса `strstreambuf`.
 
@@ -72,13 +72,13 @@ istrstream(
 
 ### <a name="parameters"></a>Параметры
 
-*расчета*\
+*count*\
 Длина буфера (*ptr*).
 
-*указатель*\
+*ptr*\
 Содержимое, с которым инициализируется буфер.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все конструкторы инициализируют базовый класс путем вызова [IStream](../standard-library/istream-typedefs.md#istream)(**SB**), где `sb` — это хранимый объект класса [strstreambuf](../standard-library/strstreambuf-class.md). Первые два конструктора также инициализируются `sb` путем вызова `strstreambuf( ( const char *) ptr, 0 )` . Остальные два конструктора вместо этого вызывают `strstreambuf( ( const char *) ptr, count )` .
 
@@ -94,7 +94,7 @@ strstreambuf *rdbuf() const
 
 Указатель на объект strstreambuf, связанный с потоком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает адрес хранимого буфера потока типа pointer, указывающий на [strstreambuf](../standard-library/strstreambuf-class.md).
 
@@ -114,7 +114,7 @@ char *str();
 
 Указатель на начало управляемой последовательности.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает [rdbuf](#rdbuf)  ->  [str](../standard-library/strstreambuf-class.md#str).
 

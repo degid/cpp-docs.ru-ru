@@ -63,7 +63,7 @@ _Lcomplex _LCbuild( long double real, long double imaginary );
 
 Структура **_Dcomplex**, **_Fcomplex**или **_Lcomplex** , представляющая комплексное число (*Real*, *мнимая* \* i) для значений указанного типа с плавающей запятой.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **_Cbuild**, **_FCbuild**и **_LCbuild** упрощают создание сложных типов. Используйте функции [Креал, креалф, креалл](creal-crealf-creall.md) и [Цимаг, Цимагф, Цимагл,](cimag-cimagf-cimagl.md) чтобы получить действительные и мнимые части представленных комплексных чисел.
 

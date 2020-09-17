@@ -29,7 +29,7 @@ struct is_nothrow_copy_constructible;
 *Ty*\
 Запрашиваемый тип.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Экземпляр предиката типа содержит значение true, если тип *Ty* имеет конструктор копий, в противном случае — значение false.
 

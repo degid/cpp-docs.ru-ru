@@ -34,7 +34,7 @@ ms.locfileid: "88835159"
 MACRONAME( address_of_structure )
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Пример:
 

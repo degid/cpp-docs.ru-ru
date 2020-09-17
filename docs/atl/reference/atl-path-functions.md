@@ -50,7 +50,7 @@ ms.locfileid: "88834002"
 ---
 # <a name="atl-path-functions"></a>Функции пути ATL
 
-ATL предоставляет класс ATLPath для манипуляции путями в форме [кпаст](cpatht-class.md). Этот код можно найти в atlpath. h.
+ATL предоставляет класс ATLPath для манипуляции путями в форме [кпаст](cpatht-class.md). Этот код можно найти в atlpath.h.
 
 ## <a name="related-classes"></a>Связанные классы
 
@@ -109,7 +109,7 @@ ATL предоставляет класс ATLPath для манипуляции 
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlpath. h
+**Заголовок:** atlpath.h
 
 ## <a name="atlpathaddbackslash"></a><a name="addbackslash"></a> ATLPath:: Аддбаккслаш
 
@@ -122,7 +122,7 @@ inline char* AddBackslash(char* pszPath);
 inline wchar_t* AddBackslash(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасаддбаккслаш](/windows/win32/api/shlwapi/nf-shlwapi-pathaddbackslashw) .
 
@@ -137,7 +137,7 @@ inline BOOL AddExtension(char* pszPath, const char* pszExtension);
 inline BOOL AddExtension(wchar_t* pszPath, const wchar_t* pszExtension);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасаддекстенсион](/windows/win32/api/shlwapi/nf-shlwapi-pathaddextensionw) .
 
@@ -152,7 +152,7 @@ inline BOOL Append(char* pszPath, const char* pszMore);
 inline BOOL Append(wchar_t* pszPath, const wchar_t* pszMore);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасаппенд](/windows/win32/api/shlwapi/nf-shlwapi-pathappendw) .
 
@@ -167,7 +167,7 @@ inline char* BuildRoot(char* pszPath, int iDrive);
 inline wchar_t* BuildRoot(wchar_t* pszPath, int iDrive);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасбуилдрут](/windows/win32/api/shlwapi/nf-shlwapi-pathbuildrootw) .
 
@@ -182,7 +182,7 @@ inline BOOL Canonicalize(char* pszDest, const char* pszSrc);
 inline BOOL Canonicalize(wchar_t* pszDest, const wchar_t* pszSrc);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасканоникализе](/windows/win32/api/shlwapi/nf-shlwapi-pathcanonicalizew) .
 
@@ -205,7 +205,7 @@ inline wchar_t* Combine(
    const wchar_t* pszFile);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе Паскомбине.
 
@@ -227,7 +227,7 @@ inline int CommonPrefix(
    wchar_t* pszDest);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [паскоммонпрефикс](/windows/win32/api/shlwapi/nf-shlwapi-pathcommonprefixw) .
 
@@ -249,7 +249,7 @@ inline BOOL CompactPath(
    UINT dx);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [паскомпактпас](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathw) .
 
@@ -273,7 +273,7 @@ inline BOOL CompactPathEx(
    DWORD dwFlags);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [паскомпактпасекс](/windows/win32/api/shlwapi/nf-shlwapi-pathcompactpathexw) .
 
@@ -288,7 +288,7 @@ inline BOOL FileExists(const char* pszPath);
 inline BOOL FileExists(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасфиликсистс](/windows/win32/api/shlwapi/nf-shlwapi-pathfileexistsw) .
 
@@ -303,7 +303,7 @@ inline char* FindExtension(const char* pszPath);
 inline wchar_t* FindExtension(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасфиндекстенсион](/windows/win32/api/shlwapi/nf-shlwapi-pathfindextensionw) .
 
@@ -318,7 +318,7 @@ inline char* FindFileName(const char* pszPath);
 inline wchar_t* FindFileName(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасфиндфиленаме](/windows/win32/api/shlwapi/nf-shlwapi-pathfindfilenamew) .
 
@@ -333,7 +333,7 @@ inline int GetDriveNumber(const char* pszPath);
 inline int GetDriveNumber(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасжетдривенумбер](/windows/win32/api/shlwapi/nf-shlwapi-pathgetdrivenumberw) .
 
@@ -346,7 +346,7 @@ inline BOOL IsDirectory(const char* pszPath);
 inline BOOL IsDirectory(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе Пасисдиректори.
 
@@ -361,7 +361,7 @@ inline BOOL IsFileSpec(const char* pszPath);
 inline BOOL IsFileSpec(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисфилеспек](/windows/win32/api/shlwapi/nf-shlwapi-pathisfilespecw) .
 
@@ -376,7 +376,7 @@ inline BOOL IsPrefix(const char* pszPrefix, const char* pszPath);
 inline BOOL IsPrefix(const wchar_t* pszPrefix, const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасиспрефикс](/windows/win32/api/shlwapi/nf-shlwapi-pathisprefixw) .
 
@@ -391,7 +391,7 @@ inline BOOL IsRelative(const char* pszPath);
 inline BOOL IsRelative(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисрелативе](/windows/win32/api/shlwapi/nf-shlwapi-pathisrelativew) .
 
@@ -406,7 +406,7 @@ inline BOOL IsRoot(const char* pszPath);
 inline BOOL IsRoot(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисрут](/windows/win32/api/shlwapi/nf-shlwapi-pathisrootw) .
 
@@ -421,7 +421,7 @@ inline BOOL IsSameRoot(const char* pszPath1, const char* pszPath2);
 inline BOOL IsSameRoot(const wchar_t* pszPath1, const wchar_t* pszPath2);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасиссамерут](/windows/win32/api/shlwapi/nf-shlwapi-pathissamerootw) .
 
@@ -436,7 +436,7 @@ inline BOOL IsUNC(const char* pszPath);
 inline BOOL IsUNC(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисунк](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncw) .
 
@@ -451,7 +451,7 @@ inline BOOL IsUNCServer(const char* pszPath);
 inline BOOL IsUNCServer(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисунксервер](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserverw) .
 
@@ -466,7 +466,7 @@ inline BOOL IsUNCServerShare(const char* pszPath);
 inline BOOL IsUNCServerShare(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасисунксервершаре](/windows/win32/api/shlwapi/nf-shlwapi-pathisuncserversharew) .
 
@@ -481,7 +481,7 @@ inline BOOL MakePretty(char* pszPath);
 inline BOOL MakePretty(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасмакепретти](/windows/win32/api/shlwapi/nf-shlwapi-pathmakeprettyw) .
 
@@ -496,7 +496,7 @@ inline BOOL MatchSpec(const char* pszPath, const char* pszSpec);
 inline BOOL MatchSpec(const wchar_t* pszPath, const wchar_t* pszSpec);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасматчспек](/windows/win32/api/shlwapi/nf-shlwapi-pathmatchspecw) .
 
@@ -511,7 +511,7 @@ inline void QuoteSpaces(char* pszPath);
 inline void QuoteSpaces(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [паскуотеспацес](/windows/win32/api/shlwapi/nf-shlwapi-pathquotespacesw) .
 
@@ -537,7 +537,7 @@ inline BOOL RelativePathTo(
    DWORD dwAttrTo);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасрелативепасто](/windows/win32/api/shlwapi/nf-shlwapi-pathrelativepathtow) .
 
@@ -552,7 +552,7 @@ inline void RemoveArgs(char* pszPath);
 inline void RemoveArgs(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасремовеаргс](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveargsw) .
 
@@ -567,7 +567,7 @@ inline char* RemoveBackslash(char* pszPath);
 inline wchar_t* RemoveBackslash(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасремовебаккслаш](/windows/win32/api/shlwapi/nf-shlwapi-pathremovebackslashw) .
 
@@ -582,7 +582,7 @@ inline void RemoveBlanks(char* pszPath);
 inline void RemoveBlanks(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасремовебланкс](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveblanksw) .
 
@@ -597,7 +597,7 @@ inline void RemoveExtension(char* pszPath);
 inline void RemoveExtension(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасремовикстенсион](/windows/win32/api/shlwapi/nf-shlwapi-pathremoveextensionw) .
 
@@ -612,7 +612,7 @@ inline BOOL RemoveFileSpec(char* pszPath);
 inline BOOL RemoveFileSpec(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасремовефилеспек](/windows/win32/api/shlwapi/nf-shlwapi-pathremovefilespecw) .
 
@@ -627,7 +627,7 @@ inline BOOL RenameExtension(char* pszPath, const char* pszExt);
 inline BOOL RenameExtension(wchar_t* pszPath, const wchar_t* pszExt);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасренамикстенсион](/windows/win32/api/shlwapi/nf-shlwapi-pathrenameextensionw) .
 
@@ -642,7 +642,7 @@ inline char* SkipRoot(const char* pszPath);
 inline wchar_t* SkipRoot(const wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасскипрут](/windows/win32/api/shlwapi/nf-shlwapi-pathskiprootw) .
 
@@ -657,7 +657,7 @@ inline void StripPath(char* pszPath);
 inline void StripPath(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасстриппас](/windows/win32/api/shlwapi/nf-shlwapi-pathstrippathw) .
 
@@ -672,7 +672,7 @@ inline BOOL StripToRoot(char* pszPath);
 inline BOOL StripToRoot(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасстрипторут](/windows/win32/api/shlwapi/nf-shlwapi-pathstriptorootw) .
 
@@ -687,6 +687,6 @@ inline void UnquoteSpaces(char* pszPath);
 inline void UnquoteSpaces(wchar_t* pszPath);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [пасункуотеспацес](/windows/win32/api/shlwapi/nf-shlwapi-pathunquotespacesw) .

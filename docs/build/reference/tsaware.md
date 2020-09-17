@@ -21,7 +21,7 @@ ms.locfileid: "79438832"
 /TSAWARE[:NO]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр/TSAWARE программы EDITBIN позволяет изменить образ программы таким же образом, как если бы использовался параметр компоновщика [/TSAWARE](tsaware-create-terminal-server-aware-application.md) .
 

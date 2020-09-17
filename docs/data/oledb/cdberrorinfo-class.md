@@ -72,7 +72,7 @@ class CDBErrorInfo
 |[GetErrorParameters](#geterrorparameters)|Вызывает [IErrorRecords:: жетеррорпараметерс](/previous-versions/windows/desktop/ms715793(v=vs.85)) для возврата параметров ошибки.|
 |[жетерроррекордс](#geterrorrecords)|Возвращает записи об ошибках для указанного объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот интерфейс возвращает пользователю одну или несколько записей об ошибках. Сначала вызовите метод [CDBErrorInfo:: жетерроррекордс](../../data/oledb/cdberrorinfo-geterrorrecords.md) , чтобы получить количество записей об ошибках. Затем вызовите одну из функций доступа, например [CDBErrorInfo:: жеталлерроринфо](../../data/oledb/cdberrorinfo-getallerrorinfo.md), чтобы получить сведения об ошибке для каждой записи.
 
@@ -118,7 +118,7 @@ HRESULT GetAllErrorInfo(ULONG ulRecordNum,
 
 Значение S_OK, если операция завершилась успешно. Другие возвращаемые значения см. в разделе [IErrorRecords:: жетерроринфо](/previous-versions/windows/desktop/ms711230(v=vs.85)) в *справочнике программиста OLE DB* .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выходное значение *пбстрдескриптион* получается внутренне путем вызова метода `IErrorInfo::GetDescription` , который задает значение null, если языковой стандарт не поддерживается, или если выполняются оба следующих условия.
 
@@ -231,7 +231,7 @@ HRESULT GetErrorRecords(ULONG* pcRecords) throw();
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если необходимо проверить интерфейс, из которого нужно получить сведения об ошибке, используйте первую форму функции. В противном случае используйте вторую форму.
 

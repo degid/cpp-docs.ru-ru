@@ -30,7 +30,7 @@ ms.locfileid: "88834951"
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[array](../standard-library/array-class-stl.md)|Хранит последовательность элементов фиксированной длины.|
 |[tuple_element](../standard-library/tuple-element-class-tuple.md)|Заключает в оболочку тип элемента массива.|
@@ -40,19 +40,19 @@ ms.locfileid: "88834951"
 
 |Имя|Описание|
 |-|-|
-|[Оператор = =](../standard-library/array-operators.md#op_eq_eq)|Сравнение массивов на равенство.|
-|[operator! =](../standard-library/array-operators.md#op_neq)|Сравнение массивов на неравенство.|
-|[станции\<](../standard-library/array-operators.md#op_lt)|Сравнение массивов "меньше, чем".|
-|[Оператор>=](../standard-library/array-operators.md#op_gt_eq)|Сравнение массивов "больше или равно".|
-|[Оператор>](../standard-library/array-operators.md#op_gt)|Сравнение массивов "больше, чем".|
-|[Оператор<=](../standard-library/array-operators.md#op_lt_eq)|Сравнение массивов "меньше или равно".|
+|[operator==](../standard-library/array-operators.md#op_eq_eq)|Сравнение массивов на равенство.|
+|[operator!=](../standard-library/array-operators.md#op_neq)|Сравнение массивов на неравенство.|
+|[operator\<](../standard-library/array-operators.md#op_lt)|Сравнение массивов "меньше, чем".|
+|[operator>=](../standard-library/array-operators.md#op_gt_eq)|Сравнение массивов "больше или равно".|
+|[operator>](../standard-library/array-operators.md#op_gt)|Сравнение массивов "больше, чем".|
+|[operator<=](../standard-library/array-operators.md#op_lt_eq)|Сравнение массивов "меньше или равно".|
 
 ### <a name="functions"></a>Функции
 
 |Имя|Описание|
 |-|-|
 |[get](../standard-library/array-functions.md#get)|Получает указанный элемент массива.|
-|[позиции](../standard-library/array-functions.md#swap)|Меняет местами содержимое одного массива с содержимым другого массива.|
+|[swap](../standard-library/array-functions.md#swap)|Меняет местами содержимое одного массива с содержимым другого массива.|
 
 ## <a name="see-also"></a>См. также раздел
 

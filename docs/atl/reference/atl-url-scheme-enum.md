@@ -33,7 +33,7 @@ enum ATL_URL_SCHEME{
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="see-also"></a>См. также
 

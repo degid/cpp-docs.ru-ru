@@ -41,7 +41,7 @@ class CTreeView : public CCtrlView
 |----------|-----------------|
 |[CTreeView:GetTreeCtrl](#gettreectrl)|Возвращает элемент управления дерева, связанный с представлением.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации об этой [CView](../../mfc/reference/cview-class.md) архитектуре см.
 

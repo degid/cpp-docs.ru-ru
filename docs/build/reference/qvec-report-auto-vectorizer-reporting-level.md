@@ -19,7 +19,7 @@ ms.locfileid: "88836872"
 /Qvec-report:{1}{2}
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **/Qvec-report: 1**<br/>
 Выводит информационное сообщение для циклов, которые являются векторными.

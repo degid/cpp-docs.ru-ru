@@ -28,7 +28,7 @@ ms.locfileid: "88831129"
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxextractsubstring"></a><a name="afxextractsubstring"></a> афксекстрактсубстринг
 
@@ -60,7 +60,7 @@ BOOL AFXAPI AfxExtractSubString (
 
 Значение TRUE, если функция успешно извлекли подстроку по указанному индексу; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция полезна при извлечении нескольких подстрок из исходной строки, когда один из них разделяет каждую подстроку. Эта функция выполняет поиск с начала параметра *лпсзфуллстринг* при каждом вызове.
 
@@ -72,7 +72,7 @@ BOOL AFXAPI AfxExtractSubString (
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxformatstring1"></a><a name="afxformatstring1"></a> AfxFormatString1
 
@@ -96,7 +96,7 @@ void  AfxFormatString1(
 *lpsz1*<br/>
 Строка, которая заменит символы формата "%1" в строке шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вновь сформированная строка хранится в *RSTR*. Например, если строка в таблице строк имеет значение "файл %1 не найдено", а *lpsz1* равно "C:\MYFILE.TXT", то *RSTR* будет содержать строку "файл C:\MYFILE.TXT не найден". Эта функция полезна для форматирования строк, отправляемых в окна сообщений и другие окна.
 
@@ -108,7 +108,7 @@ void  AfxFormatString1(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxformatstring2"></a><a name="afxformatstring2"></a> AfxFormatString2
 
@@ -136,7 +136,7 @@ void AfxFormatString2(
 *lpsz2*<br/>
 Строка, которая заменит символы формата "%2" в строке шаблона.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вновь сформированная строка хранится в *RSTR*. Например, если строка в таблице строк имеет значение "файл %1 не найдено в каталоге %2", *lpsz1* указывает на "MYFILE.TXT", а *lpsz2* указывает на "К:\мидир", тогда *RSTR* будет содержать строку "файл MYFILE.TXT не найден в каталоге к:\мидир"
 
@@ -148,7 +148,7 @@ void AfxFormatString2(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** AFXWIN. h
+  **Заголовок** AFXWIN.h
 
 ## <a name="afxmessagebox"></a><a name="afxmessagebox"></a> AfxMessageBox
 
@@ -202,7 +202,7 @@ int AFXAPI AfxMessageBox(
 
 Функции [AfxFormatString1](#afxformatstring1) и [AfxFormatString2](#afxformatstring2) могут быть полезны при форматировании текста, отображаемого в окне сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая форма этой перегруженной функции отображает текстовую строку, на которую указывает *лпсзтекст* , в окне сообщения и использует *нидхелп* для описания контекста справки. Контекст справки используется для перехода к связанному разделу справки, когда пользователь нажимает клавишу справки (обычно это F1).
 

@@ -19,7 +19,7 @@ ms.locfileid: "79440892"
 
 > **ELSE**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. раздел [If](if-masm.md).
 

@@ -47,13 +47,13 @@ class single_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[add](#add)|Добавляет ссылку на `single_link_registry` объект. (Переопределяет [network_link_registry:: Add](network-link-registry-class.md#add).)|
-|[начале](#begin)|Возвращает итератор на первый элемент в `single_link_registry` объекте. (Переопределяет [network_link_registry:: Begin](network-link-registry-class.md#begin).)|
+|[begin](#begin)|Возвращает итератор на первый элемент в `single_link_registry` объекте. (Переопределяет [network_link_registry:: Begin](network-link-registry-class.md#begin).)|
 |[contains](#contains)|Выполняет поиск `single_link_registry` указанного блока в объекте. (Переопределяет [network_link_registry:: Contains](network-link-registry-class.md#contains).)|
 |[count](#count)|Подсчитывает количество элементов в `single_link_registry` объекте. (Переопределяет [network_link_registry:: count](network-link-registry-class.md#count).)|
-|[remove](#remove)|Удаляет ссылку из `single_link_registry` объекта. (Переопределяет [network_link_registry:: Remove](network-link-registry-class.md#remove).)|
+|[remove](#remove)|Удаляет ссылку из `single_link_registry` объекта. (Переопределяет [network_link_registry::Remove](network-link-registry-class.md#remove).)|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -65,7 +65,7 @@ class single_link_registry : public network_link_registry<_Block>;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="add"></a><a name="add"></a>включить
 
@@ -80,7 +80,7 @@ virtual void add(_EType _Link);
 *_Link*<br/>
 Указатель на добавляемый блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_link_target](invalid-link-target-class.md) , если в этом реестре уже есть ссылка.
 
@@ -96,7 +96,7 @@ virtual iterator begin();
 
 Итератор, обращающийся к первому элементу в `single_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конечное состояние обозначается `NULL` ссылкой.
 
@@ -162,7 +162,7 @@ single_link_registry();
 virtual ~single_link_registry();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_operation](invalid-operation-class.md) , если оно вызывается перед удалением ссылки.
 

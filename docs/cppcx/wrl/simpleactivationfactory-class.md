@@ -36,7 +36,7 @@ class SimpleActivationFactory : public ActivationFactory<>;
 *Базы*<br/>
 Базовый класс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Базовый класс должен предоставить конструктор по умолчанию.
 
@@ -103,7 +103,7 @@ STDMETHOD( ActivateInstance )(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `__WRL_STRICT__` определено, ошибка утверждения испускается, если базовый класс, указанный в параметре шаблона класса, не получен из [RuntimeClass](runtimeclass-class.md)или не настроен со значением перечисления WinRt или WinRtClassicComMix [RuntimeClassTypeType.](runtimeclasstype-enumeration.md)
 
@@ -126,7 +126,7 @@ STDMETHOD( GetRuntimeClassName )(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, указывающее на ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `__WRL_STRICT__` определено, ошибка утверждения испускается, если `Base` класс, указанный параметром шаблона класса, не получен из [RuntimeClass](runtimeclass-class.md)или не настроен со значением winRt или WinRtClassicComMix [RuntimeClassTypeType.](runtimeclasstype-enumeration.md)
 

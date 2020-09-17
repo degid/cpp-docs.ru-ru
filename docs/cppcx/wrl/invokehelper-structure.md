@@ -112,7 +112,7 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 *argCount*<br/>
 Количество аргументов в `InvokeHelper` специализации.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обеспечивает реализацию метода `Invoke()` на основе указанного числа и типа аргументов.
 
@@ -160,7 +160,7 @@ struct InvokeHelper<TDelegateInterface, TCallback, 9> :
 TCallback callback_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Представляет обработчик событий для вызова при возникновении события.
 
@@ -236,7 +236,7 @@ STDMETHOD(
 
 S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывает обработчик анонса, подпись которого содержит указанное количество аргументов.
 
@@ -255,7 +255,7 @@ explicit InvokeHelper(
 *обратный вызов*<br/>
 Обработчик событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует новый экземпляр класса `InvokeHelper`.
 

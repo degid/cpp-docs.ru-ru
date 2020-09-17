@@ -51,7 +51,7 @@ class extent;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[contains](#contains)|Проверяет, имеет ли указанный `extent` объект указанный ранг.|
 |[size](#size)|Возвращает общий линейный размер экстента (в единицах элементов).|
@@ -61,17 +61,17 @@ class extent;
 
 |Имя|Описание|
 |----------|-----------------|
-|[станции](#operator_min)|Возвращает новый `extent` объект, созданный путем вычитания `index` элементов из соответствующих `extent` элементов.|
-|[Оператор--](#operator_min_min)|Уменьшает каждый элемент `extent` объекта.|
-|[Оператор% =](#operator_mod_eq)|Вычисляет остаток от деления каждого элемента в `extent` объекте, если этот элемент делится на число.|
-|[operator * =](#operator_star_eq)|Умножает каждый элемент `extent` объекта на число.|
-|[Оператор/=](#operator_min_eq)|Делит каждый элемент `extent` объекта на число.|
-|[оператор "экстент::"\[\]](#operator_at)|Возвращает элемент, расположенный по указанному индексу.|
-|[operator +](#operator_add)|Возвращает новый `extent` объект, созданный путем добавления соответствующих `index` `extent` элементов и.|
-|[operator + +](#operator_add_add)|Увеличивает каждый элемент `extent` объекта.|
-|[operator + =](#operator_add_eq)|Добавляет указанный номер к каждому элементу `extent` объекта.|
-|[Оператор =](#operator_eq)|Копирует содержимое другого `extent` объекта в этот объект.|
-|[Оператор-=](#operator_min_eq)|Вычитает указанное число из каждого элемента `extent` объекта.|
+|[operator-](#operator_min)|Возвращает новый `extent` объект, созданный путем вычитания `index` элементов из соответствующих `extent` элементов.|
+|[operator--](#operator_min_min)|Уменьшает каждый элемент `extent` объекта.|
+|[operator%=](#operator_mod_eq)|Вычисляет остаток от деления каждого элемента в `extent` объекте, если этот элемент делится на число.|
+|[operator*=](#operator_star_eq)|Умножает каждый элемент `extent` объекта на число.|
+|[operator/=](#operator_min_eq)|Делит каждый элемент `extent` объекта на число.|
+|[extent::operator\[\]](#operator_at)|Возвращает элемент, расположенный по указанному индексу.|
+|[operator+](#operator_add)|Возвращает новый `extent` объект, созданный путем добавления соответствующих `index` `extent` элементов и.|
+|[operator++](#operator_add_add)|Увеличивает каждый элемент `extent` объекта.|
+|[operator+=](#operator_add_eq)|Добавляет указанный номер к каждому элементу `extent` объекта.|
+|[operator=](#operator_eq)|Копирует содержимое другого `extent` объекта в этот объект.|
+|[operator-=](#operator_min_eq)|Вычитает указанное число из каждого элемента `extent` объекта.|
 
 ### <a name="public-constants"></a>Открытые константы
 
@@ -137,13 +137,13 @@ explicit extent(const int _Array[_Rank])restrict(amp,cpu);
 *_Other*<br/>
 `extent`Объект, на котором основан новый `extent` объект.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Конструктор по умолчанию инициализирует `extent` объект с рангом 3.
 
 Если массив используется для создания `extent` объекта, длина массива должна совпадать с рангом `extent` объекта.
 
-## <a name="operator"></a><a name="operator_mod_eq"></a>Оператор% =
+## <a name="operator"></a><a name="operator_mod_eq"></a>operator%=
 
 Вычисляет остаток от деления каждого элемента в экстенте, если этот элемент делится на число.
 
@@ -162,7 +162,7 @@ extent<_Rank>& operator%=(int _Rhs) restrict(cpu, direct3d);
 
 Объект `extent`.
 
-## <a name="operator"></a><a name="operator_star_eq"></a>operator * =
+## <a name="operator"></a><a name="operator_star_eq"></a>operator*=
 
 Умножает каждый элемент в объекте "экстент" на указанное число.
 
@@ -181,7 +181,7 @@ extent<_Rank>& operator*=(int _Rhs) restrict(amp,cpu);
 
 Объект `extent`.
 
-## <a name="operator"></a><a name="operator_add"></a>operator +
+## <a name="operator"></a><a name="operator_add"></a>operator+
 
 Возвращает новый `extent` объект, созданный путем добавления соответствующих `index` элементов и `extent` .
 
@@ -200,7 +200,7 @@ extent<_Rank> operator+(const index<_Rank>& _Rhs) restrict(amp,cpu);
 
 Новый объект `extent`.
 
-## <a name="operator"></a><a name="operator_add_add"></a>operator + +
+## <a name="operator"></a><a name="operator_add_add"></a>operator++
 
 Увеличивает каждый элемент объекта "экстент".
 
@@ -215,7 +215,7 @@ extent<_Rank> operator++(int)restrict(amp,cpu);
 
 Для оператора префикса — `extent` объект ( **`*this`** ). Для оператора суффикса — новый `extent` объект.
 
-## <a name="operator"></a><a name="operator_add_eq"></a>operator + =
+## <a name="operator"></a><a name="operator_add_eq"></a>operator+=
 
 Добавляет указанный номер к каждому элементу объекта "экстент".
 
@@ -236,7 +236,7 @@ extent<_Rank>& operator+=(int _Rhs) restrict(amp,cpu);
 
 Результирующий объект `extent`.
 
-## <a name="operator-"></a><a name="operator_min"></a>станции
+## <a name="operator-"></a><a name="operator_min"></a>operator-
 
 Создает новый `extent` объект путем вычитания каждого элемента указанного `index` объекта из соответствующего элемента в этом `extent` объекте.
 
@@ -255,7 +255,7 @@ extent<_Rank> operator-(const index<_Rank>& _Rhs) restrict(amp,cpu);
 
 Новый объект `extent`.
 
-## <a name="operator--"></a><a name="operator_min_min"></a>Оператор--
+## <a name="operator--"></a><a name="operator_min_min"></a>operator--
 
 Уменьшает каждый элемент в объекте "экстент".
 
@@ -270,7 +270,7 @@ extent<_Rank> operator--(int)restrict(amp,cpu);
 
 Для оператора префикса — `extent` объект ( **`*this`** ). Для оператора суффикса — новый `extent` объект.
 
-## <a name="operator"></a><a name="operator_div_eq"></a>Оператор/=
+## <a name="operator"></a><a name="operator_div_eq"></a>operator/=
 
 Делит каждый элемент в объекте "экстент" на указанное число.
 
@@ -289,7 +289,7 @@ extent<_Rank>& operator/=(int _Rhs) restrict(amp,cpu);
 
 Объект `extent`.
 
-## <a name="operator-"></a><a name="operator_min_eq"></a>Оператор-=
+## <a name="operator-"></a><a name="operator_min_eq"></a>operator-=
 
 Вычитает указанное число из каждого элемента объекта "экстент".
 
@@ -310,7 +310,7 @@ extent<_Rank>& operator-=(int _Rhs) restrict(amp,cpu);
 
 Результирующий объект `extent`.
 
-## <a name="operator"></a><a name="operator_eq"></a>Оператор =
+## <a name="operator"></a><a name="operator_eq"></a>operator=
 
 Копирует содержимое другого объекта "расширение" в этот объект.
 
@@ -329,7 +329,7 @@ extent<_Rank>& operator=(const extent<_Rank>& _Other) restrict(amp,cpu);
 
 Ссылка на этот `extent` объект.
 
-## <a name="extentoperator-"></a><a name="operator_at"></a>оператор "экстент::"\[\]
+## <a name="extentoperator-"></a><a name="operator_at"></a>extent::operator\[\]
 
 Возвращает элемент, расположенный по указанному индексу.
 

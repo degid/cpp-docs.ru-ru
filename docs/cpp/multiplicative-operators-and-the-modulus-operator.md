@@ -32,7 +32,7 @@ expression / expression
 expression % expression
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Ниже перечислены мультипликативные операторы.
 

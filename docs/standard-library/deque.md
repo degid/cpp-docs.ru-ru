@@ -30,22 +30,22 @@ ms.locfileid: "88838572"
 
 |Имя|Описание|
 |-|-|
-|[operator! =](../standard-library/deque-operators.md#op_neq)|Проверяет неравенство объекта deque слева от оператора объекту deque справа от оператора.|
-|[Оператор<](../standard-library/deque-operators.md#op_lt)|Проверяет, меньше ли объект deque слева от оператора объекта deque справа от оператора.|
-|[станции\<=](../standard-library/deque-operators.md#op_gt_eq)|Проверяет, меньше или равен объект deque слева от оператора объекту deque справа от оператора.|
-|[Оператор = =](../standard-library/deque-operators.md#op_eq_eq)|Проверяет равенство объекта deque слева от оператора объекту deque справа от оператора.|
-|[Оператор>](../standard-library/deque-operators.md#op_gt)|Проверяет, больше ли объект deque слева от оператора объекта deque справа от оператора.|
-|[Оператор>=](../standard-library/deque-operators.md#op_gt_eq)|Проверяет, больше или равен ли объект deque слева от оператора объекту deque справа от оператора.|
+|[operator!=](../standard-library/deque-operators.md#op_neq)|Проверяет неравенство объекта deque слева от оператора объекту deque справа от оператора.|
+|[operator<](../standard-library/deque-operators.md#op_lt)|Проверяет, меньше ли объект deque слева от оператора объекта deque справа от оператора.|
+|[operator\<=](../standard-library/deque-operators.md#op_gt_eq)|Проверяет, меньше или равен объект deque слева от оператора объекту deque справа от оператора.|
+|[operator==](../standard-library/deque-operators.md#op_eq_eq)|Проверяет равенство объекта deque слева от оператора объекту deque справа от оператора.|
+|[operator>](../standard-library/deque-operators.md#op_gt)|Проверяет, больше ли объект deque слева от оператора объекта deque справа от оператора.|
+|[operator>=](../standard-library/deque-operators.md#op_gt_eq)|Проверяет, больше или равен ли объект deque слева от оператора объекту deque справа от оператора.|
 
 ### <a name="functions"></a>Функции
 
 |Имя|Описание|
 |-|-|
-|[позиции](../standard-library/deque-functions.md#swap)|Меняет местами элементы двух объектов deque.|
+|[swap](../standard-library/deque-functions.md#swap)|Меняет местами элементы двух объектов deque.|
 
 ### <a name="classes"></a>Классы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Класс deque](../standard-library/deque-class.md)|Шаблон класса последовательностей контейнеров, который упорядочивает элементы заданного типа в линейном упорядочении и, как векторы, обеспечивает быстрый произвольный доступ к любому элементу и эффективную вставку и удаление в обратном направлении контейнера.|
 

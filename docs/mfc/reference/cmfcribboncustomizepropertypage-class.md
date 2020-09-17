@@ -33,21 +33,21 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкриббонкустомизепропертипаже:: Кмфкриббонкустомизепропертипаже](#cmfcribboncustomizepropertypage)|Формирует объект `CMFCRibbonCustomizePropertyPage`.|
 |`CMFCRibbonCustomizePropertyPage::~CMFCRibbonCustomizePropertyPage`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкриббонкустомизепропертипаже:: Аддкустомкатегори](#addcustomcategory)|Добавляет пользовательскую категорию в поле со списком **команд** .|
 |`CMFCRibbonCustomizePropertyPage::CreateObject`|Используется платформой для создания динамического экземпляра этого типа класса.|
 |`CMFCRibbonCustomizePropertyPage::GetThisClass`|Используется платформой для получения указателя на объект [крунтимекласс](../../mfc/reference/cruntimeclass-structure.md) , связанный с этим типом класса.|
 |[Кмфкриббонкустомизепропертипаже:: ОНОК](#onok)|Вызывается системой, когда пользователь нажимает кнопку " **ОК** " в диалоговом окне " **Настройка** ".|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если необходимо добавить пользовательские команды в диалоговое окно **Настройка** , необходимо выполнить обработку сообщения AFX_WM_ON_RIBBON_CUSTOMIZE. В обработчике сообщений создайте экземпляр `CMFCRibbonCustomizePropertyPage` объекта в стеке. Создайте список настраиваемых команд, а затем вызовите, `AddCustomCategory` чтобы добавить новую страницу в диалоговое окно " **Настройка** ".
 
@@ -75,7 +75,7 @@ class CMFCRibbonCustomizePropertyPage: public CMFCPropertyPage
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксриббонкустомизедиалог. h
+**Заголовок:** афксриббонкустомизедиалог.h
 
 ## <a name="cmfcribboncustomizepropertypageaddcustomcategory"></a><a name="addcustomcategory"></a> Кмфкриббонкустомизепропертипаже:: Аддкустомкатегори
 
@@ -95,7 +95,7 @@ void AddCustomCategory(
 *лстидс*\
 окне Содержит идентификаторы команд ленты, которые должны отображаться в пользовательской категории.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод добавляет категорию с именем *лпсзнаме* в поле со списком **команд** . Когда пользователь выбирает категорию, команды, указанные в *лстидс* , отображаются в списке команд.
 
@@ -120,7 +120,7 @@ CMFCRibbonCustomizePropertyPage(CMFCRibbonBar* pRibbonBar = NULL);
 virtual void OnOK();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию применяет параметры, выбранные в диалоговом окне **Настройка** , к панели быстрого доступа.
 

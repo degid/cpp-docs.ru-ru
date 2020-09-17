@@ -26,7 +26,7 @@ catch (bad_cast)
    statement
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Интерфейс для **bad_cast** :
 
@@ -96,7 +96,7 @@ Shape& ref_shape = dynamic_cast<Shape&>(ref_circle);
 
 |Оператор|Описание|
 |-|-|
-|[Оператор =](#op_eq)|Оператор присваивания, который присваивает один `bad_cast` объект другому.|
+|[operator=](#op_eq)|Оператор присваивания, который присваивает один `bad_cast` объект другому.|
 
 ## <a name="bad_cast"></a><a name="bad_cast"></a>bad_cast
 

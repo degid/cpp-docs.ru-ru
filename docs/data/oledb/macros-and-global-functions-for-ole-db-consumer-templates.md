@@ -195,7 +195,7 @@ inline void AtlTraceErrorRecords(HRESULT hrErr = S_OK);
 *херр*<br/>
 окне Значение HRESULT, возвращаемое функцией-членом OLE DB шаблона потребителя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Если *Херр* не S_OK, `AtlTraceErrorRecords` выводит OLE DB сведения о записи об ошибке на устройство дампа (вкладка **Отладка** окна вывод или файл). Сведения о записи об ошибке, полученные от поставщика, включают номер строки, источник, описание, файл справки, контекст и идентификатор GUID для каждой записи записи об ошибке. `AtlTraceErrorRecords` выводит эти сведения только в отладочных сборках. В сборках выпуска это пустая заглушка. Дополнительные сведения см. в разделе [класс CDBErrorInfo](../../data/oledb/cdberrorinfo-class.md).
 
@@ -217,7 +217,7 @@ BEGIN_ACCESSOR(num, bAuto)
 *бауто*<br/>
 окне Указывает, является ли этот метод доступа автоматическим методом доступа или ручным методом доступа. Если **`true`** значение равно, метод доступа имеет значение Auto; значение **`false`** , если метод доступа является ручным. Автоматический метод доступа означает, что данные извлекаться для вас при операциях перемещения.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 В случае нескольких методов доступа в наборе строк необходимо указать BEGIN_ACCESSOR_MAP и использовать макрос BEGIN_ACCESSOR для каждого отдельного метода доступа. Макрос BEGIN_ACCESSOR завершен с помощью макроса END_ACCESSOR. Макрос BEGIN_ACCESSOR_MAP завершен с помощью макроса END_ACCESSOR_MAP.
 
@@ -243,7 +243,7 @@ BEGIN_ACCESSOR_MAP(x, num)
 *num*<br/>
 [входные данные] Число методов доступа в этой карте метода доступа.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 В случае нескольких методов доступа в наборе строк необходимо указать BEGIN_ACCESSOR_MAP в начале и использовать макрос BEGIN_ACCESSOR для каждого отдельного метода доступа. Макрос BEGIN_ACCESSOR завершен с помощью макроса END_ACCESSOR. Схема метода доступа завершается с помощью макроса END_ACCESSOR_MAP.
 
@@ -304,7 +304,7 @@ END_ACCESSOR_MAP()
 END_ACCESSOR()
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Для нескольких методов доступа в наборе строк необходимо указать BEGIN_ACCESSOR_MAP и использовать макрос BEGIN_ACCESSOR для каждого отдельного метода доступа. Макрос BEGIN_ACCESSOR завершен с помощью макроса END_ACCESSOR. Макрос BEGIN_ACCESSOR_MAP завершен с помощью макроса END_ACCESSOR_MAP.
 
@@ -322,7 +322,7 @@ END_ACCESSOR()
 END_ACCESSOR_MAP()
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Для нескольких методов доступа в наборе строк необходимо указать BEGIN_ACCESSOR_MAP и использовать макрос BEGIN_ACCESSOR для каждого отдельного метода доступа. Макрос BEGIN_ACCESSOR завершен с помощью макроса END_ACCESSOR. Макрос BEGIN_ACCESSOR_MAP завершен с помощью макроса END_ACCESSOR_MAP.
 
@@ -345,7 +345,7 @@ BEGIN_COLUMN_MAP(x)
 *x*<br/>
 [входные данные] Имя класса записей пользователя, производного от `CAccessor`.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот макрос используется при наличии одного метода доступа в наборе строк. При наличии нескольких методов доступа в наборе строк, используйте [BEGIN_ACCESSOR_MAP](../../data/oledb/begin-accessor-map.md).
 
@@ -686,7 +686,7 @@ COLUMN_ENTRY(nOrdinal, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Макрос COLUMN_ENTRY используется в следующих местах:
 
@@ -738,7 +738,7 @@ COLUMN_ENTRY_EX(nOrdinal, wType, nLength, nPrecision, nScale, data, length, stat
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Макрос COLUMN_ENTRY_EX используется в следующих местах:
 
@@ -775,7 +775,7 @@ COLUMN_ENTRY_LENGTH(nOrdinal, data, length)
 *length*<br/>
 окне Переменная, которая должна быть привязана к длине столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот макрос поддерживает переменную *длины* . Он используется в следующих местах:
 
@@ -811,7 +811,7 @@ COLUMN_ENTRY_LENGTH_STATUS(nOrdinal, data, length, status)
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Используйте этот макрос, если требуется поддержка переменных длины и состояния. Он используется в следующих местах:
 
@@ -847,7 +847,7 @@ COLUMN_ENTRY_PS(nOrdinal, nPrecision, nScale, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Позволяет указать точность и масштаб столбца, который необходимо привязать. Он используется в следующих местах:
 
@@ -886,7 +886,7 @@ COLUMN_ENTRY_PS_LENGTH(nOrdinal, nPrecision, nScale, data, length)
 *length*<br/>
 окне Переменная, которая должна быть привязана к длине столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Позволяет указать точность и масштаб столбца, который необходимо привязать. Этот макрос поддерживает переменную *длины* . Он используется в следующих местах:
 
@@ -928,7 +928,7 @@ COLUMN_ENTRY_PS_LENGTH_STATUS(nOrdinal, nPrecision, nScale, data, length, status
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Позволяет указать точность и масштаб столбца, который необходимо привязать. Используйте этот макрос, если требуется поддержка переменных длины и состояния. Он используется в следующих местах:
 
@@ -967,7 +967,7 @@ COLUMN_ENTRY_PS_STATUS(nOrdinal, nPrecision, nScale, data, status)
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Позволяет указать точность и масштаб столбца, который необходимо привязать. Этот макрос поддерживает переменную *состояния* . Он используется в следующих местах:
 
@@ -1000,7 +1000,7 @@ COLUMN_ENTRY_STATUS(nOrdinal, data, status)
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот макрос поддерживает переменную *состояния* . Он используется в следующих местах:
 
@@ -1031,7 +1031,7 @@ COLUMN_ENTRY_TYPE (nOrdinal, wType, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот макрос является специализированным вариантом макроса [COLUMN_ENTRY](../../data/oledb/column-entry.md) , который предоставляет средства для указания типа данных.
 
@@ -1059,7 +1059,7 @@ COLUMN_ENTRY_TYPE_SIZE(nOrdinal, wType, nLength, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Этот макрос является специализированным вариантом макроса [COLUMN_ENTRY](../../data/oledb/column-entry.md) , который предоставляет средства для указания размера и типа данных.
 
@@ -1081,7 +1081,7 @@ COLUMN_NAME(pszName, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Макросы COLUMN_NAME_ * используются в тех же местах, что и [COLUMN_ENTRY](../../data/oledb/column-entry.md):
 
@@ -1127,7 +1127,7 @@ COLUMN_NAME_EX(pszName, wType, nLength, nPrecision, nScale, data, length, status
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1152,7 +1152,7 @@ COLUMN_NAME_LENGTH(pszName, data, length)
 *length*<br/>
 окне Переменная, которая должна быть привязана к длине столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1180,7 +1180,7 @@ COLUMN_NAME_LENGTH_STATUS(pszName, data, length, status )
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1208,7 +1208,7 @@ COLUMN_NAME_PS(pszName, nPrecision, nScale, data )
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1239,7 +1239,7 @@ COLUMN_NAME_PS_LENGTH(pszName, nPrecision, nScale, data, length )
 *length*<br/>
 окне Переменная, которая должна быть привязана к длине столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1273,7 +1273,7 @@ COLUMN_NAME_PS_LENGTH_STATUS(pszName, nPrecision, nScale, data, length, status )
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1304,7 +1304,7 @@ COLUMN_NAME_PS_STATUS(pszName, nPrecision, nScale, data, status )
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1329,7 +1329,7 @@ COLUMN_NAME_STATUS(pszName, data, status )
 *status*<br/>
 окне Переменная, которая должна быть привязана к состоянию столбца.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1354,7 +1354,7 @@ COLUMN_NAME_TYPE(pszName, wType, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1385,7 +1385,7 @@ COLUMN_NAME_TYPE_PS(pszName, wType, nPrecision, nScale, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1413,7 +1413,7 @@ COLUMN_NAME_TYPE_SIZE(pszName, wType, nLength, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1441,7 +1441,7 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
 *data*<br/>
 окне Соответствующий элемент данных в записи пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Сведения о том, где используются макросы COLUMN_NAME_ *, см. в разделе [column_name](../../data/oledb/column-name.md) .
 
@@ -1455,7 +1455,7 @@ COLUMN_NAME_TYPE_STATUS(pszName, wType, status, data)
 END_COLUMN_MAP()
 ```
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Он используется с одним методом доступа к набору строк. Макрос BEGIN_COLUMN_MAP завершен с помощью макроса END_COLUMN_MAP.
 
@@ -1484,7 +1484,7 @@ DEFINE_COMMAND(x, szCommand)
 *сзкомманд*<br/>
 окне Командная строка, которая будет использоваться для создания набора строк при использовании [CCommand](../../data/oledb/ccommand-class.md).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Указанная командная строка будет использоваться по умолчанию, если не указать текст команды в методе [CCommand:: Open](../../data/oledb/ccommand-open.md) .
 
@@ -1512,7 +1512,7 @@ DEFINE_COMMAND_EX(x, wszCommand)
 *всзкомманд*<br/>
 окне Командная строка, которая будет использоваться для создания набора строк при использовании [CCommand](../../data/oledb/ccommand-class.md).
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Указанная командная строка будет использоваться по умолчанию, если не указать текст команды в методе [CCommand:: Open](../../data/oledb/ccommand-open.md) .
 
@@ -1537,7 +1537,7 @@ BEGIN_PARAM_MAP(x)
 *x*<br/>
 [входные данные] Имя класса записей пользователя.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Параметры используются [командами](/previous-versions/windows/desktop/ms724608(v=vs.85)).
 
@@ -1574,7 +1574,7 @@ SET_PARAM_TYPE(type)
 *type*<br/>
 [входные данные] Тип, задаваемый для параметра.
 
-#### <a name="remarks"></a>Remarks
+#### <a name="remarks"></a>Примечания
 
 Поставщики поддерживают только входные и выходные типы параметров, поддерживаемые в базовом источнике данных. Тип является сочетанием одного или нескольких `DBPARAMIO` значений (см. [структуры DBBINDING](/previous-versions/windows/desktop/ms716845(v=vs.85)) в *справочнике программиста OLE DB*):
 

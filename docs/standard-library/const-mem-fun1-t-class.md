@@ -33,17 +33,17 @@ class const_mem_fun1_t : public binary_function<const Type *, Arg, Result>
 *member_ptr*\
 Указатель на функцию-член класса `Type` для преобразования в объект функции.
 
-*слева*\
+*left*\
 **`const`** Объект, для которого вызывается функция-член *member_ptr* .
 
-*Правильно*\
+*right*\
 Аргумент, присваиваемый *member_ptr*.
 
 ## <a name="return-value"></a>Возвращаемое значение
 
 Адаптируемая бинарная функция.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Шаблон класса хранит копию *member_ptr*, которая должна быть указателем на функцию-член класса `Type` в закрытом объекте-члене. Он определяет свою функцию члена `operator()` как возвращающую `(left->member_ptr)(right) const` .
 

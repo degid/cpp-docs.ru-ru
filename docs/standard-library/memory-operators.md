@@ -19,7 +19,7 @@ ms.locfileid: "87233058"
 ---
 # <a name="ltmemorygt-operators"></a>операторы &lt;memory&gt;
 
-## <a name="operator"></a><a name="op_neq"></a>operator! =
+## <a name="operator"></a><a name="op_neq"></a> operator!=
 
 Проверяет неравенство между объектами.
 
@@ -42,10 +42,10 @@ bool operator!=(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из объектов для проверки на неравенство.
 
-*Правильно*\
+*right*\
 Один из объектов для проверки на неравенство.
 
 *Ty1*\
@@ -58,7 +58,7 @@ bool operator!=(
 
 **`true`** значение, если объекты не равны; значение **`false`** , если объекты равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый оператор шаблона возвращает значение false. (Все распределители по умолчанию равны.)
 
@@ -120,7 +120,7 @@ sp0 != sp0 == false
 sp0 != sp1 == true
 ```
 
-## <a name="operator"></a><a name="op_eq_eq"></a>Оператор = =
+## <a name="operator"></a><a name="op_eq_eq"></a> operator==
 
 Проверяет равенство между объектами.
 
@@ -143,10 +143,10 @@ bool operator==(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из объектов для проверки на равенство.
 
-*Правильно*\
+*right*\
 Один из объектов для проверки на равенство.
 
 *Ty1*\
@@ -159,7 +159,7 @@ bool operator==(
 
 **`true`** значение, если объекты равны, **`false`** Если объекты не равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый оператор шаблона возвращает значение true. (Все распределители по умолчанию равны.)
 
@@ -232,7 +232,7 @@ sp0 == sp0 == true
 sp0 == sp1 == false
 ```
 
-## <a name="operatorgt"></a><a name="op_gt_eq"></a>станции&gt;=
+## <a name="operatorgt"></a><a name="op_gt_eq"></a> operator&gt;=
 
 Проверяет, больше или равен один объект второму объекту.
 
@@ -250,10 +250,10 @@ bool operator>=(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Один из сравниваемых объектов.
 
 *Ty1*\
@@ -262,11 +262,11 @@ bool operator>=(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы шаблона возвращают `left.get() >= right.get()`.
 
-## <a name="operatorlt"></a><a name="op_lt"></a>станции&lt;
+## <a name="operatorlt"></a><a name="op_lt"></a> operator&lt;
 
 Проверяет, меньше ли один объект второго объекта.
 
@@ -284,10 +284,10 @@ bool operator<(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Один из сравниваемых объектов.
 
 *Ty1*\
@@ -296,7 +296,7 @@ bool operator<(
 *Ty2*\
 Тип, управляемый правым указателем.
 
-## <a name="operatorlt"></a><a name="op_lt_eq"></a>станции&lt;=
+## <a name="operatorlt"></a><a name="op_lt_eq"></a> operator&lt;=
 
 Проверяет, меньше или равен один объект второму объекту.
 
@@ -314,10 +314,10 @@ bool operator<=(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Один из сравниваемых объектов.
 
 *Ty1*\
@@ -326,11 +326,11 @@ bool operator<=(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Операторы шаблона возвращают `left.get() <= right.get()`
 
-## <a name="operatorgt"></a><a name="op_gt"></a>станции&gt;
+## <a name="operatorgt"></a><a name="op_gt"></a> operator&gt;
 
 Проверяет, больше ли один объект второго объекта.
 
@@ -348,10 +348,10 @@ bool operator>(
 
 ### <a name="parameters"></a>Параметры
 
-*слева*\
+*left*\
 Один из сравниваемых объектов.
 
-*Правильно*\
+*right*\
 Один из сравниваемых объектов.
 
 *Ty1*\
@@ -360,7 +360,7 @@ bool operator>(
 *Ty2*\
 Тип, управляемый правым общим указателем.
 
-## <a name="operatorltlt"></a><a name="op_lt_lt"></a>станции&lt;&lt;
+## <a name="operatorltlt"></a><a name="op_lt_lt"></a> operator&lt;&lt;
 
 Записывает в поток общий указатель.
 
@@ -381,13 +381,13 @@ std::basic_ostream<Elem, Tr>& operator<<(std::basic_ostream<Elem, Tr>& out,
 *Ty*\
 Тип, управляемый общим указателем.
 
-*заполняет*\
+*out*\
 Выходной поток.
 
-*портов*\
+*sp*\
 Общий указатель.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона возвращает `out << sp.get()`.
 

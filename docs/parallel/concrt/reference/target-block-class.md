@@ -55,27 +55,27 @@ class target_block : public ITarget<typename _SourceLinkRegistry::type::source_t
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`source_iterator`|Тип итератора для `source_link_manager` данного `target_block` объекта.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[target_block](#ctor)|Формирует объект `target_block`.|
 |[Деструктор ~ target_block](#dtor)|Уничтожает объект `target_block`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[распространения](#propagate)|Асинхронно передает сообщение из исходного блока в этот целевой блок.|
 |[send](#send)|Синхронно передает сообщение из исходного блока в этот целевой блок.|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[async_send](#async_send)|Асинхронно отправляет сообщение для обработки.|
 |[decline_incoming_messages](#decline_incoming_messages)|Указывает блоку, что следует отклонять новые сообщения.|
@@ -126,7 +126,7 @@ void async_send(_Inout_opt_ message<_Source_type>* _PMessage);
 void decline_incoming_messages();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается деструктором, чтобы гарантировать отклонение новых сообщений в процессе уничтожения.
 
@@ -169,7 +169,7 @@ virtual void link_source(_Inout_ ISource<_Source_type>* _PSource);
 *_PSource*<br/>
 Указатель на блок `ISource`, который должен быть связан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не должна вызываться напрямую для объекта `target_block`. Блоки должны быть соединены друг с другом с помощью метода `link_target` в блоках `ISource`, которые вызывают метод `link_source` для соответствующего целевого объекта.
 
@@ -216,7 +216,7 @@ virtual message_status propagate(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_PMessage` или `_PSource` имеет значение `NULL`.
 
@@ -263,7 +263,7 @@ void register_filter(filter_method const& _Filter);
 void remove_sources();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все целевые блоки должны вызывать эту подпрограммы для удаления источников в их деструкторе.
 
@@ -289,7 +289,7 @@ virtual message_status send(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_PMessage` или `_PSource` имеет значение `NULL`.
 
@@ -311,7 +311,7 @@ virtual message_status send_message(
 
 [Message_status](concurrency-namespace-enums.md) указывает, что цель решила делать с сообщением.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию этот блок возвращает `declined`, если только они не переопределены производным классом.
 
@@ -373,7 +373,7 @@ virtual void unlink_sources();
 void wait_for_async_sends();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод используется деструкторами блоков сообщений для обеспечения времени завершения всех асинхронных операций перед уничтожением блока.
 

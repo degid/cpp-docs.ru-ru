@@ -67,7 +67,7 @@ class CMFCMenuButton : public CMFCButton
 |[CMFCMenuButton::m_nMenuResult](#m_nmenuresult)|Идентификатор, указывающий, какой элемент выбрал пользователь из всплывающем меню.|
 |[CMFCMenuButton::m_bDefaultClick](#m_bdefaultclick)| Разрешить обработку текста/изображения по умолчанию (на кнопке текста/изображения).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `CMFCMenuButton` происходит от [класса CMFCButton,](../../mfc/reference/cmfcbutton-class.md) который, в свою очередь, происходит от [класса CButton.](../../mfc/reference/cbutton-class.md) Таким образом, `CMFCMenuButton` вы можете использовать в коде так же, как вы будете использовать. `CButton`
 
@@ -114,7 +114,7 @@ CMFCMenuButton();
 BOOL m_bOSMenu;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `m_bOSMenu` это правда, то фреймворк вызывает унаследованный `TrackPopupMenu` метод для этого объекта. В противном случае, фреймворк вызывает [CContextMenuManager::TrackPopupMenu](../../mfc/reference/ccontextmenumanager-class.md#trackpopupmenu).
 
@@ -126,7 +126,7 @@ BOOL m_bOSMenu;
 BOOL m_bRightArrow;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда пользователь нажимает кнопку меню, приложение показывает всплывающее меню. В фреймворке будет отображаться всплывающее меню либо под кнопкой, либо справа от кнопки. Кнопка также имеет небольшую стрелку, которая указывает, где появится всплывающее меню. Если `m_bRightArrow` это правда, фреймворк отображает всплывающее меню справа от кнопки. В противном случае под кнопкой отображается всплывающее меню.
 
@@ -138,7 +138,7 @@ BOOL m_bRightArrow;
 BOOL m_bStayPressed;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `m_bStayPressed` участник FALSE, кнопка меню не становится нажатой, когда использует кнопку. В этом случае фреймворк отображает только всплывающее меню.
 
@@ -152,7 +152,7 @@ BOOL m_bStayPressed;
 HMENU m_hMenu;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамки отображает меню, указанное этой переменной участника, когда пользователь нажимает кнопку меню.
 
@@ -164,7 +164,7 @@ HMENU m_hMenu;
 int m_nMenuResult;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение этой переменной участника равен нулю, если пользователь отменяет меню без выделения или если происходит ошибка.
 
@@ -176,7 +176,7 @@ int m_nMenuResult;
 BOOL  m_bDefaultClick;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установка m_bDefaultClick на ложные причины кнопки, чтобы показать меню, когда вы нажмете в любом месте на кнопку.
 
@@ -188,7 +188,7 @@ BOOL  m_bDefaultClick;
 int m_nMenuResult;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcmenubuttonpretranslatemessage"></a><a name="pretranslatemessage"></a>CMFCMenuButton::PreTranslateMessage
 
@@ -207,7 +207,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 Nonzero, если сообщение было переведено и не должно быть отправлено; 0, если сообщение не было переведено и должно быть отправлено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcmenubuttonsizetocontent"></a><a name="sizetocontent"></a>CMFCMenuButton::Sizetocontent
 
@@ -226,7 +226,7 @@ virtual CSize SizeToContent(BOOL bCalcOnly = FALSE);
 
 Объект [CSize,](../../atl-mfc-shared/reference/csize-class.md) который определяет новый размер для кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы называете эту функцию и `SizeToContent` *bCalcТолько* правда, вычислит только новый размер кнопки.
 

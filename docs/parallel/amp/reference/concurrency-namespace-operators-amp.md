@@ -58,7 +58,7 @@ bool operator== (
 
 **`true`** значение, если кортежи равны; в противном случае — **`false`** .
 
-## <a name="operator"></a><a name="operator_neq"></a> operator! =
+## <a name="operator"></a><a name="operator_neq"></a> operator!=
 
 Определяет, являются ли указанные аргументы неравными.
 

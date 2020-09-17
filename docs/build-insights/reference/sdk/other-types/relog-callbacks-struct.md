@@ -56,7 +56,7 @@ typedef struct RELOG_CALLBACKS_TAG
 | `OnBeginReloggingPass` | Вызывается при начале перезаписи пройти, перед обработкой любого события. |
 | `OnEndReloggingPass` | Вызывается при окончании перезаписи, после обработки всех событий. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Все члены `RELOG_CALLBACKS` структуры должны указать на действительную функцию. Для получения дополнительной информации о принятых подписях функции, см. [OnRelogEventFunc](on-relog-event-func-typedef.md), [OnTraceInfoFunc](on-trace-info-func-typedef.md), и [OnBeginEndPassFunc](on-begin-end-pass-func-typedef.md).
 

@@ -50,7 +50,7 @@ ms.locfileid: "88833560"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлхост. h
+**Заголовок:** атлхост.h
 
 ## <a name="atlaxdialogbox"></a><a name="atlaxdialogbox"></a> атлаксдиалогбокс
 
@@ -86,7 +86,7 @@ ATLAPI_(int) AtlAxDialogBox(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для использования `AtlAxDialogBox` с шаблоном диалогового окна, который содержит элемент управления ActiveX, укажите допустимый идентификатор CLSID, AppID или строку URL-адреса в качестве *текстового* поля раздела **управления** ресурса диалогового окна, а также "AtlAxWin80" в качестве поля *имени класса* в том же разделе. Ниже показано, как может выглядеть допустимый раздел **управления** .
 
@@ -133,7 +133,7 @@ ATLAPI_(HWND) AtlAxCreateDialog(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Полученное диалоговое окно может содержать элементы управления ActiveX.
 
@@ -182,7 +182,7 @@ ATLAPI AtlAxCreateControl(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта глобальная функция дает тот же результат, что и вызов [атлакскреатеконтролекс](#atlaxcreatecontrolex)(*лпсзнаме*, *HWND*, *пстреам*, null, null, null, null);.
 
@@ -243,7 +243,7 @@ ATLAPI AtlAxCreateControlEx(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlAxCreateControlEx` аналогичен [атлакскреатеконтрол](#atlaxcreatecontrol) , но также позволяет получить указатель интерфейса на вновь созданный элемент управления и настроить приемник событий для получения событий, инициированных элементом управления.
 
@@ -359,7 +359,7 @@ ATLAPI AtlAxCreateControlLicEx(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlAxCreateControlLicEx` аналогичен [атлакскреатеконтроллик](#atlaxcreatecontrollic) , но также позволяет получить указатель интерфейса на вновь созданный элемент управления и настроить приемник событий для получения событий, инициированных элементом управления.
 
@@ -393,7 +393,7 @@ ATLAPI AtlAxAttachControl(
 
 Одно из стандартных значений HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте [атлакскреатеконтролекс](#atlaxcreatecontrolex) и [атлакскреатеконтрол](#atlaxcreatecontrol) для одновременного создания и присоединения элемента управления.
 
@@ -472,7 +472,7 @@ ATLAPI_(BOOL) AtlAxWinInit();
 
 Ненулевое значение, если инициализация кода размещения элемента управления прошла успешно; в противном случае — FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция должна вызываться перед использованием API размещения элемента управления ATL. После вызова этой функции класс окна **"атлаксвин"** можно использовать в вызовах [CreateWindow](/windows/win32/api/winuser/nf-winuser-createwindoww) или [CreateWindowEx](/windows/win32/api/winuser/nf-winuser-createwindowexw), как описано в Windows SDK.
 
@@ -488,7 +488,7 @@ inline BOOL AtlAxWinTerm();
 
 Всегда возвращает значение TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция просто вызывает [унрегистеркласс](/windows/win32/api/winuser/nf-winuser-unregisterclassw) , как описано в Windows SDK.
 
@@ -528,7 +528,7 @@ ATLAPI AtlGetObjectSourceInterface(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AtlGetObjectSourceInterface` может предоставить вам идентификатор интерфейса для исходного интерфейса по умолчанию, а также LIBID и основной и дополнительный номера версии библиотеки типов, описывающей этот интерфейс.
 

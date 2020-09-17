@@ -40,7 +40,7 @@ ms.locfileid: "87195360"
 using namespace cli;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 C++/CLI поддерживает пространство имен **cli**. При компиляции с `/clr` **`using`** инструкция подразумевается в разделе синтаксиса.
 

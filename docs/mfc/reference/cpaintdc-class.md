@@ -49,7 +49,7 @@ class CPaintDC : public CDC
 |----------|-----------------|
 |[CPaintDC::m_hWnd](#m_hwnd)|HWND, к `CPaintDC` которому прилагается этот объект.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Он выполняет [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint) во время строительства и [CWnd::EndPaint](../../mfc/reference/cwnd-class.md#endpaint) во время разрушения.
 
@@ -82,7 +82,7 @@ explicit CPaintDC(CWnd* pWnd);
 *pWnd*<br/>
 Указывает на `CWnd` объект, `CPaintDC` к которому принадлежит объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Исключение (типа) `CResourceException`брошено, если вызов Windows [GetDC](/windows/win32/api/winuser/nf-winuser-getdc) не удается. Контекст устройства может быть недоступен, если Windows уже выделила все доступные контексты устройства. Ваше приложение конкурирует за пять общих контекстов отображения, доступных в любой момент времени под Windows.
 
@@ -98,7 +98,7 @@ explicit CPaintDC(CWnd* pWnd);
 HWND m_hWnd;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *m_hWnd* является защищенной переменной типа HWND.
 
@@ -114,7 +114,7 @@ HWND m_hWnd;
 PAINTSTRUCT m_ps;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это то, `PAINTSTRUCT` что передается и заполнены [CWnd::BeginPaint](../../mfc/reference/cwnd-class.md#beginpaint).
 

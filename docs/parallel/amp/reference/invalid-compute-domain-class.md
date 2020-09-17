@@ -29,7 +29,7 @@ class invalid_compute_domain : public runtime_exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор invalid_compute_domain](#ctor)|Инициализирует новый экземпляр класса `invalid_compute_domain`.|
 
@@ -43,7 +43,7 @@ class invalid_compute_domain : public runtime_exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ампрт. h
+**Заголовок:** ампрт.h
 
 **Пространство имен** : Concurrency
 

@@ -350,7 +350,7 @@ int main()
 
 Эти заголовки WRL WinRT, выпущенные в пакете SDK для обновлений Windows от апреля 2018 (10.0.17134.0), не удаляются вместе с **`/permissive-`** . Чтобы обойти эти проблемы, либо не используйте **`/permissive-`** , либо используйте **`/permissive-`** WITH **`/Zc:twoPhase-`** при работе с этими заголовками:
 
-- Проблемы в WinRT/WRL/Async. h
+- Проблемы в WinRT/WRL/Async.h
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(483): error C3861: 'TraceDelegateAssigned': identifier not found
@@ -359,7 +359,7 @@ int main()
    C:\Program Files (x86)\Windows Kits\10\Include\10.0.17134.0\winrt\wrl\async.h(513): error C3861: 'TraceProgressNotificationComplete': identifier not found
    ```
 
-- Проблемы в WinRT/WRL/Implements. h
+- Проблемы в WinRT/WRL/Implements.h
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt\wrl\implements.h(2086): error C2039: 'SetStrongReference': is not a member of 'Microsoft::WRL::Details::WeakReferenceImpl'
@@ -367,7 +367,7 @@ int main()
 
 Эти заголовки пользовательского режима, выпущенные в пакете SDK для обновления Windows от апреля 2018 (10.0.17134.0), не удаляются вместе с **`/permissive-`** . Чтобы обойти эти проблемы, не используйте **`/permissive-`** при работе с этими заголовками:
 
-- Проблемы в UM/настройке. h
+- Проблемы в UM/настройке.h
 
    ```Output
    C:\ProgramFiles(x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(139): error C3861: 'Release': identifier not found
@@ -376,13 +376,13 @@ int main()
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\tune.h(1240): note: 'Release': function declaration must be available as none of the arguments depend on a template parameter
    ```
 
-- Проблемы в UM/спддкхлп. h
+- Проблемы в UM/спддкхлп.h
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\spddkhlp.h(759): error C3861: 'pNode': identifier not found
    ```
 
-- Проблемы в UM/рефптрко. h
+- Проблемы в UM/рефптрко.h
 
    ```Output
    C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um\refptrco.h(179): error C2760: syntax error: unexpected token 'identifier', expected 'type specifier'
@@ -392,7 +392,7 @@ int main()
 
 Эти проблемы относятся к заголовкам пользовательского режима в пакете SDK обновления Windows для дизайнеров (10.0.16299.0):
 
-- Проблемы в UM/Query. h
+- Проблемы в UM/Query.h
 
    При использовании **`/permissive-`** параметра компилятора `tagRESTRICTION` структура не компилируется из-за варианта (рТор) члена или.
 
@@ -416,9 +416,9 @@ int main()
    };
    ```
 
-   Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие Query. h, без **`/permissive-`** параметра.
+   Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие Query.h, без **`/permissive-`** параметра.
 
-- Проблемы в UM/cellularapi_oem. h
+- Проблемы в UM/cellularapi_oem.h
 
    При использовании **`/permissive-`** параметра компилятора прямая декларация `enum UICCDATASTOREACCESSMODE` вызывает предупреждение:
 
@@ -426,9 +426,9 @@ int main()
    typedef enum UICCDATASTOREACCESSMODE UICCDATASTOREACCESSMODE; // C4471
    ```
 
-   Прямым объявлением неограниченного перечисления является расширение Майкрософт. Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие cellularapi_oem. h, без **`/permissive-`** параметра или используйте [**`/wd`**](compiler-option-warning-level.md) параметр для бездействия предупреждения C4471.
+   Прямым объявлением неограниченного перечисления является расширение Майкрософт. Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие cellularapi_oem.h, без **`/permissive-`** параметра или используйте [**`/wd`**](compiler-option-warning-level.md) параметр для бездействия предупреждения C4471.
 
-- Проблемы в UM/омскрипт. h
+- Проблемы в UM/омскрипт.h
 
    В C++ 03 преобразование строкового литерала в BSTR (typedef для "wchar_t *") является нерекомендуемым, но допустимым. В C++ 11 преобразование больше не разрешено.
 
@@ -439,7 +439,7 @@ int main()
        /* [in][defaultvalue] */ __RPC__in BSTR language = L"") = 0; // C2440
    ```
 
-   Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие омскрипт. h, без **`/permissive-`** параметра или используйте **`/Zc:strictStrings-`** вместо него.
+   Чтобы устранить эту ошибку, Скомпилируйте файлы, содержащие омскрипт.h, без **`/permissive-`** параметра или используйте **`/Zc:strictStrings-`** вместо него.
 
 ### <a name="to-set-this-compiler-option-in-the-visual-studio-development-environment"></a>Установка данного параметра компилятора в среде разработки Visual Studio
 

@@ -34,7 +34,7 @@ inline void __declspec(noreturn)   RaiseException(
 *двексцептионфлагс*<br/>
 Флаг, указывающий на непрерывное исключение (значение флага равно нулю) или непостоянное исключение (значение флага не равно нулю). По умолчанию исключение недоступно.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вызывает исключение в вызывающем потоке.
 
@@ -42,7 +42,7 @@ inline void __declspec(noreturn)   RaiseException(
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** internal. h
+**Заголовок:** internal.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

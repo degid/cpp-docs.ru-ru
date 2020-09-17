@@ -49,7 +49,7 @@ class CFixedStringT : private CFixedStringMgr, public StringType
 |----------|-----------------|
 |[CFixedStringT::оператор](#operator_eq)|Присваивает объекту `CFixedStringT` новое значение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс является примером пользовательского `CStringT`класса строки на основе . Хотя эти два класса схожи отличаются по своему осуществлению. Основные различия `CFixedStringT` `CStringT` между и являются:
 
@@ -100,7 +100,7 @@ explicit CFixedStringT(const unsigned char* pszSrc);
 *pStringMgr*<br/>
 Указатель на менеджер памяти `CFixedStringT` объекта. Для получения `IAtlStringMgr` дополнительной информации `CFixedStringT`и управления памятью для, см. [Управление памятью и CStringT](../../atl-mfc-shared/memory-management-with-cstringt.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Поскольку конструкторы копируют входные данные в новое выделенное хранилище, следует знать, что могут возникнуть исключения из памяти. Некоторые из этих конструкторов выступают в качестве функций преобразования.
 
@@ -125,7 +125,7 @@ CFixedStringT<StringType, t_nChars>& operator=(const StringType& strSrc);
 *strSrc*<br/>
 Существующий, `CFixedStringT` который будет `CFixedStringT` скопирован в этот объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны знать, что исключения памяти могут возникать всякий раз, когда `CFixedStringT` вы используете оператора назначения, потому что новое хранилище часто выделяется для удержания полученного объекта.
 

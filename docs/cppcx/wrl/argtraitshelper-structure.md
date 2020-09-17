@@ -32,7 +32,7 @@ struct ArgTraitsHelper;
 *TDelegateИнтерфейс*<br/>
 Интерфейс делегата.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Помогает определить общие характеристики аргументов делегатов.
 
@@ -69,6 +69,6 @@ struct ArgTraitsHelper;
 static const int args = Traits::args;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Помогает `ArgTraitsHelper::args` вести подсчет количества параметров `Invoke` на методе интерфейса делегата.

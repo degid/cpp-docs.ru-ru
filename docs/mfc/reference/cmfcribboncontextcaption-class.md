@@ -38,7 +38,7 @@ class CMFCRibbonContextCaption : public CMFCRibbonButton
 |[CMFCRibbonContextCaption::GetRightTabX](#getrighttabx)||
 |`CMFCRibbonContextCaption::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создать экземпляр этого класса напрямую невозможно. Класс [класса CMFCRibbonBar](../../mfc/reference/cmfcribbonbar-class.md) использует этот класс внутренне для добавления цвета к категориям ленты.
 
@@ -86,7 +86,7 @@ AFX_RibbonCategoryColor GetColor() const;
 
 - `AFX_CategoryColor_Violet`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Цвет подписи можно установить, позвонив [по CMFCRibbonCategory::SetTabColor](../../mfc/reference/cmfcribboncategory-class.md#settabcolor) или [CMFCRibbonBar::AddContextCategory](../../mfc/reference/cmfcribbonbar-class.md#addcontextcategory).
 
@@ -102,7 +102,7 @@ int GetRightTabX() const;
 
 Возвращает правую X-значение оговоренного прямоугольника `CMFCRibbonCategory` вкладки ленты объекта или значение -1, если вкладка усечена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

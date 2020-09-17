@@ -31,7 +31,7 @@ ms.locfileid: "88845436"
 typedef basic_string<char, char_traits<char>, allocator<char>> string;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Следующие объявления являются равнозначными:
 
@@ -53,7 +53,7 @@ basic_string<char> str("");
 typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16string;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -67,7 +67,7 @@ typedef basic_string<char16_t, char_traits<char16_t>, allocator<char16_t>> u16st
 typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32string;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -81,7 +81,7 @@ typedef basic_string<char32_t, char_traits<char32_t>, allocator<char32_t>> u32st
 typedef basic_string<wchar_t, char_traits<wchar_t>, allocator<wchar_t>> wstring;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Следующие объявления являются равнозначными:
 

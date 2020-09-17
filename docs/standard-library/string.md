@@ -26,7 +26,7 @@ ms.locfileid: "88833184"
 #include <string>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Язык C++ и библиотека Standard C++ поддерживают два типа строк:
 
@@ -47,22 +47,22 @@ ms.locfileid: "88833184"
 
 |Оператор|Описание|
 |-|-|
-|[operator +](../standard-library/string-operators.md#op_add)|Сцепляет два строковых объекта.|
-|[operator! =](../standard-library/string-operators.md#op_neq)|Проверяет, что строковый объект слева от оператора не равен строковому объекту справа от оператора. |
-|[Оператор = =](../standard-library/string-operators.md#op_eq_eq)|Проверяет, равен ли строковый объект слева от оператора строковому объекту справа от оператора.|
-|[Оператор<](../standard-library/string-operators.md#op_lt)|Проверяет, что строковый объект слева от оператора меньше строкового объекта справа от оператора.|
-|[Оператор<=](../standard-library/string-operators.md#op_lt_eq)|Проверяет, что строковый объект слева от оператора меньше или равен строковому объекту справа от оператора.|
-|[Оператор<\<](../standard-library/string-operators.md#op_lt_lt)|Функция шаблона, вставляющая строку в выходной поток.|
-|[Оператор>](../standard-library/string-operators.md#op_gt)|Проверяет, что строковый объект слева от оператора больше строкового объекта справа от оператора.|
-|[Оператор>=](../standard-library/string-operators.md#op_gt_eq)|Проверяет, что строковый объект слева от оператора больше или равен строковому объекту справа от оператора.|
-|[Оператор>>](../standard-library/string-operators.md#op_gt_gt)|Функция шаблона, извлекающая строку из входного потока.|
+|[operator+](../standard-library/string-operators.md#op_add)|Сцепляет два строковых объекта.|
+|[operator!=](../standard-library/string-operators.md#op_neq)|Проверяет, что строковый объект слева от оператора не равен строковому объекту справа от оператора. |
+|[operator==](../standard-library/string-operators.md#op_eq_eq)|Проверяет, равен ли строковый объект слева от оператора строковому объекту справа от оператора.|
+|[operator<](../standard-library/string-operators.md#op_lt)|Проверяет, что строковый объект слева от оператора меньше строкового объекта справа от оператора.|
+|[operator<=](../standard-library/string-operators.md#op_lt_eq)|Проверяет, что строковый объект слева от оператора меньше или равен строковому объекту справа от оператора.|
+|[operator<\<](../standard-library/string-operators.md#op_lt_lt)|Функция шаблона, вставляющая строку в выходной поток.|
+|[operator>](../standard-library/string-operators.md#op_gt)|Проверяет, что строковый объект слева от оператора больше строкового объекта справа от оператора.|
+|[operator>=](../standard-library/string-operators.md#op_gt_eq)|Проверяет, что строковый объект слева от оператора больше или равен строковому объекту справа от оператора.|
+|[operator>>](../standard-library/string-operators.md#op_gt_gt)|Функция шаблона, извлекающая строку из входного потока.|
 
 ### <a name="specialized-template-functions"></a>Специализированные функции шаблонов
 
 |Имя|Описание|
 |-|-|
 |`hash`|Создает хэш строки.|
-|[позиции](../standard-library/string-functions.md#swap)|Меняет местами массивы символов двух строк.|
+|[swap](../standard-library/string-functions.md#swap)|Меняет местами массивы символов двух строк.|
 |[стод](../standard-library/string-functions.md#stod)|Преобразует последовательность символов в **`double`** .|
 |[стоф](../standard-library/string-functions.md#stof)|Преобразует последовательность символов в **`float`** .|
 |[стои](../standard-library/string-functions.md#stoi)|Преобразует последовательность символов в целое число.|

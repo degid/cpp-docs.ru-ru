@@ -107,13 +107,13 @@ HRESULT MakeAndInitialize(
 
 Значение HRESULT.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 См. раздел [как напрямую создавать экземпляры компонентов WRL](how-to-instantiate-wrl-components-directly.md) , чтобы узнать о различиях между этой функцией и [Microsoft:: WRL:: make](make-function.md), а также в качестве примера.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

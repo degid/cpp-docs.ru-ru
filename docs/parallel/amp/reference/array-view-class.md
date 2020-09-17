@@ -65,14 +65,14 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор array_view](#ctor)|Инициализирует новый экземпляр класса `array_view`. Конструктор по умолчанию для `array<T,N>`отсутствует. Все конструкторы могут выполняться только на ЦП и не могут выполняться на целевом объекте Direct3D.|
 |[Деструктор ~ array_view](#ctor)|Уничтожает объект `array_view`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[copy_to](#copy_to)|Копирует содержимое объекта `array_view` в указанное место назначения путем вызова `copy(*this, dest)`.|
 |[data](#data)|Возвращает указатель на необработанные данные `array_view`.|
@@ -91,7 +91,7 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 ### <a name="public-operators"></a>Открытые операторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[operator()](#operator_call)|Возвращает значение элемента, заданного параметром или параметрами.|
 |[operator\[\]](#operator_at)|Возвращает элемент, заданный параметрами.|
@@ -99,19 +99,19 @@ class array_view<const value_type, _Rank> : public _Array_view_base<_Rank, sizeo
 
 ### <a name="public-constants"></a>Открытые константы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Константа Rank](#rank)|Хранит ранг объекта `array_view`.|
 
 ### <a name="data-members"></a>Элементы данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[extent](#extent)|Получает объект `extent`, который определяет форму объекта `array_view`.|
 |[source_accelerator_view](#source_accelerator_view)|Возвращает [accelerator_view](accelerator-view-class.md) , где расположен источник данных `array_view`|
 |[value_type](#value_type)|Тип значения `array_view` и привязанного массива.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Класс `array_view` представляет представление данных, содержащихся в объекте [массива](array-class.md) или подразделе объекта `array`.
 
@@ -576,7 +576,7 @@ array_view<const _Value_type2, _Rank> reinterpret_as() const restrict(amp,cpu);
 
 Объект `array_view` или константный `array_view` объект, основанный на этом `array_view`, с типом элемента, преобразованным из `T` в `_Value_type2`, а ранг уменьшился с *N* до 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Иногда удобно просматривать многомерный массив в виде линейного одномерного массива, который может иметь тип значения, отличный от типа исходного массива. Это можно сделать на `array_view` с помощью этого метода.
 

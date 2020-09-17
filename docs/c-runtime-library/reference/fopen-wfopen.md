@@ -76,7 +76,7 @@ FILE *_wfopen(
 
 Дополнительные сведения см. в разделе [errno, _doserrno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **fopen** открывает файл, указанный параметром *filename*. По умолчанию строка с узким *именем* интерпретируется с использованием кодовой страницы ANSI (CP_ACP). В классических приложениях Windows эту страницу можно изменить на кодовую страницу OEM (CP_OEMCP) с помощью функции [SetFileApisToOEM](/windows/win32/api/fileapi/nf-fileapi-setfileapistooem) . С помощью функции [AreFileApisANSI](/windows/win32/api/fileapi/nf-fileapi-arefileapisansi) можно определить, интерпретируется ли *имя файла* с использованием ANSI или системной кодовой страницы OEM по умолчанию. **_wfopen** — это версия **fopen**с расширенными символами; аргументы для **_wfopen** являются строками расширенных символов. В противном случае **_wfopen** и **fopen** работают одинаково. Простое использование **_wfopen** не влияет на закодированную кодировку, используемую в файловом потоке.
 

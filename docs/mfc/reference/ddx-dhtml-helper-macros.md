@@ -43,7 +43,7 @@ ms.locfileid: "88837467"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксдхтмл. h
+**Заголовок:** афксдхтмл.h
 
 ## <a name="ddx_dhtml_anchor_href"></a><a name="ddx_dhtml_anchor_href"></a> DDX_DHtml_Anchor_Href
 
@@ -67,7 +67,7 @@ DDX_DHtml_Anchor_Href(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLANCHORELEMENT_HREF.
 
@@ -93,7 +93,7 @@ DDX_DHtml_Anchor_Target(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLANCHORELEMENT_TARGET.
 
@@ -119,7 +119,7 @@ DDX_DHtml_ElementInnerHtml(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLELEMENT_INNERHTML.
 
@@ -145,7 +145,7 @@ DDX_DHtml_ElementInnerText(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLELEMENT_INNERTEXT.
 
@@ -171,7 +171,7 @@ DDX_DHtml_ElementValue(
 *var*<br/>
 Значение для обмена. См. раздел *value* в [CDHtmlDialog::D DX_DHtml_ElementText](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос будет выполнен только при выполнении в элементах управления, имеющих свойство Value. Элементы управления, имеющие свойство Value, включают поля редактирования, списки и поля со списком.
 
@@ -199,7 +199,7 @@ DDX_DHtml_Frame_Src(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLFRAMEBASE_SRC.
 
@@ -225,7 +225,7 @@ DDX_DHtml_IFrame_Src(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот макрос вызывает функцию [DX_DHtml_ElementText CDHtmlDialog::D](../../mfc/reference/cdhtmldialog-class.md#ddx_dhtml_elementtext) , используя идентификатор диспетчеризации DISPID_IHTMLFRAMEBASE_SRC.
 
@@ -251,7 +251,7 @@ DDX_DHtml_Img_Src(
 *var*<br/>
 Значение для обмена.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 При использовании макроса DDX_DHtml_Img_Src для получения свойства src для элемента IMAGE объект Image Internet Explorer возвращает полностью экранированный URL-адрес источника изображения. Например, если вы используете макрос DDX_DHtml_Img_Src, чтобы задать для свойства src элемента IMAGE строку "несколько интересных изображений", Internet Explorer вернет строку "res://d:\myapplication\myapp.exe/some%20interesting%20picture.".
 

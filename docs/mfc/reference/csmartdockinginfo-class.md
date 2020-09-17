@@ -71,7 +71,7 @@ class CSmartDockingInfo : public CObject
 |[CSmartDockingInfo::m_uiMarkerBmpResID](#m_uimarkerbmpresid)|Определяет иики ресурсов битовых карт, которые фреймворк использует для интеллектуальных маркеров стыковки, которые не выделены.|
 |[CSmartDockingInfo::m_uiMarkerLightBmpResID](#m_uimarkerlightbmpresid)|Определяет иики ресурсов битовых карт, которые фреймворк использует для подсвеченных интеллектуальных маркеров стыковки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Фрейм обрабатывает интеллектуальные маркеры стыковки внутри компании. На следующей иллюстрации показаны стандартные интеллектуальные маркеры стыковки:
 
@@ -126,7 +126,7 @@ void CopyTo(CSmartDockingInfo& params);
 BOOL m_bUseThemeColorInShading;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если true, маркеры нарисованы с использованием текущего цвета темы; в противном случае маркеры нарисованы с светло-голубым цветом.
 
@@ -148,7 +148,7 @@ COLORREF m_clrBaseBackground;
 COLORREF m_clrToneDest;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите это значение, чтобы изменить цвет маркера bitmaps программно. Например, если вы хотите изменить цвет стандартных маркеров, предусмотренных рамкой, установите это значение на желаемый цвет. По умолчанию, [CSmartDockingInfo::m_clrToneSrc](#m_clrtonesrc) установлен на RGB (61, 123, 241) (голубоватый цвет).
 
@@ -162,7 +162,7 @@ COLORREF m_clrToneDest;
 COLORREF m_clrToneSrc;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите это значение только тогда, когда вы хотите заменить цвет пользовательской битной карты другим цветом. Вы не должны установить это значение, если вы меняете цвет стандартного (при условии рамки) маркера.
 
@@ -176,7 +176,7 @@ COLORREF m_clrToneSrc;
 COLORREF m_clrTransparent;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны установить это значение при отображении пользовательских маркеров и пользовательских бит-карт в стыковой группе.
 
@@ -188,7 +188,7 @@ COLORREF m_clrTransparent;
 int m_nCentralGroupOffset;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Укажите это значение, если вы хотите изменить смещение по умолчанию между пользовательскими маркерами и границами центральной группы умных маркеров стыковки. Смещение по умолчанию составляет 5 пикселей.
 
@@ -200,7 +200,7 @@ int m_nCentralGroupOffset;
 CSize m_sizeTotal;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите `m_sizeTotal` размер связующего прямоугольника центрального маркера группы. Вы должны указать это значение, если вы используете пользовательские bitmaps для маркеров.
 
@@ -212,7 +212,7 @@ CSize m_sizeTotal;
 UINT m_uiMarkerBmpResID[AFX_SD_MARKERS_NUM];
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Заполните этот массив иными ими ресурса битовых карт, представляющих интеллектуальные маркеры стыковки. AFX_SD_MARKERS_NUM в настоящее время определяется как 5. Вы заполняете массив следующим образом:
 
@@ -232,7 +232,7 @@ params.m_uiMarkerBmpResID[4] = IDB_MARKER_CENTER;
 UINT m_uiMarkerLightBmpResID[AFX_SD_MARKERS_NUM];
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Заполните этот массив иными ими ресурсами битовых карт, представляющих выделенные умные маркеры стыковки. AFX_SD_MARKERS_NUM в настоящее время определяется как 5. Вы заполняете массив следующим образом:
 

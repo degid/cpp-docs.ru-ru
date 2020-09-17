@@ -20,11 +20,11 @@ ms.locfileid: "90040345"
 
 ## <a name="critical_section"></a>critical_section
 
-Класс [Concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) напоминает структуру Windows, `CRITICAL_SECTION` так как она может использоваться только потоками одного процесса. Дополнительные сведения о критических разделах в Windows API см. в разделе [объекты критических секций](/windows/win32/Sync/critical-section-objects).
+Класс [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) напоминает структуру Windows, `CRITICAL_SECTION` так как она может использоваться только потоками одного процесса. Дополнительные сведения о критических разделах в Windows API см. в разделе [объекты критических секций](/windows/win32/Sync/critical-section-objects).
 
 ## <a name="reader_writer_lock"></a>reader_writer_lock
 
-Класс [Concurrency:: reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) похож на блокировки потоков чтения/записи (SRW) Windows. В следующей таблице описаны сходства и различия.
+Класс [concurrency::reader_writer_lock](../../parallel/concrt/reference/reader-writer-lock-class.md) похож на блокировки потоков чтения/записи (SRW) Windows. В следующей таблице описаны сходства и различия.
 
 | Компонент | Класс `reader_writer_lock` | Блокировка SRW |
 |--|--|--|
@@ -38,7 +38,7 @@ ms.locfileid: "90040345"
 
 ## <a name="event"></a>event
 
-Класс [Concurrency:: Event](../../parallel/concrt/reference/event-class.md) напоминает неименованное событие Windows ручного сброса. Однако `event` объект ведет себя совместно, в то время как событие Windows ведет себя с вытеснением. Дополнительные сведения о событиях Windows см. в разделе [объекты событий](/windows/win32/Sync/event-objects).
+Класс [concurrency::Event](../../parallel/concrt/reference/event-class.md) напоминает неименованное событие Windows ручного сброса. Однако `event` объект ведет себя совместно, в то время как событие Windows ведет себя с вытеснением. Дополнительные сведения о событиях Windows см. в разделе [объекты событий](/windows/win32/Sync/event-objects).
 
 ## <a name="example"></a>Пример
 

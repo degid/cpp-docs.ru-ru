@@ -71,7 +71,7 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 *T9*<br/>
 Параметр шаблона 9, который по умолчанию не задан.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Создает тип `InterfaceList`, рекурсивно применяя заданные аргументы параметра шаблона.
 
@@ -81,7 +81,7 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ### <a name="public-typedefs"></a>Открытые определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`TypeT`|Синоним для типа Интерфацелист.|
 
@@ -91,7 +91,7 @@ struct InterfaceListHelper<T0, Nil, Nil, Nil, Nil, Nil, Nil, Nil, Nil>;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

@@ -43,7 +43,7 @@ ms.locfileid: "87230017"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -55,7 +55,7 @@ class CDocObjectServerItem : public COleServerItem
 |[CDocObjectServerItem::OnHide](#onhide)|Бросает исключение, если фреймворк пытается скрыть элемент DocObject.|
 |[CDocObjectServerItem::Onshow](#onshow)|Вызывается по системе, чтобы сделать элемент DocObject на месте активным. Если элемент не является DocObject, звонит [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onshow).|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CDocObjectServerItem`определяет переизлики функции членов: [OnHide,](#onhide) [OnDoVerb](#ondoverb)и [OnShow](#onshow).
 
@@ -107,7 +107,7 @@ COleServerDoc* GetDocument() const;
 
 Указатель на документ, содержащий элемент; NULL, если элемент не является частью документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это позволяет получить доступ к серверу документа, который вы передали в качестве аргумента конструктору [CDocObjectServerItem.](#cdocobjectserveritem)
 
@@ -124,7 +124,7 @@ virtual void OnDoVerb(LONG iVerb);
 *iVerb*<br/>
 Определяет глагол для выполнения. Для возможных значений [см. IOleObject::DoVerb](/windows/win32/api/oleidl/nf-oleidl-ioleobject-doverb) в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию вызывает функцию участника [OnShow,](#onshow) если элемент является DocObject и указан OLEIVERB_INPLACEACTIVATE или OLEIVERB_SHOW. Если элемент не является DocObject или указан другой глагол, реализация по умолчанию вызывает [COleServerItem::OnDoVerb](../../mfc/reference/coleserveritem-class.md#ondoverb).
 
@@ -136,7 +136,7 @@ virtual void OnDoVerb(LONG iVerb);
 virtual void OnHide();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию выбрасывает исключение, если элемент является DocObject. Вы не можете скрыть активный элемент DocObject, поскольку он принимает весь вид. Необходимо отключить элемент DocObject, чтобы он исчез. Если элемент не является DocObject, реализация по умолчанию вызывает [COleServerItem::OnHide](../../mfc/reference/coleserveritem-class.md#onhide).
 
@@ -148,7 +148,7 @@ virtual void OnHide();
 virtual void OnShow();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если элемент не является DocObject, реализация по умолчанию вызывает [COleServerItem::OnShow](../../mfc/reference/coleserveritem-class.md#onopen). Переопределить эту функцию, если вы хотите выполнить специальную обработку при открытии элемента DocObject.
 

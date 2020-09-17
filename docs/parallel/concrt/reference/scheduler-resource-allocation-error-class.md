@@ -30,17 +30,17 @@ class scheduler_resource_allocation_error : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[scheduler_resource_allocation_error](#ctor)|Перегружен. Формирует объект `scheduler_resource_allocation_error`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[get_error_code](#get_error_code)|Возвращает код ошибки, вызвавший исключение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это исключение обычно возникает при сбое вызова операционной системы из среда выполнения с параллелизмом. Код ошибки, который обычно возвращается из вызова метода Win32 `GetLastError`, преобразуется в значение типа `HRESULT` и может быть получен посредством метода `get_error_code`.
 
@@ -52,7 +52,7 @@ class scheduler_resource_allocation_error : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 

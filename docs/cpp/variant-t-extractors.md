@@ -85,7 +85,7 @@ operator __int64() const;
 operator unsigned __int64() const;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Извлекает необработанные данные из инкапсулированного объекта `VARIANT` . Если `VARIANT` тип не является правильным, `VariantChangeType` используется для попытки преобразования, а при сбое возникает ошибка:
 

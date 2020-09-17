@@ -26,7 +26,7 @@ inline Details::ModuleBase* GetModuleBase() throw()
 
 Указатель на объект `ModuleBase`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Эта внутренняя функция используется для увеличения и уменьшения числа ссылок объекта.
 
@@ -34,7 +34,7 @@ inline Details::ModuleBase* GetModuleBase() throw()
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

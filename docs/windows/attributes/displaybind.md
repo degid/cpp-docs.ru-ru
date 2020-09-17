@@ -23,7 +23,7 @@ ms.locfileid: "88841666"
 [displaybind]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **дисплайбинд** C++ имеет те же функциональные возможности, что и атрибут [дисплайбинд](/windows/win32/Midl/displaybind) MIDL.
 

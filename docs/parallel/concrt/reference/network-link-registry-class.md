@@ -48,15 +48,15 @@ class network_link_registry;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[add](#add)|При переопределении в производном классе добавляет ссылку на `network_link_registry` объект.|
-|[начале](#begin)|При переопределении в производном классе возвращает итератор на первый элемент в `network_link_registry` объекте.|
+|[begin](#begin)|При переопределении в производном классе возвращает итератор на первый элемент в `network_link_registry` объекте.|
 |[contains](#contains)|При переопределении в производном классе ищет `network_link_registry` указанный блок в объекте.|
 |[count](#count)|При переопределении в производном классе возвращает число элементов в `network_link_registry` объекте.|
 |[remove](#remove)|При переопределении в производном классе удаляет указанный блок из `network_link_registry` объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `network link registry`Не является надежным для параллельного доступа.
 
@@ -68,7 +68,7 @@ class network_link_registry;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="add"></a><a name="add"></a>включить
 
@@ -95,7 +95,7 @@ virtual iterator begin() = 0;
 
 Итератор, обращающийся к первому элементу в `network_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конечное состояние итератора обозначается `NULL` ссылкой.
 

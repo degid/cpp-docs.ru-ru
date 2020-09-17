@@ -201,7 +201,7 @@ class CMFCVisualManagerOffice2003 : public CMFCVisualManagerOfficeXP
 |[CMFCVisualManagerOffice2003:SetStatusBarOfficeXPLook](#setstatusbarofficexplook)|Уточняется, что глобальная тема Windows XP должна использоваться.|
 |[CMFCVisualManagerOffice2003:SetUseGlobalTheme](#setuseglobaltheme)|Определяет, использует ли визуальный менеджер глобальную тему.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы используете `CMFCVisualManagerOffice2003` класс, чтобы изменить внешний вид приложения, чтобы напоминать Microsoft Office 2003.
 
@@ -261,7 +261,7 @@ virtual BOOL DrawComboBorderWinXP(
 
 Возвращает TRUE, если тема API включена или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003drawcombodropbuttonwinxp"></a><a name="drawcombodropbuttonwinxp"></a>CMFCVisualManagerOffice2003::DrawComboDropButtonWinXP
 
@@ -297,7 +297,7 @@ virtual BOOL DrawComboDropButtonWinXP(
 
 Возвращает TRUE, если тема API включена или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003drawcustomizebutton"></a><a name="drawcustomizebutton"></a>CMFCVisualManagerOffice2003::DrawCustomizeButton
 
@@ -333,7 +333,7 @@ virtual void DrawCustomizeButton(
 *bIsMoreButtons*<br/>
 (в) ПРАВДА, если горизонтальные или вертикальные настроить Больше кнопки изображение должно быть обращено в прямоугольнике кнопки, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003drawpushbuttonwinxp"></a><a name="drawpushbuttonwinxp"></a>CMFCVisualManagerOffice2003::DrawPushButtonWinXP
 
@@ -365,7 +365,7 @@ virtual BOOL DrawPushButtonWinXP(
 
 TRUE, если включен API Темы; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003getbasethemecolor"></a><a name="getbasethemecolor"></a>CMFCVisualManagerOffice2003:GetBaseThemeColor
 
@@ -379,7 +379,7 @@ virtual COLORREF GetBaseThemeColor();
 
 Возвращает цвет темы базовой темы, если один набор, или цвет-бар цвет лица.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003gethighlightmenuitemcolor"></a><a name="gethighlightmenuitemcolor"></a>CMFCVisualManagerOffice2003:GetHighlightMenuColor
 
@@ -393,7 +393,7 @@ virtual COLORREF GetHighlightMenuItemColor() const;
 
 Возвращает цвет, используемый для выделенного элемента меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003getpropertygridgroupcolor"></a><a name="getpropertygridgroupcolor"></a>CMFCVisualManagerOffice2003::GetPropertyGridGroupColor
 
@@ -412,7 +412,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 Возвращает фоновый цвет *pPropList*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы настроить цвет фона списка свойств в приложении.
 
@@ -433,7 +433,7 @@ virtual COLORREF GetPropertyGridGroupTextColor(CMFCPropertyGridCtrl* pPropList);
 
 Возвращает цвет текста указанного списка свойств.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы настроить текстовый цвет списка свойств в приложении.
 
@@ -459,7 +459,7 @@ virtual int GetShowAllMenuItemsHeight(
 
 По умолчанию возвращает высоту всех изображений меню плюс поля.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003getsmartdockingbaseguidecolors"></a><a name="getsmartdockingbaseguidecolors"></a>CMFCVisualManagerOffice2003:GetSmartDockingBaseColors
 
@@ -479,7 +479,7 @@ virtual void GetSmartDockingBaseGuideColors(
 *clrBaseGroupBorder*<br/>
 (в) Ссылка на [COLORREF](/windows/win32/gdi/colorref) для установки на границу цвета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003getsmartdockinghighlighttonecolor"></a><a name="getsmartdockinghighlighttonecolor"></a>CMFCVisualManagerOffice2003::GetSmartDockingHighlightToneColor
 
@@ -493,7 +493,7 @@ virtual COLORREF GetSmartDockingHighlightToneColor();
 
 Возвращает [COLORREF,](/windows/win32/gdi/colorref) который содержит цвет тона выделения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003gettabframecolors"></a><a name="gettabframecolors"></a>CMFCVisualManagerOffice2003:GetTabFrameColors
 
@@ -541,7 +541,7 @@ virtual void GetTabFrameColors(
 *pbrBlack*<br/>
 (ваут) Указатель на ссылку на кисть. Этот метод хранит кисть, которая используется для заполнения черного края окна вкладки в этом параметре.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003gettoolbarcustomizebuttonmargin"></a><a name="gettoolbarcustomizebuttonmargin"></a>CMFCVisualManagerOffice2003::GetToolBarCustomizeButtonMargin
 
@@ -555,7 +555,7 @@ virtual int GetToolBarCustomizeButtonMargin() const;
 
 Возвращает маржу для кнопки настройки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003gettoolbardisabledcolor"></a><a name="gettoolbardisabledcolor"></a>CMFCVisualManagerOffice2003::GetToolbarDisabledColor
 
@@ -569,7 +569,7 @@ virtual COLORREF GetToolbarDisabledColor() const;
 
 Возвращает [COLORREF,](/windows/win32/gdi/colorref) содержащий неработающий цвет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003gettooltipinfo"></a><a name="gettooltipinfo"></a>CMFCVisualManagerOffice2003:GetToolTipInfo
 
@@ -593,7 +593,7 @@ virtual BOOL GetToolTipInfo(
 
 Возвращает TRUE, если информация о наборе инструментов возвращается, и FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003isdefaultwinxpcolorsenabled"></a><a name="isdefaultwinxpcolorsenabled"></a>CMFCVisualManagerOffice2003:IsDefaultWinXPColors
 
@@ -607,7 +607,7 @@ static BOOL IsDefaultWinXPColorsEnabled();
 
 TRUE, если визуальный менеджер использует родные цвета; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о родных цветах, см [CMFCVisualManagerOffice2003:SetDefaultWinXPColors](#setdefaultwinxpcolors).
 
@@ -623,7 +623,7 @@ virtual BOOL IsDockingTabHasBorder();
 
 TRUE, если визуальный менеджер рисует границы вокруг стекол, которые пристыкованы и вкладками; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ishighlightonenotetabs"></a><a name="ishighlightonenotetabs"></a>CMFCVisualManagerOffice2003:IsHighlightOneNoteTabs
 
@@ -637,7 +637,7 @@ virtual BOOL IsHighlightOneNoteTabs() const;
 
 Возвращает TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003isoffsetpressedbutton"></a><a name="isoffsetpressedbutton"></a>CMFCVisualManagerOffice2003:IsOffsetpressedButton
 
@@ -649,7 +649,7 @@ virtual BOOL IsOffsetPressedButton() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию возвращает FALSE.
 
@@ -663,7 +663,7 @@ static BOOL __stdcall IsStatusBarOfficeXPLook();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает TRUE, если есть статус бар с Office XP смотреть, или FALSE, если нет.
 
@@ -684,7 +684,7 @@ virtual BOOL IsToolbarRoundShape(CMFCToolBar* pToolBar);
 
 Возвращает TRUE, если панель инструментов круглая, или FALSE, если это панель меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003isuseglobaltheme"></a><a name="isuseglobaltheme"></a>CMFCVisualManagerOffice2003::IsUseGlobalTheme
 
@@ -698,7 +698,7 @@ static BOOL IsUseGlobalTheme();
 
 ПРАВДА, если визуальный менеджер использует тему Windows XP; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте метод [CMFCVisualManagerOffice2003::SetUseGlobalTheme,](#setuseglobaltheme) чтобы изменить, использует ли ваш визуальный менеджер тему Windows XP.
 
@@ -714,7 +714,7 @@ virtual BOOL IsWindowsThemingSupported() const;
 
 Возвращает TRUE, если тематика Windows поддерживается, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawautohidebuttonborder"></a><a name="ondrawautohidebuttonborder"></a>CMFCVisualManagerOffice2003:OndrawAutohidebuttonBorder
 
@@ -742,7 +742,7 @@ virtual void OnDrawAutoHideButtonBorder(
 *pButton*<br/>
 (в) Указатель на кнопку автоматической скрытия. Рамки рисуют границу для этой кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, если вы хотите настроить внешний вид границы кнопки автоматической скрытности. По умолчанию этот метод заполняет плоскую границу цветом тени по умолчанию для приложения.
 
@@ -774,7 +774,7 @@ virtual void OnDrawBarGripper(
 *pBar*<br/>
 (в) Указатель на панель управления. Визуальный менеджер рисует захват этой панели управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию отображает стандартный захват. Чтобы настроить внешний вид захвата, переопределить этот метод в пользовательском классе, полученном из [cmFCVisualManagerOffice2003](../../mfc/reference/cmfcvisualmanageroffice2003-class.md) класса.
 
@@ -801,7 +801,7 @@ virtual BOOL OnDrawBrowseButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawbuttonborder"></a><a name="ondrawbuttonborder"></a>CMFCVisualManagerOffice2003:OndrawbuttonBorder
 
@@ -829,7 +829,7 @@ virtual void OnDrawButtonBorder(
 *Государства*<br/>
 (в) Перечисленный тип данных, опоглавяя текущее состояние кнопки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию отображает стандартную границу. Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид границы кнопки панели инструментов.
 
@@ -865,7 +865,7 @@ virtual void OnDrawCaptionBarBorder(
 *bFlatBorder*<br/>
 (в) ПРАВДА, если граница должна иметь плоский, 2D внешний вид, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить внешний вид границы панели подписи.
 
@@ -903,7 +903,7 @@ virtual void OnDrawCheckBoxEx(
 *bВСтои*<br/>
 (в) ПРАВДА, если флажок включен, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawcomboborder"></a><a name="ondrawcomboborder"></a>CMFCVisualManagerOffice2003:OndrawComboBorder
 
@@ -939,7 +939,7 @@ virtual void OnDrawComboBorder(
 *pButton*<br/>
 (в) Указатель на `CMFCToolBarComboBoxButton` объект. Рамка рисует эту кнопку комбо-бокса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в вашем производном визуальном менеджере, чтобы настроить внешний вид границы комбо-коробки.
 
@@ -977,7 +977,7 @@ virtual void OnDrawComboDropButton(
 *pButton*<br/>
 (в) Указатель на `CMFCToolBarComboBoxButton` объект. Рамка рисует кнопку падения для этой кнопки комбо-коробки
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид кнопки падения кнопки комбо-бокс.
 
@@ -994,7 +994,7 @@ virtual void OnDrawControlBorder(CWnd* pWndCtrl);
 *pWndCtrl*<br/>
 (в) Указатель на объект [класса CWnd,](../../mfc/reference/cwnd-class.md) представляющий элемент управления, для которого можно нарисовать границу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawexpandingbox"></a><a name="ondrawexpandingbox"></a>CMFCVisualManagerOffice2003:OnDrawExpandingBox
 
@@ -1022,7 +1022,7 @@ virtual void OnDrawExpandingBox(
 *colorBox*<br/>
 (в) Цвет внешней границы коробки, которая будет нарисована.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a>CMFCVisualManagerOffice2003:OnDrawHeaderCtrlBorder
 
@@ -1052,7 +1052,7 @@ virtual void OnDrawHeaderCtrlBorder(
 (в) *bIsHighlighted*<br/>
 Параметр Boolean, указывающий на нажатие элемента управления заголовком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить границу управления заголовком.
 
@@ -1078,7 +1078,7 @@ virtual void OnDrawMenuBorder(
 *rect*<br/>
 (в) Прямоугольник, который определяет границы всплывающих меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию отображает стандартную границу меню. Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид границы меню.
 
@@ -1100,7 +1100,7 @@ virtual void OnDrawOutlookBarSplitter(
 *rectSplitter*<br/>
 (в) Прямоугольник, который определяет границы сплиттера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид сплиттеров на панели Outlook.
 
@@ -1130,7 +1130,7 @@ virtual void OnDrawOutlookPageButtonBorder(
 *bIsPressed*<br/>
 (в) Boolean, который определяет, нажата ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переизобить этот метод в пользовательском визуальном менеджере, чтобы изменить внешний вид кнопки страницы Outlook.
 
@@ -1156,7 +1156,7 @@ virtual void OnDrawPaneBorder(
 *rect*<br/>
 (в) Прямоугольник, указывающий границы панели.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию отображает стандартную границу. Переопределить этот метод в производном классе, чтобы настроить внешний вид границы.
 
@@ -1194,7 +1194,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 Параметр [COLORREF,](/windows/win32/gdi/colorref) указывающий на цвет текста подписи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawpopupwindowborder"></a><a name="ondrawpopupwindowborder"></a>CMFCVisualManagerOffice2003:OnDrawPopupWindowBorder
 
@@ -1214,7 +1214,7 @@ virtual void OnDrawPopupWindowBorder(
 *rect*<br/>
 (в) Ограничивающий прямоугольник всплывающего окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawpopupwindowbuttonborder"></a><a name="ondrawpopupwindowbuttonborder"></a>CMFCVisualManagerOffice2003:OnDrawPopupWindowButtonBorder
 
@@ -1238,7 +1238,7 @@ virtual void OnDrawPopupWindowButtonBorder(
 *pButton*<br/>
 (в) Указатель на кнопку (объект [класса CMFCDesktopAlertWndButton).](../../mfc/reference/cmfcdesktopalertwndbutton-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawpopupwindowcaption"></a><a name="ondrawpopupwindowcaption"></a>CMFCVisualManagerOffice2003:OnDrawPopupWindowCaption
 
@@ -1266,7 +1266,7 @@ virtual COLORREF OnDrawPopupWindowCaption(
 
 Текстовый цвет подписи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид подписей всплывающих окон.
 
@@ -1296,7 +1296,7 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид группы кнопок на ленте.
 
@@ -1322,7 +1322,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 Параметр [COLORREF,](/windows/win32/gdi/colorref) указывающий цвет текста на панели заголовков.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить внешний вид панели заголовков для категории ленты.
 
@@ -1352,7 +1352,7 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 
 Цвет, используемый для текста на вкладке категории ленты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид ленты категории вкладке.
 
@@ -1386,7 +1386,7 @@ virtual void OnDrawRibbonProgressBar(
 *bInfiniteMode*<br/>
 (в) ПРАВДА, если бар находится в бесконечном режиме, или FALSE, если нет. Реализация по умолчанию не использует этот параметр.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить внешний вид панели прогресса
 
@@ -1412,7 +1412,7 @@ virtual void OnDrawRibbonQuickAccessToolBarSeparator(
 *rect*<br/>
 (в) Прямоугольник, который определяет границы сепаратора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить внешний вид ленточных сепараторов на панели инструментов быстрого доступа.
 
@@ -1438,7 +1438,7 @@ virtual void OnDrawRibbonSliderChannel(
 *rect*<br/>
 (в) Прямоугольник, который определяет границы для канала ленточного ползунка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных класса, чтобы настроить внешний вид канала ленты слайдер.
 
@@ -1476,7 +1476,7 @@ virtual void OnDrawRibbonSliderThumb(
 *bIsDisabled*<br/>
 (в) Параметр Boolean, указывающий на то, недоступен ли большой палец.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид большого пальца для ленты ползунок.
 
@@ -1518,7 +1518,7 @@ virtual void OnDrawRibbonSliderZoomButton(
 *bIsDisabled*<br/>
 (в) Параметр Boolean, указывающий на то, недоступна ли кнопка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию кнопки масштабирования на слайдере ленты **+** **-** представляют собой круг с либо знаком в центре. Чтобы настроить внешний вид кнопок масштабирования, переуторируйте этот метод в производном визуальном менеджере.
 
@@ -1548,7 +1548,7 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 
 Зарезервированное значение. Реализация по умолчанию возвращает значение -1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид панели на панели статуса.
 
@@ -1582,7 +1582,7 @@ virtual void OnDrawScrollButtons(
 *bHilited*<br/>
 (в) ПРАВДА, если кнопки прокрутки выделены, или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawseparator"></a><a name="ondrawseparator"></a>CMFCVisualManagerOffice2003:OnDrawСепаратор
 
@@ -1610,7 +1610,7 @@ virtual void OnDrawSeparator(
 *bIsHoriz*<br/>
 (в) ПРАВДА, если стекло состыковано горизонтально, или FALSE, если стекло пристыковано вертикально.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сепараторы используются на контрольных брусках для разделения групп связанных иконок. Реализация по умолчанию для этого метода отображает стандартный сепаратор. Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид сепаратора.
 
@@ -1636,7 +1636,7 @@ virtual void OnDrawShowAllMenuItems(
 *Государства*<br/>
 (в) Состояние кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003ondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a>CMFCVisualManagerOffice2003:OnDrawStatusBarPaneBorder
 
@@ -1668,7 +1668,7 @@ virtual void OnDrawStatusBarPaneBorder(
 *nStyle*<br/>
 (в) Стиль статус-бара.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид границы для `CMFCStatusBar` объекта.
 
@@ -1713,7 +1713,7 @@ virtual void OnDrawStatusBarProgress(
 (в) *clrProgressТекст*<br/>
 (в) *bProgressТекст*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид панели прогресса на панели статуса.
 
@@ -1739,7 +1739,7 @@ virtual void OnDrawStatusBarSizeBox(
 *rectSizeBox*<br/>
 (в) Прямоугольник, который определяет границы коробки размеров.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид коробки размера на панели статуса.
 
@@ -1773,7 +1773,7 @@ virtual void OnDrawTab(
 *pTabWnd*<br/>
 (в) Указатель на объект [класса CMFCBaseTabCtrl.](../../mfc/reference/cmfcbasetabctrl-class.md) Фрейм рисует элемент управления вкладками.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `CMFCBaseTabCtrl` вызывает этот метод при обработке WM_PAINT сообщения. Переопределить этот метод в производном классе, чтобы настроить внешний вид вкладок.
 
@@ -1807,7 +1807,7 @@ virtual void OnDrawTabsButtonBorder(
 *pWndTab*<br/>
 (в) Указатель на окно вкладки родительской таблицы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид границы кнопки вкладки.
 
@@ -1841,7 +1841,7 @@ virtual void OnDrawTask(
 *bIsSelected*<br/>
 (в) Параметр Boolean, который определяет, выбрана ли отображаемый задания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Рамки отображает задачи в панели задач как значок и текст. Параметр *pIcons* содержит значок для задачи, указанной *pTask.* Переопределить этот метод в произвданном классе, чтобы настроить внешний вид задач на панели задач.
 
@@ -1871,7 +1871,7 @@ virtual void OnDrawTasksGroupAreaBorder(
 *bNoTitle*<br/>
 (в) Параметр Boolean, который определяет, имеет ли область группы название. Значение TRUE указывает на то, что область группы не имеет названия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию в производном классе, чтобы настроить границу вокруг области группы на панели задач.
 
@@ -1905,7 +1905,7 @@ virtual void OnDrawTasksGroupCaption(
 *bCanCollapse*<br/>
 (в) Параметр Boolean, указывающий, может ли группа рухнуть.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы настроить подпись для `CMFCTasksPaneTaskGroup`.
 
@@ -1931,7 +1931,7 @@ virtual void OnDrawTearOffCaption(
 *bIsActive*<br/>
 (в) TRUE, если подпись активна; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция вызывается инфраструктурой, когда объект [класса CMFCPopupMenu](../../mfc/reference/cmfcpopupmenu-class.md) обрабатывает WM_PAINT сообщение и должен нарисовать заголовок отрыва.
 
@@ -1959,7 +1959,7 @@ virtual void OnErasePopupWindowButton(
 *pButton*<br/>
 (в) Указатель на кнопку, чтобы быть стерты.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003onerasetabsarea"></a><a name="onerasetabsarea"></a>CMFCVisualManagerOffice2003:OnEraseTabsArea
 
@@ -1983,7 +1983,7 @@ virtual void OnEraseTabsArea(
 *pTabWnd*<br/>
 (в) Указатель на окно вкладок. Фрейм стирает область вкладки для указанного окна вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция вызывается инфраструктурой, когда объект [класса CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) обрабатывает WM_PAINT сообщение и стирает область вкладки.
 
@@ -2015,7 +2015,7 @@ virtual void OnEraseTabsButton(
 *pWndTab*<br/>
 (в) Указатель на управление вкладкой, содержащее кнопку вкладок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Фрейм стирает текст и значок для кнопки, когда объект [класса CMFCBaseTabCtrl](../../mfc/reference/cmfcbasetabctrl-class.md) обрабатывает WM_ERASEBKGND сообщение
 
@@ -2047,7 +2047,7 @@ virtual BOOL OnEraseTabsFrame(
 
 ПРАВДА, если метод является успешным или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод заполняет область, указанную *рект с* фоновым цветом активной вкладки. Он вызывается, `CMFCBaseTabCtrl` когда объект обрабатывает WM_PAINT сообщение и стирает кадр вкладки.
 
@@ -2073,7 +2073,7 @@ virtual void OnFillAutoHideButtonBackground(
 *pButton*<br/>
 (в) Указатель на объект [класса CMFCAutoHideButton.](../../mfc/reference/cmfcautohidebutton-class.md) Рамка заполняет фон для этой кнопки автоматического укрытия.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид кнопки автоматической скрыть.
 
@@ -2107,7 +2107,7 @@ virtual void OnFillBarBackground(
 *bNCArea*<br/>
 (в) Зарезервированное значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию заполняет фон бара 3d фоновым цветом от глобальной переменной. `afxGlobalData`
 
@@ -2139,7 +2139,7 @@ virtual void OnFillButtonInterior(
 *Государства*<br/>
 (в) Состояние кнопки панели инструментов (возможные состояния кнопки `ButtonsIsPressed`панели `ButtonsIsHighlighted`инструментов, `ButtonsIsRegular`или ).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию использует цвет по умолчанию для заполнения фона. Переопределить этот метод в производных визуальный менеджер, чтобы настроить фон кнопки панели инструментов.
 
@@ -2169,7 +2169,7 @@ virtual COLORREF OnFillCommandsListBackground(
 
 Цвет текста для кнопки панели инструментов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о списке настройки, см [CMFCToolBarButton::OnDrawOnCustomizeList](../../mfc/reference/cmfctoolbarbutton-class.md#ondrawoncustomizelist). Реализация по умолчанию для этого метода заполняет фон на основе цветовой гаммы выбранной в настоящее время кожи.
 
@@ -2195,7 +2195,7 @@ virtual void OnFillHeaderCtrlBackground(
 *rect*<br/>
 (в) Прямоугольник, который определяет границы управления заголовком.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид управления заголовком.
 
@@ -2225,7 +2225,7 @@ virtual void OnFillHighlightedArea(
 *pButton*<br/>
 (в) Указатель на объект [класса CMFCToolBarButton,](../../mfc/reference/cmfctoolbarbutton-class.md) для которого можно заполнить выделенную область.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003onfilloutlookbarcaption"></a><a name="onfilloutlookbarcaption"></a>CMFCVisualManagerOffice2003:OnfillOutlookBarCaption
 
@@ -2249,7 +2249,7 @@ virtual void OnFillOutlookBarCaption(
 *clrText*<br/>
 (ваут) Ссылка на объект COLORREF, на который этот метод пишет цвет текста на панели подписи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этого метода по умолчанию заполняет панель подписей цветом для теней на основе текущей кожи.
 
@@ -2285,7 +2285,7 @@ virtual void OnFillOutlookPageButton(
 *clrText*<br/>
 (ваут) Ссылка на объект COLORREF, где этот метод хранит текстовый цвет кнопки Outlook.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию в производном визуальном менеджере, чтобы настроить внешний вид кнопок страницOutlook.
 
@@ -2307,7 +2307,7 @@ virtual void OnFillPopupWindowBackground(
 *rect*<br/>
 (в) Прямоугольник, который определяет границы всплывающее окно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид всплывающих окон.
 
@@ -2345,7 +2345,7 @@ virtual void OnFillTab(
 *pTabWnd*<br/>
 (в) Указатель на управление родительской вкладки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производных визуальный менеджер, чтобы настроить внешний вид вкладок.
 
@@ -2371,7 +2371,7 @@ virtual void OnFillTasksGroupInterior(
 *bSpecial*<br/>
 (в) Булеан, который указывает, если интерьер наполнен особым цветом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид группы задач.
 
@@ -2393,7 +2393,7 @@ virtual void OnFillTasksPaneBackground(
 *rectWorkArea*<br/>
 (в) Прямоугольник, определяемый границы панели задач.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид объекта [класса CMFCTasksPane.](../../mfc/reference/cmfctaskspane-class.md)
 
@@ -2419,7 +2419,7 @@ virtual void OnHighlightQuickCustomizeMenuButton(
 *rect*<br/>
 (в) Ограничивающий прямоугольник кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003onhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a>CMFCVisualManagerOffice2003::OnHighlightРедкоИспользуемыеМенюэлементы
 
@@ -2439,7 +2439,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
 *rectRarelyИспользуется*<br/>
 (в) Прямоугольник, определяющий границы выделенной команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном визуальном менеджере, чтобы настроить внешний вид команд выделенного меню.
 
@@ -2451,7 +2451,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
 virtual void OnUpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа называет этот метод частью обработки WM_SYSCOLORCHANGE сообщения. Переопределить этот метод в производном визуальном менеджере, если вы хотите выполнить пользовательский код при изменении цветов в приложении.
 
@@ -2468,7 +2468,7 @@ static void SetDefaultWinXPColors(BOOL bDefaultWinXPColors = TRUE);
 *bDefaultWinXPЦвета*<br/>
 (в) Уточняется, будет ли визуальный менеджер использовать родные цвета Windows XP.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bDefaultWinXPColors* является правдой, визуальный менеджер будет использовать родные цвета Windows XP, такие как синий, оливковый или серебристый. В противном случае визуальный менеджер `GetSysColor`будет использовать цвета, полученные из . Визуальный менеджер использует визуальные элементы, такие как COLOR_3DFACE, COLOR_3DSHADOW, COLOR_3DHIGHLIGHT, COLOR_3DDKSHADOW и COLOR_3DLIGHT.
 
@@ -2487,7 +2487,7 @@ static void __stdcall SetStatusBarOfficeXPLook(BOOL bStatusBarOfficeXPLook = TRU
 *bStatusBarOfficeXPLook*<br/>
 (в) ПРАВДА, если Windows XP глобальной теме должны быть использованы (по умолчанию), или FALSE, если нет.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2003setuseglobaltheme"></a><a name="setuseglobaltheme"></a>CMFCVisualManagerOffice2003:SetUseGlobalTheme
 
@@ -2502,7 +2502,7 @@ static void SetUseGlobalTheme(BOOL bUseGlobalTheme = TRUE);
 *bUseGlobalTheme*<br/>
 (в) ПРАВДА, если вы хотите, чтобы визуальный менеджер использовать глобальную тему; FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CMFCVisualManagerOffice2003` объект использует глобальную тему, он рисует элементы GUI с помощью [cmFCVisualManagerWindows класса.](../../mfc/reference/cmfcvisualmanagerwindows-class.md)
 

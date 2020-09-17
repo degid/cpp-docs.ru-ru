@@ -53,7 +53,7 @@ static constexpr Rep max();
 
 Фактически возвращает `numeric_limits<Rep>::max()`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно быть больше [duration_values::zero](#zero).
 
@@ -69,7 +69,7 @@ static constexpr Rep min();
 
 Фактически возвращает `numeric_limits<Rep>::lowest()`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно быть меньше или равно [duration_values::zero](#zero).
 
@@ -81,7 +81,7 @@ static constexpr Rep min();
 static constexpr Rep zero();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `Rep` является пользовательским типом, возвращаемое значение должно представлять аддитивную бесконечность.
 

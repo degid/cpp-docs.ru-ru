@@ -62,7 +62,7 @@ class COleDocObjectItem : public COleClientItem
 |[ColeDocObjectItem::Запрос](#querycommand)|Запрашивает состояние одной или нескольких команд, созданных событиями пользовательского интерфейса.|
 |[ColeDocObjectItem::Release](#release)|Выпускает соединение с элементом, связанным с OLE, и закрывает его, если он был открыт. Не разрушает клиентский элемент.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 В MFC активный документ обрабатывается аналогично обычному встраиванию на месте, со следующими различиями:
 
@@ -162,7 +162,7 @@ HRESULT ExecCommand(
 |OLECMDERR_NOHELP|Звонивший обратился за помощью к команде, идентифицированной *nCmdID,* но помощь недоступна.|
 |OLECMDERR_CANCELLED|Пользователь отменил выполнение.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *PguidCmdGroup* и параметры *nCmdID* вместе однозначно идентифицируют команду для ввода. Параметр *nCmdExecOpt* определяет точное действие, необходимое для принятия.
 
@@ -178,7 +178,7 @@ LPOLEDOCUMENTVIEW GetActiveView() const;
 
 Указатель на интерфейс [IOleDocumentView](/windows/win32/api/docobj/nn-docobj-ioledocumentview) в настоящее время активного представления. Если нет текущего представления, он возвращает NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Подсчет отсчета отсчета на возвращенном `IOleDocumentView` указателе не приращен до того, как он будет возвращен этой функцией.
 
@@ -282,7 +282,7 @@ HRESULT QueryCommand(
 
 Полный список значений возврата можно узнать на примере [IOleCommandTarget::QueryStatus](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена имитирует функциональность метода [IOleCommandTarget::queryStatus,](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-querystatus) как описано в SDK Windows.
 
@@ -299,7 +299,7 @@ virtual void Release(OLECLOSE dwCloseOption = OLECLOSE_NOSAVE);
 *dwCloseOption*<br/>
 Пометить, при каких обстоятельствах элемент OLE сохраняется при возвращении в загруженное состояние. Список возможных значений можно [узнать: COleClientItem::Закрыть](../../mfc/reference/coleclientitem-class.md#close).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Не разрушает клиентский элемент.
 

@@ -45,7 +45,7 @@ class CTooltipManager : public CObject
 |[CTooltipManager::SetTooltipText](#settooltiptext)|Задает текст и описание для элемента управления "Всплывающая подсказка".|
 |[CTooltipManager::UpdateTooltips](#updatetooltips)||
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте [CMFCToolTipCtrl класса](../../mfc/reference/cmfctooltipctrl-class.md), `CMFCToolTipInfo`и `CTooltipManager` вместе для реализации индивидуальных инструментов в вашем приложении. Пример того, как использовать эти классы наборов инструментов, можно ознакомьтесь с темой [класса CMFCToolToolTipCtrl.](../../mfc/reference/cmfctooltipctrl-class.md)
 
@@ -85,7 +85,7 @@ static BOOL CreateToolTip(
 
 Nonzero, если набор инструментов был успешно создан.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны позвонить [CTooltipManager::DeleteToolTip,](#deletetooltip) чтобы удалить элемент управления, который передается обратно в *pToolTip*.
 
@@ -120,7 +120,7 @@ static void DeleteToolTip(CToolTipCtrl*& pToolTip);
 *pToolTip*<br/>
 (в, вне) Ссылка на указатель на инструмент, который должен быть уничтожен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Назовите этот метод для каждого [класса CToolTipCtrl,](../../mfc/reference/ctooltipctrl-class.md) созданного [CTooltipManager::CreateToolTip](#createtooltip). Родительский элемент должен вызвать `OnDestroy` этот метод из его обработчика. Это необходимо для правильного удаления инструментария из платформы. Этот метод устанавливает *pToolTip* в NULL, прежде чем он вернется.
 
@@ -146,7 +146,7 @@ void SetTooltipParams(
 *pParams*<br/>
 (в) Параметры Tooltip.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод устанавливает класс времени выполнения и начальные параметры, которые использует [CToolTipManager](../../mfc/reference/ctooltipmanager-class.md) при создаете инструменты. Когда элемент управления вызывает [CTooltipManager::CreateToolTip](#createtooltip) и передает сярприза в типе tooltip, который является одним из типов, указанных *nTypes,* менеджер инструментария создает элементуправления, который является экземпляром класса времени выполнения, указанного *pRTC,* и передает параметры, указанные *pParams,* в новый набор инструментов.
 
@@ -190,7 +190,7 @@ static void SetTooltipText(
 *lpszDescr*<br/>
 (в) Указатель на описание инструментария. Может иметь значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Значение *nType* должно быть таким же значением, как и параметр *nType* [CTooltipManager::CreateToolTip](#createtooltip) при создании инструментария.
 
@@ -202,7 +202,7 @@ static void SetTooltipText(
 void UpdateTooltips();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

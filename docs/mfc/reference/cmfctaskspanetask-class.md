@@ -77,7 +77,7 @@ class CMFCTasksPaneTask : public CObject
 |[CMFCTasksPaneTask::m_strName](#m_strname)|Имя данной задачи.|
 |[CMFCTasksPaneTask::m_uiCommandID](#m_uicommandid)|Уотеляет идентификатор команды команды, который выполняет сяокард при нажатии задачи пользователем. Если это значение не является действительным идентификатором команды, задача рассматривается как простая метка.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 На следующей иллюстрации показана целевая группа, содержащая три задачи:
 
@@ -138,7 +138,7 @@ CMFCTasksPaneTask(
 *nWindowHeight*<br/>
 Определяет высоту окна задачи.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetaskm_bautodestroywindow"></a><a name="m_bautodestroywindow"></a>CMFCTasksPaneTask::m_bAutoDestroyWindow
 
@@ -148,7 +148,7 @@ CMFCTasksPaneTask(
 BOOL m_bAutoDestroyWindow;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установить, чтобы true указать, что окно задачи [(CMFCTasksPaneTask::m_hwndTask](#m_hwndtask)) должны быть уничтожены автоматически; в противном случае, FALSE.
 
@@ -160,7 +160,7 @@ BOOL m_bAutoDestroyWindow;
 BOOL m_bIsBold;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите этот член к TRUE для отображения смелого текста для метки задачи.
 
@@ -172,7 +172,7 @@ BOOL m_bIsBold;
 DWORD m_dwUserData;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetaskm_hwndtask"></a><a name="m_hwndtask"></a>CMFCTasksPaneTask::m_hwndTask
 
@@ -182,7 +182,7 @@ DWORD m_dwUserData;
 HWND m_hwndTask;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы добавить окно задачи, позвоните [cmFCTasksPane::AddWindow](../../mfc/reference/cmfctaskspane-class.md#addwindow).
 
@@ -194,7 +194,7 @@ HWND m_hwndTask;
 int m_nIcon;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список изображений устанавливается [CMFCTasksPane::SetIconsList](../../mfc/reference/cmfctaskspane-class.md#seticonslist).
 
@@ -208,7 +208,7 @@ int m_nIcon;
 int m_nWindowHeight;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetaskm_pgroup"></a><a name="m_pgroup"></a>CMFCTasksPaneTask::m_pGroup
 
@@ -218,7 +218,7 @@ int m_nWindowHeight;
 CMFCTasksPaneTaskGroup* m_pGroup;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждая задача должна иметь родительскую группу. Вы добавляете группы в панель задач, [позвонив по телефону CMFCTasksPane::AddGroup](../../mfc/reference/cmfctaskspane-class.md#addgroup).
 
@@ -230,7 +230,7 @@ CMFCTasksPaneTaskGroup* m_pGroup;
 CRect m_rect;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это значение рассчитывается по системе при нарисовании задачи.
 
@@ -242,7 +242,7 @@ CRect m_rect;
 CString m_strName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetaskm_uicommandid"></a><a name="m_uicommandid"></a>CMFCTasksPaneTask::m_uiCommandID
 
@@ -252,7 +252,7 @@ CString m_strName;
 UINT m_uiCommandID;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfctaskspanetasksetaccdata"></a><a name="setaccdata"></a>CMFCTasksPaneTask::SetACCData
 

@@ -22,7 +22,7 @@ ms.locfileid: "79438917"
 /SECTION:name[=newname][,attributes][alignment]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот параметр изменяет атрибуты раздела, переопределяя атрибуты, заданные при компиляции или связывании объектного файла раздела.
 

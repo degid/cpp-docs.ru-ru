@@ -47,7 +47,7 @@ class CAnimationVariableIntegerChangeHandler : public CUIAnimationVariableIntege
 |[CAnimationVariableIntegerChange::OnIntegerValue](#onintegervaluechanged)|Вызывается при изменении значения переменной анимации. (Переопределяет `CUIAnimationVariableIntegerChangeHandlerBase::OnIntegerValueChanged`.)|
 |[CAnimationVariableIntegerChangeHandler::SetAnimationController](#setanimationcontroller)|Хранит указатель контроллера анимации для маршрутизатора событий.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обработчик событий создан и передан IUIAnimationVariable::SetVariableIntegerChangeHandler метод, когда вы называете CAnimationVariable::EnableIntegerValueChangedEvent или CAnimationBaseObject::EnableIntegerValueChangedEvent (что позволяет это событие для всех переменных анимации инкапсулированы в объекте анимации).
 

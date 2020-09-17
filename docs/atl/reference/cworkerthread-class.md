@@ -68,7 +68,7 @@ class CWorkerThread
 |[CWorkerThread::RemoveHandle](#removehandle)|Вызовите этот метод, чтобы удалить ручку из списка ожидающих объектов.|
 |[CWorkerThread::Shutdown](#shutdown)|Вызовите этот метод, чтобы закрыть рабочую нить.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ### <a name="to-use-cworkerthread"></a>Использовать CWorkerThread
 
@@ -118,7 +118,7 @@ HRESULT AddHandle(
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [IWorkerThreadClient::Выполнение](../../atl/reference/iworkerthreadclient-interface.md#execute) будет вызвано через *pClient* когда ручка, *hObject*, сигнализирована.
 
@@ -152,7 +152,7 @@ HRESULT AddTimer(
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [IWorkerThreadClient::Выполнение](../../atl/reference/iworkerthreadclient-interface.md#execute) будет вызвано через *pClient* когда таймер сигнализируется.
 
@@ -174,7 +174,7 @@ CWorkerThread() throw();
 ~CWorkerThread() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовы [CWorkerThread::Закрытие](#shutdown).
 
@@ -221,7 +221,7 @@ HRESULT Initialize(CWorkerThread<ThreadTraits>* pThread) throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод следует вызывать для инициализации объекта после создания или после вызова [CWorkerThread::Shutdown](#shutdown).
 
@@ -246,7 +246,7 @@ HRESULT RemoveHandle(HANDLE hObject) throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При удалении ручки [IWorkerThreadClient::CloseHandle](../../atl/reference/iworkerthreadclient-interface.md#closehandle) будет вызван на связанный объект, который был передан [AddHandle](#addhandle). Если этот вызов `CWorkerThread` не удается, вызов функции Windows [CloseHandle](/windows/win32/api/handleapi/nf-handleapi-closehandle) на ручке.
 
@@ -267,7 +267,7 @@ HRESULT Shutdown(DWORD dwWait = ATL_WORKER_THREAD_WAIT) throw();
 
 Возвращает S_OK на успех, или ошибка HRESULT при сбое, например, если значение *тайм-аута, dwWait*, превышен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы повторно использовать объект, позвоните [CWorkerThread:: Инициализация](#initialize) после вызова этого метода.
 

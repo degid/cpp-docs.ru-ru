@@ -87,7 +87,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 |[m_dwStatus](#dwstatus)|Флаги источника данных.|
 |[m_pCUtlPropInfo](#pcutlpropinfo)|Указатель на реализацию свойств базы данных.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Обязательный интерфейс для объектов источника данных и необязательный интерфейс для перечислителей.
 
@@ -101,7 +101,7 @@ class ATL_NO_VTABLE IDBInitializeImpl : public IDBInitialize
 IDBInitializeImpl();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует все элементы данных.
 
@@ -115,7 +115,7 @@ IDBInitializeImpl();
 STDMETHOD(Initialize)(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [IDBInitialize:: Initialize](/previous-versions/windows/desktop/ms718026(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -129,7 +129,7 @@ STDMETHOD(Initialize)(void);
 STDMETHOD(Uninitialize)(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 См. раздел [IDBInitialize:: Uninitialize](/previous-versions/windows/desktop/ms719648(v=vs.85)) в *справочнике программиста OLE DB*.
 
@@ -143,7 +143,7 @@ STDMETHOD(Uninitialize)(void);
 DWORD m_dwStatus;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти флаги указывают или указывают состояние различных атрибутов для объекта источника данных. Содержит одно или несколько из следующих **`enum`** значений:
 

@@ -26,7 +26,7 @@ struct messages_base : locale::facet {
 };
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каталог типов является синонимом типа **`int`** , который описывает возможные возвращаемые значения из сообщений:: [do_open](../standard-library/messages-class.md#do_open).
 

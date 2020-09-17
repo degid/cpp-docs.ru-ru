@@ -74,7 +74,7 @@ EventStack(const EVENT_COLLECTION_DATA& data);
 *Данных*\
 Необработанные данные, из которых построен. `EventStack`
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно вам не нужно `EventStack` строить объекты самостоятельно. Они предоставляются вам SDK Build Insights, когда события обрабатываются во время анализа или сеанса перезаписи.
 

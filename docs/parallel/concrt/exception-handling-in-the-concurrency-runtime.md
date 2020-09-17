@@ -23,13 +23,13 @@ ms.locfileid: "87230406"
 
 - Когда задача или группа задач создает исключение, исполняющая среда хранит это исключение и маршалирует его в контекст, ожидающий завершения задачи или группы задач.
 
-- По возможности заключайте каждый вызов к [Concurrency:: Task:: Get](reference/task-class.md#get) и [Concurrency:: Task:: wait](reference/task-class.md#wait) с **`try`** / **`catch`** блоком для обработки ошибок, из которых можно выполнить восстановление. Среда выполнения завершает приложение, если задача создает исключение и это исключение не перехватывается задачей, одним из ее продолжений или основным приложением.
+- По возможности заключайте каждый вызов к [concurrency::Task:: Get](reference/task-class.md#get) и [concurrency::Task:: wait](reference/task-class.md#wait) с **`try`** / **`catch`** блоком для обработки ошибок, из которых можно выполнить восстановление. Среда выполнения завершает приложение, если задача создает исключение и это исключение не перехватывается задачей, одним из ее продолжений или основным приложением.
 
 - Основанное на задаче продолжение выполняется всегда вне зависимости от того, завершилась ли предыдущая задача успешно, создала исключение или была отменена. Основанное на значении продолжение не выполняется, если предыдущая задача была отменена или создала исключение.
 
 - Поскольку основанное на задаче продолжение задачи выполняется всегда, рассмотрите возможность добавления продолжения, основанного на задаче, в конец цепочки продолжения. Это позволяет гарантировать, что код проверяет все исключения.
 
-- Среда выполнения вызывает метод [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) при вызове [Concurrency:: Task:: Get](reference/task-class.md#get) и отмене задачи.
+- Среда выполнения вызывает метод [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) при вызове [concurrency::Task:: Get](reference/task-class.md#get) и отмене задачи.
 
 - Среда выполнения не управляет исключениями для легковесных задач и агентов.
 
@@ -51,9 +51,9 @@ ms.locfileid: "87230406"
 
 ## <a name="tasks-and-continuations"></a><a name="tasks"></a>Задачи и продолжения
 
-В этом разделе описывается, как среда выполнения обрабатывает исключения, вызываемые объектами [Concurrency:: Task](../../parallel/concrt/reference/task-class.md) и их продолжениями. Дополнительные сведения о модели задач и продолжения см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
+В этом разделе описывается, как среда выполнения обрабатывает исключения, вызываемые объектами [concurrency::Task](../../parallel/concrt/reference/task-class.md) и их продолжениями. Дополнительные сведения о модели задач и продолжения см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md).
 
-При возникновении исключения в теле рабочей функции, которая передается в `task` объект, среда выполнения сохраняет это исключение и маршалирует его в контекст, вызывающий [Concurrency:: Task:: Get](reference/task-class.md#get) или [Concurrency:: Task:: wait](reference/task-class.md#wait). [Параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md) в документе описывает продолжения на основе задач и на основе значений, но для суммирования продолжение на основе значений принимает параметр типа `T` , а продолжение на основе задачи принимает параметр типа `task<T>` . Если задача, которая создает исключение, имеет одно или несколько продолжений, основанных на значении, эти продолжения не ставятся в очередь для запуска. Это демонстрируется в приведенном ниже примере.
+При возникновении исключения в теле рабочей функции, которая передается в `task` объект, среда выполнения сохраняет это исключение и маршалирует его в контекст, вызывающий [concurrency::Task:: Get](reference/task-class.md#get) или [concurrency::Task:: wait](reference/task-class.md#wait). [Параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md) в документе описывает продолжения на основе задач и на основе значений, но для суммирования продолжение на основе значений принимает параметр типа `T` , а продолжение на основе задачи принимает параметр типа `task<T>` . Если задача, которая создает исключение, имеет одно или несколько продолжений, основанных на значении, эти продолжения не ставятся в очередь для запуска. Это демонстрируется в приведенном ниже примере.
 
 [!code-cpp[concrt-eh-task#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_1.cpp)]
 
@@ -68,12 +68,12 @@ ms.locfileid: "87230406"
 [!code-cpp[concrt-eh-task-chain#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_3.cpp)]
 
 > [!TIP]
-> Чтобы связать исключение с событием завершения задачи, можно использовать метод [Concurrency:: task_completion_event:: set_exception](../../parallel/concrt/reference/task-completion-event-class.md) . [Параллелизм задачи](../../parallel/concrt/task-parallelism-concurrency-runtime.md) «документ» описывает класс [concurrency:: task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) более подробно.
+> Чтобы связать исключение с событием завершения задачи, можно использовать метод [concurrency::task_completion_event:: set_exception](../../parallel/concrt/reference/task-completion-event-class.md) . [Параллелизм задачи](../../parallel/concrt/task-parallelism-concurrency-runtime.md) «документ» описывает класс [concurrency::task_completion_event](../../parallel/concrt/reference/task-completion-event-class.md) более подробно.
 
-[Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) является важным типом исключения среды выполнения, относящимся к `task` . Среда выполнения создает `task_canceled` при вызове `task::get`, если эта задача отменена. (И наоборот, `task::wait` возвращает [task_status:: Canceled](reference/concurrency-namespace-enums.md#task_group_status) и не создает исключение.) Это исключение можно перехватить и обработать из продолжения на основе задачи или при вызове метода `task::get` . Дополнительные сведения об отмене задач см. [в разделе Отмена в библиотеке PPL](cancellation-in-the-ppl.md).
+[concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) является важным типом исключения среды выполнения, относящимся к `task` . Среда выполнения создает `task_canceled` при вызове `task::get`, если эта задача отменена. (И наоборот, `task::wait` возвращает [task_status:: Canceled](reference/concurrency-namespace-enums.md#task_group_status) и не создает исключение.) Это исключение можно перехватить и обработать из продолжения на основе задачи или при вызове метода `task::get` . Дополнительные сведения об отмене задач см. [в разделе Отмена в библиотеке PPL](cancellation-in-the-ppl.md).
 
 > [!CAUTION]
-> Никогда не вызывайте исключение `task_canceled` из своего кода. Вместо этого вызовите [Concurrency:: cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) .
+> Никогда не вызывайте исключение `task_canceled` из своего кода. Вместо этого вызовите [concurrency::cancel_current_task](reference/concurrency-namespace-functions.md#cancel_current_task) .
 
 Среда выполнения завершает приложение, если задача создает исключение и это исключение не перехватывается задачей, одним из ее продолжений или основным приложением. Если приложение аварийно завершается, можно настроить Visual Studio, чтобы прерывать выполнение при создании исключений C++. После выяснения расположения необработанного исключения используйте продолжение на основе задачи, чтобы обработать его.
 
@@ -83,14 +83,14 @@ ms.locfileid: "87230406"
 
 ## <a name="task-groups-and-parallel-algorithms"></a><a name="task_groups"></a>Группы задач и параллельные алгоритмы
 
-В этом разделе описывается, как среда выполнения обрабатывает исключения, создаваемые группами задач. Этот раздел также применяется к параллельным алгоритмам, таким как [Concurrency::p arallel_for](reference/concurrency-namespace-functions.md#parallel_for), так как эти алгоритмы создаются в группах задач.
+В этом разделе описывается, как среда выполнения обрабатывает исключения, создаваемые группами задач. Этот раздел также применяется к параллельным алгоритмам, таким как [concurrency::parallel_for](reference/concurrency-namespace-functions.md#parallel_for), так как эти алгоритмы создаются в группах задач.
 
 > [!CAUTION]
 > Убедитесь, что вы понимаете влияние исключений на зависимые задачи. Рекомендации по использованию обработки исключений с задачами или параллельными алгоритмами см. в разделе [понимание того, как отмена и обработка исключений влияет на уничтожение объектов](../../parallel/concrt/best-practices-in-the-parallel-patterns-library.md#object-destruction) в рекомендациях в библиотеке параллельных шаблонов.
 
 Дополнительные сведения о группах задач см. в разделе [параллелизм задач](../../parallel/concrt/task-parallelism-concurrency-runtime.md). Дополнительные сведения о параллельных алгоритмах см. в разделе [Параллельные алгоритмы](../../parallel/concrt/parallel-algorithms.md).
 
-При возникновении исключения в теле рабочей функции, которая передается в [Concurrency:: task_group](reference/task-group-class.md) или [concurrency:: structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) Object среда выполнения сохраняет это исключение и маршалирует его в контекст, вызывающий [Concurrency:: task_group:: wait](reference/task-group-class.md#wait), [Concurrency:: structured_task_group:: wait](reference/structured-task-group-class.md#wait), [Concurrency:: task_group:: run_and_wait](reference/task-group-class.md#run_and_wait)или [Concurrency:: structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait). Среда выполнения также останавливает все активные задачи, находящиеся в группе задач (в том числе в дочерних группах задач), и удаляет все задачи, которые еще не запущены.
+При возникновении исключения в теле рабочей функции, которая передается в [concurrency::task_group](reference/task-group-class.md) или [concurrency::structured_task_group](../../parallel/concrt/reference/structured-task-group-class.md) Object среда выполнения сохраняет это исключение и маршалирует его в контекст, вызывающий [concurrency::task_group:: wait](reference/task-group-class.md#wait), [concurrency::structured_task_group:: wait](reference/structured-task-group-class.md#wait), [concurrency::task_group:: run_and_wait](reference/task-group-class.md#run_and_wait)или [concurrency::structured_task_group:: run_and_wait](reference/structured-task-group-class.md#run_and_wait). Среда выполнения также останавливает все активные задачи, находящиеся в группе задач (в том числе в дочерних группах задач), и удаляет все задачи, которые еще не запущены.
 
 В следующем примере показана базовая структура рабочей функции, которая создает исключение. В примере используется `task_group` объект для параллельного вывода значений двух `point` объектов. `print_point`Рабочая функция выводит значения `point` объекта на консоль. Рабочая функция создает исключение, если входное значение равно `NULL` . Среда выполнения сохраняет это исключение и маршалирует его в контекст, вызывающий `task_group::wait` .
 
@@ -108,11 +108,11 @@ X = 15, Y = 30Caught exception: point is NULL.
 
 ## <a name="exceptions-thrown-by-the-runtime"></a><a name="runtime"></a>Исключения, вызываемые средой выполнения
 
-Исключение может быть результатом вызова среды выполнения. Большинство типов исключений, за исключением [Concurrency:: task_canceled](../../parallel/concrt/reference/task-canceled-class.md) и [concurrency:: operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), указывают на ошибку программирования. Эти ошибки обычно невосстанавливаемы, поэтому их не следует перехватывать или обрабатывать с помощью кода приложения. Рекомендуется перехватывать или справляться с неустранимыми ошибками в коде приложения, если требуется диагностировать ошибки программирования. Однако понимание типов исключений, определенных средой выполнения, может помочь в диагностике ошибок программирования.
+Исключение может быть результатом вызова среды выполнения. Большинство типов исключений, за исключением [concurrency::task_canceled](../../parallel/concrt/reference/task-canceled-class.md) и [concurrency::operation_timed_out](../../parallel/concrt/reference/operation-timed-out-class.md), указывают на ошибку программирования. Эти ошибки обычно невосстанавливаемы, поэтому их не следует перехватывать или обрабатывать с помощью кода приложения. Рекомендуется перехватывать или справляться с неустранимыми ошибками в коде приложения, если требуется диагностировать ошибки программирования. Однако понимание типов исключений, определенных средой выполнения, может помочь в диагностике ошибок программирования.
 
-Механизм обработки исключений одинаков для исключений, вызываемых средой выполнения, как исключения, создаваемые рабочими функциями. Например, функция [Concurrency:: Receive](reference/concurrency-namespace-functions.md#receive) создает исключение, `operation_timed_out` если оно не получает сообщение за указанный период времени. Если `receive` вызывает исключение в рабочей функции, которая передается в группу задач, среда выполнения сохраняет это исключение и маршалирует его в контекст, который вызывает,, `task_group::wait` `structured_task_group::wait` `task_group::run_and_wait` или `structured_task_group::run_and_wait` .
+Механизм обработки исключений одинаков для исключений, вызываемых средой выполнения, как исключения, создаваемые рабочими функциями. Например, функция [concurrency::Receive](reference/concurrency-namespace-functions.md#receive) создает исключение, `operation_timed_out` если оно не получает сообщение за указанный период времени. Если `receive` вызывает исключение в рабочей функции, которая передается в группу задач, среда выполнения сохраняет это исключение и маршалирует его в контекст, который вызывает,, `task_group::wait` `structured_task_group::wait` `task_group::run_and_wait` или `structured_task_group::run_and_wait` .
 
-В следующем примере алгоритм [параллелизма::p arallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) используется для параллельного выполнения двух задач. Первая задача ожидает пять секунд, а затем отправляет сообщение в буфер сообщений. Вторая задача использует функцию, `receive` чтобы подождать три секунды, чтобы получить сообщение из того же буфера сообщений. `receive`Функция создает исключение, `operation_timed_out` если она не получает сообщение за период времени.
+В следующем примере алгоритм [параллелизма::parallel_invoke](reference/concurrency-namespace-functions.md#parallel_invoke) используется для параллельного выполнения двух задач. Первая задача ожидает пять секунд, а затем отправляет сообщение в буфер сообщений. Вторая задача использует функцию, `receive` чтобы подождать три секунды, чтобы получить сообщение из того же буфера сообщений. `receive`Функция создает исключение, `operation_timed_out` если она не получает сообщение за период времени.
 
 [!code-cpp[concrt-eh-time-out#1](../../parallel/concrt/codesnippet/cpp/exception-handling-in-the-concurrency-runtime_5.cpp)]
 
@@ -150,7 +150,7 @@ The operation timed out.
 
 ## <a name="lightweight-tasks"></a><a name="lwts"></a>Упрощенные задачи
 
-Упрощенная задача — это задача, запланированная непосредственно из объекта [Concurrency:: Scheduler](../../parallel/concrt/reference/scheduler-class.md) . Упрощенные задачи наносят меньше ресурсов, чем обычные задачи. Однако среда выполнения не перехватывает исключения, создаваемые упрощенными задачами. Вместо этого исключение перехватывается обработчиком необработанных исключений, который по умолчанию завершает процесс. Поэтому используйте в приложении подходящий механизм обработки ошибок. Дополнительные сведения о упрощенных задачах см. в разделе [планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
+Упрощенная задача — это задача, запланированная непосредственно из объекта [concurrency::Scheduler](../../parallel/concrt/reference/scheduler-class.md) . Упрощенные задачи наносят меньше ресурсов, чем обычные задачи. Однако среда выполнения не перехватывает исключения, создаваемые упрощенными задачами. Вместо этого исключение перехватывается обработчиком необработанных исключений, который по умолчанию завершает процесс. Поэтому используйте в приложении подходящий механизм обработки ошибок. Дополнительные сведения о упрощенных задачах см. в разделе [планировщик задач](../../parallel/concrt/task-scheduler-concurrency-runtime.md).
 
 [[Top](#top)]
 
@@ -158,7 +158,7 @@ The operation timed out.
 
 Как и в случае с упрощенными задачами, среда выполнения не управляет исключениями, создаваемыми асинхронными агентами.
 
-В следующем примере показан один из способов обработки исключений в классе, производном от [Concurrency:: Agent](../../parallel/concrt/reference/agent-class.md). В этом примере определяется `points_agent` класс. `points_agent::run`Метод считывает `point` объекты из буфера сообщений и выводит их на консоль. `run`Метод создает исключение, если получает `NULL` указатель.
+В следующем примере показан один из способов обработки исключений в классе, производном от [concurrency::Agent](../../parallel/concrt/reference/agent-class.md). В этом примере определяется `points_agent` класс. `points_agent::run`Метод считывает `point` объекты из буфера сообщений и выводит их на консоль. `run`Метод создает исключение, если получает `NULL` указатель.
 
 `run`Метод окружает всю работу в **`try`** - **`catch`** блоке. **`catch`** Блок хранит исключение в буфере сообщений. Приложение проверяет, обнаружил ли агент ошибку, считывая из этого буфера после завершения работы агента.
 
@@ -175,7 +175,7 @@ the status of the agent is: done
 
 Поскольку **`try`** - **`catch`** блок существует за пределами **`while`** цикла, агент завершает обработку при возникновении первой ошибки. Если **`try`** - **`catch`** блок находится внутри **`while`** цикла, агент продолжит работу после возникновения ошибки.
 
-В этом примере исключения хранятся в буфере сообщений, чтобы другой компонент мог отслеживать на нем ошибки по мере его выполнения. В этом примере используется объект [Concurrency:: single_assignment](../../parallel/concrt/reference/single-assignment-class.md) для хранения ошибки. Если агент обрабатывает несколько исключений, `single_assignment` класс сохраняет только первое передаваемое ему сообщение. Чтобы сохранить только Последнее исключение, используйте класс [Concurrency:: overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) . Чтобы сохранить все исключения, используйте класс [Concurrency:: unbounded_buffer](reference/unbounded-buffer-class.md) . Дополнительные сведения об этих блоках сообщений см. в разделе [асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md).
+В этом примере исключения хранятся в буфере сообщений, чтобы другой компонент мог отслеживать на нем ошибки по мере его выполнения. В этом примере используется объект [concurrency::single_assignment](../../parallel/concrt/reference/single-assignment-class.md) для хранения ошибки. Если агент обрабатывает несколько исключений, `single_assignment` класс сохраняет только первое передаваемое ему сообщение. Чтобы сохранить только Последнее исключение, используйте класс [concurrency::overwrite_buffer](../../parallel/concrt/reference/overwrite-buffer-class.md) . Чтобы сохранить все исключения, используйте класс [concurrency::unbounded_buffer](reference/unbounded-buffer-class.md) . Дополнительные сведения об этих блоках сообщений см. в разделе [асинхронные блоки сообщений](../../parallel/concrt/asynchronous-message-blocks.md).
 
 Дополнительные сведения об асинхронных агентах см. в разделе [асинхронные агенты](../../parallel/concrt/asynchronous-agents.md).
 

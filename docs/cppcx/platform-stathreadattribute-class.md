@@ -32,7 +32,7 @@ public ref class STAThreadAttribute sealed : Attribute
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Конструктор STAThreadAttribute 1](#ctor)|Инициализирует новый экземпляр класса.|
 

@@ -42,7 +42,7 @@ enum IMAGE_EDIT_MODE
 |IMAGE_EDIT_MODE_ELLIPSE|Используется для рисования эллипса.|
 |IMAGE_EDIT_MODE_COLOR|Используется для установки текущего цвета на цвет в текущем положении курсора.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CMFCImagePaintArea`Классы и `CMFCImageEditorDialog` используют это перечисление для установки текущего режима рисования. Режим рисования и текущий цвет используются для изменения области изображения в диалоговом окне редактора изображений. Дополнительные сведения о `CMFCImagePaintArea` и `CMFCImageEditorDialog` см. в разделе [класс перечисление CMFCImagePaintArea](../../mfc/reference/cmfcimagepaintarea-class.md) и [класс кмфЦимажеедитордиалог](../../mfc/reference/cmfcimageeditordialog-class.md).
 
@@ -50,7 +50,7 @@ enum IMAGE_EDIT_MODE
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксимажепаинтареа. h
+**Заголовок:** афксимажепаинтареа.h
 
 ## <a name="see-also"></a>См. также раздел
 

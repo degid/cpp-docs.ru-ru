@@ -72,7 +72,7 @@ wint_t ungetwc(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функция **ungetc** помещает символ *c* обратно в *Stream* и очищает индикатор конца файла. Поток должен быть открыт для чтения. Последующая операция чтения в *потоке* начинается с *c*. Попытка принудительной отправки **EOF** в поток с помощью **ungetc** игнорируется.
 

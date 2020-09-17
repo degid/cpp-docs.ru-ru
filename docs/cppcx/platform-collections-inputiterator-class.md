@@ -44,7 +44,7 @@ class InputIterator;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[InputIterator:: InputIterator](#ctor)|Инициализирует новый экземпляр класса InputIterator.|
 
@@ -52,11 +52,11 @@ class InputIterator;
 
 |Имя|Описание|
 |----------|-----------------|
-|[Оператор InputIterator:: operator! =](#operator-inequality)|Указывает, отличен ли текущий объект InputIterator от указанного объекта InputIterator.|
+|[Оператор InputIterator::operator!=](#operator-inequality)|Указывает, отличен ли текущий объект InputIterator от указанного объекта InputIterator.|
 |[Оператор InputIterator::operator*](#operator-dereference)|Извлекает ссылку на элемент, указанный текущим итератором InputIterator.|
-|[Оператор InputIterator:: operator + +](#operator-increment)|Выполняет приращение текущего итератора InputIterator.|
-|[Оператор InputIterator:: operator = =](#operator-equality)|Указывает, равен ли текущий объект InputIterator указанному объекту InputIterator.|
-|[Оператор InputIterator:: operator->](#operator-arrow)|Извлекает адрес элемента, на который ссылается текущий итератор InputIterator.|
+|[Оператор InputIterator::operator++](#operator-increment)|Выполняет приращение текущего итератора InputIterator.|
+|[Оператор InputIterator::operator==](#operator-equality)|Указывает, равен ли текущий объект InputIterator указанному объекту InputIterator.|
+|[Оператор InputIterator::operator->](#operator-arrow)|Извлекает адрес элемента, на который ссылается текущий итератор InputIterator.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
 
@@ -84,7 +84,7 @@ explicit InputIterator(Windows::Foundation::Collections<X>^ iterator);
 *итераци*<br/>
 Объект итератора.
 
-## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>Оператор InputIterator:: operator- &gt;
+## <a name="inputiteratoroperator-gt-operator"></a><a name="operator-arrow"></a>Оператор InputIterator::operator- &gt;
 
 Извлекает адрес элемента, указанного текущим итератором InputIterator.
 
@@ -98,7 +98,7 @@ pointer operator->() const;
 
 Адрес элемента, указанного текущим итератором InputIterator.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a>Оператор InputIterator:: operator \*
+## <a name="inputiteratoroperator-operator"></a><a name="operator-dereference"></a>Оператор InputIterator::operator \*
 
 Извлекает ссылку на элемент, указанный текущим итератором InputIterator.
 
@@ -112,7 +112,7 @@ reference operator*() const;
 
 Элемент, указанный текущим итератором InputIterator.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>Оператор InputIterator:: operator = =
+## <a name="inputiteratoroperator-operator"></a><a name="operator-equality"></a>Оператор InputIterator::operator==
 
 Указывает, равен ли текущий объект InputIterator указанному объекту InputIterator.
 
@@ -131,7 +131,7 @@ bool operator== (const InputIterator& other) const;
 
 **`true`** значение, если текущий InputIterator равен *другому*; в противном случае — **`false`** .
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор InputIterator:: operator + +
+## <a name="inputiteratoroperator-operator"></a><a name="operator-increment"></a>Оператор InputIterator::operator++
 
 Выполняет приращение текущего итератора InputIterator.
 
@@ -146,13 +146,13 @@ InputIterator operator++(int);
 
 Первый синтаксис выполняет приращение текущего итератора InputIterator и возвращает его. Второй синтаксис возвращает копию текущего итератора InputIterator, а затем выполняет приращение текущего итератора InputIterator.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый синтаксис InputIterator выполняет приращение текущего итератора InputIterator перед его использованием.
 
 Второй синтаксис выполняет приращение текущего итератора InputIterator после его использования. **`int`** Тип во втором синтаксисе указывает на операцию после приращения, а не на фактический целочисленный операнд.
 
-## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>Оператор InputIterator:: operator! =
+## <a name="inputiteratoroperator-operator"></a><a name="operator-inequality"></a>Оператор InputIterator::operator!=
 
 Указывает, отличен ли текущий объект InputIterator от указанного объекта InputIterator.
 

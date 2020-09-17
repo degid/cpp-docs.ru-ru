@@ -40,7 +40,7 @@ class CSplitterWndEx : public CSplitterWnd
 |----------|-----------------|
 |[CSplitterWndEx::OnDrawSplitter](#ondrawsplitter)|Вызывается по фреймворку, чтобы нарисовать окно сплиттера. (Переопределяет [CSplitterWnd::OnDrawSplitter](csplitterwnd-class.md#ondrawsplitter).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Переопределить `OnDrawSplitter` метод настройки внешнего вида графических компонентов окна сплиттера.
 
@@ -83,7 +83,7 @@ virtual void OnDrawSplitter(
 *rect*<br/>
 (в) Ограничивающий прямоугольник, который определяет размеры и местоположение для рисования указанного элемента окна сплиттера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

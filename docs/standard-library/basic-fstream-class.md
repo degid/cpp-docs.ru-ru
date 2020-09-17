@@ -42,7 +42,7 @@ class basic_fstream : public basic_iostream<Elem, Tr>
 *ТС*\
 Признаки базового элемента буфера файла (обычно `char_traits`< `Elem`>).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Объект сохраняет объект класса `basic_filebuf`< `Elem`, `Tr`>.
 
@@ -97,7 +97,7 @@ Writing to a basic_fstream object...
 |[is_open](#is_open)|Определяет, открыт ли файл.|
 |[open](#open)|Открывает файл.|
 |[rdbuf](#rdbuf)|Возвращает адрес хранимого буфера потока типа pointer в [basic_filebuf](../standard-library/basic-filebuf-class.md) <  `Elem` `Tr`>.|
-|[позиции](#swap)|Меняет местами содержимое данного объекта с содержимым другого объекта `basic_fstream`.|
+|[swap](#swap)|Меняет местами содержимое данного объекта с содержимым другого объекта `basic_fstream`.|
 
 ## <a name="requirements"></a>Требования
 
@@ -136,7 +136,7 @@ basic_fstream(basic_fstream&& right);
 *_Prot*\
 Защита открытия файлов по умолчанию, эквивалентная параметру *шфлаг* в [_fsopen _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор инициализирует базовый класс путем вызова [basic_iostream](../standard-library/basic-iostream-class.md)( `sb` ), где `sb` — это хранимый объект класса [basic_filebuf](../standard-library/basic-filebuf-class.md) \< **Elem**, **Tr**> . Он также инициализируется `sb` путем вызова `basic_filebuf` \< **Elem**, **Tr**> .
 
@@ -156,7 +156,7 @@ basic_fstream(basic_fstream&& right);
 void close();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена вызывает [rdbuf](#rdbuf) **->** [Close](../standard-library/basic-filebuf-class.md#close).
 
@@ -176,7 +176,7 @@ bool is_open() const;
 
 **`true`** значение, если файл открыт; **`false`** в противном случае —.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена возвращает [rdbuf](#rdbuf) **->** [is_open](../standard-library/basic-filebuf-class.md#is_open).
 
@@ -219,7 +219,7 @@ void open(
 *_Prot*\
 Защита открытия файлов по умолчанию, эквивалентная параметру *шфлаг* в [_fsopen _wfsopen](../c-runtime-library/reference/fsopen-wfsopen.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член вызывает [rdbuf](#rdbuf) **->** [Open](../standard-library/basic-filebuf-class.md#open)(_ *filename*, `_Mode` ). Если эта функция возвращает пустой указатель, функция вызывает [SetState](../standard-library/basic-ios-class.md#setstate)( `failbit` ).
 
@@ -227,7 +227,7 @@ void open(
 
 Пример использования см. в разделе [basic_filebuf:: Open](../standard-library/basic-filebuf-class.md#open) `open` .
 
-## <a name="basic_fstreamoperator"></a><a name="op_eq"></a>basic_fstream:: operator =
+## <a name="basic_fstreamoperator"></a><a name="op_eq"></a>basic_fstream::operator=
 
 Назначает этому объекту содержимое из указанного объекта потока. Это назначение перемещения с использованием rvalue, после которого не остается копии.
 
@@ -237,14 +237,14 @@ basic_fstream& operator=(basic_fstream&& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка lvalue на объект `basic_fstream`.
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 Возвращает **`*this`** .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор Member заменяет содержимое объекта с помощью содержимого *right*, которое рассматривается как ссылка rvalue.
 
@@ -274,10 +274,10 @@ void swap(basic_fstream& right);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Ссылка `lvalue` на объект `basic_fstream`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция элемента обменивается содержимым этого объекта и содержимым *right*.
 

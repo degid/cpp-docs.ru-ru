@@ -63,20 +63,20 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |`target_iterator`|Итератор для прохода по подключенным целевым объектам.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[source_block](#ctor)|Формирует объект `source_block`.|
 |[Деструктор ~ source_block](#dtor)|Уничтожает `source_block` объект.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[гласит](#accept)|Принимает сообщение, которое было предложено этим `source_block` объектом, передавая владение вызывающему объекту.|
 |[acquire_ref](#acquire_ref)|Получает счетчик ссылок на этот `source_block` объект, чтобы предотвратить удаление.|
@@ -84,13 +84,13 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 |[link_target](#link_target)|Связывает целевой блок с этим `source_block` объектом.|
 |[отпускании](#release)|Освобождает предыдущее успешное резервирование сообщения.|
 |[release_ref](#release_ref)|Освобождает счетчик ссылок на этот `source_block` объект.|
-|[предназначен](#reserve)|Резервирует сообщение, которое было ранее предложено этим `source_block` объектом.|
+|[reserve](#reserve)|Резервирует сообщение, которое было ранее предложено этим `source_block` объектом.|
 |[unlink_target](#unlink_target)|Отменяет связь с целевым блоком из этого `source_block` объекта.|
 |[unlink_targets](#unlink_targets)|Отменяет связь всех целевых блоков с этим `source_block` объектом. (Переопределяет метод [ISource:: unlink_targets](isource-class.md#unlink_targets).)|
 
 ### <a name="protected-methods"></a>Защищенные методы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[accept_message](#accept_message)|При переопределении в производном классе принимает предлагаемое сообщение источником. Блоки сообщений должны переопределять этот метод для проверки `_MsgId` и возврата сообщения.|
 |[async_send](#async_send)|Асинхронно ставит в очередь сообщения и запускает задачу распространения, если это еще не сделано.|
@@ -109,7 +109,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 |[unlink_target_notification](#unlink_target_notification)|Обратный вызов, уведомляющий о том, что для цели удалена связь с этим `source_block` объектом.|
 |[wait_for_outstanding_async_sends](#wait_for_outstanding_async_sends)|Ожидает завершения всех асинхронных распространителей. Это время ожидания для этого распространителя используется в деструкторах блоков сообщений, чтобы убедиться в том, что все асинхронные распространители имеют достаточно времени для завершения перед уничтожением блока.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Блоки сообщений должны быть производными от этого блока, чтобы воспользоваться преимуществами управления ссылками и синхронизации, предоставляемыми этим классом.
 
@@ -123,7 +123,7 @@ class source_block : public ISource<typename _TargetLinkRegistry::type::type>;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept"></a><a name="accept"></a>гласит
 
@@ -147,7 +147,7 @@ virtual message<_Target_type>* accept(
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 
@@ -170,7 +170,7 @@ virtual message<_Target_type>* accept_message(runtime_object_identity _MsgId) = 
 
 Указатель на сообщение о том, что вызывающий объект теперь является владельцем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы передавать владение, должен быть возвращен указатель на исходный текст. Чтобы обеспечить владение, необходимо выполнить и вернуть копию полезных данных сообщения.
 
@@ -182,7 +182,7 @@ virtual message<_Target_type>* accept_message(runtime_object_identity _MsgId) = 
 virtual void acquire_ref(_Inout_ ITarget<_Target_type> *);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается `ITarget` объектом, который связан с этим источником во время выполнения `link_target` метода.
 
@@ -221,7 +221,7 @@ virtual message<_Target_type>* consume(
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 
@@ -246,7 +246,7 @@ virtual message<_Target_type>* consume_message(runtime_object_identity _MsgId) =
 
 Указатель на сообщение о том, что вызывающий объект теперь является владельцем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -289,7 +289,7 @@ virtual void link_target(_Inout_ ITarget<_Target_type>* _PTarget);
 *_PTarget*<br/>
 Указатель на `ITarget` блок, связываемый с этим `source_block` объектом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 
@@ -353,7 +353,7 @@ virtual void release(
 *_PTarget*<br/>
 Указатель на целевой блок, вызывающий `release` метод.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 
@@ -385,7 +385,7 @@ virtual void release_ref(_Inout_ ITarget<_Target_type>* _PTarget);
 *_PTarget*<br/>
 Указатель на целевой блок, вызывающий этот метод.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод вызывается `ITarget` объектом, для которого удаляется связь из этого источника. Блоку источника разрешено освобождать все ресурсы, зарезервированные для целевого блока.
 
@@ -419,7 +419,7 @@ virtual bool reserve(
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае. Резервирования могут завершаться неудачей по ряду причин, включая следующие: сообщение уже было зарезервировано или принято другим целевым объектом, источник может отклонять резервирования и т. п.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 
@@ -442,7 +442,7 @@ virtual bool reserve_message(runtime_object_identity _MsgId) = 0;
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -496,7 +496,7 @@ virtual void unlink_target(_Inout_ ITarget<_Target_type>* _PTarget);
 *_PTarget*<br/>
 Указатель на `ITarget` блок, который необходимо удалить из этого `source_block` объекта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр имеет значение `_PTarget` `NULL` .
 

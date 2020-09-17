@@ -58,7 +58,7 @@ class time_point;
 
 |Имя|Описание|
 |----------|-----------------|
-|[time_point::оператор](#op_add_eq)|Добавляет указанное значение к хранимой длительности.|
+|[time_point::operator](#op_add_eq)|Добавляет указанное значение к хранимой длительности.|
 |[time_point::operator-=](#operator-_eq)|Вычитает заданное значение из хранимой длительности.|
 
 ## <a name="requirements"></a>Требования
@@ -91,7 +91,7 @@ static constexpr time_point min();
 
 Фактически возвращает `time_point(duration::min())`.
 
-## <a name="time_pointoperator"></a><a name="op_add_eq"></a>time_point::оператор
+## <a name="time_pointoperator"></a><a name="op_add_eq"></a>time_point::operator
 
 Добавляет указанное значение к хранимому значению [duration](../standard-library/duration-class.md).
 
@@ -146,7 +146,7 @@ constexpr time_point(const time_point<clock, Duration2>& Tp);
 *Tp*\
 Объект `time_point` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый конструктор создает объект, хранимое значение `duration` которого равно [duration::zero](../standard-library/duration-class.md#zero).
 

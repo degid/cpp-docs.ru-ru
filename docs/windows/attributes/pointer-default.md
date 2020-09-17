@@ -28,7 +28,7 @@ ms.locfileid: "88836196"
 *value*<br/>
 Значение типа, описывающее тип указателя: **ptr**, **ref**или **UNIQUE**.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **pointer_default** C++ имеет те же функциональные возможности, что и атрибут [pointer_default](/windows/win32/Midl/pointer-default) MIDL.
 

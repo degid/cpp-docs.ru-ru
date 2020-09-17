@@ -25,7 +25,7 @@ ms.locfileid: "87389952"
 Возврат объекта с заданной областью вместо выделения кучи, если он содержит конструктор перемещения. См. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26403 RESET_OR_DELETE_OWNER](C26403.md)\
-Сброс или явное удаление \<T> указателя владельца "*переменная*". См. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
+Сброс или явное удаление \<T> указателя владельца "*variable*". См. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26404 DONT_DELETE_INVALID](C26404.md)\
 Не удаляйте владельца \<T> , который может находиться в недопустимом состоянии. См. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
@@ -46,12 +46,12 @@ ms.locfileid: "87389952"
 Символ "*symbol*" не проверяется на допустимость значений NULL для всех путей. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 [C26431 DONT_TEST_NOTNULL](C26431.md)\
-Тип выражения "*expr*" уже GSL:: NOT_NULL. Не проверяйте его на допустимость значений NULL. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+Тип выражения "*expr*" уже gsl::not_null. Не проверяйте его на допустимость значений NULL. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 ## <a name="raw_pointer-group"></a>Группа RAW_POINTER
 
 [C26400 NO_RAW_POINTER_ASSIGNMENT](c26400.md)\
-Не присваивайте результат выделения или вызова функции с \<T> возвращаемым значением Owner необработанному указателю; \<T> вместо этого используйте Owner. См. [C++ Core Guidelines I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
+Не присваивайте результат выделения или вызова функции с \<T> возвращаемым значением owner необработанному указателю; \<T> вместо этого используйте owner. См. [C++ Core Guidelines I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
 
 [C26401 DONT_DELETE_NON_OWNER](c26401.md)\
 Не удаляйте необработанный указатель, который не является владельцем \<T> . См. [C++ Core Guidelines I. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Ri-raw).
@@ -60,10 +60,10 @@ ms.locfileid: "87389952"
 Возврат объекта с заданной областью вместо выделения кучи, если он содержит конструктор перемещения. См. [C++ Core Guidelines R. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-ptr).
 
 [C26408 NO_MALLOC_FREE](C26408.md)\
-Избегайте функции malloc () и Free (), предпочитать версию New с DELETE. См. [C++ Core Guidelines R. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree).
+Избегайте функции malloc() и free(), предпочитать версию new с delete. См. [C++ Core Guidelines R. 10](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-mallocfree).
 
 [C26409 NO_NEW_DELETE](C26409.md)\
-Старайтесь не вызывать метод New и DELETE явным образом, вместо этого используйте std:: make_unique \<T> . См. статью [C++ Core Guidelines R. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete).
+Старайтесь не вызывать метод new и delete явным образом, вместо этого используйте std::make_unique \<T> . См. статью [C++ Core Guidelines R. 11](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-newdelete).
 
 [C26429 USE_NOTNULL](C26429.md)\
 Символ "*symbol*" никогда не проверяется на значения NULL, его можно пометить как NOT_NULL. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
@@ -72,10 +72,10 @@ ms.locfileid: "87389952"
 Символ "*symbol*" не проверяется на допустимость значений NULL для всех путей. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 [C26431 DONT_TEST_NOTNULL](C26431.md)\
-Тип выражения "*expr*" уже GSL:: NOT_NULL. Не проверяйте его на допустимость значений NULL. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
+Тип выражения "*expr*" уже gsl::not_null. Не проверяйте его на допустимость значений NULL. См. [C++ Core Guidelines F. 23](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f23-use-a-not_nullt-to-indicate-that-null-is-not-a-valid-value).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)\
-Не используйте арифметические операции с указателями. Вместо этого используйте Span. См [. раздел C++ Core Guidelines boundss. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
+Не используйте арифметические операции с указателями. Вместо этого используйте span. См [. раздел C++ Core Guidelines boundss. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
 
 [C26485 NO_ARRAY_TO_POINTER_DECAY](C26485.md)\
 Выражение "*expr*": нет массива для Decay указателя. См [. раздел C++ Core Guidelines boundss. 3](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds).
@@ -92,7 +92,7 @@ ms.locfileid: "87389952"
 Перемещение, копирование, повторное присвоение или сброс локального смарт-указателя "*symbol*". См. [C++ Core Guidelines R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)\
-Параметр интеллектуального указателя "*символ*" используется только для доступа к содержащему указателю. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
+Параметр интеллектуального указателя "*symbol*" используется только для доступа к содержащему указателю. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
 ## <a name="shared_pointer-group"></a>Группа SHARED_POINTER
 
@@ -100,21 +100,21 @@ ms.locfileid: "87389952"
 Перемещение, копирование, повторное присвоение или сброс локального смарт-указателя "*symbol*". См. [C++ Core Guidelines R. 5](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-scoped).
 
 [C26415 SMART_PTR_NOT_NEEDED](C26415.md)\
-Параметр интеллектуального указателя "*символ*" используется только для доступа к содержащему указателю. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
+Параметр интеллектуального указателя "*symbol*" используется только для доступа к содержащему указателю. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 30](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-smartptrparam).
 
 [C26416 NO_RVALUE_REF_SHARED_PTR](C26416.md)\
-Параметр общего указателя "*символ*" передан ссылкой rvalue. Вместо этого передается значение. См. [C++ Core Guidelines R. 34](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-owner).
+Параметр общего указателя "*symbol*" передан ссылкой rvalue. Вместо этого передается значение. См. [C++ Core Guidelines R. 34](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-owner).
 
 [C26417 NO_LVALUE_REF_SHARED_PTR](C26417.md)\
 Параметр общего указателя "*symbol*" передается по ссылке, а не сбрасывается или не переназначается. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 35](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam).
 
 [C26418 NO_VALUE_OR_CONST_REF_SHARED_PTR](C26418.md)\
-Параметр общего указателя "*символ*" не копируется или не перемещается. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
+Параметр общего указателя "*symbol*" не копируется или не перемещается. Вместо этого используйте T * или T&. См. [C++ Core Guidelines R. 36](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Rr-sharedptrparam-const).
 
 ## <a name="declaration-group"></a>Группа объявлений
 
 [C26426 NO_GLOBAL_INIT_CALLS](C26426.md)\
-Глобальный инициализатор вызывает функцию "*символ*", не относящуюся к constexpr. См. [C++ Core Guidelines I. 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
+Глобальный инициализатор вызывает функцию "*symbol*", не относящуюся к constexpr. См. [C++ Core Guidelines I. 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
 
 [C26427 NO_GLOBAL_INIT_EXTERNS](C26427.md)\
 Глобальный инициализатор обращается к внешнему объекту "*symbol*". См. [C++ Core Guidelines I. 22](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#i22-avoid-complex-initialization-of-global-objects).
@@ -176,10 +176,10 @@ ms.locfileid: "87389952"
 Значение, на которое указывает "*variable*", присваивается только один раз. пометьте его как указатель на `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
 [C26463 USE_CONST_FOR_ELEMENTS](c26463.md)\
-Элементы массива "*массив*" назначаются только один раз. Пометьте элементы `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+Элементы массива "*array*" назначаются только один раз. Пометьте элементы `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
 [C26464 USE_CONST_POINTER_FOR_ELEMENTS](c26464.md)\
-Значения, на которые указывают элементы массива "*Array*", присваиваются только один раз. Пометьте элементы как указатели на `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
+Значения, на которые указывают элементы массива "*array*", присваиваются только один раз. Пометьте элементы как указатели на `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
 
 [C26496 USE_CONST_FOR_VARIABLE](c26496.md)\
 Переменная "*переменная*" назначается только один раз, пометьте ее как `const` . См. раздел [C++ Core Guidelines Con. 4](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#con4-use-const-to-define-objects-with-values-that-do-not-change-after-construction).
@@ -205,7 +205,7 @@ ms.locfileid: "87389952"
 Не используйте `reinterpret_cast` . Приведение из void * может использовать `static_cast` . См. [C++ Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26472 NO_CASTS_FOR_ARITHMETIC_CONVERSION](C26472.md)\
-Не используйте `static_cast` для арифметических преобразований. Используйте скобки для инициализации, GSL:: narrow_cast или GSL:: narrow. См. [C++ Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
+Не используйте `static_cast` для арифметических преобразований. Используйте скобки для инициализации, gsl::narrow_cast или gsl::narrow. См. [C++ Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
 
 [C26473 NO_IDENTITY_CAST](C26473.md)\
 Не применяйте типы указателей, где исходный и конечный типы совпадают. См. [C++ Core Guidelines Type. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#Pro-type-reinterpretcast).
@@ -240,7 +240,7 @@ ms.locfileid: "87389952"
 Предпочитать использовать `gsl::at()` вместо непроверенного оператора индекса. См. раздел [C++ Core Guidelines: boundss. 4. не используйте функции и типы стандартной библиотеки, которые не имеют установленных ограничений](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#probounds-bounds-safety-profile).
 
 [C26481 NO_POINTER_ARITHMETIC](C26481.md)\
-Не используйте арифметические операции с указателями. Вместо этого используйте Span. См [. раздел C++ Core Guidelines Bounds. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
+Не используйте арифметические операции с указателями. Вместо этого используйте span. См [. раздел C++ Core Guidelines Bounds. 1](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)
 
 [C26482 NO_DYNAMIC_ARRAY_INDEXING](c26482.md)\
 Индексировать в массивы следует только с помощью константных выражений. См [. раздел C++ Core Guidelines Bounds. 2](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#SS-bounds)

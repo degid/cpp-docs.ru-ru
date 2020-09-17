@@ -28,7 +28,7 @@ ms.locfileid: "88836134"
 typedef basic_string_view<char, char_traits<char>> string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Следующие объявления являются равнозначными:
 
@@ -48,7 +48,7 @@ basic_string_view<char> str("Hello");
 typedef basic_string_view<char16_t, char_traits<char16_t>> u16string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -60,7 +60,7 @@ typedef basic_string_view<char16_t, char_traits<char16_t>> u16string_view;
 typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Список конструкторов строк см. в разделе [basic_string::basic_string](../standard-library/basic-string-class.md#basic_string).
 
@@ -72,7 +72,7 @@ typedef basic_string_view<char32_t, char_traits<char32_t>> u32string_view;
 typedef basic_string_view<wchar_t, char_traits<wchar_t>> wstring_view;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Следующие объявления являются равнозначными:
 

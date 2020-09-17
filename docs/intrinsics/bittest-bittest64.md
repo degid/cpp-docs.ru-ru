@@ -53,8 +53,8 @@ unsigned char _bittest64(
 
 |Встроенная функция|Архитектура|Header|
 |---------------|------------------|------------|
-|`_bittest`|x86, ARM, x64, ARM64|\<> Intrin. h|
-|`_bittest64`|ARM64, x64|\<> Intrin. h|
+|`_bittest`|x86, ARM, x64, ARM64|\<> Intrin.h|
+|`_bittest64`|ARM64, x64|\<> Intrin.h|
 
 ## <a name="remarks"></a>Примечания
 

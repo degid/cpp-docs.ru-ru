@@ -36,7 +36,7 @@ class ComPtrRefBase;
 *T*<br/>
 [ComPtr\<T>](comptr-class.md) тип или тип, полученный из него, а не только интерфейс, представленный `ComPtr`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Представляет базовый класс для класса [ComPtrRef.](comptrref-class.md)
 
@@ -79,7 +79,7 @@ class ComPtrRefBase;
 operator IInspectable**() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отбрасывает [текущий](#ptr) ptr_ член данных на указатель на указатель `IInspectable` на интерфейс.
 
@@ -95,7 +95,7 @@ operator IInspectable**() const;
 operator IUnknown**() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Отбрасывает [текущий](#ptr) ptr_ член данных на указатель на указатель `IUnknown` на интерфейс.
 
@@ -109,6 +109,6 @@ operator IUnknown**() const;
 T* ptr_;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указатель на тип, заданный текущим параметром шаблона. `ptr_`защищенный член данных.

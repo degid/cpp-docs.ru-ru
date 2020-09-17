@@ -234,7 +234,7 @@ class CFileDialog : public CCommonDialog
 |----------|-----------------|
 |[CFileДиалог::m_ofn](#m_ofn)|Структура `OPENFILENAME` Windows. Обеспечивает доступ к основным параметрам файлового диалогового окна.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Общие файлдиалоговые коробки позволяют реализовать диалоговые коробки для выбора файлов, например, **Open File** и **Save As,** в соответствии со стандартами Windows.
 
@@ -324,7 +324,7 @@ HRESULT AddCheckButton(
 *bChecked*<br/>
 Boolean, указывающий текущее состояние кнопки проверки. TRUE, если проверено; FALSE в противном случае
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddcombobox"></a><a name="addcombobox"></a>CFileДиалог::AddComboBox
 
@@ -339,7 +339,7 @@ HRESULT AddComboBox(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Id комбо-бокс, чтобы добавить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddcontrolitem"></a><a name="addcontrolitem"></a>CFileДиалог::AddControlItem
 
@@ -363,7 +363,7 @@ HRESULT AddControlItem(
 *strLabel*<br/>
 Текст предмета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddeditbox"></a><a name="addeditbox"></a>CFileDialog::AddEditBox
 
@@ -383,7 +383,7 @@ HRESULT AddEditBox(
 *strText*<br/>
 Название коробки для отсечения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddmenu"></a><a name="addmenu"></a>CFileДиалог::AddMenu
 
@@ -403,7 +403,7 @@ HRESULT AddMenu(
 *strLabel*<br/>
 Название меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddplace"></a><a name="addplace"></a>CFileДиалог::AddPlace
 
@@ -430,7 +430,7 @@ void AddPlace(
 *psi*<br/>
 Указатель на IShellItem, представляющий папку, которая будет доступна пользователю. Это может быть только папка.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddpushbutton"></a><a name="addpushbutton"></a>CFileДиалог::AddPushButton
 
@@ -450,7 +450,7 @@ HRESULT AddPushButton(
 *strLabel*<br/>
 Имя кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddradiobuttonlist"></a><a name="addradiobuttonlist"></a>CFileDialog::AddRadioButtonList
 
@@ -465,7 +465,7 @@ HRESULT AddRadioButtonList(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Идентификатор группы кнопок опции для добавления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddseparator"></a><a name="addseparator"></a>CFileDialog:AddSeparator
 
@@ -480,7 +480,7 @@ HRESULT AddSeparator(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Id сепаратора добавить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogaddtext"></a><a name="addtext"></a>CFileДиалог::AddText
 
@@ -500,7 +500,7 @@ HRESULT AddText(
 *strText*<br/>
 Текстовое имя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogapplyofntoshelldialog"></a><a name="applyofntoshelldialog"></a>CFileDialog::ApplyOFNToShellDialog
 
@@ -510,7 +510,7 @@ HRESULT AddText(
 void ApplyOFNToShellDialog();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В версиях Windows до Windows Vista структура данных [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) непрерывно синхронизировалась с состоянием `CFileDialog`. Любые [m_ofn](#m_ofn) изменения в переменной члена немедленно были отражены в состоянии диалогового окна. Кроме того, любые изменения состояния диалогового `m_ofn` окна немедленно обновляют переменную участника.
 
@@ -566,7 +566,7 @@ explicit CFileDialog(
 
 Параметр, означающие стиль диалога файлов. Установите его в истинном, чтобы использовать новый стиль Vista диалогов. В противном случае будет использоваться старый стиль диалоговых коробок. Более подробную информацию о запуске под Vista можно посмотреть в разделе «Замечания».
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Либо **файл Открыть** или **файл сохранить как** диалоговый ящик построен, в зависимости от значения *bOpenFileDialog*.
 
@@ -608,7 +608,7 @@ IDOK или IDCANCEL. Если IDCANCEL возвращается, позвони
 
 IDOK и IDCANCEL являются константами, указывающими на то, выбрал ли пользователь кнопку OK или Cancel.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные параметры диалогового ящика файлов, установив члены `m_ofn` структуры, вы должны сделать это перед вызовом, `DoModal`но после построения объекта диалога.
 
@@ -635,7 +635,7 @@ HRESULT EnableOpenDropDown(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Идентификатор списка выпадающих.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogendvisualgroup"></a><a name="endvisualgroup"></a>CFileДиалог::EndVisualGroup
 
@@ -649,7 +649,7 @@ HRESULT EndVisualGroup();
 
 Возвращает S_OK в случае успеха; значение ошибки в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetcheckbuttonstate"></a><a name="getcheckbuttonstate"></a>CFileДиалог::GetCheckButtonState
 
@@ -669,7 +669,7 @@ HRESULT GetCheckButtonState(
 *bChecked*<br/>
 Состояние флажка. TRUE указывает проверенные; FALSE указывает на беспрепятственное.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetcontrolitemstate"></a><a name="getcontrolitemstate"></a>CFileДиалог::GetControlItemState
 
@@ -693,7 +693,7 @@ HRESULT GetControlItemState(
 *dwState*<br/>
 Ссылка на переменную, которая получает одно из дополнительных значений из перечисления CDCONTROLSTATE, которое указывает текущее состояние элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetcontrolstate"></a><a name="getcontrolstate"></a>CFileДиалог:GetControlState
 
@@ -713,7 +713,7 @@ HRESULT GetControlState(
 *dwState*<br/>
 Ссылка на переменную, которая получает одно или несколько значений из перечисления CDCONTROLSTATE, которое указывает текущее состояние элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggeteditboxtext"></a><a name="geteditboxtext"></a>CFileDialog::GetEditBoxText
 
@@ -733,7 +733,7 @@ HRESULT GetEditBoxText(
 *strText*<br/>
 Текстовое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetfileext"></a><a name="getfileext"></a>CFileДиалог::GetFileExt
 
@@ -747,7 +747,7 @@ CString GetFileExt() const;
 
 Расширение имени файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Например, если имя ввода файла data. TXT, `GetFileExt` возвращает "TXT".
 
@@ -765,7 +765,7 @@ CString GetFileName() const;
 
 Имя файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Название файла включает в себя как префикс, так и расширение. Например, `GetFileName` вернется "TEXT. DAT" для файла C: (FILES-TEXT.DAT.
 
@@ -783,7 +783,7 @@ CString GetFileTitle() const;
 
 Название файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Название файла включает в себя только его префикс, без пути или расширения. Например, `GetFileTitle` будет возвращена "TEXT" для файла C: (FILES-TEXT.DAT).
 
@@ -805,7 +805,7 @@ CString GetFolderPath() const;
 
 Объект [CString,](../../atl-mfc-shared/reference/cstringt-class.md) содержащий в настоящее время открытую папку или каталог.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Коробка диалога должна быть создана в стиле OFN_EXPLORER; в противном случае метод не сможет сделать утверждение.
 
@@ -823,7 +823,7 @@ IFileDialogCustomize* GetIFileDialogCustomize();
 
 Указатель на внутренний объект `CFileDialog`COM для . Это ваша ответственность, чтобы освободить этот указатель надлежащим образом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию только под Windows Vista или позже с объектом, который *bVistaStyle* установлен на TRUE. Если вы используете эту функцию, когда *bVistaStyle* является FALSE, он будет возвращатьNULL в режиме выпуска и бросить утверждение в режиме отладки.
 
@@ -847,7 +847,7 @@ IFileOpenDialog* GetIFileOpenDialog();
 
 Указатель на внутренний объект `CFileDialog`COM для . Это ваша ответственность, чтобы освободить этот указатель надлежащим образом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию только под Windows Vista или позже с объектом, который *bVistaStyle* установлен на TRUE. Эта функция возвращает `CFileDialog` NULL, если это не **открытое** поле диалога или если *bVistaStyle* настроен на FALSE. В этом последнем случае функция возвращает null только в режиме выпуска - в режиме отладки она будет бросать утверждение.
 
@@ -871,7 +871,7 @@ IFileSaveDialog* GetIFileSaveDialog();
 
 Указатель на внутренний объект `CFileDialog`COM для . Это ваша ответственность, чтобы освободить этот указатель надлежащим образом.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию только под Windows Vista или позже с объектом, который *bVistaStyle* установлен на TRUE. Эта функция будет возвращатьnull, если `CFileDialog` не является диалоговая коробка **Сохранить** или если *bVistaStyle* установлен на FALSE. В этом последнем случае функция возвращает null только в режиме выпуска - в режиме отладки она будет бросать утверждение.
 
@@ -900,7 +900,7 @@ CString GetNextPathName(POSITION& pos) const;
 
 Полный путь к файлу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Путь имени файла включает в себя название файла плюс весь путь каталога. Например, `GetNextPathName` вернется "C:-FILES-TEXT. DAT" для файла C: (FILES-TEXT.DAT. Вы можете `GetNextPathName` использовать в цикле передних итерации, если `GetStartPosition`установить исходное положение с вызовом.
 
@@ -920,7 +920,7 @@ OPENFILENAME& GetOFN();
 
 Структура [OPENFILENAME.](/windows/win32/api/commdlg/ns-commdlg-openfilenamew)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте вторую версию этой функции, чтобы инициализировать внешний вид **файла Open** или Файл `DoModal` сохранить как диалоговый ящик после того, **как** он построен, но прежде чем он отображается с функцией члена. Например, можно установить `lpstrTitle` `m_ofn` участника в заголовок, который вы хотите иметь в диалоговом поле.
 
@@ -936,7 +936,7 @@ CString GetPathName() const;
 
 Полный путь к файлу.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Путь имени файла включает в себя название файла плюс весь путь каталога. Например, `GetPathName` вернется "C:-FILES-TEXT. DAT" для файла C: (FILES-TEXT.DAT.
 
@@ -958,7 +958,7 @@ BOOL GetReadOnlyPref() const;
 
 Ненулевой, если выбранчекфлайта Read Only в диалоговом поле; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете скрыть флажок Read Only, `CFileDialog` установив OFN_HIDEREADONLY стиль в конструкторе.
 
@@ -977,7 +977,7 @@ IShellItem* GetResult() throw();
 
 Указатель на IShellItem, представляющий выбор пользователя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetresults"></a><a name="getresults"></a>CFileДиалог::GetResults
 
@@ -991,7 +991,7 @@ IShellItemArray* GetResults() throw();
 
 Указатель на IShellItemArray, через который можно получить доступ к элементам, выбранным в диалоге.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetselectedcontrolitem"></a><a name="getselectedcontrolitem"></a>CFileDialog::GetSelectedControlItem
 
@@ -1011,7 +1011,7 @@ HRESULT GetSelectedControlItem(
 *dwIDItem*<br/>
 Идентификатор элемента, выбранного пользователем в элементе управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialoggetstartposition"></a><a name="getstartposition"></a>CFileДиалог::GetStartPosition
 
@@ -1038,7 +1038,7 @@ void HideControl(int nID);
 *nID*<br/>
 Идентификатор элемента управления, чтобы скрыть.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Коробка диалога должна быть создана в стиле OFN_EXPLORER; в противном случае функция не сработает с утверждением.
 
@@ -1054,13 +1054,13 @@ BOOL IsPickFoldersMode() const;
 
 TRUE, если диалог находится в режиме сборщика папок; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogm_ofn"></a><a name="m_ofn"></a>CFileДиалог::m_ofn
 
 `m_ofn`представляет собой структуру типа `OPENFILENAME`. Данные в этой структуре представляют `CFileDialog`текущее состояние .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту структуру, чтобы инициализировать внешний вид **файла Open** или **Файл сохранить как** диалоговый ящик после того, как построить его, но прежде чем отображать его с методом [DoModal.](#domodal) Например, можно установить член *lpstrTitle* `m_ofn` в заголовок, который вы хотите иметь в диалоговом поле.
 
@@ -1121,7 +1121,7 @@ HRESULT MakeProminent(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Идентификатор элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogonbuttonclicked"></a><a name="onbuttonclicked"></a>CFileDialog::OnButtonClicked
 
@@ -1136,7 +1136,7 @@ virtual void OnButtonClicked(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Идентификатор кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogoncheckbuttontoggled"></a><a name="oncheckbuttontoggled"></a>CFileDialog::OnCheckButtonToggled
 
@@ -1156,7 +1156,7 @@ virtual void OnCheckButtonToggled(
 *bChecked*<br/>
 Проверено или беспрепятственно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogoncontrolactivating"></a><a name="oncontrolactivating"></a>CFileDialog::OnControlActivating
 
@@ -1171,7 +1171,7 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 *dwIDCtl*<br/>
 Идентификатор элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogonfilenamechange"></a><a name="onfilenamechange"></a>CFileDialog::OnFileName
 
@@ -1181,7 +1181,7 @@ virtual void OnControlActivating(DWORD dwIDCtl);
 virtual void OnFileNameChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Система отправляет CDN_SELCHANGE сообщение, когда пользователь выбирает новый файл или папку в списке файлов **Open** или **Сохранить как** диалоговое окно. Переопределить этот метод, если вы хотите выполнить какие-либо действия в ответ на это сообщение.
 
@@ -1199,7 +1199,7 @@ virtual BOOL OnFileNameOK();
 
 1, если имя файла не является действительным именем файла; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция позволяет отклонить имя файла по любой конкретной причине приложения. Обычно эта функция не требуется, поскольку фреймворк обеспечивает проверку имен файлов по умолчанию и отображает поле сообщения при входе недействительного имени файла.
 
@@ -1213,7 +1213,7 @@ virtual BOOL OnFileNameOK();
 virtual void OnFolderChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сообщение об уведомлении отправляется при открытии новой папки в поле "Открыть" или "Сохранить как диалог".
 
@@ -1227,7 +1227,7 @@ virtual void OnFolderChange();
 virtual void OnInitDone();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Система отправляет это сообщение о уведомлении, когда система закончила организацию управления в **поле Open** или Save As **As as** dialog, чтобы освободить место для управления детской диалоговой будкой.
 
@@ -1254,7 +1254,7 @@ virtual void OnItemSelected(
 *dwIDItem*<br/>
 Идентификатор элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogonlbselchangednotify"></a><a name="onlbselchangednotify"></a>CFileDialog::OnLBSelchangedNotify
 
@@ -1286,7 +1286,7 @@ virtual void OnLBSelChangedNotify(
 
 - CD_LBSELNOITEMS указывает, что в поле списка многовыборных нет выбора.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы обеспечить пользовательскую обработку изменений выбора в поле списка. Например, эту функцию можно использовать для отображения прав доступа или изменения даты каждого файла, выбранного пользователем.
 
@@ -1313,7 +1313,7 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 
 - OFN_SHAREWARN Пользователь получает стандартное предупреждение за эту ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обычно эта функция не требуется, поскольку система обеспечивает проверку нарушений общего пользования по умолчанию и отображает окно сообщений в случае нарушения общего сообщения.
 
@@ -1327,7 +1327,7 @@ virtual UINT OnShareViolation(LPCTSTR lpszPathName);
 virtual void OnTypeChange();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сообщение об уведомлении отправляется, когда пользователь выбирает новый тип файла из списка типов файлов в поле "Открытый" или "Сохранить как диалоговый".
 
@@ -1351,7 +1351,7 @@ HRESULT RemoveControlItem(
 *dwIDItem*<br/>
 Идентификатор элемента.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcheckbuttonstate"></a><a name="setcheckbuttonstate"></a>CFileДиалог::SetCheckButtonState
 
@@ -1371,7 +1371,7 @@ HRESULT SetCheckButtonState(
 *bChecked*<br/>
 Состояние флажка. TRUE указывает проверенные; FALSE указывает на неконтролируемый.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcontrolitemstate"></a><a name="setcontrolitemstate"></a>CFileДиалог::SetControlItemState
 
@@ -1395,7 +1395,7 @@ HRESULT SetControlItemState(
 *dwState*<br/>
 Одно или несколько значений из перечисления CDCONTROLSTATESTATE, указывающие на новое состояние элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcontrolitemtext"></a><a name="setcontrolitemtext"></a>CFileДиалог::SetControlItemText
 
@@ -1419,7 +1419,7 @@ HRESULT SetControlItemText(
 *strLabel*<br/>
 Текст предмета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcontrollabel"></a><a name="setcontrollabel"></a>CFileДиалог::SetControlLabel
 
@@ -1439,7 +1439,7 @@ HRESULT SetControlLabel(
 *strLabel*<br/>
 Имя элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcontrolstate"></a><a name="setcontrolstate"></a>CFileДиалог::SetControlState
 
@@ -1459,7 +1459,7 @@ HRESULT SetControlState(
 *dwState*<br/>
 Одно или несколько значений из перечисления CDCONTROLSTATESTATE, которые указывают текущее состояние элемента управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetcontroltext"></a><a name="setcontroltext"></a>CFileДиалог::SetControlText
 
@@ -1483,7 +1483,7 @@ void SetControlText(
 *lpsz*<br/>
 (в) Указатель на строку, содержащую текст для управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обе версии этой функции действительны для приложений, которые используют Unicode. Однако для приложений, используючих ANSI, действительна только версия с типом LPCSTR.
 
@@ -1502,7 +1502,7 @@ void SetDefExt(LPCSTR lpsz);
 *lpsz*<br/>
 Указатель на строку, содержащую расширение по умолчанию, для использования для объекта поле диалога. Эта строка не должна содержать период (.).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Коробка диалога должна быть создана в стиле OFN_EXPLORER; в противном случае функция не сработает с утверждением.
 
@@ -1524,7 +1524,7 @@ HRESULT SetEditBoxText(
 *strText*<br/>
 Текстовое значение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetproperties"></a><a name="setproperties"></a>CFileДиалог::SetСвойства
 
@@ -1539,7 +1539,7 @@ BOOL SetProperties(LPCWSTR lpszPropList);
 *lpszPropList*<br/>
 Список предварительно заданных свойств, разделенных точкой с запятой (";"). Список флагов можно узнать в разделе **Флаги** [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamew).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsetselectedcontrolitem"></a><a name="setselectedcontrolitem"></a>CFileDialog:SetSelectedControlItem
 
@@ -1559,7 +1559,7 @@ HRESULT SetSelectedControlItem(
 *dwIDItem*<br/>
 Идентификатор элемента, выбранного пользователем в элементе управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogsettemplate"></a><a name="settemplate"></a>CFileДиалог::SetTemplate
 
@@ -1589,7 +1589,7 @@ void SetTemplate(
 *lpWin4ID*<br/>
 (в) Содержит имя ресурса шаблонов `CFileDialog` объекта Explorer. Этот шаблон используется только на Windows NT 4.0 и более поздних версиях, Windows 95 и более поздних версиях, или когда присутствует OFN_EXPLORER стиль.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Система будет использовать только один из указанных шаблонов. Система определяет, какой шаблон использовать на основе наличия стиля OFN_EXPLORER и операционной системы, на которой работает приложение. Указывая как шаблон в стиле не-Explorer, так и шаблон в стиле Explorer, легко поддерживать Windows NT 3.51, Windows NT 4.0 и более поздние версии, а также Windows 95 и более поздние версии.
 
@@ -1614,7 +1614,7 @@ HRESULT StartVisualGroup(
 *strLabel*<br/>
 Имя группы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cfiledialogupdateofnfromshelldialog"></a><a name="updateofnfromshelldialog"></a>CFileDialog::UpdateOFNFromShellDialog
 
@@ -1624,7 +1624,7 @@ HRESULT StartVisualGroup(
 void UpdateOFNFromShellDialog();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В версиях Windows до Windows Vista структура данных [OPENFILENAME](/windows/win32/api/commdlg/ns-commdlg-openfilenamea) непрерывно синхронизировалась с состоянием `CFileDialog`. Любые [m_ofn](#m_ofn) изменения в переменной участника непосредственно влияют на состояние диалогового окна. Кроме того, любые изменения состояния диалога немедленно обновили переменную m_ofn члена.
 

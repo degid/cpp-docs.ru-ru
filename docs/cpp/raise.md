@@ -24,7 +24,7 @@ ms.locfileid: "87227131"
 __raise method-declarator;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Событие из управляемого кода можно вызвать только в пределах класса, где оно определено. Дополнительные сведения см. в описании [события](../extensions/event-cpp-component-extensions.md) .
 

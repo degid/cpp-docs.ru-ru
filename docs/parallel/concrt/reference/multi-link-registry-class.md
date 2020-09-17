@@ -48,13 +48,13 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[add](#add)|Добавляет ссылку на `multi_link_registry` объект. (Переопределяет [network_link_registry:: Add](network-link-registry-class.md#add).)|
-|[начале](#begin)|Возвращает итератор на первый элемент в `multi_link_registry` объекте. (Переопределяет [network_link_registry:: Begin](network-link-registry-class.md#begin).)|
+|[begin](#begin)|Возвращает итератор на первый элемент в `multi_link_registry` объекте. (Переопределяет [network_link_registry:: Begin](network-link-registry-class.md#begin).)|
 |[contains](#contains)|Выполняет поиск `multi_link_registry` указанного блока в объекте. (Переопределяет [network_link_registry:: Contains](network-link-registry-class.md#contains).)|
 |[count](#count)|Подсчитывает количество элементов в `multi_link_registry` объекте. (Переопределяет [network_link_registry:: count](network-link-registry-class.md#count).)|
-|[remove](#remove)|Удаляет ссылку из `multi_link_registry` объекта. (Переопределяет [network_link_registry:: Remove](network-link-registry-class.md#remove).)|
+|[remove](#remove)|Удаляет ссылку из `multi_link_registry` объекта. (Переопределяет [network_link_registry::Remove](network-link-registry-class.md#remove).)|
 |[set_bound](#set_bound)|Задает верхнюю границу числа ссылок, которые `multi_link_registry` может содержать объект.|
 
 ## <a name="inheritance-hierarchy"></a>Иерархия наследования
@@ -67,7 +67,7 @@ class multi_link_registry : public network_link_registry<_Block>;
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="add"></a><a name="add"></a>включить
 
@@ -82,7 +82,7 @@ virtual void add(_EType _Link);
 *_Link*<br/>
 Указатель на добавляемый блок.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_link_target](invalid-link-target-class.md) , если ссылка уже имеется в реестре, или если привязка уже была задана с помощью `set_bound` функции и связь была удалена.
 
@@ -98,7 +98,7 @@ virtual iterator begin();
 
 Итератор, обращающийся к первому элементу в `multi_link_registry` объекте.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конечное состояние обозначается `NULL` ссылкой.
 
@@ -147,7 +147,7 @@ multi_link_registry();
 virtual ~multi_link_registry();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод вызывает исключение [invalid_operation](invalid-operation-class.md) , если вызывается до удаления всех ссылок.
 
@@ -181,7 +181,7 @@ void set_bound(size_t _MaxLinks);
 *_MaxLinks*<br/>
 Максимальное число ссылок, которые `multi_link_registry` может содержать объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После установки границы отсоединение записи приведет к тому, что объект `multi_link_registry` войдет в неизменяемое состояние, где дальнейшие вызовы `add` создадут исключение `invalid_link_target`.
 

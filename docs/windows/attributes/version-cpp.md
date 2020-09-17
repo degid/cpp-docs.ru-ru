@@ -29,7 +29,7 @@ ms.locfileid: "88832949"
 *version*<br/>
 Номер версии `coclass`. Если не указано, 1,0 будет помещена в IDL-файл.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **Version** C++ имеет те же функциональные возможности, что и атрибут MIDL [версии](/windows/win32/Midl/version) , и передается в созданный IDL-файл.
 

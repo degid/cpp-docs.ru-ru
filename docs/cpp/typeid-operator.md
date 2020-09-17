@@ -20,7 +20,7 @@ typeid(type-id)
 typeid(expression)
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **`typeid`** Оператор позволяет определить тип объекта во время выполнения.
 

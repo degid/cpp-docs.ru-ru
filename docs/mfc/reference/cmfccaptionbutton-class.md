@@ -62,7 +62,7 @@ class CMFCCaptionButton : public CObject
 |[CMFCCaptionButton::Ondraw](#ondraw)|Рисует кнопку заголовка.|
 |[CMFCCaptionButton::SetMiniFrameButton](#setminiframebutton)|Устанавливает мини-размер заголовка бара.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы можете получить класс из [класса CPaneFrameWnd](../../mfc/reference/cpaneframewnd-class.md) `AddButton`и использовать защищенный метод, чтобы добавить кнопки подписи к окну мини-рамки.
 
@@ -120,7 +120,7 @@ CMFCCaptionButton(
 |AFX_HTMENU|Кнопка меню «Вниз» вниз.|
 |HTNOWHERE|Значение по умолчанию; не представляет собой команду.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию кнопки заголовка не связаны с командой.
 
@@ -172,7 +172,7 @@ virtual CMenuImages::IMAGES_IDS GetIconID(
 
 Идентификатор изображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметры указывают инообразное изображение для минимизации или максимизации кнопок заголовков.
 
@@ -188,7 +188,7 @@ virtual CRect GetRect() const;
 
 Прямоугольник, представляющий расположение кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы не видите кнопку, возвращенный размер составляет 0.
 
@@ -204,7 +204,7 @@ static CSize GetSize();
 
 Внешние размеры кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращается размер включает пуговицу и границу.
 
@@ -220,7 +220,7 @@ BOOL IsMiniFrameButton() const;
 
 TRUE, если подпись установлена на мини-размер; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfccaptionbuttonmove"></a><a name="move"></a>CMFCCaptionButton::Move
 
@@ -270,7 +270,7 @@ virtual void OnDraw(
 *bDisabled*<br/>
 (в) Нарисовать ли изображение включенной кнопки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *bMaximized* используется, когда кнопка является максимальной или минимизировать кнопку.
 

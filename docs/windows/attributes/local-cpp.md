@@ -23,7 +23,7 @@ ms.locfileid: "88834093"
 [local]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Локальный** атрибут C++ имеет те же функциональные возможности, что и [локальный](/windows/win32/Midl/local) атрибут MIDL.
 

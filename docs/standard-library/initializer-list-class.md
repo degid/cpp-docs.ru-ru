@@ -33,10 +33,10 @@ class initializer_list
 
 ### <a name="parameters"></a>Параметры
 
-*Тип*\
+*Type*\
 Тип данных элемента для сохранения в `initializer_list`.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `initializer_list` можно создать при помощи списка заключенного в фигурные скобки инициализатора:
 
@@ -112,13 +112,13 @@ initializer_list(const InputIterator First, const InputIterator Last);
 
 ### <a name="parameters"></a>Параметры
 
-*Первый*\
+*first*\
 Положение первого элемента в диапазоне копируемых элементов.
 
-*Последний*\
+*last*\
 Положение первого элемента после диапазона копируемых элементов.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `initializer_list` основан на массиве объектов указанного типа. Копирование `initializer_list` создает второй экземпляр списка, указывающий на те же объекты; основные объекты не копируется.
 

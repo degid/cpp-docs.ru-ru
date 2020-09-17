@@ -45,13 +45,13 @@ struct _ATL_WIN_MODULE70 {
 `m_rgWindowClassAtoms`<br/>
 Используется для трассировки регистраций классов окон, чтобы их можно было правильно отменить регистрацию при завершении работы. Используется внутренне библиотекой ATL.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 [_ATL_WIN_MODULE](atl-typedefs.md#_atl_win_module) определяется как typedef для `_ATL_WIN_MODULE70`.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

@@ -74,7 +74,7 @@ class CHeapPtrBase
 |----------|-----------------|
 |[CHeapPtrBase::m_pData](#m_pdata)|Переменная данных указателя.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс составляет основу для нескольких умных классов указателей кучи. Полученные классы, например, [CHeapPtr](../../atl/reference/cheapptr-class.md) и [CComHeapPtr,](../../atl/reference/ccomheapptr-class.md)добавляют свои собственные конструкторы и операторов. Ознакомьтесь с этими классами для примеров реализации.
 
@@ -99,7 +99,7 @@ bool AllocateBytes(size_t nBytes) throw();
 
 Возвращает верно, если память успешно выделена, ложнов в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В отладочных сборках произойдет сбой утверждения, если переменная [CHeapPtrBase::m_pData](#m_pdata) в настоящее время указывает на существующее значение; то есть, он не равен NULL.
 
@@ -116,7 +116,7 @@ void Attach(T* pData) throw();
 *Pdata*<br/>
 Объект `CHeapPtrBase` будет владеть этим указателем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда `CHeapPtrBase` объект становится владельцем указателя, он автоматически удаляет указатель и любые выделенные данные, когда он выходит за рамки.
 
@@ -130,7 +130,7 @@ void Attach(T* pData) throw();
 ~CHeapPtrBase() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -146,7 +146,7 @@ T* Detach() throw();
 
 Возвращает копию указателя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выпускает право собственности на указатель, устанавливает [CHeapPtrBase::m_pData](#m_pdata) переменной члена null и возвращает копию указателя.
 
@@ -158,7 +158,7 @@ T* Detach() throw();
 void Free() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект, на который `CHeapPtrBase` указывает сяроб, освобождается, и переменная [CHeapPtrBase::m_pData](#m_pdata) переменная члена установлена null.
 
@@ -170,7 +170,7 @@ void Free() throw();
 T* m_pData;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта переменная члена содержит информацию указателя.
 
@@ -198,7 +198,7 @@ T* operator->() const throw();
 
 Возвращает значение переменной [CHeapPtrBase::m_pData](#m_pdata) переменной.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот оператор для вызова метода `CHeapPtrBase` в классе, на который указывает объект. В сборках отладки произойдет `CHeapPtrBase` сбой утверждения, если точки NULL.
 
@@ -210,7 +210,7 @@ T* operator->() const throw();
 operator T*() const throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает [CHeapPtrBase::m_pData](#m_pdata).
 

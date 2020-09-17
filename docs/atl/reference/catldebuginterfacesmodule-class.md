@@ -25,13 +25,13 @@ ms.locfileid: "82168258"
 class CAtlDebugInterfacesModule
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlDebugInterfacesModule`предоставляет поддержку, необходимую для интерфейсов отладки. Он включается в любой проект, определяющий символ [_ATL_DEBUG_QI](debugging-and-error-reporting-macros.md#_atl_debug_qi).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="see-also"></a>См. также
 

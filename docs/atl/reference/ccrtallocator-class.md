@@ -37,7 +37,7 @@ class ATL::CCRTAllocator
 |[CCRTAllocator::Бесплатно](#free)|(Статик) Вызовите этот метод, чтобы освободить память.|
 |[CCRTAllocator::Перераспределить](#reallocate)|(Статик) Вызовите этот метод для перераспределения памяти.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс используется [CHeapPtr](../../atl/reference/cheapptr-class.md) для обеспечения процедур распределения памяти CRT. Аналог класса, [CComAllocator](../../atl/reference/ccomallocator-class.md), предоставляет те же методы, используя COM процедур.
 
@@ -62,7 +62,7 @@ static __declspec(allocator) void* Allocate(size_t nBytes) throw();
 
 Возвращает указатель void на выделенное пространство или значение NULL, если памяти недостаточно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Выделяет память. Подробнее о [малле.](../../c-runtime-library/reference/malloc.md)
 
@@ -79,7 +79,7 @@ static void Free(void* p) throw();
 *P*<br/>
 Указатель на выделенную область памяти.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает выделенную память. Смотрите [бесплатно](../../c-runtime-library/reference/free.md) для получения более подробной информации.
 
@@ -103,7 +103,7 @@ static __declspec(allocator) void* Reallocate(void* p, size_t nBytes) throw();
 
 Возвращает указатель void на выделенное пространство или значение NULL, если памяти недостаточно.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Изменяет объем выделенной памяти. Более подробную информацию можно узнать в [realloc.](../../c-runtime-library/reference/realloc.md)
 

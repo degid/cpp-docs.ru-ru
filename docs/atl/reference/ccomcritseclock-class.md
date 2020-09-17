@@ -36,25 +36,25 @@ template<class TLock> class CComCritSecLock
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомкритсеклокк:: Ккомкритсеклокк](#ctor)|Конструктор.|
 |[Ккомкритсеклокк:: ~ Ккомкритсеклокк](#dtor)|Деструктор|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание:|
+|Имя|Описание|
 |----------|-----------------|
 |[Ккомкритсеклокк:: Lock](#lock)|Вызовите этот метод, чтобы заблокировать объект критической секции.|
 |[Ккомкритсеклокк:: Unlock](#unlock)|Вызовите этот метод, чтобы разблокировать объект критической секции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте этот класс для блокировки и разблокирования объектов в более безопасном виде, чем класс [ккомкритикалсектион](../../atl/reference/ccomcriticalsection-class.md) или [класс ккомаутокритикалсектион](../../atl/reference/ccomautocriticalsection-class.md).
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccomcritseclockccomcritseclock"></a><a name="ctor"></a>Ккомкритсеклокк:: Ккомкритсеклокк
 
@@ -72,7 +72,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 *бинитиаллокк*<br/>
 Начальное состояние блокировки: **`true`** означает, что заблокировано.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует объект критической секции.
 
@@ -84,7 +84,7 @@ CComCritSecLock(TLock& cs, bool bInitialLock = true);
 ~CComCritSecLock() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Разблокирует объект критической секции.
 
@@ -100,7 +100,7 @@ HRESULT Lock() throw();
 
 Возвращает S_OK, если объект был успешно заблокирован, или ошибка HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект уже заблокирован, в отладочных сборках произойдет ошибка ASSERT.
 
@@ -112,7 +112,7 @@ HRESULT Lock() throw();
 void Unlock() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если объект уже разблокирован, в отладочных сборках произойдет ошибка ASSERT.
 

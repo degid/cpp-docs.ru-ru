@@ -23,7 +23,7 @@ ms.locfileid: "88842186"
 [oleautomation]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **oleautomation** C++ имеет те же функциональные возможности, что и атрибут [oleautomation](/windows/win32/Midl/oleautomation) MIDL.
 

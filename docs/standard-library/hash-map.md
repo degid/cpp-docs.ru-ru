@@ -30,7 +30,7 @@ ms.locfileid: "77258150"
 
 |Версия hash_map|Версия hash_multimap|Описание|
 |-----------------------|----------------------------|-----------------|
-|[operator!= (hash_map)](hash-map-operators.md#op_neq)|[operator! = (hash_multimap)](hash-map-operators.md#op_neq_mm)|Проверяет неравенство объекта hash_map или hash_multimap слева от оператора объекту hash_map или hash_multimap справа от оператора.|
+|[operator!= (hash_map)](hash-map-operators.md#op_neq)|[operator!= (hash_multimap)](hash-map-operators.md#op_neq_mm)|Проверяет неравенство объекта hash_map или hash_multimap слева от оператора объекту hash_map или hash_multimap справа от оператора.|
 |[ operator== (hash_map)](hash-map-operators.md#op_eq_eq)|[operator== (hash_multimap)](hash-map-operators.md#op_eq_eq_mm)|Проверяет равенство объекта hash_map или hash_multimap слева от оператора объекту hash_map или hash_multimap справа от оператора.|
 
 ### <a name="specialized-template-functions"></a>Специализированные функции шаблонов

@@ -78,7 +78,7 @@ FILE *_wfreopen(
 
 Дополнительные сведения об этих и других кодах ошибок см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Существуют более безопасные версии этих функций; см. раздел [freopen_s, _wfreopen_s](freopen-s-wfreopen-s.md).
 

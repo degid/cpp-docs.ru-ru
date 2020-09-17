@@ -41,7 +41,7 @@ class CHttpConnection : public CInternetConnection
 |----------|-----------------|
 |[CHttpConnection::OpenRequest](#openrequest)|Открывает запрос HTTP.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 HTTP является одним из трех протоколов интернет-сервера, реализованных классами MFC WinInet.
 
@@ -125,7 +125,7 @@ CHttpConnection(
 *dwFlags*<br/>
 Любое сочетание `INTERNET_FLAG_*` флагов. Смотрите таблицу в разделе **Замечания** [CHttpConnection::OpenRequest](#openrequest) для описания значений *dwFlags.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы никогда `CHttpConnection` не создаете непосредственно. Скорее, вы создаете объект, позвонив [в CInternetSession::GetHttpConnection](../../mfc/reference/cinternetsession-class.md#gethttpconnection).
 
@@ -193,7 +193,7 @@ CHttpFile* OpenRequest(
 
 Запрашиваемый указатель на объект [CHttpFile.](../../mfc/reference/chttpfile-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 *dwFlags* может быть одним из следующих:
 

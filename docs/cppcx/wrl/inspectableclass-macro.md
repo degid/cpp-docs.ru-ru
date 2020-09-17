@@ -32,13 +32,13 @@ InspectableClass(
 *trustLevel*<br/>
 Одно из перечисляемых значений [TrustLevel](/windows/win32/api/inspectable/ne-inspectable-trustlevel) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Макрос **InspectableClass** можно использовать только с типами среда выполнения Windows.
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

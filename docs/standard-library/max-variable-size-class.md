@@ -68,7 +68,7 @@ void allocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена добавляет *_Nx* к сохраненному значению `_Nallocs` . Эта функция-член вызывается после каждого успешного вызова `cache_freelist::allocate` оператором **`new`** . Аргумент *_Nx* — число блоков памяти в блоке, выделенном оператором **`new`** .
 
@@ -85,7 +85,7 @@ void deallocated(std::size_t _Nx = 1);
 *_Nx*\
 Значение приращения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция члена вычитает *_Nx* из сохраненного значения `_Nallocs` . Эта функция-член вызывается после каждого вызова `cache_freelist::deallocate` оператором **`delete`** . Аргумент *_Nx* — число блоков памяти в блоке, освобожденных оператором **`delete`** .
 
@@ -101,7 +101,7 @@ bool full();
 
 **`true`** Если `_Nallocs / 16 + 16 <= _Nblocks` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член вызывается `cache_freelist::deallocate`. Если вызов возвращает **`true`** , `deallocate` помещает блок памяти в свободный список; если возвращается значение false, `deallocate` вызывает оператор **`delete`** для освобождения блока.
 
@@ -113,7 +113,7 @@ bool full();
 max_variable_size();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор инициализирует сохраненные значения `_Nblocks` и `_Nallocs` нулями.
 
@@ -125,7 +125,7 @@ max_variable_size();
 void released();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член уменьшает хранимое значение `_Nblocks`. Функция-член `released` текущего класса max вызывается `cache_freelist::allocate` каждый раз при удалении блока памяти из свободного списка.
 
@@ -137,7 +137,7 @@ void released();
 void saved();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член увеличивает хранимое значение `_Nblocks`. Она вызывается `cache_freelist::deallocate` каждый раз при помещении блока памяти в свободный список.
 

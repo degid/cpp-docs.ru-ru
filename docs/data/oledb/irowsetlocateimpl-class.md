@@ -86,7 +86,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок**: ATLDB. h
+**Заголовок**: ATLDB.h
 
 ## <a name="members"></a>Элементы
 
@@ -105,7 +105,7 @@ class ATL_NO_VTABLE IRowsetLocateImpl : public IRowsetImpl<
 |-|-|
 |[m_rgBookmarks](#rgbookmarks)|Массив закладок.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IRowsetLocateImpl` — Это реализация OLE DB шаблонов интерфейса [IRowsetLocate](/previous-versions/windows/desktop/ms721190(v=vs.85)) . `IRowsetLocate` используется для выборки произвольных строк из набора строк. Набор строк, который не реализует этот интерфейс, является `sequential` набором строк. Если имеется `IRowsetLocate` в наборе строк, столбец 0 является закладкой для строк; при чтении этого столбца будет получено значение закладки, которое можно использовать для перемещения в ту же строку.
 
@@ -134,7 +134,7 @@ STDMETHOD (Compare )(HCHAPTER /* hReserved */,
 
 См. раздел [IRowsetLocate:: Compare](/previous-versions/windows/desktop/ms709539(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Любая из закладок может быть стандартной стандартной [закладкой](/previous-versions/windows/desktop/ms712954(v=vs.85)) OLE DB ( `DBBMK_FIRST` , `DBBMK_LAST` или `DBBMK_INVALID` ). Значение, возвращаемое в, `pComparison` указывает связь между двумя закладками:
 
@@ -169,7 +169,7 @@ STDMETHOD (GetRowsAt )(HWATCHREGION /* hReserved1 */,
 
 См. раздел [IRowsetLocate:: GetRowsAt](/previous-versions/windows/desktop/ms723031(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Чтобы получить из позиции курсора вместо этого, используйте [IRowset:: GetRowsAt](/previous-versions/windows/desktop/ms723031(v=vs.85)).
 
@@ -197,7 +197,7 @@ STDMETHOD (GetRowsByBookmark )(HCHAPTER /* hReserved */,
 
 Другие параметры см. в разделе [IRowsetLocate:: жетровсбибукмарк](/previous-versions/windows/desktop/ms725420(v=vs.85)) в *справочнике программиста OLE DB*.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Закладка может быть значением, определенным пользователем, или OLE DB [стандартной закладками](/previous-versions/windows/desktop/ms712954(v=vs.85)) ( `DBBMK_FIRST` или `DBBMK_LAST` ). Не изменяет позицию курсора.
 

@@ -25,7 +25,7 @@ ms.locfileid: "87231615"
 
 > **#pragma устарел (** *идентификатор1* [ **,** *идентификатор2* ...] **)**
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Когда компилятор встречает идентификатор, заданный **`deprecated`** директивой pragma, он выдает предупреждение компилятора [C4995](../error-messages/compiler-warnings/compiler-warning-level-3-c4995.md).
 

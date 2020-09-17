@@ -17,7 +17,7 @@ ms.locfileid: "80164910"
 
 > "*тип*": этот тип не поддается проверке
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Это предупреждение создается, если указано [/clr:safe](../../build/reference/clr-common-language-runtime-compilation.md) , но код содержит тип, не подлежащий проверке. Параметр компилятора **/clr: Сейф** является устаревшим в visual Studio 2015 и не поддерживается в visual Studio 2017.
 

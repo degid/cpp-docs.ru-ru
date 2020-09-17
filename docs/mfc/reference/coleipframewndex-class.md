@@ -198,7 +198,7 @@ class COleIPFrameWndEx : public COleIPFrameWnd
 void AddDockSite();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexaddpane"></a><a name="addpane"></a>COleIPFrameWndEx:AddPane
 
@@ -215,7 +215,7 @@ BOOL AddPane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexadjustdockinglayout"></a><a name="adjustdockinglayout"></a>COleIPFrameWndEx::AdjustDockingLayout
 
@@ -227,7 +227,7 @@ virtual void AdjustDockingLayout(HDWP hdwp = NULL);
 
 (в) *hdwp*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexdockpane"></a><a name="dockpane"></a>COleIPFrameWndEx::DockPane
 
@@ -244,7 +244,7 @@ void DockPane(
 (в) *nDockBarID*<br/>
 (в) *lpRect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexdockpaneleftof"></a><a name="dockpaneleftof"></a>ColeIPFrameWndEx::DockPaneLeftOf
 
@@ -268,7 +268,7 @@ BOOL DockPaneLeftOf(
 
 Возвращает TRUE, если операция прошла успешно. В противном случае возвращает значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод для стыковки нескольких объектов панели в заранее определенном порядке. Этот метод пристыковивает стекло, указанное *pBar* слева от панели, указанной *pLeftOf.*
 
@@ -284,7 +284,7 @@ BOOL EnableAutoHidePanes(DWORD dwDockStyle);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexenabledocking"></a><a name="enabledocking"></a>COleIPFrameWndEx::EnableDocking
 
@@ -298,7 +298,7 @@ BOOL EnableDocking(DWORD dwDockStyle);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexenablepanemenu"></a><a name="enablepanemenu"></a>COleIPFrameWndEx::EnablePaneMenu
 
@@ -321,7 +321,7 @@ void EnablePaneMenu(
 (в) *bКонтекстОШоуСТулбарыТолько*<br/>
 (в) *bViewMenuShowsToolbarsТолько*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgetactivepopup"></a><a name="getactivepopup"></a>COleIPFrameWndEx::GetActivePopup
 
@@ -335,7 +335,7 @@ CMFCPopupMenu* GetActivePopup() const;
 
 Указатель на активное всплывающее меню; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод для получения указателя на объект [класса CMFCPopupMenu,](../../mfc/reference/cmfcpopupmenu-class.md) который в настоящее время отображается.
 
@@ -347,7 +347,7 @@ COleCntrFrameWndEx* GetContainerFrameWindow();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgetdefaultresid"></a><a name="getdefaultresid"></a>ColeIPFrameWndEx::GetDefaultResId
 
@@ -361,7 +361,7 @@ UINT GetDefaultResId() const;
 
 Возвращает идентификатор ресурсов меню или 0, если в окне кадра нет панели меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов идентификатора ресурса, который был указан при загрузке `COleIPFrameWndEx::LoadFrame`окна меню, вызывая вызов.
 
@@ -373,7 +373,7 @@ CFrameWnd* GetDockFrame();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgetdockingmanager"></a><a name="getdockingmanager"></a>COleIPFrameWndEx::GetDockingManager
 
@@ -383,7 +383,7 @@ CDockingManager* GetDockingManager();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgetmainframe"></a><a name="getmainframe"></a>COleIPFrameWndEx::GetMainFrame
 
@@ -393,7 +393,7 @@ CFrameWnd* GetMainFrame();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgetmenubar"></a><a name="getmenubar"></a>COleIPFrameWndEx::GetMenuBar
 
@@ -407,7 +407,7 @@ const CMFCMenuBar* GetMenuBar() const;
 
 Указатель на объект панели меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для извлечения указателя на `COleIPFrameWndEx` объект панели меню, принадлежащий объекту.
 
@@ -423,7 +423,7 @@ CBasePane* GetPane(UINT nID);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexgettearoffbars"></a><a name="gettearoffbars"></a>ColeIPFrameWndEx::GetTearOffBars
 
@@ -437,7 +437,7 @@ const CObList& GetTearOffBars() const;
 
 Ссылка на `CObList` объект, содержащий набор указателей на [объекты класса CBasePane.](../../mfc/reference/cbasepane-class.md)
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Объект `COleIPFrameWndEx` поддерживает сбор отрывных меню в виде списка объектов [класса CBasePane.](../../mfc/reference/cbasepane-class.md) Используйте этот метод для получения ссылки на этот список.
 
@@ -463,7 +463,7 @@ virtual BOOL GetToolbarButtonToolTipText(
 
 Реализация по умолчанию возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, чтобы настроить отображение наборов инструментов на кнопках панели инструментов.
 
@@ -489,7 +489,7 @@ void InitUserToolbars(
 *uiUserToolbarLast*<br/>
 (в) Идентификатор управления, назначенный последней панели инструментов, определяемой пользователем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию для инициализации ряда иен управления для назначения в панели инструментов, которые пользователи определяют динамически. Параметры *uiUserToolbarFirst* и *uiUserToolbarLast* определяют диапазон допустимых идентифицированных систем управления инструментами. Чтобы отключить создание пользовательских панелей инструментов, установите *uiUserToolbarFirst* или *uiUserToolbarLast* до -1.
 
@@ -510,7 +510,7 @@ BOOL InsertPane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexismenubaravailable"></a><a name="ismenubaravailable"></a>COleIPFrameWndEx::IsMenuBarДоступно
 
@@ -524,7 +524,7 @@ BOOL IsMenuBarAvailable() const;
 
 Возвращает ненулевое значение, если в окне кадра есть панель меню; в противном случае возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите этот метод, чтобы определить, поддерживает ли окно кадра неnull указатель на объект панели меню.
 
@@ -545,7 +545,7 @@ BOOL IsPointNearDockSite(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexloadframe"></a><a name="loadframe"></a>COleIPFrameWndEx:LoadFrame
 
@@ -566,7 +566,7 @@ virtual BOOL LoadFrame(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonclosedockingpane"></a><a name="onclosedockingpane"></a>COleIPFrameWndEx::OnCloseDockingPane
 
@@ -580,7 +580,7 @@ virtual BOOL OnCloseDockingPane(CDockablePane*);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexoncloseminiframe"></a><a name="oncloseminiframe"></a>COleIPFrameWndEx::OnCloseMiniFrame
 
@@ -594,7 +594,7 @@ virtual BOOL OnCloseMiniFrame(CPaneFrameWnd*);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonclosepopupmenu"></a><a name="onclosepopupmenu"></a>COleIPFrameWndEx::OnClosePopupMenu
 
@@ -609,7 +609,7 @@ virtual void OnClosePopupMenu(CMFCPopupMenu* pMenuPopup);
 *pMenuPopup*<br/>
 (в) Указатель на всплывающий объект меню.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод для `CMFCPopupMenu` получения уведомлений от объектов при обработке WM_DESTROY сообщений.
 
@@ -632,7 +632,7 @@ virtual BOOL OnCmdMsg(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexondrawmenuimage"></a><a name="ondrawmenuimage"></a>COleIPFrameWndEx::OnDrawMenuImage
 
@@ -660,7 +660,7 @@ virtual BOOL OnDrawMenuImage(
 
 Реализация по умолчанию ничего не делает и возвращает 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, если вы хотите настроить рисунок изображения для элементов `COleIPFrameWndEx`меню, которые относятся к панели меню, принадлежащей объекту, полученному.
 
@@ -686,7 +686,7 @@ virtual void OnDrawMenuLogo(
 *rectLogo*<br/>
 (в) Указатель на логотип для отображения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод для отображения логотипа в всплывающем `COleIPFrameWndEx`меню, связанного с панелью меню, принадлежащей объекту, полученному. Реализация по умолчанию не выполняет никаких действий.
 
@@ -710,7 +710,7 @@ virtual BOOL OnMenuButtonToolHitTest(
 
 Реализация по умолчанию ничего не делает и возвращает 0. Ваша реализация должна вернуть ненулевое значение, если она заполняет параметр *pTI.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переувисаем этот метод, чтобы предоставить ToolTip информацию о конкретном пункте меню.
 
@@ -726,7 +726,7 @@ virtual BOOL OnMoveMiniFrame(CWnd* pFrame);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonsetpreviewmode"></a><a name="onsetpreviewmode"></a>COleIPFrameWndEx::OnSetPreviewMode
 
@@ -741,7 +741,7 @@ virtual void OnSetPreviewMode(
 (в) *bPreview*<br/>
 (в) *pState*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonshowcustomizepane"></a><a name="onshowcustomizepane"></a>COleIPFrameWndEx::OnShowCustomizePane
 
@@ -758,7 +758,7 @@ virtual BOOL OnShowCustomizePane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonshowpanes"></a><a name="onshowpanes"></a>COleIPFrameWndEx::OnShowPanes
 
@@ -772,7 +772,7 @@ virtual BOOL OnShowPanes(BOOL bShow);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexonshowpopupmenu"></a><a name="onshowpopupmenu"></a>COleIPFrameWndEx::OnShowPopupMenu
 
@@ -791,7 +791,7 @@ virtual BOOL OnShowPopupMenu(CMFCPopupMenu* pMenuPopup);
 
 Реализация по умолчанию ничего не делает и возвращает ненулевое значение. Ваша реализация должна вернуть FALSE, если всплывающее меню не может быть отображено.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод, чтобы настроить отображение всплывающее меню. Например, можно изменить кнопки меню на кнопки цветного меню или инициализировать ски-офф.
 
@@ -817,7 +817,7 @@ virtual BOOL OnTearOffMenu(
 
 ПРАВДА, если вы хотите, чтобы рамки активировать всплывающее меню; в противном случае FALSE. Значение по умолчанию — TRUE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить эту функцию, если вы хотите настроить настройку отрыва бар.
 
@@ -847,7 +847,7 @@ CBasePane* PaneFromPoint(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexpretranslatemessage"></a><a name="pretranslatemessage"></a>COleIPFrameWndEx::PreTranslateMessage
 
@@ -861,7 +861,7 @@ virtual BOOL PreTranslateMessage(MSG* pMsg);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexrecalclayout"></a><a name="recalclayout"></a>ColeIPFrameWndEx::RecalcLayout
 
@@ -873,7 +873,7 @@ virtual void RecalcLayout(BOOL bNotify = TRUE);
 
 (в) *bNotify*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexremovepanefromdockmanager"></a><a name="removepanefromdockmanager"></a>COleIPFrameWndEx::RemovePaneFromDockManager
 
@@ -894,7 +894,7 @@ void RemovePaneFromDockManager(
 (в) *bAutoHide*<br/>
 (в) *pBarЗамена*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexsetdockstate"></a><a name="setdockstate"></a>COleIPFrameWndEx::SetDockState
 
@@ -909,7 +909,7 @@ void SetDockState(const CDockState& state);
 *state*<br/>
 (в) Определяет состояние стыковки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы указать новое состояние `COleIPFrameWndEx` стыковки для стекол, принадлежащих объекту.
 
@@ -935,7 +935,7 @@ void SetupToolbarMenu(
 *uiViewUserToolbarCmdLast*<br/>
 (в) Определяет последнюю команду, определяемую пользователем.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexshowpane"></a><a name="showpane"></a>COleIPFrameWndEx:ShowPane
 
@@ -954,7 +954,7 @@ void ShowPane(
 (в) *bDelay*<br/>
 (в) *bАктивировать*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="coleipframewndexwinhelpa"></a><a name="winhelpa"></a>COleIPFrameWndEx::WinHelpA
 
@@ -973,7 +973,7 @@ dwData определяет данные по мере необходимост�
 *nCmd*<br/>
 (в) Определяет тип запрашиваемых помощи. Список возможных значений и способы их влияния на параметр *dwData* можно узнать в [SDK](/windows/win32/api/winuser/nf-winuser-winhelpw) Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

@@ -71,7 +71,7 @@ int main() {
 
 ## <a name="requirements"></a>Требования
 
-**Заголовочный файл:** \<мсклр\маршал.х >, \<мсклр \ marshal_windows. h >, \<мсклр \ marshal_cppstd. h > или \<мсклр \ marshal_atl. h >
+**Заголовочный файл:** \<мсклр\маршал.х >, \<мсклр \ marshal_windows.h >, \<мсклр \ marshal_cppstd.h > или \<мсклр \ marshal_atl.h >
 
 **Пространство имен:** мсклр:: Interop
 

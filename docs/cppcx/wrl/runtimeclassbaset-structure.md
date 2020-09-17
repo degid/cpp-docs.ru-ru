@@ -34,7 +34,7 @@ friend struct Details::RuntimeClassBaseT;
 *RuntimeClassTypeT*<br/>
 Поле флагов, которое определяет один или несколько регистраторов [RuntimeClassType.](runtimeclasstype-enumeration.md)
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Предоставляет вспомогательные методы для операций `QueryInterface` и получения идентификаторов интерфейсов.
 
@@ -88,7 +88,7 @@ __forceinline static HRESULT AsIID(
 
 S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Извлекает указатель на указанный идентификатор интерфейса.
 
@@ -123,6 +123,6 @@ __forceinline static HRESULT GetImplementedIIDS(
 
 S_OK в случае успеха; в противном случае, HRESULT, который описывает ошибку.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Извлекает массив идотов интерфейса, реализованных определенным типом.

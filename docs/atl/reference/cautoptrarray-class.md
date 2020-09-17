@@ -44,7 +44,7 @@ class CAutoPtrArray : public CAtlArray<
 |----------|-----------------|
 |[Каутоптраррай:: Каутоптраррай](#cautoptrarray)|Конструктор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Этот класс предоставляет конструктор и наследует методы от [CAtlArray](../../atl/reference/catlarray-class.md) и [каутоптрелементтраитс](../../atl/reference/cautoptrelementtraits-class.md) для облегчения создания объекта класса коллекции, в котором хранятся интеллектуальные указатели.
 
@@ -58,7 +58,7 @@ class CAutoPtrArray : public CAtlArray<
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлколл. h
+**Заголовок:** атлколл.h
 
 ## <a name="cautoptrarraycautoptrarray"></a><a name="cautoptrarray"></a>Каутоптраррай:: Каутоптраррай
 
@@ -68,7 +68,7 @@ class CAutoPtrArray : public CAtlArray<
 CAutoPtrArray() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует массив интеллектуальных указателей.
 

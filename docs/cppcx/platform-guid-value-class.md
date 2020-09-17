@@ -36,7 +36,7 @@ public value struct Guid
 |[Оператор&lt;](#operator-less)|Оператор «меньше».|
 |[оператор()](#operator-call)|Преобразует `Platform::Guid` в `GUID`.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для создания `Platform::Guid`нового, используйте [Windows::Основа::GuidHelper::CreateNewGuid](/uwp/api/windows.foundation.guidhelper.createnewguid) статический метод.
 
@@ -142,7 +142,7 @@ static bool Platform::Guid::operator==(Platform::Guid guid1, Platform::Guid guid
 
 Правда, если `Platform::Guid` эти две инстанции равны.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Предпочитаю использовать `==` оператора вместо [Windows:::Foundation:::GuidHelper::Equals](/uwp/api/windows.foundation.guidhelper.equals) static method.
 

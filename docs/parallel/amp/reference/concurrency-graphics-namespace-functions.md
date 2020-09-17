@@ -17,7 +17,7 @@ ms.locfileid: "88841250"
 [копии](#copy)\
 [copy_async](#copy_async)
 
-## <a name="copy-function-concurrencygraphics-namespace"></a><a name="copy"></a> Функция Copy (Concurrency:: Graphics пространство имен)
+## <a name="copy-function-concurrencygraphics-namespace"></a><a name="copy"></a> Функция Copy (concurrency::graphics пространство имен)
 
 Копирует текстуру источника в целевой буфер или копирует исходный буфер в целевой буфер. Общая форма этой функции — `copy(src, dest)` .
 
@@ -156,7 +156,7 @@ void copy (
 *last*<br/>
 Конечный итератор в исходный контейнер.
 
-## <a name="copy_async-function-concurrencygraphics-namespace"></a><a name="copy_async"></a> Функция copy_async (Concurrency:: Graphics пространство имен)
+## <a name="copy_async-function-concurrencygraphics-namespace"></a><a name="copy_async"></a> Функция copy_async (concurrency::graphics пространство имен)
 
 Асинхронно копирует текстуру источника в целевой буфер или копирует исходный буфер в целевой буфер, а затем возвращает объект [completion_future](completion-future-class.md) , который можно ожидать. Копирование данных невозможно, если код работает на ускорителе. Общая форма этой функции — `copy(src, dest)` .
 
@@ -293,9 +293,9 @@ concurrency::completion_future copy_async(_Src_type& _Src,
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** amp_graphics. h
+**Заголовок:** amp_graphics.h
 
-**Пространство имен:** Concurrency:: Graphics
+**Пространство имен:** concurrency::graphics
 
 ## <a name="see-also"></a>См. также раздел
 

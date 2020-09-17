@@ -71,7 +71,7 @@ class CSimpleArray
 |[CSimpleArray::operator\[\]](#operator_at)|Получает элемент из массива.|
 |[CSimpleArray::оператор](#operator_eq)|Оператор присвоения.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CSimpleArray`предоставляет методы для создания и управления простым `T`массивом любого данного типа.
 
@@ -122,7 +122,7 @@ CSimpleArray();
 *src*<br/>
 Существующий объект `CSimpleArray`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует элементы данных, создавая новый пустой `CSimpleArray` объект или копию существующего `CSimpleArray` объекта.
 
@@ -134,7 +134,7 @@ CSimpleArray();
 ~CSimpleArray();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Освобождает все выделенные ресурсы.
 
@@ -223,7 +223,7 @@ CSimpleArray<T, TEqual>
 
 Возвращает указатель на `CSimpleArray` обновленный объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Копирует все элементы объекта, `CSimpleArray` на который ссылается *src,* в текущий объект массива, заменяя все существующие данные.
 
@@ -248,7 +248,7 @@ BOOL Remove(const T& t);
 
 Возвращает TRUE, если элемент найден и удален, FALSE в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При удалении элемента остальные элементы массива перенумерованы для заполнения пустого пространства.
 
@@ -260,7 +260,7 @@ BOOL Remove(const T& t);
 void RemoveAll();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Удаляет все элементы, которые в настоящее время хранятся в массиве.
 
@@ -281,7 +281,7 @@ BOOL RemoveAtint nIndex);
 
 Возвращает TRUE, если элемент был удален, FALSE, если индекс был недействительным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 При удалении элемента остальные элементы массива перенумерованы для заполнения пустого пространства.
 

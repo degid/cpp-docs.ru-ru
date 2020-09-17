@@ -24,7 +24,7 @@ ms.locfileid: "87224335"
 class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CComAutoDeleteCriticalSection`является производным от класса [ккомсафеделетекритикалсектион](../../atl/reference/ccomsafedeletecriticalsection-class.md). Однако `CComAutoDeleteCriticalSection` переопределяет метод [Term](ccomsafedeletecriticalsection-class.md#term) на **`private`** доступ, что приводит к принудительной очистке внутренней памяти только в том случае, если экземпляры этого класса выходят за пределы области или явно удаляются из памяти.
 
@@ -40,7 +40,7 @@ class CComAutoDeleteCriticalSection : public CComSafeDeleteCriticalSection
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="see-also"></a>См. также статью
 

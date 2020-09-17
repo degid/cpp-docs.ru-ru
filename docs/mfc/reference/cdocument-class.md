@@ -216,7 +216,7 @@ class CDocument : public CCmdTarget
 |[CDocument::m_clrRichPreviewTextColor](#m_clrrichpreviewtextcolor)|Определяет цвет переднего плана окна Rich Preview. Этот цвет устанавливается хостом.|
 |[CDocument::m_lfRichPreviewFont](#m_lfrichpreviewfont)|Определяет текстовый шрифт для окна Rich Preview. Эта информация о шрифте устанавливается хостом.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Документ представляет единицу данных, которую пользователь обычно открывает с помощью команды File Open и сохраняет с помощью команды Сохранения файлов.
 
@@ -269,7 +269,7 @@ void AddView(CView* pView);
 *pView*<br/>
 Точки добавления представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция добавляет указанное представление в список представлений, связанных с документом; функция также устанавливает указатель документа представления на этот документ. Платформа вызывает эту функцию при присоединении вновь созданного объекта представления к документу; это происходит в ответ на команду File New, File Open или New Window или при разделении окна сплиттера.
 
@@ -287,7 +287,7 @@ void AddView(CView* pView);
 virtual void BeginReadChunks ();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentcancloseframe"></a><a name="cancloseframe"></a>CDocument::CanCloseFrame
 
@@ -306,7 +306,7 @@ virtual BOOL CanCloseFrame(CFrameWnd* pFrame);
 
 Nonzero, если безопасно закрыть окно рамы; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Проверка реализации по умолчанию, если есть другие окна кадра, отображающие документ. Если указанное окно кадра является последним, отображаемым документом, функция предлагает пользователю сохранить документ, если он был изменен. Переопределить эту функцию, если вы хотите выполнить специальную обработку, когда окно кадра закрыто. Это передовой overridable.
 
@@ -318,7 +318,7 @@ Nonzero, если безопасно закрыть окно рамы; в про
 CDocument();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Платформа обрабатывает создание документов для вас. Переопределение функции участника [OnNewDocument](#onnewdocument) для выполнения инициализации на основе в основе в основе документов; это особенно важно в приложениях интерфейса единого документа (SDI).
 
@@ -330,7 +330,7 @@ CDocument();
 virtual void ClearChunkList ();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentclearpathname"></a><a name="clearpathname"></a>CDocument::ClearPathName
 
@@ -340,7 +340,7 @@ virtual void ClearChunkList ();
 virtual void ClearPathName();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Очистка пути `CDocument` от объекта заставляет приложение подсказывать пользователю при следующем сохранении документа. Это делает команду **Сохранить** вести себя как команда **Сохранить как.**
 
@@ -352,7 +352,7 @@ virtual void ClearPathName();
 virtual void DeleteContents();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это называется как раз перед тем, как документ должен быть уничтожен. Он также требует, чтобы убедиться, что документ пуст перед повторного использования. Это особенно важно для приложения SDI, в котором используется только один документ; документ используется повторно всякий раз, когда пользователь создает или открывает другой документ. Вызовите эту функцию для реализации "Edit Clear All" или аналогичной команды, которая удаляет все данные документа. Реализация по умолчанию этой функции не выполняет никаких действий. Переуверьте эту функцию для удаления данных в документе.
 
@@ -382,7 +382,7 @@ virtual POSITION FindChunk(
 
 Позиция во внутреннем списке кусков в случае успеха. В противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentgetadapter"></a><a name="getadapter"></a>CDocument::GetAdapter
 
@@ -396,7 +396,7 @@ virtual ATL::IDocument* GetAdapter();
 
 Указатель на объект, реализующий `IDocument` интерфейс.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentgetdoctemplate"></a><a name="getdoctemplate"></a>CDocument::GetDocTemplate
 
@@ -473,7 +473,7 @@ virtual CView* GetNextView(POSITION& rPosition) const;
 
 Указатель на представление, идентифицированное *rPosition.*
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция возвращает представление, идентифицированное *rPosition,* а затем устанавливает *rPosition* к значению POSITION следующего представления в списке. Если извлеченное представление является последним в списке, то *rPosition* устанавливается в NULL.
 
@@ -519,7 +519,7 @@ virtual BOOL GetThumbnail(
 
 Возвращает TRUE, если бит-карта для эскиза была создана успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentgettitle"></a><a name="gettitle"></a>CDocument::GetTitle
 
@@ -541,7 +541,7 @@ const CString& GetTitle() const;
 virtual void InitializeSearchContent ();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределить этот метод в производном классе, чтобы инициализировать содержимое поиска. Содержимое должно быть строкой с частями, делимитированным ";". Например, "точка; прямоугольник; ole пункт".
 
@@ -569,7 +569,7 @@ BOOL IsSearchAndOrganizeHandler() const;
 
 Возвращает TRUE, если `CDocument` этот экземпляр был создан для обработчика & организации поиска.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В настоящее время эта функция возвращает TRUE только для обработчиков Rich Preview, реализованных в сервере, не работаемом процессу. Вы можете установить соответствующие флаги (m_bPreviewHandlerMode, m_bSearchMode, m_bGetThumbnailMode) на уровне приложения, чтобы сделать эту функцию вернуться true.
 
@@ -595,7 +595,7 @@ virtual HRESULT LoadDocumentFromStream(
 
 S_OK, если операция нагрузки удалась, в противном случае HRESULT с кодом ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод можно переопределить в производном классе, чтобы настроить способзагрузки данных из потока.
 
@@ -607,7 +607,7 @@ S_OK, если операция нагрузки удалась, в против
 BOOL m_bGetThumbnailMode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `TRUE`указывает на то, что документ был создан dllhost для эскизов.
 
@@ -619,7 +619,7 @@ BOOL m_bGetThumbnailMode;
 BOOL m_bPreviewHandlerMode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 TRUE указывает, что документ был создан prevhost для Рич Предварительный просмотр.
 
@@ -631,7 +631,7 @@ TRUE указывает, что документ был создан prevhost д
 BOOL m_bSearchMode;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `TRUE`указывает на то, что документ был создан индексатором или другим поисковым приложением.
 
@@ -643,7 +643,7 @@ BOOL m_bSearchMode;
 COLORREF m_clrRichPreviewBackColor;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentm_clrrichpreviewtextcolor"></a><a name="m_clrrichpreviewtextcolor"></a>CDocument::m_clrRichPreviewTextColor
 
@@ -653,7 +653,7 @@ COLORREF m_clrRichPreviewBackColor;
 COLORREF m_clrRichPreviewTextColor;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentm_lfrichpreviewfont"></a><a name="m_lfrichpreviewfont"></a>CDocument::m_lfRichPreviewFont
 
@@ -663,7 +663,7 @@ COLORREF m_clrRichPreviewTextColor;
 CFont m_lfRichPreviewFont;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonbeforerichpreviewfontchanged"></a><a name="onbeforerichpreviewfontchanged"></a>Документ::НапредсяРихПревьюфонтизменен
 
@@ -673,7 +673,7 @@ CFont m_lfRichPreviewFont;
 virtual void OnBeforeRichPreviewFontChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonchangedviewlist"></a><a name="onchangedviewlist"></a>Документ::Измененныйввввлист
 
@@ -683,7 +683,7 @@ virtual void OnBeforeRichPreviewFontChanged();
 virtual void OnChangedViewList();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию проверяет, удаляется ли последнее представление, и, если да, удаляет документ. Переопределить эту функцию, если вы хотите выполнить специальную обработку, когда фреймворк добавляет или удаляет представление. Например, если вы хотите, чтобы документ оставался открытым, даже если к нему нет представлений, отмените эту функцию.
 
@@ -695,7 +695,7 @@ virtual void OnChangedViewList();
 virtual void OnCloseDocument();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию уничтожает все кадры, используемые для просмотра документа, закрывает представление, очищает содержимое документа, а затем вызывает функцию участника [DeleteContents,](#deletecontents) чтобы удалить данные документа.
 
@@ -713,7 +713,7 @@ virtual BOOL OnCreatePreviewFrame();
 
 Возвращает TRUE, если кадр создан успешно; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentondocumentevent"></a><a name="ondocumentevent"></a>Документ::OnDocumentEvent
 
@@ -728,7 +728,7 @@ virtual void OnDocumentEvent(DocumentEvent deEvent);
 *deEvent*<br/>
 (в) Перечисленный тип данных, описывающий тип события.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 События документов могут повлиять на несколько классов. Этот метод отвечает за обработку событий документов, которые влияют на классы, отличные от [класса CDocument.](../../mfc/reference/cdocument-class.md) В настоящее время единственным классом, который должен реагировать на события документа, является [класс CDataRecoveryHandler.](../../mfc/reference/cdatarecoveryhandler-class.md) Класс `CDocument` имеет другие переизменяемые методы, ответственные за обработку эффекта `CDocument`на .
 
@@ -759,7 +759,7 @@ virtual void OnDrawThumbnail(
 *lprcBounds*<br/>
 Определяет ограничивающий прямоугольник области, где эскиз должен быть нарисован.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonfilesendmail"></a><a name="onfilesendmail"></a>Документ::OnFileSendMail
 
@@ -769,7 +769,7 @@ virtual void OnDrawThumbnail(
 void OnFileSendMail();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `OnFileSendMail`вызывает [OnSaveDocument](#onsavedocument) для сериализации (сохранения) безымянных и измененных документов во временный файл, который затем отправляется по электронной почте. Если документ не был изменен, временный файл не нужен; оригинал отправляется. `OnFileSendMail`загружает MAPI32. DLL, если он еще не загружен.
 
@@ -799,7 +799,7 @@ virtual HRESULT OnLoadDocumentFromStream(
 
 S_OK, если нагрузка удачна; в противном случае код ошибки.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonnewdocument"></a><a name="onnewdocument"></a>Документ::OnNewDocument
 
@@ -813,7 +813,7 @@ virtual BOOL OnNewDocument();
 
 Незерно, если документ был успешно инициализирован; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию вызывает функцию элемента [DeleteContents,](#deletecontents) чтобы убедиться, что документ пуст, а затем помечает новый документ как чистый. Переопределить эту функцию, чтобы инициализировать структуру данных для нового документа. Вы должны вызвать версию базового класса этой функции из переопределения.
 
@@ -848,7 +848,7 @@ virtual BOOL OnOpenDocument(LPCTSTR lpszPathName);
 
 Nonzero, если документ был успешно загружен; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию открывает указанный файл, вызывает функцию элемента [DeleteContents,](#deletecontents) чтобы убедиться, что документ пуст, вызывает [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) для чтения содержимого файла, а затем помечает документ как чистый. Переопределить эту функцию, если вы хотите использовать что-то другое, чем механизм архива или файловый механизм. Например, можно написать приложение, в котором документы представляют записи в базе данных, а не отдельные файлы.
 
@@ -883,7 +883,7 @@ virtual HRESULT OnPreviewHandlerQueryFocus(HWND* phwnd);
 
 Возвращает S_OK в случае успеха; или значение ошибки в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonpreviewhandlertranslateaccelerator"></a><a name="onpreviewhandlertranslateaccelerator"></a>CDocument::OnPreviewHandlerПеревод
 
@@ -902,7 +902,7 @@ virtual HRESULT OnPreviewHandlerTranslateAccelerator(MSG* pmsg);
 
 Если сообщение нажатия клавишможет может быть обработано обработчиком предварительного просмотра, обработчик обрабатывает его и возвращает S_OK. Если обработчик предварительного просмотра не может обработать `IPreviewHandlerFrame::TranslateAccelerator`сообщение нажатия клавиши, он предлагает его хосу через . Если узла обрабатывает сообщение, этот метод возвращается S_OK. Если узел не обрабатывает сообщение, этот метод возвращается S_FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonrichpreviewbackcolorchanged"></a><a name="onrichpreviewbackcolorchanged"></a>Документ::OnRichPreviewBackColorChanged
 
@@ -912,7 +912,7 @@ virtual HRESULT OnPreviewHandlerTranslateAccelerator(MSG* pmsg);
 virtual void OnRichPreviewBackColorChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonrichpreviewfontchanged"></a><a name="onrichpreviewfontchanged"></a>Документ::OnRichPreviewFont
 
@@ -922,7 +922,7 @@ virtual void OnRichPreviewBackColorChanged();
 virtual void OnRichPreviewFontChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonrichpreviewsitechanged"></a><a name="onrichpreviewsitechanged"></a>Документ::OnRichPreviewSiteИзменен
 
@@ -932,7 +932,7 @@ virtual void OnRichPreviewFontChanged();
 virtual void OnRichPreviewSiteChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonrichpreviewtextcolorchanged"></a><a name="onrichpreviewtextcolorchanged"></a>Документ::OnRichPreviewTextColorChanged
 
@@ -942,7 +942,7 @@ virtual void OnRichPreviewSiteChanged();
 virtual void OnRichPreviewTextColorChanged();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonsavedocument"></a><a name="onsavedocument"></a>Документ::OnSaveDocument
 
@@ -961,7 +961,7 @@ virtual BOOL OnSaveDocument(LPCTSTR lpszPathName);
 
 Nonzero, если документ был успешно сохранен; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию открывает указанный файл, вызывает [CObject::Serialize](../../mfc/reference/cobject-class.md#serialize) для записи данных документа в файл, а затем помечает документ как чистый. Переопределить эту функцию, если требуется выполнять специальную обработку, когда фреймворк сохраняет документ. Например, можно написать приложение, в котором документы представляют записи в базе данных, а не отдельные файлы.
 
@@ -973,7 +973,7 @@ Nonzero, если документ был успешно сохранен; в п
 virtual void OnUnloadHandler();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentonupdatefilesendmail"></a><a name="onupdatefilesendmail"></a>Документ::OnUpdateFileSendMail
 
@@ -988,7 +988,7 @@ void OnUpdateFileSendMail(CCmdUI* pCmdUI);
 *pCmdUI*<br/>
 Указатель на объект [CCmdUI,](../../mfc/reference/ccmdui-class.md) связанный с командой ID_FILE_SEND_MAIL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В противном случае функция удаляет ID_FILE_SEND_MAIL команду из меню, включая сепараторы выше или ниже пункта меню по мере необходимости. MAPI включен, если MAPI32. DLL присутствует на пути и, в разделе «Почта» WIN. Файл INI, МАДИ-1. Большинство приложений помещают эту команду в меню файла.
 
@@ -1007,7 +1007,7 @@ virtual void PreCloseFrame(CFrameWnd* pFrame);
 *pFrame*<br/>
 Указатель на [CFrameWnd,](../../mfc/reference/cframewnd-class.md) который `CDocument` содержит связанный объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он может быть отменен, чтобы обеспечить пользовательские очистки, но не забудьте позвонить в базовый класс, а также.
 
@@ -1030,7 +1030,7 @@ virtual BOOL ReadNextChunkValue(IFilterChunkValue** ppValue);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentreleasefile"></a><a name="releasefile"></a>Документ::ReleaseFile
 
@@ -1050,7 +1050,7 @@ virtual void ReleaseFile(
 *bAbort*<br/>
 Уточняется, должен ли файл быть освобожден `CFile::Close` с `CFile::Abort`помощью любого или . FALSE, если файл должен быть выпущен с помощью [CFile::Закрыть](../../mfc/reference/cfile-class.md#close); ПРАВДА, если файл должен быть выпущен с помощью [CFile::Abort](../../mfc/reference/cfile-class.md#abort).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если *bAbort* является `ReleaseFile` `CFile::Abort`правдой, звонки, и файл освобождается. `CFile::Abort`не будет бросать исключение.
 
@@ -1076,7 +1076,7 @@ virtual void RemoveChunk(
 *Pid*<br/>
 Определяет PID части, которая будет удалена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentremoveview"></a><a name="removeview"></a>CDocument::RemoveView
 
@@ -1091,7 +1091,7 @@ void RemoveView(CView* pView);
 *pView*<br/>
 Указывает на удаление представления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция удаляет указанное представление из списка представлений, связанных с документом; он также устанавливает указатель документа представления на NULL. Эта функция вызывается фреймворкой, когда окно кадра закрыто или стекло окна сплиттера закрыто.
 
@@ -1125,7 +1125,7 @@ virtual void ReportSaveLoadException(
 *nIDPDefault*<br/>
 Идентификация сообщения об ошибке, которая будет отображаться, если функция не указывает более конкретную.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию изучает объект исключения и ищет сообщение об ошибке, которое конкретно описывает причину. Если конкретное сообщение не найдено или если *e* является NULL, используется общее сообщение, указанное параметром *nIDPDefault.* Функция затем отображает окно сообщения, содержащее сообщение об ошибке. Переопределить эту функцию, если вы хотите предоставить дополнительные, настраиваемые сообщения о сбое. Это передовой overridable.
 
@@ -1141,7 +1141,7 @@ virtual BOOL SaveModified();
 
 Nonzero, если безопасно продолжать и закрывать документ; 0, если документ не должен быть закрыт.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация этой функции по умолчанию отображает поле сообщения, задавая пользователю вопрос о том, следует ли сохранять изменения в документе, если таковые были внесены. Переопределить эту функцию, если ваша программа требует другой процедуры побуждения. Это передовой overridable.
 
@@ -1162,7 +1162,7 @@ virtual BOOL SetChunkValue (IFilterChunkValue* pValue);
 
 Имеет ненулевое значение в случае успешного выполнения, иначе — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cdocumentsetmodifiedflag"></a><a name="setmodifiedflag"></a>CDocument::SetModifiedFlag
 
@@ -1177,7 +1177,7 @@ virtual void SetModifiedFlag(BOOL bModified = TRUE);
 *bИзменено*<br/>
 Пометить, был ли изменен документ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызывая эту функцию последовательно, вы гарантируете, что фреймворк подсказывает пользователю сохранить изменения перед закрытием документа. Обычно для параметра *bModified* следует использовать значение TRUE по умолчанию. Чтобы отметить документ чистым (неизмененным), назовите эту функцию значением FALSE.
 
@@ -1199,7 +1199,7 @@ virtual void SetPathName(
 *bAddToMRU*<br/>
 Определяет, добавляется ли имя файла в список самых последних используемых файлов (MRU). Если true, имя файла добавляется; если FALSE, он не добавляется.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от значения *bAddToMRU* путь добавляется или не добавляется в список MRU, поддерживаемый приложением. Обратите внимание, что некоторые документы не связаны с дисковым файлом. Вызовите эту функцию только в том случае, если вы переопределяете реализацию по умолчанию для открытия и сохранения файлов, используемых инфраструктурой.
 
@@ -1216,7 +1216,7 @@ virtual void SetTitle(LPCTSTR lpszTitle);
 *lpszНазвание*<br/>
 Указывает на строку, которая будет использоваться в качестве заголовка документа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызов этой функции обновляет названия всех окон кадра, отображающих документ.
 
@@ -1242,7 +1242,7 @@ void UpdateAllViews(
 *Phint*<br/>
 Указывает на объект, хранятую информацию об изменении.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эту функцию следует вызвать после вызова функции участника [SetModifiedFlag.](#setmodifiedflag) Эта функция информирует каждое представление, приложено к документу, за исключением представления, указанного *pSender,* о том, что документ был изменен. Обычно эта функция называется из класса представления после того, как пользователь изменил документ через представление.
 

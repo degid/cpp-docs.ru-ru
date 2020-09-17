@@ -55,7 +55,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 |[IPersistStorageImpl::Сохранить](#save)|Сохраняет свойства объекта в указанном хранилище.|
 |[IPersistStorageImpl::SaveCompleted](#savecompleted)|Уведомляет объект о том, что он может вернуться в обычный режим для записи на объект хранения. Реализация ATL возвращает S_OK.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `IPersistStorageImpl`реализует интерфейс [IPersistStorage,](/windows/win32/api/objidl/nn-objidl-ipersiststorage) который позволяет клиенту запросить загрузку объекта и сохранить его постоянные данные с помощью хранилища.
 
@@ -81,7 +81,7 @@ class ATL_NO_VTABLE IPersistStorageImpl : public IPersistStorage
 STDMETHOD(GetClassID)(CLSID* pClassID);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersist::GetClassID](/windows/win32/api/objidl/nf-objidl-ipersist-getclassid) в Windows SDK.
 
@@ -97,7 +97,7 @@ STDMETHOD(HandsOffStorage)(void);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistStorage::HandsOffStorage](/windows/win32/api/objidl/nf-objidl-ipersiststorage-handsoffstorage) в Windows SDK.
 
@@ -109,7 +109,7 @@ STDMETHOD(HandsOffStorage)(void);
 STDMETHOD(InitNew)(IStorage*);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit)
 
@@ -123,7 +123,7 @@ STDMETHOD(InitNew)(IStorage*);
 STDMETHOD(IsDirty)(void);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit)
 
@@ -137,7 +137,7 @@ STDMETHOD(IsDirty)(void);
 STDMETHOD(Load)(IStorage* pStorage);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) `Load`использует поток под названием "Содержимое" для извлечения данных объекта. Метод [Сохранения](#save) изначально создает этот поток.
 
@@ -151,7 +151,7 @@ STDMETHOD(Load)(IStorage* pStorage);
 STDMETHOD(Save)(IStorage* pStorage, BOOL fSameAsLoad);
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация ATL делегирует интерфейс [IPersistStreamInit.](/windows/win32/api/ocidl/nn-ocidl-ipersiststreaminit) Когда `Save` он впервые вызывается, он создает поток под названием "Содержимое" на указанном хранилище. Этот поток затем используется в `Save` последующих вызовах и в вызовах [к Загрузке.](#load)
 
@@ -169,7 +169,7 @@ STDMETHOD(SaveCompleted)(IStorage*);
 
 Возвращает S_OK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPersistStorage:СохранитьЗавершено](/windows/win32/api/objidl/nf-objidl-ipersiststorage-savecompleted) в Windows SDK.
 

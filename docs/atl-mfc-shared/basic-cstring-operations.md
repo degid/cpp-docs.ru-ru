@@ -32,7 +32,7 @@ ms.locfileid: "87220903"
 
 `Class CString`основано на классе класса [CStringT](../atl-mfc-shared/reference/cstringt-class.md). `CString`имеет значение **`typedef`** `CStringT` . Точнее, `CString` — это **`typedef`** *явная специализация* `CStringT` , которая представляет собой распространенный способ использования шаблона класса для определения класса. Аналогично определенным классам являются `CStringA` и `CStringW` .
 
-`CString`, `CStringA` и `CStringW` определены в atlstr. h. `CStringT`определен в CStringT. h.
+`CString`, `CStringA` и `CStringW` определены в atlstr.h. `CStringT`определен в CStringT.h.
 
 `CString`, `CStringA` и `CStringW` каждый получают набор методов и операторов, определенных `CStringT` для использования со строковыми данными, которые они поддерживают. Некоторые из методов дублируются и, в некоторых случаях, препревосходят строковые службы библиотек времени выполнения C.
 

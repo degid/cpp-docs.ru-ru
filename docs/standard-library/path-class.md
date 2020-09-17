@@ -34,7 +34,7 @@ class path;
 |Имя типа|Описание|
 |-|-|
 |[const_iterator](#const_iterator)|Синоним для `iterator`.|
-|[итераци](#iterator)|Итератор двунаправленной константы, обозначающий `path` компоненты `myname` .|
+|[iterator](#iterator)|Итератор двунаправленной константы, обозначающий `path` компоненты `myname` .|
 |[string_type](#string_type)|Тип является синонимом `basic_string<value_type>`.|
 
 ### <a name="member-functions"></a>Функции элементов
@@ -43,13 +43,13 @@ class path;
 |-|-|
 |[append](#append)|Добавляет указанную последовательность в `mypath` , преобразует и вставляет preferred_separator по мере необходимости.|
 |[assign](#assign)|Заменяет `mypath` на указанную последовательность, преобразованную при необходимости.|
-|[начале](#begin)|Возвращает значение, `path::iterator` обозначающее первый элемент пути в пути, если он есть.|
+|[begin](#begin)|Возвращает значение, `path::iterator` обозначающее первый элемент пути в пути, если он есть.|
 |[c_str](#c_str)|Возвращает указатель на первый символ в `mypath` .|
-|[открытым](#clear)|Выполняется `mypath.clear()` .|
+|[clear](#clear)|Выполняется `mypath.clear()` .|
 |[равенств](#compare)|Возвращает значения сравнения.|
 |[concat](#compare)|Добавляет указанную последовательность в `mypath` , преобразованную (но не вставляя разделитель) по мере необходимости.|
 |[empty](#empty)|Возвращает `mypath.empty()`.|
-|[конце](#end)|Возвращает итератор конца последовательности типа `iterator` .|
+|[end](#end)|Возвращает итератор конца последовательности типа `iterator` .|
 |[Расширение](#extension)|Возвращает суффикс `filename()` .|
 |[filename](#filename)|Возвращает компонент корневого каталога myname, а именно `empty() path() : *--end()`. Компонент может быть пустым.|
 |[generic_string](#generic_string)|Возвращает значение `this->string<Elem, Traits, Alloc>(al)` с (в Windows) любой обратной косой чертой, преобразованной в прямую косую черту.|
@@ -80,7 +80,7 @@ class path;
 |[root_path](#root_path)|Возвращает компонент корневого пути `myname` .|
 |[stem](#stem)|Возвращает `stem` компонент `myname` .|
 |[строка](#string)|Преобразует последовательность, хранящуюся в `mypath` .|
-|[позиции](#swap)|Выполняется `swap(mypath, right.mypath)` .|
+|[swap](#swap)|Выполняется `swap(mypath, right.mypath)` .|
 |[u16string](#u16string)|Преобразует последовательность, хранимую в `mypath` , в кодировку UTF-16 и возвращает ее, хранящуюся в объекте типа `u16string` .|
 |[u32string](#u32string)|Преобразует последовательность, хранимую в `mypath` , в кодировку UTF-32 и возвращает ее, хранящуюся в объекте типа `u32string` .|
 |[u8string](#u8string)|Преобразует последовательность, хранимую в `mypath` , в кодировку UTF-8 и возвращает ее, хранящуюся в объекте типа `u8string` .|
@@ -91,9 +91,9 @@ class path;
 
 |Оператор|Описание:|
 |-|-|
-|[Оператор =](#op_as)|Заменяет элементы пути копией другого пути.|
-|[operator + =](#op_add)|Различные `concat` выражения.|
-|[Оператор/=](#op_divide)|Различные `append` выражения.|
+|[operator=](#op_as)|Заменяет элементы пути копией другого пути.|
+|[operator+=](#op_add)|Различные `concat` выражения.|
+|[operator/=](#op_divide)|Различные `append` выражения.|
 |[Оператор string_type](#op_string)|Возвращает `myname`.|
 
 ## <a name="requirements"></a>Требования
@@ -116,13 +116,13 @@ path& append(InIt first, InIt last);
 
 ### <a name="parameters"></a>Параметры
 
-*источника*\
+*source*\
 Указанная последовательность.
 
-*началь*\
+*first*\
 Начало указанной последовательности.
 
-*Последняя*\
+*last*\
 Конец указанной последовательности.
 
 ## <a name="pathassign"></a><a name="assign"></a>путь:: Assign
@@ -139,13 +139,13 @@ path& assign(InIt first, InIt last);
 
 ### <a name="parameters"></a>Параметры
 
-*источника*\
+*source*\
 Указанная последовательность.
 
-*началь*\
+*first*\
 Начало указанной последовательности.
 
-*Последняя*\
+*last*\
 Конец указанной последовательности.
 
 ## <a name="pathbegin"></a><a name="begin"></a>путь:: начало
@@ -190,7 +190,7 @@ int compare(const value_type *ptr) const;
 *str*\
 Сравниваемая строка.
 
-*указатель*\
+*ptr*\
 Указатель на сравниваемый.
 
 ## <a name="pathconcat"></a><a name="concat"></a>путь:: Concat
@@ -207,13 +207,13 @@ path& concat(InIt first, InIt last);
 
 ### <a name="parameters"></a>Параметры
 
-*источника*\
+*source*\
 Указанная последовательность.
 
-*началь*\
+*first*\
 Начало указанной последовательности.
 
-*Последняя*\
+*last*\
 Конец указанной последовательности.
 
 ## <a name="pathconst_iterator"></a><a name="const_iterator"></a>путь:: const_iterator
@@ -248,7 +248,7 @@ iterator end() const;
 path extension() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает суффикс `filename() X` таким образом, что:
 
@@ -407,7 +407,7 @@ class iterator
    };
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс описывает двунаправленный константный итератор, указывающий `path` компоненты `myname` в последовательности:
 
@@ -447,7 +447,7 @@ path& make_preferred();
 const string_type& native() const noexcept;
 ```
 
-## <a name="pathoperator"></a><a name="op_as"></a>путь:: оператор =
+## <a name="pathoperator"></a><a name="op_as"></a>путь::operator=
 
 Заменяет элементы пути копией другого пути.
 
@@ -461,17 +461,17 @@ path& operator=(const Source& source);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 [Путь](../standard-library/path-class.md) , который копируется в `path` .
 
-*источника*\
+*source*\
 Исходный путь.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первый оператор члена копирует `right.myname` в `myname` . Второй оператор члена перемещается `right.myname` в `myname` . Третий оператор члена ведет себя так же, как `*this = path(source)` .
 
-## <a name="pathoperator"></a><a name="op_add"></a>путь:: operator + =
+## <a name="pathoperator"></a><a name="op_add"></a>путь::operator+=
 
 Различные `concat` выражения.
 
@@ -490,22 +490,22 @@ path& operator+=(Elem elem);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Добавленный путь.
 
 *str*\
 Добавленная строка.
 
-*указатель*\
+*ptr*\
 Добавленный указатель.
 
 *Elem*\
 Добавленный `value_type` или `Elem` .
 
-*источника*\
+*source*\
 Добавленный источник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функции-члены работают так же, как следующие соответствующие выражения:
 
@@ -521,7 +521,7 @@ path& operator+=(Elem elem);
 
 1. `concat(path(basic_string<Elem>(1, elem)));`
 
-## <a name="pathoperator"></a><a name="op_divide"></a>путь:: оператор/=
+## <a name="pathoperator"></a><a name="op_divide"></a>путь::operator/=
 
 Различные `append` выражения.
 
@@ -534,13 +534,13 @@ path& operator/=(const Source& source);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Добавленный путь.
 
-*источника*\
+*source*\
 Добавленный источник.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функции-члены работают так же, как следующие соответствующие выражения:
 
@@ -564,7 +564,7 @@ operator string_type() const;
 path parent_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает компонент родительского пути, в `myname` частности префикс `myname` после удаления `filename().native()` и все непосредственно предшествующие разделители каталогов. (Аналогично, если это `begin() != end()` объединение всех элементов в диапазоне `[begin(), --end())` путем последовательного применения `operator/=` .) Компонент может быть пустым.
 
@@ -593,22 +593,22 @@ path(InIt first, InIt last, const locale& loc);
 
 ### <a name="parameters"></a>Параметры
 
-*Правильно*\
+*right*\
 Путь, по которому сконструированный путь должен быть копией.
 
-*источника*\
+*source*\
 Источник, для которого сконструированный путь должен быть копией.
 
 *Loc*\
 Указанный языковой стандарт.
 
-*началь*\
+*first*\
 Позиция первого элемента, который следует скопировать.
 
-*Последняя*\
+*last*\
 Расположение последнего элемента для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструкторы всех конструкций создаются `myname` различными способами:
 
@@ -638,7 +638,7 @@ static constexpr value_type preferred_separator == '/';
 #endif // filesystem model now defined
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обратите внимание, что в большинстве контекстов в Windows в равной мере допускается использование соответствующего символа L"/".
 
@@ -650,7 +650,7 @@ static constexpr value_type preferred_separator == '/';
 path relative_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает компонент относительного пути `myname` , в частности суффикс `myname` после удаления, `root_path().native()` и все последующие избыточные разделители каталогов. Компонент может быть пустым.
 
@@ -675,7 +675,7 @@ path& replace_extension(const path& newext = path());
 *newext*\
 Новое расширение.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сначала удаляет суффикс `extension().native()` из `myname` . Затем `!newext.empty() && newext[0] != dot` , если (где `dot` равно `*path(".").c_str()` ), `dot` добавляется к `myname` . Затем *newext* добавляется к `myname` .
 
@@ -692,7 +692,7 @@ path& replace_filename(const path& pval);
 *Pval*\
 Путь к имени файла.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член выполняет:
 
@@ -711,7 +711,7 @@ return (*this);
 path root_directory() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Компонент может быть пустым.
 
@@ -723,7 +723,7 @@ path root_directory() const;
 path root_name() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Компонент может быть пустым.
 
@@ -735,7 +735,7 @@ path root_name() const;
 path root_path() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает компонент корневого пути `myname` , в частности `root_name()`  /  `root_directory` . Компонент может быть пустым.
 
@@ -747,7 +747,7 @@ path root_path() const;
 path stem() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращает `stem` компонент, в `myname` частности, `filename().native()` с любым удаленным конечным методом `extension().native()` . Компонент может быть пустым.
 
@@ -761,7 +761,7 @@ basic_string\<Elem, Traits, Alloc> string(const Alloc& al = Alloc()) const;
 string string() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Первая функция-член (шаблон) преобразует последовательность, хранимую `mypath` таким же образом, как:
 

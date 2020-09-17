@@ -90,7 +90,7 @@ intptr_t _wspawnv(
 
 Дополнительные сведения об этих и других кодах возврата см. в разделе [_doserrno, errno, _sys_errlist и _sys_nerr](../../c-runtime-library/errno-doserrno-sys-errlist-and-sys-nerr.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Каждая из этих функций создает и выполняет новый процесс, передавая ему массив указателей на аргументы командной строки.
 

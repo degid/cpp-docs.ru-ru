@@ -94,7 +94,7 @@ BOOL AFXAPI AfxParseURL(
 
 Ненулевое значение, если был успешно проанализирован URL-адрес. в противном случае — значение 0, если оно пусто или не содержит известного типа службы Интернета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он анализирует строку URL-адреса и возвращает тип службы и ее компонентов.
 
@@ -113,7 +113,7 @@ BOOL AFXAPI AfxParseURL(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксинет. h
+  **Заголовок** афксинет.h
 
 ## <a name="afxparseurlex"></a><a name="afxparseurlex"></a> афкспарсеурлекс
 
@@ -201,7 +201,7 @@ BOOL AFXAPI AfxParseURLEx(
 
 Ненулевое значение, если был успешно проанализирован URL-адрес. в противном случае — значение 0, если оно пусто или не содержит известного типа службы Интернета.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он анализирует строку URL-адреса и возвращает тип службы и ее компонентов, а также предоставляет имя пользователя и пароль. Флаги указывают, как обрабатываются ненадежные символы.
 
@@ -210,7 +210,7 @@ BOOL AFXAPI AfxParseURLEx(
 
 ### <a name="requirements"></a>Требования
 
-  **Заголовок** афксинет. h
+  **Заголовок** афксинет.h
 
 ## <a name="afxgetinternethandletype"></a><a name="afxgetinternethandletype"></a> афксжетинтернесандлетипе
 
@@ -231,7 +231,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 Любой из типов служб Интернета, определенных WININET. Высоты. Список этих служб Интернета см. в разделе "Примечания". Если маркер имеет значение NULL или не распознан, функция возвращает AFX_INET_SERVICE_UNK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В следующем списке перечислены возможные типы Интернета, возвращаемые `AfxGetInternetHandleType` .
 
@@ -266,7 +266,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксинет. h
+**Заголовок:** афксинет.h
 
 ## <a name="afxthrowinternetexception"></a><a name="afxthrowinternetexception"></a> афкссровинтернетексцептион
 
@@ -286,7 +286,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 *дверрор*<br/>
 Ошибка, ставшая причиной исключения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы несете ответственность за определение причины на основе кода ошибки операционной системы.
 
@@ -295,7 +295,7 @@ DWORD AFXAPI AfxGetInternetHandleType(  HINTERNET hQuery );
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** афксинет. h
+**Заголовок:** афксинет.h
 
 ## <a name="see-also"></a>См. также раздел
 

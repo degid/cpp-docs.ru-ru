@@ -15,7 +15,7 @@ ms.locfileid: "87205890"
 ---
 # <a name="how-to-provide-work-functions-to-the-call-and-transformer-classes"></a>Практическое руководство. Предоставление рабочих функций классам call и transformer
 
-В этом разделе показано несколько способов предоставления рабочих функций классам [Concurrency:: Call](../../parallel/concrt/reference/call-class.md) и [Concurrency:: transformer](../../parallel/concrt/reference/transformer-class.md) .
+В этом разделе показано несколько способов предоставления рабочих функций классам [concurrency::Call](../../parallel/concrt/reference/call-class.md) и [concurrency::transformer](../../parallel/concrt/reference/transformer-class.md) .
 
 В первом примере показано, как передать лямбда-выражение `call` объекту. Во втором примере показано, как передать объект функции в `call` объект. В третьем примере показано, как привязать метод класса к `call` объекту.
 

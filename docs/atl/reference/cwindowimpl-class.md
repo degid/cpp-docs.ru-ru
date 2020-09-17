@@ -54,7 +54,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[Квиндовимпл:: Create](#create)|Создает окно.|
 
@@ -82,7 +82,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 |-|-|
 |[m_pfnSuperWindowProc](#m_pfnsuperwindowproc)|Указывает на исходную процедуру окна класса Window.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 С помощью можно `CWindowImpl` создать окно или подкласс существующего окна. в `CWindowImpl` процедуре окна используется схема сообщений для направления сообщений соответствующим обработчикам.
 
@@ -124,7 +124,7 @@ class ATL_NO_VTABLE CWindowImpl : public CWindowImplBaseT<TBase, TWinTraits>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="cwindowimplcreate"></a><a name="create"></a> Квиндовимпл:: Create
 
@@ -168,7 +168,7 @@ HWND Create(
 
 В случае успеха — маркер для вновь созданного окна. В противном случае — значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `Create` сначала регистрирует класс окна, если он еще не зарегистрирован. Вновь созданное окно будет автоматически присоединено к `CWindowImpl` объекту.
 
@@ -208,7 +208,7 @@ LRESULT DefWindowProc();
 
 Результат обработки сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию `DefWindowProc` вызывает функцию Win32 [каллвиндовпрок](/windows/win32/api/winuser/nf-winuser-callwindowprocw) для отправки сведений о сообщении в процедуру окна, указанную в [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
@@ -238,7 +238,7 @@ virtual WNDPROC GetWindowProc();
 
 Текущая процедура окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, чтобы заменить процедуру окна собственной.
 
@@ -254,7 +254,7 @@ static CWndClassInfo& GetWndClassInfo();
 
 Статический экземпляр [квндклассинфо](../../atl/reference/cwndclassinfo-class.md).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию `CWindowImpl` получает этот метод через макрос [DECLARE_WND_CLASS](window-class-macros.md#declare_wnd_class) , который указывает новый класс окна.
 
@@ -270,7 +270,7 @@ static CWndClassInfo& GetWndClassInfo();
 WNDPROC m_pfnSuperWindowProc;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 |Тип окна|Процедура окна|
 |--------------------|----------------------|
@@ -293,7 +293,7 @@ virtual void OnFinalMessage(HWND hWnd);
 *hWnd*<br/>
 окне Маркер для уничтожения окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Реализация по умолчанию `OnFinalMessage` не выполняет никаких действий, но эту функцию можно переопределить для выполнения очистки перед уничтожением окна. Если вы хотите автоматически удалить объект при уничтожении окна, можно вызвать **Удаление этого объекта;** в этой функции.
 
@@ -314,7 +314,7 @@ BOOL SubclassWindow(HWND hWnd);
 
 Значение TRUE, если окно успешно подклассировать; в противном случае — значение FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В окне с подклассами теперь используется [квиндовимпл:: WindowProc](#windowproc). Исходная процедура окна сохраняется в [m_pfnSuperWindowProc](#m_pfnsuperwindowproc).
 
@@ -363,7 +363,7 @@ static LRESULT CALLBACK WindowProc(
 
 Результат обработки сообщения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `WindowProc` использует схему сообщений по умолчанию (объявленную с [BEGIN_MSG_MAP](message-map-macros-atl.md#begin_msg_map)) для направления сообщений соответствующим обработчикам. При необходимости `WindowProc` вызывает [дефвиндовпрок](#defwindowproc) для дополнительной обработки сообщений. Если окончательное сообщение не обрабатывается, `WindowProc` выполняет следующие действия:
 

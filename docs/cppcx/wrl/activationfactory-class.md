@@ -65,7 +65,7 @@ class ActivationFactory :
 *I2*<br/>
 Второй интерфейс.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `ActivationFactory`обеспечивает методы регистрации и `IActivationFactory` основные функциональные возможности для интерфейса. `ActivationFactory`также позволяет обеспечить пользовательскую реализацию завода.
 

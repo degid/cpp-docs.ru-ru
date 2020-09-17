@@ -39,7 +39,7 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 Значение S_OK, если операция завершилась успешно; в противном случае — значение HRESULT, описывающее тип сбоя. Вероятные ошибки HRESULT — это CLASS_E_CLASSNOTAVAILABLE и E_INVALIDARG.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Возвращает фабрику активации для указанного идентификатора активации.
 
@@ -47,7 +47,7 @@ inline HRESULT STDAPICALLTYPE ActivationFactoryCallback(
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Module. h
+**Заголовок:** Module.h
 
 **Пространство имен:** Microsoft:: WRL::D состояния
 

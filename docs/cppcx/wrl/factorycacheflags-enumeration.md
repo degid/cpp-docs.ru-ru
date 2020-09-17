@@ -22,7 +22,7 @@ ms.locfileid: "88843278"
 enum FactoryCacheFlags;
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию политика кэширования фабрики указывается как параметр шаблона [ModuleType](moduletype-enumeration.md) при создании объекта [модуля](module-class.md) . Чтобы переопределить эту политику, укажите значение **факторикачефлагс** при создании объекта фабрики.
 
@@ -34,7 +34,7 @@ enum FactoryCacheFlags;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** Implements. h
+**Заголовок:** Implements.h
 
 **Пространство имен:** Microsoft::WRL
 

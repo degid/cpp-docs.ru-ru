@@ -61,7 +61,7 @@ ms.locfileid: "88833872"
 typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется в каждом проекте ATL. На основе [_ATL_BASE_MODULE70](../../atl/reference/atl-base-module70-structure.md).
 
@@ -69,7 +69,7 @@ typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** атлкоре. h
+**Заголовок:** атлкоре.h
 
 ## <a name="_atl_com_module"></a><a name="_atl_com_module"></a> _ATL_COM_MODULE
 
@@ -79,13 +79,13 @@ typedef ATL::_ATL_BASE_MODULE70 _ATL_BASE_MODULE;
 typedef ATL::_ATL_COM_MODULE70 _ATL_COM_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется проектами ATL, использующими функции COM. На основе [_ATL_COM_MODULE70](../../atl/reference/atl-com-module70-structure.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="_atl_module"></a><a name="_atl_module"></a> _ATL_MODULE
 
@@ -99,7 +99,7 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 
 **Заголовок**
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 На основе [_ATL_MODULE70](../../atl/reference/atl-module70-structure.md).
 
@@ -111,13 +111,13 @@ typedef ATL::_ATL_MODULE70 _ATL_MODULE;
 typedef ATL::_ATL_WIN_MODULE70 _ATL_WIN_MODULE;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется любыми проектами ATL, использующими функции для работы с окнами. На основе [_ATL_WIN_MODULE70](../../atl/reference/atl-win-module70-structure.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atl_url_port"></a><a name="atl_url_port"></a> ATL_URL_PORT
 
@@ -129,7 +129,7 @@ typedef WORD ATL_URL_PORT;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="ccomdispatchdriver"></a><a name="ccomdispatchdriver"></a> ккомдиспатчдривер
 
@@ -141,7 +141,7 @@ typedef CComQIPtr<IDispatch, &__uuidof(IDispatch)> CComDispatchDriver;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccomglobalsthreadmodel"></a><a name="ccomglobalsthreadmodel"></a> ккомглобалссреадмодел
 
@@ -159,7 +159,7 @@ typedef CComMultiThreadModel CComGlobalsThreadModel;
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от модели потоков, используемой приложением, **`typedef`** имя `CComGlobalsThreadModel` ссылается либо на [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) , либо на [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md). Эти классы предоставляют дополнительные **`typedef`** имена для ссылки на класс критической секции.
 
@@ -181,7 +181,7 @@ S = `CComSingleThreadModel` ; M = `CComMultiThreadModel`
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccomobjectthreadmodel"></a><a name="ccomobjectthreadmodel"></a> ккомобжектсреадмодел
 
@@ -199,7 +199,7 @@ typedef CComMultiThreadModel CComObjectThreadModel;
 #endif
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В зависимости от модели потоков, используемой приложением, **`typedef`** имя `CComObjectThreadModel` ссылается либо на [ккомсинглесреадмодел](../../atl/reference/ccomsinglethreadmodel-class.md) , либо на [ккоммултисреадмодел](../../atl/reference/ccommultithreadmodel-class.md). Эти классы предоставляют дополнительные **`typedef`** имена для ссылки на класс критической секции.
 
@@ -221,7 +221,7 @@ S = `CComSingleThreadModel` ; M = `CComMultiThreadModel`
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="ccontainedwindow"></a><a name="ccontainedwindow"></a> кконтаинедвиндов
 
@@ -233,9 +233,9 @@ typedef CContainedWindowT<CWindow> CContainedWindow;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CContainedWindow` является специализацией [кконтаинедвиндовт](../../atl/reference/ccontainedwindowt-class.md). Если вы хотите изменить базовый класс или признаки, используйте `CContainedWindowT` напрямую.
 
@@ -249,7 +249,7 @@ typedef CPathT<CString> CPath;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlpath. h
+**Заголовок:** atlpath.h
 
 ## <a name="cpatha"></a><a name="cpatha"></a> кпаса
 
@@ -261,7 +261,7 @@ typedef CPathT<CStringA> CPathA;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlpath. h
+**Заголовок:** atlpath.h
 
 ## <a name="cpathw"></a><a name="cpathw"></a> кпасв
 
@@ -273,7 +273,7 @@ typedef ATL::CPathT<CStringW> CPathW;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlpath. h
+**Заголовок:** atlpath.h
 
 ## <a name="csimplevalarray"></a><a name="csimplevalarray"></a> ксимплеваларрай
 
@@ -283,13 +283,13 @@ typedef ATL::CPathT<CStringW> CPathW;
 #define CSimpleValArray CSimpleArray
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `CSimpleValArray` предоставляется для создания и управления массивами, содержащими простые типы данных. Это простой #define [ксимплеаррай](../../atl/reference/csimplearray-class.md).
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** атлсимпколл. h
+**Заголовок:** атлсимпколл.h
 
 ## <a name="lpcurl"></a><a name="lpcurl"></a> лпкурл
 
@@ -301,7 +301,7 @@ typedef const CUrl* LPCURL;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="defaultthreadtraits"></a><a name="defaultthreadtraits"></a> дефаултсреадтраитс
 
@@ -317,13 +317,13 @@ typedef const CUrl* LPCURL;
 #endif
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Если в текущем проекте используется многопоточная CRT, Дефаултсреадтраитс определяется как Кртсреадтраитс. В противном случае используется Win32ThreadTraits.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="lpurl"></a><a name="lpurl"></a> лпурл
 
@@ -335,7 +335,7 @@ typedef CUrl* LPURL;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** файлов atlutil. h
+**Заголовок:** файлов atlutil.h
 
 ## <a name="see-also"></a>См. также раздел
 

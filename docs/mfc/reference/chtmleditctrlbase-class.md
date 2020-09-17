@@ -356,7 +356,7 @@ template <class T> class CHtmlEditCtrlBase
 *T*<br/>
 Название производного класса.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CHtmlEditCtrlBase`предоставляет функции членов для html-редактирования команд WebBrowser, таких как [Bold](#bold). (Кроме того, вы можете вызвать [ExecCommand](#execcommand) для выполнения IDM_BOLD команды.)
 
@@ -416,7 +416,7 @@ URL-адрес изображения.
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации о параметрах см. [Using Editing Glyphs](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa969614\(v=vs.85\))
 
@@ -434,7 +434,7 @@ HRESULT Bold() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BOLD команды](/previous-versions/aa769861\(v=vs.85\)) в управление WebBrowser.
 
@@ -455,7 +455,7 @@ HRESULT Button(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BUTTON команды](/previous-versions/aa769966\(v=vs.85\)) в управление WebBrowser.
 
@@ -476,7 +476,7 @@ HRESULT CheckBox(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_CHECKBOX команды](/previous-versions/aa769972\(v=vs.85\)) в управление WebBrowser.
 
@@ -492,7 +492,7 @@ HRESULT ClearSelection() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_CLEARSELECTION команды](/previous-versions/aa770038\(v=vs.85\)) в управление WebBrowser.
 
@@ -508,7 +508,7 @@ HRESULT Copy() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_COPY команды](/previous-versions/aa769872\(v=vs.85\)) в управление WebBrowser.
 
@@ -524,7 +524,7 @@ HRESULT Cut() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_CUT команды](/previous-versions/aa769875\(v=vs.85\)) в управление WebBrowser.
 
@@ -540,7 +540,7 @@ HRESULT Delete() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_DELETE команды](/previous-versions/aa769876\(v=vs.85\)) в управление WebBrowser.
 
@@ -561,7 +561,7 @@ HRESULT DropDownBox(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_DROPDOWNBOX команды](/previous-versions/aa769984\(v=vs.85\)) в управление WebBrowser.
 
@@ -577,7 +577,7 @@ HRESULT EmptyGlyphTable() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_EMPTYGLYPHTABLE команды](/previous-versions/aa769907\(v=vs.85\)) в управление WebBrowser.
 
@@ -621,7 +621,7 @@ GUID группы команд.
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод обеспечивает функциональность [IOleCommandTarget::Exec](/windows/win32/api/docobj/nf-docobj-iolecommandtarget-exec).
 
@@ -637,7 +637,7 @@ HRESULT Font() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_FONT команды](/previous-versions/aa769913\(v=vs.85\)) в управление WebBrowser.
 
@@ -658,7 +658,7 @@ HRESULT GetAbsolutePosition(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_ABSOLUTE_POSITION.](/previous-versions/aa769889\(v=vs.85\))
 
@@ -679,7 +679,7 @@ HRESULT GetBackColor(int& nColor) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BACKCOLOR команды](/previous-versions/aa769858\(v=vs.85\)) в управление WebBrowser.
 
@@ -700,7 +700,7 @@ HRESULT GetBlockFormat(CString& strFormat) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BLOCKFMT команды](/previous-versions/aa769883\(v=vs.85\)) в управление WebBrowser.
 
@@ -721,7 +721,7 @@ HRESULT GetBlockFormatNames(CStringArray& sa) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_GETBLOCKFMTS команды](/previous-versions/aa769884\(v=vs.85\)) в управление WebBrowser.
 
@@ -742,7 +742,7 @@ HRESULT GetBookMark(CString& strAnchor) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_BOOKMARK.](/previous-versions/aa769873\(v=vs.85\))
 
@@ -848,7 +848,7 @@ HRESULT GetFontFace(CString& strFace) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если в текущем выборе используется несколько шрифтов, *strFace* будет пустой строкой.
 
@@ -871,7 +871,7 @@ HRESULT GetFontSize(short& nSize) const;
 
 Возвращает размер шрифта HTML (1-7). Возвращает 0, если выбор содержит несколько размеров шрифта.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_FONTSIZE команды](/previous-versions/aa769881\(v=vs.85\)) в управление WebBrowser.
 
@@ -892,7 +892,7 @@ HRESULT GetForeColor(int& nColor);
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_FORECOLOR команды](/previous-versions/aa769882\(v=vs.85\)) в управление WebBrowser.
 
@@ -913,7 +913,7 @@ HRESULT GetFrameZone(short& nZone) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_GETFRAMEZONE команды](/previous-versions/aa769916\(v=vs.85\)) в управление WebBrowser.
 
@@ -925,7 +925,7 @@ HRESULT GetFrameZone(short& nZone) const;
 HRESULT GetIsDirty() const;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указывает, изменился ли документ. `GetIsDirty`возвращает HRESULT от [IPersistStorage::IsDirty](/windows/win32/api/objidl/nf-objidl-ipersiststorage-isdirty).
 
@@ -946,7 +946,7 @@ HRESULT GetShowAlignedSiteTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_SHOWALIGNEDSITETAGS.](/previous-versions/aa769947\(v=vs.85\))
 
@@ -967,7 +967,7 @@ TRUE, если WebBrowser отображает глифы, чтобы показ
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации с [IDM_SHOWALLTAGSм.](/previous-versions/aa769948\(v=vs.85\))
 
@@ -988,7 +988,7 @@ HRESULT GetShowAreaTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_SHOWAREATAGS.](/previous-versions/aa769949\(v=vs.85\))
 
@@ -1009,7 +1009,7 @@ HRESULT GetShowBRTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [IDM_SHOWWBRTAGS](/previous-versions/aa769956\(v=vs.85\))см.
 
@@ -1030,7 +1030,7 @@ HRESULT GetShowCommentTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_SHOWCOMMENTTAGS.](/previous-versions/aa769950\(v=vs.85\))
 
@@ -1051,7 +1051,7 @@ HRESULT GetShowMiscTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_SHOWMISCTAGS.](/previous-versions/aa769952\(v=vs.85\))
 
@@ -1072,7 +1072,7 @@ HRESULT GetShowScriptTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации с [IDM_SHOWSCRIPTTAGSм.](/previous-versions/aa769953\(v=vs.85\))
 
@@ -1093,7 +1093,7 @@ HRESULT GetShowStyleTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации см [IDM_SHOWSTYLETAGS.](/previous-versions/aa769954\(v=vs.85\))
 
@@ -1114,7 +1114,7 @@ HRESULT GetShowUnknownTags(bool& bCurValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Для получения дополнительной информации [IDM_SHOWUNKNOWNTAGS](/previous-versions/aa769955\(v=vs.85\))см.
 
@@ -1135,7 +1135,7 @@ HRESULT HorizontalLine(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_HORIZONTALLINE команды](/previous-versions/aa769968\(v=vs.85\)) в управление WebBrowser.
 
@@ -1156,7 +1156,7 @@ URL-адрес гиперссылки.
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_HYPERLINK команды](/previous-versions/aa769874\(v=vs.85\)) в управление WebBrowser.
 
@@ -1177,7 +1177,7 @@ HRESULT IE50Paste(LPCTSTR szData) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_IE50_PASTE команды](/previous-versions/aa769922\(v=vs.85\)) в управление WebBrowser.
 
@@ -1198,7 +1198,7 @@ HRESULT Iframe(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_IFRAME команды](/previous-versions/aa769969\(v=vs.85\)) в управление WebBrowser.
 
@@ -1219,7 +1219,7 @@ HRESULT Image(LPCTSTR szUrl = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_IMAGE команды](/previous-versions/aa769970\(v=vs.85\)) в управление WebBrowser.
 
@@ -1235,7 +1235,7 @@ HRESULT Indent() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INDENT команды](/previous-versions/aa769963\(v=vs.85\)) в управление WebBrowser.
 
@@ -1256,7 +1256,7 @@ HRESULT InsFieldSet(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSFIELDSET команды](/previous-versions/aa769967\(v=vs.85\)) в управление WebBrowser.
 
@@ -1277,7 +1277,7 @@ HRESULT InsInputButton(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTBUTTON команды](/previous-versions/aa769971\(v=vs.85\)) в управление WebBrowser.
 
@@ -1298,7 +1298,7 @@ HRESULT InsInputHidden(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTHIDDEN команды](/previous-versions/aa769974\(v=vs.85\)) в управление WebBrowser.
 
@@ -1319,7 +1319,7 @@ HRESULT InsInputImage(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTIMAGE команды](/previous-versions/aa769975\(v=vs.85\)) в управление WebBrowser.
 
@@ -1340,7 +1340,7 @@ HRESULT InsInputPassword(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTPASSWORD команды](/previous-versions/aa769976\(v=vs.85\)) в управление WebBrowser.
 
@@ -1361,7 +1361,7 @@ HRESULT InsInputReset(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTRESET команды](/previous-versions/aa769978\(v=vs.85\)) в управление WebBrowser.
 
@@ -1382,7 +1382,7 @@ HRESULT InsInputSubmit(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTSUBMIT команды](/previous-versions/aa769979\(v=vs.85\)) в управление WebBrowser.
 
@@ -1403,7 +1403,7 @@ HRESULT InsInputUpload(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_INSINPUTUPLOAD команды](/previous-versions/aa769973\(v=vs.85\)) в управление WebBrowser.
 
@@ -1424,7 +1424,7 @@ HRESULT Is1DElement(bool& bValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_1D_ELEMENT команды](/previous-versions/aa769885\(v=vs.85\)) в управление WebBrowser.
 
@@ -1445,7 +1445,7 @@ HRESULT Is2DElement(bool& bValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_2D_ELEMENT команды](/previous-versions/aa769886\(v=vs.85\)) в управление WebBrowser.
 
@@ -1461,7 +1461,7 @@ HRESULT Italic() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_ITALIC команды](/previous-versions/aa769988\(v=vs.85\)) в управление WebBrowser.
 
@@ -1477,7 +1477,7 @@ HRESULT JustifyCenter() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_JUSTIFYCENTER команды](/previous-versions/aa769989\(v=vs.85\)) в управление WebBrowser.
 
@@ -1493,7 +1493,7 @@ HRESULT JustifyLeft() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_JUSTIFYLEFT команды](/previous-versions/aa770011\(v=vs.85\)) в управление WebBrowser.
 
@@ -1509,7 +1509,7 @@ HRESULT JustifyRight() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_JUSTIFYRIGHT команды](/previous-versions/aa770013\(v=vs.85\)) в управление WebBrowser.
 
@@ -1530,7 +1530,7 @@ HRESULT ListBox(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_LISTBOX команды](/previous-versions/aa769985\(v=vs.85\)) в управление WebBrowser.
 
@@ -1551,7 +1551,7 @@ HRESULT Marquee(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_MARQUEE команды](/previous-versions/aa769981\(v=vs.85\)) в управление WebBrowser.
 
@@ -1584,7 +1584,7 @@ HRESULT OrderList(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_ORDERLIST команды](/previous-versions/aa769982\(v=vs.85\)) в управление WebBrowser.
 
@@ -1600,7 +1600,7 @@ HRESULT Outdent() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_OUTDENT команды](/previous-versions/aa770015\(v=vs.85\)) в управление WebBrowser.
 
@@ -1621,7 +1621,7 @@ HRESULT Paragraph(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_PARAGRAPH команды](/previous-versions/aa769983\(v=vs.85\)) в управление WebBrowser.
 
@@ -1637,7 +1637,7 @@ HRESULT Paste() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_PASTE команды](/previous-versions/aa770017\(v=vs.85\)) в управление WebBrowser.
 
@@ -1663,7 +1663,7 @@ HRESULT PrintDocument(bool bShowPrintDialog) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_PRINT команды](/previous-versions/aa769937\(v=vs.85\)) в управление WebBrowser.
 
@@ -1685,7 +1685,7 @@ HRESULT PrintPreview(LPCTSTR szPrintTemplate) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_PRINTPREVIEW команды](/previous-versions/aa769938\(v=vs.85\)) в управление WebBrowser.
 
@@ -1723,7 +1723,7 @@ HRESULT RadioButton(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_RADIOBUTTON команды](/previous-versions/aa769977\(v=vs.85\)) в управление WebBrowser.
 
@@ -1739,7 +1739,7 @@ HRESULT RefreshDocument() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_REFRESH команды](/previous-versions/aa770020\(v=vs.85\)) в управление WebBrowser.
 
@@ -1755,7 +1755,7 @@ HRESULT RemoveFormat() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_REMOVEFORMAT команды](/previous-versions/aa770021\(v=vs.85\)) в управление WebBrowser.
 
@@ -1776,7 +1776,7 @@ HRESULT SaveAs(LPCTSTR szPath = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SAVEAS команды](/previous-versions/aa770024\(v=vs.85\)) в управление WebBrowser.
 
@@ -1792,7 +1792,7 @@ HRESULT SelectAll() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SELECTALL команды](/previous-versions/aa770025\(v=vs.85\)) в управление WebBrowser.
 
@@ -1813,7 +1813,7 @@ HRESULT Set2DPosition(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_2D_POSITION команды](/previous-versions/aa769887\(v=vs.85\)) в управление WebBrowser.
 
@@ -1834,7 +1834,7 @@ HRESULT SetAbsolutePosition(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_ABSOLUTE_POSITION команды](/previous-versions/aa769889\(v=vs.85\)) в управление WebBrowser.
 
@@ -1855,7 +1855,7 @@ HRESULT SetAtomicSelection(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_ATOMICSELECTION команды](/previous-versions/aa769892\(v=vs.85\)) в управление WebBrowser.
 
@@ -1876,7 +1876,7 @@ HRESULT SetAutoURLDetectMode(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_AUTOURLDETECT_MODE команды](/previous-versions/aa769893\(v=vs.85\)) в управление WebBrowser.
 
@@ -1901,7 +1901,7 @@ HRESULT SetBackColor(LPCTSTR szColor) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BACKCOLOR_ команды](/previous-versions/aa769858\(v=vs.85\)) в управление WebBrowser.
 
@@ -1922,7 +1922,7 @@ HRESULT SetBlockFormat(LPCTSTR szFormat) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BLOCKFMT_command](/previous-versions/aa769883\(v=vs.85\)) на управление WebBrowser.
 
@@ -1943,7 +1943,7 @@ HRESULT SetBookMark(LPCTSTR szAnchorName) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_BOOKMARK команды](/previous-versions/aa769873\(v=vs.85\)) в управление WebBrowser.
 
@@ -1964,7 +1964,7 @@ HRESULT SetCSSEditingLevel(short nLevel) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_CSSEDITING_LEVEL команды](/previous-versions/aa769903\(v=vs.85\)) в управление WebBrowser.
 
@@ -2010,7 +2010,7 @@ HRESULT SetDefaultComposeSettings(
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_COMPOSESETTINGS команды](/previous-versions/aa769901\(v=vs.85\)) в управление WebBrowser.
 
@@ -2048,7 +2048,7 @@ HRESULT SetDisableEditFocusUI(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_DISABLE_EDITFOCUS_UI команды](/previous-versions/aa769905\(v=vs.85\)) в управление WebBrowser.
 
@@ -2086,7 +2086,7 @@ HRESULT SetFontFace(LPCTSTR szFace) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор команды IDM_FONTNAME](/previous-versions/aa769880\(v=vs.85\)) в управление WebBrowser.
 
@@ -2107,7 +2107,7 @@ HRESULT SetFontSize(unsigned short size) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_FONTSIZE команды](/previous-versions/aa769881\(v=vs.85\)) в управление WebBrowser.
 
@@ -2132,7 +2132,7 @@ HRESULT SetForeColor(int nColor) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_FORECOLOR команды](/previous-versions/aa769882\(v=vs.85\)) в управление WebBrowser.
 
@@ -2153,7 +2153,7 @@ HRESULT SetIE5PasteMode(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_IE50_PASTE_MODE команды](/previous-versions/aa769923\(v=vs.85\)) в управление WebBrowser.
 
@@ -2174,7 +2174,7 @@ HRESULT SetLiveResize(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_LIVERESIZE команды](/previous-versions/aa769928\(v=vs.85\)) в управление WebBrowser.
 
@@ -2195,7 +2195,7 @@ HRESULT SetMultiSelect(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_MULTIPLESELECTION команды](/previous-versions/aa769929\(v=vs.85\)) в управление WebBrowser.
 
@@ -2216,7 +2216,7 @@ HRESULT SetOverrideCursor(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_OVERRIDE_CURSOR команды](/previous-versions/aa769932\(v=vs.85\)) в управление WebBrowser.
 
@@ -2237,7 +2237,7 @@ HRESULT SetOverwriteMode(bool bMode) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_OVERWRITE команды](/previous-versions/aa770016\(v=vs.85\)) в управление WebBrowser.
 
@@ -2258,7 +2258,7 @@ HRESULT SetRespectVisInDesign(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_RESPECTVISIBILITY_INDESIGN команды](/previous-versions/aa770023\(v=vs.85\)) в управление WebBrowser.
 
@@ -2279,7 +2279,7 @@ HRESULT SetShowAlignedSiteTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWALIGNEDSITETAGS команды](/previous-versions/aa769947\(v=vs.85\)) в управление WebBrowser.
 
@@ -2300,7 +2300,7 @@ HRESULT SetShowAllTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWALLTAGS команды](/previous-versions/aa769948\(v=vs.85\)) в управление WebBrowser.
 
@@ -2321,7 +2321,7 @@ HRESULT SetShowAreaTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWAREATAGS команды](/previous-versions/aa769949\(v=vs.85\)) в управление WebBrowser.
 
@@ -2342,7 +2342,7 @@ HRESULT SetShowBRTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWWBRTAGS команды](/previous-versions/aa769956\(v=vs.85\)) в управление WebBrowser.
 
@@ -2363,7 +2363,7 @@ HRESULT SetShowCommentTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWCOMMENTTAGS команды](/previous-versions/aa769950\(v=vs.85\)) в управление WebBrowser.
 
@@ -2384,7 +2384,7 @@ HRESULT SetShowMiscTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWMISCTAGS команды](/previous-versions/aa769952\(v=vs.85\)) в управление WebBrowser.
 
@@ -2405,7 +2405,7 @@ HRESULT SetShowScriptTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWSCRIPTTAGS команды](/previous-versions/aa769953\(v=vs.85\)) в управление WebBrowser.
 
@@ -2426,7 +2426,7 @@ HRESULT SetShowStyleTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWSTYLETAGS команды](/previous-versions/aa769954\(v=vs.85\)) в управление WebBrowser.
 
@@ -2447,7 +2447,7 @@ HRESULT SetShowUnknownTags(bool bNewValue) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_SHOWUNKNOWNTAGS команды](/previous-versions/aa769955\(v=vs.85\)) в управление WebBrowser.
 
@@ -2468,7 +2468,7 @@ HRESULT TextArea(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_TEXTAREA команды](/previous-versions/aa769986\(v=vs.85\)) в управление WebBrowser.
 
@@ -2489,7 +2489,7 @@ HRESULT TextBox(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_TEXTBOX команды](/previous-versions/aa769980\(v=vs.85\)) в управление WebBrowser.
 
@@ -2505,7 +2505,7 @@ HRESULT UnBookmark() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_UNBOOKMARK команды](/previous-versions/aa770034\(v=vs.85\)) в управление WebBrowser.
 
@@ -2521,7 +2521,7 @@ HRESULT Underline() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_UNDERLINE команды](/previous-versions/aa770035\(v=vs.85\)) в управление WebBrowser.
 
@@ -2537,7 +2537,7 @@ HRESULT Unlink() const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_UNLINK команды](/previous-versions/aa770037\(v=vs.85\)) в управление WebBrowser.
 
@@ -2558,7 +2558,7 @@ HRESULT UnorderList(LPCTSTR szId = NULL) const;
 
 Возвращает S_OK на успех, или ошибка HRESULT на отказ.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод отправляет [идентификатор IDM_UNORDERLIST команды](/previous-versions/aa769987\(v=vs.85\)) в управление WebBrowser.
 

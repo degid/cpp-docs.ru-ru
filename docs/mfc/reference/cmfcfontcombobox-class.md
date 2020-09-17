@@ -60,7 +60,7 @@ class CMFCFontComboBox : public CComboBox
 |----------|-----------------|
 |[CMFCFontComboBox::m_bDrawUsingFont](#m_bdrawusingfont)|Указывает на рамки, какие шрифты использовать для рисования меток элемента в текущей комбо-коробке шрифта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Чтобы использовать `CMFCFontComboBox` объект в диалоговом `CMFCFontComboBox` поле, добавьте переменную в класс диалогового окна. Затем в `OnInitDialog` методе класса диалогового окна позвоните в [CMFCFontComboBox::Setup](#setup) метод для инициализации списка элементов в управлении комбо-боксом.
 
@@ -90,7 +90,7 @@ CMFCFontComboBox();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfontcomboboxgetselfont"></a><a name="getselfont"></a>CMFCFontComboBox::GetSelFont
 
@@ -104,7 +104,7 @@ CMFCFontInfo* GetSelFont() const;
 
 Указатель на объект [класса CMFCFontInfo,](../../mfc/reference/cmfcfontinfo-class.md) описывающий шрифт. Он может быть NULL, если шрифт не выбран в комбо-коробке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcfontcomboboxm_bdrawusingfont"></a><a name="m_bdrawusingfont"></a>CMFCFontComboBox::m_bDrawUsingFont
 
@@ -114,7 +114,7 @@ CMFCFontInfo* GetSelFont() const;
 static BOOL m_bDrawUsingFont;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Установите этот элемент к TRUE, чтобы направить фреймворк использовать тот же шрифт для рисования этикетки каждого элемента. Установите этот элемент false, чтобы направить фреймворк, чтобы нарисовать каждую метку элемента с шрифтом, имя которого совпадает с меткой. Значение этого участника по умолчанию FALSE.
 
@@ -145,7 +145,7 @@ BOOL SelectFont(
 
 TRUE, если элемент в комбо-коробке шрифта соответствует указанному объекту описания шрифта или имени шрифта и символу; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте этот метод, чтобы выбрать и прокрутить к элементу в комбо-коробке шрифта, которая соответствует указанному шрифту.
 
@@ -182,7 +182,7 @@ BOOL Setup(
 
 TRUE, если шрифт комбо поле было инициализировано успешно; в противном случае, FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод инициализирует комбо-коробку шрифта, перечисляя установленные в настоящее время шрифты, которые соответствуют указанным параметрам, и вставляя эти имена шрифтов в комбо-коробке шрифта.
 

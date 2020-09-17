@@ -55,7 +55,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[вывести из очереди](#dequeue)|Удаляет элемент из `unbounded_buffer` блока обмена сообщениями.|
 |[поставить в очередь](#enqueue)|Добавляет элемент в `unbounded_buffer` блок обмена сообщениями.|
@@ -94,7 +94,7 @@ class unbounded_buffer : public propagator_block<multi_link_registry<ITarget<   
 
 **Заголовок:** agents.h
 
-**Пространство имен:** параллелизм
+**Пространство имен:** concurrency
 
 ## <a name="accept_message"></a><a name="accept_message"></a>accept_message
 
@@ -134,7 +134,7 @@ virtual message<_Type> * consume_message(
 
 Указатель на `message` объект, владельцем которого стал вызывающий объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Аналогично `accept` , но всегда предшествует вызову `reserve` .
 
@@ -215,7 +215,7 @@ virtual message_status propagate_message(
 virtual void propagate_output_messages();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если другое сообщение уже находится впереди этого в `unbounded_buffer` , распространение на связанные целевые объекты не будет выполняться, пока не будут приняты или использованы все предыдущие сообщения. Первая связанная цель для успешного завершения `accept` или `consume` сообщение становится владельцем, и никакая другая цель не может получить сообщение.
 
@@ -268,7 +268,7 @@ virtual bool reserve_message(
 
 **`true`** значение, если сообщение было успешно зарезервировано, **`false`** в противном случае.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `reserve` вызова метода, если он возвращает значение **`true`** , `consume` `release` метод или должен быть вызван, чтобы принять или освободить владение сообщением.
 
@@ -356,7 +356,7 @@ unbounded_buffer(
 *_PScheduleGroup*<br/>
 Объект `ScheduleGroup` , в котором запланирована задача распространения для блока обмена сообщениями `unbounded_buffer` . Используемый объект `Scheduler` подразумевается группой расписаний.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Среда выполнения использует планировщик по умолчанию, если вы не указали параметры `_PScheduler` или `_PScheduleGroup` .
 

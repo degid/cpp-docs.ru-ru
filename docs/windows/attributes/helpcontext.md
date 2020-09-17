@@ -28,7 +28,7 @@ ms.locfileid: "88845254"
 *идентификатор*<br/>
 Идентификатор контекста раздела справки. Дополнительные сведения об идентификаторах контекста см. в разделе [HTML Help: контекстно-зависимая справка для ваших программ](../../mfc/html-help-context-sensitive-help-for-your-programs.md) .
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Атрибут **HelpContext** C++ имеет те же функциональные возможности, что и атрибут MIDL для [HelpContext](/windows/win32/Midl/helpcontext) .
 

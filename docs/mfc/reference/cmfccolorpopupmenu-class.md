@@ -35,14 +35,14 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкколорпопупмену:: Кмфкколорпопупмену](#cmfccolorpopupmenu)|Формирует объект `CMFCColorPopupMenu`.|
 |`CMFCColorPopupMenu::~CMFCColorPopupMenu`|Деструктор.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |-|-|
 |[Кмфкколорпопупмену:: Креатетеароффбар](#createtearoffbar)|Создает закрепляемую цветную полосу разрыва. (Переопределяет [CMFCPopupMenu:: креатетеароффбар](../../mfc/reference/cmfcpopupmenu-class.md#createtearoffbar).)|
 |[Кмфкколорпопупмену:: Жетменубар](#getmenubar)|Возвращает [CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) , внедренный во всплывающее меню. (Переопределяет [CMFCPopupMenu:: жетменубар](../../mfc/reference/cmfcpopupmenu-class.md#getmenubar).)|
@@ -56,7 +56,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 |`m_bEnabledInCustomizeMode`|Логическое значение, определяющее, следует ли отображать цветовую панель.|
 |`m_wndColorBar`|`CMFCColorBar`Объект, предоставляющий выбор цвета.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс наследует функции всплывающего меню `CMFCPopupMenu` класса и управляет `CMFCColorBar` объектом, предоставляющим выбор цвета. Если платформа панели инструментов находится в режиме настройки и `m_bEnabledInCustomizeMode` для элемента задано значение false, объект цветовой шкалы не отображается. Дополнительные сведения о режиме настройки см. в разделе [CMFCToolBar:: искустомиземоде](../../mfc/reference/cmfctoolbar-class.md#iscustomizemode)
 
@@ -80,7 +80,7 @@ class CMFCColorPopupMenu : public CMFCPopupMenu
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксколорпопупмену. h
+**Заголовок:** афксколорпопупмену.h
 
 ## <a name="cmfccolorpopupmenucmfccolorpopupmenu"></a><a name="cmfccolorpopupmenu"></a> Кмфкколорпопупмену:: Кмфкколорпопупмену
 
@@ -170,7 +170,7 @@ CMFCColorPopupMenu(
 *nID*<br/>
 окне Идентификатор команды.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Каждый перегруженный конструктор задает `m_bEnabledInCustomizeMode` для элемента значение false.
 
@@ -206,7 +206,7 @@ virtual CPane* CreateTearOffBar(
 
 Указатель на новый объект-разделитель элементов управления.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод создает объект [класса кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md) и приводит его к указателю [класса CPane](../../mfc/reference/cpane-class.md) . Это значение можно привести обратно к указателю [класса кмфкколорбар](../../mfc/reference/cmfccolorbar-class.md) с помощью одного из макросов приведения, описанных в разделе [приведение типов объектов классов MFC](../../mfc/reference/type-casting-of-mfc-class-objects.md).
 
@@ -222,7 +222,7 @@ virtual CMFCPopupMenuBar* GetMenuBar();
 
 Указатель на встроенный объект `CMFCPopupMenuBar` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Во всплывающем меню «цвет» имеется внедренный объект [класса CMFCPopupMenuBar](../../mfc/reference/cmfcpopupmenubar-class.md) . Переопределите этот метод в производном классе, если приложение использует другой внедренный тип.
 

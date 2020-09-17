@@ -19,7 +19,7 @@ ms.locfileid: "88839417"
 /Qpar-report:{1}{2}
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **/Qpar-report: 1**<br/>
 Выводит информационное сообщение для распараллеленных циклов.

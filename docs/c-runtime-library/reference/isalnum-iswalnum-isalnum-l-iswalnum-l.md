@@ -86,7 +86,7 @@ int _iswalnum_l( wint_t c, _locale_t locale );
 |**_istalnum**|**isalnum**|[_ismbcalnum](ismbcalnum-functions.md)|**исвалнум**|
 |**_istalnum_l**|**_isalnum_l**|**_ismbcalnum_l**|**_iswalnum_l**|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 По умолчанию глобальное состояние этой функции ограничивается приложением. Чтобы изменить это, см. раздел [глобальное состояние в CRT](../global-state.md).
 

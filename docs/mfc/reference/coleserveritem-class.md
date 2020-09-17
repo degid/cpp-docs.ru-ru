@@ -101,7 +101,7 @@ class COleServerItem : public CDocItem
 
 ### <a name="public-methods"></a>Открытые методы
 
-|name|Описание|
+|Имя|Описание|
 |----------|-----------------|
 |[COleServerItem:: Аддосерклипбоарддата](#addotherclipboarddata)|Размещает форматы представления и преобразования в `COleDataSource` объекте.|
 |[COleServerItem:: Копитоклипбоард](#copytoclipboard)|Копирует элемент в буфер обмена.|
@@ -169,7 +169,7 @@ class COleServerItem : public CDocItem
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксоле. h
+**Заголовок:** афксоле.h
 
 ## <a name="coleserveritemaddotherclipboarddata"></a><a name="addotherclipboarddata"></a>COleServerItem:: Аддосерклипбоарддата
 

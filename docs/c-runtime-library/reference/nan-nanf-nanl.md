@@ -62,7 +62,7 @@ long double nanl( const char* input );
 
 Функции **NaN** возвращают нетихом значение NaN.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Функции **NaN** возвращают значение с плавающей запятой, соответствующее скрытому типу NaN (без сигнализации). *Входное* значение игнорируется. Сведения о том, как значение NaN представляется для вывода, см. в разделе [printf, _printf_l, wprintf, _wprintf_l](printf-printf-l-wprintf-wprintf-l.md).
 

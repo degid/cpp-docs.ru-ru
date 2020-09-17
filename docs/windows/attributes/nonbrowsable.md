@@ -23,7 +23,7 @@ ms.locfileid: "88836108"
 [nonbrowsable]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 **Неотображаемый** атрибут C++ имеет те же функциональные возможности, что и [неотображаемый](/windows/win32/Midl/nonbrowsable) атрибут MIDL.
 

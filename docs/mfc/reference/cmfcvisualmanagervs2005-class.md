@@ -78,7 +78,7 @@ class CMFCVisualManagerVS2005 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerVS2005:OnfillminiFrameCaption](#onfillminiframecaption)|(Переопределяет `CMFCVisualManagerOfficeXP::OnFillMiniFrameCaption`.)|
 |[CMFCVisualManagerVS2005:OnUpdateSystemColors](#onupdatesystemcolors)|(Переопределяет [CMFCVisualManagerOffice2003::UpdateSystemColors](../../mfc/reference/cmfcvisualmanageroffice2003-class.md#onupdatesystemcolors).)|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы используете класс CMFCVisualManagerVS2005, чтобы изменить внешний вид приложения, чтобы напоминать внешний вид Microsoft Visual Studio 2005.
 
@@ -116,7 +116,7 @@ virtual int GetDockingTabsBordersSize();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005getmditabsborderssize"></a><a name="getmditabsborderssize"></a>CMFCVisualManagerVS2005:GetMDITabsBordersSize
 
@@ -126,7 +126,7 @@ virtual int GetMDITabsBordersSize();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005getpropertygridgroupcolor"></a><a name="getpropertygridgroupcolor"></a>CMFCVisualManagerVS2005:GetPropertyGridGroupColor
 
@@ -140,7 +140,7 @@ virtual COLORREF GetPropertyGridGroupColor(CMFCPropertyGridCtrl* pPropList);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005gettabframecolors"></a><a name="gettabframecolors"></a>CMFCVisualManagerVS2005:GetTabFrameColors
 
@@ -169,7 +169,7 @@ virtual void GetTabFrameColors(
 (в) *pbrFace*<br/>
 (в) *pbrBlack*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005hasoverlappedautohidebuttons"></a><a name="hasoverlappedautohidebuttons"></a>CMFCVisualManagerVS2005:HasOverlappedAutoHideButtons
 
@@ -179,7 +179,7 @@ virtual BOOL HasOverlappedAutoHideButtons() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawautohidebuttonborder"></a><a name="ondrawautohidebuttonborder"></a>CMFCVisualManagerVS2005:OndrawAutoHideButtonBorder
 
@@ -198,7 +198,7 @@ virtual void OnDrawAutoHideButtonBorder(
 (в) *rectBorderSize*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawcaptionbutton"></a><a name="ondrawcaptionbutton"></a>CMFCVisualManagerVS2005:OndrawCaptionButton
 
@@ -223,7 +223,7 @@ virtual void OnDrawCaptionButton(
 (в) *bDisabled*<br/>
 (в) *nImageID*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawpanecaption"></a><a name="ondrawpanecaption"></a>CMFCVisualManagerVS2005:OnDrawPaneCaption
 
@@ -246,7 +246,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawseparator"></a><a name="ondrawseparator"></a>CMFCVisualManagerVS2005:OnDrawСепаратор
 
@@ -265,7 +265,7 @@ virtual void OnDrawSeparator(
 [in] *rect*<br/>
 (в) *bIsHoriz*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawtab"></a><a name="ondrawtab"></a>CMFCVisualManagerVS2005:OndrawTab
 
@@ -286,7 +286,7 @@ virtual void OnDrawTab(
 (в) *bIsActive*<br/>
 (в) *pTabWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005ondrawtoolboxframe"></a><a name="ondrawtoolboxframe"></a>CMFCVisualManagerVS2005:OndrawToolBoxFrame
 
@@ -301,7 +301,7 @@ virtual void OnDrawToolBoxFrame(
 (в) *pDC*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005onerasetabsarea"></a><a name="onerasetabsarea"></a>CMFCVisualManagerVS2005:OnEraseTabsArea
 
@@ -318,7 +318,7 @@ virtual void OnEraseTabsArea(
 [in] *rect*<br/>
 (в) *pTabWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005onfillautohidebuttonbackground"></a><a name="onfillautohidebuttonbackground"></a>CMFCVisualManagerVS2005:OnfillAutohidebuttonbackground
 
@@ -335,7 +335,7 @@ virtual void OnFillAutoHideButtonBackground(
 [in] *rect*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a>CMFCVisualManagerVS2005:OnFillHighlightedArea
 
@@ -354,7 +354,7 @@ virtual void OnFillHighlightedArea(
 (в) *pBrush*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005onfillminiframecaption"></a><a name="onfillminiframecaption"></a>CMFCVisualManagerVS2005:OnfillminiFrameCaption
 
@@ -375,7 +375,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanagervs2005onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a>CMFCVisualManagerVS2005:OnUpdateSystemColors
 
@@ -383,7 +383,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 virtual void OnUpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

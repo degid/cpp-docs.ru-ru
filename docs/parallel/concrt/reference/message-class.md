@@ -39,20 +39,20 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 ### <a name="public-typedefs"></a>Общедоступные определения типов
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |`type`|Псевдоним типа для `T`.|
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[message](#ctor)|Перегружен. Формирует объект `message`.|
 |[Деструктор сообщений ~](#dtor)|Уничтожает объект `message`.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[add_ref](#add_ref)|Добавляет к счетчику ссылок для объекта `message`. Используется для блоков сообщений, требующих подсчета ссылок для определения времени существования сообщений.|
 |[msg_id](#msg_id)|Возвращает идентификатор объекта `message`.|
@@ -60,11 +60,11 @@ class message : public ::Concurrency::details::_Runtime_object;
 
 ### <a name="public-data-members"></a>Открытые члены данных
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[payload](#payload)|Полезная нагрузка объекта `message`.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Дополнительные сведения см. в разделе [асинхронные блоки сообщений](../../../parallel/concrt/asynchronous-message-blocks.md).
 
@@ -120,7 +120,7 @@ message(
 *_Msg*<br/>
 Ссылка или указатель на объект `message`.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор, принимающий указатель на `message` объект в качестве аргумента, выдает исключение [invalid_argument](../../../standard-library/invalid-argument-class.md) , если параметр `_Msg` `NULL`.
 

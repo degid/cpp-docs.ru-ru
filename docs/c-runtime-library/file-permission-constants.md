@@ -24,7 +24,7 @@ ms.locfileid: "79443277"
 #include <sys/stat.h>
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Одна из этих констант обязательна при указании `_O_CREAT` (`_open`, `_sopen`).
 

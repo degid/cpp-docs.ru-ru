@@ -87,13 +87,13 @@ class CStringList : public CObject
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Кстринглист:: Кстринглист](../../mfc/reference/coblist-class.md#coblist)|Конструирует пустой список.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[Кстринглист:: Аддхеад](../../mfc/reference/coblist-class.md#addhead)|Добавляет элемент (или все элементы из другого списка) в заголовок списка (создает новый заголовок).|
 |[Кстринглист:: AddTail](../../mfc/reference/coblist-class.md#addtail)|Добавляет элемент (или все элементы из другого списка) в конец списка (создает новый хвост).|
@@ -117,7 +117,7 @@ class CStringList : public CObject
 |[Кстринглист:: Ремоветаил](../../mfc/reference/coblist-class.md#removetail)|Удаляет элемент из хвоста списка.|
 |[Кстринглист:: SetAt](../../mfc/reference/coblist-class.md#setat)|Задает элемент в заданной позиции.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Все сравнения выполняются по значению, то есть символы в строке сравниваются вместо адресов строк.
 
@@ -135,7 +135,7 @@ class CStringList : public CObject
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** афксколл. h
+**Заголовок:** афксколл.h
 
 ## <a name="see-also"></a>См. также раздел
 

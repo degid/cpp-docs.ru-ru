@@ -61,7 +61,7 @@ class subtract_with_carry_engine;
 
 Дополнительные сведения о членах подсистемы см [\<random>](../standard-library/random.md) . в разделе.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `substract_with_carry_engine`Шаблон класса является улучшением по сравнению с [linear_congruential_engine](../standard-library/linear-congruential-engine-class.md). Ни один из этих механизмов не обеспечивает такую же скорость и качество результатов, как механизм [mersenne_twister_engine](../standard-library/mersenne-twister-engine-class.md).
 

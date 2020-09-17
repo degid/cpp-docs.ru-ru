@@ -164,7 +164,7 @@ template<typename Key,
 |--------------|-----------------|
 |[collection_adapter::operator= (STL/CLR)](#op_eq)|Заменяет сохраненный обработчик BCL.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот класс шаблона используется для управления контейнером BCL в качестве контейнера STL/CLR. Объект `collection_adapter` хранит обработчик для интерфейса BCL, который, в свою очередь, управляет последовательностью элементов. `collection_adapter`Объект `X` возвращает пару итераторов ввода `X.begin()` и `X.end()` используется для посещения элементов по порядку. Некоторые специализации также позволяют писать, `X.size()` чтобы определить длину управляемой последовательности.
 
@@ -178,7 +178,7 @@ template<typename Key,
 Coll^ base();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает сохраненный обработчик интерфейса BCL.
 
@@ -222,7 +222,7 @@ base() same = True
 iterator begin();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает итератор ввода, который обозначает первый элемент управляемой последовательности или сразу за концом пустой последовательности.
 
@@ -284,7 +284,7 @@ collection_adapter(Coll^ collection);
 *Правильно*<br/>
 Копируемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор:
 
@@ -367,7 +367,7 @@ x x x x x x
 typedef int difference_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип описывает число подписанных элементов.
 
@@ -419,7 +419,7 @@ end()-begin() = 3
 iterator end();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член возвращает итератор ввода, указывающий сразу за пределы управляемой последовательности.
 
@@ -464,7 +464,7 @@ a b c
 typedef T1 iterator;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип описывает объект неопределенного типа `T1` , который может выступать в качестве итератора ввода для управляемой последовательности.
 
@@ -509,7 +509,7 @@ a b c
 typedef Key key_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для параметра-шаблона `Key` в специализации для `IDictionary` или `IDictionary<Value>` ; в противном случае он не определен.
 
@@ -559,7 +559,7 @@ int main()
 typedef Value mapped_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для параметра-шаблона `Value` в специализации для `IDictionary` или `IDictionary<Value>` ; в противном случае он не определен.
 
@@ -599,7 +599,7 @@ int main()
 [a 1] [b 2] [c 3]
 ```
 
-## <a name="collection_adapteroperator-stlclr"></a><a name="op_eq"></a>collection_adapter:: operator = (STL/CLR)
+## <a name="collection_adapteroperator-stlclr"></a><a name="op_eq"></a>collection_adapter::operator= (STL/CLR)
 
 Заменяет сохраненный обработчик BCL.
 
@@ -614,7 +614,7 @@ collection_adapter<Coll>% operator=(collection_adapter<Coll>% right);
 *Правильно*<br/>
 Адаптер для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Он используется для замены сохраненного обработчика BCL копией сохраненного обработчика BCL в *правой части*.
 
@@ -666,7 +666,7 @@ a b c
 typedef value_type% reference;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип описывает ссылку на элемент.
 
@@ -714,7 +714,7 @@ a b c
 size_type size();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция-член возвращает длину управляемой последовательности. Он не определен в специализации для `IEnumerable` или `IEnumerable<Value>` .
 
@@ -757,7 +757,7 @@ size() = 6
 typedef int size_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип описывает неотрицательное число элементов.
 
@@ -807,7 +807,7 @@ void swap(collection_adapter<Coll>% right);
 *Правильно*<br/>
 Контейнер для обмена содержимым.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция – член меняет местами сохраненные дескрипторы BCL между **`*this`** и *right*.
 
@@ -871,7 +871,7 @@ a b c
 typedef Value value_type;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тип является синонимом для *значения*параметра шаблона, если он есть в специализации. в противном случае он является синонимом для `System::Object^` .
 
@@ -932,7 +932,7 @@ template<typename Iter>
 *last*<br/>
 Второй итератор для переноса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Функция шаблона возвращает `gcnew range_adapter<Iter>(first, last)`. Он используется для создания `range_adapter<Iter>` объекта из пары итераторов.
 
@@ -1029,11 +1029,11 @@ template<typename Iter>
 |<xref:System.Collections.Generic.IEnumerable%601>|Выполняет перебор типизированных элементов в коллекции.|
 |<xref:System.Collections.Generic.ICollection%601>|Поддерживает группу типизированных элементов.|
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Range_adapter хранит пару итераторов, которые, в свою очередь, разделяют последовательность элементов. Объект реализует четыре интерфейса BCL, которые позволяют выполнять итерацию по элементам по порядку. Этот класс шаблона используется для управления диапазонами STL/CLR практически подобно контейнерам BCL.
 
-## <a name="range_adapteroperator-stlclr"></a><a name="range_adapter_op_eq"></a>range_adapter:: operator = (STL/CLR)
+## <a name="range_adapteroperator-stlclr"></a><a name="range_adapter_op_eq"></a>range_adapter::operator= (STL/CLR)
 
 Заменяет сохраненную пару итераторов.
 
@@ -1048,7 +1048,7 @@ range_adapter<Iter>% operator=(range_adapter<Iter>% right);
 *Правильно*<br/>
 Адаптер для копирования.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Оператор члена копирует *прямо* в объект, а затем возвращает **`*this`** . Его можно использовать для замены хранимой пары итератора копией сохраненной пары итератора в *правой части*.
 
@@ -1114,7 +1114,7 @@ range_adapter(Iter first, Iter last);
 *Правильно*<br/>
 Копируемый объект.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор:
 

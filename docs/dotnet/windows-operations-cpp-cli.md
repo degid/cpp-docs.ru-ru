@@ -140,7 +140,7 @@ int main( )
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Класс <xref:Microsoft.Win32.Registry> является всего лишь контейнером <xref:Microsoft.Win32.RegistryKey>для статических экземпляров . Каждый экземпляр представляет собой корневой узлы реестра. Экземпляры, <xref:Microsoft.Win32.Registry.ClassesRoot> <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, <xref:Microsoft.Win32.Registry.Users>и .
 
@@ -501,7 +501,7 @@ int main()
 }
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы можете использовать рамочку .NET <xref:Microsoft.Win32.Registry> <xref:Microsoft.Win32.RegistryKey> для доступа к реестру <xref:Microsoft.Win32> с классами и классами, которые определяются в пространстве имен. Класс **реестра** — это контейнер для <xref:Microsoft.Win32.RegistryKey> статических экземпляров класса. Каждый экземпляр представляет собой корневой узлы реестра. Экземпляры, <xref:Microsoft.Win32.Registry.ClassesRoot> <xref:Microsoft.Win32.Registry.CurrentConfig>, <xref:Microsoft.Win32.Registry.CurrentUser>, <xref:Microsoft.Win32.Registry.LocalMachine>, <xref:Microsoft.Win32.Registry.Users>и .
 

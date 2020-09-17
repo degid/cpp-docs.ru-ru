@@ -88,7 +88,7 @@ class CPrintDialogEx : public CCommonDialog
 |----------|-----------------|
 |[CPrintDialogEx:::m_pdex](#m_pdex)|Структура, используемая для `CPrintDialogEx` настройки объекта.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Вы можете положиться на рамки для обработки многих аспектов процесса печати для вашего приложения. Для получения дополнительной информации об использовании платформы для обработки задач печати см. [Printing](../../mfc/printing.md)
 
@@ -148,7 +148,7 @@ CPrintDialogEx(
 *pParentWnd*<br/>
 Указатель на родительское или владельца окна диалогового окна.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена только строит объект. Используйте `DoModal` функцию участника для отображения диалогового окна.
 
@@ -164,7 +164,7 @@ HDC CreatePrinterDC();
 
 Обработка к недавно созданному контексту устройства принтера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Возвращенный DC также хранится в члене `hDC` [m_pdex.](#m_pdex)
 
@@ -182,7 +182,7 @@ virtual INT_PTR DoModal();
 
 Значение возврата INT_PTR на самом деле является HRESULT. Смотрите раздел "Значения возврата" в [разделе PrintDlgEx](/previous-versions/windows/desktop/legacy/ms646942\(v=vs.85\)) в SDK windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если вы хотите инициализировать различные параметры `m_pdex` диалога печати, установив члены структуры, вы должны сделать это до вызова, `DoModal`но после построения объекта диалога.
 
@@ -214,7 +214,7 @@ BOOL GetDefaults();
 
 ПРАВДА в случае успеха, в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Создает контекст устройства принтера (DC) из структур [DEVMODE](/windows/win32/api/wingdi/ns-wingdi-devmodea) и [DEVNAMES.](/windows/win32/api/commdlg/ns-commdlg-devnames)
 
@@ -234,7 +234,7 @@ CString GetDeviceName() const;
 
 Название выбранного в настоящее время принтера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте указатель `CString` на объект, `GetDeviceName` возвращенный `lpszDeviceName` в качестве значения в вызове в [CDC:CreateDC.](../../mfc/reference/cdc-class.md#createdc)
 
@@ -262,7 +262,7 @@ CString GetDriverName() const;
 
 Указание `CString` системного имени драйвера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте указатель `CString` на объект, возвращенный `GetDriverName` в качестве значения *lpszDrivername* в вызове [в CDC::CreateDC](../../mfc/reference/cdc-class.md#createdc).
 
@@ -290,7 +290,7 @@ HDC GetPrinterDC() const;
 
 Ручка контекста устройства принтера.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вы должны вызвать функцию Windows [DeleteDC,](/windows/win32/api/wingdi/nf-wingdi-deletedc) чтобы удалить контекст устройства, когда вы закончите использовать его.
 
@@ -302,7 +302,7 @@ HDC GetPrinterDC() const;
 PRINTDLGEX m_pdex;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После построения `CPrintDialogEx` объекта можно `m_pdex` использовать различные аспекты диалогового окна, прежде чем вызывать функцию члена [DoModal.](#domodal) Более подробную `m_pdex` информацию о структуре [можно](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) опереть в SDK для Windows.
 
@@ -356,7 +356,7 @@ BOOL PrintRange() const;
 
 TRUE, если только диапазон страниц в документе должны быть напечатаны; в противном случае FALSE.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Указанные диапазоны страниц можно определить `nPageRanges`из `nMaxPageRanges` `lpPageRanges` [m_pdex](#m_pdex) (см. , и в структуре [PRINTDLGEX](/windows/win32/api/commdlg/ns-commdlg-printdlgexw) в Windows SDK).
 

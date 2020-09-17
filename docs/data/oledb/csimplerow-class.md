@@ -73,7 +73,7 @@ class CSimpleRow
 |[m_dwRef](#dwref)|Счетчик ссылок на существующий маркер строки.|
 |[m_iRowset](#irowset)|Индекс набора строк, представляющего курсор.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Маркер строки логически является уникальным тегом для результирующей строки. `IRowsetImpl` создает новый `CSimpleRow` для каждой строки, запрошенной в [IRowsetImpl:: GetNextRows](../../data/oledb/irowsetimpl-getnextrows.md). `CSimpleRow` также можно заменить собственной реализацией маркера строки, так как это аргумент шаблона по умолчанию для `IRowsetImpl` . Единственным требованием для замены этого класса является то, чтобы класс замены предоставил конструктор, принимающий один параметр типа **Long**.
 
@@ -121,7 +121,7 @@ CSimpleRow(DBCOUNTITEM iRowsetCur);
 *ировсеткур*<br/>
 окне Индекс текущего набора строк.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Задает для [m_iRowset](../../data/oledb/csimplerow-m-irowset.md) значение *ировсеткур*.
 

@@ -33,7 +33,7 @@ struct CMFCTabToolTipInfo
 |[CMFCTabToolTipInfo::m_pTabWnd](#m_ptabwnd)|Указатель на элемент управления вкладки.|
 |[CMFCTabToolTipInfo::m_strText](#m_strtext)|Текст подсказки.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Указатель на `CMFCTabToolTipInfo` структуру передается как параметр AFX_WM_ON_GET_TAB_TOOLTIP сообщения. Это сообщение генерируется при включении вкладок MDI и нависает над управлением вкладками.
 
@@ -59,7 +59,7 @@ struct CMFCTabToolTipInfo
 int m_nTabIndex;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Индекс вкладки, над которой зависает пользователь.
 
@@ -91,7 +91,7 @@ CMFCBaseTabCtrl* m_pTabWnd;
 CString m_strText;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если строка пуста, набор инструментов не отображается.
 

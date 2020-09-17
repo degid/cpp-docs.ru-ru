@@ -44,7 +44,7 @@ UINT ___lc_codepage_func(void);
 
 Текущая кодовая страница потока.
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `___lc_codepage_func` — это внутренняя функция CRT, которая используется другими функциями CRT для получения текущей кодовой страницы из локального хранилища потока для данных CRT. Эти сведения также доступны при использовании функции [_get_current_locale](../c-runtime-library/reference/get-current-locale.md).
 

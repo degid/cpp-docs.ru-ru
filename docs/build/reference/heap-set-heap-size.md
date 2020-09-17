@@ -23,7 +23,7 @@ ms.locfileid: "79439523"
 /HEAP:reserve[,commit]
 ```
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Параметр/HEAP задает размер кучи в байтах. Этот параметр используется только при сборке EXE-файла.
 

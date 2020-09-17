@@ -37,7 +37,7 @@ struct VerifyInterfaceHelper<false, I>;
 
 *isWinRTИнтерфейс*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Проверяет, что интерфейс, указанный параметром шаблона, соответствует определенным требованиям.
 
@@ -67,6 +67,6 @@ struct VerifyInterfaceHelper<false, I>;
 static void Verify();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Проверяет, отвечает ли определенным требованиям интерфейс, заданный текущим параметром шаблона.

@@ -128,13 +128,13 @@ pRichEdit->GetSelText(sz);
 void AfxDebugBreak( );
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxDebugBreak` не оказывает влияния на версии выпуска приложения MFC и должны быть удалены. Эта функция должна использоваться только в приложениях MFC. Используйте версию API Win32, `DebugBreak` , чтобы вызвать прерывание в приложениях, не относящихся к MFC.
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** afxver_. h
+**Заголовок:** afxver_.h
 
 ## <a name="assert"></a><a name="assert"></a> УТВЕРЖДАЮЩЕ
 
@@ -149,7 +149,7 @@ ASSERT(booleanExpression)
 *булеанекспрессион*<br/>
 Указывает выражение (включая значения указателей), результатом вычисления которого является ненулевое значение или 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если результат равен 0, макрос выводит диагностическое сообщение и прерывает выполнение программы. Если условие не равно нулю, оно не выполняет никаких действий.
 
@@ -170,7 +170,7 @@ ASSERT(booleanExpression)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="assert_kindof"></a><a name="assert_kindof"></a> ASSERT_KINDOF
 
@@ -188,7 +188,7 @@ ASSERT_KINDOF(classname, pobject)
 *объект*<br/>
 Указатель на объект класса.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *объект* должен быть указателем на объект и может иметь значение **`const`** . Объект, на который указывает, и класс должен поддерживать `CObject` сведения о классе времени выполнения. Например, чтобы убедиться, что `pDocument` является указателем на объект `CMyDoc` класса или любого из его производных, можно выполнить код:
 
@@ -205,7 +205,7 @@ ASSERT_KINDOF(classname, pobject)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="assert_valid"></a><a name="assert_valid"></a> ASSERT_VALID
 
@@ -220,7 +220,7 @@ ASSERT_VALID(pObject)
 *Объект*<br/>
 Указывает объект класса, производного от `CObject` , который имеет переопределяющую версию функции- `AssertValid` члена.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ASSERT_VALID вызывает `AssertValid` функцию члена объекта, переданного в качестве аргумента.
 
@@ -237,7 +237,7 @@ ASSERT_VALID вызывает `AssertValid` функцию члена объек
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="debug_new"></a><a name="debug_new"></a> DEBUG_NEW
 
@@ -247,7 +247,7 @@ ASSERT_VALID вызывает `AssertValid` функцию члена объек
 #define  new DEBUG_NEW
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В программе можно использовать DEBUG_NEW везде, где обычно используется **`new`** оператор для выделения хранилища кучи.
 
@@ -264,7 +264,7 @@ ASSERT_VALID вызывает `AssertValid` функцию члена объек
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="debug_only"></a><a name="debug_only"></a> DEBUG_ONLY
 
@@ -274,7 +274,7 @@ ASSERT_VALID вызывает `AssertValid` функцию члена объек
 DEBUG_ONLY(expression)
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В сборке выпуска DEBUG_ONLY не оценивает свой аргумент. Это полезно при наличии кода, который должен выполняться только в отладочных сборках.
 
@@ -286,7 +286,7 @@ DEBUG_ONLY(expression)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ### <a name="ensure-and-ensure_valid"></a><a name="ensure"></a> Проверка и ENSURE_VALID
 
@@ -304,7 +304,7 @@ ENSURE_VALID( booleanExpression  )
 *булеанекспрессион*<br/>
 Указывает логическое выражение, которое необходимо проверить.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти макросы предназначены для улучшения проверки параметров. Макросы предотвращают дальнейшую обработку неверных параметров в коде. В отличие от макросов ASSERT, в дополнение к формированию утверждения макросы создают исключение.
 
@@ -318,7 +318,7 @@ ENSURE_VALID вызывает макрос ASSERT_VALID (который дейс
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="this_file"></a><a name="this_file"></a> THIS_FILE
 
@@ -330,7 +330,7 @@ ENSURE_VALID вызывает макрос ASSERT_VALID (который дейс
 THIS_FILE
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эти сведения используются макросами ASSERT и VERIFY. Мастер приложений и мастера кода размещают макрос в файлах исходного кода, которые они создают.
 
@@ -348,7 +348,7 @@ static char THIS_FILE[] = __FILE__;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="trace"></a><a name="trace"></a> ТРАССИРОВКИ
 
@@ -359,7 +359,7 @@ TRACE(exp)
 TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Описание трассировки см. в разделе [ATLTRACE2](../../atl/reference/debugging-and-error-reporting-macros.md#atltrace2) . Функции TRACE и ATLTRACE2 имеют одинаковое поведение.
 
@@ -369,7 +369,7 @@ TRACE(DWORD  category,  UINT  level, LPCSTR lpszFormat, ...)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="verify"></a><a name="verify"></a> Проверка
 
@@ -384,7 +384,7 @@ VERIFY(booleanExpression)
 *булеанекспрессион*<br/>
 Указывает выражение (включая значения указателей), результатом вычисления которого является ненулевое значение или 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если результат равен 0, макрос выводит диагностическое сообщение и останавливает программу. Если условие не равно нулю, оно не выполняет никаких действий.
 
@@ -402,7 +402,7 @@ VERIFY(booleanExpression)
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdump-cdumpcontext-in-mfc"></a><a name="cdumpcontext_in_mfc"></a> Афксдумп (CDumpContext в MFC)
 
@@ -412,7 +412,7 @@ VERIFY(booleanExpression)
 CDumpContext  afxDump;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `afxDump` — Это предопределенный объект [CDumpContext](../../mfc/reference/cdumpcontext-class.md) , позволяющий передавать `CDumpContext` информацию в окно вывода отладчика или в терминал отладки. Обычно в `afxDump` качестве параметра указывается `CObject::Dump` .
 
@@ -426,7 +426,7 @@ CDumpContext  afxDump;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdump-internal"></a><a name="afxdump"></a> Афксдумп (внутренний)
 
@@ -443,7 +443,7 @@ void AfxDump(const CObject* pOb);
 *поб*<br/>
 Указатель на объект класса, производного от `CObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxDump` вызывает `Dump` функцию члена объекта и отправляет информацию в расположение, указанное `afxDump` переменной. `AfxDump` доступен только в отладочной версии MFC.
 
@@ -451,7 +451,7 @@ void AfxDump(const CObject* pOb);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxmemdf"></a><a name="afxmemdf"></a> afxMemDF
 
@@ -461,7 +461,7 @@ void AfxDump(const CObject* pOb);
 int  afxMemDF;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `afxMemDF` могут иметь следующие значения, указанные в перечислении `afxMemDF` :
 
@@ -477,7 +477,7 @@ int  afxMemDF;
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxcheckerror"></a><a name="afxcheckerror"></a> афксчеккеррор
 
@@ -489,7 +489,7 @@ throw CMemoryException*
 throw COleException*
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если это ошибка, функция создает исключение. Если переданный SCODE имеет E_OUTOFMEMORY, функция создает исключение [CMemoryException](../../mfc/reference/cmemoryexception-class.md) путем вызова [афкссровмеморексцептион](exception-processing.md#afxthrowmemoryexception). В противном случае функция выдает исключение [COleException](../../mfc/reference/coleexception-class.md) , вызывая [афкссроволиксцептион](exception-processing.md#afxthrowoleexception).
 
@@ -504,7 +504,7 @@ throw COleException*
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxcheckmemory"></a><a name="afxcheckmemory"></a> афксчеккмемори
 
@@ -518,7 +518,7 @@ BOOL  AfxCheckMemory();
 
 Ненулевое значение, если ошибки памяти отсутствуют; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если функция не обнаруживает повреждение памяти, она ничего не выводит.
 
@@ -541,7 +541,7 @@ BOOL  AfxCheckMemory();
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdump-mfc"></a><a name="afxdump"></a> Афксдумп (MFC)
 
@@ -556,7 +556,7 @@ void AfxDump(const CObject* pOb);
 *поб*<br/>
 Указатель на объект класса, производного от `CObject` .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `AfxDump` вызывает `Dump` функцию члена объекта и отправляет информацию в расположение, указанное `afxDump` переменной. `AfxDump` доступен только в отладочной версии MFC.
 
@@ -564,7 +564,7 @@ void AfxDump(const CObject* pOb);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdumpstack"></a><a name="afxdumpstack"></a> афксдумпстакк
 
@@ -589,7 +589,7 @@ void AFXAPI AfxDumpStack(DWORD dwTarget = AFX_STACK_DUMP_TARGET_DEFAULT);
 
 - AFX_STACK_DUMP_TARGET_ODS отправляет выходные данные непосредственно в отладчик с помощью функции Win32 `OutputDebugString()` . Этот параметр позволяет создавать выходные данные отладчика в сборках отладки и выпуска при присоединении отладчика к процессу. AFX_STACK_DUMP_TARGET_ODS всегда достигает отладчика (если он присоединен) и не может быть перенаправлен.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В приведенном ниже примере показана одна строка выходных данных, созданных `AfxDumpStack` при вызове из обработчика кнопки в диалоговом окне MFC.
 
@@ -640,7 +640,7 @@ BFF928E0: WINDOWS\SYSTEM\KERNEL32.DLL! UTUnRegister + 2492 bytes
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxenablememoryleakdump"></a><a name="afxenablememoryleakdump"></a> афксенаблемеморилеакдумп
 
@@ -659,7 +659,7 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 
 Предыдущее значение для этого флага.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Когда приложение выгружает библиотеку MFC, она выполняет проверку на наличие утечек памяти. На этом этапе пользователю сообщается о любых утечках памяти в окне **Отладка** Visual Studio.
 
@@ -670,7 +670,7 @@ BOOL AFXAPI AfxEnableMemoryLeakDump(BOOL bDump);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxenablememorytracking"></a><a name="afxenablememorytracking"></a> афксенаблемеморитраккинг
 
@@ -689,7 +689,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 
 Предыдущий параметр флага отслеживания включения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используйте эту функцию, чтобы отключить отслеживание для разделов кода, которые вы узнаете, чтобы правильно выделить блоки.
 
@@ -704,7 +704,7 @@ BOOL AfxEnableMemoryTracking(BOOL bTrack);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxismemoryblock"></a><a name="afxismemoryblock"></a> афксисмемориблокк
 
@@ -732,7 +732,7 @@ BOOL AfxIsMemoryBlock(
 
 Ненулевое значение, если блок памяти выделяется в данный момент и имеет правильную длину; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Он также проверяет указанный размер в соответствии с исходным выделенным размером. Если функция возвращает ненулевое значение, порядковый номер выделения возвращается в *плрекуестнумбер*. Это число представляет порядок, в котором блок был выделен относительно всех других **`new`** выделений.
 
@@ -742,7 +742,7 @@ BOOL AfxIsMemoryBlock(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxisvalidaddress"></a><a name="afxisvalidaddress"></a> афксисвалидаддресс
 
@@ -772,7 +772,7 @@ BOOL AfxIsValidAddress(
 
 В сборках, которые не являются отладочными, ненулевое значение, если *LP* не равен null; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Адрес не ограничен блоками, выделенными **`new`** .
 
@@ -782,7 +782,7 @@ BOOL AfxIsValidAddress(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxisvalidstring"></a><a name="afxisvalidstring"></a> афксисвалидстринг
 
@@ -814,7 +814,7 @@ BOOL  AfxIsValidString(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxsetallochook"></a><a name="afxsetallochook"></a> афкссеталлочук
 
@@ -833,7 +833,7 @@ AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
 
 Ненулевое значение, если требуется разрешение выделения; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Библиотека Microsoft Foundation Classный распределитель памяти может вызывать определяемую пользователем функцию-обработчик, позволяющую пользователю отслеживать выделение памяти и контролировать, разрешено ли выделение. Функции-ловушки выделения прототипа имеют следующий вид:
 
@@ -852,7 +852,7 @@ AFX_ALLOC_HOOK AfxSetAllocHook(AFX_ALLOC_HOOK pfnAllocHook);
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdoforallclasses"></a><a name="afxdoforallclasses"></a> афксдофораллклассес
 
@@ -873,7 +873,7 @@ AFXAPI AfxDoForAllClasses(
 *pContext*<br/>
 Указывает на необязательные данные, которые вызывающий объект может передать в функцию итерации. Этот указатель может иметь значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Сериализуемые `CObject` производные классы — это классы, производные с помощью макроса DECLARE_SERIAL. Указатель, который передается `AfxDoForAllClasses` в *пконтекст* , передается в указанную функцию итерации при каждом ее вызове.
 
@@ -888,7 +888,7 @@ AFXAPI AfxDoForAllClasses(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** AFX. h
+**Заголовок:** AFX.h
 
 ## <a name="afxdoforallobjects"></a><a name="afxdoforallobjects"></a> афксдофораллобжектс
 
@@ -908,7 +908,7 @@ void AfxDoForAllObjects(
 *pContext*<br/>
 Указывает на необязательные данные, которые вызывающий объект может передать в функцию итерации. Этот указатель может иметь значение NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Стек, глобальные или внедренные объекты не перечисляются. Указатель, передаваемый `AfxDoForAllObjects` в *пконтекст* , передается указанной функции итерации при каждом ее вызове.
 

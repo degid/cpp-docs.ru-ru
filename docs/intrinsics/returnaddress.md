@@ -28,7 +28,7 @@ ms.locfileid: "70218062"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовочный файл** \<> Intrin. h
+**Заголовочный файл** \<> Intrin.h
 
 ## <a name="example"></a>Пример
 

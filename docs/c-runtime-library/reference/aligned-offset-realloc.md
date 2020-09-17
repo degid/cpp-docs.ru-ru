@@ -70,7 +70,7 @@ void * _aligned_offset_realloc(
 
 **_aligned_offset_realloc** `__declspec(noalias)` помечается `__declspec(restrict)`и, что означает, что функция гарантированно не изменяет глобальные переменные и что возвращаемый указатель не имеет псевдонима. Дополнительные сведения см. в разделах [noalias](../../cpp/noalias.md) и [restrict](../../cpp/restrict.md).
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Как и [_aligned_offset_malloc](aligned-offset-malloc.md), **_aligned_offset_realloc** позволяет выстроить структуру по смещению в пределах структуры.
 

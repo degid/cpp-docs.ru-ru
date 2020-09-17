@@ -21,7 +21,7 @@ ms.locfileid: "88830843"
 
 > **`OPTION`***Option-List*
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Доступны следующие варианты:
 

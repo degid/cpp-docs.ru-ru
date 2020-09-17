@@ -165,7 +165,7 @@ class CMenu : public CObject
 |----------|-----------------|
 |[CMenu::m_hMenu](#m_hmenu)|Определяет ручку в меню Windows, прикрепленную `CMenu` к объекту.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Он предоставляет функции членов для создания, отслеживания, обновления и уничтожения меню.
 
@@ -223,7 +223,7 @@ BOOL AppendMenu(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приложение может указать состояние элемента меню, установив значения в *nFlags*. Когда *nIDNewItem* определяет всплывающее меню, оно становится частью меню, к которому оно приложено. Если это меню будет уничтожено, придативное меню также будет уничтожено. Придативное меню `CMenu` должно быть отделено от объекта, чтобы избежать конфликта. Обратите внимание, что MF_STRING и MF_OWNERDRAW не `AppendMenu`действительны для версии bitmap .
 
@@ -284,7 +284,7 @@ BOOL Attach(HMENU hMenu);
 
 Nonzero, если операция была успешной; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция не должна вызываться, если меню `CMenu` уже прикреплено к объекту. Ручка меню хранится `m_hMenu` в элементе данных.
 
@@ -324,7 +324,7 @@ UINT CheckMenuItem(
 
 Предыдущее состояние элемента: MF_CHECKED или MF_UNCHECKED, или 0xFFFFFF, если пункт меню не существует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *nIDCheckItem* определяет элемент, который будет изменен.
 
@@ -369,7 +369,7 @@ BOOL CheckMenuRadioItem(
 
 Nonzero, если успешно; в противном случае 0
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 В то же время функция отсеивает все остальные элементы меню в связанной группе и очищает флаг типа радиоэлемента для этих элементов. Проверенный элемент отображается с помощью радиокнопки (или пули) bitmap вместо битовой карты чековой отметки.
 
@@ -385,7 +385,7 @@ Nonzero, если успешно; в противном случае 0
 CMenu();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Меню не создается до тех пор, пока вы не позвоните в одну из функций члена создать или загрузить`CMenu:`
 
@@ -411,7 +411,7 @@ BOOL CreateMenu();
 
 Nonzero, если меню было создано успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Меню изначально пусто. Элементы меню могут быть `AppendMenu` `InsertMenu` добавлены с помощью функции или элемента.
 
@@ -435,7 +435,7 @@ BOOL CreatePopupMenu();
 
 Nonzero, если всплывающее меню было успешно создано; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Меню изначально пусто. Элементы меню могут быть `AppendMenu` `InsertMenu` добавлены с помощью функции или элемента. Приложение может добавить всплывающее меню в существующее или всплывающее меню. Функция `TrackPopupMenu` участника может использоваться для отображения этого меню в виде плавающего всплывающего меню и для отслеживания выделений в всплывающем меню.
 
@@ -474,7 +474,7 @@ BOOL DeleteMenu(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если элемент меню имеет связанное всплывающее меню, `DeleteMenu` разрушает ручку всплывающее меню и освобождает память, используемую всплывающее меню.
 
@@ -492,7 +492,7 @@ BOOL DeleteMenu(
 static void PASCAL DeleteTempMap();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 `DeleteTempMap`отсоединяет объект меню Windows, прикрепленный `CMenu` к временному объекту, `CMenu` перед удаляя объект.
 
@@ -512,7 +512,7 @@ BOOL DestroyMenu();
 
 Nonzero, если меню уничтожено; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Меню отделяется `CMenu` от объекта до его уничтожения. Функция `DestroyMenu` Windows автоматически вызывается `CMenu` в деструкторе.
 
@@ -532,7 +532,7 @@ HMENU Detach();
 
 Ручка, типа HMENU, в меню Windows, в случае успеха; в противном случае NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Член `m_hMenu` данных настроен на NULL.
 
@@ -553,7 +553,7 @@ virtual void DrawItem(LPDRAWITEMSTRUCT lpDrawItemStruct);
 *lpDrawItemStruct*<br/>
 Указатель на структуру [DRAWITEMSTRUCT,](/windows/win32/api/winuser/ns-winuser-drawitemstruct) содержащую информацию о типе требуемого чертежа.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Член `itemAction` `DRAWITEMSTRUCT` структуры определяет действие чертежа, которое должно быть выполнено. Переопределить эту функцию элемента для `CMenu` реализации чертежа для объекта владельца-рисования. Приложение должно восстановить все объекты интерфейса графического устройства (GDI), выбранные для контекста отображения, поставляемые в *lpDrawItemStruct* до прекращения этой функции участника.
 
@@ -597,7 +597,7 @@ UINT EnableMenuItem(
 
 Предыдущее состояние (MF_DISABLED, MF_ENABLED или MF_GRAYED) или -1, если не действует.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 [Функции члена CreateMenu,](#createmenu) [InsertMenu,](#insertmenu) [ModifyMenu](#modifymenu)и [LoadMenuIndirect](#loadmenuindirect) также могут установить состояние (включено, отключено или затемнено) элемента меню.
 
@@ -626,7 +626,7 @@ static CMenu* PASCAL FromHandle(HMENU hMenu);
 
 Указатель на `CMenu` который может быть временным или постоянным.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Если `CMenu` объект еще не подключен к объекту меню `CMenu` Windows, создается и прикрепляется временный объект.
 
@@ -663,7 +663,7 @@ UINT GetDefaultItem(
 
 Если функция успешно, значение возврата является идентификатором или положением элемента меню. Если функция выходит из строя, значение возврата - 1.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция-член реализует поведение функции Win32 [GetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-getmenudefaultitem), как описано в Windows SDK.
 
@@ -704,7 +704,7 @@ BOOL GetMenuInfo(LPMENUINFO lpcmi) const;
 
 Если функция успешно, значение возврата неявляется; в противном случае значение возврата равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Вызовите эту функцию, чтобы получить информацию о меню.
 
@@ -771,7 +771,7 @@ BOOL GetMenuItemInfo(
 
 Если функция успешно, значение возврата неявляется. Если функция выполняется неудачно, возвращается нулевое значение. Чтобы получить расширенную информацию об ошибках, используйте функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), как описано в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение функции Win32 [GetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-getmenuiteminfow), как описано в Windows SDK. Обратите внимание, что в `GetMenuItemInfo`реализации MFC вы не используете ручку в меню.
 
@@ -868,7 +868,7 @@ int GetMenuString(
 
 Определяет фактическое количество символов, скопированных в буфер, не включая нулевой терминатор.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Параметр *nMaxCount* должен быть на один больше, чем количество символов на этикетке, чтобы разместить нулевой символ, который завершает строку.
 
@@ -959,7 +959,7 @@ BOOL InsertMenu(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приложение может указать состояние элемента меню, установив значения в *nFlags*.
 
@@ -995,7 +995,7 @@ BOOL InsertMenuItem(
 *fByPos*<br/>
 Смотрите описание *fByPosition* в `InsertMenuItem` Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обертывает [InsertMenuItem](/windows/win32/api/winuser/nf-winuser-insertmenuitemw), описанные в Windows SDK.
 
@@ -1020,7 +1020,7 @@ BOOL LoadMenu(UINT nIDResource);
 
 Nonzero, если ресурс меню был загружен успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Перед выходом приложение должно освободить системные ресурсы, связанные с меню, если меню не назначено окну. Приложение освобождает меню, позвонив в функцию [участника DestroyMenu.](#destroymenu)
 
@@ -1045,7 +1045,7 @@ BOOL LoadMenuIndirect(const void* lpMenuTemplate);
 
 Nonzero, если ресурс меню был загружен успешно; в противном случае 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Шаблон меню представляет собой заголовок, за которым следует коллекция из одной или нескольких структур [MENUITEMTEMPLATE,](/windows/win32/api/winuser/ns-winuser-menuitemtemplate) каждая из которых может содержать один или несколько пунктов меню и всплывающих меню.
 
@@ -1086,7 +1086,7 @@ virtual void MeasureItem(LPMEASUREITEMSTRUCT lpMeasureItemStruct);
 *lpИзмеренныйПункт*<br/>
 Указатель на `MEASUREITEMSTRUCT` структуру.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 По умолчанию эта функция-член ничего не делает. Переизобить эту функцию участника и заполнить структуру, `MEASUREITEMSTRUCT` чтобы сообщить Windows о размерах меню.
 
@@ -1148,7 +1148,7 @@ BOOL ModifyMenu(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приложение определяет новое состояние элемента меню, устанавливая значения в *nFlags.* Если эта функция заменяет всплывающее меню, связанное с пунктом меню, она разрушает старое всплывающее меню и освобождает память, используемую всплывающее меню.
 
@@ -1172,7 +1172,7 @@ operator HMENU() const;
 
 В случае успеха, `CMenu` ручка объекта; в противном случае, NULL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Ручку можно использовать для прямого вызова AA Windows.
 
@@ -1189,7 +1189,7 @@ BOOL operator!=(const CMenu& menu) const;
 *Меню*<br/>
 Объект `CMenu` для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тесты, если объект меню на левой стороне не равен объекту меню на правой стороне.
 
@@ -1206,7 +1206,7 @@ BOOL operator==(const CMenu& menu) const;
 *Меню*<br/>
 Объект `CMenu` для сравнения.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Тесты, если объект меню на левой стороне равен (с точки зрения значения HMENU) с объектом меню на правой стороне.
 
@@ -1237,7 +1237,7 @@ BOOL RemoveMenu(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это не разрушает ручку для всплывающих меню, так что меню может быть повторно использовано. Перед вызовом этой функции `GetSubMenu` приложение может вызвать функцию `CMenu` участника для повторного использования всплывающих объектов.
 
@@ -1269,7 +1269,7 @@ BOOL SetDefaultItem(
 
 Если функция успешно, значение возврата неявляется. Если функция выполняется неудачно, возвращается нулевое значение. Чтобы получить расширенную информацию об ошибках, используйте функцию Win32 [GetLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror), как описано в SDK Windows.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция члена реализует поведение функции Win32 [SetMenuDefaultItem](/windows/win32/api/winuser/nf-winuser-setmenudefaultitem), как описано в Windows SDK.
 
@@ -1294,7 +1294,7 @@ BOOL SetMenuContextHelpId(DWORD dwContextHelpId);
 
 Nonzero, если успешно; в противном случае 0
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Все элементы меню разделяют этот идентификатор – к отдельным пунктам меню невозможно прикрепить идентификатор контекста справки.
 
@@ -1319,7 +1319,7 @@ BOOL SetMenuInfo(LPCMENUINFO lpcmi);
 
 Если функция успешно, значение возврата неявляется; в противном случае значение возврата равно нулю.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Позвоните в эту функцию, чтобы установить конкретную информацию о меню.
 
@@ -1358,7 +1358,7 @@ BOOL SetMenuItemBitmaps(
 
 Ненулевое значение, если функция выполнена успешно; в противном случае — 0.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Независимо от того, проверен или бесконтрольно элемент меню, Windows отображает соответствующую бит-карту рядом с пунктом меню.
 
@@ -1396,7 +1396,7 @@ BOOL SetMenuItemInfo(
 *fByPos*<br/>
 Смотрите описание *fByPosition* в `SetMenuItemInfo` Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта функция обертывает [SetMenuItemInfo](/windows/win32/api/winuser/nf-winuser-setmenuiteminfow), описанные в Windows SDK.
 
@@ -1434,7 +1434,7 @@ BOOL TrackPopupMenu(
 
 Этот метод возвращает результат вызова [TrackPopupMenu](/windows/win32/api/winuser/nf-winuser-trackpopupmenu) в Windows SDK.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Плавающее всплывающее меню может появиться в любом месте экрана.
 
@@ -1478,7 +1478,7 @@ BOOL TrackPopupMenuEx(
 
 Если вы не указали TPM_RETURNCMD параметра *fuFlags,* значение возврата неявляется, если функция успешно работает, и 0, если она не удается. Чтобы получить расширенную информацию об ошибке, позвоните [getLastError](/windows/win32/api/errhandlingapi/nf-errhandlingapi-getlasterror).
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Плавающее всплывающее меню может появиться в любом месте экрана. Для получения дополнительной информации об ошибках обработки при создании всплывающего меню, [см.](/windows/win32/api/winuser/nf-winuser-trackpopupmenuex)
 

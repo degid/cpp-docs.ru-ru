@@ -109,7 +109,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 |[Функция CAtlServiceModuleT:: m_status](#m_status)|Переменная члена, в которой хранится структура сведений о состоянии для текущей службы.|
 |[Функция CAtlServiceModuleT:: m_szServiceName](#m_szservicename)|Имя регистрируемой службы.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 `CAtlServiceModuleT`, производный от [CAtlExeModuleT](../../atl/reference/catlexemodulet-class.md), реализует модуль службы ATL. `CAtlServiceModuleT`предоставляет методы для обработки, установки, регистрации и удаления из командной строки. Если требуются дополнительные функциональные возможности, эти и другие методы можно переопределить.
 
@@ -129,7 +129,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="catlservicemoduletcatlservicemodulet"></a><a name="catlservicemodulet"></a>Функция CAtlServiceModuleT:: функция CAtlServiceModuleT
 
@@ -139,7 +139,7 @@ class ATL_NO_VTABLE CAtlServiceModuleT : public CAtlExeModuleT<T>
 CAtlServiceModuleT() throw();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Инициализирует элементы данных и задает начальное состояние службы.
 
@@ -156,17 +156,17 @@ void Handler(DWORD dwOpcode) throw();
 *двопкоде*<br/>
 Параметр, определяющий операцию обработчика. Дополнительные сведения см. в разделе Примечания.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это код, который вызывает диспетчер управления службами (SCM) для получения состояния службы и выполнения инструкций, таких как остановка или приостановка. SCM передает код операции, показанный ниже, чтобы `Handler` указать, что должна делать служба.
 
 |Код операции|Значение|
 |--------------------|-------------|
-|SERVICE_CONTROL_STOP|останавливает службу. Переопределите метод [функция CAtlServiceModuleT:: OnStop](#onstop) в ATLBASE. h, чтобы изменить поведение.|
-|SERVICE_CONTROL_PAUSE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnPause](#onpause) в ATLBASE. h, чтобы приостановить работу службы.|
-|SERVICE_CONTROL_CONTINUE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnContinue](#oncontinue) в ATLBASE. h, чтобы продолжить работу службы.|
-|SERVICE_CONTROL_INTERROGATE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: oninterrogat](#oninterrogate) в ATLBASE. h для опроса службы.|
-|SERVICE_CONTROL_SHUTDOWN|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnShutdown](#onshutdown) в ATLBASE. h, чтобы завершить работу службы.|
+|SERVICE_CONTROL_STOP|останавливает службу. Переопределите метод [функция CAtlServiceModuleT:: OnStop](#onstop) в ATLBASE.h, чтобы изменить поведение.|
+|SERVICE_CONTROL_PAUSE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnPause](#onpause) в ATLBASE.h, чтобы приостановить работу службы.|
+|SERVICE_CONTROL_CONTINUE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnContinue](#oncontinue) в ATLBASE.h, чтобы продолжить работу службы.|
+|SERVICE_CONTROL_INTERROGATE|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: oninterrogat](#oninterrogate) в ATLBASE.h для опроса службы.|
+|SERVICE_CONTROL_SHUTDOWN|Реализовано пользователем. Переопределите пустой метод [функция CAtlServiceModuleT:: OnShutdown](#onshutdown) в ATLBASE.h, чтобы завершить работу службы.|
 
 Если код операции не распознан, вызывается метод [функция CAtlServiceModuleT:: онункновнрекуест](#onunknownrequest) .
 
@@ -184,7 +184,7 @@ HRESULT InitializeSecurity() throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Любой класс, производный от `CAtlServiceModuleT` , должен реализовывать этот метод в производном классе.
 
@@ -210,7 +210,7 @@ BOOL Install() throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Устанавливает службу в базу данных диспетчера управления службами (SCM), а затем создает объект службы. Если службу не удалось создать, отображается окно сообщения, а метод возвращает значение FALSE.
 
@@ -242,7 +242,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 *...*<br/>
 Необязательные дополнительные строки для записи в журнал событий.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод записывает сведения в журнал событий с помощью функции [репортевент](/windows/win32/api/winbase/nf-winbase-reporteventw). Если служба не запущена, строка отправляется в консоль.
 
@@ -254,7 +254,7 @@ void __cdecl LogEvent(LPCTSTR pszFormat, ...) throw();
 BOOL m_bService;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Используется для различения EXE-файла службы от исполняемого файла приложения.
 
@@ -266,7 +266,7 @@ BOOL m_bService;
 DWORD m_dwThreadID;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Эта переменная хранит идентификатор потока текущего потока.
 
@@ -278,7 +278,7 @@ DWORD m_dwThreadID;
 SERVICE_STATUS_HANDLE m_hServiceStatus;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Структура [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) содержит сведения о службе.
 
@@ -290,7 +290,7 @@ SERVICE_STATUS_HANDLE m_hServiceStatus;
 SERVICE_STATUS m_status;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Структура [SERVICE_STATUS](/windows/win32/api/winsvc/ns-winsvc-service_status) содержит сведения о службе.
 
@@ -302,7 +302,7 @@ SERVICE_STATUS m_status;
 TCHAR [256] m_szServiceName;
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Строка, завершающаяся нулем, в которой хранится имя службы.
 
@@ -379,7 +379,7 @@ bool ParseCommandLine(LPCTSTR lpCmdLine, HRESULT* pnRetCode) throw();
 
 Возвращает значение true при успешном выполнении или значение false, если не удалось зарегистрировать RGS файл, указанный в командной строке.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Анализирует командную строку и регистрирует или отменяет регистрацию в заданном RGSм файле, если это необходимо. Этот метод вызывает [CAtlExeModuleT::P арсекоммандлине](../../atl/reference/catlexemodulet-class.md#parsecommandline) для проверки **/regserver** и **/UnregServer**. При добавлении аргумента **-свойством/Service** будет зарегистрирована служба.
 
@@ -400,7 +400,7 @@ HRESULT PreMessageLoop(int nShowCmd) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Переопределите этот метод, чтобы добавить пользовательский код инициализации для службы.
 
@@ -438,7 +438,7 @@ HRESULT Run(int nShowCmd = SW_HIDE) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 После `Run` вызова вызывается метод [функция CAtlServiceModuleT::P ремессажелуп](#premessageloop), [CAtlExeModuleT:: Рунмессажелуп](../../atl/reference/catlexemodulet-class.md#runmessageloop)и [CAtlExeModuleT::P остмессажелуп](../../atl/reference/catlexemodulet-class.md#postmessageloop).
 
@@ -458,7 +458,7 @@ void ServiceMain(DWORD dwArgc, LPTSTR* lpszArgv) throw();
 *лпсзаргв*<br/>
 Аргумент argv.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Диспетчер управления службами вызывается `ServiceMain` при открытии приложения службы на панели управления, выборе службы и нажатии кнопки запустить.
 
@@ -477,7 +477,7 @@ void SetServiceStatus(DWORD dwState) throw();
 *двстате*<br/>
 Новое состояние. Возможные значения см. в разделе [сбой SetServiceStatus](/windows/win32/api/winsvc/nf-winsvc-setservicestatus) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Обновляет сведения о состоянии диспетчера управления службами для службы. Он вызывается методом [функция CAtlServiceModuleT:: Run](#run), [функция CAtlServiceModuleT:: ServiceMain](#servicemain) и другими методами обработчика. Состояние также хранится в переменной-члене [функция CAtlServiceModuleT:: M_STATUS](#m_status).
 
@@ -498,7 +498,7 @@ HRESULT Start(int nShowCmd) throw();
 
 Возвращает S_OK при успешном выполнении или ошибку HRESULT при сбое.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Метод [функция CAtlServiceModuleT:: WinMain](#winmain) обрабатывает регистрацию и установку, а также задачи, связанные с удалением записей реестра и удаления модуля. При запуске службы `WinMain` вызывает метод `Start`.
 
@@ -514,7 +514,7 @@ BOOL Uninstall() throw();
 
 Возвращает TRUE при успешном выполнении, FALSE в случае сбоя.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Останавливает работу службы и удаляет ее из базы данных диспетчера управления службами.
 
@@ -559,7 +559,7 @@ int WinMain(int nShowCmd) throw();
 
 Возвращает возвращаемое значение службы.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Этот метод обрабатывает командную строку (WITH [функция CAtlServiceModuleT::P арсекоммандлине](#parsecommandline)), а затем запускает службу (с помощью [функция CAtlServiceModuleT:: Start](#start)).
 

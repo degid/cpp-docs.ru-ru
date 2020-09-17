@@ -370,7 +370,7 @@ class CMFCVisualManagerOffice2007 : public CMFCVisualManagerOffice2003
 |[CMFCVisualManagerOffice2007:SetResourceHandle](#setresourcehandle)||
 |`CMFCVisualManagerOffice2007::SetStyle`|Устанавливает цветовую гамму графического интерфейса. `CMFCVisualManagerOffice2007`|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Используйте `CMFCVisualManagerOffice2007` для изменения внешнего вида приложения, чтобы напоминать microsoft Office 2007. Этот визуальный менеджер требует, чтобы вы установили стиль, прежде чем использовать его. Перед тем, `CMFCVisualManager::SetDefaultManager`как пройти этот визуальный `CMFCVisualManagerOffice2007::SetStyle`менеджер, вы должны вызвать статическую функцию.
 
@@ -406,7 +406,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007cleanstyle"></a><a name="cleanstyle"></a>CMFCVisualManagerOffice2007:CleanStyle
 
@@ -414,7 +414,7 @@ virtual BOOL AlwaysHighlight3DTabs() const;
 static void __stdcall CleanStyle();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getcaptionbartextcolor"></a><a name="getcaptionbartextcolor"></a>CMFCVisualManagerOffice2007::GetCaptionBarTextColor
 
@@ -428,7 +428,7 @@ virtual COLORREF GetCaptionBarTextColor(CMFCCaptionBar* pBar);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gethighlightedmenuitemtextcolor"></a><a name="gethighlightedmenuitemtextcolor"></a>CMFCVisualManagerOffice2007::GetHighlightedMenuTextColor
 
@@ -442,7 +442,7 @@ virtual COLORREF GetHighlightedMenuItemTextColor(CMFCToolBarMenuButton* pButton)
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getmenuitemtextcolor"></a><a name="getmenuitemtextcolor"></a>CMFCVisualManagerOffice2007:GetMenuTextColor
 
@@ -461,7 +461,7 @@ virtual COLORREF GetMenuItemTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getncbtnsize"></a><a name="getncbtnsize"></a>CMFCVisualManagerOffice2007:GetNcBtnSize
 
@@ -475,7 +475,7 @@ virtual CSize GetNcBtnSize(BOOL bSmall) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonbar"></a><a name="getribbonbar"></a>CMFCVisualManagerOffice2007:GetRibbonBar
 
@@ -489,7 +489,7 @@ CMFCRibbonBar* GetRibbonBar(CWnd* pWnd) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonhyperlinktextcolor"></a><a name="getribbonhyperlinktextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonHyperlinkTextColor
 
@@ -503,7 +503,7 @@ virtual COLORREF GetRibbonHyperlinkTextColor(CMFCRibbonLinkCtrl* pHyperLink);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonpopupbordersize"></a><a name="getribbonpopupbordersize"></a>CMFCVisualManagerOffice2007:GetRibbonPopupBorderSize
 
@@ -517,7 +517,7 @@ virtual int GetRibbonPopupBorderSize(const CMFCRibbonPanelMenu* pPopup) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarchevronoffset"></a><a name="getribbonquickaccesstoolbarchevronoffset"></a>CMFCVisualManagerOffice2007::GetRibbonКвиКвИКвАйтТулБарШевронСтом
 
@@ -527,7 +527,7 @@ virtual int GetRibbonQuickAccessToolBarChevronOffset();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbarrightmargin"></a><a name="getribbonquickaccesstoolbarrightmargin"></a>CMFCVisualManagerOffice2007:GetRibbonКваДоступToolRightMargin
 
@@ -537,7 +537,7 @@ virtual int GetRibbonQuickAccessToolBarRightMargin();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonquickaccesstoolbartextcolor"></a><a name="getribbonquickaccesstoolbartextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonКваДоступToolToolTextColorЦвет
 
@@ -551,7 +551,7 @@ virtual COLORREF GetRibbonQuickAccessToolBarTextColor(BOOL bDisabled = FALSE);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getribbonstatusbartextcolor"></a><a name="getribbonstatusbartextcolor"></a>CMFCVisualManagerOffice2007:GetRibbonStatusBarTextColor
 
@@ -565,7 +565,7 @@ virtual COLORREF GetRibbonStatusBarTextColor(CMFCRibbonStatusBar* pStatusBar);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getshowallmenuitemsheight"></a><a name="getshowallmenuitemsheight"></a>CMFCVisualManagerOffice2007:GetShowAllMenuItemsВысота
 
@@ -582,7 +582,7 @@ virtual int GetShowAllMenuItemsHeight(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007getstatusbarpanetextcolor"></a><a name="getstatusbarpanetextcolor"></a>CMFCVisualManagerOffice2007:GetStatusBarPaneTextColor
 
@@ -599,7 +599,7 @@ virtual COLORREF GetStatusBarPaneTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettabframecolors"></a><a name="gettabframecolors"></a>CMFCVisualManagerOffice2007:GetTabFrameColors
 
@@ -628,7 +628,7 @@ virtual void GetTabFrameColors(
 (в) *pbrFace*<br/>
 (в) *pbrBlack*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettabhorzmargin"></a><a name="gettabhorzmargin"></a>CMFCVisualManagerOffice2007:GetTabHorzMargin
 
@@ -642,7 +642,7 @@ virtual int GetTabHorzMargin(const CMFCBaseTabCtrl* pTabWnd);
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettabtextcolor"></a><a name="gettabtextcolor"></a>CMFCVisualManagerOffice2007:GetTabTextColor
 
@@ -661,7 +661,7 @@ virtual COLORREF GetTabTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettoolbarbuttontextcolor"></a><a name="gettoolbarbuttontextcolor"></a>CMFCVisualManagerOffice2007:GetToolbarButtonText
 
@@ -678,7 +678,7 @@ virtual COLORREF GetToolbarButtonTextColor(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettoolbardisabledtextcolor"></a><a name="gettoolbardisabledtextcolor"></a>CMFCVisualManagerOffice2007::GetToolbarDisabledDisabledTextColor
 
@@ -688,7 +688,7 @@ virtual COLORREF GetToolbarDisabledTextColor();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007gettooltipinfo"></a><a name="gettooltipinfo"></a>CMFCVisualManagerOffice2007:GetToolTipInfo
 
@@ -705,7 +705,7 @@ virtual BOOL GetToolTipInfo(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ishighlightwholemenuitem"></a><a name="ishighlightwholemenuitem"></a>CMFCVisualManagerOffice2007:IsHighlightWholeMenuItem
 
@@ -715,7 +715,7 @@ virtual BOOL IsHighlightWholeMenuItem();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007islayeredribbonkeytip"></a><a name="islayeredribbonkeytip"></a>CMFCVisualManagerOffice2007:IsLayeredRibbonKeyTip
 
@@ -725,7 +725,7 @@ virtual BOOL IsLayeredRibbonKeyTip() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007isownerdrawcaption"></a><a name="isownerdrawcaption"></a>CMFCVisualManagerOffice2007:IsOwnerDrawCaption
 
@@ -735,7 +735,7 @@ virtual BOOL IsOwnerDrawCaption();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007isownerdrawmenucheck"></a><a name="isownerdrawmenucheck"></a>CMFCVisualManagerOffice2007:IsOwnerdrawMenuCheck
 
@@ -745,7 +745,7 @@ virtual BOOL IsOwnerDrawMenuCheck();
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007isribbonpresent"></a><a name="isribbonpresent"></a>CMFCVisualManagerOffice2007:IsRibbonPresent
 
@@ -759,7 +759,7 @@ BOOL IsRibbonPresent(CWnd* pWnd) const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawbargripper"></a><a name="ondrawbargripper"></a>CMFCVisualManagerOffice2007:OnDrawBarGripper
 
@@ -778,7 +778,7 @@ virtual void OnDrawBarGripper(
 (в) *bHorz*<br/>
 (в) *pBar*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawbuttonborder"></a><a name="ondrawbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawbuttonBorder
 
@@ -797,7 +797,7 @@ virtual void OnDrawButtonBorder(
 [in] *rect*<br/>
 (в) *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawbuttonseparator"></a><a name="ondrawbuttonseparator"></a>CMFCVisualManagerOffice2007:OnDrawButtonСепара
 
@@ -818,7 +818,7 @@ virtual void OnDrawButtonSeparator(
 (в) *состояние*<br/>
 (в) *bHorz*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawcaptionbarinfoarea"></a><a name="ondrawcaptionbarinfoarea"></a>CMFCVisualManagerOffice2007:OndrawcaptionBarinfo
 
@@ -835,7 +835,7 @@ virtual void OnDrawCaptionBarInfoArea(
 (в) *pBar*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawcheckboxex"></a><a name="ondrawcheckboxex"></a>CMFCVisualManagerOffice2007:OndrawCheckBoxex
 
@@ -858,7 +858,7 @@ virtual void OnDrawCheckBoxEx(
 (в) *bPressed*<br/>
 (в) *bВСтои*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawcomboborder"></a><a name="ondrawcomboborder"></a>CMFCVisualManagerOffice2007:OndrawComboBorder
 
@@ -881,7 +881,7 @@ virtual void OnDrawComboBorder(
 (в) *bIsHighlighted*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawcombodropbutton"></a><a name="ondrawcombodropbutton"></a>CMFCVisualManagerOffice2007:OndrawComboDropButton
 
@@ -904,7 +904,7 @@ virtual void OnDrawComboDropButton(
 (в) *bIsHighlighted*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawdefaultribbonimage"></a><a name="ondrawdefaultribbonimage"></a>CMFCVisualManagerOffice2007::OndrawDefaultRibbonImage
 
@@ -925,7 +925,7 @@ virtual void OnDrawDefaultRibbonImage(
 (в) *bIsPressed*<br/>
 (в) *bIsHighlighted*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondraweditborder"></a><a name="ondraweditborder"></a>CMFCVisualManagerOffice2007:OnDrawEditBorder
 
@@ -946,7 +946,7 @@ virtual void OnDrawEditBorder(
 (в) *bIsHighlighted*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawfloatingtoolbarborder"></a><a name="ondrawfloatingtoolbarborder"></a>CMFCVisualManagerOffice2007:OnDrawFloatingToolbarBorder
 
@@ -965,7 +965,7 @@ virtual void OnDrawFloatingToolbarBorder(
 (в) *rectBorder*<br/>
 (в) *rectBorderSize*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawheaderctrlborder"></a><a name="ondrawheaderctrlborder"></a>CMFCVisualManagerOffice2007:OnDrawHeaderCtrlBorder
 
@@ -986,7 +986,7 @@ virtual void OnDrawHeaderCtrlBorder(
 (в) *bIsPressed*<br/>
 (в) *bIsHighlighted*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenuborder"></a><a name="ondrawmenuborder"></a>CMFCVisualManagerOffice2007:OndrawMenuBorder
 
@@ -1003,7 +1003,7 @@ virtual void OnDrawMenuBorder(
 (в) *pMenu*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenucheck"></a><a name="ondrawmenucheck"></a>CMFCVisualManagerOffice2007:OndrawMenuCheck
 
@@ -1024,7 +1024,7 @@ virtual void OnDrawMenuCheck(
 (в) *bHighlight*<br/>
 (в) *bIsRadio*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenuitembutton"></a><a name="ondrawmenuitembutton"></a>CMFCVisualManagerOffice2007:OndrawMenuitembutton
 
@@ -1045,7 +1045,7 @@ virtual void OnDrawMenuItemButton(
 (в) *bHighlight*<br/>
 (в) *bDisabled*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenulabel"></a><a name="ondrawmenulabel"></a>CMFCVisualManagerOffice2007:OndrawMenuLabel
 
@@ -1062,7 +1062,7 @@ virtual COLORREF OnDrawMenuLabel(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenuresizebar"></a><a name="ondrawmenuresizebar"></a>CMFCVisualManagerOffice2007:OndrawMenuresizebar
 
@@ -1079,7 +1079,7 @@ virtual void OnDrawMenuResizeBar(
 [in] *rect*<br/>
 (в) *nResizeFlags*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenuscrollbutton"></a><a name="ondrawmenuscrollbutton"></a>CMFCVisualManagerOffice2007:OndrawMenuScrollbutton
 
@@ -1102,7 +1102,7 @@ virtual void OnDrawMenuScrollButton(
 (в) *bIsPressed*<br/>
 (в) *bIsDisabled*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawmenusystembutton"></a><a name="ondrawmenusystembutton"></a>CMFCVisualManagerOffice2007:OndrawMenuSystemButton
 
@@ -1123,7 +1123,7 @@ virtual void OnDrawMenuSystemButton(
 (в) *nСтиль*<br/>
 (в) *bHighlight*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawminiframeborder"></a><a name="ondrawminiframeborder"></a>CMFCVisualManagerOffice2007:OndrawMiniFrameBorder
 
@@ -1142,7 +1142,7 @@ virtual void OnDrawMiniFrameBorder(
 (в) *rectBorder*<br/>
 (в) *rectBorderSize*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawoutlookbarsplitter"></a><a name="ondrawoutlookbarsplitter"></a>CMFCVisualManagerOffice2007:OndrawOutlookBarSplitter
 
@@ -1157,7 +1157,7 @@ virtual void OnDrawOutlookBarSplitter(
 (в) *pDC*<br/>
 (в) *rectSplitter*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawoutlookpagebuttonborder"></a><a name="ondrawoutlookpagebuttonborder"></a>CMFCVisualManagerOffice2007:OndrawOutlookPageButtonBorder
 
@@ -1176,7 +1176,7 @@ virtual void OnDrawOutlookPageButtonBorder(
 (в) *bIsHighlighted*<br/>
 (в) *bIsPressed*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawpanecaption"></a><a name="ondrawpanecaption"></a>CMFCVisualManagerOffice2007:OnDrawPaneCaption
 
@@ -1199,7 +1199,7 @@ virtual COLORREF OnDrawPaneCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawpopupwindowcaption"></a><a name="ondrawpopupwindowcaption"></a>CMFCVisualManagerOffice2007:OnDrawPopupWindowCaption
 
@@ -1218,7 +1218,7 @@ virtual COLORREF OnDrawPopupWindowCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawpropertysheetlistitem"></a><a name="ondrawpropertysheetlistitem"></a>CMFCVisualManagerOffice2007:OndrawPropertySheetlistItem
 
@@ -1241,7 +1241,7 @@ virtual COLORREF OnDrawPropertySheetListItem(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonapplicationbutton"></a><a name="ondrawribbonapplicationbutton"></a>CMFCVisualManagerOffice2007:OndrawRibbonApplicationButton
 
@@ -1256,7 +1256,7 @@ virtual void OnDrawRibbonApplicationButton(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonborder"></a><a name="ondrawribbonbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawribbonButtonBorder
 
@@ -1271,7 +1271,7 @@ virtual void OnDrawRibbonButtonBorder(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonbuttonsgroup"></a><a name="ondrawribbonbuttonsgroup"></a>CMFCVisualManagerOffice2007:OnDrawRibbonButtonsGroup
 
@@ -1290,7 +1290,7 @@ virtual COLORREF OnDrawRibbonButtonsGroup(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncaption"></a><a name="ondrawribboncaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonCaption
 
@@ -1309,7 +1309,7 @@ virtual void OnDrawRibbonCaption(
 (в) *rectCaption*<br/>
 (в) *rectText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncaptionbutton"></a><a name="ondrawribboncaptionbutton"></a>CMFCVisualManagerOffice2007::OndrawRibbonCaptionButton
 
@@ -1324,7 +1324,7 @@ virtual void OnDrawRibbonCaptionButton(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncategory"></a><a name="ondrawribboncategory"></a>CMFCVisualManagerOffice2007:OndrawRibbonКатегория
 
@@ -1341,7 +1341,7 @@ virtual void OnDrawRibbonCategory(
 (в) *pКатегория*<br/>
 (в) *rectКатегория*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncategorycaption"></a><a name="ondrawribboncategorycaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryCaptioncaption
 
@@ -1358,7 +1358,7 @@ virtual COLORREF OnDrawRibbonCategoryCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncategoryscroll"></a><a name="ondrawribboncategoryscroll"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryScroll
 
@@ -1373,7 +1373,7 @@ virtual void OnDrawRibbonCategoryScroll(
 (в) *pDC*<br/>
 (в) *прокрутка*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncategorytab"></a><a name="ondrawribboncategorytab"></a>CMFCVisualManagerOffice2007:OndrawRibbonCategoryTab
 
@@ -1392,7 +1392,7 @@ virtual COLORREF OnDrawRibbonCategoryTab(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribboncheckboxonlist"></a><a name="ondrawribboncheckboxonlist"></a>CMFCVisualManagerOffice2007:OndrawRibbonCheckBoxonlist
 
@@ -1413,7 +1413,7 @@ virtual void OnDrawRibbonCheckBoxOnList(
 (в) *bIsSelected*<br/>
 (в) *bНазалион*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebutton"></a><a name="ondrawribbondefaultpanebutton"></a>CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButton
 
@@ -1428,7 +1428,7 @@ virtual void OnDrawRibbonDefaultPaneButton(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbondefaultpanebuttonindicator"></a><a name="ondrawribbondefaultpanebuttonindicator"></a>CMFCVisualManagerOffice2007:OnDrawRibbonDefaultPaneButtonИндикатор
 
@@ -1449,7 +1449,7 @@ virtual void OnDrawRibbonDefaultPaneButtonIndicator(
 (в) *bIsSelected*<br/>
 (в) *bНазалион*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbongalleryborder"></a><a name="ondrawribbongalleryborder"></a>CMFCVisualManagerOffice2007:OndrawRibbonGalleryBorder
 
@@ -1466,7 +1466,7 @@ virtual void OnDrawRibbonGalleryBorder(
 (в) *pButton*<br/>
 (в) *rectBorder*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbongallerybutton"></a><a name="ondrawribbongallerybutton"></a>CMFCVisualManagerOffice2007:OndrawRibbonGalleryButton
 
@@ -1481,7 +1481,7 @@ virtual void OnDrawRibbonGalleryButton(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonkeytip"></a><a name="ondrawribbonkeytip"></a>CMFCVisualManagerOffice2007:OndrawRibbonKeyTip
 
@@ -1500,7 +1500,7 @@ virtual void OnDrawRibbonKeyTip(
 [in] *rect*<br/>
 (в) *str*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelbuttonborder"></a><a name="ondrawribbonmainpanelbuttonborder"></a>CMFCVisualManagerOffice2007:OndrawribbonMainPanelButtonborder
 
@@ -1515,7 +1515,7 @@ virtual void OnDrawRibbonMainPanelButtonBorder(
 (в) *pDC*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonmainpanelframe"></a><a name="ondrawribbonmainpanelframe"></a>CMFCVisualManagerOffice2007:OndrawRibbonMainPanelFrame
 
@@ -1532,7 +1532,7 @@ virtual void OnDrawRibbonMainPanelFrame(
 (в) *pPanel*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonmenucheckframe"></a><a name="ondrawribbonmenucheckframe"></a>CMFCVisualManagerOffice2007::OndrawRibbonMenuCheckframe
 
@@ -1549,7 +1549,7 @@ virtual void OnDrawRibbonMenuCheckFrame(
 (в) *pButton*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonpanel"></a><a name="ondrawribbonpanel"></a>CMFCVisualManagerOffice2007:OndrawRibbonPanel
 
@@ -1570,7 +1570,7 @@ virtual COLORREF OnDrawRibbonPanel(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonpanelcaption"></a><a name="ondrawribbonpanelcaption"></a>CMFCVisualManagerOffice2007:OndrawRibbonPanelCaption
 
@@ -1587,7 +1587,7 @@ virtual void OnDrawRibbonPanelCaption(
 (в) *pPanel*<br/>
 (в) *rectCaption*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonprogressbar"></a><a name="ondrawribbonprogressbar"></a>CMFCVisualManagerOffice2007:OndrawRibbonProgressBar
 
@@ -1608,7 +1608,7 @@ virtual void OnDrawRibbonProgressBar(
 (в) *rectChunk*<br/>
 (в) *bInfiniteMode*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonrecentfilesframe"></a><a name="ondrawribbonrecentfilesframe"></a>CMFCVisualManagerOffice2007:OndrawribbonRecentFilesFrame
 
@@ -1625,7 +1625,7 @@ virtual void OnDrawRibbonRecentFilesFrame(
 (в) *pPanel*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderchannel"></a><a name="ondrawribbonsliderchannel"></a>CMFCVisualManagerOffice2007:OnDrawRibbonSliderChannel
 
@@ -1642,7 +1642,7 @@ virtual void OnDrawRibbonSliderChannel(
 (в) *pSlider*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderthumb"></a><a name="ondrawribbonsliderthumb"></a>CMFCVisualManagerOffice2007:OnDrawRibbonSliderThumb
 
@@ -1665,7 +1665,7 @@ virtual void OnDrawRibbonSliderThumb(
 (в) *bIsPressed*<br/>
 (в) *bIsDisabled*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonsliderzoombutton"></a><a name="ondrawribbonsliderzoombutton"></a>CMFCVisualManagerOffice2007::OnDrawRibbonSliderЗоумБаттон
 
@@ -1690,7 +1690,7 @@ virtual void OnDrawRibbonSliderZoomButton(
 (в) *bIsPressed*<br/>
 (в) *bIsDisabled*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbonstatusbarpane"></a><a name="ondrawribbonstatusbarpane"></a>CMFCVisualManagerOffice2007:OnDrawRibbonStatusBarPane
 
@@ -1709,7 +1709,7 @@ virtual COLORREF OnDrawRibbonStatusBarPane(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawribbontabsframe"></a><a name="ondrawribbontabsframe"></a>CMFCVisualManagerOffice2007:OnDrawRibbonTabsFrame
 
@@ -1728,7 +1728,7 @@ virtual COLORREF OnDrawRibbonTabsFrame(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawscrollbuttons"></a><a name="ondrawscrollbuttons"></a>CMFCVisualManagerOffice2007:OnDrawScrollButtons
 
@@ -1749,7 +1749,7 @@ virtual void OnDrawScrollButtons(
 (в) *iImage*<br/>
 (в) *bHilited*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawseparator"></a><a name="ondrawseparator"></a>CMFCVisualManagerOffice2007:OnDrawСепаратор
 
@@ -1768,7 +1768,7 @@ virtual void OnDrawSeparator(
 [in] *rect*<br/>
 (в) *bIsHoriz*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawshowallmenuitems"></a><a name="ondrawshowallmenuitems"></a>CMFCVisualManagerOffice2007:OndrawShowallMenuItems
 
@@ -1785,7 +1785,7 @@ virtual void OnDrawShowAllMenuItems(
 [in] *rect*<br/>
 (в) *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawstatusbarpaneborder"></a><a name="ondrawstatusbarpaneborder"></a>CMFCVisualManagerOffice2007:OnDrawStatusBarPaneBorder
 
@@ -1806,7 +1806,7 @@ virtual void OnDrawStatusBarPaneBorder(
 (в) *uiID*<br/>
 (в) *nСтиль*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawstatusbarsizebox"></a><a name="ondrawstatusbarsizebox"></a>CMFCVisualManagerOffice2007:OndrawstatusbarSizeBox
 
@@ -1823,7 +1823,7 @@ virtual void OnDrawStatusBarSizeBox(
 (в) *pStatBar*<br/>
 (в) *rectSizeBox*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawtab"></a><a name="ondrawtab"></a>CMFCVisualManagerOffice2007:OndrawTab
 
@@ -1844,7 +1844,7 @@ virtual void OnDrawTab(
 (в) *bIsActive*<br/>
 (в) *pTabWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawtabsbuttonborder"></a><a name="ondrawtabsbuttonborder"></a>CMFCVisualManagerOffice2007:OnDrawTabsButtonBorder
 
@@ -1865,7 +1865,7 @@ virtual void OnDrawTabsButtonBorder(
 (в) *uiState*<br/>
 (в) *pWndTab*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawtask"></a><a name="ondrawtask"></a>CMFCVisualManagerOffice2007:OndrawTask
 
@@ -1886,7 +1886,7 @@ virtual void OnDrawTask(
 (в) *bIsHighlighted*<br/>
 (в) *bIsSelected*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawtasksgroupcaption"></a><a name="ondrawtasksgroupcaption"></a>CMFCVisualManagerOffice2007:OndrawtasksGroupCaption
 
@@ -1907,7 +1907,7 @@ virtual void OnDrawTasksGroupCaption(
 (в) *bIsSelected*<br/>
 (в) *bCanCollapse*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007ondrawtearoffcaption"></a><a name="ondrawtearoffcaption"></a>CMFCVisualManagerOffice2007:OndrawtearOffCaption
 
@@ -1924,7 +1924,7 @@ virtual void OnDrawTearOffCaption(
 [in] *rect*<br/>
 (в) *bIsActive*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onerasemdiclientarea"></a><a name="onerasemdiclientarea"></a>CMFCVisualManagerOffice2007:OnErasemDIClientArea
 
@@ -1941,7 +1941,7 @@ virtual BOOL OnEraseMDIClientArea(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onerasetabsarea"></a><a name="onerasetabsarea"></a>CMFCVisualManagerOffice2007:OnEraseTabsArea
 
@@ -1958,7 +1958,7 @@ virtual void OnEraseTabsArea(
 [in] *rect*<br/>
 (в) *pTabWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onerasetabsbutton"></a><a name="onerasetabsbutton"></a>CMFCVisualManagerOffice2007:OnEraseTabsButton
 
@@ -1977,7 +1977,7 @@ virtual void OnEraseTabsButton(
 (в) *pButton*<br/>
 (в) *pWndTab*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onerasetabsframe"></a><a name="onerasetabsframe"></a>CMFCVisualManagerOffice2007:OnEraseTabsFrame
 
@@ -1996,7 +1996,7 @@ virtual BOOL OnEraseTabsFrame(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillbarbackground"></a><a name="onfillbarbackground"></a>CMFCVisualManagerOffice2007:OnfillBarbackground
 
@@ -2017,7 +2017,7 @@ virtual void OnFillBarBackground(
 (в) *rectClip*<br/>
 (в) *bNCArea*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillbuttoninterior"></a><a name="onfillbuttoninterior"></a>CMFCVisualManagerOffice2007:OnFillbuttonInterior
 
@@ -2036,7 +2036,7 @@ virtual void OnFillButtonInterior(
 [in] *rect*<br/>
 (в) *состояние*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillcaptionbarbutton"></a><a name="onfillcaptionbarbutton"></a>CMFCVisualManagerOffice2007:OnfillcaptionБарБаттон
 
@@ -2065,7 +2065,7 @@ virtual COLORREF OnFillCaptionBarButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillhighlightedarea"></a><a name="onfillhighlightedarea"></a>CMFCVisualManagerOffice2007:OnFillHighlightedArea
 
@@ -2084,7 +2084,7 @@ virtual void OnFillHighlightedArea(
 (в) *pBrush*<br/>
 (в) *pButton*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillminiframecaption"></a><a name="onfillminiframecaption"></a>CMFCVisualManagerOffice2007:OnfillminiFrameCaption
 
@@ -2105,7 +2105,7 @@ virtual COLORREF OnFillMiniFrameCaption(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfilloutlookbarcaption"></a><a name="onfilloutlookbarcaption"></a>CMFCVisualManagerOffice2007:OnfillOutlookBarCaption
 
@@ -2122,7 +2122,7 @@ virtual void OnFillOutlookBarCaption(
 (в) *rectCaption*<br/>
 (в) *clrText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfilloutlookpagebutton"></a><a name="onfilloutlookpagebutton"></a>CMFCVisualManagerOffice2007:OnFillOutlookPageButton
 
@@ -2143,7 +2143,7 @@ virtual void OnFillOutlookPageButton(
 (в) *bIsPressed*<br/>
 (в) *clrText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillpopupwindowbackground"></a><a name="onfillpopupwindowbackground"></a>CMFCVisualManagerOffice2007:OnFillPopupWindowBackground
 
@@ -2158,7 +2158,7 @@ virtual void OnFillPopupWindowBackground(
 (в) *pDC*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillribbonbutton"></a><a name="onfillribbonbutton"></a>CMFCVisualManagerOffice2007:OnfillRibbonButton
 
@@ -2175,7 +2175,7 @@ virtual COLORREF OnFillRibbonButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillribbonedit"></a><a name="onfillribbonedit"></a>CMFCVisualManagerOffice2007:OnFillRibbonEdit
 
@@ -2204,7 +2204,7 @@ virtual void OnFillRibbonEdit(
 (в) *clrSelBackground*<br/>
 (в) *clrSelText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillribbonmainpanelbutton"></a><a name="onfillribbonmainpanelbutton"></a>CMFCVisualManagerOffice2007:OnfillRibbonMainPanelButton
 
@@ -2221,7 +2221,7 @@ virtual COLORREF OnFillRibbonMainPanelButton(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillribbonmenuframe"></a><a name="onfillribbonmenuframe"></a>CMFCVisualManagerOffice2007:OnfillRibbonMenuframe
 
@@ -2238,7 +2238,7 @@ virtual void OnFillRibbonMenuFrame(
 (в) *pPanel*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfillribbonquickaccesstoolbarpopup"></a><a name="onfillribbonquickaccesstoolbarpopup"></a>CMFCVisualManagerOffice2007::OnfillRibbonКваAccessToolBarPopup
 
@@ -2255,7 +2255,7 @@ virtual void OnFillRibbonQuickAccessToolBarPopup(
 (в) *pMenuBar*<br/>
 [in] *rect*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onfilltab"></a><a name="onfilltab"></a>CMFCVisualManagerOffice2007:OnfillTab
 
@@ -2278,7 +2278,7 @@ virtual void OnFillTab(
 (в) *bIsActive*<br/>
 (в) *pTabWnd*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onhighlightmenuitem"></a><a name="onhighlightmenuitem"></a>CMFCVisualManagerOffice2007:OnHighlightMenuitem
 
@@ -2297,7 +2297,7 @@ virtual void OnHighlightMenuItem(
 [in] *rect*<br/>
 (в) *clrText*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onhighlightrarelyusedmenuitems"></a><a name="onhighlightrarelyusedmenuitems"></a>CMFCVisualManagerOffice2007:OnHighlightРедкоИспользуемыеМенюэлементы
 
@@ -2312,7 +2312,7 @@ virtual void OnHighlightRarelyUsedMenuItems(
 (в) *pDC*<br/>
 (в) *rectRarelyИспользуется*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onncactivate"></a><a name="onncactivate"></a>CMFCVisualManagerOffice2007:OnNcActivate
 
@@ -2329,7 +2329,7 @@ virtual BOOL OnNcActivate(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onncpaint"></a><a name="onncpaint"></a>CMFCVisualManagerOffice2007:OnNcpaint
 
@@ -2348,7 +2348,7 @@ virtual BOOL OnNcPaint(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onsetwindowregion"></a><a name="onsetwindowregion"></a>CMFCVisualManagerOffice2007:OnsetWindowРегион
 
@@ -2365,7 +2365,7 @@ virtual BOOL OnSetWindowRegion(
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007onupdatesystemcolors"></a><a name="onupdatesystemcolors"></a>CMFCVisualManagerOffice2007:OnUpdateSystemColors
 
@@ -2373,7 +2373,7 @@ virtual BOOL OnSetWindowRegion(
 virtual void OnUpdateSystemColors();
 ```
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="cmfcvisualmanageroffice2007setresourcehandle"></a><a name="setresourcehandle"></a>CMFCVisualManagerOffice2007:SetResourceHandle
 
@@ -2385,7 +2385,7 @@ static void __stdcall SetResourceHandle(HINSTANCE hinstRes);
 
 (в) *hinstRes*<br/>
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 ## <a name="see-also"></a>См. также раздел
 

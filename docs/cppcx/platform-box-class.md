@@ -131,7 +131,7 @@ operator Box<volatile T>^(volatile T valueType);
 
 `Platform::Box<T>^`Экземпляр, представляющий исходное значение, упакованное в класс ссылки.
 
-## <a name="boxoperator-t-operator"></a><a name="t"></a>Оператор Box:: operator T
+## <a name="boxoperator-t-operator"></a><a name="t"></a>Оператор Box::operator T
 
 Включает преобразование упаковки из класса `T` или класса значения **`enum`** `T` в `Box<T>` .
 

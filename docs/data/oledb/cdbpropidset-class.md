@@ -66,9 +66,9 @@ class CDBPropIDSet : public tagDBPROPIDSET
 
 | Имя | Описание |
 |-|-|
-|[Оператор =](#op_equal)|Присваивает содержимому одного идентификатора свойства другое значение.|
+|[operator=](#op_equal)|Присваивает содержимому одного идентификатора свойства другое значение.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 OLE DB потребители используют `DBPROPIDSET` структуры для передачи массива идентификаторов свойств, для которых потребитель хочет получить сведения о свойстве. Свойства, определенные в одной структуре [дбпропидсет](/previous-versions/windows/desktop/ms717981(v=vs.85)) , принадлежат одному набору свойств.
 
@@ -124,11 +124,11 @@ void SetGUID(const GUID& guid) throw();
 *guid*<br/>
 окне Идентификатор GUID, используемый для задания `guidPropertySet` поля структуры [дбпропидсет](/previous-versions/windows/desktop/ms717981(v=vs.85)) .
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Это поле также может быть задано [конструктором](../../data/oledb/cdbpropidset-cdbpropidset.md) . Вызывайте эту функцию, если для этого класса используется конструктор по умолчанию.
 
-## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a> Кдбпропидсет:: operator =
+## <a name="cdbpropidsetoperator-"></a><a name="op_equal"></a> Кдбпропидсет::operator=
 
 Присваивает содержимому одного идентификатора свойства значение другого набора свойств ID.
 

@@ -48,7 +48,7 @@ class IPointerInactiveImpl
 |[IPointerInactiveImpl::OnInactiveMouseMove](#oninactivemousemove)|Уведомляет объект о перемещении указателя мыши по нему, указывая, что объект может стрелять событиями мыши. Реализация ATL возвращает E_NOTIMPL.|
 |[IPointerInactiveImpl::OnInactiveSetCursor](#oninactivesetcursor)|Устанавливает указатель мыши для неактивного объекта. Реализация ATL возвращает E_NOTIMPL.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 Неактивный объект — это объект, который просто загружается или работает. В отличие от активного объекта, неактивный объект не может получать сообщения с мышью и клавиатурой Windows. Таким образом, неактивные объекты используют меньше ресурсов и, как правило, более эффективны.
 
@@ -80,7 +80,7 @@ HRESULT GetActivationPolicy(DWORD* pdwPolicy);
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPointerInactive::GetActivationPolicy](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-getactivationpolicy) в Windows SDK.
 
@@ -100,7 +100,7 @@ HRESULT OnInactiveMouseMove(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPointerInactive::OnInactiveMouseMove](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivemousemove) в Windows SDK.
 
@@ -121,7 +121,7 @@ HRESULT OnInactiveSetCursor(
 
 Возвращает E_NOTIMPL.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Смотрите [IPointerInactive::OnInactiveSetCursor](/windows/win32/api/ocidl/nf-ocidl-ipointerinactive-oninactivesetcursor) в Windows SDK.
 

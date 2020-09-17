@@ -48,7 +48,7 @@ extern void AtlHiMetricToPixel(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="atlpixeltohimetric"></a><a name="atlpixeltohimetric"></a> атлпикселтохиметрик
 
@@ -74,7 +74,7 @@ extern void AtlPixelToHiMetric(
 
 ### <a name="requirements"></a>Требования
 
-**Заголовок:** atlwin. h
+**Заголовок:** atlwin.h
 
 ## <a name="see-also"></a>См. также
 

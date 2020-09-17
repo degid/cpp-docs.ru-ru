@@ -40,7 +40,7 @@ class CMFCRibbonCustomizeDialog : public CMFCPropertySheet
 |----------|-----------------|
 |`CMFCRibbonCustomizeDialog::GetThisClass`|Используется фректором для получения указателя на объект [CRuntimeClass,](../../mfc/reference/cruntimeclass-structure.md) связанный с этим типом класса.|
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 MFC автоматически мгновенно обрабатывает этот класс, если вы не обрабатываете AFX_WM_ON_RIBBON_CUSTOMIZE сообщение, или если вы возвращаете 0 от обработчика сообщений.
 
@@ -90,7 +90,7 @@ CMFCRibbonCustomizeDialog(
 
 [!code-cpp[NVC_MFC_RibbonApp#18](../../mfc/reference/codesnippet/cpp/cmfcribboncustomizedialog-class_1.cpp)]
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Конструктор мгновенно увеличивает объект [класса CMFCRibbonCustomizePropertyPage](../../mfc/reference/cmfcribboncustomizepropertypage-class.md) и добавляет его в коллекцию страниц листа свойств.
 

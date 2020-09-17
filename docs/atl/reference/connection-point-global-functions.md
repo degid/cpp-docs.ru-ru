@@ -30,7 +30,7 @@ ms.locfileid: "88833534"
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** atlbase. h
+**Заголовок:** atlbase.h
 
 ## <a name="atladvise"></a><a name="atladvise"></a> атладвисе
 
@@ -65,7 +65,7 @@ HRESULT    AtlAdvise(
 
 Стандартное значение HRESULT.
 
-### <a name="remarks"></a>Remarks
+### <a name="remarks"></a>Примечания
 
 Приемник реализует исходящий интерфейс, поддерживаемый точкой подключения. Клиент использует файл cookie *PDW* для удаления подключения, передав его в [атлунадвисе](#atlunadvise).
 

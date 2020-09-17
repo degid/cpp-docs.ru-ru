@@ -14,10 +14,10 @@ ms.locfileid: "77142432"
 ---
 # <a name="how-to-use-combinable-to-improve-performance"></a>Практическое руководство. Использование класса combinable для повышения производительности
 
-В этом примере показано, как использовать класс [Concurrency:: combinable](../../parallel/concrt/reference/combinable-class.md) для вычисления суммы чисел в объекте [std:: Array](../../standard-library/array-class-stl.md) , являющихся простыми. Класс `combinable` повышает производительность, исключая общее состояние.
+В этом примере показано, как использовать класс [concurrency::combinable](../../parallel/concrt/reference/combinable-class.md) для вычисления суммы чисел в объекте [std:: Array](../../standard-library/array-class-stl.md) , являющихся простыми. Класс `combinable` повышает производительность, исключая общее состояние.
 
 > [!TIP]
-> В некоторых случаях параллельное отображение ([Concurrency::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform)) и reduce ([concurrency:: parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce)) могут повысить производительность по сравнению с `combinable`. Пример, использующий операции Map и reduce для получения тех же результатов, что и в этом примере, см. в разделе [parallelических алгоритмов](../../parallel/concrt/parallel-algorithms.md).
+> В некоторых случаях параллельное отображение ([concurrency::p arallel_transform](reference/concurrency-namespace-functions.md#parallel_transform)) и reduce ([concurrency::parallel_reduce](reference/concurrency-namespace-functions.md#parallel_reduce)) могут повысить производительность по сравнению с `combinable`. Пример, использующий операции Map и reduce для получения тех же результатов, что и в этом примере, см. в разделе [parallelических алгоритмов](../../parallel/concrt/parallel-algorithms.md).
 
 ## <a name="example---accumulate"></a>Пример накопления
 
@@ -27,7 +27,7 @@ ms.locfileid: "77142432"
 
 ## <a name="example---parallel_for_each"></a>Пример — parallel_for_each
 
-В следующем примере показан наивный способ параллелизации предыдущего примера. В этом примере используется алгоритм [arallel_for_each Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for_each) для параллельной обработки массива и объекта [concurrency:: critical_section](../../parallel/concrt/reference/critical-section-class.md) для синхронизации доступа к переменной `prime_sum`. Этот пример не масштабируется, так как каждый поток должен ждать, пока общий ресурс станет доступным.
+В следующем примере показан наивный способ параллелизации предыдущего примера. В этом примере используется алгоритм [arallel_for_each Concurrency::p](reference/concurrency-namespace-functions.md#parallel_for_each) для параллельной обработки массива и объекта [concurrency::critical_section](../../parallel/concrt/reference/critical-section-class.md) для синхронизации доступа к переменной `prime_sum`. Этот пример не масштабируется, так как каждый поток должен ждать, пока общий ресурс станет доступным.
 
 [!code-cpp[concrt-parallel-sum-of-primes#2](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-improve-performance_2.cpp)]
 
@@ -35,7 +35,7 @@ ms.locfileid: "77142432"
 
 В следующем примере используется объект `combinable` для повышения производительности предыдущего примера. В этом примере устраняется необходимость в объектах синхронизации. он масштабируется, так как объект `combinable` позволяет каждому потоку выполнять свою задачу независимо.
 
-Объект `combinable` обычно используется в двух шагах. Во-первых, можно создать ряд детализированных вычислений, параллельно выполняя работу. Затем объедините (или уменьшите) вычисления в окончательный результат. В этом примере используется метод [Concurrency:: combinable:: local](reference/combinable-class.md#local) для получения ссылки на локальную сумму. Затем он использует метод [Concurrency:: combinable:: Combine](reference/combinable-class.md#combine) и объект [std::p них](../../standard-library/plus-struct.md) для объединения локальных вычислений в окончательный результат.
+Объект `combinable` обычно используется в двух шагах. Во-первых, можно создать ряд детализированных вычислений, параллельно выполняя работу. Затем объедините (или уменьшите) вычисления в окончательный результат. В этом примере используется метод [concurrency::combinable:: local](reference/combinable-class.md#local) для получения ссылки на локальную сумму. Затем он использует метод [concurrency::combinable:: Combine](reference/combinable-class.md#combine) и объект [std::p них](../../standard-library/plus-struct.md) для объединения локальных вычислений в окончательный результат.
 
 [!code-cpp[concrt-parallel-sum-of-primes#3](../../parallel/concrt/codesnippet/cpp/how-to-use-combinable-to-improve-performance_3.cpp)]
 

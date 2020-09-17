@@ -20,7 +20,7 @@ ms.contentlocale: ru-RU
 ms.lasthandoff: 10/21/2019
 ms.locfileid: "72687349"
 ---
-# <a name="operator"></a>operator!=
+# <a name="operator"></a> operator!=
 
 > [!NOTE]
 > Этот раздел находится в документации Майкрософт C++ как нефункциональный пример контейнеров, C++ используемых в стандартной библиотеке. Дополнительные сведения см. в разделе [Контейнеры стандартной библиотеки C++](../standard-library/stl-containers.md).

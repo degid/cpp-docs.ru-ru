@@ -44,6 +44,6 @@ static const unsigned long long
 | `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_CPU_SAMPLES` | Храните события образца системы процессора в перезаписи. |
 | `RELOG_RETENTION_SYSTEM_EVENT_FLAGS_ALL` | Храните все события системы в перезаписи. |
 
-## <a name="remarks"></a>Remarks
+## <a name="remarks"></a>Примечания
 
 ::: moniker-end

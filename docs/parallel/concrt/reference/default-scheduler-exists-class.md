@@ -29,7 +29,7 @@ class default_scheduler_exists : public std::exception;
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Description|
+|Имя|Описание|
 |----------|-----------------|
 |[default_scheduler_exists](#ctor)|Перегружен. Формирует объект `default_scheduler_exists`.|
 
@@ -41,7 +41,7 @@ class default_scheduler_exists : public std::exception;
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** ConcRT. h
+**Заголовок:** ConcRT.h
 
 **Пространство имен:** concurrency
 
