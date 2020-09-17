@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - LNK1312
 ms.assetid: 48284abb-d849-43fc-ab53-45aded14fd8a
-ms.openlocfilehash: e462d24f2eb54718ba73617146aab96bb14a66df
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 69af2bd2c22fdb1188cf0b7119791e451e80f966
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74990906"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686500"
 ---
 # <a name="linker-tools-error-lnk1312"></a>Ошибка средств компоновщика LNK1312
 
@@ -19,7 +19,7 @@ ms.locfileid: "74990906"
 
 При построении сборки файл, отличный от модуля или сборки, скомпилированного с **параметром/CLR** , был передан параметру компоновщика **/ASSEMBLYMODULE** .  Если объектный файл был передан в **/ASSEMBLYMODULE**, просто передайте объект непосредственно в компоновщик, а не в **/ASSEMBLYMODULE**.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В следующем примере создается OBJ-файл.
 
@@ -31,8 +31,6 @@ public:
    int i;
 };
 ```
-
-## <a name="example"></a>Пример
 
 Следующий пример приводит к возникновению ошибки LNK1312.
 

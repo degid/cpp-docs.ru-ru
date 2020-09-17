@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_command attribute
 ms.assetid: 714c3e15-85d7-408b-9a7c-88505c3e5d24
-ms.openlocfilehash: d9ee1ed1bede6a5deaeae0be3783d6abbd05a0d9
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 868ff862cc41543c8ebc7880a5d1a9a7e6b103f3
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88831376"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684590"
 ---
 # <a name="db_command"></a>db_command
 
@@ -46,7 +46,7 @@ ms.locfileid: "88831376"
 
 > **( \[ ** *биндтипе* **]** *szVar1* \[ , *szVar2* \[ , *nVar3* \[ ,...]] **)**
 
-Здесь:
+где:
 
 - **(** отмечает начало блока привязки данных.
 
@@ -123,7 +123,7 @@ TCHAR m_state[3] = 'CA';
 
 Если поставщик атрибутов потребителя применяет этот атрибут к классу, компилятор переименует класс в \_*YourClassName*Accessor, где *YourClassName* — это имя, которое вы присвоили классу. Также компилятор создаст класс с именем *YourClassName*, производный от \_*YourClassName*Accessor.  В представлении классов отображаются оба класса.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Этот образец определяет команду, которая выбирает первое и последнее имена из таблицы, в которой столбец состояния соответствует значению "CA". **db_command** создает и считывает набор строк, для которого можно вызывать создаваемые мастером функции, например [OpenAll и CloseAll](../../data/oledb/consumer-wizard-generated-methods.md), а также функции-члены `CRowset` , такие как [MoveNext](../../data/oledb/crowset-movenext.md).
 
@@ -163,8 +163,6 @@ struct CAuthors {
 };
 ```
 
-## <a name="example"></a>Пример
-
 ```cpp
 // db_command.cpp
 // compile with: /c
@@ -192,8 +190,6 @@ int main(int argc, _TCHAR* argv[]) {
    CoUninitialize();
 }
 ```
-
-## <a name="example"></a>Пример
 
 В этом примере используется `db_source` для класса источника данных `CMySource`, и `db_command` для классов команд `CCommand1` и `CCommand2`.
 
@@ -241,13 +237,13 @@ int main() {
 | Контекст атрибута | Значение |
 |-|-|
 |**Относится к**|**`class`**, **`struct`** , член, метод, локальный|
-|**REPEATABLE**|Нет|
+|**REPEATABLE**|нет|
 |**Требуемые атрибуты**|Нет|
 |**Недопустимые атрибуты**|Нет|
 
 Дополнительные сведения о контекстах атрибутов см. в разделе [Контексты атрибутов](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [OLE DB атрибуты потребителя](ole-db-consumer-attributes.md)<br/>
 [Изолированные атрибуты](stand-alone-attributes.md)

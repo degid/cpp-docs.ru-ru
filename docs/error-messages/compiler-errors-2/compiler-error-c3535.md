@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3535
 ms.assetid: 24449c98-f681-484d-a00b-32533dca3a88
-ms.openlocfilehash: 60ffd5d8decd5c9065ca55cfed34383278359f3e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 673fe6a8b5eb6dfcd9caa841b18d5b47fb7858bf
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87228795"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686094"
 ---
 # <a name="compiler-error-c3535"></a>Ошибка компилятора C3535
 
@@ -27,7 +27,7 @@ ms.locfileid: "87228795"
 
 1. Убедитесь, что если объявление является указателем на тип, выражение инициализации является типом указателя.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В следующем примере выдается C3535, так как выражение инициализации принимает значение **`void`** .
 
@@ -42,8 +42,6 @@ int main()
 }
 ```
 
-## <a name="example"></a>Пример
-
 В следующем примере вызывается C3535, так как оператор объявляет переменную `x` как указатель на выведенный тип, а тип выражения инициализатора — double. Следовательно, компилятор не может вывести тип переменной.
 
 ```cpp
@@ -55,8 +53,6 @@ int main()
    return 0;
 }
 ```
-
-## <a name="example"></a>Пример
 
 В следующем примере вызывается C3535, так как переменная `p` объявляет указатель на выведенный тип, но выражение инициализации не является типом указателя.
 

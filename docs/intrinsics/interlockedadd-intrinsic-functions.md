@@ -26,12 +26,12 @@ helpviewer_keywords:
 - _InterlockedAdd_acq intrinsic
 - _InterlockedAdd64_rel intrinsic
 ms.assetid: 3d319603-ea9c-4fdd-ae61-e52430ccc3b1
-ms.openlocfilehash: c540cfe6abd8ae6dc2933e7fb21e2a331c21ea71
-ms.sourcegitcommit: 6e1c1822e7bcf3d2ef23eb8fac6465f88743facf
+ms.openlocfilehash: efe1444273f17c8f0544d2c51b98923169032e61
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70217734"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683901"
 ---
 # <a name="_interlockedadd-intrinsic-functions"></a>Встроенные функции _InterlockedAdd
 
@@ -81,7 +81,7 @@ __int64 _InterlockedAdd64_rel(
 *Слагаемое*\
 [вход, выход] Указатель на целое число, которое необходимо добавить; заменяется результатом сложения.
 
-*Значений*\
+*Значение*\
 окне Добавляемое значение.
 
 ## <a name="return-value"></a>Возвращаемое значение
@@ -90,7 +90,7 @@ __int64 _InterlockedAdd64_rel(
 
 ## <a name="requirements"></a>Требования
 
-|Встроенная функция|Архитектура|
+|Intrinsic|Architecture|
 |---------------|------------------|
 |`_InterlockedAdd`|ARM, ARM64|
 |`_InterlockedAdd_acq`|ARM, ARM64|
@@ -101,7 +101,7 @@ __int64 _InterlockedAdd64_rel(
 |`_InterlockedAdd64_nf`|ARM, ARM64|
 |`_InterlockedAdd64_rel`|ARM, ARM64|
 
-**Заголовочный файл** \<> Intrin.h
+**Файл заголовка** \<intrin.h>
 
 ## <a name="remarks"></a>Примечания
 
@@ -109,7 +109,7 @@ __int64 _InterlockedAdd64_rel(
 
 Эти процедуры доступны только как встроенные объекты.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ```cpp
 // interlockedadd.cpp
@@ -130,13 +130,11 @@ int main()
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```Output
 0xffffff00 0xff0000 0xffffff00
 ```
-
-## <a name="example"></a>Пример
 
 ```cpp
 // interlockedadd64.cpp
@@ -160,7 +158,7 @@ int main()
 }
 ```
 
-## <a name="output"></a>Вывод
+## <a name="output"></a>Выходные данные
 
 ```Output
 ff0000000000 + ff0000ffffffff = ffff00ffffffff
@@ -172,4 +170,4 @@ Return value: ffff00ffffffff
 ## <a name="see-also"></a>См. также
 
 [Встроенные функции компилятора](../intrinsics/compiler-intrinsics.md)\
-[Конфликты с 32-разрядным (x86) компилятором](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)
+[Конфликтует с компилятором x86](../build/x64-software-conventions.md#conflicts-with-the-x86-compiler)

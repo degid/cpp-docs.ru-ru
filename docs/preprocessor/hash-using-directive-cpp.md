@@ -12,12 +12,12 @@ helpviewer_keywords:
 - LIBPATH environment variable
 - preprocessor, directives
 ms.assetid: 870b15e5-f361-40a8-ba1c-c57d75c8809a
-ms.openlocfilehash: 0da255957e92a570750da2687bf1444df2e6ab13
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 0245eb15219585421be83def0258415ab4b573b6
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87219434"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684265"
 ---
 # <a name="using-directive-ccli"></a>Директива #using (C++/CLI)
 
@@ -30,7 +30,7 @@ ms.locfileid: "87219434"
 ### <a name="parameters"></a>Параметры
 
 *File*\
-*`.dll`* Файл MSIL, *`.exe`* , *`.netmodule`* или *`.obj`* . например следующие.
+*`.dll`* Файл MSIL, *`.exe`* , *`.netmodule`* или *`.obj`* . Например, примененная к объекту директива
 
 `#using <MyComponent.dll>`
 
@@ -72,7 +72,7 @@ ms.locfileid: "87219434"
 
 - Каталоги, указанные в переменной среды LIBPATH.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Можно создать сборку, которая ссылается на вторую сборку, которая сама ссылается на третью сборку. Необходимо явно ссылаться на третью сборку из первой, если вы явно используете один из ее типов.
 
@@ -81,8 +81,6 @@ ms.locfileid: "87219434"
 // compile with: /clr /LD
 public ref class A {};
 ```
-
-## <a name="example"></a>Пример
 
 ```cpp
 // using_assembly_B.cpp
@@ -94,8 +92,6 @@ public:
    void Test() {}
 };
 ```
-
-## <a name="example"></a>Пример
 
 В следующем примере компилятор не сообщает об ошибке, ссылающейся на *using_assembly_A.dll*, поскольку программа не использует типы, определенные в *using_assembly_A. cpp*.
 
@@ -109,6 +105,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Директивы препроцессора](../preprocessor/preprocessor-directives.md)

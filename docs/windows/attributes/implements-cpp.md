@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - implements attribute
 ms.assetid: 9cf0858b-cb7d-4d3c-81a6-97d87ed00d25
-ms.openlocfilehash: e18e874473925c0198b8645162546c9abe13b3ef
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 946972a9a7c3041c75e82865acb35feb4a97254a
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88842355"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686747"
 ---
 # <a name="implements-c"></a>implements (C++)
 
@@ -47,7 +47,7 @@ ms.locfileid: "88842355"
 
 Дополнительные сведения см. в разделе [Контексты атрибутов](cpp-attributes-com-net.md#contexts).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Следующий пример состоит из трех частей: IDL-файла и связанного с ним h-файла и файла C++.
 
@@ -96,8 +96,6 @@ library odod
    };
 }
 ```
-
-## <a name="example"></a>Пример
 
 И следующий h файл, который также должен быть доступен компилятору.
 
@@ -377,8 +375,6 @@ CBar;
 #endif
 ```
 
-## <a name="example"></a>Пример
-
 В следующей программе без Implements,, `IBar1` `IBar2` и `ISna` не будет находиться в `coclass` созданном IDL.
 
 ```cpp
@@ -482,7 +478,7 @@ public:
 };
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Атрибуты компилятора](compiler-attributes.md)<br/>
 [Атрибуты класса](class-attributes.md)

@@ -6,12 +6,12 @@ helpviewer_keywords:
 - compilation, native types in /clr
 - /clr compiler option [C++], using native types
 ms.assetid: 3a505c90-4adb-4942-9cf9-7d1fdcbc01e7
-ms.openlocfilehash: b506c3d825c4c26236a4ac3fc9682067a011315a
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 88a678a19043d3229218dd69afbf8548348817df
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79545207"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683966"
 ---
 # <a name="how-to-use-a-native-type-in-a-clr-compilation"></a>Практическое руководство. Использование собственного типа в компиляции /clr
 
@@ -19,9 +19,9 @@ ms.locfileid: "79545207"
 
 Каждая сборка должна содержать определение каждого собственного типа, который будет использоваться.
 
-Дополнительные сведения см. в разделе [/clr (компиляция CLR)](../build/reference/clr-common-language-runtime-compilation.md).
+Дополнительные сведения см. в разделе [/CLR (компиляция среды CLR)](../build/reference/clr-common-language-runtime-compilation.md).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В этом примере создается компонент, который определяет и использует собственный тип.
 
@@ -39,8 +39,6 @@ public ref struct ManagedClass {
    }
 };
 ```
-
-## <a name="example"></a>Пример
 
 В этом примере определяется клиент, использующий компонент. Обратите внимание, что при доступе к собственному типу возникает ошибка, если он не определен в компилируемого объекта.
 
@@ -61,6 +59,6 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

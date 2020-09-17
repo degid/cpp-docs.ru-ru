@@ -583,6 +583,8 @@
                   href: ../build/reference/gz-enable-stack-frame-run-time-error-checking.md
                 - name: /H (ограничение длины внешних имен)
                   href: ../build/reference/h-restrict-length-of-external-names.md
+                - name: /headerUnit (использование IFC для единицы заголовка)
+                  href: ../build/reference/headerunit.md
                 - name: /HELP (файл справки по компилятору командной строки)
                   href: ../build/reference/help-compiler-command-line-help.md
                 - name: /homeparams (копирование параметров регистров в стек)
@@ -603,6 +605,10 @@
                   href: ../build/reference/ln-create-msil-module.md
                 - name: '/MD, /MT, /LD (использование библиотеки времени выполнения)'
                   href: ../build/reference/md-mt-ld-use-run-time-library.md
+                - name: '/module:exportHeader (создание единиц заголовка)'
+                  href: ../build/reference/module-exportheader.md
+                - name: '/module:reference (использование IFC для именованного модуля)'
+                  href: ../build/reference/module-reference.md
                 - name: /MP (сборка с несколькими процессами)
                   href: ../build/reference/mp-build-with-multiple-processes.md
                 - name: /nologo (отключение загрузочного баннера) (C/C++)
@@ -675,6 +681,8 @@
                   href: ../build/reference/std-specify-language-standard-version.md
                 - name: '/Tc, /Tp, /TC, /TP (определение типа исходного файла)'
                   href: ../build/reference/tc-tp-tc-tp-specify-source-file-type.md
+                - name: /translateInclude (преобразование директив include в директивы Import)
+                  href: ../build/reference/translateinclude.md
                 - name: '/U, /u (отмена определения символов)'
                   href: ../build/reference/u-u-undefine-symbols.md
                 - name: /utf-8 (указание UTF-8 в качестве исходной кодировки и кодировки исполняемого файла)

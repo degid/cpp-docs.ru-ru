@@ -8,18 +8,18 @@ helpviewer_keywords:
 - references, to objects in native functions
 - gcroot keyword [C++], object reference in native function
 ms.assetid: a61eb8ce-3982-477d-8d3d-2173fd57166d
-ms.openlocfilehash: 2f2471e36d7551cab9edb68d7babeb1419e8e20c
-ms.sourcegitcommit: 573b36b52b0de7be5cae309d45b68ac7ecf9a6d8
+ms.openlocfilehash: 13d5bd37a0f5e0b065aecb8c5b264fb70685363f
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "79544955"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684512"
 ---
 # <a name="how-to-hold-object-reference-in-unmanaged-memory"></a>Практическое руководство. Хранение ссылки на объект в неуправляемой памяти
 
-Можно использовать gcroot.h, который заключает в оболочку <xref:System.Runtime.InteropServices.GCHandle>для хранения ссылки на объект CLR в неуправляемой памяти. Кроме того, можно использовать `GCHandle` напрямую.
+Можно использовать gcroot.h, который является оболочкой <xref:System.Runtime.InteropServices.GCHandle> для хранения ссылки на объект CLR в неуправляемой памяти. Кроме того, можно использовать `GCHandle` напрямую.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ```cpp
 // hold_object_reference.cpp
@@ -55,9 +55,7 @@ int main() {
 StringWrapper::x == ManagedString
 ```
 
-## <a name="example"></a>Пример
-
-`GCHandle` предоставляет средства для хранения ссылки на управляемый объект в неуправляемой памяти.  Метод <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A> используется для создания непрозрачного маркера для управляемого объекта и <xref:System.Runtime.InteropServices.GCHandle.Free%2A> для его освобождения. Кроме того, метод <xref:System.Runtime.InteropServices.GCHandle.Target%2A> позволяет получить ссылку на объект из обработчика в управляемом коде.
+`GCHandle` предоставляет средства для хранения ссылки на управляемый объект в неуправляемой памяти.  <xref:System.Runtime.InteropServices.GCHandle.Alloc%2A>Метод используется для создания непрозрачного маркера для управляемого объекта и <xref:System.Runtime.InteropServices.GCHandle.Free%2A> его освобождения. Кроме того, <xref:System.Runtime.InteropServices.GCHandle.Target%2A> метод позволяет получить ссылку на объект из обработчика в управляемом коде.
 
 ```cpp
 // hold_object_reference_2.cpp
@@ -94,6 +92,6 @@ int main() {
 StringWrapper::m_handle == ManagedString
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
-[Использование взаимодействия языка C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)
+[Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

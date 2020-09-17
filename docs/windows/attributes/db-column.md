@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - db_column attribute
 ms.assetid: 58da4afc-f69c-4ae6-af9a-3f9515f56081
-ms.openlocfilehash: 98f546a243016fa85f6d71159ab2fc0a7963bae3
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2828a33a31d806c04cfce76a3156674778efbe6e
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88833119"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686487"
 ---
 # <a name="db_column"></a>db_column
 
@@ -25,7 +25,7 @@ ms.locfileid: "88833119"
 
 ### <a name="parameters"></a>Параметры
 
-*ordinal*<br/>
+*порядковый номер*<br/>
 Порядковый номер столбца (по `DBCOLUMNINFO` порядковому номеру) или имя столбца (строка ANSI или Юникод), соответствующие полю в наборе строк, к которому необходимо привязать данные. При использовании чисел можно пропустить последовательные порядковые номера (например: 1, 2, 3, 5). Имя может содержать пробелы, если используемый поставщик OLE DB поддерживает его. Например, можно использовать любой из следующих форматов:
 
 ```cpp
@@ -58,7 +58,7 @@ ms.locfileid: "88833119"
 
 Пример использования этого атрибута в приложении см. в разделе [Read](https://github.com/Microsoft/VCSamples/tree/master/VC2010Samples/ATL/OLEDB/Consumer).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Этот пример привязывает столбец таблицы к **`long`** элементу данных и задает поля состояния и длины.
 
@@ -77,8 +77,6 @@ class CProducts {
    [ db_column("1", status="m_dwProductIDStatus", length="m_dwProductIDLength") ] LONG m_ProductID;
 };
 ```
-
-## <a name="example"></a>Пример
 
 Этот пример привязывает четыре столбца к **`long`** , символьную строку, метку времени и `DB_NUMERIC` целое число в указанном порядке.
 
@@ -103,13 +101,13 @@ class CProducts {
 | Контекст атрибута | Значение |
 |-|-|
 |**Относится к**|**`class`**, **`struct`** , член, метод|
-|**REPEATABLE**|Нет|
+|**REPEATABLE**|нет|
 |**Требуемые атрибуты**|Нет|
 |**Недопустимые атрибуты**|Нет|
 
 Дополнительные сведения о контекстах атрибутов см. в разделе [Контексты атрибутов](cpp-attributes-com-net.md#contexts).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [OLE DB атрибуты потребителя](ole-db-consumer-attributes.md)<br/>
 [Атрибуты класса](class-attributes.md)

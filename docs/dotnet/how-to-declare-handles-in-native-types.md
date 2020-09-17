@@ -9,12 +9,12 @@ helpviewer_keywords:
 - gcroot keyword [C++]
 - types [C++], declaring handles in
 ms.assetid: b8c0eead-17e5-4003-b21f-b673f997d79f
-ms.openlocfilehash: 1aca21402122a0c8641a7e57ace2a3477ff96f01
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: deba9804b9c5c278b3ffcef2923bc8f89fefa676
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221345"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684538"
 ---
 # <a name="how-to-declare-handles-in-native-types"></a>Практическое руководство. Объявление дескрипторов в собственных типах
 
@@ -24,7 +24,7 @@ ms.locfileid: "87221345"
 
 Среда выполнения будет поддерживать связь между маркером и объектом CLR, на который он ссылается. Когда объект CLR перемещается вместе с кучей со сбором мусора, этот обработчик возвращает новый адрес объекта. Переменная не обязательно должна быть закреплена, прежде чем она будет назначена `gcroot` шаблону.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В этом примере показано, как создать `gcroot` объект в собственном стеке.
 
@@ -50,8 +50,6 @@ int main() {
 ```Output
 hello
 ```
-
-## <a name="example"></a>Пример
 
 В этом примере показано, как создать `gcroot` объект в собственной куче.
 
@@ -80,8 +78,6 @@ int main() {
 ```Output
 hello
 ```
-
-## <a name="example"></a>Пример
 
 В этом примере показано, как использовать `gcroot` для хранения ссылок на типы значений (не ссылочные типы) в собственном типе с помощью `gcroot` в упакованном типе.
 
@@ -113,6 +109,6 @@ int main() {
 String in V: Hello
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Использование взаимодействия C++ (неявный PInvoke)](../dotnet/using-cpp-interop-implicit-pinvoke.md)

@@ -7,12 +7,12 @@ helpviewer_keywords:
 - libraries [C++], DLLs
 - DLLs [C++], walkthroughs
 ms.assetid: 3ae94848-44e7-4955-bbad-7d40f493e941
-ms.openlocfilehash: 37dc59dfb77af9fff240c0d44b21de84b17d073b
-ms.sourcegitcommit: a8ef52ff4a4944a1a257bdaba1a3331607fb8d0f
+ms.openlocfilehash: adca441a1b1b4e5e7b7efa44c4a292a8f1ddec35
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77127846"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90042203"
 ---
 # <a name="walkthrough-create-and-use-your-own-dynamic-link-library-c"></a>Пошаговое руководство. Создание и использование собственной библиотеки динамической компоновки (C++)
 
@@ -54,7 +54,7 @@ ms.locfileid: "77127846"
 
 ::: moniker range="vs-2015"
 
-- Копия Visual Studio. Сведения о скачивании и установке Visual Studio 2015 см. в разделе [Установка Visual Studio 2015](/visualstudio/install/install-visual-studio-2015?view=vs-2015). Для установки компилятора и средств используйте **выборочную установку** C++, так как они не установлены по умолчанию.
+- Копия Visual Studio. Сведения о скачивании и установке Visual Studio 2015 см. в разделе [Установка Visual Studio 2015](/visualstudio/install/install-visual-studio-2015?view=vs-2015&preserve-view=true). Для установки компилятора и средств используйте **выборочную установку** C++, так как они не установлены по умолчанию.
 
 ::: moniker-end
 

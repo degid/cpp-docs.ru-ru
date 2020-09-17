@@ -7,12 +7,12 @@ helpviewer_keywords:
 - __declspec keyword [C++], deprecated
 - deprecated __declspec keyword
 ms.assetid: beef1129-9434-4cb3-8392-f1eb29e04805
-ms.openlocfilehash: 243c75f4726927c54989c33c1738e38938aa5f64
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 44cb33bae43b32b12dda95423aec5484f61aa596
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87221683"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683420"
 ---
 # <a name="deprecated-c"></a>deprecated (C++)
 
@@ -28,7 +28,7 @@ ms.locfileid: "87221683"
 
 Если компилятор обнаруживает использование устаревшего идентификатора или стандартного [`[[deprecated]]`](attributes.md) атрибута, выдается предупреждение [C4996](../error-messages/compiler-warnings/compiler-warning-level-3-c4996.md) .
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В следующем примере показано, как отметить функции как нерекомендуемые и как указать сообщение, которое будет отображаться во время компиляции, если будет использоваться нерекомендуемая функция.
 
@@ -49,8 +49,6 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Пример
-
 В следующем примере показано, как отметить классы как нерекомендуемые и как указать сообщение, которое будет отображаться во время компиляции, если будет использоваться нерекомендуемый класс.
 
 ```cpp
@@ -70,7 +68,7 @@ int main() {
 }
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [__declspec](../cpp/declspec.md)<br/>
 [Ключевые слова](../cpp/keywords-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4091
 ms.assetid: 3a404967-ab42-49b0-b324-fd7ba1859d78
-ms.openlocfilehash: 333f76c2f570832c9d08a7ad666f2540cca37f05
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 1a9fef0a825f98ab3ce8d935c98eefe1866be6cf
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87233344"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684694"
 ---
 # <a name="compiler-warning-level-1-c4091"></a>Предупреждение компилятора (уровень 1) C4091
 
@@ -19,7 +19,7 @@ ms.locfileid: "87233344"
 
 Компилятор обнаружил ситуацию, когда пользователь, вероятно, запланировал объявление переменной, но компилятору не удалось объявить переменную.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 **`__declspec`** Атрибут в начале объявления определяемого пользователем типа применяется к переменной этого типа. C4091 указывает, что переменная не объявлена. Следующий пример приводит к возникновению ошибки C4091.
 
@@ -35,8 +35,6 @@ __declspec(dllimport) class X2 {} varX;
 // applies to user defined type
 class __declspec(dllimport) X3 {};
 ```
-
-## <a name="example"></a>Пример
 
 Если идентификатор является typedef, он не может также быть именем переменной. Следующий пример приводит к возникновению ошибки C4091.
 

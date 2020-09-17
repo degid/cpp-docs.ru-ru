@@ -20,12 +20,12 @@ helpviewer_keywords:
 - CNetAddressCtrl [MFC], GetAllowType
 - CNetAddressCtrl [MFC], SetAllowType
 ms.assetid: cb4c6aca-3f49-4b52-b76c-65f57096155b
-ms.openlocfilehash: 30fc510272afc90ae37b583e807d10c3374df052
-ms.sourcegitcommit: 1839405b97036891b6e4d37c99def044d6f37eff
+ms.openlocfilehash: e92ea79727248afd84dd08058ea8f23cc8d14f44
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "88562133"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686591"
 ---
 # <a name="cnetaddressctrl-class"></a>Класс CNetAddressCtrl
 
@@ -66,13 +66,11 @@ class CNetAddressCtrl : public CEdit
 
 ![Диалог с элементом управления сетевым адресом и подсказкой.](../../mfc/reference/media/cnetaddctrl.png "Диалог с элементом управления сетевым адресом и подсказкой.")
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Следующий пример кода является частью диалогового окна, который проверяет сетевой адрес. Обработчики событий для трех переключателей указывают, что сетевой адрес может быть одним из трех типов адресов. Пользователь вводит адрес в текстовое поле элемента управления сетью, а затем нажимает кнопку для проверки адреса. Если адрес является допустимым, отображается сообщение об успешном выполнении. в противном случае отображается предопределенное сообщение об ошибке всплывающей подсказки.
 
 [!code-cpp[NVC_MFC_CNetAddressCtrl_s1#1](../../mfc/reference/codesnippet/cpp/cnetaddressctrl-class_1.cpp)]
-
-## <a name="example"></a>Пример
 
 В следующем примере кода из файла заголовка диалогового окна определяются [NC_ADDRESS](/windows/win32/api/shellapi/ns-shellapi-nc_address) и [NET_ADDRESS_INFO](/windows/win32/shell/hkey-type) переменные, необходимые для метода [CNetAddressCtrl::](#getaddress) Method.
 

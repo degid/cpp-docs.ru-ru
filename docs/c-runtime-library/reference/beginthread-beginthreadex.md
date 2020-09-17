@@ -35,12 +35,12 @@ helpviewer_keywords:
 - _beginthreadex function
 - beginthread function
 ms.assetid: 0df64740-a978-4358-a88f-fb0702720091
-ms.openlocfilehash: 29458f2d752f1fe59778b752480e268f8243f15e
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 5060c4b34005c1cc066e002d20ca70cbfea0fbef
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87234280"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684824"
 ---
 # <a name="_beginthread-_beginthreadex"></a>_beginthread, _beginthreadex
 
@@ -157,7 +157,7 @@ uintptr_t _beginthreadex( // MANAGED CODE
 
 Чтобы использовать **_beginthread** или **_beginthreadex**, приложение должно создать связь с одной из многопоточных библиотек времени выполнения C.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В следующем примере используются **_beginthread** и **_endthread**.
 
@@ -277,8 +277,6 @@ void Bounce( void * parg )
 
 Чтобы закрыть приложение-пример, нажмите любую клавишу.
 
-## <a name="example"></a>Пример
-
 В следующем образце кода показано, как можно использовать обработчик потока, возвращаемый **_beginthreadex** с помощью [WaitForSingleObject](/windows/win32/api/synchapi/nf-synchapi-waitforsingleobject)API синхронизации. Основной поток ожидает завершения другого потока, прежде чем продолжить. Когда второй поток вызывает **_endthreadex**, он приводит к тому, что его объект потока переходит в сигнальное состояние. Это позволяет продолжить выполнение основного потока. Это невозможно сделать с помощью **_beginthread** и **_endthread**, поскольку **_endthread** вызывает **CloseHandle**, который уничтожает объект потока, прежде чем его можно будет установить в сигнальное состояние.
 
 ```cpp
@@ -327,7 +325,7 @@ In second thread...
 Counter should be 1000000; it is-> 1000000
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 - [Управление процессами и средой](../../c-runtime-library/process-and-environment-control.md)
 - [_endthread, _endthreadex](endthread-endthreadex.md)

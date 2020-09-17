@@ -6,16 +6,16 @@ helpviewer_keywords:
 - MFC, creating applications
 - MFC applications
 ms.assetid: b8b8aa08-9c49-404c-8078-b42079ac18f0
-ms.openlocfilehash: 115ca6b4ab32482707cffd08ef575c93b2f3bfa9
-ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
+ms.openlocfilehash: 7e7435a8538c04867a810e525e053109a7abc04d
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "90040097"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90683459"
 ---
 # <a name="creating-an-mfc-application"></a>Создание приложения MFC
 
-Приложение MFC является исполняемым приложением для Windows на основе библиотеки Microsoft Foundation Class (MFC). Исполняемые файлы MFC обычно делятся на пять типов: стандартные приложения Windows, диалоговые окна, приложения на основе форм, приложения в стиле обозревателя и приложения в стиле веб-браузера. Дополнительные сведения см. в разделе:
+Приложение MFC является исполняемым приложением для Windows на основе библиотеки Microsoft Foundation Class (MFC). Исполняемые файлы MFC обычно делятся на пять типов: стандартные приложения Windows, диалоговые окна, приложения на основе форм, приложения в стиле обозревателя и приложения в стиле веб-браузера. Дополнительные сведения можно найти в разделе
 
 - [Использование классов для создания приложений Windows](../../mfc/using-the-classes-to-write-applications-for-windows.md)
 
@@ -42,7 +42,7 @@ ms.locfileid: "90040097"
 
 Дополнительные сведения см. [в разделе Создание приложения MFC на основе форм](creating-a-forms-based-mfc-application.md).
 
-![Мастер приложений MFC в Visual Studio 2019](media/mfc-app-wizard.png)
+![Снимок экрана мастера приложений MFC в Visual Studios 2019.](media/mfc-app-wizard.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>Создание консольного приложения MFC
 
@@ -53,7 +53,7 @@ ms.locfileid: "90040097"
 1. При необходимости измените имя проекта, а затем нажмите кнопку **Далее** , чтобы открыть **Мастер рабочего стола Windows**.
 1. Установите флажок **заголовки MFC** и при необходимости задайте другие значения, а затем нажмите кнопку **Готово**.
 
-![Диалоговое окно Visual Studio 2019 Windows Desktop Project](media/windows-desktop-wizard.png)
+![Снимок экрана мастера рабочего стола Windows в Visual Studios 2019.](media/windows-desktop-wizard.png)
 
 ::: moniker-end
 
@@ -68,7 +68,7 @@ ms.locfileid: "90040097"
 
 Дополнительные сведения см. [в разделе Создание приложения MFC на основе форм](creating-a-forms-based-mfc-application.md).
 
-![Мастер приложений MFC в Visual Studio 2017](media/mfc-app-wizard.png)
+![Снимок экрана мастера приложений MFC в Visual Studios 2017.](media/mfc-app-wizard.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>Создание консольного приложения MFC
 
@@ -80,7 +80,7 @@ ms.locfileid: "90040097"
 1. При необходимости измените имя проекта, а затем нажмите кнопку **ОК** , чтобы открыть **Мастер рабочего стола Windows**.
 1. Установите флажок **заголовки MFC** и при необходимости задайте другие значения, а затем нажмите кнопку **Готово**.
 
-![Диалоговое окно Visual Studio 2017 Windows Desktop Project](media/windows-desktop-wizard-2017.png)
+![Снимок экрана мастера рабочего стола Windows в Visual Studios 2017.](media/windows-desktop-wizard-2017.png)
 
 ::: moniker-end
 
@@ -95,7 +95,7 @@ ms.locfileid: "90040097"
 
 Дополнительные сведения см. [в разделе Создание приложения MFC на основе форм](creating-a-forms-based-mfc-application.md).
 
-![Мастер приложений MFC в Visual Studio 2015](media/mfc-app-wizard-2015.png)
+![Снимок экрана мастера приложений MFC в Visual Studios 2015.](media/mfc-app-wizard-2015.png)
 
 ## <a name="to-create-an-mfc-console-application"></a>Создание консольного приложения MFC
 
@@ -111,7 +111,7 @@ ms.locfileid: "90040097"
 
 После создания проекта можно просмотреть его файлы при помощи **обозревателя решений**. Дополнительные сведения о файлах, создаваемых мастером для проекта, см. в созданном для проекта файле ReadMe.txt. Дополнительные сведения о типах файлов см. в разделе [Типы файлов, создаваемых для проектов Visual Studio C++](../../build/reference/file-types-created-for-visual-cpp-projects.md).
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Добавление функциональных возможностей с помощью мастеров кода](../../ide/adding-functionality-with-code-wizards-cpp.md)<br/>
 [Страницы свойств](../../build/reference/property-pages-visual-cpp.md)

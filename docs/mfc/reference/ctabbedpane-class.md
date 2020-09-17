@@ -1,5 +1,5 @@
 ---
-title: Класс CTabbedPane
+title: Класс Ктаббедпане
 ms.date: 11/04/2016
 f1_keywords:
 - CTabbedPane
@@ -28,18 +28,18 @@ helpviewer_keywords:
 - CTabbedPane [MFC], m_bTabsAlwaysTop
 - CTabbedPane [MFC], m_pTabWndRTC
 ms.assetid: f4dc5215-b789-4f2d-8c62-477aceda3578
-ms.openlocfilehash: 17351eaed585ec34117a2ef825964fd51bd0d86b
-ms.sourcegitcommit: c123cc76bb2b6c5cde6f4c425ece420ac733bf70
+ms.openlocfilehash: cfc0a3099b1d5ff9bd1093cc911745bd61cde64c
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 04/14/2020
-ms.locfileid: "81365954"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686643"
 ---
-# <a name="ctabbedpane-class"></a>Класс CTabbedPane
+# <a name="ctabbedpane-class"></a>Класс Ктаббедпане
 
 Реализует функциональные возможности области с отделяемыми вкладками.
 
-или более подробно увидеть исходный код, расположенный в **папке VC\\atlmfc\\src\\mfc** установки.
+или более подробные сведения см. в исходном коде, расположенном в папке **VC \\ атлмфк \\ src \\ библиотеки MFC** в установке Visual Studio.
 
 ## <a name="syntax"></a>Синтаксис
 
@@ -51,20 +51,20 @@ class CTabbedPane : public CBaseTabbedPane
 
 ### <a name="public-constructors"></a>Открытые конструкторы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
 |`CTabbedPane::CTabbedPane`|Конструктор по умолчанию.|
 
 ### <a name="public-methods"></a>Открытые методы
 
-|Имя|Описание|
+|name|Описание|
 |----------|-----------------|
-|[CTabbedPane::DetachPane](#detachpane)|(Оверлет [cBaseTabbedPane::DetachPane](../../mfc/reference/cbasetabbedpane-class.md#detachpane).)|
+|[CTabbedPane::DetachPane](#detachpane)|(Переопределяет [CBaseTabbedPane::D етачпане](../../mfc/reference/cbasetabbedpane-class.md#detachpane).)|
 |[CTabbedPane::EnableTabAutoColor](#enabletabautocolor)|Включает или выключает автоматическую цветовую маркировку вкладок.|
-|[CTabbedPane::FloatTab](#floattab)|Плавает панель, но только если панель в настоящее время находится в съемной вкладке. (Переопределяет [CBaseTabbedPane::FloatTab.)](../../mfc/reference/cbasetabbedpane-class.md#floattab)|
+|[CTabbedPane::FloatTab](#floattab)|Перемещает панель, но только в том случае, если эта панель находится на вкладке, которая отсоединена. (переопределяет [CBaseTabbedPane:: флоаттаб](../../mfc/reference/cbasetabbedpane-class.md#floattab).)|
 |[CTabbedPane::GetTabArea](#gettabarea)|Возвращает размер и положение области вкладок в окне с вкладками.|
 |[CTabbedPane::GetTabWnd](#gettabwnd)||
-|[CTabbedPane::HasAutoHideMode](#hasautohidemode)|Определяет возможность переключения панели с вкладками в режим автоматического скрытия. (Оверлет [CBaseTabbedPane::HasAutoHideMode](../../mfc/reference/cbasetabbedpane-class.md#hasautohidemode).)|
+|[CTabbedPane::HasAutoHideMode](#hasautohidemode)|Определяет возможность переключения панели с вкладками в режим автоматического скрытия. (Переопределяет [CBaseTabbedPane:: хасаутохидемоде](../../mfc/reference/cbasetabbedpane-class.md#hasautohidemode).)|
 |[CTabbedPane::IsTabLocationBottom](#istablocationbottom)|Определяет, расположены ли вкладки в нижней части окна.|
 |[CTabbedPane::ResetTabs](#resettabs)|Переводит все панели с вкладками в состояние по умолчанию.|
 |[CTabbedPane::SetTabAutoColors](#settabautocolors)|Задает список пользовательских цветов, которые могут применяться, когда включена возможность автоматической цветовой маркировки вкладок.|
@@ -80,13 +80,13 @@ class CTabbedPane : public CBaseTabbedPane
 
 Платформа автоматически создает экземпляр этого класса, когда пользователь прикрепляет одну панель к другой, подводя указатель мыши к заголовку второй панели. Все панели с вкладками, созданные платформой, имеют идентификатор -1.
 
-Чтобы указать регулярные вкладки вместо вкладок в стиле Outlook, передайте AFX_CBRS_REGULAR_TABS стиль методу [CDockablePane::CreateEx.](../../mfc/reference/cdockablepane-class.md#createex)
+Чтобы задать обычные вкладки вместо вкладок в стиле Outlook, передайте AFX_CBRS_REGULAR_TABSный стиль в метод [CDockablePane:: креатикс](../../mfc/reference/cdockablepane-class.md#createex) .
 
 Если создать панель с отделяемыми вкладками, она может быть автоматически уничтожена платформой, поэтому лучше не оставлять указатель. Чтобы получить указатель на панель с вкладками, вызовите метод `CBasePane::GetParentTabbedPane`.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
-В этом примере создается объект `CTabbedPane`. Далее мы используем [CBaseTabbedPane::AddTab](../../mfc/reference/cbasetabbedpane-class.md#addtab) для присоединения дополнительных вкладок.
+В этом примере создается объект `CTabbedPane`. Далее мы используем [CBaseTabbedPane:: аддтаб](../../mfc/reference/cbasetabbedpane-class.md#addtab) для присоединения дополнительных вкладок.
 
 ```cpp
 CTabbedPane* pTabbededBar = new CTabbedPane (TRUE);
@@ -117,9 +117,7 @@ pTabbededBar->EnableDocking(CBRS_ALIGN_ANY);
 DockPane(pTabbededBar);
 ```
 
-## <a name="example"></a>Пример
-
-Еще один способ создания элемента панели управления вкладками — использование [CDockablePane::AttachToTabWnd.](../../mfc/reference/cdockablepane-class.md#attachtotabwnd) Метод `AttachToTabWnd` динамически создает объект панели с помощью информации класса выполнения, установленной [CDockablePane::SetTabbedPaneRTC.](../../mfc/reference/cdockablepane-class.md#settabbedpanertc)
+Другим способом создания объекта панели элементов управления с вкладками является использование [CDockablePane:: аттачтотабвнд](../../mfc/reference/cdockablepane-class.md#attachtotabwnd). `AttachToTabWnd`Метод динамически создает объект области с вкладками, используя сведения о классе среды выполнения, заданные с помощью [CDockablePane:: сеттаббедпанертк](../../mfc/reference/cdockablepane-class.md#settabbedpanertc).
 
 В этом примере рассматривается динамическое создание панели с вкладками, прикрепление двух вкладок друг к другу, а также преобразование второй вкладки в неотделяемую.
 
@@ -161,9 +159,9 @@ pTabbedBar->GetUnderlyingWindow ()->EnableTabDetach (1,
 
 ## <a name="requirements"></a>Требования
 
-**Заголовок:** afxTabbedPane.h
+**Заголовок:** афкстаббедпане. h
 
-## <a name="ctabbedpanedetachpane"></a><a name="detachpane"></a>CTabbedPane::DetachPane
+## <a name="ctabbedpanedetachpane"></a><a name="detachpane"></a> Ктаббедпане::D Етачпане
 
 ```
 virtual BOOL DetachPane(
@@ -173,15 +171,15 @@ virtual BOOL DetachPane(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
+окне *пбар*<br/>
 
-(в) *bHide*<br/>
+окне *бхиде*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 ### <a name="remarks"></a>Примечания
 
-## <a name="ctabbedpaneenabletabautocolor"></a><a name="enabletabautocolor"></a>CTabbedPane::EnableTabAutoColor
+## <a name="ctabbedpaneenabletabautocolor"></a><a name="enabletabautocolor"></a> Ктаббедпане:: Енаблетабаутоколор
 
 Включает или выключает автоматическую цветовую маркировку вкладок.
 
@@ -192,17 +190,17 @@ static void EnableTabAutoColor(BOOL bEnable = TRUE);
 ### <a name="parameters"></a>Параметры
 
 *bEnable*<br/>
-(в) TRUE для автоматической окраски вкладок; в противном случае, FALSE.
+окне Значение TRUE, чтобы включить автоматическое Окрашивание вкладок; в противном случае — значение FALSE.
 
 ### <a name="remarks"></a>Примечания
 
-Используйте этот статический метод, чтобы включить или отключить автоматическую окраску вкладок во всех стеках в приложении. Когда эта функция включена, каждая вкладка заполняется собственным цветом. Список цветов, используемых для окрашивания вкладок, можно найти, позвонив по методу [CMFCBaseTabCtrl::GetAutoColors.](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors)
+Используйте этот статический метод, чтобы включить или отключить автоматическое Окрашивание вкладок во всех панелях с вкладками в приложении. Если эта функция включена, каждая вкладка заполняется своим собственным цветом. Список цветов, используемых для выделения цветом вкладок, можно найти, вызвав метод [CMFCBaseTabCtrl:: жетаутоколорс](../../mfc/reference/cmfcbasetabctrl-class.md#getautocolors) .
 
-Вы можете указать список цветов, которые будут использоваться для вкладок, позвонив [по телефону CTabbedPane::SetTabAutoColors.](#settabautocolors)
+Можно указать список цветов, которые будут использоваться для вкладок, вызвав [ктаббедпане:: сеттабаутоколорс](#settabautocolors).
 
 Этот параметр по умолчанию отключен.
 
-## <a name="ctabbedpanefloattab"></a><a name="floattab"></a>CTabbedPane::FloatTab
+## <a name="ctabbedpanefloattab"></a><a name="floattab"></a> Ктаббедпане:: Флоаттаб
 
 ```
 virtual BOOL FloatTab(
@@ -214,18 +212,18 @@ virtual BOOL FloatTab(
 
 ### <a name="parameters"></a>Параметры
 
-(в) *pBar*<br/>
-(в) *nTabID*<br/>
-(в) *докМетод*<br/>
-(в) *bHide*<br/>
+окне *пбар*<br/>
+окне *нтабид*<br/>
+окне *доккмесод*<br/>
+окне *бхиде*<br/>
 
 ### <a name="return-value"></a>Возвращаемое значение
 
 ### <a name="remarks"></a>Примечания
 
-## <a name="ctabbedpanegettabarea"></a><a name="gettabarea"></a>CTabbedPane::GetTabArea
+## <a name="ctabbedpanegettabarea"></a><a name="gettabarea"></a> Ктаббедпане:: Жеттабареа
 
-Возвращает размер и положение области вкладки в окне вкладки.
+Возвращает размер и позицию области вкладки в окне с вкладками.
 
 ```
 virtual void GetTabArea(
@@ -236,18 +234,18 @@ virtual void GetTabArea(
 ### <a name="parameters"></a>Параметры
 
 *rectTabAreaTop*<br/>
-(ваут) Содержит размер и положение в координатах экрана верхней области вкладки.
+заполняет Содержит размер и позицию (в экранных координатах) области верхней вкладки.
 
 *rectTabAreaBottom*<br/>
-(ваут) Содержит размер и положение в координатах экрана нижней области вкладки.
+заполняет Содержит размер и позицию в экранных координатах нижней области вкладки.
 
 ### <a name="remarks"></a>Примечания
 
-Платформа вызывает этот метод, чтобы определить, как стыковка панели, что пользователь перетащит. Когда пользователь перетаскивает панель над областью вкладки панели целевого стекла, фреймворк пытается добавить его в качестве новой вкладки панели целевого. В противном случае он пытается пристыковать панель к боковой части целевого стекла, что включает в себя создание нового контейнера с стеклом с разделителем панели, отделяющей две панели.
+Платформа вызывает этот метод, чтобы определить, как закрепить область, которую пользователь перетаскивает. Когда пользователь перетаскивает область над областью вкладок целевой области, платформа пытается добавить ее в качестве новой вкладки целевой области. В противном случае он пытается закрепить панель на стороне целевой области, которая включает создание нового контейнера панели с разделителем панели, разделяющим две панели.
 
-Переопределить этот метод `CTabbedPane`в классе, полученном, чтобы изменить это поведение.
+Переопределите этот метод в `CTabbedPane` классе, производном от, чтобы изменить это поведение.
 
-## <a name="ctabbedpanegettabwnd"></a><a name="gettabwnd"></a>CTabbedPane::GetTabWnd
+## <a name="ctabbedpanegettabwnd"></a><a name="gettabwnd"></a> Ктаббедпане:: Жеттабвнд
 
 ```
 CMFCTabCtrl* GetTabWnd() const;
@@ -257,7 +255,7 @@ CMFCTabCtrl* GetTabWnd() const;
 
 ### <a name="remarks"></a>Примечания
 
-## <a name="ctabbedpanehasautohidemode"></a><a name="hasautohidemode"></a>CTabbedPane:HasAutoHideMode
+## <a name="ctabbedpanehasautohidemode"></a><a name="hasautohidemode"></a> Ктаббедпане:: Хасаутохидемоде
 
 ```
 virtual BOOL HasAutoHideMode() const;
@@ -267,7 +265,7 @@ virtual BOOL HasAutoHideMode() const;
 
 ### <a name="remarks"></a>Примечания
 
-## <a name="ctabbedpaneistablocationbottom"></a><a name="istablocationbottom"></a>CTabbedPane::IsTabLocationBottom
+## <a name="ctabbedpaneistablocationbottom"></a><a name="istablocationbottom"></a> Ктаббедпане:: Истаблокатионботтом
 
 Определяет, расположены ли вкладки в нижней части окна.
 
@@ -277,11 +275,11 @@ virtual BOOL IsTabLocationBottom() const;
 
 ### <a name="return-value"></a>Возвращаемое значение
 
-TRUE, если область вкладок расположена в нижней части окна вкладки; в противном случае, FALSE.
+Значение TRUE, если область вкладки находится в нижней части окна с вкладками; в противном случае — значение FALSE.
 
 ### <a name="remarks"></a>Примечания
 
-## <a name="ctabbedpanem_btabsalwaystop"></a><a name="m_btabsalwaystop"></a>CTabbedPane::m_bTabsAlwaysTop
+## <a name="ctabbedpanem_btabsalwaystop"></a><a name="m_btabsalwaystop"></a> Ктаббедпане:: m_bTabsAlwaysTop
 
 Расположение вкладок в приложении по умолчанию.
 
@@ -291,13 +289,13 @@ AFX_IMPORT_DATA static BOOL m_bTabsAlwaysTop;
 
 ### <a name="remarks"></a>Примечания
 
-Установите этот статический член к TRUE, чтобы заставить все вкладки в приложении, которые будут отображаться в верхней части панели вкладок.
+Задайте для этого статического элемента значение TRUE, чтобы все вкладки в приложении отображались в верхней части панели с вкладками.
 
-Необходимо установить это значение до создания панели вкладок.
+Это значение необходимо задать до создания панели с вкладками.
 
 Значение по умолчанию — FALSE.
 
-## <a name="ctabbedpanem_ptabwndrtc"></a><a name="m_ptabwndrtc"></a>CTabbedPane::m_pTabWndRTC
+## <a name="ctabbedpanem_ptabwndrtc"></a><a name="m_ptabwndrtc"></a> Ктаббедпане:: m_pTabWndRTC
 
 Сведения о классе среды выполнения для настраиваемого объекта, производного от класса `CMFCTabCtrl`.
 
@@ -307,9 +305,9 @@ AFX_IMPORT_DATA static CRuntimeClass* m_pTabWndRTC;
 
 ### <a name="remarks"></a>Примечания
 
-Установите эту статическую переменную члена на указатель `CMFCTabCtrl`на информацию класса времени выполнения объекта, полученного, если вы используете пользовательское окно вкладки внутри панели вкладок.
+Задайте для этой статической переменной-члена указатель на сведения о классе среды выполнения `CMFCTabCtrl` объекта, производного от, если вы используете настраиваемое окно с вкладками внутри области с вкладками.
 
-## <a name="ctabbedpaneresettabs"></a><a name="resettabs"></a>CTabbedPane:ResetTabs
+## <a name="ctabbedpaneresettabs"></a><a name="resettabs"></a> Ктаббедпане:: Ресеттабс
 
 Переводит все панели с вкладками в состояние по умолчанию.
 
@@ -319,11 +317,11 @@ static void ResetTabs();
 
 ### <a name="remarks"></a>Примечания
 
-Вызовите этот метод, чтобы вернуть все панели вкладок в состояние по умолчанию. При вызове этот метод сбрасывает размеры границы и автоматическое состояние цвета всех табло.
+Вызовите этот метод, чтобы вернуть все панели с вкладками в состояние по умолчанию. При вызове этот метод сбрасывает размеры границ и автоматическое состояние цвета для всех панелей с вкладками.
 
-## <a name="ctabbedpanesettabautocolors"></a><a name="settabautocolors"></a>CTabbedPane::SetTabAutoColors
+## <a name="ctabbedpanesettabautocolors"></a><a name="settabautocolors"></a> Ктаббедпане:: Сеттабаутоколорс
 
-Устанавливает список пользовательских цветов, которые используются при включении функции автоматического цвета.
+Задает список пользовательских цветов, используемых при включенной функции автоцветности.
 
 ```
 static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
@@ -332,18 +330,18 @@ static void SetTabAutoColors(const CArray<COLORREF, COLORREF>& arColors);
 ### <a name="parameters"></a>Параметры
 
 *arColors*<br/>
-(в) Содержит массив цветов для установки.
+окне Содержит массив заданных цветов.
 
 ### <a name="remarks"></a>Примечания
 
-Используйте этот метод, чтобы настроить список цветов, которые используются при включении функции автоматического цвета. Это статическая функция и влияет на все панели вкладок в приложении.
+Этот метод используется для настройки списка цветов, используемых при включенной функции автоцветности. Это статическая функция, влияющая на все области с вкладками в приложении.
 
-Используйте [CTabbedPane::EnableTabAutoColor](#enabletabautocolor) для включения или отключать функцию автоматического цвета.
+Используйте [ктаббедпане:: енаблетабаутоколор](#enabletabautocolor) , чтобы включить или отключить функцию автоматического цвета.
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
-[Диаграмма иерархии](../../mfc/hierarchy-chart.md)<br/>
+[Иерархическая диаграмма](../../mfc/hierarchy-chart.md)<br/>
 [Классы](../../mfc/reference/mfc-classes.md)<br/>
-[CDockablePane Class](../../mfc/reference/cdockablepane-class.md)<br/>
+[Класс CDockablePane](../../mfc/reference/cdockablepane-class.md)<br/>
 [Класс CBaseTabbedPane](../../mfc/reference/cbasetabbedpane-class.md)<br/>
 [Класс CMFCOutlookBar](../../mfc/reference/cmfcoutlookbar-class.md)

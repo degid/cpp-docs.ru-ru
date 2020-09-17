@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3493
 ms.assetid: 734b4257-12a3-436f-8488-c8c55ec81634
-ms.openlocfilehash: 178d1221886dc62edd9785d211e2189fa50962f4
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: ea2c1a3d9a10fee455d20490f0408982f47ee0a7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74738301"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684733"
 ---
 # <a name="compiler-error-c3493"></a>Ошибка компилятора C3493
 
@@ -25,7 +25,7 @@ ms.locfileid: "74738301"
 
 - явно передайте одну или несколько переменных.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В приведенном ниже примере возникает ошибка C3493, так как в нем изменяется внешняя переменная, но указывается предложение пустой передачи.
 
@@ -39,8 +39,6 @@ int main()
 }
 ```
 
-## <a name="example"></a>Пример
-
 В приведенном ниже примере ошибка C3493 устраняется путем указания передачи по ссылке в качестве режима передачи по умолчанию.
 
 ```cpp
@@ -53,6 +51,6 @@ int main()
 }
 ```
 
-## <a name="see-also"></a>См. также:
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../../cpp/lambda-expressions-in-cpp.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4364
 ms.assetid: 1477634c-d60f-4570-ad16-1aaeae24ac7f
-ms.openlocfilehash: 5423a5525f9bef4d949bfee2de058fe19d0ec181
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 7f1c71cb3cd6a99d4ed9960032813e7cebca7591
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87220045"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685083"
 ---
 # <a name="compiler-warning-level-1-c4364"></a>Предупреждение компилятора (уровень 1) C4364
 
@@ -21,7 +21,7 @@ ms.locfileid: "87220045"
 
 Дополнительные сведения см. в разделе [дружественные сборки (C++)](../../dotnet/friend-assemblies-cpp.md).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 В приведенном ниже примере создается компонент.
 
@@ -30,8 +30,6 @@ ms.locfileid: "87220045"
 // compile with: /clr /LD
 ref class A {};
 ```
-
-## <a name="example"></a>Пример
 
 Следующий пример приводит к возникновению ошибки C4364.
 

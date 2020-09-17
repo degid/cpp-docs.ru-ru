@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3915
 ms.assetid: 2b0a5e5f-3aec-4a4b-9157-233031817084
-ms.openlocfilehash: 26fdcd3b7989d9030249133e6dc1d277aa1a9f44
-ms.sourcegitcommit: 16fa847794b60bf40c67d20f74751a67fccb602e
+ms.openlocfilehash: d83a837a24fe36b61d3f0fccae4dbe4e93cd3261
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74756283"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686055"
 ---
 # <a name="compiler-error-c3915"></a>Ошибка компилятора C3915
 
@@ -21,7 +21,7 @@ ms.locfileid: "74756283"
 
 Для получения дополнительной информации см. [property](../../extensions/property-cpp-component-extensions.md).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Следующий пример приводит к возникновению ошибки C3915.
 
@@ -46,9 +46,7 @@ int main() {
 }
 ```
 
-## <a name="example"></a>Пример
-
-C3915 также может возникать при попытке использовать индексатор по умолчанию в том же компилируемого объекта, где он был определен с <xref:System.Reflection.DefaultMemberAttribute>.
+C3915 также может возникать при попытке использовать индексатор по умолчанию в том же компилируемого объекта, где он был определен с помощью <xref:System.Reflection.DefaultMemberAttribute> .
 
 Следующий пример приводит к возникновению ошибки C3915.
 

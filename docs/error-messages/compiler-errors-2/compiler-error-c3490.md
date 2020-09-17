@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3490
 ms.assetid: 7638559a-fd06-4527-a9c1-0c8ae68b3123
-ms.openlocfilehash: ea7341b9c587a764c7366fa7b7c89e4fc67bc7d8
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 76729f49358e2a05b425730517e88ba14f2909c6
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87230861"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685728"
 ---
 # <a name="compiler-error-c3490"></a>Ошибка компилятора C3490
 
@@ -23,7 +23,7 @@ ms.locfileid: "87230861"
 
 - Удалите **`const`** модификатор из объявления метода.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Следующий пример приводит к возникновению ошибки C3490, так как изменяет переменную-член `_i` в **`const`** методе:
 
@@ -42,8 +42,6 @@ class C
 };
 ```
 
-## <a name="example"></a>Пример
-
 В следующем примере разрешается C3490 путем удаления **`const`** модификатора из объявления метода:
 
 ```cpp
@@ -61,6 +59,6 @@ class C
 };
 ```
 
-## <a name="see-also"></a>См. также статью
+## <a name="see-also"></a>См. также
 
 [Лямбда-выражения](../../cpp/lambda-expressions-in-cpp.md)

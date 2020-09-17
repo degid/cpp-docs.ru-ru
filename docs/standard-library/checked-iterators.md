@@ -10,12 +10,12 @@ helpviewer_keywords:
 - iterators, checked
 - checked iterators
 ms.assetid: cfc87df8-e3d9-403b-ab78-e9483247d940
-ms.openlocfilehash: 4918cd9df34e5c728c4aa2d90d4eb7f55784e4c2
-ms.sourcegitcommit: ec6dd97ef3d10b44e0fedaa8e53f41696f49ac7b
+ms.openlocfilehash: 2327638208f30908cd3429ae656ce569f5821195
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88845696"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684907"
 ---
 # <a name="checked-iterators"></a>Checked Iterators
 
@@ -73,7 +73,7 @@ ms.locfileid: "88845696"
 
 Адаптеры итератора, которые поддерживают проверенные итераторы, это [класс checked_array_iterator](../standard-library/checked-array-iterator-class.md) и [класс unchecked_array_iterator](../standard-library/unchecked-array-iterator-class.md).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 При компиляции с помощью _ITERATOR_DEBUG_LEVEL, для которого задано значение 1 или 2, при попытке получить доступ к элементу, который находится за пределами контейнера с помощью оператора индексирования определенных классов, возникнет ошибка времени выполнения.
 
@@ -102,8 +102,6 @@ int main()
 
 Данная программа напечатает "67", а затем отобразит диалоговое окно сбоя утверждения с дополнительной информацией о сбое.
 
-## <a name="example"></a>Пример
-
 Аналогично при компиляции с помощью _ITERATOR_DEBUG_LEVEL, для которого задано значение 1 или 2, возникает ошибка времени выполнения при попытке получить доступ к элементу с помощью `front` или `back` в классах контейнеров, если контейнер пуст.
 
 ```cpp
@@ -125,8 +123,6 @@ int main()
 ```
 
 Данная программа отобразит диалоговое окно сбоя утверждения с дополнительной информацией о сбое.
-
-## <a name="example"></a>Пример
 
 Следующий код демонстрирует различные сценарии использования итератора с комментариями о каждом. По умолчанию для параметра _ITERATOR_DEBUG_LEVEL задано значение 2 в отладочных сборках, а в розничных сборках — 0.
 
@@ -232,7 +228,7 @@ a7: 0 7 14 21 28 35 42 49 56 63 70 77 84 91 98 105
 a8: 0 8 16 24 32 40 48 56 64 72 80 88 96 104 112 120
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Общие сведения о стандартной библиотеке C++](../standard-library/cpp-standard-library-overview.md)\
 [Поддержка итератора отладки](../standard-library/debug-iterator-support.md)

@@ -5,12 +5,12 @@ helpviewer_keywords:
 - cast operators [C++]
 - () cast operator
 ms.assetid: 4c99eb92-1b19-4a5d-9840-5d8c29b8453e
-ms.openlocfilehash: 491e8ea3bc3ff81e88825700de6a549324a0d5af
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6b1abfc4e2798f973951a24ea27f35b2dcf6cca7
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80190161"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90686323"
 ---
 # <a name="cast-operator-"></a>Оператор Cast: ()
 
@@ -28,7 +28,7 @@ unary-expression ( type-name ) cast-expression
 
 После выполнения приведения типа компилятор считает, что *cast-expression* имеет тип *type-name*. Приведение типов можно использовать для преобразования объектов любого скалярного типа в любой другой скалярный тип и из любого другого скалярного типа. Явное приведение типов ограничено теми же правилами, которые определяют эффекты неявных преобразований. Дополнительные ограничения на операции приведения могут быть связаны с фактическими размерами или представлением конкретных типов.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 ```cpp
 // expre_CastOperator.cpp
@@ -47,8 +47,6 @@ int main()
     cout << "i = " << i << endl;
 }
 ```
-
-## <a name="example"></a>Пример
 
 ```cpp
 // expre_CastOperator2.cpp
@@ -118,10 +116,10 @@ Note that the cast changed the raw internal string
 Raw Bytes after cast:   Exciting
 ```
 
-## <a name="see-also"></a>См. также раздел
+## <a name="see-also"></a>См. также
 
 [Выражения с унарными операторами](../cpp/expressions-with-unary-operators.md)<br/>
-[Встроенные операторы C++, приоритет и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
+[Операторы C++, приоритет и ассоциативность](../cpp/cpp-built-in-operators-precedence-and-associativity.md)<br/>
 [Оператор явного преобразования типа: ()](../cpp/explicit-type-conversion-operator-parens.md)<br/>
 [Операторы приведения](../cpp/casting-operators.md)<br/>
-[Операторы приведения](../c-language/cast-operators.md)
+[Операторы CAST](../c-language/cast-operators.md)

@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C3764
 ms.assetid: af5d254c-8d4a-4dda-aad9-3c5c1257c868
-ms.openlocfilehash: 657cb6598eedf8abd050b47c124c78c3a028509f
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: d8cfcae544d0948c21e093ba6457159b0214a583
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87214507"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90685623"
 ---
 # <a name="compiler-error-c3764"></a>Ошибка компилятора C3764
 
@@ -19,7 +19,7 @@ ms.locfileid: "87214507"
 
 Компилятор обнаружил неправильно сформированное переопределение. Например, функция базового класса не была **`virtual`** . Дополнительные сведения см. в разделе [override](../../extensions/override-cpp-component-extensions.md).
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 Следующий пример приводит к возникновению ошибки C3764.
 
@@ -36,8 +36,6 @@ public ref struct B : A {
    virtual void h(int) override {}   // OK
 };
 ```
-
-## <a name="example"></a>Пример
 
 C3764 также может возникать, когда метод базового класса явно и имеет имя reпереопределен. Следующий пример приводит к возникновению ошибки C3764.
 

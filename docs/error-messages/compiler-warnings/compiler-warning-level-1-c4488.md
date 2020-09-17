@@ -6,12 +6,12 @@ f1_keywords:
 helpviewer_keywords:
 - C4488
 ms.assetid: 55625e46-ddb5-4c7c-99c7-cd4aa9f879bd
-ms.openlocfilehash: b83845f0ed0efeee6485780c7e4f828e40473e9e
-ms.sourcegitcommit: 857fa6b530224fa6c18675138043aba9aa0619fb
+ms.openlocfilehash: 6db814e405c0b13cdf40fc81a1f23c6d59fd5f00
+ms.sourcegitcommit: c1fd917a8c06c6504f66f66315ff352d0c046700
 ms.translationtype: MT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 03/24/2020
-ms.locfileid: "80186703"
+ms.lasthandoff: 09/16/2020
+ms.locfileid: "90684668"
 ---
 # <a name="compiler-warning-level-1-c4488"></a>Предупреждение компилятора (уровень 1) C4488
 
@@ -19,7 +19,7 @@ ms.locfileid: "80186703"
 
 Класс должен реализовывать все члены интерфейса, от которых он наследуется напрямую. Реализованный член должен иметь открытый доступ и должен быть помечен как Virtual.
 
-## <a name="example"></a>Пример
+## <a name="examples"></a>Примеры
 
 C4488 может возникать, если реализованный член не является общедоступным. Следующий пример приводит к возникновению ошибки C4488.
 
@@ -39,8 +39,6 @@ public:
    virtual void f1() {}
 };
 ```
-
-## <a name="example"></a>Пример
 
 C4488 может возникать, если реализованный член не помечен как Virtual. Следующий пример приводит к возникновению ошибки C4488.
 

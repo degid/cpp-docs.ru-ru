@@ -4,12 +4,12 @@ ms.date: 12/02/2019
 helpviewer_keywords:
 - Open Folder Projects in Visual Studio
 ms.assetid: abd1985e-3717-4338-9e80-869db5435175
-ms.openlocfilehash: 73d6ff9fb9411b146082989d581ed35298b911ad
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 9d9f59817a499f4d529363c88adc57154268c0bc
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229809"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90039590"
 ---
 # <a name="open-folder-support-for-c-build-systems-in-visual-studio"></a>Поддержка открытых папок для систем сборки C++ в Visual Studio
 
@@ -31,7 +31,7 @@ ms.locfileid: "87229809"
 
 Чтобы использовать интегрированную среду разработки Visual Studio с системой сборки или набором инструментов компилятора, которые не поддерживаются напрямую из главного меню, выберите **Файл | Открыть | Папка** или нажмите **CTRL + SHIFT + ALT + O**. Перейдите к папке, содержащей файлы исходного кода. Чтобы выполнить сборку проекта, настроить IntelliSense и задать параметры отладки, добавьте три файла JSON:
 
-| | |
+| Файл | Описание |
 |-|-|
 |CppProperties.json|Указывает сведения о настраиваемой конфигурации для просмотра. При необходимости вы можете создать этот файл в корневой папке проекта. (Не используется в проектах CMake.)|
 |tasks.vs.json|Определение настраиваемых команд сборки Доступ к файлу можно получить в **обозревателе решений**, воспользовавшись пунктом контекстного меню **Настройка задач**.|

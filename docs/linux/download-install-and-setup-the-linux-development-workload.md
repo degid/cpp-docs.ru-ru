@@ -3,12 +3,12 @@ title: Установка рабочей нагрузки Linux для прое�
 description: Загрузка, установка и настройка рабочей нагрузки Linux для проектов C++ в Visual Studio.
 ms.date: 05/03/2020
 ms.assetid: e11b40b2-f3a4-4f06-b788-73334d58dfd9
-ms.openlocfilehash: bc75610aaefe2a3bdd919cbc4dd81413202794c6
-ms.sourcegitcommit: 8a01ae145bc65f5bc90d6e47b4a1bdf47b073ee7
+ms.openlocfilehash: 3f8e6eb8285652078e5f26ca58601bc6ccfa80d1
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 05/04/2020
-ms.locfileid: "82765751"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90040981"
 ---
 # <a name="download-install-and-set-up-the-linux-workload"></a>Загрузка, установка и настройка рабочей нагрузки Linux
 
@@ -56,7 +56,7 @@ ms.locfileid: "82765751"
 
 Для проектов Linux в Visual Studio необходимо установить следующие зависимости в удаленной системе Linux или WSL:
 
-- **Компилятор** — Visual Studio 2019 полностью поддерживает GCC и [Clang](/cpp/build/clang-support-cmake?view=vs-2019).
+- **Компилятор** — Visual Studio 2019 полностью поддерживает GCC и [Clang](../build/clang-support-cmake.md).
 - **gdb** — Visual Studio автоматически запускает gdb в системе Linux и использует интерфейс отладчика Visual Studio для обеспечения всех возможностей отладки в Linux.
 - **rsync** и **zip** — благодаря включению rsync и zip Visual Studio может извлекать файлы заголовков из системы Linux в файловую систему Windows для использования технологией IntelliSense.
 - **make**

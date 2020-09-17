@@ -9,12 +9,12 @@ helpviewer_keywords:
 - throughput analysis
 - build time analysis
 - vcperf.exe
-ms.openlocfilehash: ccba320a8bb9279b874fae2484c71af913253148
-ms.sourcegitcommit: 1f009ab0f2cc4a177f2d1353d5a38f164612bdb1
+ms.openlocfilehash: 468fc30d337e5cfc5ab90f7558904fc90588c3df
+ms.sourcegitcommit: 6280a4c629de0f638ebc2edd446de2a9b11f0406
 ms.translationtype: HT
 ms.contentlocale: ru-RU
-ms.lasthandoff: 07/27/2020
-ms.locfileid: "87229926"
+ms.lasthandoff: 09/12/2020
+ms.locfileid: "90041826"
 ---
 # <a name="event_data-structure"></a>Структура EVENT_DATA
 
@@ -58,7 +58,7 @@ typedef struct EVENT_DATA_TAG
 
 ## <a name="members"></a>Участники
 
-|  |  |
+| Имя | Описание |
 |--|--|
 | `EventId` | Числовое значение, которое идентифицирует событие. Список идентификаторов можно узнать в справочнике по [EVENT_ID](event-id-enum.md). |
 | `EventInstanceId` | Это число, которое уникальным образом идентифицирует текущее событие в пределах трассировки. Это значение не изменяется при многократном анализе или повторной записи одной и той же трассировки. Это поле можно применять для идентификации одного события при нескольких этапах анализа или повторной записи для одной трассировки. |
